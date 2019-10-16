@@ -150,6 +150,16 @@ input:focus, input:active {
     box-shadow: 0 0 20px rgba(241, 205, 179, 0.5);
 }
 
+.header-btn--close {
+    width: 100%;
+    display: none;
+}
+
+.header-btn--menu {
+    /* width: 100%; */
+    display: none;
+}
+
 
 /* ====================== */
 /* ----Секция about -----*/
@@ -219,6 +229,8 @@ input:focus, input:active {
 }
 
 .friends__slider--wrapper {
+    position: relative;
+
     display: flex;
     justify-content: center;
 
@@ -288,5 +300,306 @@ input:focus, input:active {
     box-shadow: 2px 8px 15px rgba(13, 13, 13, .2);
 }
 
+/* .slider-btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 50px;
+    border: none;
+    background: none;
+
+    border: 2px solid #f1cdb3;
+} */
+
+.friends-slider__btn--left {
+    position: absolute;
+    left: 0;
+    top: 45%;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 46px;
+    border: none;
+    background: none;
+
+    border: 2px solid #f1cdb3;
+}
+
+.friends-slider__btn--right {
+    position: absolute;
+    right: 0;
+    top: 45%;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 46px;
+    border: none;
+    background: none;
+
+    border: 2px solid #f1cdb3;
+}
+
+.slider-btn:hover {
+    background: #f1cdb3;
+    cursor: pointer;
+}
 
 
+
+
+
+/* ====================== */
+/* ----Секция help ---*/
+
+.help {
+    padding-top: 70px;
+}
+
+.help__title {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: 400;
+    color: #545454;
+    letter-spacing: 0.6px;
+    line-height: 1.4;
+    text-align: center;
+
+    margin-bottom: 70px;
+}
+
+.help__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.help-list__item {
+    list-style: none;
+    width: 20%;
+    text-align: center;
+
+    margin-bottom: 80px;
+}
+
+.help-list__item img {
+    margin-bottom: 20px;
+}
+
+.help-list__item h3 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #545454;
+}
+
+
+/* ====================== */
+/* ---Секция donation ---*/
+
+.donation {
+    background: #f6f6f6;
+
+    padding-top: 70px;
+    padding-bottom: 85px;
+}
+
+.donation--wrapper {
+    display: flex;
+    /* align-items: center; */
+    align-items: stretch;
+}
+
+.donation__box-left {
+    width: 50%;
+
+    background: url(../img/Dog_donation.png) center center no-repeat;
+    background-size: auto;
+}
+
+.donation__box-right {
+    width: 50%;
+}
+
+.donation__box-right .box-right__title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: 400;
+    color: #545454;
+    letter-spacing: 0.6px;
+    line-height: 1.3;
+
+    margin-bottom: 30px;
+}
+
+.donation__box-right .box-right__subtitle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #545454;
+    letter-spacing: 0.6px;
+
+    margin-bottom: 25px;
+}
+
+.donation__bank-account {
+    display: flex;
+    align-items: center;
+    background: #f1cdb3;
+    width: 310px;
+    border-radius: 9px;
+
+    margin-bottom: 32px;
+    margin-top: 15px;
+
+    padding: 13px;
+}
+
+.bank-account__icon {
+    margin-right: 15px;
+}
+
+.donation__bank-account .bank-account__number{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    color: #292929;
+}
+
+.donation__description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #b2b2b2;
+    width: 356px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+
+/* ====================== */
+/* ---Секция footer ---*/
+
+.footer {
+    background: url(../img/Background_footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding-top: 75px;
+    padding-bottom: 45px;
+}
+
+.footer--wrapper {
+    display: flex;
+}
+
+.footer__box-left {
+    margin-right: 170px;
+}
+
+.footer__title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 0.6px;
+
+    margin-bottom: 40px;
+}
+
+.item__text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #f1cdb3;
+    letter-spacing: 0.6px;
+
+    margin-left: 20px;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+
+/* Responsive
+============== */
+
+/*maximum screen width: 1600pxpx */
+@media (max-width:1640px) {
+    .footer {
+        background-position: center;
+    }    
+}
+
+/*maximum screen width: 1220pxpx */
+@media (max-width:1220px) {
+   .container {
+       width: 90%;
+   } 
+   
+   .header {
+       background-position: center;
+   }
+
+   .donation__box-right {
+    margin-left: 50px;
+    }
+
+    .donation__box-left {
+        background-size: contain;
+    }
+}
+
+/*maximum screen width: 1130pxpx */
+@media (max-width:1130px) {
+    .about__left-box {
+        margin-right: 50px;
+    }    
+}
+
+/*maximum screen width: 997pxpx */
+@media (max-width:997px) {
+    .footer--wrapper {
+        justify-content: center;
+    }    
+
+    .footer {
+        background-position: left;
+    }
+
+    .help-list__item {
+        width: 30%;
+    }
+}
+
+
+/*maximum screen width: 811pxpx */
+@media (max-width:811px) {
+    .about__right-box {
+        padding-left: 50px;
+    }
+
+    .right-box__text {
+        width: 90%;
+    }
+
+    .main__list {
+        display: none;
+    }
+
+    .header-btn--menu {
+        /* visibility: visible; */
+        display: block;
+
+    }
+}

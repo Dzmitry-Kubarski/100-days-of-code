@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="css/main.css">
+
     <title>Layout 1</title>
 </head>
 
@@ -21,13 +22,26 @@
                     <p class="logo__subtitle">Shelter for pets in Boston</p>
                 </div>
 
-                <nav>
+                <nav class="main__list">
                     <a class="nav__link" href="#">About the shelter</a>
                     <a class="nav__link" href="#">Our pets</a>
                     <a class="nav__link" href="#">To help the shelter</a>
                     <a class="nav__link" href="#">Contacts</a>
                 </nav>
-            </div>
+
+                <!-- mobail button menu -->
+                <span class="header-btn--menu">
+                    <img src="img/menu.svg" width="20" height="20" alt="Menu mobail">
+                </span>
+
+                <!-- mobail button close -->
+                <span class="header-btn--close">
+                    <img src="img/close.svg" width="16" height="16" alt="Close mobail menu">
+                </span>
+
+            </div> <!-- /nav--wrapper -->
+
+
 
             <h1 class="header__title">Not only people<br>need a house</h1>
             <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida
@@ -94,28 +108,189 @@
 
                 <div class="friends-slider__item">
                     <img src="img/Dog_Jennifer.png" alt="">
-                    <div class="item__title">Katrine</div>
+                    <div class="item__title">Jennifer</div>
                     <a class="item__link" href="#">Learn More</a>
                 </div>
 
                 <div class="friends-slider__item">
                     <img src="img/Dog_Woody.png" alt="">
+                    <div class="item__title">Woody</div>
+                    <a class="item__link" href="#">Learn More</a>
+                </div>
+
+                <!-- <div class="friends-slider__item">
+                    <img src="img/Cat_Katrine.png" alt="">
                     <div class="item__title">Katrine</div>
                     <a class="item__link" href="#">Learn More</a>
                 </div>
+
+                <div class="friends-slider__item">
+                    <img src="img/Dog_Jennifer.png" alt="">
+                    <div class="item__title">Jennifer</div>
+                    <a class="item__link" href="#">Learn More</a>
+                </div>
+
+                <div class="friends-slider__item">
+                    <img src="img/Dog_Woody.png" alt="">
+                    <div class="item__title">Woody</div>
+                    <a class="item__link" href="#">Learn More</a>
+                </div> -->
+
+                <button class="friends-slider__btn--left slider-btn">
+                    <img src="img/left-arrow.png" alt="arrow">
+                </button>
+
+                <button class="friends-slider__btn--right slider-btn">
+                    <img src="img/right-arrow.png" alt="arrow">
+                </button>
 
             </div> <!-- /friends__slider--wrapper -->
 
             <a class="friends__btn" href="#">Get to know the rest</a>
 
+
+
         </div> <!-- /container -->
-    </section>
+    </section> <!-- /friends -->
 
 
 
+    <!-- ======================
+    -------help------------ -->
+    <section class="help">
+        <div class="container">
+
+            <h2 class="help__title">Than you can help<br>our shelter</h2>
+
+            <div class="help--wrapper">
+                <ul class="help__list">
+
+                    <li class="help-list__item">
+                        <img src="img/cat-food.png" alt="Pet food">
+                        <h3>Pet food</h3>
+                    </li>
+
+                    <li class="help-list__item">
+                        <img src="img/ambulance.png" alt="Pet food">
+                        <h3>Transportation</h3>
+                    </li>
+
+                    <li class="help-list__item">
+                        <img src="img/ball.png" alt="Pet food">
+                        <h3>Toys</h3>
+                    </li>
+
+                    <li class="help-list__item">
+                        <img src="img/bowl.png" alt="Pet food">
+                        <h3>Bowls and cups</h3>
+                    </li>
+
+                    <li class="help-list__item">
+                        <img src="img/shampoo.png" alt="Pet food">
+                        <h3>Shampoos</h3>
+                    </li>
+
+                    <li class="help-list__item">
+                        <img src="img/Vitamins.png" alt="Pet food">
+                        <h3>Vitamins</h3>
+                    </li>
+
+                    <li class="help-list__item">
+                        <img src="img/Medicines.png" alt="Pet food">
+                        <h3>Medicines</h3>
+                    </li>
+
+                    <li class="help-list__item">
+                        <img src="img/leash.png" alt="Pet food">
+                        <h3>Collars / leashes</h3>
+                    </li>
+
+                    <li class="help-list__item">
+                        <img src="img/Sleeping.png" alt="Pet food">
+                        <h3>Sleeping area</h3>
+                    </li>
+
+                </ul>
+            </div> <!-- /help--wrapper -->
+        </div> <!-- /container -->
+    </section> <!-- /help -->
 
 
 
+    <!-- ======================
+    ---------donation-------- -->
+    <section class="donation">
+        <div class="container">
+            <div class="donation--wrapper">
+
+                <div class="donation__box-left">
+                    <!-- <img src="img/Dog_donation.png" alt="Dog"> -->
+                </div>
+
+                <div class="donation__box-right">
+                    <h2 class="box-right__title">In addition, you<br>can make a donation</h2>
+                    <span class="box-right__subtitle">Name of the bank / Type of bank account</span>
+
+                    <div class="donation__bank-account">
+                        <img class="bank-account__icon" src="img/credit-card.png" alt="Credit-card">
+                        <span class="bank-account__number">8380 2880 8028 8791 7435</span>
+                    </div>
+
+                    <p class="donation__description">
+                        Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum
+                        at libero sagittis dignissim sed
+                        ac diam. Praesent ultrices maximus tortor et vulputate. Interdum
+                        et malesuada fames ac ante ipsum primis in faucibus.
+                    </p>
+
+                </div> <!-- /donation__box-right -->
+            </div> <!-- /donation--wrapper -->
+        </div> <!-- /container -->
+    </section> <!-- /donation -->
+
+
+
+    <!-- ======================
+    ---------footer-------- -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer--wrapper">
+
+                <div class="footer__box-left">
+                    <h2 class="footer__title">For questions<br>and suggestions</h2>
+
+                    <div class="box-left__item footer-item">
+                        <img class="item__icon" src="img/envelope.png" alt="">
+                        <span class="item__text">email@shelter.com</span>
+                    </div>
+
+                    <div class="box-left__item footer-item">
+                        <img class="item__icon" src="img/telephone.png" alt="">
+                        <span class="item__text">+13 674 567 75 54</span>
+                    </div>
+                </div> <!-- /footer__box-left -->
+
+                <div class="footer__box-right">
+                    <h2 class="footer__title">We are waiting<br>for your visit</h2>
+
+                    <div class="box-left__item footer-item">
+                        <img class="item__icon" src="img/pin.png" alt="">
+                        <span class="item__text">Boston, Central Street, 1st<br>(Entrance from the store)</span>
+                    </div>
+
+                    <div class="box-left__item footer-item">
+                        <img class="item__icon" src="img/pin.png" alt="">
+                        <span class="item__text">London, South Park, 18st</span>
+                    </div>
+                </div> <!-- /footer__box-right -->
+
+            </div> <!-- /footer--wrapper -->
+        </div> <!-- /container -->
+    </footer>
+
+
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
