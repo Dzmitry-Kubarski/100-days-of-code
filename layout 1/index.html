@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/main.css">
 
     <title>Layout 1</title>
@@ -29,15 +31,26 @@
                     <a class="nav__link" href="#">Contacts</a>
                 </nav>
 
-                <!-- mobail button menu -->
+                <!-- mobail button menu open-->
                 <span class="header-btn--menu">
                     <img src="img/menu.svg" width="20" height="20" alt="Menu mobail">
                 </span>
 
-                <!-- mobail button close -->
+                <!-- mobail button menu close -->
                 <span class="header-btn--close">
                     <img src="img/close.svg" width="16" height="16" alt="Close mobail menu">
                 </span>
+
+                <!-- mobail menu -->
+                <div class="main__mobail--wrap">
+                    <div class="main__mobail">
+                        <a class="nav__link--mobail" href="#">About the shelter</a>
+                        <a class="nav__link--mobail" href="#">Our pets</a>
+                        <a class="nav__link--mobail" href="#">To help the shelter</a>
+                        <a class="nav__link--mobail" href="#">Contacts</a>
+                    </div>
+                </div>
+
 
             </div> <!-- /nav--wrapper -->
 
@@ -50,8 +63,8 @@
             </p>
             <a class="header__btn" href="#">Make a friend</a>
 
-        </div>
-        <!--/container  -->
+        </div> <!-- /container -->
+
     </header>
 
 
@@ -86,14 +99,12 @@
                     </p>
                 </div> <!-- /about__right-box -->
             </div> <!-- /about--wrapper -->
-
         </div> <!-- /container -->
-    </section>
+    </section> <!-- /about -->
 
 
 
-    <!-- ======================
-    -------friends-------- -->
+    <!-------Секция friends-------- -->
     <section class="friends">
         <div class="container">
             <h2 class="friends-title">Our friends who<br>are looking for a house</h2>
@@ -118,7 +129,7 @@
                     <a class="item__link" href="#">Learn More</a>
                 </div>
 
-                <!-- <div class="friends-slider__item">
+                <div class="friends-slider__item">
                     <img src="img/Cat_Katrine.png" alt="">
                     <div class="item__title">Katrine</div>
                     <a class="item__link" href="#">Learn More</a>
@@ -134,17 +145,20 @@
                     <img src="img/Dog_Woody.png" alt="">
                     <div class="item__title">Woody</div>
                     <a class="item__link" href="#">Learn More</a>
-                </div> -->
+                </div>
 
-                <button class="friends-slider__btn--left slider-btn">
+                <!-- <button class="friends-slider__btn--left slider-btn">
                     <img src="img/left-arrow.png" alt="arrow">
                 </button>
 
                 <button class="friends-slider__btn--right slider-btn">
                     <img src="img/right-arrow.png" alt="arrow">
-                </button>
+                </button> -->
 
             </div> <!-- /friends__slider--wrapper -->
+
+
+
 
             <a class="friends__btn" href="#">Get to know the rest</a>
 
@@ -289,7 +303,8 @@
     </footer>
 
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="slick/slick.js"></script>
     <script src="js/main.js"></script>
 </body>
 
