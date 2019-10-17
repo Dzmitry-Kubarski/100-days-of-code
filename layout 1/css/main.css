@@ -553,7 +553,12 @@ input:focus, input:active {
 @media (max-width:1640px) {
     .footer {
         background-position: center;
-    }    
+    }  
+    
+    .header {
+        height: 100%;
+        padding-bottom: 95px;
+    }
 }
 
 /*maximum screen width: 1220px */
