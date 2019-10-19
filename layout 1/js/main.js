@@ -19,6 +19,29 @@ $(document).ready(function () {
     });
 
 
+    // ---------- модальное окно -----------
+
+    $('.item__link').on('click', function () {
+        $('.modal').show();
+    });
+
+    $('.modal__btn-close').on('click', function () {
+        $('.modal').hide();
+    });
+
+
+    // -------- якорь -----------
+
+    $('.header__btn').click(function () {
+
+        let target = $(this).attr('href');
+        $('html, body').animate({ scrollTop: $(target).offset().top }, 1000);
+        return false;
+    });
+
+
+    // ------------- Слайдер Slick -----------
+
     $('.friends__slider--wrapper').slick({
         dots: false,
         slidesToShow: 3,

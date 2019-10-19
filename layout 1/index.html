@@ -14,8 +14,18 @@
 </head>
 
 <body>
-
     <header class="header">
+
+        <!-- mobail menu -->
+        <div class="main__mobail--wrap">
+            <div class="main__mobail">
+                <a class="nav__link--mobail" href="#">About the shelter</a>
+                <a class="nav__link--mobail" href="pets.html">Our pets</a>
+                <a class="nav__link--mobail" href="#">To help the shelter</a>
+                <a class="nav__link--mobail" href="#">Contacts</a>
+            </div>
+        </div>
+
         <div class="container">
             <div class="nav--wrapper">
 
@@ -26,7 +36,7 @@
 
                 <nav class="main__list">
                     <a class="nav__link" href="#">About the shelter</a>
-                    <a class="nav__link" href="#">Our pets</a>
+                    <a class="nav__link" href="pets.html">Our pets</a>
                     <a class="nav__link" href="#">To help the shelter</a>
                     <a class="nav__link" href="#">Contacts</a>
                 </nav>
@@ -41,30 +51,16 @@
                     <img src="img/close.svg" width="16" height="16" alt="Close mobail menu">
                 </span>
 
-                <!-- mobail menu -->
-                <div class="main__mobail--wrap">
-                    <div class="main__mobail">
-                        <a class="nav__link--mobail" href="#">About the shelter</a>
-                        <a class="nav__link--mobail" href="#">Our pets</a>
-                        <a class="nav__link--mobail" href="#">To help the shelter</a>
-                        <a class="nav__link--mobail" href="#">Contacts</a>
-                    </div>
-                </div>
-
-
             </div> <!-- /nav--wrapper -->
-
-
 
             <h1 class="header__title">Not only people<br>need a house</h1>
             <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida
                 est in porttitor porttitor. Duis sodales elementum ipsum, vehicula
                 condimentum erat fringilla et.
             </p>
-            <a class="header__btn" href="#">Make a friend</a>
+            <a class="header__btn" href="#friends">Make a friend</a>
 
         </div> <!-- /container -->
-
     </header>
 
 
@@ -103,10 +99,44 @@
     </section> <!-- /about -->
 
 
-
     <!-------Секция friends-------- -->
-    <section class="friends">
+    <section class="friends" id="friends">
         <div class="container">
+
+            <!-- Модальное окно -->
+            <div class="modal">
+                <div class="container">
+                    <div class="modal--wrapper">
+
+                        <div class="modal--left">
+                            <img src="img/Dog-modal.png" alt="Dog Jennifer">
+                        </div>
+
+                        <div class="modal--right">
+                            <div class="modal__title">Jennifer</div>
+                            <span class="modal__subtitle">Pooch + Labrador</span>
+                            <p class="modal__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                efficitur blandit condimentum.
+                                Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar
+                                nunc.
+                                Donec
+                                consectetur, diam in porta tempus, urna ligula ves tibulum nibh.
+                            </p>
+                            <ul class="modal__list">
+                                <li class="modal__item">Age: 2 months</li>
+                                <li class="modal__item">Inoculations: none</li>
+                                <li class="modal__item">Diseases: none</li>
+                                <li class="modal__item">Parasites: none</li>
+                            </ul>
+                        </div> <!-- /modal--right -->
+
+                        <button class="modal__btn-close">
+                            <img src="img/cancel.png" alt="Close">
+                        </button>
+                    </div> <!-- /modal--wrapper -->
+                </div> <!-- /container -->
+            </div> <!-- /modal -->
+
             <h2 class="friends-title">Our friends who<br>are looking for a house</h2>
 
             <div class="friends__slider--wrapper">
@@ -114,55 +144,42 @@
                 <div class="friends-slider__item">
                     <img src="img/Cat_Katrine.png" alt="">
                     <div class="item__title">Katrine</div>
-                    <a class="item__link" href="#">Learn More</a>
+                    <button class="item__link" href="#">Learn More</button>
                 </div>
 
                 <div class="friends-slider__item">
                     <img src="img/Dog_Jennifer.png" alt="">
                     <div class="item__title">Jennifer</div>
-                    <a class="item__link" href="#">Learn More</a>
+                    <button class="item__link" href="#">Learn More</button>
                 </div>
 
                 <div class="friends-slider__item">
                     <img src="img/Dog_Woody.png" alt="">
                     <div class="item__title">Woody</div>
-                    <a class="item__link" href="#">Learn More</a>
+                    <button class="item__link" href="#">Learn More</button>
                 </div>
 
                 <div class="friends-slider__item">
                     <img src="img/Cat_Katrine.png" alt="">
                     <div class="item__title">Katrine</div>
-                    <a class="item__link" href="#">Learn More</a>
+                    <button class="item__link" href="#">Learn More</button>
                 </div>
 
                 <div class="friends-slider__item">
                     <img src="img/Dog_Jennifer.png" alt="">
                     <div class="item__title">Jennifer</div>
-                    <a class="item__link" href="#">Learn More</a>
+                    <button class="item__link" href="#">Learn More</button>
                 </div>
 
                 <div class="friends-slider__item">
                     <img src="img/Dog_Woody.png" alt="">
                     <div class="item__title">Woody</div>
-                    <a class="item__link" href="#">Learn More</a>
+                    <button class="item__link" href="#">Learn More</button>
                 </div>
-
-                <!-- <button class="friends-slider__btn--left slider-btn">
-                    <img src="img/left-arrow.png" alt="arrow">
-                </button>
-
-                <button class="friends-slider__btn--right slider-btn">
-                    <img src="img/right-arrow.png" alt="arrow">
-                </button> -->
 
             </div> <!-- /friends__slider--wrapper -->
 
-
-
-
-            <a class="friends__btn" href="#">Get to know the rest</a>
-
-
+            <a class="friends__btn" href="pets.html">Get to know the rest</a>
 
         </div> <!-- /container -->
     </section> <!-- /friends -->
@@ -230,7 +247,6 @@
     </section> <!-- /help -->
 
 
-
     <!-- ======================
     ---------donation-------- -->
     <section class="donation">
@@ -261,7 +277,6 @@
             </div> <!-- /donation--wrapper -->
         </div> <!-- /container -->
     </section> <!-- /donation -->
-
 
 
     <!-- ======================
@@ -301,38 +316,6 @@
             </div> <!-- /footer--wrapper -->
         </div> <!-- /container -->
     </footer>
-
-    <!-- Модальное окно -->
-    <div class="modal">
-        <div class="container">
-            <div class="modal--wrapper">
-
-                <div class="modal--left">
-                    <img src="img/Dog-modal.png" alt="Dog Jennifer">
-                </div>
-
-                <div class="modal--right">
-                    <div class="modal__title">Jennifer</div>
-                    <span class="modal__subtitle">Pooch + Labrador</span>
-                    <p class="modal__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                        efficitur blandit condimentum.
-                        Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec
-                        consectetur, diam in porta tempus, urna ligula ves tibulum nibh.
-                    </p>
-                    <ul class="modal__list">
-                        <li class="modal__item">Age: 2 months</li>
-                        <li class="modal__item">Inoculations: none</li>
-                        <li class="modal__item">Diseases: none</li>
-                        <li class="modal__item">Parasites: none</li>
-                    </ul>
-                </div> <!-- /modal--right -->
-
-                <button class="modal__btn-close">
-                    <img src="img/cancel.png" alt="Close">
-                </button>
-            </div> <!-- /modal--wrapper -->
-        </div> <!-- /container -->
-    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="slick/slick.js"></script>

@@ -170,9 +170,7 @@ input:focus, input:active {
 
  .main__mobail {
      display: none;
- }
-
- 
+ } 
 
 
 /* ====================== */
@@ -303,6 +301,7 @@ input:focus, input:active {
     color: #292929;
     border: 2px solid #f1cdb3;
     border-radius: 26px;
+    background: none;
 
     padding: 14px 48px;
     margin: 0 auto;
@@ -370,6 +369,11 @@ input:focus, input:active {
 .slider-btn:hover {
     background: #f1cdb3;
     cursor: pointer;
+}
+
+.slick-track {
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 /* ====================== */
@@ -559,7 +563,11 @@ input:focus, input:active {
     border-radius: 9px;
     box-shadow: 0 0 20px rgba(13, 13, 13, .1);
 
-    margin: 70px auto;    
+    margin: 0 auto; 
+}
+
+.modal__list {
+    display: inline-block;
 }
 
 .modal--left {
@@ -597,10 +605,6 @@ input:focus, input:active {
     line-height: 1.6;
     margin-bottom: 27px;
     width: 90%;
-}
-
-.modal__list {
-
 }
 
 .modal__item {
@@ -649,6 +653,11 @@ input:focus, input:active {
     background: #f1cdb3;
 }
 
+.modal {
+    position: absolute;
+    z-index: 99;
+    display: none;   
+}
 
 /* Responsive
 ============== */
@@ -754,6 +763,10 @@ input:focus, input:active {
     .modal--wrapper {
         padding: 30px 0;
     }
+
+    .footer {
+        background-position: center;
+    }
     
 }
 
@@ -799,9 +812,11 @@ input:focus, input:active {
         justify-content: center; 
             
         position: absolute;
-        top: 53px;
-        left: 50%;
-        margin-left: -61px;        
+        top: 0px;
+        align-items: center;
+        background: #41342c;
+        height: 100%;
+        width: 100%;       
     }
 
     .main__mobail--wrap {
@@ -839,11 +854,7 @@ input:focus, input:active {
     .modal__description {
         display: inline-block;
         width: 80%;
-    }
-
-    .modal__list {
-        display: inline-block;
-    }
+    }    
 
     .modal__item {
         text-align: start;
@@ -1035,6 +1046,10 @@ input:focus, input:active {
 
     .header {
         background-position: left;
+    }
+
+    .friends-slider__item img {
+        width: 80%;
     }
     
  }
