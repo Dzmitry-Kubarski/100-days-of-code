@@ -1,0 +1,219 @@
+/* --- modification --- */
+
+html, body {
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;   
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ul, li {
+    text-decoration: none;
+}
+
+a, a:hover, a:active, a:focus,
+button, input, button:hover, button:active, button:focus,
+input:focus, input:active {
+    text-decoration: none;
+    outline: none;
+}
+
+.container {
+	width: 1290px;
+	margin: 0 auto;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* .....Header..... */
+
+.header {
+    background-color: #fbfcfc;
+    background-image: url(../img/header_bg.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+    padding-top: 65px;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    margin-bottom: 115px; 
+}
+
+.header__menu-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.header__menu-link {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left: 59px;
+    transition: all 0.3s ease;    
+}
+
+.header__menu-link:hover {
+    color: #fb7dc4;
+}
+
+.header__title {
+    font-size: 50px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 60px;
+    margin-bottom: 49px;
+}
+
+.header__description {
+    font-size: 18px;
+    color: #fff;
+    width: 465px;
+    line-height: 36px;
+    margin-bottom: 85px;
+}
+
+.header__btn {
+    display: block;
+    position: relative;
+    width: 220px;
+    font-size: 20px;
+    color: #37474f;
+    font-weight: 700;
+    background: #fff;
+    border-radius: 20px 0 20px 20px;
+    padding: 28px;
+
+    box-shadow: 0 30px 35px rgba(31, 110, 210, 0.3);  
+    transition: all 0.3s ease;  
+}
+
+.header__btn::after {
+    position: absolute;
+    content: url(../img/search.svg);
+    right: 20px;
+}
+
+.header__btn:hover {
+    background: #fb7dc4;
+    color: #fff;
+}
+
+
+/* ...... Секция advantages ....... */
+
+.advantages {
+    background: #fbfcfc;
+    background-image: url(../img/arda-img.png);
+    background-position: bottom;
+    background-size: contain;
+
+    padding-bottom: 780px;
+}
+
+.advantages__title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #263238;
+    text-align: center;
+    margin-bottom: 140px;
+}
+
+.advantages__list-wrapper {
+    background-image: url(../img/arda-bg.png);
+    background-position: top;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 113px;
+}
+
+.advantages__list-item {
+    width: 45%;
+    background: #fff;
+    box-shadow: 0 30px 35px rgba(207, 216, 212, 0.3);
+    border-radius: 20px 0 20px 20px;
+
+    padding: 35px 73px 95px 73px;
+    margin-bottom: 63px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.advantages__number {
+    font-size: 200px;
+    color: #cfd8dc;
+    opacity: .2;
+    font-weight: 700;
+}
+
+.advantages__number-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.advantages__item-title {
+    font-size: 24px;
+    color: #263238;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.advantages__item-text {
+    font-size: 17px;
+    font-weight: 600;
+    color: #546e7a;
+    line-height: 35px;
+}
+
+.advantages__btn {
+    display: block;
+    position: relative;
+    width: 280px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+    background: #2fc9ef;
+    border-radius: 20px 0 20px 20px;
+    padding: 28px 28px 28px 38px;
+    margin: 0 auto;
+
+    box-shadow: 0 30px 35px rgba(31, 110, 210, 0.3);  
+    transition: all 0.3s ease;  
+}
+
+.advantages__btn:hover {
+    background: #fb7dc4;
+}
+
+.advantages__btn::after {
+    position: absolute;
+    content: url(../img/arrow-white.svg);
+    right: 30px;
+}
