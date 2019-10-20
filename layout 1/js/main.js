@@ -1,36 +1,25 @@
 $(document).ready(function () {
 
-    //---------Mobail menu button------------------------
+    // ----- Mobail menu button -----
     $('.header-btn--menu').on('click', function () {
-        $('.main__mobail--wrap').show();
+        $('.main__mobail_wrap').show();
         $(this).hide();
-        $('.header-btn--close').show();
+        $('.header-btn_close').show();
         $('.logo__title').hide();
         $('.logo__subtitle').hide();
 
     });
 
-    $('.header-btn--close').on('click', function () {
-        $('.main__mobail--wrap').hide();
+    $('.header-btn_close').on('click', function () {
+        $('.main__mobail_wrap').hide();
         $(this).hide();
-        $('.header-btn--menu').show();
+        $('.header-btn_menu').show();
         $('.logo__title').show();
         $('.logo__subtitle').show();
     });
 
 
-    // ---------- модальное окно -----------
-
-    $('.item__link').on('click', function () {
-        $('.modal').show();
-    });
-
-    $('.modal__btn-close').on('click', function () {
-        $('.modal').hide();
-    });
-
-
-    // -------- якорь -----------
+    // ----- якорь -----
 
     $('.header__btn').click(function () {
 
@@ -40,9 +29,9 @@ $(document).ready(function () {
     });
 
 
-    // ------------- Слайдер Slick -----------
+    // ----- Слайдер Slick -----
 
-    $('.friends__slider--wrapper').slick({
+    $('.friends__slider_wrapper').slick({
         dots: false,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -50,7 +39,7 @@ $(document).ready(function () {
         nextArrow: '<button class="friends-slider__btn--right slider-btn"><img src="img/right-arrow.png" alt="arrow"></button>',
 
 
-        //--------------responsive:__slider---------------------
+        // ----- responsive:__slider -----
         responsive: [
             {
                 breakpoint: 811,
@@ -72,6 +61,17 @@ $(document).ready(function () {
                 }
             },
         ]
+    });
+
+
+    // ----- модальное окно -----
+
+    $('.item__link').on('click', function () {
+        $('.modal').show();
+    });
+
+    $('.modal__btn-close').on('click', function () {
+        $('.modal').hide();
     });
 
 });
