@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     // ----- Mobail menu button -----
-    $('.header-btn--menu').on('click', function () {
+    $('.header-btn_menu').on('click', function () {
         $('.main__mobail_wrap').show();
         $(this).hide();
         $('.header-btn_close').show();
@@ -19,7 +19,7 @@ $(document).ready(function () {
     });
 
 
-    // ----- якорь -----
+    // ----- скрол к секции -----
 
     $('.header__btn').click(function () {
 
@@ -39,7 +39,7 @@ $(document).ready(function () {
         nextArrow: '<button class="friends-slider__btn--right slider-btn"><img src="img/right-arrow.png" alt="arrow"></button>',
 
 
-        // ----- responsive:__slider -----
+        // ----- responsive slider -----
         responsive: [
             {
                 breakpoint: 811,
