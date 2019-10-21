@@ -2,7 +2,6 @@
 
 html, body {
     overflow-x: hidden;
-    font-family: 'Raleway', sans-serif;   
 }
 
 html, body, div, span, applet, object, iframe,
@@ -35,6 +34,16 @@ input:focus, input:active {
     outline: none;
 }
 
+button::-moz-focus-inner {
+    border: 0;
+  } 
+
+  button:focus {
+    outline-style: none;
+    outline-width: 0px !important;
+    outline-color: none !important;
+}
+
 .container {
 	width: 1290px;
 	margin: 0 auto;
@@ -48,18 +57,34 @@ body {
 /* .....Header..... */
 
 .header {
+    position: relative;
+    z-index: 9;
     background-color: #fbfcfc;
     background-image: url(../img/header_bg.png);
-    height: 100vh;
+    height: auto;
     background-size: cover;
-    background-position: top;
+    background-position: center top;
     padding-top: 65px;
+    padding-bottom: 275px;
 }
+
+/* .header::after {
+    position: absolute;
+    content: url(../img/advantages-bg.png);
+    z-index: 1;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+} */
 
 .header__menu {
     display: flex;
     align-items: center;
     margin-bottom: 115px; 
+    position: relative;
+    z-index: 10;
 }
 
 .header__menu-list {
@@ -70,6 +95,7 @@ body {
 }
 
 .header__menu-link {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: #fff;
     font-size: 18px;
     text-transform: uppercase;
@@ -94,12 +120,13 @@ body {
     color: #fff;
     width: 465px;
     line-height: 36px;
-    margin-bottom: 85px;
+    margin-bottom: 60px;
 }
 
 .header__btn {
     display: block;
     position: relative;
+    z-index: 10;
     width: 220px;
     font-size: 20px;
     color: #37474f;
@@ -127,10 +154,13 @@ body {
 /* ...... Секция advantages ....... */
 
 .advantages {
+    position: relative;
     background: #fbfcfc;
-    background-image: url(../img/arda-img.png);
+    /* background-image: url(../img/arda-img.png); */
+    background-image: url(../img/advantages-bg.png);
     background-position: bottom;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     padding-bottom: 780px;
 }
@@ -144,22 +174,24 @@ body {
 }
 
 .advantages__list-wrapper {
-    background-image: url(../img/arda-bg.png);
-    background-position: top;
-
+    position: relative;
+    z-index: 50;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 113px;
+    max-width: 1290px;
+    margin: 0 auto;
+    margin-bottom: 70px;
 }
 
 .advantages__list-item {
-    width: 45%;
+    /* width: 45%; */
+    width: 550px;
     background: #fff;
     box-shadow: 0 30px 35px rgba(207, 216, 212, 0.3);
     border-radius: 20px 0 20px 20px;
 
-    padding: 35px 73px 95px 73px;
+    padding: 35px 70px 95px 70px;
     margin-bottom: 63px;
     margin-right: 30px;
     margin-left: 30px;
@@ -217,3 +249,198 @@ body {
     content: url(../img/arrow-white.svg);
     right: 30px;
 }
+
+/* ..... Секция comments ..... */
+
+.comments {
+    background: #fbfcfc;
+    padding-top: 110px;
+}
+
+.comments__title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #263238;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.comments__slider {
+    position: relative;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 300px;
+}
+
+.comments__slider::after {
+    position: absolute;
+    z-index: -99;
+    content: url(../img/figure.svg);
+    left: -63px;
+    bottom: -185px;
+    
+}
+
+.comments__slider-item {
+    position: relative;
+    background: #fff;
+    width: 550px;
+    height: 100%;
+    box-shadow: 0 30px 35px rgba(207, 216, 220, 0.3); 
+    border-radius: 20px 20px 60px 20px;
+
+
+    padding: 90px 65px 55px 65px;
+    margin-right: 33px;
+    margin-left: 33px;
+}
+
+.comments__slider-icon {
+    position: absolute;
+    top: -55px;
+    left: 45px;
+}
+
+.comments__slider-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #546e7a;
+    line-height: 30px;
+    margin-bottom: 45px;
+}
+
+.comments__slider-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2fc9ef;
+    line-height: 35px;
+    margin-bottom: 7px;
+}
+
+.comments__slider-city {
+    font-size: 18px;
+    font-weight: 900;
+    color: #263238;
+}
+
+.comments__slider-btn_prev {
+    position: absolute;
+    left: -55px;
+    top: 40%;
+    width: 70px;
+    height: 70px;
+    background: none;
+    border-radius: 100%;
+    border: none;
+    border: 2px solid #2fc9ef;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.comments__slider-btn_next {
+    position: absolute;
+    right: -55px;
+    top: 40%;
+    width: 70px;
+    height: 70px;
+    background: none;
+    border-radius: 100%;
+    border: none;
+    border: 2px solid #2fc9ef;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.comments__slider-btn:hover {
+    background: #fff;
+    box-shadow: 0 30px 35px rgba(31, 110, 227, 0.3); 
+    border: none;
+}
+
+/* ...... Секция contacts .... */
+
+    .contacts-wrapper {
+        background-image: url(../img/houghts-bg-2.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* width: 1290px; */
+        height: auto;
+    }
+
+    .contacts__content {
+        width: 745px;
+        padding: 85px 0 85px 85px;
+    }
+
+    .contacts__content-title {
+        font-size: 36px;
+        font-weight: 700;
+        color: #fff;
+        line-height: 45px;
+        margin-bottom: 35px;
+    }
+
+    .contacts__content-subtitle {
+        font-size: 16px;
+        color: #b2c9f3;
+        line-height: 26px;
+        width: 352px;
+        margin-bottom: 50px;
+    }
+
+    .form__left-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-right: 40px;
+    }
+
+    .form__right-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts__form-input {
+        width: 350px;
+        border-radius: 10px 0 10px 10px;
+        border: none;
+        /* margin-bottom: 30px; */
+        padding: 25px;
+    }
+
+    .contacts__form-textarea {
+        width: 350px;
+        border-radius: 10px 0 10px 10px;
+        border: none;
+        padding: 25px;
+        margin-bottom: 20px;
+    }
+
+    .contacts__form-btn {
+        width: 180px;
+        border: none;
+        border-radius: 10px 0 10px 10px;
+        background: #2fc9ef;
+        font-size: 20px;
+        color: #fff;
+        padding: 30px;
+        align-self: flex-end;
+    }
+
+    .contacts__form {
+        display: flex;
+    }
+
+    .contacts__form-label {
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        line-height: 40px;
+        margin-bottom: 5px;
+    }
+   
+    
+
+    
+
+   
