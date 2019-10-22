@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Layout 2</title>
 
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -141,21 +143,46 @@
                     <span class="comments__slider-city">Oregon</span>
                 </div> <!-- /comments__slider-item -->
 
-                <button class="comments__slider-btn comments__slider-btn_prev">
+                <div class="comments__slider-item">
+                    <img class="comments__slider-icon" src="img/user-1.png" alt="Avatar">
+                    <p class="comments__slider-text">
+                        “My experience with Arda Real Estate Consulting has enabled me to better assess current market
+                        risk
+                        level at any point in the home building cycle. Also, I have been able to make new valuable
+                        contacts.”
+                    </p>
+                    <div class="comments__slider-name">Benrns Sturaro</div>
+                    <span class="comments__slider-city">NY</span>
+                </div> <!-- /comments__slider-item -->
+
+                <div class="comments__slider-item">
+                    <img class="comments__slider-icon" src="img/user-2.png" alt="Avatar">
+                    <p class="comments__slider-text">
+                        Arda Real Estate Consulting has provided our company with sound, insightful, and timely
+                        consulting in a number of real estate related areas. Specifically, reports and analysis for
+                        credit reporting agencies, company valuation studies, and presentations to foreign investors
+                        have been areas where they have excelled.”
+                    </p>
+                    <div class="comments__slider-name">Dave Matthews</div>
+                    <span class="comments__slider-city">Oregon</span>
+                </div> <!-- /comments__slider-item -->
+
+
+                <!-- <button class="comments__slider-btn comments__slider-btn_prev">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px"
                         height="20px">
                         <path fill-rule="evenodd" fill="rgb(47, 201, 239)"
                             d="M9.536,19.022 L11.651,16.913 L5.728,11.008 L26.008,11.008 L26.008,8.025 L5.728,8.025 L11.651,2.120 L9.536,0.011 L0.002,9.517 L9.536,19.022 Z" />
                     </svg>
-                </button>
+                </button> -->
 
-                <button class="comments__slider-btn comments__slider-btn_next">
+                <!-- <button class="comments__slider-btn comments__slider-btn_next">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px"
                         height="20px">
                         <path fill-rule="evenodd" fill="rgb(47, 201, 239)"
                             d="M16.464,0.977 L14.349,3.086 L20.271,8.991 L-0.008,8.991 L-0.008,11.974 L20.271,11.974 L14.349,17.879 L16.464,19.988 L25.997,10.483 L16.464,0.977 Z" />
                     </svg>
-                </button>
+                </button> -->
 
             </div> <!-- /comments__slider -->
         </div> <!-- /container -->
@@ -193,8 +220,7 @@
                             <div class="form__right-wrapper">
                                 <label class="contacts__form-label" for="message">YOUR MESSAGE</label>
                                 <textarea name="message" class="contacts__form-textarea" id="message" cols="30"
-                                    rows="10">Tell us more about your projects
-                                </textarea>
+                                    rows="10" placeholder="Tell us more about your projects"></textarea>
 
                                 <button class="contacts__form-btn" type="submit">Submit</button>
                             </div>
@@ -203,14 +229,113 @@
                 </div> <!-- /form__content -->
 
                 <div class="contacts__map">
-                    <p class="map_city">Sacramento, CA</p>
-                    <p class="map__address">222 Woodmere Road , Suite 250<br>Folsom, California 95630</p>
-                    <span class="map__phone">p 949-870-1227</span>
+                    <div class="map-wrapper">
+                        <p class="map__city">Sacramento, CA</p>
+                        <p class="map__address">222 Woodmere Road , Suite 250<br>Folsom, California 95630</p>
+                        <span class="map__phone">p 949-870-1227</span>
+                    </div>
+
+                    <a class="map__btn-full" href="#">
+                        <img src="img/map-full.png" alt="full">
+                    </a>
+
+                    <img class="map__circle" src="img/map-ellipse.png" alt="ellipse">
                 </div>
 
-            </div> <!-- /container -->
-        </div> <!-- /contacts-wrapper -->
+            </div> <!-- /contacts-wrapper -->
+        </div> <!-- /container -->
     </section> <!-- /contacts -->
+
+
+
+    <!-- ...... footer ..... -->
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-wrapper">
+
+                <img class="footer__logo" src="img/logo.png" alt="Logo">
+                <div class="footer__text-wrapper">
+                    <p class="footer__text">Arda Real Estate Consulting provides independent research and consulting
+                        services related to the US housing industry.
+                    </p>
+                    <p class="footer__text">Our experienced team of analysts and consultants helps our clients identify
+                        the best risk-adjusted investment opportunities.
+                    </p>
+                </div>
+
+                <div class="footer__menu">
+                    <div class="footer__menu-column">
+                        <div class="footer__column-title">Our Company</div>
+                        <div class="footer__column-list">
+                            <a class="footer__column-link" href="#">Our Company</a>
+                            <a class="footer__column-link" href="#">About Us</a>
+                            <a class="footer__column-link" href="#">Research</a>
+                            <a class="footer__column-link" href="#">Consulting</a>
+                            <a class="footer__column-link" href="#">Careers</a>
+                        </div>
+                    </div>
+
+                    <div class="footer__menu-column">
+                        <div class="footer__column-title">Our EXpERTS</div>
+                        <div class="footer__column-list">
+                            <a class="footer__column-link" href="#">Team</a>
+                            <a class="footer__column-link" href="#">Coverage</a>
+                        </div>
+                    </div>
+
+                    <div class="footer__menu-column">
+                        <div class="footer__column-title">Our VALUES</div>
+                        <div class="footer__column-list">
+                            <a class="footer__column-link" href="#">Proprietary Tools</a>
+                            <a class="footer__column-link" href="#">Forecasting</a>
+                            <a class="footer__column-link" href="#">Surveys</a>
+                            <a class="footer__column-link" href="#">Surban</a>
+                            <a class="footer__column-link" href="#">Demographics</a>
+                            <a class="footer__column-link" href="#">DesignLens</a>
+                        </div>
+                    </div>
+
+                    <div class="footer__menu-column">
+                        <div class="footer__column-title">CONTACT</div>
+                        <div class="footer__column-list">
+                            <a class="footer__column-link" href="#">Contact Us</a>
+                            <a class="footer__column-link" href="#">Office Locations</a>
+                            <a class="footer__column-link" href="#">Newsletter Sign-Up</a>
+                            <a class="footer__column-link" href="#">Social Media</a>
+                        </div>
+                    </div>
+                </div> <!-- /footer__menu -->
+            </div> <!-- /footer-wrapper -->
+
+            <hr class="footer__line">
+
+            <div class="footer__info-wrapper">
+                <div class="footer__info-copyright">
+                    <span class="info-copyright__text info-copyright__text_top">Arda Real Estate Consulting, LLC</span>
+                    <span class="info-copyright__text">Copyright © 2018</span>
+                </div>
+
+                <div class="footer__info-social">
+                    <a class="footer__social-link" href="#">
+                        <img src="img/inst.png" alt="Instagram">
+                    </a>
+
+                    <a class="footer__social-link" href="#">
+                        <img src="img/fb.png" alt="Facebook">
+                    </a>
+
+                    <a class="footer__social-link" href="#">
+                        <img src="img/twit.png" alt="Twitter">
+                    </a>
+                </div>
+            </div> <!-- /footer__info-wrapper -->
+        </div> <!-- /container-footer -->
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="slick/slick.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
