@@ -963,6 +963,10 @@ body {
         top: 30px;
         right: 30px;
     }
+
+    .footer__menu {
+        display: none;
+    }
 }
 
 
