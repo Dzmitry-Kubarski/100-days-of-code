@@ -1,5 +1,21 @@
 $(document).ready(function () {
 
+    // ----- Mobail menu button -----
+    $('.header-btn_menu').on('click', function () {
+        $('.main__mobail_wrap').show();
+        $(this).hide();
+        $('.header-btn_close').show();
+
+    });
+
+    $('.header-btn_close').on('click', function () {
+        $('.main__mobail_wrap').hide();
+        $(this).hide();
+        $('.header-btn_menu').show();
+
+    });
+
+
     // ----- Слайдер Slick -----
 
     $('.comments__slider').slick({
@@ -15,6 +31,16 @@ $(document).ready(function () {
         responsive: [
 
             {
+                breakpoint: 1240,
+                settings: {
+                    prevArrow: false,
+                    nextArrow: false,
+                    dots: true,
+
+                }
+            },
+
+            {
                 breakpoint: 836,
                 settings: {
                     slidesToShow: 1,
@@ -25,6 +51,8 @@ $(document).ready(function () {
 
                 }
             },
+
+
         ]
     });
 

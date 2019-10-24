@@ -14,6 +14,30 @@
 
 <body>
     <header class="header">
+
+        <!-- mobail menu -->
+        <div class="main__mobail_wrap">
+            <div class="main__mobail">
+                <a class="header__menu-link" href="#">Our Company</a>
+                <a class="header__menu-link" href="#">Our ExpertsS</a>
+                <a class="header__menu-link" href="#">Our Values</a>
+                <a class="header__menu-link" href="#">Contact</a>
+
+                <a class="header__menu-link header__menu-link_search" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px"
+                        height="26px">
+                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                            d="M26.104,23.863 L23.977,25.993 L19.118,21.130 C17.064,22.723 14.562,23.596 11.922,23.596 C8.774,23.596 5.814,22.369 3.587,20.140 C-1.008,15.540 -1.008,8.056 3.587,3.456 C5.814,1.228 8.774,0.001 11.922,0.001 C15.070,0.001 18.031,1.228 20.257,3.456 C24.491,7.694 24.814,14.376 21.245,19.000 L26.104,23.863 ZM18.130,5.586 C16.471,3.927 14.267,3.013 11.922,3.013 C9.577,3.013 7.373,3.927 5.715,5.586 C2.293,9.011 2.293,14.585 5.715,18.010 C7.373,19.670 9.577,20.584 11.922,20.584 C14.267,20.584 16.471,19.670 18.130,18.010 C21.551,14.585 21.551,9.011 18.130,5.586 Z" />
+                    </svg>
+                </a>
+
+                <!-- mobail button menu close -->
+                <span class="header-btn_close">
+                    <img src="img/close.svg" width="20" height="20" alt="Close mobail menu">
+                </span>
+            </div>
+        </div>
+
         <div class="container">
 
             <div class="header__menu">
@@ -35,6 +59,12 @@
                         </svg>
                     </a>
                 </nav>
+
+                <!-- mobail button menu open-->
+                <span class="header-btn_menu">
+                    <img src="img/menu.svg" width="30" height="30" alt="Menu mobail">
+                </span>
+
             </div> <!-- /header__menu -->
 
             <h1 class="header__title">Expert advice for<br>discerning buyers</h1>
@@ -167,23 +197,6 @@
                     <span class="comments__slider-city">Oregon</span>
                 </div> <!-- /comments__slider-item -->
 
-
-                <!-- <button class="comments__slider-btn comments__slider-btn_prev">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px"
-                        height="20px">
-                        <path fill-rule="evenodd" fill="rgb(47, 201, 239)"
-                            d="M9.536,19.022 L11.651,16.913 L5.728,11.008 L26.008,11.008 L26.008,8.025 L5.728,8.025 L11.651,2.120 L9.536,0.011 L0.002,9.517 L9.536,19.022 Z" />
-                    </svg>
-                </button> -->
-
-                <!-- <button class="comments__slider-btn comments__slider-btn_next">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px"
-                        height="20px">
-                        <path fill-rule="evenodd" fill="rgb(47, 201, 239)"
-                            d="M16.464,0.977 L14.349,3.086 L20.271,8.991 L-0.008,8.991 L-0.008,11.974 L20.271,11.974 L14.349,17.879 L16.464,19.988 L25.997,10.483 L16.464,0.977 Z" />
-                    </svg>
-                </button> -->
-
             </div> <!-- /comments__slider -->
         </div> <!-- /container -->
     </section> <!-- /comments -->
@@ -193,56 +206,55 @@
     <!-- ...... Секция form ...... -->
     <section class="contacts">
         <div class="contacts-wrapper">
-            <div class="container">
 
-                <div class="contacts__content">
+            <div class="contacts__content">
 
-                    <div class="contacts__content-title">
-                        Let us hear your thoughts
-                    </div>
-                    <p class="contacts__content-subtitle">If you have any questions about our consulting services,
-                        please contact us
-                    </p>
+                <div class="contacts__content-title">
+                    Let us hear your thoughts
+                </div>
+                <p class="contacts__content-subtitle">If you have any questions about our consulting services,
+                    please contact us
+                </p>
 
-                    <div class="contacts__form-wrapper">
+                <div class="contacts__form-wrapper">
 
-                        <form class="contacts__form" action="#">
-                            <div class="form__left-wrapper">
-                                <label class="contacts__form-label" for="name">FULL NAME</label>
-                                <input class="contacts__form-input" type="name" placeholder="How we should call you?"
-                                    name="name" required>
+                    <form class="contacts__form" action="#">
+                        <div class="form__left-wrapper">
+                            <label class="contacts__form-label" for="name">FULL NAME</label>
+                            <input class="contacts__form-input" type="name" placeholder="How we should call you?"
+                                name="name" required>
 
-                                <label class="contacts__form-label" for="email">EMAIL ADDRESS</label>
-                                <input class="contacts__form-input" type="name"
-                                    placeholder="Enter a valid email address" name="email" required>
-                            </div>
+                            <label class="contacts__form-label" for="email">EMAIL ADDRESS</label>
+                            <input class="contacts__form-input" type="name" placeholder="Enter a valid email address"
+                                name="email" required>
+                        </div>
 
-                            <div class="form__right-wrapper">
-                                <label class="contacts__form-label" for="message">YOUR MESSAGE</label>
-                                <textarea name="message" class="contacts__form-textarea" id="message"
-                                    placeholder="Tell us more about your projects"></textarea>
+                        <div class="form__right-wrapper">
+                            <label class="contacts__form-label" for="message">YOUR MESSAGE</label>
+                            <textarea name="message" class="contacts__form-textarea" id="message"
+                                placeholder="Tell us more about your projects"></textarea>
 
-                                <button class="contacts__form-btn" type="submit">Submit</button>
-                            </div>
-                        </form>
-                    </div> <!-- /contacts__form-wrapper -->
-                </div> <!-- /form__content -->
+                            <button class="contacts__form-btn" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div> <!-- /contacts__form-wrapper -->
+            </div> <!-- /form__content -->
 
-                <div class="contacts__map">
-                    <div class="map-wrapper">
-                        <p class="map__city">Sacramento, CA</p>
-                        <p class="map__address">222 Woodmere Road , Suite 250<br>Folsom, California 95630</p>
-                        <span class="map__phone">p 949-870-1227</span>
-                    </div>
-
-                    <a class="map__btn-full" href="#">
-                        <img src="img/map-full.png" alt="full">
-                    </a>
-
-                    <img class="map__circle" src="img/map-ellipse.png" alt="ellipse">
+            <div class="contacts__map">
+                <div class="map-wrapper">
+                    <p class="map__city">Sacramento, CA</p>
+                    <p class="map__address">222 Woodmere Road , Suite 250<br>Folsom, California 95630</p>
+                    <span class="map__phone">p 949-870-1227</span>
                 </div>
 
-            </div> <!-- /contacts-wrapper -->
+                <a class="map__btn-full" href="#">
+                    <img src="img/map-full.png" alt="full">
+                </a>
+
+                <img class="map__circle" src="img/map-ellipse.png" alt="ellipse">
+            </div>
+
+
         </div> <!-- /container -->
     </section> <!-- /contacts -->
 
@@ -329,6 +341,22 @@
                     </a>
                 </div>
             </div> <!-- /footer__info-wrapper -->
+
+            <div class="contacts__map_footer">
+                <div class="map-wrapper_footer">
+                    <p class="map__city_footer">Sacramento, CA</p>
+                    <p class="map__address_footer">222 Woodmere Road , Suite 250<br>Folsom, California 95630
+                    </p>
+                    <span class="map__phone_footer">p 949-870-1227</span>
+                </div>
+
+                <a class="map__btn-full_footer" href="#">
+                    <img src="img/map-full.png" alt="full">
+                </a>
+
+                <img class="map__circle" src="img/map-ellipse.png" alt="ellipse">
+            </div>
+
         </div> <!-- /container-footer -->
     </footer>
 
