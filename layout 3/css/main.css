@@ -488,6 +488,22 @@ body {
     .article__text {
         width: 100%;
     }
+
+    .header__navigation {
+        align-items: flex-start;
+    }
+
+    .header__btn-menu svg {
+        stroke: #e97274;
+    }
+
+    body {
+        background-position: initial;
+    }
+
+    .article:last-child {
+        margin-bottom: 115px;
+    }
 }
 
 
