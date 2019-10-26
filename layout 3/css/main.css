@@ -162,7 +162,6 @@ body {
  .header__btn-search {    
     border-radius: 50%;
     background: linear-gradient(45deg, rgba(177,95,112, 1) 0%, rgba(250,120,117, 1) 100%);
-    /* box-shadow: 0px 18px 35px 0px rgba(250, 120, 117, 0.42);   */
     box-shadow: 0 18px 35px 0 rgb(63, 48, 81, .42);    
     width: 60px;
     height: 60px;     
@@ -326,7 +325,7 @@ body {
 }
 
 .footer__social {    
-    width: 15%;
+    width: 20%;
     text-align: end;
 }
 
@@ -377,5 +376,227 @@ body {
     box-shadow: 3px 3px 10px rgba(63, 48, 81, .3); 
     transform: scale(1.1, 1.1);
     background: #453f75;
+}
 
+
+/* ..... responsive ............ */
+
+  /*maximum screen width: 1490px */
+  @media (max-width:1490px) {
+      .container_main {
+          width: 90%;
+      }
+
+      .subscription_bg-wrap {
+        padding: 100px 100px;
+      }
+}
+
+
+/*maximum screen width: 1376px */
+@media (max-width:1376px) {  
+
+    .subscription_bg-wrap {
+      padding: 80px 50px;
+    }
+}
+
+
+  /*maximum screen width: 1280px */
+  @media (max-width:1280px) {
+    .container {
+        width: 90%;
+    }
+
+    .subscription__form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .subscription__form-input {
+        margin-bottom: 25px;
+    }
+
+
+}
+
+
+/*maximum screen width: 950px */
+@media (max-width:950px) {
+    .subscription_bg-wrap {
+        flex-direction: column;
+    }
+
+    .subscription__form {
+        align-items: center;
+    }
+
+    .subscription__form-btn {
+        margin-left: 0;
+    }
+
+    .subscription__left-box {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .subscription__subtitle {
+        width: 100%;
+    }
+
+    .subscription__title {
+        width: 100%;
+    }
+
+    .footer-wrapper {
+        align-items: flex-start;
+    }
+
+    .footer__social {
+        display: flex;
+        flex-direction: column;
+        width: 10%;
+        margin-bottom: 10px;
+    }
+
+    .footer__social a {
+        margin-bottom: 10px;
+    }
+
+    .footer__menu {
+        width: 20%;
+    }
+
+    .article-wrappers {
+        box-shadow: 0 0 38px 0px rgba(250, 120, 117, 0.1);
+    }
+}
+
+
+ /*maximum screen width: 768px */
+ @media (max-width:768px) {
+    .article-wrappers {
+        width: 90%;
+    }
+
+    .article_right, .article {
+        justify-content: center;
+    }
+
+    .article__text {
+        width: 100%;
+    }
+}
+
+
+  /*maximum screen width: 576px */
+  @media (max-width:576px) {
+    .container {
+        width: 100%;
+    }
+
+    .header__input-email {
+        margin-bottom: 30px;
+    }
+
+    .header__text {
+        width: 100%;
+    }
+
+    .article-wrappers {
+        padding: 65px 30px 50px 30px;
+    }
+
+    .article {
+        margin-bottom: 105px;
+    }
+
+    .footer-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .footer__info, .footer__menu, .footer__social {
+        width: 100%;
+    } 
+
+    .footer__social {
+        flex-direction: row;
+    }
+
+    .footer__menu {
+        margin-bottom: 30px;
+    }
+
+    .footer__text {
+        margin-bottom: 30px;
+    }
+
+    .footer__copyright {
+        margin-bottom: 30px;
+    }
+}
+
+
+  /*maximum screen width: 480px */
+  @media (max-width:480px) {
+    .header__title  {
+        font-size: 38px;
+        font-weight: 800;
+        line-height: 45px;
+        font-size: 30px;
+    }
+
+    .header__text {
+        font-size: 15px;
+        line-height: 27px;
+        margin-bottom: 30px;
+    }
+
+    .header__navigation {
+        margin-bottom: 110px;
+    }
+
+    .header  {
+        padding-top: 25px;
+    }
+
+    .header__navigation {
+        flex-direction: column;
+    }
+
+    .header__logo {
+        margin-bottom: 30px;
+    }
+
+    .header__input-email {
+        width: 65%;
+    }
+
+    .article__text {
+        font-size: 15px;
+        line-height: 27px;
+    }
+
+    .article-wrappers {
+        padding: 30px 20px 30px 20px;
+    }
+
+    .article__title {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    .subscription__right-box {
+        width: 100%;
+    }
+
+    .subscription__form-input {
+        width: 60%;
+    }
+
+    .subscription_bg-wrap {
+        padding: 80px 10px;
+    }
 }
