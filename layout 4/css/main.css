@@ -149,3 +149,127 @@ body {
 .header__btn:hover {
     background: #5dbb9c;
 }
+
+
+/* ..... Секция product ......  */
+.product {
+    padding-right: 160px;
+    position: relative;
+}
+
+.product-wrapper {
+    position: absolute;
+    left: -170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-cards {
+    display: flex;
+    margin-right: 138px;
+}
+
+.product-card {
+    position: relative;
+    margin-right: 40px;
+    width: 372px;
+    height: 500px;
+    background: rgba(255, 255, 255, 1.0);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1.0), rgba(86, 86, 86, 1.0));
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1.0), rgba(86, 86, 86, 1.0));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1.0), rgba(86, 86, 86, 1.0));
+}
+
+.product-card::after {
+    background: transparent;
+    background: -moz-linear-gradient(bottom, rgba(48, 68, 74, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 0, 0, 0.8)), color-stop(100%, rgba(0, 0, 0, 0.1)));
+    background: -webkit-linear-gradient(bottom, rgba(48, 68, 74, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%);
+    background: -o-linear-gradient(bottom, rgba(48, 68, 74, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%);
+    background: -ms-linear-gradient(bottom, rgba(48, 68, 74, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%);
+    background: linear-gradient(to top, rgba(48, 68, 74, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%);
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.product-card_hover {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+
+}
+
+.product-card:last-child {
+    margin-right: 0;
+}
+
+.product-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+} 
+
+.product-card__label {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    background: #3984f3;
+    padding: 5px 30px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 42px;
+    z-index: 5;
+}
+
+.product-card__city {
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 42px;
+    color: #fff;
+    z-index: 5;
+}
+.product-content__title {
+    position: relative;
+    font-size: 50px;
+    font-weight: 600;
+    color: #091e40;
+    line-height: 62px;
+    margin-bottom: 100px;
+}
+
+.product-content__title::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 78px;
+    height: 6px;
+    background: #3984f3;
+    margin-top: 50px;
+}
+
+.product-content__text {
+    font-size: 22px;
+    color: #81858e;
+    line-height: 42px;
+    width: 640px;
+    margin-bottom: 80px;
+}
+
+.product-content__btn {
+    font-size: 23px;
+    line-height: 42px;
+    color: #fff;
+    background: #3984f3;
+    padding: 20px 66px;
+}
