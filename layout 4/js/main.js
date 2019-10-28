@@ -1,0 +1,76 @@
+$(document).ready(function () {
+
+    // ----- Mobail menu button -----
+    // $('.header-btn_menu').on('click', function () {
+    //     $('.main__mobail_wrap').show();
+    //     $(this).hide();
+    //     $('.header-btn_close').show();
+
+    // });
+
+    // $('.header-btn_close').on('click', function () {
+    //     $('.main__mobail_wrap').hide();
+    //     $(this).hide();
+    //     $('.header-btn_menu').show();
+
+    // });
+
+
+    // ----- Слайдер Slick -----
+
+    $('.product-cards').slick({
+        dots: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: '<button class="product__slider-btn_prev product__slider-btn"><img src="img/btn-prev.svg" alt="arrow"></button>',
+        nextArrow: '<button class="product__slider-btn_next product__slider-btn"><img src="img/btn-next.svg" alt="arrow"></button>',
+
+
+        // ----- responsive slider -----
+        responsive: [
+
+            {
+                breakpoint: 1240,
+                settings: {
+                    prevArrow: false,
+                    nextArrow: false,
+                    dots: true,
+
+                }
+            },
+
+            {
+                breakpoint: 836,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    prevArrow: false,
+                    nextArrow: false,
+                    dots: true,
+
+                }
+            },
+
+
+        ]
+    });
+
+
+    // Слайдер секции videos
+    $('.videos-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+    });
+
+    // Слайдер секции categories
+    $('.categories-slider').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: false,
+    });
+
+
+
+
+});

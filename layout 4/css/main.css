@@ -56,6 +56,8 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    overflow-y: hidden;
 }
 
 /* ----------------- */
@@ -153,32 +155,30 @@ body {
 
 /* ..... Секция product ......  */
 .product {
+    margin-bottom: 100px;
     padding-right: 160px;
-    position: relative;
+    /* position: relative; */
 }
 
-.product-wrapper {
-    position: absolute;
-    left: -170px;
+.product-wrapper {   
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transform: translateX(-170px);
 }
 
 .product-cards {
     display: flex;
     margin-right: 138px;
+    width: 100%;
+    /* width: 1050px; */
 }
 
 .product-card {
     position: relative;
     margin-right: 40px;
     width: 372px;
-    height: 500px;
-    background: rgba(255, 255, 255, 1.0);
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1.0), rgba(86, 86, 86, 1.0));
-    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1.0), rgba(86, 86, 86, 1.0));
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1.0), rgba(86, 86, 86, 1.0));
+    height: 500px;    
 }
 
 .product-card::after {
@@ -202,8 +202,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    display: none;
-
+    /* transform: translateY(-45px); */
+    /* display: none; */
 }
 
 .product-card:last-child {
@@ -239,13 +239,21 @@ body {
     color: #fff;
     z-index: 5;
 }
+
+.product-card__days {
+    font-size: 24px;
+    line-height: 42px;
+    color: #a0a0a0;
+
+}
+
 .product-content__title {
     position: relative;
     font-size: 50px;
     font-weight: 600;
     color: #091e40;
     line-height: 62px;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
 }
 
 .product-content__title::after {
@@ -255,7 +263,7 @@ body {
     width: 78px;
     height: 6px;
     background: #3984f3;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .product-content__text {
@@ -273,3 +281,222 @@ body {
     background: #3984f3;
     padding: 20px 66px;
 }
+
+.slick-slide {
+    margin: 0px 20px;
+    width: 100%;     
+}
+
+.slick-track {
+    /* padding-top: 65px; */
+    padding-bottom: 40px;
+}
+
+.slick-current {
+    /* margin-right: 20px; */
+    /* margin-left: 20px; */
+    /* width: 372px; 
+    height: 500px; */
+}
+
+.container-test {
+    width: 1170px;
+}
+
+.product__slider-btn_prev {
+    position: absolute;
+    z-index: 6;
+    left: 320px;
+    bottom: -60px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.product__slider-btn_next {
+    position: absolute;
+    right: 685px;
+    bottom: -60px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+/* ............. Секция videos ........ */
+
+.videos {
+    padding-top: 220px;
+    padding-bottom: 128px;
+}
+
+.videos__title {
+    text-align: center;
+    font-size: 50px;
+    line-height: 61px;
+    font-weight: 600;
+    margin-bottom: 90px;
+}
+
+.videos__title::after {
+    position: absolute;
+    display: block;
+    content: '';
+    right: 50%;
+    margin-right: -39px;
+    width: 78px;
+    height: 6px;
+    background: #3984f3;
+    margin-top: 35px;
+}
+
+.videos__text {
+    font-size: 22px;
+    line-height: 41px;
+    color: #81858e;
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;   
+    margin-bottom: 110px;
+}
+
+.videos-wrapper {
+    display: flex;
+}
+
+.videos-slider {
+    /* display: flex; */
+    width: 1032px;
+    height: 613px;
+}
+
+.videos-slide__video {
+    overflow: hidden;
+}
+
+.videos__dots-slide {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.videos-dots {
+    overflow-y: auto;
+    max-height: 612px;
+    width: 540px;
+    /* margin-left: 20px; */
+}
+
+.dots-info__title {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 34px;
+    color: #091e40;
+    margin-bottom: 1px;
+}
+
+.dots-info__time {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 34px;
+    color: #091e40;
+    opacity: .7;
+}
+
+.videos__dots-slide img {
+    margin-right: 20px;
+}
+
+
+/* ...... Секция categories ..... */
+.categories {
+    padding-top: 128px;
+}
+
+.categories__title {
+    text-align: center;
+    font-size: 50px;
+    line-height: 61px;
+    font-weight: 600;
+    margin-bottom: 90px;
+}
+
+.categories__title::after {
+    position: absolute;
+    display: block;
+    content: '';
+    right: 50%;
+    margin-right: -39px;
+    width: 78px;
+    height: 6px;
+    background: #3984f3;
+    margin-top: 35px;
+}
+
+.categories__text {
+    font-size: 22px;
+    line-height: 41px;
+    color: #81858e;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;   
+    margin-bottom: 170px;
+}
+.categories-slider__item {
+    position: relative;
+    width: 472px;
+    height: 500px;
+}
+
+.categories-slider__item:last-child {
+    width: 183px;
+    /* transform: translateX(-50%); */
+}
+
+.categories-slider__item:first-child {
+    /* transform: translateX(-50%); */
+    width: 183px;
+}
+
+.categories-slider__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.categories-slider__item::after {
+    background: transparent;
+    background: -moz-linear-gradient(bottom, rgba(48, 68, 74, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 0, 0, 0.8)), color-stop(100%, rgba(0, 0, 0, 0.1)));
+    background: -webkit-linear-gradient(bottom, rgba(48, 68, 74, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%);
+    background: -o-linear-gradient(bottom, rgba(48, 68, 74, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%);
+    background: -ms-linear-gradient(bottom, rgba(48, 68, 74, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%);
+    background: linear-gradient(to top, rgba(48, 68, 74, 0.8) 0%, rgba(0, 0, 0, 0.1) 55%);
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.categories-slider__signature {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    font-size: 28px;
+    line-height: 45px;
+    color: #fff;
+    z-index: 5;
+}
+
+.categories-slider {
+    
+}
+
+.slick-active {
+    /* width: 472px !important;  */
+}
+

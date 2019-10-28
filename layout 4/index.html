@@ -10,6 +10,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,800&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -58,21 +60,24 @@
 
     <!-- Секция product -->
     <section id="product" class="product">
-        <div class="product-wrapper">
+        <div class="container-test">
+            <div class="product-wrapper">
 
-            <div class="product-cards">
-                <div class="product-card">
-                    <img src="img/images-3.jpg" alt="">
-                    <span class="product-card__label">$780</span>
-                    <span class="product-card__city">Kuramathi, maldives</span>
+                <!-- ........ Слайдер Slick ....... -->
+                <div class="product-cards product-cards_slider">
+                    <div class="product-card">
+                        <img src="img/images-3.jpg" alt="">
+                        <span class="product-card__label">$780</span>
+                        <span class="product-card__city">Kuramathi, maldives</span>
 
-                    <div class="product-card_hover">
-                        <div class="star-wrapper">
-                            <span class="product-card__star">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    x="0px" y="0px" viewBox="0 0 55.867 55.867" width="15px" height="15px"
-                                    style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
-                                    <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
+                        <div class="product-card_hover">
+                            <div class="star-wrapper">
+                                <span class="product-card__star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 55.867 55.867" width="20px" height="20px"
+                                        style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve"
+                                        fill="#3984f3">
+                                        <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
                                                c-0.272-0.266-0.37-0.663-0.253-1.024c0.118-0.362,0.431-0.626,0.808-0.681l18.09-2.629l8.091-16.393
                                                c0.168-0.342,0.516-0.558,0.896-0.558l0,0c0.381,0,0.729,0.216,0.896,0.558l8.09,16.393l18.091,2.629
                                                c0.377,0.055,0.689,0.318,0.808,0.681c0.117,0.361,0.02,0.759-0.253,1.024L42.475,35.363l3.09,18.017
@@ -81,14 +86,15 @@
                                                l14.854-7.808c0.291-0.154,0.638-0.154,0.931,0l14.852,7.808l-2.836-16.538c-0.056-0.324,0.052-0.655,0.287-0.885l12.016-11.713
                                                l-16.605-2.413c-0.326-0.047-0.607-0.252-0.753-0.547L27.934,4.578l-7.427,15.047c-0.146,0.295-0.427,0.5-0.753,0.547L3.149,22.584z
                                                " />
-                                </svg>
-                            </span>
+                                    </svg>
+                                </span>
 
-                            <span class="product-card__star">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    x="0px" y="0px" viewBox="0 0 55.867 55.867" width="15px" height="15px"
-                                    style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
-                                    <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
+                                <span class="product-card__star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 55.867 55.867" width="20px" height="20px"
+                                        style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve"
+                                        fill="#3984f3">
+                                        <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
                                                    c-0.272-0.266-0.37-0.663-0.253-1.024c0.118-0.362,0.431-0.626,0.808-0.681l18.09-2.629l8.091-16.393
                                                    c0.168-0.342,0.516-0.558,0.896-0.558l0,0c0.381,0,0.729,0.216,0.896,0.558l8.09,16.393l18.091,2.629
                                                    c0.377,0.055,0.689,0.318,0.808,0.681c0.117,0.361,0.02,0.759-0.253,1.024L42.475,35.363l3.09,18.017
@@ -97,14 +103,15 @@
                                                    l14.854-7.808c0.291-0.154,0.638-0.154,0.931,0l14.852,7.808l-2.836-16.538c-0.056-0.324,0.052-0.655,0.287-0.885l12.016-11.713
                                                    l-16.605-2.413c-0.326-0.047-0.607-0.252-0.753-0.547L27.934,4.578l-7.427,15.047c-0.146,0.295-0.427,0.5-0.753,0.547L3.149,22.584z
                                                    " />
-                                </svg>
-                            </span>
+                                    </svg>
+                                </span>
 
-                            <span class="product-card__star">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    x="0px" y="0px" viewBox="0 0 55.867 55.867" width="15px" height="15px"
-                                    style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
-                                    <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
+                                <span class="product-card__star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 55.867 55.867" width="20px" height="20px"
+                                        style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve"
+                                        fill="#3984f3">
+                                        <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
                                                        c-0.272-0.266-0.37-0.663-0.253-1.024c0.118-0.362,0.431-0.626,0.808-0.681l18.09-2.629l8.091-16.393
                                                        c0.168-0.342,0.516-0.558,0.896-0.558l0,0c0.381,0,0.729,0.216,0.896,0.558l8.09,16.393l18.091,2.629
                                                        c0.377,0.055,0.689,0.318,0.808,0.681c0.117,0.361,0.02,0.759-0.253,1.024L42.475,35.363l3.09,18.017
@@ -113,14 +120,15 @@
                                                        l14.854-7.808c0.291-0.154,0.638-0.154,0.931,0l14.852,7.808l-2.836-16.538c-0.056-0.324,0.052-0.655,0.287-0.885l12.016-11.713
                                                        l-16.605-2.413c-0.326-0.047-0.607-0.252-0.753-0.547L27.934,4.578l-7.427,15.047c-0.146,0.295-0.427,0.5-0.753,0.547L3.149,22.584z
                                                        " />
-                                </svg>
-                            </span>
+                                    </svg>
+                                </span>
 
-                            <span class="product-card__star">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    x="0px" y="0px" viewBox="0 0 55.867 55.867" width="15px" height="15px"
-                                    style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
-                                    <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
+                                <span class="product-card__star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 55.867 55.867" width="20px" height="20px"
+                                        style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve"
+                                        fill="#3984f3">
+                                        <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
                                                            c-0.272-0.266-0.37-0.663-0.253-1.024c0.118-0.362,0.431-0.626,0.808-0.681l18.09-2.629l8.091-16.393
                                                            c0.168-0.342,0.516-0.558,0.896-0.558l0,0c0.381,0,0.729,0.216,0.896,0.558l8.09,16.393l18.091,2.629
                                                            c0.377,0.055,0.689,0.318,0.808,0.681c0.117,0.361,0.02,0.759-0.253,1.024L42.475,35.363l3.09,18.017
@@ -129,14 +137,15 @@
                                                            l14.854-7.808c0.291-0.154,0.638-0.154,0.931,0l14.852,7.808l-2.836-16.538c-0.056-0.324,0.052-0.655,0.287-0.885l12.016-11.713
                                                            l-16.605-2.413c-0.326-0.047-0.607-0.252-0.753-0.547L27.934,4.578l-7.427,15.047c-0.146,0.295-0.427,0.5-0.753,0.547L3.149,22.584z
                                                            " />
-                                </svg>
-                            </span>
+                                    </svg>
+                                </span>
 
-                            <span class="product-card__star">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    x="0px" y="0px" viewBox="0 0 55.867 55.867" width="15px" height="15px"
-                                    style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
-                                    <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
+                                <span class="product-card__star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 55.867 55.867" width="20px" height="20px"
+                                        style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve"
+                                        fill="#3984f3">
+                                        <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
                                                                c-0.272-0.266-0.37-0.663-0.253-1.024c0.118-0.362,0.431-0.626,0.808-0.681l18.09-2.629l8.091-16.393
                                                                c0.168-0.342,0.516-0.558,0.896-0.558l0,0c0.381,0,0.729,0.216,0.896,0.558l8.09,16.393l18.091,2.629
                                                                c0.377,0.055,0.689,0.318,0.808,0.681c0.117,0.361,0.02,0.759-0.253,1.024L42.475,35.363l3.09,18.017
@@ -145,26 +154,27 @@
                                                                l14.854-7.808c0.291-0.154,0.638-0.154,0.931,0l14.852,7.808l-2.836-16.538c-0.056-0.324,0.052-0.655,0.287-0.885l12.016-11.713
                                                                l-16.605-2.413c-0.326-0.047-0.607-0.252-0.753-0.547L27.934,4.578l-7.427,15.047c-0.146,0.295-0.427,0.5-0.753,0.547L3.149,22.584z
                                                                " />
-                                </svg>
-                            </span>
-                        </div> <!-- /star-wrapper -->
+                                    </svg>
+                                </span>
+                            </div> <!-- /star-wrapper -->
 
-                        <div class="product-card__days">7 days tour</div>
-                    </div> <!-- /product-card_hover -->
-                </div> <!-- /product-card -->
+                            <div class="product-card__days">7 days tour</div>
+                        </div> <!-- /product-card_hover -->
+                    </div> <!-- /product-card -->
 
-                <div class="product-card">
-                    <img src="img/images-2.jpg" alt="">
-                    <span class="product-card__label">$640</span>
-                    <span class="product-card__city">Kathmandu, Nepal</span>
+                    <div class="product-card">
+                        <img src="img/images-2.jpg" alt="">
+                        <span class="product-card__label">$640</span>
+                        <span class="product-card__city">Kathmandu, Nepal</span>
 
-                    <div class="product-card_hover">
-                        <div class="star-wrapper">
-                            <span class="product-card__star">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    x="0px" y="0px" viewBox="0 0 55.867 55.867" width="15px" height="15px"
-                                    style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
-                                    <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
+                        <div class="product-card_hover">
+                            <div class="star-wrapper">
+                                <span class="product-card__star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 55.867 55.867" width="20px" height="20px"
+                                        style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve"
+                                        fill="#3984f3">
+                                        <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
                                                    c-0.272-0.266-0.37-0.663-0.253-1.024c0.118-0.362,0.431-0.626,0.808-0.681l18.09-2.629l8.091-16.393
                                                    c0.168-0.342,0.516-0.558,0.896-0.558l0,0c0.381,0,0.729,0.216,0.896,0.558l8.09,16.393l18.091,2.629
                                                    c0.377,0.055,0.689,0.318,0.808,0.681c0.117,0.361,0.02,0.759-0.253,1.024L42.475,35.363l3.09,18.017
@@ -173,14 +183,15 @@
                                                    l14.854-7.808c0.291-0.154,0.638-0.154,0.931,0l14.852,7.808l-2.836-16.538c-0.056-0.324,0.052-0.655,0.287-0.885l12.016-11.713
                                                    l-16.605-2.413c-0.326-0.047-0.607-0.252-0.753-0.547L27.934,4.578l-7.427,15.047c-0.146,0.295-0.427,0.5-0.753,0.547L3.149,22.584z
                                                    " />
-                                </svg>
-                            </span>
+                                    </svg>
+                                </span>
 
-                            <span class="product-card__star">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    x="0px" y="0px" viewBox="0 0 55.867 55.867" width="15px" height="15px"
-                                    style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
-                                    <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
+                                <span class="product-card__star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 55.867 55.867" width="20px" height="20px"
+                                        style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve"
+                                        fill="#3984f3">
+                                        <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
                                                        c-0.272-0.266-0.37-0.663-0.253-1.024c0.118-0.362,0.431-0.626,0.808-0.681l18.09-2.629l8.091-16.393
                                                        c0.168-0.342,0.516-0.558,0.896-0.558l0,0c0.381,0,0.729,0.216,0.896,0.558l8.09,16.393l18.091,2.629
                                                        c0.377,0.055,0.689,0.318,0.808,0.681c0.117,0.361,0.02,0.759-0.253,1.024L42.475,35.363l3.09,18.017
@@ -189,14 +200,15 @@
                                                        l14.854-7.808c0.291-0.154,0.638-0.154,0.931,0l14.852,7.808l-2.836-16.538c-0.056-0.324,0.052-0.655,0.287-0.885l12.016-11.713
                                                        l-16.605-2.413c-0.326-0.047-0.607-0.252-0.753-0.547L27.934,4.578l-7.427,15.047c-0.146,0.295-0.427,0.5-0.753,0.547L3.149,22.584z
                                                        " />
-                                </svg>
-                            </span>
+                                    </svg>
+                                </span>
 
-                            <span class="product-card__star">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    x="0px" y="0px" viewBox="0 0 55.867 55.867" width="15px" height="15px"
-                                    style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
-                                    <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
+                                <span class="product-card__star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 55.867 55.867" width="20px" height="20px"
+                                        style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve"
+                                        fill="#3984f3">
+                                        <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
                                                            c-0.272-0.266-0.37-0.663-0.253-1.024c0.118-0.362,0.431-0.626,0.808-0.681l18.09-2.629l8.091-16.393
                                                            c0.168-0.342,0.516-0.558,0.896-0.558l0,0c0.381,0,0.729,0.216,0.896,0.558l8.09,16.393l18.091,2.629
                                                            c0.377,0.055,0.689,0.318,0.808,0.681c0.117,0.361,0.02,0.759-0.253,1.024L42.475,35.363l3.09,18.017
@@ -205,14 +217,15 @@
                                                            l14.854-7.808c0.291-0.154,0.638-0.154,0.931,0l14.852,7.808l-2.836-16.538c-0.056-0.324,0.052-0.655,0.287-0.885l12.016-11.713
                                                            l-16.605-2.413c-0.326-0.047-0.607-0.252-0.753-0.547L27.934,4.578l-7.427,15.047c-0.146,0.295-0.427,0.5-0.753,0.547L3.149,22.584z
                                                            " />
-                                </svg>
-                            </span>
+                                    </svg>
+                                </span>
 
-                            <span class="product-card__star">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    x="0px" y="0px" viewBox="0 0 55.867 55.867" width="15px" height="15px"
-                                    style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
-                                    <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
+                                <span class="product-card__star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 55.867 55.867" width="20px" height="20px"
+                                        style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve"
+                                        fill="#3984f3">
+                                        <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
                                                                c-0.272-0.266-0.37-0.663-0.253-1.024c0.118-0.362,0.431-0.626,0.808-0.681l18.09-2.629l8.091-16.393
                                                                c0.168-0.342,0.516-0.558,0.896-0.558l0,0c0.381,0,0.729,0.216,0.896,0.558l8.09,16.393l18.091,2.629
                                                                c0.377,0.055,0.689,0.318,0.808,0.681c0.117,0.361,0.02,0.759-0.253,1.024L42.475,35.363l3.09,18.017
@@ -221,14 +234,15 @@
                                                                l14.854-7.808c0.291-0.154,0.638-0.154,0.931,0l14.852,7.808l-2.836-16.538c-0.056-0.324,0.052-0.655,0.287-0.885l12.016-11.713
                                                                l-16.605-2.413c-0.326-0.047-0.607-0.252-0.753-0.547L27.934,4.578l-7.427,15.047c-0.146,0.295-0.427,0.5-0.753,0.547L3.149,22.584z
                                                                " />
-                                </svg>
-                            </span>
+                                    </svg>
+                                </span>
 
-                            <span class="product-card__star">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    x="0px" y="0px" viewBox="0 0 55.867 55.867" width="15px" height="15px"
-                                    style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
-                                    <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
+                                <span class="product-card__star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 55.867 55.867" width="20px" height="20px"
+                                        style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve"
+                                        fill="#3984f3">
+                                        <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
                                                                    c-0.272-0.266-0.37-0.663-0.253-1.024c0.118-0.362,0.431-0.626,0.808-0.681l18.09-2.629l8.091-16.393
                                                                    c0.168-0.342,0.516-0.558,0.896-0.558l0,0c0.381,0,0.729,0.216,0.896,0.558l8.09,16.393l18.091,2.629
                                                                    c0.377,0.055,0.689,0.318,0.808,0.681c0.117,0.361,0.02,0.759-0.253,1.024L42.475,35.363l3.09,18.017
@@ -237,27 +251,27 @@
                                                                    l14.854-7.808c0.291-0.154,0.638-0.154,0.931,0l14.852,7.808l-2.836-16.538c-0.056-0.324,0.052-0.655,0.287-0.885l12.016-11.713
                                                                    l-16.605-2.413c-0.326-0.047-0.607-0.252-0.753-0.547L27.934,4.578l-7.427,15.047c-0.146,0.295-0.427,0.5-0.753,0.547L3.149,22.584z
                                                                    " />
-                                </svg>
-                            </span>
-                        </div> <!-- /star-wrapper -->
+                                    </svg>
+                                </span>
+                            </div> <!-- /star-wrapper -->
 
-                        <div class="product-card__days">7 days tour</div>
-                    </div> <!-- /product-card_hover -->
-                </div> <!-- /product-card -->
+                            <div class="product-card__days">7 days tour</div>
+                        </div> <!-- /product-card_hover -->
+                    </div> <!-- /product-card -->
 
+                    <div class="product-card">
+                        <img src="img/images-1.jpg" alt="">
+                        <span class="product-card__label">$560</span>
+                        <span class="product-card__city">Raja Ampat, Indonesia</span>
 
-                <div class="product-card">
-                    <img src="img/images-1.jpg" alt="">
-                    <span class="product-card__label">$560</span>
-                    <span class="product-card__city">Raja Ampat, Indonesia</span>
-
-                    <div class="product-card_hover">
-                        <div class="star-wrapper">
-                            <span class="product-card__star">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    x="0px" y="0px" viewBox="0 0 55.867 55.867" width="15px" height="15px"
-                                    style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
-                                    <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
+                        <div class="product-card_hover">
+                            <div class="star-wrapper">
+                                <span class="product-card__star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 55.867 55.867" width="20px" height="20px"
+                                        style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve"
+                                        fill="#3984f3">
+                                        <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
                                                    c-0.272-0.266-0.37-0.663-0.253-1.024c0.118-0.362,0.431-0.626,0.808-0.681l18.09-2.629l8.091-16.393
                                                    c0.168-0.342,0.516-0.558,0.896-0.558l0,0c0.381,0,0.729,0.216,0.896,0.558l8.09,16.393l18.091,2.629
                                                    c0.377,0.055,0.689,0.318,0.808,0.681c0.117,0.361,0.02,0.759-0.253,1.024L42.475,35.363l3.09,18.017
@@ -266,14 +280,15 @@
                                                    l14.854-7.808c0.291-0.154,0.638-0.154,0.931,0l14.852,7.808l-2.836-16.538c-0.056-0.324,0.052-0.655,0.287-0.885l12.016-11.713
                                                    l-16.605-2.413c-0.326-0.047-0.607-0.252-0.753-0.547L27.934,4.578l-7.427,15.047c-0.146,0.295-0.427,0.5-0.753,0.547L3.149,22.584z
                                                    " />
-                                </svg>
-                            </span>
+                                    </svg>
+                                </span>
 
-                            <span class="product-card__star">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    x="0px" y="0px" viewBox="0 0 55.867 55.867" width="15px" height="15px"
-                                    style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
-                                    <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
+                                <span class="product-card__star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 55.867 55.867" width="20px" height="20px"
+                                        style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve"
+                                        fill="#3984f3">
+                                        <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
                                                        c-0.272-0.266-0.37-0.663-0.253-1.024c0.118-0.362,0.431-0.626,0.808-0.681l18.09-2.629l8.091-16.393
                                                        c0.168-0.342,0.516-0.558,0.896-0.558l0,0c0.381,0,0.729,0.216,0.896,0.558l8.09,16.393l18.091,2.629
                                                        c0.377,0.055,0.689,0.318,0.808,0.681c0.117,0.361,0.02,0.759-0.253,1.024L42.475,35.363l3.09,18.017
@@ -282,14 +297,15 @@
                                                        l14.854-7.808c0.291-0.154,0.638-0.154,0.931,0l14.852,7.808l-2.836-16.538c-0.056-0.324,0.052-0.655,0.287-0.885l12.016-11.713
                                                        l-16.605-2.413c-0.326-0.047-0.607-0.252-0.753-0.547L27.934,4.578l-7.427,15.047c-0.146,0.295-0.427,0.5-0.753,0.547L3.149,22.584z
                                                        " />
-                                </svg>
-                            </span>
+                                    </svg>
+                                </span>
 
-                            <span class="product-card__star">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    x="0px" y="0px" viewBox="0 0 55.867 55.867" width="15px" height="15px"
-                                    style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
-                                    <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
+                                <span class="product-card__star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 55.867 55.867" width="20px" height="20px"
+                                        style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve"
+                                        fill="#3984f3">
+                                        <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
                                                            c-0.272-0.266-0.37-0.663-0.253-1.024c0.118-0.362,0.431-0.626,0.808-0.681l18.09-2.629l8.091-16.393
                                                            c0.168-0.342,0.516-0.558,0.896-0.558l0,0c0.381,0,0.729,0.216,0.896,0.558l8.09,16.393l18.091,2.629
                                                            c0.377,0.055,0.689,0.318,0.808,0.681c0.117,0.361,0.02,0.759-0.253,1.024L42.475,35.363l3.09,18.017
@@ -298,14 +314,15 @@
                                                            l14.854-7.808c0.291-0.154,0.638-0.154,0.931,0l14.852,7.808l-2.836-16.538c-0.056-0.324,0.052-0.655,0.287-0.885l12.016-11.713
                                                            l-16.605-2.413c-0.326-0.047-0.607-0.252-0.753-0.547L27.934,4.578l-7.427,15.047c-0.146,0.295-0.427,0.5-0.753,0.547L3.149,22.584z
                                                            " />
-                                </svg>
-                            </span>
+                                    </svg>
+                                </span>
 
-                            <span class="product-card__star">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    x="0px" y="0px" viewBox="0 0 55.867 55.867" width="15px" height="15px"
-                                    style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
-                                    <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
+                                <span class="product-card__star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 55.867 55.867" width="20px" height="20px"
+                                        style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve"
+                                        fill="#3984f3">
+                                        <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
                                                                c-0.272-0.266-0.37-0.663-0.253-1.024c0.118-0.362,0.431-0.626,0.808-0.681l18.09-2.629l8.091-16.393
                                                                c0.168-0.342,0.516-0.558,0.896-0.558l0,0c0.381,0,0.729,0.216,0.896,0.558l8.09,16.393l18.091,2.629
                                                                c0.377,0.055,0.689,0.318,0.808,0.681c0.117,0.361,0.02,0.759-0.253,1.024L42.475,35.363l3.09,18.017
@@ -314,14 +331,15 @@
                                                                l14.854-7.808c0.291-0.154,0.638-0.154,0.931,0l14.852,7.808l-2.836-16.538c-0.056-0.324,0.052-0.655,0.287-0.885l12.016-11.713
                                                                l-16.605-2.413c-0.326-0.047-0.607-0.252-0.753-0.547L27.934,4.578l-7.427,15.047c-0.146,0.295-0.427,0.5-0.753,0.547L3.149,22.584z
                                                                " />
-                                </svg>
-                            </span>
+                                    </svg>
+                                </span>
 
-                            <span class="product-card__star">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    x="0px" y="0px" viewBox="0 0 55.867 55.867" width="15px" height="15px"
-                                    style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve">
-                                    <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
+                                <span class="product-card__star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 55.867 55.867" width="20px" height="20px"
+                                        style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve"
+                                        fill="#3984f3">
+                                        <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
                                                                    c-0.272-0.266-0.37-0.663-0.253-1.024c0.118-0.362,0.431-0.626,0.808-0.681l18.09-2.629l8.091-16.393
                                                                    c0.168-0.342,0.516-0.558,0.896-0.558l0,0c0.381,0,0.729,0.216,0.896,0.558l8.09,16.393l18.091,2.629
                                                                    c0.377,0.055,0.689,0.318,0.808,0.681c0.117,0.361,0.02,0.759-0.253,1.024L42.475,35.363l3.09,18.017
@@ -330,33 +348,325 @@
                                                                    l14.854-7.808c0.291-0.154,0.638-0.154,0.931,0l14.852,7.808l-2.836-16.538c-0.056-0.324,0.052-0.655,0.287-0.885l12.016-11.713
                                                                    l-16.605-2.413c-0.326-0.047-0.607-0.252-0.753-0.547L27.934,4.578l-7.427,15.047c-0.146,0.295-0.427,0.5-0.753,0.547L3.149,22.584z
                                                                    " />
-                                </svg>
-                            </span>
-                        </div> <!-- /star-wrapper -->
+                                    </svg>
+                                </span>
+                            </div> <!-- /star-wrapper -->
 
-                        <div class="product-card__days">7 days tour</div>
-                    </div> <!-- /product-card_hover -->
-                </div> <!-- /product-card -->
+                            <div class="product-card__days">7 days tour</div>
+                        </div> <!-- /product-card_hover -->
+                    </div> <!-- /product-card -->
 
-            </div> <!-- /product-cards -->
+                    <div class="product-card">
+                        <img src="img/images-1.jpg" alt="">
+                        <span class="product-card__label">$560</span>
+                        <span class="product-card__city">Raja Ampat, Indonesia</span>
 
-            <div class="product-content">
+                        <div class="product-card_hover">
+                            <div class="star-wrapper">
+                                <span class="product-card__star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 55.867 55.867" width="20px" height="20px"
+                                        style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve"
+                                        fill="#3984f3">
+                                        <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
+                                                   c-0.272-0.266-0.37-0.663-0.253-1.024c0.118-0.362,0.431-0.626,0.808-0.681l18.09-2.629l8.091-16.393
+                                                   c0.168-0.342,0.516-0.558,0.896-0.558l0,0c0.381,0,0.729,0.216,0.896,0.558l8.09,16.393l18.091,2.629
+                                                   c0.377,0.055,0.689,0.318,0.808,0.681c0.117,0.361,0.02,0.759-0.253,1.024L42.475,35.363l3.09,18.017
+                                                   c0.064,0.375-0.09,0.754-0.397,0.978c-0.308,0.226-0.717,0.255-1.054,0.076l-16.18-8.506l-16.182,8.506
+                                                   C11.606,54.51,11.446,54.548,11.287,54.548z M3.149,22.584l12.016,11.713c0.235,0.229,0.343,0.561,0.287,0.885L12.615,51.72
+                                                   l14.854-7.808c0.291-0.154,0.638-0.154,0.931,0l14.852,7.808l-2.836-16.538c-0.056-0.324,0.052-0.655,0.287-0.885l12.016-11.713
+                                                   l-16.605-2.413c-0.326-0.047-0.607-0.252-0.753-0.547L27.934,4.578l-7.427,15.047c-0.146,0.295-0.427,0.5-0.753,0.547L3.149,22.584z
+                                                   " />
+                                    </svg>
+                                </span>
 
-                <h2 class="product-content__title">Amazing places to enjoy<br>your travel</h2>
-                <p class="product-content__text">Etiam facilisis, sapien quis porta dignissim, orci nisi pharetra
-                    dui, varius vehicula ligula
-                    nulla sit amet lorem. Aenean in vestibulum quam. Cras commodo varius neque, non gravida diam
-                    ultrices nec. Cras nulla mauris, fermentum nec libero in.
-                </p>
-                <a class="product-content__btn" href="#">Explore</a>
+                                <span class="product-card__star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 55.867 55.867" width="20px" height="20px"
+                                        style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve"
+                                        fill="#3984f3">
+                                        <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
+                                                       c-0.272-0.266-0.37-0.663-0.253-1.024c0.118-0.362,0.431-0.626,0.808-0.681l18.09-2.629l8.091-16.393
+                                                       c0.168-0.342,0.516-0.558,0.896-0.558l0,0c0.381,0,0.729,0.216,0.896,0.558l8.09,16.393l18.091,2.629
+                                                       c0.377,0.055,0.689,0.318,0.808,0.681c0.117,0.361,0.02,0.759-0.253,1.024L42.475,35.363l3.09,18.017
+                                                       c0.064,0.375-0.09,0.754-0.397,0.978c-0.308,0.226-0.717,0.255-1.054,0.076l-16.18-8.506l-16.182,8.506
+                                                       C11.606,54.51,11.446,54.548,11.287,54.548z M3.149,22.584l12.016,11.713c0.235,0.229,0.343,0.561,0.287,0.885L12.615,51.72
+                                                       l14.854-7.808c0.291-0.154,0.638-0.154,0.931,0l14.852,7.808l-2.836-16.538c-0.056-0.324,0.052-0.655,0.287-0.885l12.016-11.713
+                                                       l-16.605-2.413c-0.326-0.047-0.607-0.252-0.753-0.547L27.934,4.578l-7.427,15.047c-0.146,0.295-0.427,0.5-0.753,0.547L3.149,22.584z
+                                                       " />
+                                    </svg>
+                                </span>
 
+                                <span class="product-card__star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 55.867 55.867" width="20px" height="20px"
+                                        style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve"
+                                        fill="#3984f3">
+                                        <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
+                                                           c-0.272-0.266-0.37-0.663-0.253-1.024c0.118-0.362,0.431-0.626,0.808-0.681l18.09-2.629l8.091-16.393
+                                                           c0.168-0.342,0.516-0.558,0.896-0.558l0,0c0.381,0,0.729,0.216,0.896,0.558l8.09,16.393l18.091,2.629
+                                                           c0.377,0.055,0.689,0.318,0.808,0.681c0.117,0.361,0.02,0.759-0.253,1.024L42.475,35.363l3.09,18.017
+                                                           c0.064,0.375-0.09,0.754-0.397,0.978c-0.308,0.226-0.717,0.255-1.054,0.076l-16.18-8.506l-16.182,8.506
+                                                           C11.606,54.51,11.446,54.548,11.287,54.548z M3.149,22.584l12.016,11.713c0.235,0.229,0.343,0.561,0.287,0.885L12.615,51.72
+                                                           l14.854-7.808c0.291-0.154,0.638-0.154,0.931,0l14.852,7.808l-2.836-16.538c-0.056-0.324,0.052-0.655,0.287-0.885l12.016-11.713
+                                                           l-16.605-2.413c-0.326-0.047-0.607-0.252-0.753-0.547L27.934,4.578l-7.427,15.047c-0.146,0.295-0.427,0.5-0.753,0.547L3.149,22.584z
+                                                           " />
+                                    </svg>
+                                </span>
+
+                                <span class="product-card__star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 55.867 55.867" width="20px" height="20px"
+                                        style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve"
+                                        fill="#3984f3">
+                                        <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
+                                                               c-0.272-0.266-0.37-0.663-0.253-1.024c0.118-0.362,0.431-0.626,0.808-0.681l18.09-2.629l8.091-16.393
+                                                               c0.168-0.342,0.516-0.558,0.896-0.558l0,0c0.381,0,0.729,0.216,0.896,0.558l8.09,16.393l18.091,2.629
+                                                               c0.377,0.055,0.689,0.318,0.808,0.681c0.117,0.361,0.02,0.759-0.253,1.024L42.475,35.363l3.09,18.017
+                                                               c0.064,0.375-0.09,0.754-0.397,0.978c-0.308,0.226-0.717,0.255-1.054,0.076l-16.18-8.506l-16.182,8.506
+                                                               C11.606,54.51,11.446,54.548,11.287,54.548z M3.149,22.584l12.016,11.713c0.235,0.229,0.343,0.561,0.287,0.885L12.615,51.72
+                                                               l14.854-7.808c0.291-0.154,0.638-0.154,0.931,0l14.852,7.808l-2.836-16.538c-0.056-0.324,0.052-0.655,0.287-0.885l12.016-11.713
+                                                               l-16.605-2.413c-0.326-0.047-0.607-0.252-0.753-0.547L27.934,4.578l-7.427,15.047c-0.146,0.295-0.427,0.5-0.753,0.547L3.149,22.584z
+                                                               " />
+                                    </svg>
+                                </span>
+
+                                <span class="product-card__star">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 55.867 55.867" width="20px" height="20px"
+                                        style="enable-background:new 0 0 55.867 55.867;" xml:space="preserve"
+                                        fill="#3984f3">
+                                        <path d="M11.287,54.548c-0.207,0-0.414-0.064-0.588-0.191c-0.308-0.224-0.462-0.603-0.397-0.978l3.091-18.018L0.302,22.602
+                                                                   c-0.272-0.266-0.37-0.663-0.253-1.024c0.118-0.362,0.431-0.626,0.808-0.681l18.09-2.629l8.091-16.393
+                                                                   c0.168-0.342,0.516-0.558,0.896-0.558l0,0c0.381,0,0.729,0.216,0.896,0.558l8.09,16.393l18.091,2.629
+                                                                   c0.377,0.055,0.689,0.318,0.808,0.681c0.117,0.361,0.02,0.759-0.253,1.024L42.475,35.363l3.09,18.017
+                                                                   c0.064,0.375-0.09,0.754-0.397,0.978c-0.308,0.226-0.717,0.255-1.054,0.076l-16.18-8.506l-16.182,8.506
+                                                                   C11.606,54.51,11.446,54.548,11.287,54.548z M3.149,22.584l12.016,11.713c0.235,0.229,0.343,0.561,0.287,0.885L12.615,51.72
+                                                                   l14.854-7.808c0.291-0.154,0.638-0.154,0.931,0l14.852,7.808l-2.836-16.538c-0.056-0.324,0.052-0.655,0.287-0.885l12.016-11.713
+                                                                   l-16.605-2.413c-0.326-0.047-0.607-0.252-0.753-0.547L27.934,4.578l-7.427,15.047c-0.146,0.295-0.427,0.5-0.753,0.547L3.149,22.584z
+                                                                   " />
+                                    </svg>
+                                </span>
+                            </div> <!-- /star-wrapper -->
+
+                            <div class="product-card__days">7 days tour</div>
+                        </div> <!-- /product-card_hover -->
+                    </div> <!-- /product-card -->
+                </div> <!-- /product-cards product-cards_slider-->
+
+                <div class="product-content">
+
+                    <h2 class="product-content__title">Amazing places to enjoy<br>your travel</h2>
+                    <p class="product-content__text">Etiam facilisis, sapien quis porta dignissim, orci nisi pharetra
+                        dui, varius vehicula ligula
+                        nulla sit amet lorem. Aenean in vestibulum quam. Cras commodo varius neque, non gravida diam
+                        ultrices nec. Cras nulla mauris, fermentum nec libero in.
+                    </p>
+                    <a class="product-content__btn" href="#">Explore</a>
+
+                </div>
+            </div> <!-- /product-wrapper -->
+        </div> <!-- test -->
+    </section>
+
+
+    <!-- .......... Секция videos ........ -->
+    <section class="videos">
+        <div class="container">
+            <h2 class="videos__title">Featured videos</h2>
+            <p class="videos__text">Aliquam sodales vitae ex tincidunt consectetur. Etiam eleifend malesuada magna, at
+                imperdiet justo
+                euismod eu. Aliquam vel imperdet mi, et convallis eros. Duis fermentum fringilla nisl at vulputate. Nunc
+                nec lorem faucibus, molestie nisi id, elementum sem. Sed
+                vulputate tempor augue a efficitur urna, ultrices eu. Duis vel turpis et arcu.
+            </p>
+
+            <div class="videos-wrapper">
+                <div class="videos-slider">
+
+                    <div class="videos-slide">
+                        <div class="videos-slide__video">
+                            <a href="https://www.youtube.com/watch?v=JfAnXkAO8v8">
+                                <img src="img/video-img.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="videos-slide">
+                        <div class="videos-slide__video">
+                            <a href="https://www.youtube.com/watch?v=JfAnXkAO8v8">
+                                <img src="img/video-img-2.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="videos-slide">
+                        <div class="videos-slide__video">
+                            <a href="https://www.youtube.com/watch?v=JfAnXkAO8v8">
+                                <img src="img/video-img-3.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="videos-slide">
+                        <div class="videos-slide__video">
+                            <a href="https://www.youtube.com/watch?v=JfAnXkAO8v8">
+                                <img src="img/video-img-4.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div> <!-- /videos-slider -->
+
+
+                <div class="videos-dots">
+
+                    <div class="videos__dots-slide">
+                        <img src="img/img-1.jpg" alt="">
+                        <div class="dots-info">
+                            <h3 class="dots-info__title">When go to Maldives</h3>
+                            <span class="dots-info__time">03.55</span>
+                        </div>
+                    </div>
+
+                    <div class="videos__dots-slide">
+                        <img src="img/img-2.jpg" alt="">
+                        <div class="dots-info">
+                            <h3 class="dots-info__title">Tanzania’s deadly<br>pink lake</h3>
+                            <span class="dots-info__time">03.55</span>
+                        </div>
+                    </div>
+
+                    <div class="videos__dots-slide">
+                        <img src="img/img-3.jpg" alt="">
+                        <div class="dots-info">
+                            <h3 class="dots-info__title">Top things to do in<br>Kathmandu</h3>
+                            <span class="dots-info__time">03.55</span>
+                        </div>
+                    </div>
+
+                    <div class="videos__dots-slide">
+                        <img src="img/img-4.jpg" alt="">
+                        <div class="dots-info">
+                            <h3 class="dots-info__title">Exploring China’s<br>creative capital</h3>
+                            <span class="dots-info__time">03.55</span>
+                        </div>
+                    </div>
+
+                    <div class="videos__dots-slide">
+                        <img src="img/img-1.jpg" alt="">
+                        <div class="dots-info">
+                            <h3 class="dots-info__title">When go to Maldives</h3>
+                            <span class="dots-info__time">03.55</span>
+                        </div>
+                    </div>
+
+                    <div class="videos__dots-slide">
+                        <img src="img/img-2.jpg" alt="">
+                        <div class="dots-info">
+                            <h3 class="dots-info__title">When go to Maldives</h3>
+                            <span class="dots-info__time">03.55</span>
+                        </div>
+                    </div>
+
+                    <div class="videos__dots-slide">
+                        <img src="img/img-3.jpg" alt="">
+                        <div class="dots-info">
+                            <h3 class="dots-info__title">When go to Maldives</h3>
+                            <span class="dots-info__time">03.55</span>
+                        </div>
+                    </div>
+
+                    <div class="videos__dots-slide">
+                        <img src="img/img-4.jpg" alt="">
+                        <div class="dots-info">
+                            <h3 class="dots-info__title">When go to Maldives</h3>
+                            <span class="dots-info__time">03.55</span>
+                        </div>
+                    </div>
+                </div> <!-- /videos-dots -->
+
+            </div> <!-- /videos-wrapper -->
+        </div> <!-- /container -->
+    </section> <!-- /videos -->
+
+
+    <!-- ..... Секция categories ..... -->
+    <section class="categories">
+        <h2 class="categories__title">Travel categories</h2>
+        <p class="categories__text">Maecenas et eros non quam ultricies interdum. Proin ac dolor vel neque ullamcorper
+            blandit vitae et felis.
+            Morbi ante urna, imperdiet vel neque vitae, porta ullamcorper metus. Quisque bibendum venenatis eros sed
+            commodo. Nullam ultrices tortor non diam ullamcorper auctor. In urna tellus, auctor sit amet est ut,
+            scelerisque volutpat diam.
+        </p>
+
+        <div class="categories-slider">
+
+            <div class="categories-slider__item">
+                <img src="img/foto-1.jpg" alt="">
+                <span class="categories-slider__signature">Art and culture</span>
             </div>
 
-        </div> <!-- /product-wrapper -->
+            <div class="categories-slider__item">
+                <img src="img/foto-2.jpg" alt="">
+                <span class="categories-slider__signature">Backpacking</span>
+            </div>
+
+            <div class="categories-slider__item">
+                <img src="img/foto-3.jpg" alt="">
+                <span class="categories-slider__signature">Beaches, coast and island</span>
+            </div>
+
+            <div class="categories-slider__item">
+                <img src="img/foto-4.jpg" alt="">
+                <span class="categories-slider__signature">Art and culture</span>
+            </div>
+
+            <div class="categories-slider__item">
+                <img src="img/foto-5.jpg" alt="">
+                <span class="categories-slider__signature">Wildlife and nature</span>
+            </div>
+
+            <div class="categories-slider__item">
+                <img src="img/foto-3.jpg" alt="">
+                <span class="categories-slider__signature">Beaches, coast and island</span>
+            </div>
+
+            <div class="categories-slider__item">
+                <img src="img/foto-4.jpg" alt="">
+                <span class="categories-slider__signature">Art and culture</span>
+            </div>
+
+            <div class="categories-slider__item">
+                <img src="img/foto-5.jpg" alt="">
+                <span class="categories-slider__signature">Wildlife and nature</span>
+            </div>
+
+        </div>
+
+
+
+
     </section>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="slick/slick.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
