@@ -10,6 +10,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,800&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="dataepicker/dist/css/datepicker.css">
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/main.css">
@@ -492,7 +493,7 @@
                         </div>
                     </div>
 
-                    <div class="videos-slide">
+                    <!-- <div class="videos-slide">
                         <div class="videos-slide__video">
                             <a href="https://www.youtube.com/watch?v=JfAnXkAO8v8">
                                 <img src="img/video-img-2.jpg" alt="">
@@ -514,7 +515,7 @@
                                 <img src="img/video-img-4.jpg" alt="">
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                 </div> <!-- /videos-slider -->
 
 
@@ -643,28 +644,212 @@
             </div>
 
         </div>
-
-
-
-
     </section>
 
 
+    <!-- .... Секция experiences .... -->
+    <section class="experiences">
+        <h2 class="experiences__title">Traveller’s experiences</h2>
+
+
+        <div class="experiences-slider">
+
+            <div class="experiences__slider-item">
+                <p class="experiences-item__text">“Curabitur posuere ullamcorper pulvinar. Donec dignissim bibendum leo,
+                    at faucibus enim aliquam eu. Nullam
+                    quis pulvinar diam, ac elementum urna. Integer id vehicula tortor, nec pulvinar libero. Ut elit
+                    elit,
+                    fringilla a nisi ut, dapibus eleifend quam.”
+                </p>
+
+                <div class="experiences__slider-user">
+                    <div class="experiences-slider__user-circle">
+                        <img src="img/user-1.jpg" alt="">
+                    </div>
+                    <div class="experiences-slider__user-title">Donquixote Law</div>
+                    <span class="experiences-slider__user-subtitle">Treveller</span>
+                </div>
+            </div>
+
+            <div class="experiences__slider-item">
+                <p class="experiences-item__text">“Curabitur posuere ullamcorper pulvinar. Donec dignissim bibendum leo,
+                    at faucibus enim aliquam eu. Nullam
+                    quis pulvinar diam, ac elementum urna. Integer id vehicula tortor, nec pulvinar libero. Ut elit
+                    elit,
+                    fringilla a nisi ut, dapibus eleifend quam.”
+                </p>
+
+                <div class="experiences__slider-user">
+                    <div class="experiences-slider__user-circle">
+                        <img src="img/user-1.jpg" alt="">
+                    </div>
+                    <div class="experiences-slider__user-title">Donquixote Law</div>
+                    <span class="experiences-slider__user-subtitle">Treveller</span>
+                </div>
+            </div>
+
+            <div class="experiences__slider-item">
+                <p class="experiences-item__text">“Curabitur posuere ullamcorper pulvinar. Donec dignissim bibendum leo,
+                    at faucibus enim aliquam eu. Nullam
+                    quis pulvinar diam, ac elementum urna. Integer id vehicula tortor, nec pulvinar libero. Ut elit
+                    elit,
+                    fringilla a nisi ut, dapibus eleifend quam.”
+                </p>
+
+                <div class="experiences__slider-user">
+                    <div class="experiences-slider__user-circle">
+                        <img src="img/user-1.jpg" alt="">
+                    </div>
+                    <div class="experiences-slider__user-title">Donquixote Law</div>
+                    <span class="experiences-slider__user-subtitle">Treveller</span>
+                </div>
+            </div>
+
+        </div> <!-- /experiences-slider -->
+
+        <div class="experiences-dots">
+            <div>
+                <span class="experiences-dots__line"></span>
+            </div>
+            <div>
+                <span class="experiences-dots__line"></span>
+            </div>
+            <div>
+                <span class="experiences-dots__line"></span>
+            </div>
+            <div>
+                <span class="experiences-dots__line"></span>
+            </div>
+        </div>
+    </section> <!-- /experiences -->
 
 
 
+    <!-- ...... Секция booking ..... -->
+    <section class="booking">
+        <span class="booking__suptitle">We will se you</span>
+        <h2 class="booking__title">Enjoy 30% Off On First Trip</h2>
+
+        <form action="#" class="booking-form">
+            <input class="booking-form__input" type="text" list="destinations" placeholder="Destinations">
+            <datalist id="destinations">
+                <option value="Berlin"></option>
+                <option value="London"></option>
+                <option value="Naples"></option>
+            </datalist>
 
 
+            <input class="booking-form__input" type="text" list="package" placeholder="Package">
+            <datalist id="package">
+                <option value="all inclusive"></option>
+                <option value="without breakfast"></option>
+            </datalist>
+
+            <input class="booking-form__input datepicker-here" type="text" placeholder="Dates">
+
+            <button class="booking-form__btn" type="button">Book Now</button>
+        </form>
+    </section> <!-- /booking -->
 
 
+    <!-- ... Секция footer ... -->
+    <footer class="footer">
 
+        <nav class="footer-menu">
+            <ul class="footer-menu__list">
+                <li>
+                    <a class="footer-menu__link" href="#">Home</a>
+                </li>
 
+                <li>
+                    <a class="footer-menu__link" href="#">Video</a>
+                </li>
 
+                <li>
+                    <a class="footer-menu__link" href="#">Destinations</a>
+                </li>
 
+                <li>
+                    <a class="footer-menu__link" href="#">Booking</a>
+                </li>
 
+                <li>
+                    <a class="footer-menu__link" href="#">Contact</a>
+                </li>
 
+                <li>
+                    <a class="footer-menu__link" href="#">Pricing</a>
+                </li>
+
+                <li>
+                    <a class="footer-menu__link" href="#">Privacy Policy</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="footer-copyright">
+            <span class="footer-copyright__year">Copyright 2014 - 2018 </span>
+            <span class="footer-copyright__company">Rhea - Travel Around The World</span>
+        </div>
+
+        <div class="footer-social">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px"
+                    height="15px">
+                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                        d="M19.694,1.848 C19.349,1.402 18.760,1.056 18.132,0.941 C16.290,0.597 4.796,0.597 2.953,0.941 C2.451,1.033 2.004,1.255 1.619,1.602 C-0.001,3.075 0.506,10.970 0.897,12.248 C1.062,12.803 1.274,13.202 1.541,13.464 C1.886,13.810 2.357,14.048 2.898,14.156 C4.416,14.462 12.231,14.635 18.100,14.202 C18.642,14.110 19.120,13.863 19.498,13.502 C20.996,12.036 20.893,3.696 19.694,1.848 ZM8.533,10.118 C8.533,8.279 8.533,6.433 8.533,4.595 C10.535,5.517 12.086,6.408 13.921,7.370 C12.408,8.191 10.535,9.113 8.533,10.118 Z" />
+                </svg>
+            </a>
+
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px"
+                    height="20px">
+                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                        d="M7.205,20.000 L7.205,11.000 L9.943,11.000 L10.391,7.000 L7.205,7.000 L7.205,5.051 C7.205,4.022 7.231,3.000 8.673,3.000 L10.135,3.000 L10.135,0.140 C10.135,0.097 8.879,-0.000 7.610,-0.000 C4.959,-0.000 3.298,1.657 3.298,4.700 L3.298,7.000 L0.368,7.000 L0.368,11.000 L3.298,11.000 L3.298,20.000 L7.205,20.000 Z" />
+                </svg>
+            </a>
+
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+                    height="14px">
+                    <defs>
+                        <filter id="Filter_0">
+                            <feFlood flood-color="rgb(255, 255, 255)" flood-opacity="1" result="floodOut" />
+                            <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                            <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                        </filter>
+
+                    </defs>
+                    <g filter="url(#Filter_0)">
+                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                            d="M18.007,1.663 C17.298,1.955 16.590,2.137 15.882,2.211 C16.682,1.751 17.222,1.102 17.504,0.264 C16.773,0.680 15.992,0.963 15.162,1.116 C14.431,0.373 13.533,0.002 12.466,0.002 C11.446,0.002 10.576,0.346 9.856,1.034 C9.136,1.724 8.776,2.557 8.776,3.533 C8.776,3.796 8.807,4.065 8.868,4.343 C7.360,4.270 5.945,3.907 4.624,3.254 C3.302,2.602 2.181,1.732 1.260,0.646 C0.924,1.193 0.757,1.787 0.757,2.429 C0.757,3.034 0.905,3.595 1.202,4.113 C1.499,4.630 1.899,5.050 2.402,5.370 C1.808,5.348 1.252,5.199 0.734,4.922 L0.734,4.966 C0.734,5.819 1.014,6.568 1.574,7.213 C2.133,7.858 2.840,8.264 3.693,8.432 C3.373,8.512 3.049,8.552 2.722,8.552 C2.508,8.552 2.276,8.534 2.025,8.498 C2.261,9.204 2.695,9.786 3.327,10.241 C3.959,10.698 4.675,10.933 5.475,10.948 C4.135,11.953 2.608,12.456 0.894,12.456 C0.567,12.456 0.270,12.441 0.003,12.413 C1.717,13.469 3.605,13.998 5.669,13.998 C6.979,13.998 8.209,13.799 9.359,13.402 C10.509,13.004 11.491,12.472 12.306,11.805 C13.121,11.139 13.824,10.371 14.414,9.504 C15.004,8.636 15.444,7.730 15.733,6.786 C16.023,5.842 16.167,4.897 16.167,3.949 C16.167,3.745 16.164,3.591 16.156,3.489 C16.880,2.986 17.496,2.378 18.007,1.663 Z" />
+                    </g>
+                </svg>
+            </a>
+
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+                    height="13px">
+                    <defs>
+                        <filter id="Filter_0">
+                            <feFlood flood-color="rgb(255, 255, 255)" flood-opacity="1" result="floodOut" />
+                            <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                            <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                        </filter>
+
+                    </defs>
+                    <g filter="url(#Filter_0)">
+                        <path fill-rule="evenodd" fill="rgb(0, 0, 0)"
+                            d="M9.027,7.796 L9.031,7.796 C9.167,7.796 9.301,7.753 9.410,7.676 L9.439,7.656 C9.446,7.651 9.452,7.647 9.459,7.642 L9.802,7.336 L17.986,0.042 C17.969,0.017 17.940,-0.001 17.909,-0.001 L0.100,-0.001 C0.078,-0.001 0.057,0.008 0.041,0.022 L8.604,7.644 C8.711,7.741 8.865,7.796 9.027,7.796 ZM0.005,1.033 L0.005,11.844 L6.139,6.493 L0.005,1.033 ZM11.877,6.529 L18.005,11.847 L18.005,1.069 L11.877,6.529 ZM9.929,8.266 C9.685,8.482 9.365,8.601 9.030,8.601 C8.693,8.601 8.374,8.482 8.130,8.267 L6.726,7.016 L0.005,12.878 L0.005,12.897 C0.005,12.953 0.049,13.000 0.101,13.000 L17.910,13.000 C17.961,13.000 18.005,12.953 18.005,12.896 L18.005,12.879 L11.290,7.053 L9.929,8.266 Z" />
+                    </g>
+                </svg>
+            </a>
+        </div>
+
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="dataepicker/dist/js/datepicker.js"></script>
     <script src="slick/slick.js"></script>
     <script src="js/main.js"></script>
 </body>
