@@ -275,6 +275,11 @@ body {
     color: #fff;
     background: #3984f3;
     padding: 20px 66px;
+    transition: all 0.3s ease-in-out;
+}
+
+.product-content__btn:hover {
+    background: #5dbb9c;
 }
 
 .slick-slide {
@@ -714,6 +719,12 @@ body {
     padding: 25px 0;
     width: 348px;
     margin-left: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.booking-form__btn:hover {
+    background: #5dbb9c;
 }
 
 
@@ -740,6 +751,11 @@ body {
     color: #2b323a;
     margin: 0 20px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-menu__link:hover {
+    color: #3984f3;
 }
 
 .footer-copyright__year {
@@ -770,5 +786,5 @@ body {
 }
 
 .footer-social a:hover {
-    background: #1070fd;
+    background: #0144aa;
 }
