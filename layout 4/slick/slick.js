@@ -2320,7 +2320,7 @@
                     indexOffset = _.options.slidesToShow + index;
                     allSlides
                         .slice(indexOffset - centerOffset + 1 + evenCoef, indexOffset + centerOffset + 2)
-                        .addClass('slick-active slick-active_categories')
+                        .addClass('slick-active')
                         .attr('aria-hidden', 'false');
 
                 }
@@ -2369,14 +2369,14 @@
 
                     allSlides
                         .slice(indexOffset - (_.options.slidesToShow - remainder), indexOffset + remainder)
-                        .addClass('slick-active slick-active_categories')
+                        .addClass('slick-active')
                         .attr('aria-hidden', 'false');
 
                 } else {
 
                     allSlides
                         .slice(indexOffset, indexOffset + _.options.slidesToShow)
-                        .addClass('slick-active slick-active_categories')
+                        .addClass('slick-active')
                         .attr('aria-hidden', 'false');
 
                 }
@@ -2902,7 +2902,7 @@
         }
 
         _.$slides
-            .removeClass('slick-slide slick-active slick-visible slick-current slick-active_categories')
+            .removeClass('slick-slide slick-active slick-visible slick-current')
             .attr('aria-hidden', 'true')
             .css('width', '');
 
@@ -2959,13 +2959,13 @@
 
             _.$dots
                 .find('li')
-                .removeClass('slick-active slick-active_categories')
+                .removeClass('slick-active')
                 .end();
 
             _.$dots
                 .find('li')
                 .eq(Math.floor(_.currentSlide / _.options.slidesToScroll))
-                .addClass('slick-active slick-active_categories');
+                .addClass('slick-active');
 
         }
 

@@ -22,6 +22,8 @@ $(document).ready(function () {
         dots: false,
         slidesToShow: 3,
         slidesToScroll: 1,
+        centerMode: true,
+        // centerPadding: '85px',
         prevArrow: '<button class="product__slider-btn_prev product__slider-btn"><img src="img/btn-prev.svg" alt="arrow"></button>',
         nextArrow: '<button class="product__slider-btn_next product__slider-btn"><img src="img/btn-next.svg" alt="arrow"></button>',
 
@@ -56,20 +58,12 @@ $(document).ready(function () {
     });
 
 
-    // Слайдер секции videos
-    // $('.videos-slider').slick({
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     arrows: false,
-    // });
-
-
     // Слайдер секции categories
     $('.categories-slider').slick({
-        slidesToShow: 5,
+        slidesToShow: 3,
         slidesToScroll: 1,
         centerMode: true,
-        centerPadding: '150px',
+        centerPadding: '185px',
         prevArrow: '<button class="categories__slider-btn_prev slider-btn"><img src="img/btn-prev.svg" alt="arrow"></button>',
         nextArrow: '<button class="categories__slider-btn_next slider-btn"><img src="img/btn-next.svg" alt="arrow"></button>',
     });
@@ -85,17 +79,6 @@ $(document).ready(function () {
         // fade: true,
         // asNavFor: '.experiences-dots'
     });
-
-
-    // $('.experiences-dots').slick({
-    //     slidesToShow: 4,
-    //     slidesToScroll: 1,
-    //     asNavFor: '.experiences-slider',
-    //     dots: true,
-    //     centerMode: true,
-    //     focusOnSelect: true
-
-    // });
 
 
 
