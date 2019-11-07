@@ -1,19 +1,19 @@
 $(document).ready(function () {
 
-    // ----- Mobail menu button -----
-    // $('.header-btn_menu').on('click', function () {
-    //     $('.main__mobail_wrap').show();
-    //     $(this).hide();
-    //     $('.header-btn_close').show();
+    // ----- Mobail menu button-----
+    $('.btn-open').on('click', function () {
+        $('.header-menu_mobail').show();
+        $(this).hide();
+        $('.btn-close').show();
 
-    // });
+    });
 
-    // $('.header-btn_close').on('click', function () {
-    //     $('.main__mobail_wrap').hide();
-    //     $(this).hide();
-    //     $('.header-btn_menu').show();
+    $('.btn-close').on('click', function () {
+        $('.header-menu_mobail').hide();
+        $(this).hide();
+        $('.btn-open').show();
 
-    // });
+    });
 
 
     // ----- Слайдер Slick -----
@@ -23,7 +23,7 @@ $(document).ready(function () {
         slidesToShow: 3,
         slidesToScroll: 1,
         centerMode: true,
-        // centerPadding: '85px',
+        centerPadding: '0px',
         prevArrow: '<button class="product__slider-btn_prev product__slider-btn"><img src="img/btn-prev.svg" alt="arrow"></button>',
         nextArrow: '<button class="product__slider-btn_next product__slider-btn"><img src="img/btn-next.svg" alt="arrow"></button>',
 

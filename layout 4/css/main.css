@@ -60,6 +60,8 @@ body {
 /* .....Header..... */
 
 .header {
+    position: relative;
+
     background-image: url(../img/header-right_bg.png);
     background-repeat: no-repeat;
     background-position: right center;
@@ -75,12 +77,42 @@ body {
 }
 
 .header-menu {
+    position: relative;
     display: flex;
     align-items: center;
 }
 
+.header-menu_mobail {
+    position: absolute;
+    left: 0;
+    /* transform: translateX(-50%); */
+    top: 0;
+    z-index: 90;
+    list-style: none;
+    background-color: #fff;
+    width: 100%;
+    min-height: 600px;
+    text-align: center;
+    padding-top: 115px;
+
+    display: none;
+}
+
+.header-menu_mobail .header-menu__link {
+    display: block;
+    margin: 50px 0;
+    font-size: 30px;
+}
+
+.header-menu_mobail .header-menu__btn {
+    margin: 0 auto;
+    max-width: 220px;
+    padding: 20px 43px 20px 45px;
+}
+
 .header-menu__list {
     display: flex;
+    align-items: center;
     list-style: none;
     width: 100%;
 }
@@ -96,7 +128,6 @@ body {
 
 .header-menu__link:hover {
     color: #3984f3;
-    font-weight: 600;
 }
 
 .header-menu__btn {
@@ -104,15 +135,16 @@ body {
     font-size: 20px;
     font-weight: 600;
     color: #3984f3;
-    line-height: 35px;
     border: 3px solid #3984f3;
-    padding: 11px 45px;
+    padding: 14px 43px 14px 45px;
     margin-left: 105px;
-    width: 100%;
+    /* width: 100%; */
+    transition: all 0.3s ease-in-out;
 }
 
 .header-menu__btn:hover {
-    box-shadow: 0 18px 20px 0 rgba(88, 142, 202, .2);
+    background-color: #3984f3;
+    color: #fff;
 }
 
 .header__title {
@@ -134,13 +166,11 @@ body {
 
 .header__btn {
     display: inline-block;
-    /* width: 100%; */
     font-size: 20px;
     font-weight: 600;
     color: #fff;
-    line-height: 35px;
     background: #3984f3;
-    padding: 20px 45px;
+    padding: 17px 43px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -148,33 +178,41 @@ body {
     background: #5dbb9c;
 }
 
+.btn-open {
+    display: none;
+}
 
+.btn-close {
+    position: relative;
+    z-index: 95;
+    display: none;
+}
+
+
+/* /////////////////////////////// */
 /* ..... Секция product ......  */
 .product {
     margin-bottom: 100px;
-    /* padding-right: 160px; */
-    /* position: relative; */
 }
 
 .product-wrapper {   
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    /* transform: translateX(-100px); */
+    /* justify-content: space-between; */
 }
 
 .product-cards {
     display: flex;
-    margin-right: 120px;
-    min-width: 1060px;
+    max-width: 1236px;
+    transform: translateX(-180px);
 }
 
 .product-card {
     position: relative;
-    /* margin-right: 40px; */
     min-width: 372px;
+    width: 100%;
     height: 500px;    
-
+    /* margin: 0 20px; */
 }
 
 .product-card::after {
@@ -194,38 +232,61 @@ body {
 }
 
 .product-card_hover {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* transform: translateY(-45px); */
-    display: none;
+    transform: translateY(-45px);
+    z-index: -1;
+    margin-top: -25px;
+}
+
+.default {
+    fill: #fff;
+}
+
+.slick-slide.slick-center .product-card_hover {
+    transform: translateY(45px);
+    
 }
 
 .product-cards .slick-center {
-    transform: translateY(-50px);
-    box-shadow: 0px 64px 38px 0px rgba(62, 58, 75, 0.3);
+    transform: translateY(-93px);
+    /* box-shadow: 0px 64px 38px 0px rgba(62, 58, 75, 0.3); */
     transition: all 0.6s ease-in-out;
 }
 
 .product-cards .slick-track {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    /* padding-bottom: 50px; */
     min-height: 630px;
-    /* width: 1050px; */
+}
+
+.product-cards .slick-list {
+    max-height: 630px;
 }
 
 .product-cards .slick-slide {
-    max-width: 372px;
+    /* width: 372px; */
+    width: 100%;
     max-height: 500px;
     margin: 0px 20px;
 }
 
-
-/* //// no */
+/* .product-cards .slick-center {
+    max-width: 372px;
+    width: 100%;
+}
 
 .product-cards .slick-active {
-    /* min-width: 372px; */
+    max-width: 372px;
+    width: 100%;
 }
+
+.product-cards .slick-cloned {
+    max-width: 372px;
+    width: 100%;
+} */
 
 .product-card:last-child {
     margin-right: 0;
@@ -263,9 +324,12 @@ body {
 
 .product-card__days {
     font-size: 24px;
-    line-height: 42px;
     color: #a0a0a0;
+}
 
+.product-content {
+    margin-left: -70px;
+    margin-top: 45px;
 }
 
 .product-content__title {
@@ -284,7 +348,7 @@ body {
     width: 78px;
     height: 6px;
     background: #3984f3;
-    margin-top: 40px;
+    margin-top: 35px;
 }
 
 .product-content__text {
@@ -297,10 +361,9 @@ body {
 
 .product-content__btn {
     font-size: 23px;
-    line-height: 42px;
     color: #fff;
     background: #3984f3;
-    padding: 20px 66px;
+    padding: 15px 66px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -311,7 +374,7 @@ body {
 .product__slider-btn_prev {
     position: absolute;
     z-index: 6;
-    left: 320px;
+    left: 343px;
     bottom: -60px;
     border: none;
     background: none;
@@ -320,12 +383,13 @@ body {
 
 .product__slider-btn_next {
     position: absolute;
-    right: 685px;
+    right: 735px;
     bottom: -60px;
     border: none;
     background: none;
     cursor: pointer;
 }
+
 
 
 /* ............. Секция videos ........ */
@@ -703,9 +767,8 @@ body {
 .booking-form__input {
     position: relative;
     font-size: 24px;
-    line-height: 45px;
     font-weight: 600;
-    padding: 25px 0;
+    padding: 21px 0;
     padding-left: 40px;
     padding-right: 20px;
     border: none;
@@ -714,14 +777,14 @@ body {
     color: #fff;
     margin-left: 30px;
     margin-right: 30px;
-    width: 328px;    
+    width: 284px;    
 }
 
 .datepicker-here {
     /* position: relative; */
     background: url(../img/dates.svg);
     background-repeat: no-repeat;
-    background-position: 320px 33px;
+    background-position: 293px 24px;
     background-color: rgba(255, 255, 255, .2);
 }
 
@@ -734,11 +797,10 @@ body {
 
 .booking-form__btn {    
     font-size: 23px;
-    line-height: 45px;
     color: #fff;
     background: #3984f3;
     border: none;
-    padding: 25px 0;
+    padding: 21px 0;
     width: 348px;
     margin-left: 30px;
     cursor: pointer;
