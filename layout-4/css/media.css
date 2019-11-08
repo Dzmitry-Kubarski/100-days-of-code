@@ -1,0 +1,333 @@
+/* /////////////// 1870px */
+@media (max-width: 1870px) {
+    .product-wrapper {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .product-content {
+        text-align: center;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 220px;
+    }
+
+    .product-cards {
+        transform: none;
+        margin-bottom: 180px;
+    }
+
+    .header {
+        padding-bottom: 380px;
+    }
+
+    .product-content__text {
+        width: 85%;
+        margin: 0 auto 55px;
+    }
+
+    .product-content__title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .product {
+        margin-bottom: 0;
+        padding: 0 15px;
+    }
+
+    .videos {
+        padding-top: 100px;
+    }
+
+    .categories-slider .slick-list {
+        width: 1600px;
+        margin: 0px auto;
+    }
+}
+
+
+/* /////////////// 1600px */
+@media (max-width: 1600px) {
+    .container {
+        width: 90%;
+        padding: 0px 15px;
+    } 
+
+    .categories-slider .slick-list {
+        width: 1030px;
+        margin: 0px auto;
+    }
+
+    .categories-slider .slick-active {
+        max-width: 472px;
+        max-height: 500px;
+    }
+
+    .categories__text {
+        margin-bottom: 0;
+    }
+
+    .experiences {
+        padding-top: 0;
+    }
+
+    .booking-form__btn {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+}
+
+/* /////////////// 1376px */
+@media (max-width: 1376px) {
+    .experiences-item__text {
+        width: 80%;
+    }
+
+    .experiences-slider {
+        width: 80%;
+    }
+
+    .experiences__slider-btn_next {
+        right: 0;
+    }
+
+    .experiences__slider-btn_prev {
+        left: 0;
+    }
+}
+
+
+/* /////////////// 1280px */
+@media (max-width: 1280px) {
+    .booking-form__input, .booking-form__btn {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+
+}
+
+
+/* /////////////// 1170px */
+@media (max-width: 1170px) {
+    .header-menu__btn {
+        margin-left: 30px;
+    }
+
+    .header-menu__link {
+        margin-left: 30px;
+    }
+
+    .booking-form__input {
+        /* margin: 0; */
+    }
+}
+
+
+/* /////////////// 1020px */
+@media (max-width: 1020px) {
+    .categories-slider .slick-list {
+        width: 512px;
+    }
+}
+
+
+/* /////////////// 900px */
+@media (max-width: 900px) {
+    .btn-open {
+        display: block;
+    }
+
+    .header-menu__list {
+        display: none;
+    }   
+
+    .header-menu_mobail a {
+        font-size: 20px;
+        font-weight: 400;
+        color: #bab8b8;
+        line-height: 14px;
+        margin-left: 70px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .top-wraper {
+        margin-bottom: 75px;
+    }
+
+    .header {
+        padding-top: 40px;
+        background-position: 160px center;
+    }
+
+    .header__text {
+        margin-bottom: 80px;
+    }
+
+    .booking__title {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+/* /////////////// 798px */
+@media (max-width: 798px) {
+    .footer-menu__list {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .footer {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .footer-menu__link {
+        line-height: 35px;
+    }
+
+     .footer-copyright {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    } 
+
+    .footer-copyright__year, .footer-copyright__company {
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* /////////////// 767px */
+@media (max-width: 767px) {
+    .booking-form__input {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* /////////////// 567px */
+@media (max-width: 567px) {
+    .header__text {
+        width: 100%;
+    }
+
+    .header {
+        padding-bottom: 190px;
+    }
+
+    .product-content__text, .videos__text {
+        margin: 0 auto 90px;
+        width: 100%;
+        line-height: 36px;
+    }
+
+    .categories__text {
+        padding: 0px 15px;
+        width: 100%;
+        line-height: 36px;
+        font-size: 20px;
+    }
+
+    .experiences-item__text {
+        width: 100%;
+        font-size: 18px;
+        line-height: 29px;
+        margin-bottom: 35px;
+    }
+
+    .product-content__title, .videos__title, .categories__title, .experiences__title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .product-cards {
+        width: 90%;
+    }   
+
+    .product-content {
+        margin-bottom: 80px;
+    }
+
+    .product-card__city {
+        bottom: 5px;
+        left: 10px;
+        line-height: normal;
+    }
+
+    .product-card_hover {
+        z-index: 5;
+        transform: translateY(35px);
+    }
+
+    .product-cards .slick-track {
+        min-height: 615px;
+        padding-top: 60px;
+    }
+
+    .experiences {
+        padding-bottom: 120px;
+    }
+}
+
+
+/* /////////////// 478px */
+@media (max-width: 478px) {
+    .header__title {
+        font-size: 57px;
+        line-height: 59px;
+    }
+
+    .product-card {
+        min-width: 100%;
+        /* min-width: 280px; */
+        height: 400px;            
+    }
+
+    .product-cards .slick-track {
+        min-height: 525px;
+    }   
+
+    .product-card__days {
+        font-size: 18px;
+    }
+
+    .booking-form__input {
+        width: 260px;
+        padding-left: 20px;
+    }
+
+    .datepicker-here {
+        background-position: 268px 24px;
+    }
+
+    .booking-form__btn {
+        width: 300px;
+    }
+
+    .categories-slider .slick-list {
+        width: 471px;
+    } 
+
+    .booking {
+        padding-top: 95px;
+        padding-bottom: 95px;
+    }
+
+    .booking__title {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .experiences {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+     
+}
+
+
+

@@ -42,13 +42,14 @@ $(document).ready(function () {
             },
 
             {
-                breakpoint: 836,
+                breakpoint: 567,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     prevArrow: false,
                     nextArrow: false,
                     dots: true,
+                    centerMode: false,
 
                 }
             },
@@ -66,6 +67,47 @@ $(document).ready(function () {
         centerPadding: '185px',
         prevArrow: '<button class="categories__slider-btn_prev slider-btn"><img src="img/btn-prev.svg" alt="arrow"></button>',
         nextArrow: '<button class="categories__slider-btn_next slider-btn"><img src="img/btn-next.svg" alt="arrow"></button>',
+
+        responsive: [
+
+            {
+                breakpoint: 1870,
+                settings: {
+                    // prevArrow: false,
+                    // nextArrow: false,
+                    dots: false,
+                    centerPadding: '0',
+
+                }
+            },
+
+            {
+                breakpoint: 1600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    prevArrow: false,
+                    nextArrow: false,
+                    dots: true,
+                    centerMode: false,
+                }
+            },
+
+            {
+                breakpoint: 1020,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    prevArrow: false,
+                    nextArrow: false,
+                    dots: true,
+                    centerMode: false,
+                    variableWidth: true,
+                }
+            },
+
+
+        ]
     });
 
 
@@ -80,6 +122,25 @@ $(document).ready(function () {
         // asNavFor: '.experiences-dots'
     });
 
+
+    // Видео слайдер pop-up
+
+    // $('.test').magnificPopup({
+    //     type: 'iframe',
+    //     preloader: false,
+    // });
+
+
+
+    $('.popup-youtube').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+
+        fixedContentPos: false
+    });
 
 
 
