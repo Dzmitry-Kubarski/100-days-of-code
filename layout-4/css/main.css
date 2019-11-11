@@ -427,23 +427,10 @@ body {
     overflow: hidden;
 }
   
-
-.videos-slide__iframe {
-    background-image: url(../img/video-img-3.jpg);
-
-    position: relative;
-    /* z-index: 5; */
+.popup-youtube_wrapper {
     width: 1070px;
     height: 612px;
-    /* opacity: 0; */
 }
-
-.videos-slide__video {
-    position: relative;
-    /* z-index: 10; */
-    width: 100%;
-    height: auto;
-} 
 
 .videos__dots-slide {
     display: flex;
