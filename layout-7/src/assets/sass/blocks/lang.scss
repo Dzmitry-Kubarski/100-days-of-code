@@ -1,0 +1,15 @@
+.lang {
+    padding: 13px 63px 13px 28px;
+
+    border-radius: 24px;
+
+    background-color: $black_light;
+    text-transform: uppercase;
+    color: #fefeff;
+    font-weight: 700;
+
+
+    &:focus {
+        outline: 0;
+    }
+}

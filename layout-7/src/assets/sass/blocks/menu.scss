@@ -1,0 +1,19 @@
+.menu__list {
+    display: flex;
+    list-style: none;
+}
+
+.menu__item {
+    margin: 0px 25px;
+}
+
+.menu__link {
+    color: $black;
+    letter-spacing: .5;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+
+

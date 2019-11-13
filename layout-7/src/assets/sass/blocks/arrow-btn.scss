@@ -1,0 +1,12 @@
+.arrow-btn {
+    width: 64px;
+    height: 64px;
+
+    border: none;
+    background: none;
+
+    border-radius: 100%;
+    background-image: $gradient;
+    box-shadow: $shadow_circle; 
+    cursor: pointer;        
+}

@@ -1451,6 +1451,12 @@ body {
     font-weight: 500;
 }
 
+@media (max-width: 767px) {
+    .nav {
+        display: none;
+    }
+}
+
 .nav__link {
     padding: .3rem 1.5rem;
     margin-right: 1rem;
@@ -1468,12 +1474,6 @@ body {
 .nav__link.active {
     color: #fff;
     background-color: #f46e86;
-}
-
-@media (max-width: 767px) {
-    .nav__link {
-        display: none;
-    }
 }
 
 .lang {

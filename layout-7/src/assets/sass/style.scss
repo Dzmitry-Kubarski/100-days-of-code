@@ -1,0 +1,40 @@
+@import "vars";
+
+
+/* Default styles */
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+
+/* normalize */
+@import "../../../node_modules/normalize.css/normalize";
+
+
+/* Blocks */
+@import "blocks/menu";
+@import "blocks/header";
+@import "blocks/lang";
+@import "blocks/intro";
+@import "blocks/title";
+@import "blocks/text";
+@import "blocks/download";
+@import "blocks/advantages";
+@import "blocks/arrow-btn";
+@import "blocks/screenshots";
+@import "blocks/gallery";

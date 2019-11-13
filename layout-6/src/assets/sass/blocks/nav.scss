@@ -2,7 +2,13 @@
     display: flex;
     font-size: 1rem;
     font-weight: 500;
+
+    @media (max-width: 767px) {
+        display: none;
+     }
 }
+
+
 
 .nav__link {
     padding: .3rem 1.5rem;
@@ -23,8 +29,5 @@
         color: $white;
         background-color: $pink;
     }
-
-    @media (max-width: 767px) {
-        display: none;
-     }
+   
 }
