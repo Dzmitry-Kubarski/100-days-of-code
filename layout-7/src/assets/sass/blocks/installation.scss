@@ -1,0 +1,28 @@
+.installation {
+    background-color: #f0f0f0;
+    padding: 125px 0px;
+
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: url(../../../assets/img/instll-bg.png);       
+        top: -35px;
+    }
+}
+
+.installation__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.installation__left-box {
+    flex-basis: 50%;
+}
+
+.installation__right-box {
+    flex-basis: 50%;
+
+    display: flex;
+    justify-content: center;
+}

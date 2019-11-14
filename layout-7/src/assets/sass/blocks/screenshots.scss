@@ -1,4 +1,6 @@
 .screenshots {
+    position: relative;
+    
     padding-top: 180px;
     padding-bottom: 125px;
 
@@ -11,3 +13,11 @@
 .screenshots__text {
     margin-bottom: 120px;
 }  
+
+.screenshots__arrow-btn {
+    position: absolute;
+    bottom: -32px;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 5;
+}

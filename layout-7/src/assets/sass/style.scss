@@ -8,6 +8,13 @@
     box-sizing: border-box;
 }
 
+html, 
+body {
+    overflow-x: hidden;
+}
+    
+
+
 body {
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
@@ -38,3 +45,5 @@ body {
 @import "blocks/arrow-btn";
 @import "blocks/screenshots";
 @import "blocks/gallery";
+@import "blocks/installation";
+@import "blocks/phone-box";
