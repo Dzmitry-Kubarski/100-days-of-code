@@ -7,14 +7,53 @@
     z-index: 10;
 }
 
+.phone-box__main-img {
+    position: relative;
+    z-index: 10; 
+}
+
 .phone-box__item {
     position: absolute;
     display: block;
+    width: auto;
     left: 50%;
     top: 195px;
     transform: translateX(-50%);
+    z-index: 20;
 
     &:nth-child(3) {
-        top: 345px;
+        top: 358px;
+        z-index: 20;
     }
+
+    &:nth-child(4) {
+        top: 123px;
+        z-index: 20;
+    }
+
+    &:nth-child(5) {
+        top: 113px;
+        left: 130px;
+        z-index: 1;
+    }
+
+    &:nth-child(6) {
+        top: 460px;
+        left: 25px;
+        z-index: 1;
+    }
+
+    &:nth-child(7) {
+        left: 475px;
+        top: 445px;
+        z-index: 20;
+        position: absolute;
+    }
+}
+
+.phone-box__logo {
+    display: block;
+    position: absolute;
+    z-index: 20;
+    bottom: 119px;
 }
