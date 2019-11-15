@@ -1,15 +1,38 @@
 .lang {
-    padding: 13px 63px 13px 28px;
+    padding: 13px 58px 13px 28px;
 
     border-radius: 24px;
-
     background-color: $black_light;
     text-transform: uppercase;
     color: #fefeff;
     font-weight: 700;
 
+    appearance: none;
 
     &:focus {
         outline: 0;
     }
 }
+
+.lang__wrapper {
+
+    position: relative;
+
+    &::after {
+        content: url(../../../assets/img/arrow-down.png);
+        position: absolute;
+        display: block;       
+        top: 11px;
+        right: 27px;
+        z-index: 20;
+    }
+}
+
+   
+      
+
+    
+
+   
+
+

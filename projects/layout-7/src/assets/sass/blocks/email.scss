@@ -1,0 +1,34 @@
+.email__form-wrapper {
+}
+
+.email__input {
+    padding: 10px 13px;
+    width: 270px;
+
+    border: none;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+
+    &:focus {         
+            outline-color: $orange;
+        }    
+}
+
+.email__btn {
+    padding: 10px 13px;
+    border: none;
+    background: transparent;
+    
+    background-image: $gradient;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+
+    transform: translateX(-93px);
+
+    &:focus {
+        outline: 0;
+    }
+}

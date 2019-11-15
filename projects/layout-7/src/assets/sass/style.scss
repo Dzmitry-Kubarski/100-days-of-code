@@ -12,21 +12,31 @@ html,
 body {
     overflow-x: hidden;
 }
-    
 
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
 
 body {
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 16px;   
 }
 
 .container {
     width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
-}
 
+    @media (max-width:1170px) {
+        width: 100%;
+    }
+}
 
 
 /* normalize */
@@ -47,3 +57,11 @@ body {
 @import "blocks/gallery";
 @import "blocks/installation";
 @import "blocks/phone-box";
+@import "blocks/footer";
+@import "blocks/slider";
+@import "blocks/navigation";
+@import "blocks/community";
+@import "blocks/social";
+@import "blocks/email";
+@import "blocks/copyright";
+@import "blocks/select";

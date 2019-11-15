@@ -1,0 +1,12 @@
+.social__link {
+   margin-right: 15px;  
+}
+
+.social__icon {    
+    fill: $white;
+    transition: all .2s linear;
+
+    &:hover {
+        fill: orangered;
+    }
+}

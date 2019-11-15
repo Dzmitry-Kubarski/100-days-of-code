@@ -1,0 +1,30 @@
+.footer {
+    padding: 100px 0px;
+    background-color: #303030;
+
+    position: relative;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__logo-box {
+    width: 25%;
+}
+
+.footer__logo {
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+    display: block;
+}
+
+.footer__text {   
+    margin: 0;
+
+    color: $white;
+    line-height: 28px;
+}

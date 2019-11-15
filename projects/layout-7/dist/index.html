@@ -22,8 +22,8 @@
 </head>
 
 <body>
-
-    <!-- Header -->
+    <!-- Section - Header
+    ===================== -->
     <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
@@ -49,11 +49,13 @@
                     </ul>
                 </nav> <!-- /menu header__menu -->
 
-                <select class="lang header__lang" name="" id="">
-                    <option value="">germany </option>
-                    <option value="">ru</option>
-                    <option value="">en</option>
-                </select>
+                <div class="lang__wrapper">
+                    <select class="lang header__lang" name="" id="">
+                        <option value="">germany </option>
+                        <option value="">Russia</option>
+                        <option value="">England</option>
+                    </select>
+                </div>
 
             </div> <!-- /header__inner -->
         </div> <!-- /container -->
@@ -61,7 +63,8 @@
 
 
 
-    <!-- Intro -->
+    <!-- Section - Intro
+    ==================== -->
     <section class="intro">
         <div class="container">
             <div class="intro__wrapper">
@@ -106,7 +109,8 @@
 
 
 
-    <!-- Advantages -->
+    <!-- Section - Advantages
+    ========================= -->
     <section class="advantages">
         <div class="container">
             <div class="advantages__wrapper">
@@ -131,6 +135,7 @@
                         tools you love. That’s it, that’s all.
                     </p>
                 </div>
+
             </div> <!-- /advantages__wrapper -->
 
             <button class="arrow-btn advantages__arrow-btn--top">
@@ -146,7 +151,8 @@
 
 
 
-    <!-- Screenshots -->
+    <!-- Section - Screenshots
+    ========================== -->
     <section class="screenshots">
         <div class="container">
             <h2 class="title screenshots__title">
@@ -189,6 +195,8 @@
 
 
 
+    <!-- Section - Installation
+    =========================== -->
     <section class="installation">
         <div class="container">
 
@@ -249,10 +257,12 @@
     </section> <!-- /installation -->
 
 
-    <!-- Footer -->
+    <!-- Section - Footer
+    ===================== -->
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
+
                 <div class="footer__logo-box">
                     <a class="footer__logo" href="#">
                         <img src="assets/img/logo.png" alt="Logo">
@@ -261,35 +271,115 @@
                         Devoq is a personal assistant for
                         learning and development.
                     </p>
-                </div>
+                </div> <!-- /footer__logo-box -->
 
-                <div class="navigation footer__navigation">
-                    <div class="navigation__company">
-                        <ul class="navigation__list">
-                            <li class="navigation__ittem">
-                                <a href="#" class="navigation__link">Our Story</a>
-                            </li>
 
-                            <li class="navigation__ittem">
-                                <a href="#" class="navigation__link">Blog</a>
-                            </li>
+                <!-- Footer menu
+                ================ -->
+                <nav class="navigation footer__navigation">
 
-                            <li class="navigation__ittem">
-                                <a href="#" class="navigation__link">Join us</a>
-                            </li>
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <h3 class="navigation__title">Company</h3>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">Our Story</a>
+                        </li>
 
-                            <li class="navigation__ittem">
-                                <a href="#" class="navigation__link">Contact</a>
-                            </li>
-                        </ul>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">Blog</a>
+                        </li>
+
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">Join us</a>
+                        </li>
+
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">Contact</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <h3 class="navigation__title">Legal</h3>
+                        </li>
+
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">Terms of Use</a>
+                        </li>
+
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </nav> <!-- /navigation footer__navigation -->
+
+
+                <!-- Community
+                ============== -->
+                <div class="community community--transform">
+                    <h3 class="community__title">Legal</h3>
+
+                    <!-- Social
+                    =========== -->
+                    <div class="social community-social">
+
+                        <a class="social__link" href="#" target="_blank">
+                            <svg class="social__icon" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="25px">
+                                <path fill-rule="evenodd"
+                                    d="M3.565,4.840 C3.565,5.470 3.565,8.282 3.565,8.282 L0.971,8.282 L0.971,12.491 L3.565,12.491 L3.565,24.998 L8.894,24.998 L8.894,12.492 L12.469,12.492 C12.469,12.492 12.804,10.474 12.966,8.267 C12.501,8.267 8.914,8.267 8.914,8.267 C8.914,8.267 8.914,5.818 8.914,5.389 C8.914,4.959 9.495,4.381 10.069,4.381 C10.642,4.381 11.852,4.381 12.972,4.381 C12.972,3.807 12.972,1.827 12.972,-0.002 C11.476,-0.002 9.775,-0.002 9.025,-0.002 C3.433,-0.002 3.565,4.211 3.565,4.840 Z" />
+                            </svg>
+                        </a>
+                        <a class="social__link" href="#" target="_blank">
+                            <svg class="social__icon" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="20px">
+                                <path fill-rule="evenodd"
+                                    d="M25.286,0.368 C24.294,0.946 23.196,1.367 22.027,1.594 C21.092,0.611 19.760,-0.002 18.284,-0.002 C15.451,-0.002 13.154,2.260 13.154,5.048 C13.154,5.443 13.200,5.829 13.287,6.198 C9.025,5.988 5.245,3.977 2.716,0.922 C2.274,1.666 2.022,2.533 2.022,3.460 C2.022,5.212 2.928,6.758 4.303,7.663 C3.462,7.635 2.672,7.407 1.980,7.029 L1.980,7.092 C1.980,9.539 3.749,11.579 6.094,12.045 C5.664,12.159 5.211,12.222 4.743,12.222 C4.411,12.222 4.091,12.189 3.777,12.130 C4.430,14.136 6.323,15.596 8.567,15.638 C6.812,16.992 4.600,17.799 2.198,17.799 C1.783,17.799 1.375,17.775 0.974,17.730 C3.244,19.162 5.939,19.998 8.836,19.998 C18.271,19.998 23.429,12.303 23.429,5.630 L23.412,4.975 C24.418,4.266 25.289,3.376 25.976,2.364 C25.056,2.766 24.069,3.038 23.031,3.161 C24.090,2.536 24.902,1.545 25.286,0.368 Z" />
+                            </svg>
+                        </a>
+                        <a class="social__link" href="#" target="_blank">
+                            <svg class="social__icon" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="25px">
+                                <path fill-rule="evenodd"
+                                    d="M19.079,24.998 L7.876,24.998 C4.072,24.998 0.977,21.904 0.977,18.099 L0.977,6.898 C0.977,3.094 4.072,-0.002 7.876,-0.002 L19.079,-0.002 C22.884,-0.002 25.979,3.094 25.979,6.898 L25.979,18.099 C25.979,21.904 22.884,24.998 19.079,24.998 ZM23.761,18.099 L23.761,6.898 C23.761,4.317 21.661,2.217 19.079,2.217 L7.876,2.217 C5.295,2.217 3.195,4.317 3.195,6.898 L3.195,18.099 C3.195,20.680 5.295,22.780 7.876,22.780 L19.079,22.780 C21.661,22.780 23.761,20.680 23.761,18.099 L23.761,18.099 ZM20.191,7.429 C19.763,7.429 19.343,7.255 19.041,6.953 C18.738,6.649 18.564,6.230 18.564,5.803 C18.564,5.374 18.738,4.954 19.041,4.652 C19.343,4.349 19.763,4.176 20.191,4.176 C20.619,4.176 21.039,4.349 21.341,4.652 C21.644,4.954 21.817,5.374 21.817,5.803 C21.817,6.230 21.644,6.649 21.341,6.953 C21.038,7.255 20.619,7.429 20.191,7.429 ZM13.478,18.940 C9.926,18.940 7.036,16.050 7.036,12.499 C7.036,8.947 9.926,6.057 13.478,6.057 C17.030,6.057 19.920,8.947 19.920,12.499 C19.920,16.050 17.030,18.940 13.478,18.940 ZM13.478,8.275 C11.149,8.275 9.254,10.170 9.254,12.498 C9.254,14.828 11.149,16.722 13.478,16.722 C15.807,16.722 17.702,14.828 17.702,12.498 C17.702,10.170 15.807,8.275 13.478,8.275 Z" />
+                            </svg>
+                        </a>
+                        <a class="social__link" href="#" target="_blank">
+                            <img src="../../assets/img/social-icon-4.png" alt="Social">
+                        </a>
+                    </div> <!-- /social community-social -->
+
+
+                    <!-- Email
+                        ========== -->
+                    <div class="email social__email">
+                        <form class="email__form-wrapper">
+                            <input class="email__input" type="text" name="email" placeholder="Your email address"
+                                required>
+                            <button class="email__btn" type="submit">Sign up</button>
+                        </form>
                     </div>
 
-
-                </div> <!-- /navigation footer__navigation -->
+                </div> <!-- /community -->
             </div> <!-- /footer__wrapper -->
         </div> <!-- /container -->
-    </footer>
 
+
+        <!-- Copyright
+        ============== -->
+        <div class="copyright">
+            <div class="container">
+                <div class="copyright__inner">
+                    <p class="copyright__text copyright__text--medium">Made with in
+                        <span class="copyright__text--orange">Germany</span>
+                    </p>
+
+                    <p class="copyright__text">Copyright 2019 © All Right Reserved.</p>
+                </div>
+            </div>
+        </div> <!-- /copyright -->
+    </footer>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

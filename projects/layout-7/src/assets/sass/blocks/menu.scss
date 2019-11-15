@@ -4,7 +4,7 @@
 }
 
 .menu__item {
-    margin: 0px 25px;
+    margin: 0px 25px;    
 }
 
 .menu__link {
@@ -12,6 +12,11 @@
     letter-spacing: .5;
     font-weight: 700;
     text-decoration: none;
+    transition: all .3s;
+
+    &:hover {
+        color: $orange;
+    }
 }
 
 

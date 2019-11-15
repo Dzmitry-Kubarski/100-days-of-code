@@ -1,0 +1,37 @@
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.navigation__list {
+    list-style: none;
+}
+
+.navigation__item {
+    margin-bottom: 15px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.navigation__title {
+    margin-bottom: 40px;
+
+    font-size: 18px;
+    color: $white;
+    font-weight: 700;
+}
+
+.navigation__link {
+    font-size: 16px;
+    color: $white;
+    text-decoration: none;
+    transition: all .3s linear;
+
+    &:hover {
+        color: $orange;
+    }
+   
+}

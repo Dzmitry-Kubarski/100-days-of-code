@@ -8,5 +8,14 @@
     border-radius: 100%;
     background-image: $gradient;
     box-shadow: $shadow_circle; 
-    cursor: pointer;        
+    cursor: pointer;   
+    transition: all .5s linear;
+
+    &:focus {
+        outline: 0;
+    }
+    
+    &:hover {
+        background-image: $gradient_new;
+    }
 }
