@@ -6,11 +6,19 @@
     text-transform: uppercase;
     color: #fefeff;
     font-weight: 700;
+    cursor: pointer;
 
     appearance: none;
 
     &:focus {
         outline: 0;
+    }
+
+    @media (max-width: 768px) { 
+        
+        font-size: 13px;
+        font-weight: 500;
+        padding: 12px 30px 12px 12px;
     }
 }
 
@@ -22,9 +30,18 @@
         content: url(../../../assets/img/arrow-down.png);
         position: absolute;
         display: block;       
-        top: 11px;
+        top: 10px;
         right: 27px;
         z-index: 20;
+    }
+
+    @media (max-width: 768px) {      
+
+        // display: none;
+
+        &::after {
+            right: 10px;
+        }
     }
 }
 

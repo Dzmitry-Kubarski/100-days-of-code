@@ -2,15 +2,24 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+
+    @media (max-width: 1180px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .gallery__item {
     width: 361px;
     height: 299px;
+    margin-left: 7px;
+    margin-right: 7px;
     
     border-radius: 2px; 
     border: 10px solid #f0efef;
-    position: relative;    
+    position: relative;  
+    
+    flex-grow: 1;
 
     &::after {
         background: rgba(#2e243e, .3);
@@ -40,7 +49,13 @@
             top: 0;
             z-index: 1;
         }        
-    }    
+    } 
+    
+    @media (max-width: 1180px) {
+        margin-right: 7px;
+        margin-left: 7px;
+        margin-bottom: 20px;
+    }
 }
 
 .gallery__img {

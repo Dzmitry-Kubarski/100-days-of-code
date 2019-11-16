@@ -18,4 +18,8 @@
     &:hover {
         background-image: $gradient_new;
     }
+
+    @media (max-width: 992px) {
+        display: none;
+    }
 }

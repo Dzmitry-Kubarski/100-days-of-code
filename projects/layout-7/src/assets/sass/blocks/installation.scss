@@ -8,17 +8,45 @@
         position: absolute;
         content: url(../../../assets/img/instll-bg.png);       
         top: -35px;
+        z-index: 1;
+    }
+
+    @media (max-width: 768px) {
+
+        padding: 90px 0px;
+
+        &::after {
+            display: none;
+        }
     }
 }
 
 .installation__wrapper {
     display: flex;
     align-items: center;
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .installation__left-box {
     flex-basis: 50%;
     margin-right: 140px;
+
+    position: relative;
+    z-index: 20;
+
+    @media (max-width: 1200px) {
+        margin-right: 50px;
+    }
+
+    @media (max-width: 768px) {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+   
 }
 
 .installation__right-box {
@@ -26,8 +54,22 @@
 
     display: flex;
     justify-content: center;
+
+    @media (max-width: 768px) {
+        flex-basis: 60%;
+    }
 }
 
 .installation__title {
     margin-bottom: 45px;
+
+    @media (max-width: 768px) {
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    @media (max-width: 474px) {
+        font-size: 31px;
+        line-height: 38px;
+    }
 }

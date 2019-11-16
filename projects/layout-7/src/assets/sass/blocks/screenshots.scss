@@ -8,10 +8,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;   
+
+    @media (max-width: 992px) {
+        padding-bottom: 90px;
+        padding-top: 90px;
+    }
 }
 
 .screenshots__text {
     margin-bottom: 120px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 60px;
+    }
 }  
 
 .screenshots__arrow-btn {
@@ -20,4 +29,19 @@
     right: 50%;
     transform: translateX(50%);
     z-index: 5;
+}
+
+.screenshots__title {    
+
+    @media (max-width: 768px) {
+
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    @media (max-width: 474px) {
+
+        font-size: 31px;
+        line-height: 38px;
+    }    
 }

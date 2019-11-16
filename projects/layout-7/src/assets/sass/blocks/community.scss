@@ -1,5 +1,9 @@
 .community--transform {
     transform: translateX(90px);
+
+    @media (max-width: 992px) {
+        transform: translateX(0);        
+    }
 }
 
 .community__title {

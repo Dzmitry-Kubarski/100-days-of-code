@@ -2,6 +2,11 @@
     margin-right: 15px;
 
     text-decoration: none;   
+
+    @media (max-width: 478px) {
+        display: inline-block;
+        max-width: 120px;
+     }
 } 
 
 .download__link img {
@@ -10,5 +15,9 @@
 
     &:hover {
         transform: translateY(-2px);
+    }
+
+    @media (max-width: 478px) {
+       width: 100%;
     }
 }

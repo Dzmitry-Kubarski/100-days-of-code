@@ -2,7 +2,7 @@
 }
 
 .email__input {
-    padding: 10px 13px;
+    padding: 10px 97px 10px 13px;
     width: 270px;
 
     border: none;
@@ -10,8 +10,8 @@
     border-radius: 2px;
 
     &:focus {         
-            outline-color: $orange;
-        }    
+        outline-color: $orange;
+    }  
 }
 
 .email__btn {
@@ -31,4 +31,10 @@
     &:focus {
         outline: 0;
     }
+
+    @media (max-width: 400px) {
+        width: 270px;
+        margin-top: 10px;
+        transform: translateX(0);
+    }       
 }
