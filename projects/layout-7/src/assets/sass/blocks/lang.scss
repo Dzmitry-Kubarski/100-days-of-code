@@ -1,14 +1,15 @@
 .lang {
     padding: 13px 58px 13px 28px;
 
+    appearance: none;
+    border: none;
+
     border-radius: 24px;
     background-color: $black_light;
     text-transform: uppercase;
     color: #fefeff;
     font-weight: 700;
-    cursor: pointer;
-
-    appearance: none;
+    cursor: pointer;    
 
     &:focus {
         outline: 0;
@@ -27,7 +28,7 @@
     position: relative;
 
     &::after {
-        content: url(../../../assets/img/arrow-down.png);
+        content: url(../img/arrow-down.png);
         position: absolute;
         display: block;       
         top: 10px;
