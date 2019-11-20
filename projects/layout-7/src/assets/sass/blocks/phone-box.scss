@@ -11,7 +11,8 @@
     position: relative;
     z-index: 10; 
     display: block;
-    height: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .phone-box__item {
@@ -23,59 +24,36 @@
     transform: translateX(-50%);
     z-index: 20;
 
-    &:nth-child(3) {
-        top: 56%;
-        z-index: 20;
+    &:nth-child(2) {
+        top: 17%;
+        left: 23%;
+        z-index: 1;
+
+        @media (max-width: 992px) {
+            display: none;
+        }
     }
+
+    &:nth-child(3) {
+        top: 74%;
+        left: -3%;
+        z-index: 1;
+
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }    
 
     &:nth-child(4) {
-        top: 20%;
-        z-index: 20;
-
-        @media (max-width: 587px) {
-            width: 64%;
-        }       
-    }
-
-    &:nth-child(5) {
-        top: 12%;
-        left: 27%;
-        z-index: 1;
-
-        @media (max-width: 474px) {
-            display: none;
-        }
-    }
-
-    &:nth-child(6) {
-        top: 74%;
-        left: 4%;
-        z-index: 1;
-
-        @media (max-width: 587px) {
-            display: none;
-        }
-    }
-
-    &:nth-child(7) {
-        left: 95%;
+        left: 103%;
         top: 72%;
         z-index: 1;
         position: absolute;
 
-        @media (max-width: 474px) {
+        @media (max-width: 1200px) {
             display: none;
         }
     }
 }
 
-.phone-box__logo {
-    display: block;
-    position: absolute;
-    z-index: 20;
-    bottom: 19%;
 
-    @media (max-width: 587px) {
-        width: 17%;
-    }    
-}

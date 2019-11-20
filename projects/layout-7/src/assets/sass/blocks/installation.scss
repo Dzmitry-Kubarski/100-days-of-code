@@ -19,6 +19,13 @@
             display: none;
         }
     }
+
+    @media (max-width: 998px) {
+
+        &::after  {
+            display: none;
+        }
+    }
 }
 
 .installation__wrapper {
@@ -39,13 +46,14 @@
     position: relative;
     z-index: 20;
 
-    @media (max-width: 1200px) {
-        margin-right: 50px;
-    }
+    // @media (max-width: 1200px) {
+    //     margin-right: 50px;
+    // }
 
     @media (max-width: 768px) {
         flex-basis: 100%;
         margin-bottom: 120px;
+        margin-right: 0;
     }
    
 }
@@ -57,7 +65,7 @@
     justify-content: center;
 
     @media (max-width: 768px) {
-        flex-basis: 60%;
+        flex-basis: 30%;
     }
 }
 
@@ -73,10 +81,6 @@
         font-size: 31px;
         line-height: 38px;
     }
-}
-
-.installation__slider {
-    // width: 530px;
 }
 
 .installation__dots {

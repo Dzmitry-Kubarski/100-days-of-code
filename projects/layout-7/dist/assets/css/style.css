@@ -477,6 +477,16 @@ template {
     justify-content: space-between;
 }
 
+.header__logo img {
+    width: 48px;
+    height: auto;
+}
+
+.header__menu {
+    -webkit-box-ordinal-group: 2;
+    order: 1;
+}
+
 .lang {
     padding: 13px 58px 13px 28px;
     -webkit-appearance: none;
@@ -519,6 +529,7 @@ template {
 @media (max-width: 768px) {
     .lang__wrapper::after {
         right: 10px;
+        top: 7px;
     }
 }
 
@@ -976,6 +987,12 @@ template {
     }
 }
 
+@media (max-width: 998px) {
+    .installation::after {
+        display: none;
+    }
+}
+
 .installation__wrapper {
     display: -webkit-box;
     display: flex;
@@ -998,16 +1015,11 @@ template {
     z-index: 20;
 }
 
-@media (max-width: 1200px) {
-    .installation__left-box {
-        margin-right: 50px;
-    }
-}
-
 @media (max-width: 768px) {
     .installation__left-box {
         flex-basis: 100%;
         margin-bottom: 120px;
+        margin-right: 0;
     }
 }
 
@@ -1021,7 +1033,7 @@ template {
 
 @media (max-width: 768px) {
     .installation__right-box {
-        flex-basis: 60%;
+        flex-basis: 30%;
     }
 }
 
@@ -1071,7 +1083,8 @@ template {
     position: relative;
     z-index: 10;
     display: block;
-    height: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .phone-box__item {
@@ -1085,69 +1098,40 @@ template {
     z-index: 20;
 }
 
+.phone-box__item:nth-child(2) {
+    top: 17%;
+    left: 23%;
+    z-index: 1;
+}
+
+@media (max-width: 992px) {
+    .phone-box__item:nth-child(2) {
+        display: none;
+    }
+}
+
 .phone-box__item:nth-child(3) {
-    top: 56%;
-    z-index: 20;
+    top: 74%;
+    left: -3%;
+    z-index: 1;
+}
+
+@media (max-width: 992px) {
+    .phone-box__item:nth-child(3) {
+        display: none;
+    }
 }
 
 .phone-box__item:nth-child(4) {
-    top: 20%;
-    z-index: 20;
-}
-
-@media (max-width: 587px) {
-    .phone-box__item:nth-child(4) {
-        width: 64%;
-    }
-}
-
-.phone-box__item:nth-child(5) {
-    top: 12%;
-    left: 27%;
-    z-index: 1;
-}
-
-@media (max-width: 474px) {
-    .phone-box__item:nth-child(5) {
-        display: none;
-    }
-}
-
-.phone-box__item:nth-child(6) {
-    top: 74%;
-    left: 4%;
-    z-index: 1;
-}
-
-@media (max-width: 587px) {
-    .phone-box__item:nth-child(6) {
-        display: none;
-    }
-}
-
-.phone-box__item:nth-child(7) {
-    left: 95%;
+    left: 103%;
     top: 72%;
     z-index: 1;
     position: absolute;
 }
 
-@media (max-width: 474px) {
-    .phone-box__item:nth-child(7) {
+@media (max-width: 1200px) {
+    .phone-box__item:nth-child(4) {
         display: none;
-    }
-}
-
-.phone-box__logo {
-    display: block;
-    position: absolute;
-    z-index: 20;
-    bottom: 19%;
-}
-
-@media (max-width: 587px) {
-    .phone-box__logo {
-        width: 17%;
     }
 }
 
