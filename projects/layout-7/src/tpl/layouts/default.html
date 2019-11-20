@@ -36,7 +36,6 @@
 
                 <nav class="menu  header__menu" id="headerMenu">
 
-
                     <!-- Button menu-mobail
                     ======================= -->
                     <button class="menu__btn-open" id="btnOpen" type="button">
@@ -81,15 +80,15 @@
 
                     <ul class="menu__list" id="menuList">
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Why Devoq?</a>
+                            <a class="menu__link" href="#advantages" data-scroll="#advantages">Why Devoq?</a>
                         </li>
 
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Apps</a>
+                            <a class="menu__link" href="#installation">Apps</a>
                         </li>
 
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Pricing</a>
+                            <a class="menu__link" href="#screenshots">Pricing</a>
                         </li>
                     </ul>
                 </nav> <!-- /menu header__menu -->
@@ -110,11 +109,26 @@
 
     <!-- Section - Intro
     ==================== -->
-    <section class="intro">
+    <section class="intro" id="intro">
         <div class="container">
             <div class="intro__wrapper">
                 <div class="intro__left-box">
-                    <img src="assets/img/intro-phone.png" alt="">
+                    <img src="assets/img/form-bg-lg.png" alt="Devoq">
+
+                    <div class="form__inner">
+                        <form class="form intro__form" action="#">
+                            <input class="form__input form__input-name" type="text" name="name" placeholder="Username">
+                            <input class="form__input form__input-password" type="password" name="password"
+                                placeholder="Password">
+                            <a class="form__password" href="#">Forgot Password?</a>
+                            <button class="form__btn">Sign In</button>
+
+                            <div class="form__register-inner">
+                                <span class="form__account">Don’t have an account yet ?</span>
+                                <a class="form__register" href="#">Sign Up</a>
+                            </div>
+                        </form>
+                    </div>
                 </div>
 
                 <div class="intro__right-box">
@@ -349,12 +363,13 @@
 
                 <div class="installation__right-box">
                     <div class="phone-box  installation__phone-box">
-                        <img class="phone-box__main-img" src="assets/img/install-box-r.png" alt="Phone">
-
+                        <div class="phone-box__main-img" id="scene">
+                            <img class="phone-box__main-icon" data-depth="0.2" src="assets/img/install-box-r.png"
+                                alt="Phone">
+                        </div>
                         <img class="phone-box__item" src="assets/img/instll-icon-1.png" alt="">
                         <img class="phone-box__item" src="assets/img/instll-icon-2.png" alt="">
-                        <img class="phone-box__item" src="assets/img/instll-icon-3.png" alt="">
-
+                        <img class="phone-box__item js-move" src="assets/img/instll-icon-3.png" alt="">
                     </div> <!-- /phone-box  installation__phone-box -->
                 </div> <!-- /installation__right-box -->
             </div> <!-- /installation__wrapper -->
@@ -488,6 +503,7 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 

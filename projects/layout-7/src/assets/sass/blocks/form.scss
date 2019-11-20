@@ -1,0 +1,116 @@
+.form__inner {
+    width: 262px;
+
+    position: absolute;
+    left: 18px;
+    bottom: 45px;     
+}
+
+.form__input {
+    margin-bottom: 34px;
+    padding: 10px 5px 6px 55px;
+    width: 100%;
+
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(#fff, .2);
+
+    color: $white;
+
+    &:focus {
+        outline: 0;
+    }
+
+    &::placeholder {
+        font-size: 18px;
+        font-weight: 400;
+        color: $white;       
+    }
+
+    
+}
+
+.form__input-name {
+    background: url(../img/form-user.png);
+    background-repeat: no-repeat;
+    background-position: 20px center;    
+}
+
+.form__input-password {
+    margin-bottom: 10px;
+
+    background: url(../img/form-pass.png);
+    background-repeat: no-repeat;
+    background-position: 20px center; 
+
+}
+.form__password {
+    margin-bottom: 50px;
+    margin-right: 10px;
+
+    font-size: 12px;
+    color: $white;
+
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    text-align: right;
+}
+
+.form__btn {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 15px 10px;
+
+    border: none;
+    background: $white;    
+
+    color: $black;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 47px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    transition: background .3s ease-in-out;
+
+    &:hover {        
+        background: darken($white, 10%);
+    }
+
+    &:focus {
+        outline: 0;
+    }    
+}
+
+.form__register-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.form__account {
+    margin-right: 7px;
+
+    color: $white;
+    font-size: 12px;
+    font-weight: 400;
+
+    opacity: .5;
+}
+
+.form__register {
+    color: $white;
+    font-size: 12px;
+    font-weight: 500;
+
+    text-decoration: none;
+}
+
+
+
+
+

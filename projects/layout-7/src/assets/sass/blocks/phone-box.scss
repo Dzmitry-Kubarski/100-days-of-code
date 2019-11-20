@@ -7,18 +7,18 @@
     z-index: 10;
 }
 
-.phone-box__main-img {
+.phone-box__main-icon {
     position: relative;
     z-index: 10; 
-    display: block;
+    // display: block;
     max-width: 100%;
-    max-height: 100%;
+    height: auto;
 }
 
 .phone-box__item {
     position: absolute;
     display: block;
-    width: auto;
+    // width: auto;
     left: 50%;
     top: 32%;
     transform: translateX(-50%);
@@ -27,10 +27,21 @@
     &:nth-child(2) {
         top: 17%;
         left: 23%;
-        z-index: 1;
+        z-index: -1;
 
         @media (max-width: 992px) {
             display: none;
+        }
+
+        @media (max-width: 768px) {
+            display: block;
+            left: 19%;
+        }
+
+        @media (max-width: 578px) {
+            left: 12%;
+            top: 25%;
+            max-width: 70%;
         }
     }
 
@@ -42,6 +53,17 @@
         @media (max-width: 992px) {
             display: none;
         }
+
+        @media (max-width: 768px) {
+            display: block;
+            left: -12%;
+        }
+
+        @media (max-width: 578px) {
+            left: -12%;
+            top: 80%;
+            max-width: 50%;
+        }
     }    
 
     &:nth-child(4) {
@@ -52,6 +74,16 @@
 
         @media (max-width: 1200px) {
             display: none;
+        }
+
+        @media (max-width: 768px) {
+            display: block;
+            left: 113%;
+        }
+
+        @media (max-width: 578px) {
+            left: 117%;
+            top: 80%;
         }
     }
 }

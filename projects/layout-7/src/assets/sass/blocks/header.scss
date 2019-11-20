@@ -23,5 +23,10 @@
 }
 
 .header__menu {
-    order: 1;
+
+    @media (max-width: 768px) {
+
+        order: 1;
+
+    }
 }
