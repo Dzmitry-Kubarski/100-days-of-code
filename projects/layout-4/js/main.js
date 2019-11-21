@@ -113,6 +113,7 @@ $(document).ready(function () {
 
 
     // Слайдер секции experiences
+
     $('.experiences-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -123,25 +124,29 @@ $(document).ready(function () {
     });
 
 
-    // Видео слайдер pop-up
+    // Слайдер секции videos
 
-    // $('.test').magnificPopup({
-    //     type: 'iframe',
-    //     preloader: false,
+    $('.videos-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        // dots: true,
+        // dotsClass: "my-dots",
+        // fade: true,
+        // asNavFor: '.videos-dots',
+    });
+
+
+    // $('.videos-dots').slick({
+    //     slidesToShow: 5,
+    //     slidesToScroll: 1,
+    //     dots: true,
+    //     // fade: true,
+    //     asNavFor: '.videos-slider'
     // });
 
 
 
-    // $('.popup-youtube').magnificPopup({
-    //     disableOn: 700,
-    //     type: 'iframe',
-    //     mainClass: 'mfp-fade',
-    //     removalDelay: 160,
-    //     preloader: false,
-
-    //     fixedContentPos: false
-    // });
-
+    // Video Modal
 
     $('.js-modal-btn').modalVideo();
 

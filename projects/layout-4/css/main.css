@@ -418,18 +418,49 @@ body {
 }
 
 .videos-slider {
-    /* display: flex; */
     width: 1032px;
     height: 613px;
+    overflow: hidden;
 }
 
 .videos-slide__video {
+    position: relative;
     overflow: hidden;
+} 
+
+ .videos-slide__video .videos-slide__link::before {
+    content: url(../img/video-play.png);
+    display: block;
+    position: absolute;
+    z-index: 20;
+    left: 50%;
+    margin-left: -42.5px;
+    top: 50%;
+    margin-top: -43px;
 }
-  
-.popup-youtube_wrapper {
-    width: 1070px;
-    height: 612px;
+
+.videos-slide__video .videos-slide__link::after {
+    background: transparent;
+    background: -moz-linear-gradient(bottom, rgba(48, 68, 74, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%);
+    background: -webkit-linear-gradient(bottom, rgba(48, 68, 74, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%);
+    background: -o-linear-gradient(bottom, rgba(48, 68, 74, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%);
+    background: -ms-linear-gradient(bottom, rgba(48, 68, 74, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%);
+    background: linear-gradient(to top, rgba(48, 68, 74, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%);
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+} 
+
+.videos-slide__link {
+    cursor: pointer;
+}
+
+.videos-slide__link img {
+    width: 100%;
 }
 
 .videos__dots-slide {
@@ -439,11 +470,10 @@ body {
     margin-bottom: 20px;
 }
 
-.videos-dots {
+ .videos-dots {
     overflow-y: auto;
-    max-height: 612px;
+    height: 590px;
     width: 540px;
-    /* margin-left: 20px; */
 }
 
 .dots-info__title {
@@ -464,7 +494,7 @@ body {
 
 .videos__dots-slide img {
     margin-right: 20px;
-}
+} 
 
 
 /* ...... Секция categories ..... */
@@ -504,7 +534,6 @@ body {
 }
 .categories-slider__item {
     position: relative;
-    /* width: 472px; */
     height: 500px;
 }
 
