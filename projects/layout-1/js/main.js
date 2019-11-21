@@ -21,7 +21,7 @@ $(document).ready(function () {
 
     // ----- скрол к секции -----
 
-    $('.header__btn').click(function () {
+    $('.header__btn, .nav__link--mobail, .nav__link').click(function () {
 
         let target = $(this).attr('href');
         $('html, body').animate({ scrollTop: $(target).offset().top }, 1000);

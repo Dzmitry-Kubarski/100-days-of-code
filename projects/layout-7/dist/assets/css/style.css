@@ -746,6 +746,22 @@ template {
     }
 }
 
+.intro__left-box--mobail {
+    display: none;
+}
+
+@media (max-width: 520px) {
+    .intro__left-box--mobail {
+        display: block;
+    }
+}
+
+@media (max-width: 520px) {
+    .intro__left-box--desctop {
+        display: none;
+    }
+}
+
 .intro__subtitle {
     font-size: 24px;
     color: #3d3d3d;
@@ -1247,7 +1263,7 @@ template {
 .phone-box__item:nth-child(3) {
     top: 74%;
     left: -3%;
-    z-index: 1;
+    z-index: -1;
 }
 
 @media (max-width: 992px) {

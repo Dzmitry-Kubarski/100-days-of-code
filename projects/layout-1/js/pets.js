@@ -18,4 +18,14 @@ $(document).ready(function () {
         $('.logo__subtitle').show();
     });
 
+    //---------Scroll------------------------
+
+    $('.header__btn, .nav__link--mobail, .nav__link').click(function () {
+
+        let target = $(this).attr('href');
+        $('html, body').animate({ scrollTop: $(target).offset().top }, 1000);
+        return false;
+    });
+
+
 });

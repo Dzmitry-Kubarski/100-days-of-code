@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+b, u, i, center, input, button,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -417,9 +417,12 @@ body {
 
     .subscription__form-input {
         margin-bottom: 25px;
+        width: 60%;
     }
 
-
+    .subscription__form-btn {
+        width: 60%;
+    }
 }
 
 
@@ -441,6 +444,10 @@ body {
         width: 100%;
         text-align: center;
         margin-bottom: 30px;
+    }
+
+    .subscription__right-box {
+        width: 100%;        
     }
 
     .subscription__subtitle {
@@ -505,18 +512,32 @@ body {
     .article:last-child {
         margin-bottom: 115px;
     }
+
+    .header__input-email {
+        margin-bottom: 30px;
+    }
 }
+
+
+    /*maximum screen width: 640px */
+    @media (max-width: 640px) {
+        .header__cta-btn,
+        .subscription__form-input {
+            width: 100%;
+        }
+
+        .header__input-email {
+            width: 100%;
+            padding: 29px 0px 29px 29px;
+        }
+    }
 
 
   /*maximum screen width: 576px */
   @media (max-width:576px) {
     .container {
         width: 100%;
-    }
-
-    .header__input-email {
-        margin-bottom: 30px;
-    }
+    }    
 
     .header__text {
         width: 100%;
@@ -559,9 +580,9 @@ body {
   /*maximum screen width: 480px */
   @media (max-width:480px) {
     .header__title  {
-        font-size: 38px;
+        font-size: 25px;
         font-weight: 800;
-        line-height: 45px;
+        line-height: 33px;
         font-size: 30px;
     }
 
@@ -585,11 +606,7 @@ body {
 
     .header__logo {
         margin-bottom: 30px;
-    }
-
-    .header__input-email {
-        width: 65%;
-    }
+    }   
 
     .article__text {
         font-size: 15px;
@@ -607,11 +624,7 @@ body {
 
     .subscription__right-box {
         width: 100%;
-    }
-
-    .subscription__form-input {
-        width: 60%;
-    }
+    }   
 
     .subscription_bg-wrap {
         padding: 80px 10px;
