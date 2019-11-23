@@ -1,0 +1,27 @@
+.menu {
+}
+
+.menu__list {
+}
+
+.menu__item {
+    display: inline-block; 
+    margin-left: 34px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.menu__link {
+    color: $black;
+    transition: color .3s ease;
+
+    &--active {
+        color: $golden;
+    } 
+
+    &:hover {
+        color: $golden;
+    }
+}

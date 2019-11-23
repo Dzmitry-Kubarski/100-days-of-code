@@ -1,0 +1,65 @@
+.post {
+    @include col();
+    @include size(6);
+    @include size-sm(12);
+    text-align: center;
+    margin-bottom: 30px;
+
+    max-width: 370px;
+}
+
+.post__img {
+    height: 280px;
+    overflow: hidden;
+}
+
+.post__img img {
+    filter: brightness(1) contrast(74%) hue-rotate(4deg);  
+    object-fit: cover;
+
+    height: 100%;
+    width: 100%;
+}
+
+.post__content {
+    padding: 16px 0px;
+    box-shadow: $shadow;
+}
+
+.post__subtitle {
+    display: block;
+
+    margin-bottom: 11px;
+
+    font-size: 12px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    color: $golden;
+    text-transform: uppercase;
+}
+
+.post__title {
+    margin-bottom: 11px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: $black;
+}
+
+.post__info {
+    color: $black_light;
+}
+
+.post__date {
+    margin-right: 11px;
+}
+
+.post__author {
+    margin-right: 11px;
+}
+
+.post__by {
+    color: $grey;
+}
+

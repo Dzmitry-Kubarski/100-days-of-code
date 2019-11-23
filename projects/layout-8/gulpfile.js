@@ -40,6 +40,7 @@ var path = {
         css: "src/assets/sass/**/*.scss",
         images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}"
     },
+
     clean: "./dist"
 }
 
@@ -133,18 +134,18 @@ function watchFiles() {
     gulp.watch([path.watch.css], css);
     gulp.watch([path.watch.js], js);
     gulp.watch([path.watch.images], images);
-    gulp.watch([path.watch.js], grid);
+    gulp.watch('./smartgrid.js', grid);
 }
 
 
 function grid(done) {
     delete require.cache[require.resolve('./smartgrid.js')];
     let settings = require('./smartgrid.js');
-    smartgrid('./src/css', settings);
+    smartgrid('src/assets/sass', settings);
 
     settings.offset = '3.1%';
     settings.filename = 'smart-grid-per';
-    smartgrid('./src/css', settings);
+    smartgrid('src/assets/sass', settings);
 
     done();
 }
@@ -162,5 +163,6 @@ exports.images = images;
 exports.clean = clean;
 exports.build = build;
 exports.watch = watch;
-exports.grid = grid;
 exports.default = watch;
+exports.grid = grid;
+

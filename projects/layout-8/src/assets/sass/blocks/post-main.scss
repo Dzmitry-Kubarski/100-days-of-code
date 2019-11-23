@@ -1,0 +1,32 @@
+.post-main {
+    color: $white;    
+}
+
+.post-main__subtitle {
+    display: block;
+    margin-bottom: 11px;
+
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.post-main__title {
+    margin-bottom: 11px;
+
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.post-main__date {
+    margin-right: 11px;
+}
+
+.post-main__author {
+    margin-right: 11px;
+}
+
+.post-main__by {
+    color: #b4b4b4;
+}

@@ -1,0 +1,36 @@
+.intro {
+    padding-top: 490px;
+    padding-bottom: 60px;
+
+    background-image: url(../img/intro-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    position: relative;
+
+    &::after {
+        background: linear-gradient(to bottom, rgba(#5f5f5f, .1) 80%, rgba(#161616, .7) 100%);
+        position: absolute;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 1;
+    }
+}
+
+.intro__inner {
+    @include row-flex();
+}
+
+.intro__post-main {
+    position: relative;
+    z-index: 50;
+    @include col();
+    @include size(12);
+}
+
+  
+  

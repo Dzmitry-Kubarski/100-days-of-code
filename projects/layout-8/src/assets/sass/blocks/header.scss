@@ -1,0 +1,28 @@
+.header {
+    max-width: 1920px;
+    padding: 30px 0px;
+}
+.header__inner {
+    @include row-flex(); 
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;    
+}
+
+.header__logo {
+    @include col();
+    flex-grow: 0.5;
+    margin: 10px 0 10px auto;
+}
+
+.header__menu {
+    @include col();
+    flex-grow: 0.5;
+    text-align: right;
+    margin: 10px 0;
+}
+
+.header__title {
+    @include col();
+    @include size(6);
+}

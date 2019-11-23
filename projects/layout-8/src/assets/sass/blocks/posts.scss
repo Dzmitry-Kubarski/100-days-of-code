@@ -1,0 +1,10 @@
+.posts {
+    @include col();
+    @include size(8);
+    @include size-md(12);
+}
+
+.posts__inner {
+    @include row-flex();
+    justify-content: center;
+}

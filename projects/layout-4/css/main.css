@@ -463,16 +463,25 @@ body {
     width: 100%;
 }
 
+.videos-slide {
+    display: none;
+}
+
+.js-db {
+    display: block;
+}
+
 .videos__dots-slide {
     display: flex;
     align-items: center;
     width: auto;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
  .videos-dots {
     overflow-y: auto;
-    height: 590px;
+    height: 591px;
     width: 540px;
 }
 
@@ -496,6 +505,13 @@ body {
     margin-right: 20px;
 } 
 
+.videos-dots__inner {
+    transition: background .2s ease-in-out;
+}
+
+.videos-dots__inner:hover {
+    background-color: #f0f0f0;
+}
 
 /* ...... Секция categories ..... */
 .categories {
@@ -890,3 +906,4 @@ body {
 .footer-social a:hover {
     background: #0144aa;
 }
+

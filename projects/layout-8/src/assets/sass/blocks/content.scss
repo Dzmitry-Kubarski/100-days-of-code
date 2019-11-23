@@ -1,0 +1,8 @@
+.content {
+    padding-top: 60px;
+}
+
+.content__inner {
+    @include row-flex();    
+    justify-content: space-between;
+}
