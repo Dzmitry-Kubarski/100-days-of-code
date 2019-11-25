@@ -1,0 +1,50 @@
+.statistics__list {
+    max-width: 270px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.statistics__item {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;    
+
+    width: 87px;
+    height: 87px;
+    background: $bg_icon;
+    text-align: center;
+    padding: 17px;
+    margin-bottom: 3px;
+    margin-left: 3px;
+
+    &:hover {
+
+        .statistics__icon {
+            fill: $golden;
+        }        
+    }
+}
+
+.statistics__icon {
+    margin-bottom: 7px; 
+    transition: fill .2s ease-in-out;
+}
+
+.statistics__value {
+    font-size: 12px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    color: #999999;
+}
+
+.statistics__title {
+    font-size: 12px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    color: #999999;
+}
+
+.statistics__topic {
+    
+}

@@ -1,16 +1,11 @@
-.menu {
-}
-
 .menu__list {
+    position: relative;
+   
 }
 
 .menu__item {
     display: inline-block; 
-    margin-left: 34px;
-
-    &:first-child {
-        margin-left: 0;
-    }
+    margin-left: 34px;   
 }
 
 .menu__link {
@@ -25,3 +20,29 @@
         color: $golden;
     }
 }
+
+.menu__btn-open {
+    background: transparent;
+    border: none;
+    display: none;
+
+    &:focus {
+        outline: 0;
+    }
+
+    @media (max-width:576px) {
+        display: block;
+    }
+}
+
+.menu__btn-close {
+    background: transparent;
+    border: none;
+    display: none;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+

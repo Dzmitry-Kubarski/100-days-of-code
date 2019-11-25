@@ -1,0 +1,37 @@
+.footer {
+    text-align: center;
+}
+
+.footer__logo {
+    margin-top: 105px;
+    margin-bottom: 60px;
+}
+
+.footer__menu {
+    margin-bottom: 38px;
+
+    .menu__item:first-child {
+        margin-left: 0;
+    }
+}
+
+.footer__social {
+    margin-bottom: 38px;
+}
+
+.footer__line {
+    border: none;
+    color: #e5e5e5;
+    background-color: #e5e5e5;
+    height: 1px;
+
+    margin-bottom: 30px;
+}
+
+.footer__copyright {
+    font-family: 'PT Sans', sans-serif;
+    color: $black_light;
+    text-align: center;
+
+    margin-bottom: 30px;
+}

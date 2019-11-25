@@ -1,0 +1,63 @@
+.sidebar {
+    @include col();
+    @include size(3);
+    @include size-md(8);
+    @include shift-left(1);
+
+    // max-width: 270px;
+}
+
+.sidebar__inner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    @media (max-width: 960px) {
+        flex-direction: row;
+    }
+}
+
+.sidebar__author {
+    margin-bottom: 70px;
+    // @include col();
+    // @include size-md(6);
+
+    @media (max-width: 960px) {
+        @include col();
+        @include size-md(6);
+    }
+
+}
+
+.sidebar__categories {
+    margin-bottom: 70px;
+    // @include col();
+    // @include size-md(6);
+    @media (max-width: 960px) {
+        @include col();
+        @include size-md(6);
+    }
+
+}
+
+.sidebar__statistics {
+    margin-bottom: 70px;
+    // @include col();
+    // @include size-md(6);
+   
+    @media (max-width: 960px) {
+        @include col();
+        @include size-md(6);
+    }
+}
+
+.sidebar__rubric {
+    margin-bottom: 70px;
+    
+    @media (max-width: 960px) {
+        @include col();
+        @include size-md(6);
+    }
+
+}
+

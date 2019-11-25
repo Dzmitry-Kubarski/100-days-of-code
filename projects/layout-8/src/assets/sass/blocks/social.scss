@@ -1,0 +1,42 @@
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #e8e8e8;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    transition: background .3s ease-in;
+
+    &:hover {
+        background: $golden;
+
+        .social__icon {
+
+            fill: $white;
+    }
+}
+
+.social__icon {
+    transition: fill .3s ease-in;    
+}
+
+}
+
+
+
+
+

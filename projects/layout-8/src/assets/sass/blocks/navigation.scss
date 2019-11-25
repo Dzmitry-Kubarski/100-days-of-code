@@ -1,0 +1,78 @@
+.navigation {
+    display: flex;
+    font-size: 16px;
+    color: $black;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+
+    padding: 20px 35px;
+}
+
+.navigation__btn-prev {
+    position: relative;
+    color: $black;
+    text-transform: uppercase;
+    margin-right: 27px;
+
+    transition: color .3s ease-in-out;
+
+    &::after {
+        content: url(../img/btn-nav-prev.png);
+        position: absolute;
+        left: -14px;
+        top: 0;
+    }
+
+    &:hover {
+        color: $golden;
+    }
+}
+
+.navigation__btn-next {
+    position: relative;
+    color: $black;
+    text-transform: uppercase;
+    margin-left: 27px;
+
+    transition: color .3s ease-in-out;
+
+    &::after {
+        content: url(../img/btn-nav-next.png);
+        position: absolute;
+        right: -14px;
+        top: 0;
+    }
+
+    &:hover {
+        color: $golden;
+    }
+}
+
+.navigation__btn--end {
+    opacity: .4;
+    cursor: inherit; 
+}
+
+.navigation__list {
+    display: flex;
+}
+
+.navigation__pass {
+    margin: 0 20px;
+}
+
+.navigation__link {
+    font-size: 16px;
+    color: $black;
+    margin: 0 20px;
+
+    transition: color .2s ease-in-out;
+
+    &:hover {
+        color: $golden;
+    }
+}
+
+.navigation__link--active {
+    color: $golden;
+}

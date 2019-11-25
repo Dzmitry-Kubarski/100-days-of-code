@@ -32,7 +32,51 @@
             </div>
 
             <nav class="menu header__menu">
-                <ul class="menu__list">
+
+                <!-- Button menu-mobail
+                    ======================= -->
+                <button class="menu__btn-open" id="btnOpen" type="button">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="35px" height="35px"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" fill="#c9a96e"
+                        style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path
+                                    d="M491.318,235.318H20.682C9.26,235.318,0,244.577,0,256s9.26,20.682,20.682,20.682h470.636
+                                               c11.423,0,20.682-9.259,20.682-20.682C512,244.578,502.741,235.318,491.318,235.318z" />
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path
+                                    d="M491.318,78.439H20.682C9.26,78.439,0,87.699,0,99.121c0,11.422,9.26,20.682,20.682,20.682h470.636
+                                               c11.423,0,20.682-9.26,20.682-20.682C512,87.699,502.741,78.439,491.318,78.439z" />
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <path
+                                    d="M491.318,392.197H20.682C9.26,392.197,0,401.456,0,412.879s9.26,20.682,20.682,20.682h470.636
+                                               c11.423,0,20.682-9.259,20.682-20.682S502.741,392.197,491.318,392.197z" />
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+
+                <button class="menu__btn-close" type="button">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" viewBox="0 0 47.971 47.971" fill="#c9a96e" width="30px" height="28px"
+                        style="enable-background:new 0 0 47.971 47.971;" xml:space="preserve">
+                        <g>
+                            <path d="M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88
+                                       c-1.172-1.172-3.07-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l18.865,18.864L0.879,42.85c-1.172,1.171-1.172,3.071,0,4.242
+                                       C1.465,47.677,2.233,47.97,3,47.97s1.535-0.293,2.121-0.879l18.865-18.864L42.85,47.091c0.586,0.586,1.354,0.879,2.121,0.879
+                                       s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z" />
+                        </g>
+                    </svg>
+                </button>
+
+                <ul class="menu__list" id="headerList">
                     <li class="menu__item"><a href="#" class="menu__link  menu__link--active">Home</a></li>
                     <li class="menu__item"><a href="#" class="menu__link">Recipes</a></li>
                     <li class="menu__item"><a href="#" class="menu__link">Article</a></li>
@@ -40,7 +84,7 @@
                     <li class="menu__item"><a href="#" class="menu__link">Purchase</a></li>
                 </ul>
             </nav>
-        </div>
+        </div> <!-- /header__inner -->
     </header>
 
 
@@ -81,15 +125,15 @@
                 <main class="posts" id="posts">
                     <div class="posts__inner">
 
-                        <div class="post">
+                        <a class="post" href="#">
                             <div class="post__img">
                                 <img src="assets/img/post-1.jpg" alt="">
                             </div>
                             <div class="post__content">
                                 <span class="post__subtitle">Tourism</span>
-                                <h1 class="post__title">
+                                <h2 class="post__title">
                                     One of Saturn’s largest rings<br>may be newer than anyone
-                                </h1>
+                                </h2>
 
                                 <div class="post__info">
                                     <span class="post__date">June 6, 2019</span>
@@ -99,18 +143,18 @@
                                     </span>
                                 </div>
                             </div> <!-- /post__content -->
-                        </div> <!-- /post -->
+                        </a> <!-- /post -->
 
-                        <div class="post">
+                        <a class="post" href="#">
                             <div class="post__img">
                                 <img src="assets/img/post-2.jpg" alt="">
                             </div>
 
                             <div class="post__content">
                                 <span class="post__subtitle">Sport</span>
-                                <h1 class="post__title">
+                                <h2 class="post__title">
                                     One of Saturn’s largest rings<br>may be newer than anyone
-                                </h1>
+                                </h2>
 
                                 <div class="post__info">
                                     <span class="post__date">June 7, 2019</span>
@@ -121,18 +165,18 @@
                                     <span class="post__sum">4</span>
                                 </div>
                             </div> <!-- /post__content -->
-                        </div> <!-- /post -->
+                        </a> <!-- /post -->
 
-                        <div class="post">
+                        <a class="post" href="#">
                             <div class="post__img">
                                 <img src="assets/img/post-3.jpg" alt="">
                             </div>
 
                             <div class="post__content">
                                 <span class="post__subtitle">Sport</span>
-                                <h1 class="post__title">
+                                <h2 class="post__title">
                                     One of Saturn’s largest rings<br>may be newer than anyone
-                                </h1>
+                                </h2>
 
                                 <div class="post__info">
                                     <span class="post__date">June 7, 2019</span>
@@ -143,18 +187,18 @@
                                     <span class="post__sum">4</span>
                                 </div>
                             </div> <!-- /post__content -->
-                        </div> <!-- /post -->
+                        </a> <!-- /post -->
 
-                        <div class="post">
+                        <a class="post" href="#">
                             <div class="post__img">
-                                <img src="assets/img/post-2.jpg" alt="">
+                                <img src="assets/img/post-4.jpg" alt="">
                             </div>
 
                             <div class="post__content">
                                 <span class="post__subtitle">Sport</span>
-                                <h1 class="post__title">
+                                <h2 class="post__title">
                                     One of Saturn’s largest rings<br>may be newer than anyone
-                                </h1>
+                                </h2>
 
                                 <div class="post__info">
                                     <span class="post__date">June 7, 2019</span>
@@ -165,51 +209,625 @@
                                     <span class="post__sum">4</span>
                                 </div>
                             </div> <!-- /post__content -->
-                        </div> <!-- /post -->
+                        </a> <!-- /post -->
 
+                        <a class="post" href="#">
+                            <div class="post__img">
+                                <img src="assets/img/post-5.jpg" alt="">
+                            </div>
+
+                            <div class="post__content">
+                                <span class="post__subtitle">Sport</span>
+                                <h2 class="post__title">
+                                    One of Saturn’s largest rings<br>may be newer than anyone
+                                </h2>
+
+                                <div class="post__info">
+                                    <span class="post__date">June 7, 2019</span>
+                                    <span class="post__author">
+                                        <span class="post__by">By</span>
+                                        Rickie Baroch
+                                    </span>
+                                    <span class="post__sum">4</span>
+                                </div>
+                            </div> <!-- /post__content -->
+                        </a> <!-- /post -->
+
+                        <a class="post" href="#">
+                            <div class="post__img">
+                                <img src="assets/img/post-6.jpg" alt="">
+                            </div>
+
+                            <div class="post__content">
+                                <span class="post__subtitle">Sport</span>
+                                <h2 class="post__title">
+                                    One of Saturn’s largest rings<br>may be newer than anyone
+                                </h2>
+
+                                <div class="post__info">
+                                    <span class="post__date">June 7, 2019</span>
+                                    <span class="post__author">
+                                        <span class="post__by">By</span>
+                                        Rickie Baroch
+                                    </span>
+                                    <span class="post__sum">4</span>
+                                </div>
+                            </div> <!-- /post__content -->
+                        </a> <!-- /post -->
+
+                        <a class="large-post" href="#">
+                            <div class="large-post__img">
+                                <img src="assets/img/large-post-1.jpg" alt="">
+                            </div>
+                            <div class="large-post__content">
+                                <span class="large-post__subtitle">Jeans</span>
+                                <h2 class="large-post__title">
+                                    One of Saturn’s largest rings may be newer than anyone
+                                </h2>
+
+                                <div class="large-post__info">
+                                    <span class="large-post__date">June 6, 2019</span>
+                                    <span class="large-post__author">
+                                        <span class="large-post__by">By</span>
+                                        Rickie Baroch
+                                    </span>
+
+                                    <span class="large-post__sum">8</span>
+                                    <span class="large-post__comments">comments</span>
+                                </div>
+
+                                <p class="large-post__text">Sed ut perspiciatis unde omnis iste natus error sit
+                                    voluptatem accusantium doloremque
+                                    laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                    accusantium doloremque laudantium, totam rem
+                                </p>
+                            </div> <!-- /large-post__content -->
+                        </a> <!-- /large-post -->
+
+                        <a class="post" href="#">
+                            <div class="post__img">
+                                <img src="assets/img/post-8.jpg" alt="">
+                            </div>
+
+                            <div class="post__content">
+                                <span class="post__subtitle">Sport</span>
+                                <h2 class="post__title">
+                                    One of Saturn’s largest rings<br>may be newer than anyone
+                                </h2>
+
+                                <div class="post__info">
+                                    <span class="post__date">June 7, 2019</span>
+                                    <span class="post__author">
+                                        <span class="post__by">By</span>
+                                        Rickie Baroch
+                                    </span>
+                                    <span class="post__sum">4</span>
+                                </div>
+                            </div> <!-- /post__content -->
+                        </a> <!-- /post -->
+
+                        <a class="post" href="#">
+                            <div class="post__img">
+                                <img src="assets/img/post-9.jpg" alt="">
+                            </div>
+
+                            <div class="post__content">
+                                <span class="post__subtitle">Sport</span>
+                                <h2 class="post__title">
+                                    One of Saturn’s largest rings<br>may be newer than anyone
+                                </h2>
+
+                                <div class="post__info">
+                                    <span class="post__date">June 7, 2019</span>
+                                    <span class="post__author">
+                                        <span class="post__by">By</span>
+                                        Rickie Baroch
+                                    </span>
+                                    <span class="post__sum">4</span>
+                                </div>
+                            </div> <!-- /post__content -->
+                        </a> <!-- /post -->
+
+                        <a class="post" href="#">
+                            <div class="post__img">
+                                <img src="assets/img/post-10.jpg" alt="">
+                            </div>
+
+                            <div class="post__content">
+                                <span class="post__subtitle">Sport</span>
+                                <h2 class="post__title">
+                                    One of Saturn’s largest rings<br>may be newer than anyone
+                                </h2>
+
+                                <div class="post__info">
+                                    <span class="post__date">June 7, 2019</span>
+                                    <span class="post__author">
+                                        <span class="post__by">By</span>
+                                        Rickie Baroch
+                                    </span>
+                                    <span class="post__sum">4</span>
+                                </div>
+                            </div> <!-- /post__content -->
+                        </a> <!-- /post -->
+
+                        <a class="post" href="#">
+                            <div class="post__img">
+                                <img src="assets/img/post-11.jpg" alt="">
+                            </div>
+
+                            <div class="post__content">
+                                <span class="post__subtitle">Sport</span>
+                                <h2 class="post__title">
+                                    One of Saturn’s largest rings<br>may be newer than anyone
+                                </h2>
+
+                                <div class="post__info">
+                                    <span class="post__date">June 7, 2019</span>
+                                    <span class="post__author">
+                                        <span class="post__by">By</span>
+                                        Rickie Baroch
+                                    </span>
+                                    <span class="post__sum">4</span>
+                                </div>
+                            </div> <!-- /post__content -->
+                        </a> <!-- /post -->
+
+
+                        <!-- Navigation
+                        =============== -->
+                        <nav class="navigation posts__navigation">
+
+                            <a class="navigation__btn-prev navigation__btn--end" href="#">OLDER POST</a>
+
+                            <ul class="navigation__list">
+                                <li class="navigation__item">
+                                    <a class="navigation__link navigation__link--active" href="#">1</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a class="navigation__link" href="#">2</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a class="navigation__link" href="#">3</a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a class="navigation__link" href="#">4</a>
+                                </li>
+
+                                <li class="navigation__item">
+                                    <span class="navigation__pass">...</span>
+                                </li>
+
+                                <li class="navigation__item">
+                                    <a class="navigation__link" href="#">8</a>
+                                </li>
+                            </ul>
+
+                            <a class="navigation__btn-next" href="#">NEXT POST</a>
+
+
+                        </nav> <!-- /post-navigation -->
                     </div> <!-- /posts__inner -->
                 </main> <!-- /posts -->
 
 
-                <!-- Aside
-                ========== -->
-                <aside class="aside" id="aside">
+                <!-- Sidebar
+                ============ -->
+                <aside class="sidebar" id="sidebar">
 
-                    <div class="topic">
-                        About the author
-                    </div>
-                </aside>
+                    <div class="sidebar__inner">
 
+                        <!-- <div class="topic">About the author</div> -->
+
+                        <!-- Author
+                            =========== -->
+                        <div class="author sidebar__author">
+
+                            <div class="topic">About the author</div>
+
+                            <div class="author__img">
+                                <img src="assets/img/author.jpg" alt="Author">
+                            </div>
+                            <div class="author__content">
+                                <h3 class="author__title">Kate Willems</h3>
+                                <span class="author__subtitle">Food & cooking bloger</span>
+                                <p class="author__text">Hi, I'm Sonia. Cooking is the way I express my creative side to
+                                    the
+                                    world. Welcome to my
+                                    Kitchen Corner on…
+                                </p>
+                                <a class="author__link" href="#">Continue Reading</a>
+                            </div> <!-- /author__content -->
+                        </div> <!-- /author -->
+
+
+                        <!-- <div class="topic">Featured posts</div> -->
+
+
+                        <!-- Featured-post
+                            ================== -->
+
+                        <div class="featured__inner">
+
+                            <div class="topic">Featured posts</div>
+
+                            <a class="featured-post" href="#">
+                                <div class="featured-post__img">
+                                    <img src="assets/img/topic-1.jpg" alt="">
+                                </div>
+                                <div class="featured-post__content">
+                                    <span class="featured-post__subtitle">Jeans</span>
+                                    <h2 class="featured-post__title">
+                                        One of Saturn’s largest rings<br>may be newer than anyone
+                                    </h2>
+
+                                    <div class="featured-post__info">
+                                        <span class="featured-post__date">June 6, 2019</span>
+                                        <span class="featured-post__author">
+                                            <span class="featured-post__by">By</span>
+                                            Rickie Baroch
+                                        </span>
+                                    </div>
+                                </div> <!-- /featured-post__content -->
+                            </a> <!-- /featured-post -->
+
+                            <a class="featured-post" href="#">
+                                <div class="featured-post__img">
+                                    <img src="assets/img/topic-2.jpg" alt="">
+                                </div>
+                                <div class="featured-post__content">
+                                    <span class="featured-post__subtitle">Jeans</span>
+                                    <h2 class="featured-post__title">
+                                        One of Saturn’s largest rings<br>may be newer than anyone
+                                    </h2>
+
+                                    <div class="featured-post__info">
+                                        <span class="featured-post__date">June 6, 2019</span>
+                                        <span class="featured-post__author">
+                                            <span class="featured-post__by">By</span>
+                                            Rickie Baroch
+                                        </span>
+                                    </div>
+                                </div> <!-- /featured-post__content -->
+                            </a> <!-- /featured-post -->
+
+                            <a class="featured-post" href="#">
+                                <div class="featured-post__img">
+                                    <img src="assets/img/topic-3.jpg" alt="">
+                                </div>
+                                <div class="featured-post__content">
+                                    <span class="featured-post__subtitle">Jeans</span>
+                                    <h2 class="featured-post__title">
+                                        One of Saturn’s largest rings<br>may be newer than anyone
+                                    </h2>
+
+                                    <div class="featured-post__info">
+                                        <span class="featured-post__date">June 6, 2019</span>
+                                        <span class="featured-post__author">
+                                            <span class="featured-post__by">By</span>
+                                            Rickie Baroch
+                                        </span>
+                                    </div>
+                                </div> <!-- /featured-post__content -->
+                            </a> <!-- /featured-post -->
+                        </div>
+
+
+
+                        <!-- <div class="topic categories__topic">Categories</div> -->
+
+
+                        <!-- Categories
+                            =============== -->
+                        <div class="categories sidebar__categories">
+
+                            <div class="topic categories__topic">Categories</div>
+
+                            <table class="categories__list">
+                                <tr class="categories__item">
+                                    <td class="categories__name">Fashion</td>
+                                    <td class="categories__value">(23)</td>
+                                </tr>
+                                <tr class="categories__item">
+                                    <td class="categories__name">Style & clothes</td>
+                                    <td class="categories__value">(8)</td>
+                                </tr>
+                                <tr class="categories__item">
+                                    <td class="categories__name">Minimalism</td>
+                                    <td class="categories__value">(16)</td>
+                                </tr>
+                                <tr class="categories__item">
+                                    <td class="categories__name">Black & White</td>
+                                    <td class="categories__value">(5)</td>
+                                </tr>
+                                <tr class="categories__item">
+                                    <td class="categories__name">Modern clothes</td>
+                                    <td class="categories__value">(12)</td>
+                                </tr>
+                            </table>
+                        </div> <!-- /categories -->
+
+
+                        <!-- <div class="topic categories__topic">We're on social media</div> -->
+
+
+                        <!-- statistics
+                            =============== -->
+                        <div class="statistics sidebar__statistics">
+
+                            <div class="topic statistics__topic">We're on social media</div>
+
+                            <ul class="statistics__list">
+
+                                <li class="statistics__item">
+                                    <a class="statistics__link" href="#">
+                                        <svg class="statistics__icon" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="20px">
+                                            <path class="statistics__icon" fill-rule="evenodd" fill="rgb(90, 90, 90)"
+                                                d="M10.586,0.004 L7.947,-0.000 C4.983,-0.000 3.068,1.932 3.068,4.922 L3.068,7.191 L0.415,7.191 C0.186,7.191 -0.000,7.374 -0.000,7.599 L-0.000,10.887 C-0.000,11.113 0.186,11.295 0.415,11.295 L3.068,11.295 L3.068,19.592 C3.068,19.817 3.253,20.000 3.482,20.000 L6.944,20.000 C7.173,20.000 7.358,19.817 7.358,19.592 L7.358,11.295 L10.460,11.295 C10.689,11.295 10.875,11.113 10.875,10.887 L10.876,7.599 C10.876,7.491 10.832,7.388 10.755,7.311 C10.677,7.234 10.571,7.191 10.461,7.191 L7.358,7.191 L7.358,5.267 C7.358,4.343 7.583,3.873 8.808,3.873 L10.585,3.873 C10.814,3.873 11.000,3.690 11.000,3.465 L11.000,0.412 C11.000,0.187 10.815,0.004 10.586,0.004 Z" />
+                                        </svg>
+                                    </a>
+                                    <span class="statistics__value">32k</span>
+                                    <span class="statistics__title">likes</span>
+                                </li>
+
+                                <li class="statistics__item">
+                                    <a class="statistics__link" href="#">
+                                        <svg class="statistics__icon" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="21px">
+                                            <path class="statistics__icon" fill-rule="evenodd" fill="rgb(90, 90, 90)"
+                                                d="M13.055,2.817 C11.741,1.483 9.923,0.747 7.936,0.747 C4.900,0.747 3.032,2.065 2.001,3.170 C0.729,4.531 -0.000,6.340 -0.000,8.131 C-0.000,10.379 0.889,12.105 2.377,12.748 C2.476,12.791 2.577,12.813 2.676,12.813 C2.990,12.813 3.238,12.595 3.324,12.246 C3.375,12.046 3.491,11.553 3.542,11.338 C3.650,10.915 3.562,10.712 3.326,10.417 C2.896,9.878 2.695,9.240 2.695,8.411 C2.695,5.947 4.429,3.328 7.641,3.328 C10.190,3.328 11.774,4.862 11.774,7.330 C11.774,8.888 11.457,10.331 10.881,11.393 C10.481,12.131 9.777,13.010 8.697,13.010 C8.230,13.010 7.811,12.807 7.546,12.453 C7.296,12.119 7.214,11.686 7.314,11.236 C7.428,10.726 7.583,10.195 7.733,9.682 C8.006,8.744 8.265,7.858 8.265,7.152 C8.265,5.943 7.563,5.131 6.518,5.131 C5.190,5.131 4.150,6.558 4.150,8.380 C4.150,9.274 4.375,9.942 4.476,10.199 C4.309,10.949 3.315,15.409 3.127,16.249 C3.017,16.740 2.361,20.618 3.448,20.927 C4.669,21.274 5.761,17.498 5.872,17.071 C5.962,16.724 6.277,15.412 6.470,14.605 C7.060,15.207 8.009,15.613 8.933,15.613 C10.674,15.613 12.240,14.783 13.342,13.277 C14.411,11.817 15.000,9.781 15.000,7.545 C15.000,5.797 14.291,4.074 13.055,2.817 Z" />
+                                        </svg>
+                                    </a>
+                                    <span class="statistics__value">32k</span>
+                                    <span class="statistics__title">likes</span>
+                                </li>
+
+                                <li class="statistics__item">
+                                    <a class="statistics__link" href="#">
+                                        <svg class="statistics__icon" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="19px">
+                                            <path class="statistics__icon" fill-rule="evenodd" fill="rgb(90, 90, 90)"
+                                                d="M-0.000,5.719 C1.760,4.295 4.262,1.167 6.214,1.167 C8.163,1.167 8.642,3.501 8.908,5.619 C9.177,7.736 9.943,12.369 10.973,12.369 C12.006,12.369 14.358,8.271 14.224,6.688 C14.092,5.105 12.389,5.342 11.452,5.797 C12.313,2.631 14.302,0.947 16.844,0.947 C19.387,0.947 20.000,2.769 20.000,5.006 C20.000,8.411 13.194,18.842 9.083,18.842 C6.540,18.842 5.909,15.041 5.394,13.160 C4.877,11.281 3.863,6.350 2.678,6.034 C2.218,5.956 0.919,7.003 0.919,7.003 L-0.000,5.719 Z" />
+                                        </svg>
+                                    </a>
+                                    <span class="statistics__value">32k</span>
+                                    <span class="statistics__title">likes</span>
+                                </li>
+
+                                <li class="statistics__item">
+                                    <a class="statistics__link" href="#">
+                                        <svg class="statistics__icon" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="21px">
+                                            <path class="statistics__icon" fill-rule="evenodd" fill="rgb(90, 90, 90)"
+                                                d="M10.000,20.646 C4.486,20.646 -0.000,16.115 -0.000,10.545 C-0.000,4.976 4.486,0.444 10.000,0.444 C15.514,0.444 20.000,4.976 20.000,10.545 C20.000,16.115 15.514,20.646 10.000,20.646 ZM18.334,11.956 C18.013,11.857 16.632,11.466 14.866,11.466 C14.328,11.466 13.755,11.503 13.166,11.596 C14.216,14.527 14.672,16.930 14.785,17.587 C16.635,16.298 17.952,14.284 18.334,11.956 ZM10.000,19.091 C11.156,19.091 12.259,18.856 13.263,18.429 C13.128,17.634 12.637,15.070 11.477,12.014 C11.473,12.015 11.470,12.016 11.467,12.017 C6.840,13.646 5.088,16.836 4.847,17.315 C6.274,18.428 8.062,19.091 10.000,19.091 ZM1.551,10.559 C1.551,12.725 2.356,14.705 3.679,16.213 C4.036,15.616 6.357,11.964 10.579,10.585 C10.672,10.554 10.766,10.527 10.860,10.500 C10.659,10.043 10.442,9.586 10.214,9.135 C6.464,10.261 2.825,10.349 1.776,10.349 C1.680,10.349 1.605,10.349 1.555,10.348 C1.552,10.418 1.551,10.489 1.551,10.559 ZM1.743,8.749 L1.826,8.749 C2.604,8.749 5.830,8.686 9.462,7.721 C8.109,5.301 6.662,3.259 6.371,2.853 C4.044,3.976 2.302,6.143 1.743,8.749 ZM10.000,2.025 C9.345,2.025 8.708,2.102 8.095,2.245 C8.439,2.714 9.883,4.734 11.203,7.174 C14.053,6.084 15.330,4.470 15.566,4.145 C14.078,2.826 12.130,2.025 10.000,2.025 ZM16.580,5.212 C16.284,5.599 14.858,7.308 11.902,8.540 C12.091,8.935 12.274,9.335 12.443,9.739 C12.501,9.875 12.557,10.011 12.612,10.146 C13.266,10.065 13.918,10.033 14.538,10.033 C16.459,10.033 18.066,10.336 18.446,10.415 C18.414,8.447 17.721,6.642 16.580,5.212 Z" />
+                                        </svg>
+                                    </a>
+                                    <span class="statistics__value">32k</span>
+                                    <span class="statistics__title">likes</span>
+                                </li>
+
+                                <li class="statistics__item">
+                                    <a class="statistics__link" href="#">
+                                        <svg class="statistics__icon" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="18px">
+                                            <path class="statistics__icon" fill-rule="evenodd" fill="rgb(90, 90, 90)"
+                                                d="M20.000,2.620 C19.264,2.957 18.473,3.185 17.643,3.287 C18.490,2.763 19.141,1.933 19.448,0.942 C18.655,1.428 17.776,1.781 16.842,1.971 C16.093,1.147 15.027,0.633 13.846,0.633 C11.580,0.633 9.743,2.531 9.743,4.871 C9.743,5.204 9.779,5.527 9.850,5.837 C6.440,5.661 3.416,3.973 1.392,1.408 C1.039,2.034 0.836,2.763 0.836,3.539 C0.836,5.010 1.561,6.307 2.662,7.067 C1.989,7.045 1.356,6.855 0.803,6.537 C0.803,6.554 0.803,6.573 0.803,6.590 C0.803,8.644 2.218,10.357 4.095,10.746 C3.751,10.843 3.387,10.895 3.014,10.895 C2.749,10.895 2.492,10.869 2.242,10.820 C2.764,12.503 4.279,13.729 6.075,13.763 C4.670,14.900 2.901,15.578 0.978,15.578 C0.648,15.578 0.320,15.558 -0.000,15.518 C1.815,16.721 3.972,17.423 6.289,17.423 C13.837,17.423 17.964,10.964 17.964,5.362 C17.964,5.179 17.960,4.996 17.952,4.814 C18.755,4.217 19.450,3.470 20.000,2.620 L20.000,2.620 Z" />
+                                        </svg>
+                                    </a>
+                                    <span class="statistics__value">32k</span>
+                                    <span class="statistics__title">likes</span>
+                                </li>
+
+                                <li class="statistics__item">
+                                    <a class="statistics__link" href="#">
+                                        <svg class="statistics__icon" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="15px">
+                                            <path class="statistics__icon" fill-rule="evenodd" fill="rgb(90, 90, 90)"
+                                                d="M19.966,9.889 L13.542,9.889 C13.542,12.324 15.721,12.170 15.721,12.170 C17.786,12.170 17.714,10.758 17.714,10.758 L19.893,10.758 C19.893,14.510 15.649,14.254 15.649,14.254 C10.560,14.254 10.886,9.231 10.886,9.231 C10.886,9.205 10.892,4.188 15.649,4.188 C20.672,4.188 19.966,9.889 19.966,9.889 ZM15.697,6.111 C13.783,6.111 13.518,8.131 13.518,8.131 L17.587,8.131 C17.587,8.131 17.617,6.111 15.697,6.111 ZM12.980,1.618 L18.100,1.618 L18.100,3.236 L12.980,3.236 L12.980,1.618 ZM10.396,10.100 C10.396,14.107 6.454,13.979 6.454,13.979 L-0.000,13.979 L-0.000,0.845 L6.454,0.845 C8.416,0.845 9.962,1.996 9.962,4.341 C9.962,6.693 8.072,6.840 8.072,6.840 C10.566,6.840 10.397,10.100 10.396,10.100 ZM6.454,3.178 L2.844,3.178 L2.844,6.111 L6.231,6.111 C6.816,6.111 7.330,5.913 7.330,4.545 C7.330,3.178 6.454,3.178 6.454,3.178 ZM6.454,8.131 L2.844,8.131 L2.844,11.646 L6.273,11.646 C6.786,11.634 7.758,11.474 7.758,9.940 C7.764,8.118 6.454,8.131 6.454,8.131 Z" />
+                                        </svg>
+                                    </a>
+                                    <span class="statistics__value">32k</span>
+                                    <span class="statistics__title">likes</span>
+                                </li>
+
+                                <li class="statistics__item">
+                                    <a class="statistics__link" href="#">
+                                        <svg class="statistics__icon" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="21px">
+                                            <path class="statistics__icon" fill-rule="evenodd" fill="rgb(102, 102, 102)"
+                                                d="M13.750,20.354 L6.250,20.354 C2.799,20.354 -0.000,17.526 -0.000,14.040 L-0.000,6.465 C-0.000,2.978 2.799,0.151 6.250,0.151 L13.750,0.151 C17.201,0.151 20.000,2.978 20.000,6.465 L20.000,14.040 C20.000,17.526 17.201,20.354 13.750,20.354 ZM18.125,6.465 C18.125,4.028 16.162,2.045 13.750,2.045 L6.250,2.045 C3.837,2.045 1.875,4.028 1.875,6.465 L1.875,14.040 C1.875,16.477 3.837,18.459 6.250,18.459 L13.750,18.459 C16.162,18.459 18.125,16.477 18.125,14.040 L18.125,6.465 Z" />
+                                            <path class="statistics__icon" fill-rule="evenodd" fill="rgb(90, 90, 90)"
+                                                d="M10.000,15.303 C7.239,15.303 5.000,13.042 5.000,10.252 C5.000,7.463 7.239,5.202 10.000,5.202 C12.761,5.202 15.000,7.463 15.000,10.252 C15.000,13.042 12.761,15.303 10.000,15.303 ZM10.000,7.096 C8.277,7.096 6.875,8.511 6.875,10.252 C6.875,11.992 8.277,13.409 10.000,13.409 C11.722,13.409 13.125,11.992 13.125,10.252 C13.125,8.511 11.722,7.096 10.000,7.096 Z" />
+                                            <path class="statistics__icon" fill-rule="evenodd" fill="rgb(90, 90, 90)"
+                                                d="M15.000,5.202 C15.552,5.202 16.000,4.750 16.000,4.192 C16.000,3.634 15.552,3.182 15.000,3.182 C14.448,3.182 14.000,3.634 14.000,4.192 C14.000,4.750 14.448,5.202 15.000,5.202 Z" />
+                                        </svg>
+                                    </a>
+                                    <span class="statistics__value">32k</span>
+                                    <span class="statistics__title">likes</span>
+                                </li>
+
+                                <li class="statistics__item">
+                                    <a class="statistics__link" href="#">
+                                        <svg class="statistics__icon" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="20px">
+                                            <path class="statistics__icon" fill-rule="evenodd" fill="rgb(90, 90, 90)"
+                                                d="M13.382,19.343 L2.618,19.343 C1.177,19.343 -0.000,18.232 -0.000,16.875 L-0.000,11.214 C-0.000,9.856 1.177,8.745 2.618,8.745 L13.382,8.745 C14.822,8.745 16.000,9.857 16.000,11.214 L16.000,16.875 C16.000,18.233 14.822,19.343 13.382,19.343 ZM4.669,10.643 L1.112,10.638 L1.112,11.506 L2.223,11.510 L2.223,17.489 L3.336,17.489 L3.336,17.489 L3.336,17.489 L3.336,17.489 L3.335,11.527 L4.669,11.527 L4.669,10.643 ZM7.335,12.415 L6.223,12.415 L6.223,15.599 C6.223,16.060 6.251,16.290 6.222,16.371 C6.131,16.618 5.724,16.880 5.566,16.398 C5.539,16.313 5.563,16.058 5.562,15.621 L5.557,12.415 L4.451,12.415 L4.455,15.570 C4.455,16.054 4.444,16.414 4.459,16.578 C4.486,16.868 4.476,17.205 4.745,17.398 C5.245,17.759 6.204,17.344 6.444,16.829 L6.442,17.486 L7.335,17.487 L7.335,12.415 ZM10.893,13.411 C10.892,12.401 10.136,11.796 9.109,12.613 L9.114,10.643 L8.002,10.645 L7.997,17.445 L8.911,17.431 L8.994,17.007 C10.162,18.080 10.897,17.345 10.895,16.061 L10.893,13.411 ZM14.377,15.710 L13.542,15.714 C13.542,15.748 13.541,15.786 13.540,15.827 L13.540,16.293 C13.540,16.542 13.335,16.744 13.085,16.744 L12.921,16.744 C12.671,16.744 12.465,16.542 12.465,16.293 L12.465,16.241 L12.465,15.729 L12.465,15.068 L14.375,15.068 L14.375,14.350 C14.375,13.825 14.362,13.300 14.318,13.000 C14.182,12.050 12.848,11.899 12.174,12.385 C11.962,12.537 11.801,12.740 11.707,13.014 C11.612,13.287 11.565,13.660 11.565,14.134 L11.565,15.714 C11.566,18.340 14.757,17.969 14.377,15.710 ZM12.982,13.084 L13.049,13.084 C13.323,13.084 13.547,13.306 13.547,13.578 L13.534,14.190 L12.480,14.190 L12.485,13.578 C12.485,13.306 12.708,13.084 12.982,13.084 ZM9.581,16.652 C9.314,16.652 9.096,16.473 9.096,16.254 L9.096,13.278 C9.096,13.058 9.314,12.879 9.581,12.879 C9.850,12.879 10.069,13.058 10.069,13.278 L10.069,16.254 C10.069,16.473 9.850,16.652 9.581,16.652 ZM11.559,7.064 C11.474,7.241 11.370,7.373 11.246,7.463 C11.123,7.552 10.981,7.595 10.821,7.595 C10.638,7.595 10.484,7.553 10.365,7.469 C10.244,7.384 10.155,7.271 10.098,7.131 C10.040,6.990 10.006,6.844 9.991,6.692 C9.977,6.539 9.969,6.237 9.969,5.784 L9.969,2.228 L10.988,2.228 L10.988,6.331 C10.988,6.553 11.172,6.735 11.394,6.735 C11.618,6.735 11.801,6.553 11.801,6.331 L11.801,2.228 L12.778,2.228 L12.778,7.500 L11.538,7.500 L11.559,7.064 ZM8.966,7.086 C8.843,7.284 8.683,7.431 8.488,7.525 C8.293,7.620 8.069,7.666 7.816,7.666 C7.533,7.666 7.295,7.627 7.099,7.546 C6.902,7.465 6.750,7.342 6.642,7.180 C6.532,7.018 6.455,6.820 6.409,6.589 C6.362,6.358 6.340,6.012 6.340,5.550 L6.340,4.154 L6.340,4.154 C6.340,3.648 6.382,3.253 6.466,2.968 C6.550,2.684 6.702,2.456 6.922,2.284 C7.141,2.111 7.422,2.024 7.762,2.024 C8.049,2.024 8.295,2.081 8.501,2.191 C8.706,2.302 8.866,2.445 8.976,2.623 C9.089,2.802 9.165,2.985 9.206,3.172 C9.248,3.362 9.268,3.649 9.268,4.035 L9.268,5.369 C9.268,5.858 9.248,6.218 9.210,6.446 C9.173,6.675 9.092,6.887 8.966,7.086 ZM8.296,3.442 C8.296,3.143 8.075,2.900 7.804,2.900 C7.533,2.900 7.311,3.143 7.311,3.442 L7.311,6.248 C7.311,6.546 7.533,6.790 7.804,6.790 C8.075,6.790 8.296,6.547 8.296,6.248 L8.296,3.442 ZM5.049,7.665 L3.879,7.665 L3.877,3.624 L2.406,0.151 L3.672,0.151 L4.418,2.731 L5.153,0.158 L6.433,0.158 L5.050,3.622 L5.049,7.665 Z" />
+                                        </svg>
+                                    </a>
+                                    <span class="statistics__value">32k</span>
+                                    <span class="statistics__title">likes</span>
+                                </li>
+
+                                <li class="statistics__item">
+                                    <a class="statistics__icon" class="statistics__link" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="15px">
+                                            <path class="statistics__icon" fill-rule="evenodd" fill="rgb(90, 90, 90)"
+                                                d="M0.004,7.320 C-0.126,3.844 2.870,0.633 6.294,0.591 C8.039,0.440 9.737,1.128 11.058,2.251 C10.516,2.856 9.965,3.455 9.376,4.015 C8.213,3.297 6.813,2.750 5.455,3.236 C3.263,3.870 1.936,6.499 2.747,8.677 C3.419,10.953 6.142,12.201 8.277,11.245 C9.382,10.843 10.111,9.807 10.430,8.694 C9.164,8.668 7.897,8.684 6.630,8.649 C6.627,7.883 6.624,7.120 6.627,6.354 C8.739,6.351 10.855,6.345 12.970,6.364 C13.100,8.240 12.828,10.248 11.627,11.754 C9.984,13.903 6.946,14.534 4.476,13.691 C1.854,12.816 -0.053,10.132 0.004,7.320 Z" />
+                                            <path class="statistics__icon" fill-rule="evenodd" fill="rgb(90, 90, 90)"
+                                                d="M18.010,3.681 C18.670,3.681 19.330,3.681 19.993,3.681 C19.997,4.369 20.003,5.061 20.007,5.749 C20.670,5.755 21.337,5.759 22.000,5.762 C22.000,6.450 22.000,7.135 22.000,7.823 C21.337,7.826 20.670,7.829 20.007,7.833 C20.000,8.524 19.997,9.212 19.993,9.904 C19.330,9.900 18.666,9.904 18.007,9.904 C18.000,9.212 18.000,8.524 17.993,7.836 C17.330,7.829 16.663,7.826 16.000,7.822 C16.000,7.134 16.000,6.450 16.000,5.762 C16.663,5.758 17.327,5.755 17.993,5.748 C17.997,5.061 18.003,4.369 18.010,3.681 Z" />
+                                        </svg>
+                                    </a>
+                                    <span class="statistics__value">32k</span>
+                                    <span class="statistics__title">likes</span>
+                                </li>
+
+                            </ul> <!-- /statistics__list -->
+                        </div> <!-- /statistics -->
+
+
+                        <!-- <div class="topic rubric__topic">Rubric</div> -->
+
+
+                        <!-- Rubric
+                            =========== -->
+                        <nav class="rubric sidebar__rubric">
+
+                            <div class="topic rubric__topic">Rubric</div>
+
+                            <a class="rubric__link" href="#">Business</a>
+                            <a class="rubric__link" href="#">Freelance</a>
+                            <a class="rubric__link" href="#">Money</a>
+                            <a class="rubric__link" href="#">Experience</a>
+                            <a class="rubric__link" href="#">Lifestyle</a>
+                            <a class="rubric__link" href="#">SEO</a>
+                            <a class="rubric__link" href="#">Wordpress</a>
+                            <a class="rubric__link" href="#">Marketing</a>
+                            <a class="rubric__link" href="#">UX</a>
+                            <a class="rubric__link" href="#">Modern</a>
+                            <a class="rubric__link" href="#">Success</a>
+                            <a class="rubric__link" href="#">Nature</a>
+
+                        </nav> <!-- /rubric -->
+                    </div> <!-- /sidebar__inner -->
+                </aside> <!-- /sidebar -->
             </div> <!-- /content__inner -->
         </div> <!-- /wrapper -->
     </div> <!-- /content -->
 
 
+    <!-- Section Instagram
+    ====================== -->
+    <section class="instagram" id="instagram">
+
+        <div class="instagram__title">Follow our @instagram_name</div>
+
+        <div class="instagram__inner">
+
+            <a class="instagram__link" href="#">
+                <img class="instagram__images" src="assets/img/insta/inst-1.jpg" alt="">
+            </a>
+
+            <a class="instagram__link" href="#">
+                <img class="instagram__images" src="assets/img/insta/inst-2.jpg" alt="">
+            </a>
+
+            <a class="instagram__link" href="#">
+                <img class="instagram__images" src="assets/img/insta/inst-3.jpg" alt="">
+            </a>
+
+            <a class="instagram__link" href="#">
+                <img class="instagram__images" src="assets/img/insta/inst-4.jpg" alt="">
+            </a>
+
+            <a class="instagram__link" href="#">
+                <img class="instagram__images" src="assets/img/insta/inst-5.jpg" alt="">
+            </a>
+
+            <a class="instagram__link" href="#">
+                <img class="instagram__images" src="assets/img/insta/inst-6.jpg" alt="">
+            </a>
+
+        </div> <!-- /instagram__inner -->
+    </section> <!-- /instagram -->
 
 
 
 
+    <!-- Section Footer
+    =================== -->
+    <footer class="footer">
+        <div class="wrapper">
 
+            <div class="logo footer__logo">
+                <a class="logo__link" href="#">
+                    <img src="assets/img/logo.png" alt="FASHION logo">
+                </a>
+            </div>
 
+            <nav class="menu footer__menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#" class="menu__link  menu__link--active">Home</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Recipes</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Article</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Contact </a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Purchase</a></li>
+                </ul>
+            </nav>
 
+            <div class="social footer__social">
 
+                <a class="social__link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px"
+                        height="16px">
+                        <path class="social__icon" fill-rule="evenodd" fill="rgb(102, 102, 102)"
+                            d="M8.783,0.211 L6.784,0.208 C4.538,0.208 3.087,1.700 3.087,4.009 L3.087,5.761 L1.077,5.761 C0.903,5.761 0.762,5.902 0.762,6.076 L0.762,8.615 C0.762,8.789 0.903,8.929 1.077,8.929 L3.087,8.929 L3.087,15.336 C3.087,15.510 3.227,15.651 3.401,15.651 L6.023,15.651 C6.197,15.651 6.338,15.510 6.338,15.336 L6.338,8.929 L8.688,8.929 C8.862,8.929 9.002,8.789 9.002,8.615 L9.003,6.076 C9.003,5.992 8.970,5.912 8.911,5.853 C8.852,5.794 8.772,5.761 8.689,5.761 L6.338,5.761 L6.338,4.275 C6.338,3.562 6.508,3.199 7.436,3.199 L8.783,3.198 C8.956,3.198 9.097,3.057 9.097,2.884 L9.097,0.526 C9.097,0.353 8.956,0.212 8.783,0.211 Z" />
+                    </svg>
+                </a>
 
+                <a class="social__link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px"
+                        height="14px">
+                        <path class="social__icon" fill-rule="evenodd" fill="rgb(102, 102, 102)"
+                            d="M15.792,2.134 C15.218,2.390 14.602,2.563 13.955,2.641 C14.615,2.242 15.122,1.612 15.361,0.860 C14.744,1.229 14.059,1.497 13.331,1.641 C12.748,1.016 11.917,0.625 10.997,0.625 C9.231,0.625 7.800,2.066 7.800,3.844 C7.800,4.096 7.828,4.341 7.883,4.577 C5.226,4.443 2.870,3.162 1.293,1.214 C1.018,1.689 0.860,2.242 0.860,2.832 C0.860,3.948 1.425,4.934 2.282,5.511 C1.758,5.495 1.265,5.350 0.834,5.108 C0.834,5.122 0.834,5.136 0.834,5.149 C0.834,6.709 1.936,8.009 3.399,8.305 C3.131,8.379 2.848,8.418 2.557,8.418 C2.350,8.418 2.150,8.398 1.955,8.361 C2.362,9.639 3.542,10.570 4.942,10.596 C3.847,11.459 2.469,11.974 0.971,11.974 C0.713,11.974 0.458,11.959 0.208,11.929 C1.622,12.842 3.303,13.375 5.109,13.375 C10.989,13.375 14.205,8.470 14.205,4.216 C14.205,4.077 14.202,3.938 14.196,3.800 C14.821,3.346 15.363,2.780 15.792,2.134 L15.792,2.134 Z" />
+                    </svg>
+                </a>
 
+                <a class="social__link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px"
+                        height="16px">
+                        <path class="social__icon" fill-rule="evenodd" fill="rgb(102, 102, 102)"
+                            d="M10.809,1.800 C9.756,0.774 8.298,0.208 6.705,0.208 C4.271,0.208 2.774,1.221 1.946,2.071 C0.927,3.118 0.342,4.509 0.342,5.886 C0.342,7.616 1.055,8.943 2.248,9.437 C2.328,9.470 2.408,9.487 2.487,9.487 C2.739,9.487 2.939,9.319 3.008,9.051 C3.048,8.897 3.141,8.518 3.182,8.353 C3.269,8.027 3.198,7.871 3.009,7.644 C2.664,7.230 2.503,6.740 2.503,6.102 C2.503,4.207 3.893,2.193 6.469,2.193 C8.513,2.193 9.782,3.372 9.782,5.271 C9.782,6.468 9.528,7.578 9.066,8.395 C8.746,8.962 8.181,9.639 7.315,9.639 C6.941,9.639 6.605,9.482 6.392,9.210 C6.192,8.953 6.126,8.620 6.206,8.274 C6.298,7.882 6.422,7.474 6.542,7.079 C6.761,6.358 6.968,5.677 6.968,5.133 C6.968,4.204 6.406,3.579 5.568,3.579 C4.504,3.579 3.670,4.677 3.670,6.078 C3.670,6.765 3.850,7.279 3.931,7.477 C3.797,8.054 3.000,11.483 2.849,12.130 C2.762,12.507 2.235,15.489 3.107,15.727 C4.086,15.994 4.961,13.090 5.050,12.761 C5.122,12.495 5.375,11.486 5.530,10.865 C6.002,11.328 6.763,11.640 7.504,11.640 C8.900,11.640 10.156,11.002 11.039,9.844 C11.896,8.721 12.368,7.155 12.368,5.436 C12.368,4.092 11.800,2.767 10.809,1.800 Z" />
+                    </svg>
+                </a>
 
+                <a class="social__link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
+                        height="14px">
+                        <path class="social__icon" fill-rule="evenodd" fill="rgb(102, 102, 102)"
+                            d="M0.223,6.962 C0.104,3.760 2.854,0.802 5.997,0.763 C7.600,0.624 9.158,1.258 10.370,2.293 C9.873,2.850 9.367,3.402 8.827,3.917 C7.759,3.256 6.474,2.752 5.227,3.200 C3.215,3.784 1.997,6.206 2.741,8.213 C3.358,10.308 5.858,11.459 7.818,10.578 C8.832,10.208 9.501,9.253 9.795,8.227 C8.632,8.204 7.469,8.219 6.306,8.186 C6.303,7.481 6.300,6.778 6.303,6.072 C8.242,6.069 10.184,6.064 12.126,6.081 C12.246,7.810 11.996,9.659 10.894,11.047 C9.384,13.027 6.596,13.608 4.328,12.831 C1.921,12.025 0.171,9.553 0.223,6.962 Z" />
+                        <path class="social__icon" fill-rule="evenodd" fill="rgb(102, 102, 102)"
+                            d="M15.907,4.294 C16.482,4.294 17.058,4.294 17.636,4.294 C17.639,4.884 17.645,5.477 17.648,6.066 C18.227,6.072 18.808,6.075 19.387,6.078 C19.387,6.668 19.387,7.255 19.387,7.845 C18.808,7.848 18.227,7.851 17.648,7.854 C17.642,8.447 17.639,9.036 17.636,9.629 C17.058,9.626 16.479,9.629 15.903,9.629 C15.898,9.036 15.898,8.447 15.892,7.857 C15.313,7.850 14.732,7.848 14.153,7.845 C14.153,7.255 14.153,6.668 14.153,6.078 C14.732,6.075 15.311,6.072 15.892,6.066 C15.895,5.477 15.901,4.884 15.907,4.294 Z" />
+                    </svg>
+                </a>
 
+                <a class="social__link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
+                        height="12px">
+                        <path class="social__icon" fill-rule="evenodd" fill="rgb(102, 102, 102)"
+                            d="M19.177,7.975 L13.262,7.975 C13.262,10.033 15.269,9.903 15.269,9.903 C17.170,9.903 17.103,8.709 17.103,8.709 L19.110,8.709 C19.110,11.879 15.202,11.663 15.202,11.663 C10.515,11.663 10.815,7.419 10.815,7.419 C10.815,7.397 10.821,3.158 15.202,3.158 C19.827,3.158 19.177,7.975 19.177,7.975 ZM15.246,4.783 C13.484,4.783 13.239,6.490 13.239,6.490 L16.986,6.490 C16.986,6.490 17.014,4.783 15.246,4.783 ZM12.744,0.987 L17.459,0.987 L17.459,2.353 L12.744,2.353 L12.744,0.987 ZM10.365,8.153 C10.365,11.539 6.734,11.431 6.734,11.431 L0.792,11.431 L0.792,0.333 L6.735,0.333 C8.542,0.333 9.965,1.306 9.965,3.287 C9.965,5.275 8.225,5.399 8.225,5.399 C10.521,5.399 10.365,8.153 10.365,8.153 ZM6.735,2.304 L3.410,2.304 L3.410,4.783 L6.529,4.783 C7.068,4.783 7.541,4.615 7.541,3.460 C7.541,2.304 6.735,2.304 6.735,2.304 ZM6.735,6.490 L3.410,6.490 L3.410,9.460 L6.568,9.460 C7.041,9.449 7.936,9.314 7.936,8.018 C7.941,6.479 6.735,6.490 6.735,6.490 Z" />
+                    </svg>
+                </a>
 
+                <a class="social__link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+                        height="18px">
+                        <path class="social__icon" fill-rule="evenodd" fill="rgb(102, 102, 102)"
+                            d="M12.187,17.500 L5.812,17.500 C2.879,17.500 0.500,15.121 0.500,12.187 L0.500,5.812 C0.500,2.879 2.879,0.500 5.812,0.500 L12.187,0.500 C15.121,0.500 17.500,2.879 17.500,5.812 L17.500,12.187 C17.500,15.121 15.121,17.500 12.187,17.500 ZM15.906,5.812 C15.906,3.762 14.238,2.094 12.187,2.094 L5.812,2.094 C3.762,2.094 2.094,3.762 2.094,5.812 L2.094,12.187 C2.094,14.238 3.762,15.906 5.812,15.906 L12.187,15.906 C14.238,15.906 15.906,14.238 15.906,12.187 L15.906,5.812 Z" />
+                        <path class="social__icon" fill-rule="evenodd" fill="rgb(102, 102, 102)"
+                            d="M9.000,13.250 C6.653,13.250 4.750,11.347 4.750,9.000 C4.750,6.653 6.653,4.750 9.000,4.750 C11.347,4.750 13.250,6.653 13.250,9.000 C13.250,11.347 11.347,13.250 9.000,13.250 ZM9.000,6.344 C7.536,6.344 6.344,7.535 6.344,9.000 C6.344,10.464 7.536,11.656 9.000,11.656 C10.464,11.656 11.656,10.464 11.656,9.000 C11.656,7.535 10.464,6.344 9.000,6.344 Z" />
+                        <path class="social__icon" fill-rule="evenodd" fill="rgb(102, 102, 102)"
+                            d="M13.604,5.458 C14.191,5.458 14.667,4.983 14.667,4.396 C14.667,3.809 14.191,3.333 13.604,3.333 C13.017,3.333 12.542,3.809 12.542,4.396 C12.542,4.983 13.017,5.458 13.604,5.458 Z" />
+                    </svg>
+                </a>
+            </div> <!-- /social -->
 
+            <hr class="footer__line">
 
+            <p class="footer__copyright">@2019 Logwork. All Right Reserved.</p>
 
-
-
-
-
-
-
-
-
-
+        </div> <!-- /wrapper -->
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/js/app.js"></script>

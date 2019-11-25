@@ -2,10 +2,16 @@
     @include col();
     @include size(6);
     @include size-sm(12);
+
     text-align: center;
-    margin-bottom: 30px;
+    transition: box-shadow .2s ease-in-out;
 
     max-width: 370px;
+    margin-bottom: 30px;
+
+    &:hover {
+        box-shadow: $shadow-hov;
+    }
 }
 
 .post__img {
@@ -29,7 +35,7 @@
 .post__subtitle {
     display: block;
 
-    margin-bottom: 11px;
+    margin-bottom: 8px;
 
     font-size: 12px;
     font-family: 'PT Sans', sans-serif;
@@ -39,7 +45,7 @@
 }
 
 .post__title {
-    margin-bottom: 11px;
+    margin-bottom: 8px;
 
     font-size: 20px;
     font-weight: 400;

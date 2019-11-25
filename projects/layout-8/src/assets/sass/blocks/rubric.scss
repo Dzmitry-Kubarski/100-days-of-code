@@ -1,0 +1,20 @@
+.rubric {
+    max-width: 270px;
+}
+
+.rubric__link {
+    display: inline-block;
+    background: $bg_icon;
+    color: $black_light;
+
+    padding: 9px 14px;
+    margin-bottom: 7px;
+    margin-right: 7px;  
+    
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        color: $golden;
+        background: lighten($bg_icon, 5%);
+    }
+}

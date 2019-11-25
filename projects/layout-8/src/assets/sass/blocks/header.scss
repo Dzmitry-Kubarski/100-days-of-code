@@ -1,18 +1,28 @@
 .header {
     max-width: 1920px;
-    padding: 30px 0px;
+    padding: 28px 0px;
 }
 .header__inner {
     @include row-flex(); 
+
     align-items: center;
     padding-left: 80px;
-    padding-right: 80px;    
+    padding-right: 80px;   
+    
+    @media (max-width:1240px) {
+        padding-left: 30px;
+        padding-right: 30px; 
+    }
 }
 
 .header__logo {
     @include col();
     flex-grow: 0.5;
     margin: 10px 0 10px auto;
+
+    @media (max-width: 576px) {
+        flex-grow: 1;
+    }
 }
 
 .header__menu {
@@ -20,6 +30,45 @@
     flex-grow: 0.5;
     text-align: right;
     margin: 10px 0;
+
+    @media (max-width: 576px) {
+        flex-grow: 0;
+    }
+
+    .menu__list {
+        @media (max-width:576px) {
+
+            padding-top: 80px;
+            padding-bottom: 50px;
+            height: 100vh;
+
+            text-align: center;        
+            background-color: $white;
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin-top: 20px;
+            z-index: 50;
+
+            display: none;
+        }
+    } 
+    
+    .menu__item {
+        @media (max-width: 576px) {
+            display: block;
+            margin-left: 0;
+
+            padding: 10px 0px;
+        }
+    }
+
+    .menu__link {
+        @media (max-width: 576px) {
+            font-size: 22px;
+        }
+    } 
 }
 
 .header__title {

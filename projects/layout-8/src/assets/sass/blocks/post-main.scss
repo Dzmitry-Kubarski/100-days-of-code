@@ -4,7 +4,7 @@
 
 .post-main__subtitle {
     display: block;
-    margin-bottom: 11px;
+    margin-bottom: 8px;
 
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
@@ -12,11 +12,21 @@
 }
 
 .post-main__title {
-    margin-bottom: 11px;
+    margin-bottom: 8px;
 
     font-size: 40px;
     font-weight: 700;
     line-height: 50px;
+
+    @media (max-width:576px) {
+        font-size: 25px;
+        line-height: 35px;
+    }   
+
+    @media (max-width:420px) {
+        font-size: 20px;
+        line-height: 25px;
+    } 
 }
 
 .post-main__date {
