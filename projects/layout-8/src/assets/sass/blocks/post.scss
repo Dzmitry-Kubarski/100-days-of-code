@@ -1,12 +1,13 @@
 .post {
     @include col();
     @include size(6);
-    @include size-sm(12);
+    @include size-sm(10);
+    @include size-xs(11);
 
     text-align: center;
     transition: box-shadow .2s ease-in-out;
 
-    max-width: 370px;
+    // max-width: 370px;
     margin-bottom: 30px;
 
     &:hover {

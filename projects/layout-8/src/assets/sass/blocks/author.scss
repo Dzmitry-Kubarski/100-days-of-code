@@ -1,17 +1,17 @@
 .author {
-    max-width: 270px;
+    // max-width: 270px;
     position: relative;    
     text-align: center; 
     
-     &::before {
-        content: '';
-        position: absolute;
-        height: 1px;
-        width: 100%;
-        left: 0;
-        bottom: 12%;
-        background: #e5e5e5;
-    }
+    //  &::before {
+    //     content: '';
+    //     position: absolute;
+    //     height: 1px;
+    //     width: 100%;
+    //     left: 0;
+    //     bottom: 12%;
+    //     background: #e5e5e5;
+    // }
    
 }
 
@@ -55,6 +55,7 @@
     font-weight: 400;
     color: $black_light;
     line-height: 24px;
+    padding-bottom: 13px;
 }
 
 .author__link {   
@@ -65,5 +66,12 @@
     text-align: center;
 
     padding-top: 13px;
-    margin-top: 27px;
+    // margin-top: 27px;
+}
+
+.author__line {
+    border: none;
+    color: #e5e5e5;
+    background-color: #e5e5e5;
+    height: 1px;
 }

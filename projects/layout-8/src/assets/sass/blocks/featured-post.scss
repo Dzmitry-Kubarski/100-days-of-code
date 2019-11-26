@@ -1,8 +1,39 @@
+.featured__inner {
+
+    @media (max-width: 960px) {
+        order: 1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+        @include col();
+        @include size-md(12);
+        @include size-sm(10);
+        @include size-xs(12);
+        
+    }   
+    
+    .topic {
+        @media (max-width: 960px) {
+            width: 100%;
+        }
+    }
+}
+
+
 .featured-post {
     display: block;
-    max-width: 270px;
+    // max-width: 270px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 30px;   
+
+    @media (max-width: 960px) {
+        @include col();
+        @include size-md(6);
+        // @include size-sm(5);
+        @include size-xs(6);
+        @include size-xxs(12);
+    }
 }
 
 .featured-post__img {
@@ -68,3 +99,10 @@
 .featured-post__by {
     color: $grey;
 }
+
+// .topic.featured-post__topic {
+//     @media (max-width: 960px) {
+//         max-width: 100%;
+//     }
+// }
+   

@@ -1,11 +1,18 @@
 .navigation {
     display: flex;
+    justify-content: center;
     font-size: 16px;
     color: $black;
     border: 1px solid #e5e5e5;
     text-align: center;
 
     padding: 20px 35px;
+
+    @media (max-width: 960px) {
+        @include col();
+        @include size-sm(10);
+        @include size-xs(11);
+    }
 }
 
 .navigation__btn-prev {
@@ -26,6 +33,10 @@
     &:hover {
         color: $golden;
     }
+
+    @media (max-width: 720px) {
+        display: none;
+    }
 }
 
 .navigation__btn-next {
@@ -45,6 +56,10 @@
 
     &:hover {
         color: $golden;
+    }
+
+    @media (max-width: 720px) {
+        display: none;
     }
 }
 
@@ -70,6 +85,10 @@
 
     &:hover {
         color: $golden;
+    }
+
+    @media (max-width: 375px) {
+        margin: 0 15px;        
     }
 }
 

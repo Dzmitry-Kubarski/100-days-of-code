@@ -1,16 +1,18 @@
 .categories__topic {
     margin-top: 40px;
-}
 
-.categories {
-    max-width: 270px;
+    @media (max-width: 960px) {
+        margin-top: 0;
+    }
 }
 
 .categories__list {
-    width: 100%;
 }
+
 .categories__item {
-    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     color: $black_light;
     border-bottom: 1px solid #e5e5e5;
 
@@ -23,11 +25,9 @@
 }
 
 .categories__name {
-    width: 100%
-
+    color: $black_light;
 }
 
 .categories__value {
-    width: 100%;
-    text-align: right;
+   
 }

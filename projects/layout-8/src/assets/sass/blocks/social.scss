@@ -11,8 +11,8 @@
     align-items: center;
     justify-content: center;
 
-    width: 36px;
-    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
     border-radius: 50%;
     border: 1px solid #e8e8e8;
 
@@ -27,16 +27,10 @@
         .social__icon {
 
             fill: $white;
+        }  
     }
 }
 
 .social__icon {
-    transition: fill .3s ease-in;    
+    transition: fill .3s ease-in;
 }
-
-}
-
-
-
-
-

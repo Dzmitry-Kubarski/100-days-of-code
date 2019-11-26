@@ -24,4 +24,9 @@
     color: $black;
     text-align: center;
     margin-bottom: 44px;
+
+    @media (max-width: 960px) {
+        margin-top: 50px;
+        padding: 0px 30px;
+    }
 }

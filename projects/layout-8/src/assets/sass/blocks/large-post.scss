@@ -7,11 +7,12 @@
 
     @include col();
     @include size(12);
-    @include size-sm(12);
+    @include size-sm(10);
+    @include size-xs(11);
 
     &:hover {
         box-shadow: $shadow-hov;
-    }
+    }   
 }
 
 .large-post__img {
@@ -30,6 +31,10 @@
 .large-post__content {
     padding: 25px 143px 30px 25px;    
     box-shadow: $shadow;
+
+    @media (max-width: 960px) {
+        padding: 25px 25px 30px 25px;  
+    }
 }
 
 .large-post__subtitle {

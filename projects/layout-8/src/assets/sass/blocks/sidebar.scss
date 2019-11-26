@@ -1,8 +1,10 @@
 .sidebar {
     @include col();
     @include size(3);
-    @include size-md(8);
     @include shift-left(1);
+    @include shift-md-left(0);
+    @include size-md(12);
+
 
     // max-width: 270px;
 }
@@ -10,6 +12,7 @@
 .sidebar__inner {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     flex-direction: column;
 
     @media (max-width: 960px) {
@@ -25,17 +28,20 @@
     @media (max-width: 960px) {
         @include col();
         @include size-md(6);
+        @include size-sm(10);
+        @include size-xs(12);
     }
 
 }
 
 .sidebar__categories {
     margin-bottom: 70px;
-    // @include col();
-    // @include size-md(6);
+    
     @media (max-width: 960px) {
         @include col();
         @include size-md(6);
+        @include size-sm(10);
+        @include size-xs(12);
     }
 
 }
@@ -48,6 +54,8 @@
     @media (max-width: 960px) {
         @include col();
         @include size-md(6);
+        @include size-sm(10);
+        @include size-xs(12);
     }
 }
 
@@ -57,6 +65,8 @@
     @media (max-width: 960px) {
         @include col();
         @include size-md(6);
+        @include size-sm(10);
+        @include size-xs(12);
     }
 
 }
