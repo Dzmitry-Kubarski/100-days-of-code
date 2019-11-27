@@ -1,0 +1,56 @@
+.header {
+    position: relative;
+    max-height: 711px;
+    background-color: $bg_blue;
+    padding-top: 41px;
+    padding-bottom: 212px;
+
+    &::after {
+        position: absolute;
+        content: url(../img/header_bg.png);
+        top: 0;
+        right: 180px;
+        z-index: 1;       
+    }
+}
+
+.header__menu {
+    position: relative;
+    z-index: 60;
+}
+
+.header__inner {
+    position: relative;
+    @include row-flex();
+    align-items: center;
+    margin-bottom: 67px;
+}
+
+.header__logo {
+    @include col();
+    @include size(2);
+    @include shift-right(2);
+}
+
+.header__title {
+    font-family: $fz_Montserrat;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+    color: $black_color;
+    margin-bottom: 42px;
+}
+
+.header__subtitle {
+    font-size: 28px;
+    line-height: 40px;
+    color: $black_color;
+    margin-bottom: 60px;
+}
+
+.header__track {
+    position: absolute;
+    top: 328px;
+    right: 640px;
+    z-index: 50;
+}

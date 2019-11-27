@@ -1,0 +1,25 @@
+.track {
+    display: flex;
+    align-items: center;   
+}
+
+.track__text {
+    display: block;
+    width: 183px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black_color;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.track__geo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background: #fff;
+    box-shadow: 0px 12px 32px rgba(19, 30, 71, 0.15);
+}

@@ -1,0 +1,18 @@
+.menu__list {
+    @include row-flex();
+}
+
+.menu__item {
+    margin-right: 45px;
+}
+
+.menu__link {
+    font-weight: 400;
+    font-size: 16px;
+    color:$black_color;
+    transition: color .3s ease-out;
+    
+    &:hover {
+        color: darken($yellow_color, 20%); 
+    }
+}

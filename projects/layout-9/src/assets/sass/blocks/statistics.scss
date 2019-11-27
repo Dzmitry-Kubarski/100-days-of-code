@@ -1,0 +1,48 @@
+.statistics {
+    max-width: 1085px;
+    position: relative;
+    z-index: 70;
+    padding: 51px 0px;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: -55px;
+}
+
+.statistics__list {
+    @include row-flex();
+    justify-content: center;
+}
+
+.statistics__item {
+    text-align: center;
+    width: 169px;
+    padding: 0 15px;
+    margin: 0 42px;
+    // @include col();
+    // @include size(2);
+}
+
+.statistics__value {
+    font-family: $fz_Montserrat;
+    font-weight: 900;
+    font-size: 50px;
+    color: $yellow_color;
+    line-height: 1;
+}
+
+.statistics__signature {
+    font-family: $fz_Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    color: $yellow_color;
+    margin-bottom: 15px;
+}
+
+.statistics__title {
+    font-size: 18px;
+    line-height: 21px;
+    color: $black_color;
+    font-weight: 400;
+}
