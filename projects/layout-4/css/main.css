@@ -891,7 +891,7 @@ body {
     color: #c6c6c6;
 }
 
-.footer-social a {
+.footer-social__link {
     display: inline-block;
     background: #3984f3;
     width: 46px;
@@ -903,7 +903,7 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.footer-social a:hover {
+.footer-social__link:hover {
     background: #0144aa;
 }
 

@@ -11,7 +11,7 @@ const sass = require("gulp-sass");
 const rigger = require("gulp-rigger");
 const uglify = require("gulp-uglify");
 const plumber = require("gulp-plumber");
-const imagemin = require("gulp-imagemin");
+// const imagemin = require("gulp-imagemin");
 const del = require("del");
 const panini = require("panini");
 const browsersync = require("browser-sync").create();
@@ -121,7 +121,7 @@ function js() {
 
 function images() {
     return src(path.src.images)
-        .pipe(imagemin())
+        // .pipe(imagemin())
         .pipe(dest(path.build.images));
 }
 

@@ -12,7 +12,12 @@
 
     &:hover {
         box-shadow: $shadow-hov;
-    }   
+    }  
+    
+    @media (max-width: 420px) {
+        display: none;
+    }
+
 }
 
 .large-post__img {

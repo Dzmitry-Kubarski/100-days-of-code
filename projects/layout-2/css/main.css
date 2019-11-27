@@ -1272,6 +1272,18 @@ body {
         right: 0;
      }
 }
+
+@media (max-width: 375px) {
+    .header__title {
+        font-size: 34px;
+        line-height: 45px;
+    }
+
+    .map__address_footer {
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
     
 
     

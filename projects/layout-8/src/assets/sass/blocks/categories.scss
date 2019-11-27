@@ -6,9 +6,6 @@
     }
 }
 
-.categories__list {
-}
-
 .categories__item {
     width: 100%;
     display: flex;
@@ -16,18 +13,20 @@
     color: $black_light;
     border-bottom: 1px solid #e5e5e5;
 
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     padding-bottom: 20px;
+    padding-top: 20px;
 
     &:last-child {
         margin-bottom: 0;
-    }
+    }   
 }
 
 .categories__name {
-    color: $black_light;
-}
+    color: $black_light;  
+    transition: color .2s ease-in-out;
 
-.categories__value {
-   
+    &:hover {
+        color: $golden;
+    }
 }

@@ -969,6 +969,8 @@ button:focus {
 .author {
     position: relative;
     text-align: center;
+    -webkit-transition: box-shadow .2s ease-in;
+    transition: box-shadow .2s ease-in;
 }
 
 .author__img {
@@ -1019,6 +1021,12 @@ button:focus {
     color: #c9a96e;
     text-align: center;
     padding-top: 13px;
+    -webkit-transition: color .2s ease-in;
+    transition: color .2s ease-in;
+}
+
+.author__link:hover {
+    color: #b1b1b1;
 }
 
 .author__line {
@@ -1072,6 +1080,12 @@ button:focus {
     display: block;
     text-align: center;
     margin-bottom: 30px;
+    -webkit-transition: box-shadow .2s ease-in;
+    transition: box-shadow .2s ease-in;
+}
+
+.featured-post:hover {
+    box-shadow: 0px 7px 8px rgba(128, 127, 127, 0.15);
 }
 
 @media (max-width: 960px) {
@@ -1196,6 +1210,12 @@ button:focus {
     box-shadow: 0px 7px 8px rgba(128, 127, 127, 0.15);
 }
 
+@media (max-width: 420px) {
+    .large-post {
+        display: none;
+    }
+}
+
 .large-post__img {
     max-height: 349px;
     overflow: hidden;
@@ -1279,8 +1299,8 @@ button:focus {
     justify-content: space-between;
     color: #666666;
     border-bottom: 1px solid #e5e5e5;
-    margin-bottom: 20px;
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .categories__item:last-child {
@@ -1289,6 +1309,12 @@ button:focus {
 
 .categories__name {
     color: #666666;
+    -webkit-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+
+.categories__name:hover {
+    color: #c9a96e;
 }
 
 .statistics__list {

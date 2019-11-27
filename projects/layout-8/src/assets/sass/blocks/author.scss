@@ -2,17 +2,7 @@
     // max-width: 270px;
     position: relative;    
     text-align: center; 
-    
-    //  &::before {
-    //     content: '';
-    //     position: absolute;
-    //     height: 1px;
-    //     width: 100%;
-    //     left: 0;
-    //     bottom: 12%;
-    //     background: #e5e5e5;
-    // }
-   
+    transition: box-shadow .2s ease-in;        
 }
 
 .author__img {
@@ -66,7 +56,11 @@
     text-align: center;
 
     padding-top: 13px;
-    // margin-top: 27px;
+    transition: color .2s ease-in;
+
+    &:hover {
+        color: $grey;
+    } 
 }
 
 .author__line {
