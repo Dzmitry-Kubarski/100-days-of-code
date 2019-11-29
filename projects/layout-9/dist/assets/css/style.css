@@ -729,6 +729,12 @@ button {
     }
 }
 
+@media screen and (max-width: 420px) {
+    .statistics__item {
+        width: calc(50% - 30px);
+    }
+}
+
 .statistics__value {
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 900;

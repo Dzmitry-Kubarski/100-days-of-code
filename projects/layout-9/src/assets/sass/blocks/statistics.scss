@@ -25,6 +25,7 @@
     @include size(3);
     @include size-md(4);
     @include size-xs(12);
+    @include size-xxs(6);
 }
 
 .statistics__value {
