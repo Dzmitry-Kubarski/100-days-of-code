@@ -3014,52 +3014,65 @@
 
 $(function () {
 
-    $('#headerMenu').on('click', function () {
-        $('#menuList').slideToggle(300, function () {
+    // $('#headerMenu').on('click', function () {
+    //     $('#menuList').slideToggle(300, function () {
 
-            if ($(this).css('display') === 'none') {
-                $(this).removeAttr('style');
-            }
-        });
-    });
+    //         if ($(this).css('display') === 'none') {
+    //             $(this).removeAttr('style');
+    //         }
+    //     });
+    // });
 
 
     // Scroll
     // ======
 
-    $('[data-scroll]').on('click', function (event) {
-        event.preventDefault();
+    // $('[data-scroll]').on('click', function (event) {
+    //     event.preventDefault();
 
-        var elementID = $(this).data('scroll');
-        var elementOffset = $(elementID).offset().top;
+    //     var elementID = $(this).data('scroll');
+    //     var elementOffset = $(elementID).offset().top;
 
-        $('html, body').animate({
-            scrollTop: elementOffset
-        });
-    });
+    //     $('html, body').animate({
+    //         scrollTop: elementOffset
+    //     });
+    // });
 
 
     // ----- Cкрол к секции -----
 
-    $('.menu__link').click(function () {
+    // $('.menu__link').click(function () {
 
-        var target = $(this).attr('href');
-        $('html, body').animate({ scrollTop: $(target).offset().top }, 1000);
-        return false;
-    });
+    //     var target = $(this).attr('href');
+    //     $('html, body').animate({ scrollTop: $(target).offset().top }, 1000);
+    //     return false;
+    // });
 
 
     // Slider Slick
     // ============
 
-    $('.installation__slider').slick({
-        dots: true,
-        dotsClass: "my-dots",
-        arrows: false,
+    $('#reviews__slider').slick({
+        dots: false,
+        arrows: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         speed: 800,
+        nextArrow: '<button class="slider-btn_next"><img src="assets/img/next.svg" alt="arrow"></button>',
+        prevArrow: '<button class="slider-btn_prev"><img src="assets/img/prev.svg" alt="arrow"></button>',
+
+
+        // ----- responsive slider -----
+        responsive: [
+            {
+                breakpoint: 960,
+                settings: {
+                    dots: true,
+                    arrows: false,
+                }
+            },
+        ]
     });
-    
+
 
 });

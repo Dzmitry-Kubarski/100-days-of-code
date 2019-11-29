@@ -16,3 +16,20 @@
         color: darken($yellow_color, 20%); 
     }
 }
+
+.menu__btn-open {
+    background: transparent;
+    border: none;
+    display: none;    
+
+    @media (max-width: 992px) {
+        display: block;
+        padding-right: 15px;
+    }
+}
+
+.menu__btn-close {
+    background: transparent;
+    border: none;
+    display: none;    
+}

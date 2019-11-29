@@ -2,7 +2,7 @@
     max-width: 1085px;
     position: relative;
     z-index: 70;
-    padding: 51px 0px;
+    padding: 51px 0px 31px 0;
     border-radius: $radius;
     box-shadow: $shadow;
     background: #fff;
@@ -17,11 +17,14 @@
 
 .statistics__item {
     text-align: center;
-    width: 169px;
+    max-width: 169px;
     padding: 0 15px;
-    margin: 0 42px;
-    // @include col();
-    // @include size(2);
+    // margin: 0 42px;
+    margin-bottom: 30px;
+    @include col();
+    @include size(3);
+    @include size-md(4);
+    @include size-xs(12);
 }
 
 .statistics__value {

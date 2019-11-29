@@ -1,0 +1,51 @@
+.shop {
+    display: block;
+    max-width: 300px;
+    transition: box-shadow .2s ease-in;  
+}
+
+.shop__img {
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.shop__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.shop__title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: $black_color;
+}
+
+.shop__rating {
+    width: 38px;
+    height: 18px;
+    background: $yellow_color;
+    border-radius: $radius_sm;
+    color: #fff;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.shop__price {
+    font-size: 15px;
+    line-height: 18px;
+    color: $black_color;
+}
+
+.shop__comment {
+    font-size: 15px;
+    line-height: 18px;
+    color: lighten($black_color, 50%);
+}

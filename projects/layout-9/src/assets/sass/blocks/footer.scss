@@ -1,0 +1,103 @@
+.footer {
+    padding-top: 65px;
+    padding-bottom: 74px;
+
+    @media (max-width: 576px) {
+        padding-top: 55px;
+        padding-bottom: 30px;
+    }    
+}
+
+.footer__inner {
+    @include row-flex();
+    justify-content: space-around;
+
+    @media (max-width: 576px) {
+        text-align: center;
+    }
+}
+
+.footer__documents {
+    max-width: 295px;
+    display: flex;
+    flex-direction: column;
+
+    @include col();
+    @include size(3);
+    @include size-md(6);
+    @include size-xs(12);
+
+    @media (max-width: 960px) {
+        margin-bottom: 50px;
+    }
+}
+
+.footer__logo {
+    margin-bottom: 30px;
+}
+
+.footer__politics {
+    color: $grey_color;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    margin-bottom: 12px;
+    transition: color .3s ease-out;
+
+    &:hover {
+        color: darken($yellow_color, 20%); 
+    }
+}
+
+.footer__information {
+    font-size: 16px;
+    line-height: 20px;
+    color: $grey_color;
+    text-decoration-line: underline;
+    transition: color .3s ease-out;
+
+
+    &:hover {
+        color: darken($yellow_color, 20%); 
+    }
+}
+
+.footer__menu {
+    max-width: 295px;   
+    
+    @include col();
+    @include size(3);
+    @include size-md(6);
+    @include size-xs(12);
+
+    .menu__list {
+        flex-direction: column;  
+        margin-right: 0;
+        margin-left: 0;      
+    }
+
+    .menu__item {
+        margin-bottom: 35px;
+
+        @media (max-width: 960px) {
+            margin-bottom: 25px;
+        }
+
+        @media (max-width: 576px) {
+            margin-right: 0;
+        }
+    }
+
+    .menu__link {
+        font-size: 16px;
+        color: $grey_color;
+
+        &:hover {
+            color: darken($yellow_color, 20%); 
+        }
+    }
+
+    @media (max-width: 960px) {
+        margin-bottom: 50px;
+    }
+}

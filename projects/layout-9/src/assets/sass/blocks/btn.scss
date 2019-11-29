@@ -2,6 +2,13 @@
     display: inline-block;
     box-shadow: 0px 8px 20px rgba(255, 230, 113, 0.4);
     border-radius: 99px;
+
+    // &:focus {
+    //     outline:none;
+    //     border-radius: 99px;
+
+    //     border-color:#2196F3;
+    // }
 }
 
 .btn {
@@ -23,7 +30,7 @@
 
     &:hover {
         background: lighten($yellow_color, 10%);
-    }
+    }     
 }
 
 .btn__icon {

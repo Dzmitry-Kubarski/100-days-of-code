@@ -5,18 +5,39 @@
     padding-top: 41px;
     padding-bottom: 212px;
 
+    @media (max-width: 720px) {
+        text-align: center;
+        padding-top: 15px;
+    }
+
     &::after {
         position: absolute;
         content: url(../img/header_bg.png);
         top: 0;
-        right: 180px;
-        z-index: 1;       
+        right: 9%;
+        z-index: 1; 
+        
+        @media (max-width: 1280px) {
+            right: -16%;
+        }
+
+        @media (max-width: 720px) {
+            right: -37%;
+            opacity: .1;
+        }
     }
 }
 
 .header__menu {
     position: relative;
     z-index: 60;
+
+    .menu__list {
+
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
 }
 
 .header__inner {
@@ -24,6 +45,10 @@
     @include row-flex();
     align-items: center;
     margin-bottom: 67px;
+
+    @media (max-width: 992px) {
+        justify-content: space-between;
+    }
 }
 
 .header__logo {
@@ -39,6 +64,26 @@
     line-height: 73px;
     color: $black_color;
     margin-bottom: 42px;
+
+    @media (max-width: 1280px) {
+        font-size: 52px;
+        line-height: 61px;
+    }  
+
+     @media (max-width: 992px) {
+        font-size: 42px;
+        line-height: 51px;
+    }  
+
+    @media (max-width: 810px) {
+        font-size: 32px;
+        line-height: 41px;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 24px;
+        line-height: 30px;
+    }
 }
 
 .header__subtitle {
@@ -46,11 +91,39 @@
     line-height: 40px;
     color: $black_color;
     margin-bottom: 60px;
+
+    @media (max-width: 420px) {
+        font-size: 20px;
+        line-height: 28px;
+    }
 }
 
 .header__track {
     position: absolute;
-    top: 328px;
-    right: 640px;
+    top: 46%;
+    right: 34%;
     z-index: 50;
+
+    @media (max-width: 1280px) {
+        right: 21%;
+        top: 43%;
+    }
+
+    @media (max-width: 992px) {
+        right: 3%;
+    }
+
+    @media (max-width: 810px) {
+        top: 49%;
+    }
+
+    @media (max-width: 720px) {
+        top: 75%;
+        right: 50%;
+        margin-right: -136px;
+    }
+}
+
+.header__btn {
+    z-index: 90;
 }

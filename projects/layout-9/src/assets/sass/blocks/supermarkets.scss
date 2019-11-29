@@ -1,0 +1,97 @@
+.supermarkets {
+    padding-bottom: 184px;
+
+    @media (max-width: 1110px) {
+        padding-bottom: 110px;
+    }
+
+    @media (max-width: 576px) {
+        padding-bottom: 60px;
+    }
+}
+
+.supermarkets__title {
+    font-size: 36px;
+    font-weight: 800;
+    font-family: $fz_Montserrat;
+    color: $black_color;
+    text-align: center;
+    margin-top: 149px;
+    margin-bottom: 59px;
+
+    @media (max-width: 768px) {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+.supermarkets__list {
+    @include row-flex();
+    justify-content: center;
+}
+
+.supermarkets__item {
+    max-width: 300px;
+    position: relative;
+    @include col();
+    @include size(3);
+    @include size-md(4);
+    @include size-sm(6);
+    @include size-xs(12);
+    margin-bottom: 50px;
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 3px;
+        bottom: -8px;
+        background: $yellow_color;
+        opacity: 0;
+        transition: opacity .2s ease-in;
+    }
+
+    &:hover {
+
+        &::after {
+            opacity: 1;
+        }
+    }
+}
+
+.supermarkets__btn {  
+    position: relative; 
+    font-size: 20px;
+    line-height: 24px;
+    color: $yellow_color;
+    background: transparent;
+    cursor: pointer;
+    margin: 0 auto 0 auto;
+    display: block;
+    padding: 20px 40px 20px 20px;
+    transition: color .2s ease-in;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 10%;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 6px 5px 0 5px;
+        border-color: #ffe571 transparent transparent transparent;
+        transition: border-color .2s ease-in;
+    }
+
+    &:hover {
+        color: $black_color;
+
+        &::after {
+            border-color: $black_color transparent transparent transparent;
+        }
+    }
+}
+
+

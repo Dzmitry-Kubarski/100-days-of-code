@@ -1,0 +1,24 @@
+.reviews {
+    padding-top: 150px;  
+    padding-bottom: 150px;  
+
+    @media (max-width: 576px) {
+       padding-top: 90px;
+       padding-bottom: 90px;
+    }
+}
+
+.reviews__title {
+    font-family: $fz_Montserrat;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 50px;
+    color: $black_color;
+    text-align: center;
+    margin-bottom: 60px;
+
+    @media (max-width: 576px) {
+        font-size: 34px;
+        line-height: 44px;
+    }
+}
