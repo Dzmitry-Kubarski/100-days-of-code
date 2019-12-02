@@ -1,0 +1,26 @@
+.phone {
+    text-align: right;
+}
+
+.phone__tel {
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    color: $black_color;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background-image: url(../img/phone.svg);
+        left: -25px;
+        top: 5px;
+    }
+}
+
+.phone__text {
+    font-size: 12px;
+    line-height: 18px;
+    color: $grey_color;
+}

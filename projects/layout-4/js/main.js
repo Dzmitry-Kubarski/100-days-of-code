@@ -124,61 +124,23 @@ $(document).ready(function () {
 
     // Слайдер секции videos
 
-    $('.videos-slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        // dots: true,
-        // dotsClass: "my-dots",
-        // fade: true,
-        // asNavFor: '.videos-dots',
-    });
+    // $('.videos-slider').slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     // dots: true,
+    //     // dotsClass: "my-dots",
+    //     // fade: true,
+    //     // asNavFor: '.videos-dots',
+    // });
+
+
 
     // Video Modal
-
     $('.js-modal-btn').modalVideo();
 
-
-
-    // ---------------------------------
-
-    // $('.product-content__btn').on(click, function () {
-
-    //     var slidesData = document.querySelectorAll('.categories-slider__item');
-
-    //     var clickId = $(this).attr('id');
-
-    //     console.log(slidesData);
-
-    //     // for (i = 0; i < slidesData.length; i++) {
-
-    //     //     // if ($('.slidesData').data('name') == clickId) {
-
-    //     //     // }
-
-    //     //     // if (slidesData[i].attr('data-name') == clickId) {
-    //     //     //     console.log('работает');
-    //     //     // }
-
-    //     //     console.log(slidesData[i]);
-
-    //     // }
+    // $('.videos__dots-slide').click(function (event) {
+    //     $(this).toggleClass('')
     // });
 
-
-    // $('.product-content__btn').on('click', function () {
-
-    //     var slidesData = document.querySelectorAll('.categories-slider__item');
-    //     console.log(slidesData);
-    // });
-
-
-    let btn = document.querySelector('.product-content__btn');
-
-    btn.onclick = () => {
-
-        let slidesData = document.querySelectorAll('.footer-menu__link');
-
-        console.log(slidesData);
-    }
 
 });

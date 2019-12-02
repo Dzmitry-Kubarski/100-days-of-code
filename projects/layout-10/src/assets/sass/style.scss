@@ -1,0 +1,26 @@
+/* Variables */
+@import "vars";
+
+
+/* Grid smart-grid */
+// @import "smart-grid";
+
+
+/* Normalize */
+@import "../../../../../node_modules/normalize.css/normalize";
+
+
+/* Default styles */
+@import "base";
+
+
+/* Blocks */
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/phone";
+@import "blocks/offer";
+
+
+
+
+/* Vendor libs */

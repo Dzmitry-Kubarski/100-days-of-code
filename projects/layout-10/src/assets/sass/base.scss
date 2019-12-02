@@ -1,0 +1,68 @@
+/* Default styles */
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    overflow-x: hidden;
+}
+
+ul li {
+    list-style: none;
+}
+
+input,textarea,select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,textarea,p,blockquote,th,td {
+    margin: 0;
+    padding: 0;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main {
+    display: block;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: $black_color;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none; 
+    background: transparent;
+}
+
+// Centering container
+.container {
+   max-width: 1170px;
+   margin: 0 auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.container-ful {
+    max-width: 1720px;
+}
