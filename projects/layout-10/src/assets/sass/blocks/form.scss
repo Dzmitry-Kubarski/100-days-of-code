@@ -1,0 +1,49 @@
+.form {
+    background: #fff;
+    padding: 20px;
+
+    form {
+        border: $border;
+        position: relative;
+    }
+}
+
+.form__inner {
+    padding: 45px 45px 113px 45px;
+}
+
+.form__title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+.form__input {
+    border: none;
+    max-width: 200px;
+    border-bottom: 1px solid $green_color; 
+    padding-bottom: 10px;
+
+    &::placeholder {
+        color: $green_color;
+        font-size: 14px;
+    }
+
+    &:focus {
+        outline: 0;
+        border-bottom: 1px solid  #2196f3;
+    }
+}
+
+.form__input-name {
+    margin-right: 30px;
+}
+
+.form__btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

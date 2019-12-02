@@ -1,3 +1,55 @@
 .offer {
-    
+    margin-bottom: 60px;
+}
+
+
+.offer__container-ful {
+    background-image: url(../img/offer-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 544px;
+}
+
+.offer__inner-ful {
+    display: flex;
+    align-items: flex-end;
+    margin-top: -450px;
+}
+
+.offer__img {
+    margin-right: 15px;
+    width: 50%;
+    text-align: center;
+}
+
+.offer__content {
+    margin-left: 15px;
+    width: 50%;
+}
+
+.offer__subtitle {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.offer__title {
+    font-size: 60px;
+    line-height: 50px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 42px;
+}
+
+.offer___text {
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 92px;
 }

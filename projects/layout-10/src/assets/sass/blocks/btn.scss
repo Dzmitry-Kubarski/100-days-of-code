@@ -1,0 +1,25 @@
+.btn {
+    position: relative;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    background: $bg_btn;    
+    cursor: pointer;
+    padding: 22px 110px 22px 80px;
+    transition: background .2s ease-in;
+
+    &::after {
+        content: '';
+        background-image: url(../img/arrow-btn.png);
+        width: 31px;
+        height: 9px;
+        position: absolute;
+        right: 60px;
+        top: 25px;
+    }
+
+    &:hover {
+        background: darken($bg_btn, 5%);
+    }
+}
