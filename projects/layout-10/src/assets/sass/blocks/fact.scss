@@ -1,0 +1,33 @@
+.fact {
+    position: relative;
+    max-width: 831px;
+    max-height: 250px;
+    
+    border: 1px solid #a4c58c;
+    padding: 55px 95px 95px 80px;
+    margin-left: 15px;
+    margin-top: auto;
+}
+
+.fact__text {
+    position: relative;
+    line-height: 22px;
+    margin-bottom: 18px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        left: -25px;
+        top: 5px;
+        background: $green_color;
+        border-radius: 50%;
+    }
+}
+
+.fact__btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

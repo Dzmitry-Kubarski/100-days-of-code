@@ -42,7 +42,11 @@
     align-items: center;
     padding: 25px 0;
     border-bottom: 1px solid lighten($green_color, 25%);   
-    cursor: pointer;    
+    cursor: pointer;  
+    
+    &:hover {
+        color: red;
+    }
 }
 
 .symptoms__item.active{
@@ -139,6 +143,7 @@
 
 .symptoms__btn {
     margin-top: 40px;
+    margin-bottom: 200px;
     max-width: 500px;
     width: 100%;
 
@@ -208,4 +213,10 @@
   .tab-9 {
     left: 232px;
     top: 100px;
+  }
+
+  .symptoms__feedback {
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
