@@ -1,5 +1,19 @@
 .offer {
+    position: relative;
     margin-bottom: 60px;
+
+    
+}
+
+.offer__form {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 570px;
+
+    @media (max-width: 720px) {
+        display: none;
+    }
 }
 
 
@@ -10,23 +24,84 @@
     background-repeat: no-repeat;
     width: 100%;
     min-height: 544px;
+
+    @media (max-width: 720px) {
+        min-height: 360px;
+        padding-top: 50px;
+    }
+
+    @media (max-width: 576px) {
+        min-height: 375px;
+        padding-top: 50px;
+    }
 }
 
 .offer__inner-ful {
     display: flex;
     align-items: flex-end;
     margin-top: -450px;
+
+    @media (max-width: 720px) {
+        align-items: flex-start;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        margin-top: 0;        
+    }
+
+    @media (max-width: 576px) {
+       flex-direction: column;
+       align-items: center;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       width: 100%;
+     }
+
+     @media (max-width: 380px) {
+        width: 50%;
+     }
 }
 
 .offer__img {
     margin-right: 15px;
     width: 50%;
     text-align: center;
+
+    @media (max-width: 576px) {
+        order: 1;
+    }
+
+    img {
+        @media (max-width: 720px) {
+            width: 176px;
+            height: 278px;
+        }
+
+        @media (max-width: 576px) {
+            width: 88px;
+            height: 186px;
+         }
+    }
 }
 
 .offer__content {
+    position: relative;
     margin-left: 15px;
     width: 50%;
+    padding-bottom: 300px;
+
+    @media (max-width: 720px) {
+        padding-bottom: 0;
+        margin-right: 15px;
+    }
+
+    @media (max-width: 576px) {
+        order: 0;
+        text-align: center;
+        width: 100%;
+    }
+    
 }
 
 .offer__subtitle {
@@ -45,6 +120,15 @@
     color: #fff;
     font-weight: 600;
     margin-bottom: 42px;
+
+    @media (max-width: 768px) {
+        font-size: 50px;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 30px;
+        line-height: 36px;
+    }
 }
 
 .offer___text {
@@ -52,4 +136,16 @@
     line-height: 24px;
     color: #fff;
     margin-bottom: 92px;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+
+    @media (max-width: 720px) {
+       margin-bottom: 0;
+    }
+
+    @media (max-width: 576px) {
+            display: none;
+    }
 }

@@ -1,0 +1,39 @@
+.guarantee {
+    max-width: 570px;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 20px 20px 20px;
+}
+
+
+.guarantee__inner {
+    position: relative;
+    padding: 35px 45px 85px 45px;
+    border: none;
+    border: 1px solid;
+    border-color: $green_color;
+}
+
+.guarantee__subtitle {
+    color: $green_color;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    padding: 0px 7px;
+}
+
+.guarantee__subtitle {
+}
+
+.guarantee__text {
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.guarantee__btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

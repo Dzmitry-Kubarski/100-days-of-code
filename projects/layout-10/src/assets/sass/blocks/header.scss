@@ -1,6 +1,11 @@
 .header {
     padding-top: 35px;
     padding-bottom: 35px;
+
+    @media (max-width: 568px) {
+        padding-top: 23px;
+        padding-bottom: 23px;    
+    }
 }
 
 .header__inner {
@@ -10,9 +15,40 @@
 
 .header__phone {
     margin-left: auto;
+
+    .phone__tel {
+        @media (max-width: 568px) {
+            font-size: 16px;   
+            
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    .phone__text {
+        @media (max-width: 568px) {
+            display: none;        
+        }
+    }
+
 }
 
 .header__text {
     color: $grey_color;
     margin-left: 25px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.header__logo {
+
+    .logo__img {
+        @media (max-width: 568px) {
+            width: 110px;
+            height: 16px;
+        }
+    }
 }

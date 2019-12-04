@@ -1,0 +1,53 @@
+.elixir {
+    margin-bottom: 300px;
+}
+
+.elixir__inner-ful {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    background-image: url(../img/elixir-bg.jpg);
+    background-repeat: no-repeat;
+}
+
+.elixir__inner {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.elixir__content-inner {
+    max-width: 680px;
+    background-color: #fff;
+    padding: 20px;
+    margin-left: auto;    
+}
+
+.elixir__content {
+    width: 100%;
+
+    border: 1px solid #a4c58c;
+    padding: 55px 45px 70px 55px;
+}
+
+.elixir__title {
+    margin-bottom: 50px;
+}
+
+.elixir__text {
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.elixir__subtitle {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+    margin-top: 35px;
+}
+
+.elixir__btn {
+    padding: 27px 75px 27px 30px;
+    width: 100%;
+}

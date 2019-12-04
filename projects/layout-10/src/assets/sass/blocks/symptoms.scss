@@ -7,22 +7,42 @@
     min-height: 560px;
     background: $bg;
     margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+        min-height: 578px;
+    }
 }
 
 .symptoms__title {
     margin-top: 40px;
     margin-bottom: 45px;
+
+    @media (max-width: 996px) {
+        text-align: center;
+        max-width: 460px;
+        margin: 40px auto 45px auto;
+    }
 }
 
 .symptoms__inner {
     display: flex;
     margin-top: -760px;
+
+    @media (max-width: 996px) {
+        flex-direction: column;
+    }
 }
 
 .symptoms__items {
     max-width: 670px;
     padding-right: 20px;
     padding-bottom: 18px;
+
+    @media (max-width: 996px) {
+        max-width: 100%;
+        padding-left: 55px;
+        padding-bottom: 0;       
+    }
 }
 
 .symptoms__tabs {
@@ -34,6 +54,47 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;   
+
+    @media (max-width: 996px) {
+        min-height: 700px;
+        margin-right: auto;
+        margin-left: auto;
+        // background-image: url(../img/symptoms-bg-tabl.jpg);
+        // max-width: 100%;
+
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 100%;
+            right: 100%;
+            top: 0;
+            height: 100%;
+            background-color: #a4c58c;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 100%;
+            left: 100%;
+            top: 0;
+            height: 100%;
+            background-color: #a4c58c;
+        }
+    }
+
+    @media (max-width: 530px) {
+        background-image: none;
+
+        &::before,
+        &::after {
+            display: none;
+        }
+
+        min-height: auto;
+    }   
 }
 
 .symptoms__item {   
@@ -46,11 +107,10 @@
     
     &:hover {
         color: red;
-    }
+    }     
 }
 
-.symptoms__item.active{
-    
+.symptoms__item.active{    
     &::after {
         content: '';
         position: absolute;
@@ -60,11 +120,16 @@
         right: 0;
         top: 50%;
         transform: translateY(-50%);
+    }
+
+    @media (max-width: 996px) {
+        &::after {
+            display: none;
+        }
     }
 }
 
 .symptoms__item-next.active {
-
     &::after {
         content: '';
         position: absolute;
@@ -74,6 +139,12 @@
         right: 0;
         top: 50%;
         transform: translateY(-50%);
+    }
+
+    @media (max-width: 996px) {
+        &::after {
+            display: none;
+        }
     }
 } 
 
@@ -139,6 +210,12 @@
 .symptoms__btn-inner {
     display: flex;
     justify-content: flex-end;
+
+    @media (max-width: 996px) {
+        justify-content: center;
+        max-width: 416px;
+        margin: 0 auto;
+    }
 }
 
 .symptoms__btn {
@@ -168,6 +245,10 @@
     &:first-child {
         display: block;
     }
+
+    // @media (max-width: 530px) {
+    //     display: none;
+    // }
   }
 
   .tab-1 {
@@ -219,4 +300,19 @@
     position: absolute;
     bottom: 0;
     left: 0;
+
+    @media (max-width: 996px) {
+        left: 50%;
+        bottom: -20px;
+        transform: translateX(-50%);
+    }
+
+    .feedback__signature {
+        @media (max-width: 996px) {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
   }
+
+  

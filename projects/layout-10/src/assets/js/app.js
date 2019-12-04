@@ -40,13 +40,23 @@ $(function () {
 
 
     // Section - Symptoms, tabs
-
     $('.symptoms__item, .symptoms__item-next').on('click', function (event) {
         var id = $(this).attr('data-id');
         $('.symptoms__inner').find('.symptoms__tab').removeClass('active-tab').hide();
         $('.symptoms__items').find('.symptoms__item, .symptoms__item-next').removeClass('active');
         $(this).addClass('active');
         $('#' + id).addClass('active-tab').fadeIn();
+        return false;
+    });
+
+
+    // Section - reviews, tabs
+    $('.reviews__tab').on('click', function (event) {
+        var id = $(this).attr('data-id');
+        $('.reviews').find('.reviews__box').removeClass('active-box').hide();
+        $('.reviews').find('.reviews__tab').removeClass('reviews__tab--active');
+        $(this).addClass('reviews__tab--active');
+        $('#' + id).addClass('active-box').fadeIn();
         return false;
     });
 

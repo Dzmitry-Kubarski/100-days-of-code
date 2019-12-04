@@ -7,6 +7,7 @@
     font-size: 20px;
     font-weight: 500;
     color: $black_color;
+    transition: color .2s ease-in;
 
     &::before {
         content: '';
@@ -16,6 +17,10 @@
         background-image: url(../img/phone.svg);
         left: -25px;
         top: 5px;
+    }
+
+    &:hover {
+        color: $green_color;
     }
 }
 

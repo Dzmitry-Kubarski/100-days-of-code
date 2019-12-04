@@ -1,0 +1,37 @@
+.certificate__inner-ful {
+    position: relative;
+    min-height: 565px;
+    background-color: $bg;
+}
+
+.certificate__inner {
+    position: absolute;
+    bottom: 100px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.certificate__title {
+    margin-bottom: 40px;
+}
+
+.certificate__left {
+    max-width: 670px;
+    margin-right: 80px;
+}
+
+.certificate__img {
+    height: 100%;
+}
+
+.certificate__text {
+    max-width: 515px;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
