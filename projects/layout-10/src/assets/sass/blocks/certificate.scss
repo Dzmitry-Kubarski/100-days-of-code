@@ -1,7 +1,22 @@
+.certificate {
+    @media (max-width: 730px) {
+        background-color: $bg;
+        padding-top: 80px;
+    }
+}
+
 .certificate__inner-ful {
     position: relative;
     min-height: 565px;
     background-color: $bg;
+
+    @media (max-width: 1090px) {
+        min-height: 687px;
+    }
+
+    @media (max-width:730px) {
+        min-height: 1095px;
+    }
 }
 
 .certificate__inner {
@@ -9,19 +24,82 @@
     bottom: 100px;
     display: flex;
     align-items: flex-end;
+
+    @media (max-width: 1090px) {
+        width: 100%;
+        justify-content: center;
+
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @media (max-width:730px) {
+        flex-direction: column;
+        align-items: center;        
+    }
 }
 
 .certificate__title {
     margin-bottom: 40px;
+
+    @media (max-width: 1090px) {
+        text-align: center;
+    }
+
+    @media (max-width: 560px) {
+        margin-bottom: 60px;
+    }
+
+    @media (max-width: 429px) {
+        margin-bottom: 85px;
+    } 
+
+    @media (max-width: 420px) {
+        margin-bottom: 5px;
+    } 
+
+    @media (max-width: 371px) {
+        margin-bottom: 25px;
+    } 
+
+    @media (max-width: 364px) {
+        margin-bottom: 45px;
+    } 
+
+    @media (max-width: 340px) {
+        margin-bottom: 65px;
+    } 
+    
 }
 
 .certificate__left {
     max-width: 670px;
     margin-right: 80px;
+
+    @media (max-width: 1090px) {
+        order: 2;
+        margin-right: 0;        
+    }
+}
+
+.certificate__right {
+    @media (max-width: 1090px) {
+        order: 1;
+        margin-right: 30px;
+    }
+
+    @media (max-width:730px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
 
 .certificate__img {
     height: 100%;
+
+    @media (max-width: 1090px) {
+        max-height: 434px;
+    }
 }
 
 .certificate__text {
@@ -33,5 +111,35 @@
     letter-spacing: .5px;
     text-transform: uppercase;
     margin-bottom: 40px;
+
+    @media (max-width: 1090px) {
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 100%;
+    }
+
+    @media (max-width: 560px) {
+        width: 90%;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 12px;
+        line-height: 20px;
+    }
 }
+
+.certificate__guarantee {
+    @media (max-width: 1090px) {
+        max-width: 414px;
+        min-height: 436px;
+    }
+
+    @media (max-width: 420px) {
+        min-height: auto;
+    }
+}
+
 

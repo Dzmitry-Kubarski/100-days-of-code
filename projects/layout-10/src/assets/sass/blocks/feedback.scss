@@ -7,11 +7,24 @@
     // left: 0;
     background: $bg;
     padding: 20px;
+
+    @media (max-width: 530px) {
+        padding: 0;
+        padding-bottom: 20px;
+    }
 }
 
 .feedback__inner {
     border: $border;
     padding: 33px 25px 33px 50px;
+
+    @media (max-width: 530px) {
+        padding: 30px 20px 30px 20px;
+    }
+
+    @media (max-width: 420px) {
+        padding: 30px 15px;
+    }
 }
 
 .feedback__signature {
@@ -38,6 +51,10 @@
 
 .feedback__text {    
     line-height: 24px;
+
+    @media (max-width: 530px) {
+        font-size: 14px;
+    }
 }
 
 

@@ -1,15 +1,63 @@
 .history__inner {
+    position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+
+    @media (max-width:1067px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
 }
 
 .history__left {
     max-width: 695px;
+
+    @media (max-width: 1280px) {
+       max-width: 100%;
+    }
+
+    @media (max-width: 1067px) {
+        padding-bottom: 125px;
+    }
+
+    @media (max-width: 640px) {
+        padding-bottom: 0;
+    }
+}
+
+.history__right {
+    @media (max-width: 1280px) {
+        // flex-shrink: 5;
+    }
+
+    @media (max-width: 1067px) {
+        position: absolute;
+        bottom: 0;
+        right: 15px;
+        max-width: 400px;
+        flex-shrink: 0;
+    }
+
+    @media (max-width: 640px) {
+        position: static;
+        max-width: 100%;
+    }
 }
 
 .history__title {
     margin-bottom: 47px;
+
+    @media (max-width: 1067px) {
+        text-align: center;
+        margin: 0 auto 47px auto;
+    }
+
+    @media (max-width: 640px) {
+        margin: 0 auto 10px auto;
+        max-width: 445px;
+    }
 }
 
 .history__text-inner {
@@ -17,7 +65,7 @@
     background: $bg;
     padding: 55px 0px 60px 0px;
 
-    &::before{
+    &::before {
         content: '';
         position: absolute;
         display: block;
@@ -40,6 +88,20 @@
         top: 0;
         height: 100%;
     }
+
+    @media (max-width: 1067px) {
+        padding-top: 15px;
+        background-color: #fff;
+
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+
+    @media (max-width: 640px) {
+        padding-bottom: 20px;
+    }
 }
 
 .history__text {
@@ -49,4 +111,43 @@
     &:last-child {
         margin-bottom: 0;
     }
+
+    @media (max-width: 375px) {
+        font-size: 14px;
+    }
 }
+
+.history__distribution-inner {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 70px;
+    margin-top: 50px;
+
+    @media (max-width: 1280px) {
+        justify-content: flex-start;
+    }
+
+    @media (max-width: 640px) {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-right: 0;
+    }
+
+    @media (max-width: 420px) {
+        width: 90%;
+    }
+}
+
+.history__distribution {
+    @media (max-width: 1067px) {
+        max-width: 290px;
+    }
+
+    @media (max-width: 420px) {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+

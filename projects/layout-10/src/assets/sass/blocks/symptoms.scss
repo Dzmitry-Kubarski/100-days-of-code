@@ -1,6 +1,7 @@
 .symptoms {
     padding-top: 180px;
     overflow-y: hidden;
+    overflow: hidden;
 }
 
 .symptoms__container-ful {
@@ -10,6 +11,14 @@
 
     @media (max-width: 768px) {
         min-height: 578px;
+    }
+
+    @media (max-width: 530px) {
+        min-height: 795px;
+    }
+
+    @media (max-width: 420px) {
+        min-height: 865px;
     }
 }
 
@@ -31,6 +40,14 @@
     @media (max-width: 996px) {
         flex-direction: column;
     }
+
+    @media (max-width: 530px) {
+        margin-top: -985px;
+    }
+
+    @media (max-width: 420px) {
+        margin-top: -1030px;
+    }
 }
 
 .symptoms__items {
@@ -42,6 +59,10 @@
         max-width: 100%;
         padding-left: 55px;
         padding-bottom: 0;       
+    }
+
+    @media (max-width: 530px) {
+        padding-left: 0;
     }
 }
 
@@ -58,18 +79,16 @@
     @media (max-width: 996px) {
         min-height: 700px;
         margin-right: auto;
-        margin-left: auto;
-        // background-image: url(../img/symptoms-bg-tabl.jpg);
-        // max-width: 100%;
+        margin-left: auto;       
 
         &::after {
             content: '';
             position: absolute;
             display: block;
             width: 100%;
+            height: 100%;
             right: 100%;
             top: 0;
-            height: 100%;
             background-color: #a4c58c;
         }
 
@@ -78,22 +97,23 @@
             position: absolute;
             display: block;
             width: 100%;
+            height: 100%;
             left: 100%;
             top: 0;
-            height: 100%;
             background-color: #a4c58c;
         }
     }
 
     @media (max-width: 530px) {
         background-image: none;
+        min-height: 160px;
 
         &::before,
         &::after {
             display: none;
-        }
-
-        min-height: auto;
+        }  
+        
+        min-height: 143px;
     }   
 }
 
@@ -167,6 +187,10 @@
 .symptoms__list-next {
     display: flex;
     flex-wrap: wrap;
+
+    @media (max-width: 530px) {
+        flex-direction: column;
+    }
 }
 
 .symptoms__item-next {
@@ -193,10 +217,28 @@
     &:nth-child(4) {
         order: 2;
         padding-left: 35px;
+
+        @media (max-width: 530px) {
+            padding-left: 0;
+        }
     }   
 
     &:nth-child(3) {
         padding-left: 35px;
+
+        @media (max-width: 530px) {
+            padding-left: 0;
+        }
+     }
+
+     @media (max-width: 530px) {
+         width: 100%;
+     }
+
+     &:last-child {
+        @media (max-width: 530px) {
+            border-bottom: none;
+        }
      }
 }
 
@@ -204,7 +246,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    color: $black_color;
+    color: $black_color;    
 }
 
 .symptoms__btn-inner {
@@ -216,6 +258,10 @@
         max-width: 416px;
         margin: 0 auto;
     }
+
+    @media (max-width: 530px) {
+        max-width: 100%;
+    }
 }
 
 .symptoms__btn {
@@ -226,6 +272,28 @@
 
     &::after {
         right: 100px;
+
+        @media (max-width: 996px) {
+            right: 60px;
+        }
+    } 
+
+    @media (max-width: 1090px) {
+        margin-bottom: 90px;
+    }
+    
+    @media (max-width: 530px) {
+        max-width: 100%;
+        font-size: 12px;
+        padding: 25px 60px;
+
+        &:after {
+            display: none;
+        }
+    }
+
+    @media (max-width: 340px) {
+        padding: 25px 40px;
     }
 }
 
@@ -246,9 +314,15 @@
         display: block;
     }
 
-    // @media (max-width: 530px) {
-    //     display: none;
-    // }
+    @media (max-width: 530px) {
+        display: none;
+    }
+  }
+
+  .symptoms__tab.active-tab {
+    @media (max-width: 530px) {
+        display: none;
+    }
   }
 
   .tab-1 {

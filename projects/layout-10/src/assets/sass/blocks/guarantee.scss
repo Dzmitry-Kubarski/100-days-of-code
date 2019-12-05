@@ -12,6 +12,16 @@
     border: none;
     border: 1px solid;
     border-color: $green_color;
+
+    @media (max-width: 1090px) {
+        padding: 85px 45px 85px 45px;
+    }
+
+    @media (max-width: 420px) {
+        border: none;
+        padding-top: 20px;
+    }
+
 }
 
 .guarantee__subtitle {
@@ -25,15 +35,27 @@
 }
 
 .guarantee__subtitle {
+    @media (max-width: 420px) {
+        text-align: center;
+    }
 }
 
 .guarantee__text {
     line-height: 22px;
     margin-bottom: 20px;
+
+    @media (max-width: 1090px) {
+        line-height: 24px;
+    }
+
+    @media (max-width: 560px) {
+        font-size: 14px;
+    }
 }
 
 .guarantee__btn {
     position: absolute;
     right: 0;
     bottom: 0;
+    width: 100%;
 }

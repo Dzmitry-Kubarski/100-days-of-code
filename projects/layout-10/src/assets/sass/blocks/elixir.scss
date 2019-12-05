@@ -1,5 +1,17 @@
 .elixir {
     margin-bottom: 300px;
+
+    @media (max-width: 1090px) {
+        margin-bottom: 90px;
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+
+    @media (max-width: 730px) {
+        margin-bottom: 0px;
+    }
 }
 
 .elixir__inner-ful {
@@ -7,18 +19,46 @@
     padding-bottom: 50px;
     background-image: url(../img/elixir-bg.jpg);
     background-repeat: no-repeat;
+
+    @media (max-width: 1280px) {
+        background-size: cover;
+    }
+
+    @media (max-width: 768px) {
+        background-image: none;
+    }
+
+    @media (max-width: 730px) {
+        padding-bottom: 0;
+    }
 }
 
 .elixir__inner {
     display: flex;
     justify-content: flex-end;
+
+    @media (max-width: 1280px) {
+        justify-content: center;
+    }
 }
 
 .elixir__content-inner {
     max-width: 680px;
     background-color: #fff;
     padding: 20px;
-    margin-left: auto;    
+    margin-left: auto;   
+    
+    @media (max-width: 1280px) {
+        margin-left: 0;
+    }
+
+    @media (max-width: 730px) {
+        padding-bottom: 0;
+    }
+
+    @media (max-width: 576px) {
+        padding: 0;
+    }
 }
 
 .elixir__content {
@@ -26,15 +66,28 @@
 
     border: 1px solid #a4c58c;
     padding: 55px 45px 70px 55px;
+
+    @media (max-width:576px) {
+        border: none;
+        padding: 0;
+    }
 }
 
 .elixir__title {
     margin-bottom: 50px;
+
+    @media (max-width: 576px) {
+        text-align: center;
+    }
 }
 
 .elixir__text {
     line-height: 22px;
     margin-bottom: 20px;
+
+    @media (max-width:576px) {
+        font-size: 14px;
+    }
 }
 
 .elixir__subtitle {
@@ -45,9 +98,15 @@
     text-transform: uppercase;
     margin-bottom: 55px;
     margin-top: 35px;
+
+    @media (max-width: 576px) {
+        text-align: center;
+        font-size: 12px;
+        padding: 0px 5px;
+    }
 }
 
 .elixir__btn {
-    padding: 27px 75px 27px 30px;
+    padding: 27px 30px 27px 30px;
     width: 100%;
 }

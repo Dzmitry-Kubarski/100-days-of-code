@@ -23,6 +23,16 @@
         top: 5px;
         background: $green_color;
         border-radius: 50%;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+}
+
+.fact__text--last {
+    @media (max-width: 1199px) {
+        display: none;
     }
 }
 
@@ -30,4 +40,9 @@
     position: absolute;
     right: 0;
     bottom: 0;
+
+    @media (max-width: 768px) {
+        padding: 22px 75px 22px 20px;
+        width: 100%;
+    }
 }

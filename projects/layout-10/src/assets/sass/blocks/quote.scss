@@ -5,6 +5,24 @@
     background-size: cover;
     padding-top: 205px;
     padding-bottom: 190px;
+
+    @media (max-width: 880px) {
+        background-image: none;
+        padding-top: 140px;
+    }
+
+    @media (max-width:768px) {
+       padding-bottom: 40px;
+    }
+
+    @media (max-width: 640px) {
+        padding-top: 435px;
+    }
+
+    @media (max-width: 420px) {
+        padding-top: 345px;
+        padding-bottom: 40px;
+    }
 }
 
 .quote__inner {
@@ -35,6 +53,13 @@
         border: 1px solid lighten($green_color, 10%);
         background-color: $green_color;
     }
+
+    @media (max-width: 640px) {
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
 }
 
 .quote__text {
@@ -43,6 +68,16 @@
     line-height: 40px;
     text-align: center;   
     margin-bottom: 40px;
+
+    @media (max-width: 880px) {
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 14px;
+        line-height: 24px;
+    }
 }
 
 .quote__author {
@@ -50,12 +85,24 @@
     text-align: center;
     font-size: 18px;
     line-height: 30px;
+
+    @media (max-width: 420px) {
+        font-size: 14px;
+        line-height: 18px;
+        max-width: 155px;
+        margin: 0 auto;
+        font-style: normal;
+    }
 }
 
 .quote__author-date {
     font-size: 16px;
     line-height: 30px;
     color: $grey_color;
+
+    @media (max-width: 420px) {
+        font-size: 12px;
+    }
 }
 
 

@@ -16,10 +16,19 @@
         height: 9px;
         position: absolute;
         right: 60px;
-        top: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @media (max-width: 620px) {
+            display: none;
+        }
     }
 
     &:hover {
         background: darken($bg_btn, 5%);
+    }
+
+    @media (max-width: 620px) {
+       padding: 22px 80px 22px 80px;
     }
 }
