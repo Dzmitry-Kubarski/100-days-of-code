@@ -31,4 +31,11 @@
     @media (max-width: 620px) {
        padding: 22px 80px 22px 80px;
     }
+
+    &:focus {
+        box-shadow: 0 0 0 3px rgba(#2f7cc0, .4);
+        outline: none;
+    }
+
+
 }

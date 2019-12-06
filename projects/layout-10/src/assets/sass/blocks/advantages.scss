@@ -8,6 +8,10 @@
     @media (max-width: 996px) {
         margin-bottom: 40px;
     }
+
+    @media (max-width: 420px) {
+        margin-bottom: 0px;
+    }
 }
 
 .advantages__inner {
@@ -49,7 +53,6 @@
             display: none;
         }
     }
-
 }
 
 .advantages__title {

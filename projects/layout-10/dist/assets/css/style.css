@@ -411,6 +411,14 @@ button {
     margin: 0 auto;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
 /* Blocks */
 .header {
     padding-top: 35px;
@@ -731,6 +739,11 @@ button {
     }
 }
 
+.btn:focus {
+    box-shadow: 0 0 0 3px rgba(47, 124, 192, 0.4);
+    outline: none;
+}
+
 .form {
     background: #fff;
     padding: 20px;
@@ -788,7 +801,7 @@ button {
 
 .form__input:focus {
     outline: 0;
-    border-bottom: 1px solid  #2196f3;
+    border-bottom: 1px solid rgba(33, 150, 243, 0.2);
 }
 
 .form__input-name {
@@ -814,6 +827,12 @@ button {
 @media (max-width: 996px) {
     .advantages {
         margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 420px) {
+    .advantages {
+        margin-bottom: 0px;
     }
 }
 
@@ -890,6 +909,12 @@ button {
     padding-top: 180px;
     overflow-y: hidden;
     overflow: hidden;
+}
+
+@media (max-width: 420px) {
+    .symptoms {
+        padding-top: 125px;
+    }
 }
 
 .symptoms__container-ful {
@@ -1229,6 +1254,12 @@ button {
 
     .symptoms__btn:after {
         display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .symptoms__btn {
+        margin-bottom: 45px;
     }
 }
 
@@ -1630,7 +1661,7 @@ button {
 
 .distribution__input:focus {
     outline: 0;
-    border-bottom: 1px solid  #2196f3;
+    border-bottom: 1px solid rgba(33, 150, 243, 0.2);
 }
 
 @media (max-width: 420px) {
@@ -2919,6 +2950,12 @@ button {
     padding: 10px 20px 20px 20px;
 }
 
+@media (max-width: 560px) {
+    .guarantee {
+        background-color: transparent;
+    }
+}
+
 .guarantee__inner {
     position: relative;
     padding: 35px 45px 85px 45px;
@@ -2980,6 +3017,12 @@ button {
     width: 100%;
 }
 
+@media (max-width: 420px) {
+    .guarantee__btn {
+        padding: 22px 45px;
+    }
+}
+
 @media (max-width: 730px) {
     .certificate {
         background-color: #f6f9f3;
@@ -3001,7 +3044,7 @@ button {
 
 @media (max-width: 730px) {
     .certificate__inner-ful {
-        min-height: 1095px;
+        min-height: 980px;
     }
 }
 
@@ -3032,6 +3075,7 @@ button {
         flex-direction: column;
         -webkit-box-align: center;
         align-items: center;
+        bottom: -1.7%;
     }
 }
 

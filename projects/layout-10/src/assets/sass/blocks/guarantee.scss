@@ -3,8 +3,11 @@
     width: 100%;
     background-color: #fff;
     padding: 10px 20px 20px 20px;
-}
 
+    @media (max-width: 560px) {
+        background-color: transparent;
+    }
+}
 
 .guarantee__inner {
     position: relative;
@@ -21,7 +24,6 @@
         border: none;
         padding-top: 20px;
     }
-
 }
 
 .guarantee__subtitle {
@@ -58,4 +60,9 @@
     right: 0;
     bottom: 0;
     width: 100%;
+
+    @media (max-width: 420px) {
+        padding: 22px 45px;
+    }
+    
 }

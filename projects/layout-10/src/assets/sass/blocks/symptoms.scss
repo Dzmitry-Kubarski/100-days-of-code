@@ -2,6 +2,11 @@
     padding-top: 180px;
     overflow-y: hidden;
     overflow: hidden;
+
+    @media (max-width: 420px) {
+        padding-top: 125px;
+    }
+    
 }
 
 .symptoms__container-ful {
@@ -290,6 +295,10 @@
         &:after {
             display: none;
         }
+    }
+
+    @media (max-width: 420px) {
+        margin-bottom: 45px;
     }
 
     @media (max-width: 340px) {

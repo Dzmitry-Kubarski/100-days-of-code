@@ -33,9 +33,10 @@
     }
 
     &:focus {
+        // box-shadow: 0 0 0 3px rgba(#2f7cc0, .4);
         outline: 0;
-        border-bottom: 1px solid  #2196f3;
-    }
+        border-bottom: 1px solid  rgba( #2196f3, .2);
+    }    
 }
 
 .form__input-name {
