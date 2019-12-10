@@ -1,0 +1,75 @@
+/* Default styles */
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    overflow-x: hidden;
+}
+
+ul li {
+    list-style: none;
+}
+
+input,textarea,select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,textarea,p,blockquote,th,td {
+    margin: 0;
+    padding: 0;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main {
+    display: block;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    // font-family: 'Raleway', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: $blackColor-light;    
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none; 
+    background: transparent;
+}
+
+// Centering container
+.wrapper {
+    @include wrapper();
+}
+
+.page {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0 );
+}

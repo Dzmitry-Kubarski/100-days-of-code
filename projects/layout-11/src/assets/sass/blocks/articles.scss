@@ -1,0 +1,23 @@
+.articles {
+    width: 757px;
+}
+
+.articles__inner {
+    // display: flex;
+    // flex-wrap: wrap;
+}
+
+.articles__line {
+    display: block;
+    border: none;
+    color: $bg-grey;
+    background-color: $bg-grey;
+    height: 1px;
+    margin-bottom: 30px;
+}
+
+.articles__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

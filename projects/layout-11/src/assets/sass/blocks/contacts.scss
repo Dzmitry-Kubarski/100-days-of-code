@@ -1,0 +1,22 @@
+.contacts__list {
+    display: flex;
+    align-items: center;
+}
+.contacts__item {
+    margin-right: 20px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.contacts__icon {
+    width: 20px;
+    height: 20px;
+    fill: $blackColor;
+    transition: fill .2s ease-in;
+
+    &:hover {
+        fill: $goldColor;
+    }
+}

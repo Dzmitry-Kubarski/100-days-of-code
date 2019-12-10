@@ -1,0 +1,41 @@
+/* Variables */
+@import "vars";
+
+
+/* Grid smart-grid */
+@import "smart-grid";
+
+
+/* Normalize */
+@import "../../../../../node_modules/normalize.css/normalize";
+
+
+/* Default styles */
+@import "base";
+
+
+/* Blocks */
+@import "blocks/social";
+@import "blocks/contacts";
+@import "blocks/menu";
+@import "blocks/logo";
+@import "blocks/btn";
+@import "blocks/header";
+@import "blocks/introSlider";
+@import "blocks/instagram";
+@import "blocks/content";
+@import "blocks/articles";
+@import "blocks/large-post";
+@import "blocks/post";
+
+
+
+
+
+@import "blocks/footer";
+
+
+
+
+/* Vendor libs */
+@import "vendor/slick"

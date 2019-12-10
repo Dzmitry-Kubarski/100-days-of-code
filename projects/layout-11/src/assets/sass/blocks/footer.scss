@@ -1,0 +1,26 @@
+.footer__content-inner {
+    background-color: $bg-grey;
+    padding: 50px 0;
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__signature-text {
+    color: $blackColor-light;
+    line-height: 24px;
+}
+
+.footer__signature-link {
+    color: $goldColor;
+    text-decoration: underline;
+    transition: color .2s ease-in;
+
+    &:hover {
+        color: darken($goldColor, 15%);
+    }
+}
+

@@ -1,0 +1,49 @@
+.social__list {
+    display: flex;
+    align-items: center;
+}
+
+.social__item {
+    width: 50px;
+    line-height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    padding: 0 20px;
+    border-left: $border;
+
+    &:last-child {
+        border-right: $border;
+    }
+}
+
+.social__icon {   
+    height: 20px;
+    fill: $blackColor;
+
+    vertical-align: middle;
+    transition: fill .2s ease-in;
+
+    &--fb {
+        width: 18px;
+    }
+
+    &--twiter {
+        width: 20px;
+    }
+
+    &--pinterest {
+        width: 20px;
+    }
+
+    &--google {
+        width: 25px;
+    }
+
+    &:hover {
+        fill: $goldColor;
+    }
+}

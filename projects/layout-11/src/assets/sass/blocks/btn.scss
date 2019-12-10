@@ -1,0 +1,19 @@
+.btn {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;    
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 30px;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    background-color: $goldColor;
+    border-radius: 20px;
+    padding: 5px 22px;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+
+    &:hover {
+        background-color: darken($goldColor, 15%);
+    }
+}

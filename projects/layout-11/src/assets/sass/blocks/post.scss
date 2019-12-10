@@ -1,0 +1,48 @@
+.post {
+    width: 48%;
+    margin-bottom: 60px;
+}
+
+.post__inner {
+}
+
+.post__subtitle {
+    font-size: 14px;
+    color: $goldColor;
+    text-transform: uppercase;
+}
+
+.post__dash {
+    padding: 0px 5px;
+}
+
+.post__date {
+    font-size: 14px;
+    line-height: 55px;
+    color: $blackColor-light;
+    text-transform: uppercase;
+}
+
+.post__title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 29px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    color: $blackColor;
+}
+.post__img {
+    position: relative;
+    max-width: 364px;
+    max-height: 243px;
+    overflow: hidden;   
+    margin-bottom: 30px;
+}
+
+
+.post__text {
+    line-height: 24px;
+    color: $blackColor-light;
+    margin-bottom: 25px;
+}
