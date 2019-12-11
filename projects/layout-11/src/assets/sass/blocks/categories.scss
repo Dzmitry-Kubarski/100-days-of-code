@@ -1,0 +1,26 @@
+.categories {
+    border: $border;
+    padding: 40px 45px 30px 45px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.categories__subtitle {
+    color: $goldColor;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.categories__link {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 500;
+    color: $blackColor;
+    text-transform: uppercase;
+    transition: color .2s ease-in-out;
+
+    &:hover {
+        color: $goldColor;
+    }
+}

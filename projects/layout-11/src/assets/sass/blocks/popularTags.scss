@@ -1,0 +1,39 @@
+.popularTags {
+    border: $border;
+    padding: 40px 25px 40px 25px;
+}
+
+.popularTags__title {
+    color: $goldColor;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.popularTags__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.popularTags__item {
+    margin: 5px;
+}
+
+.popularTags__link {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: .4px;
+    background-color: $bg-grey;
+    color: $blackColor-light;
+    border-radius: 14px;
+    padding: 5px 17px;
+    transition: background-color .2s ease-in;
+
+    &:hover {
+        background-color: darken($bg-grey, 5%);
+    }
+}

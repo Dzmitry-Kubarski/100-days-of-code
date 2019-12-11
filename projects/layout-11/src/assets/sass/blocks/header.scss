@@ -1,5 +1,9 @@
 .header__top--ful {
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);   
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);  
+    
+    @media (max-width: 940px) {
+        display: none;
+    }
 }
 
 .header__top-box {
@@ -46,4 +50,22 @@
     &:hover {
         background-color: lighten($goldColor, 15%);
     }
+}
+
+.header__btnMobail-inner {
+    display: none;
+
+    @media (max-width: 940px) {
+        display: block;
+    }
+}
+
+.header__btnMobail {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $goldColor;
+    border-radius: 50%;    
 }

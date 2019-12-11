@@ -1,0 +1,43 @@
+.author {
+    text-align: center;
+    border: $border;
+    padding: 40px 45px;
+    margin-bottom: 30px;
+}
+
+.author__title {
+    color: $goldColor;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.author__img-inner {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: $blackColor;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.author__signature {
+    margin-bottom: 30px;
+}
+
+.author__text {
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.author__contacts {
+
+    .contacts__list {
+        width: 195px;
+        margin: 0 auto;
+    }
+
+    .contacts__item {
+        margin-right: 16px;
+    }
+}

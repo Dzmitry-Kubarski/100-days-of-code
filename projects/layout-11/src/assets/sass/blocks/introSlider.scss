@@ -9,6 +9,15 @@
 .introSlider__item-bg {
     background-color: $bg-grey;
     width: 96.5%;
+
+    @media (max-width: 890px) {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 640px) {
+        width: 95%;
+    }
 }
 
 .introSlider__item-inner {    
@@ -18,7 +27,12 @@
 .introSlider__item {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;   
+    
+    @media (max-width: 890px) {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
 
 .introSlider__item-content {
@@ -29,6 +43,17 @@
     text-align: center;
     width: 49%;
     min-height: 382px;
+    padding: 0px 40px;
+
+    @media (max-width: 1080px) {
+        min-height: 314px;
+    }
+
+    @media (max-width: 890px) {
+        width: 100%;
+        padding: 20px 20px;
+        min-height: auto;
+    }
 }
 
 .introSlider__subtitle {
@@ -49,8 +74,26 @@
     font-size: 35px;
     font-weight: 700;
     color: $blackColor;
+    text-transform: uppercase;
     margin: 0 auto;
     margin-bottom: 10px;
+
+    @media (max-width: 920px) {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    @media (max-width: 890px) {
+       max-width: 100%;
+       margin: 0px;
+       font-size: 20px;
+       line-height: 27px;
+    }
+
+    @media (max-width: 676px) {
+        font-size: 18px;
+        line-height: 22px;
+    }
 }
 
 .introSlider__date {
@@ -67,18 +110,28 @@
     max-height: 383px;
     max-width: 574px;
     overflow: hidden;
+
+    @media (max-width: 1080px) {
+       max-width: 470px;
+    }
+
+    @media (max-width: 890px) {
+        position: static;
+    }
+
+    @media (max-width: 640px) {
+        max-width: 100%;
+    }
 }
 
 .introSlider__img-inner {
     
     img {
-        display: block;
-        // height: 100%;
-        // width: 100%;
+        display: block;        
     }
 }
 
-.inner {
-    display: flex;
-    justify-content: space-between;
-}
+// .inner {
+//     display: flex;
+//     justify-content: space-between;
+// }

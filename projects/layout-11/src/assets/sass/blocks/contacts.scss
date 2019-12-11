@@ -1,9 +1,10 @@
 .contacts__list {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .contacts__item {
-    margin-right: 20px;
+    margin-right: 24px;
 
     &:last-child {
         margin-right: 0;

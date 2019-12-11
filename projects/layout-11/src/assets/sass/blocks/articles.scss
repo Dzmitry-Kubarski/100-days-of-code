@@ -1,5 +1,6 @@
 .articles {
     width: 757px;
+    padding-bottom: 120px;
 }
 
 .articles__inner {
@@ -7,12 +8,7 @@
     // flex-wrap: wrap;
 }
 
-.articles__line {
-    display: block;
-    border: none;
-    color: $bg-grey;
-    background-color: $bg-grey;
-    height: 1px;
+.articles__line {   
     margin-bottom: 30px;
 }
 

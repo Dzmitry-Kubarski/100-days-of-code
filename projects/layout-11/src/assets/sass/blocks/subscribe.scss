@@ -1,0 +1,43 @@
+.subscribe {
+    border: $border;
+    padding: 40px 30px 40px 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.subscribe__subtitle {
+    color: $goldColor;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.subscribe__text {
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+.subscribe__input {
+    display: inline-block;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;    
+    font-size: 14px;    
+    color: $blackColor;
+    border: none;
+    background-color: $bg-grey;
+    line-height: 30px;
+    border-radius: 20px;
+    padding: 5px 22px;
+    margin-bottom: 15px;
+
+    &::placeholder {
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;    
+        font-weight: 700;
+        color: darken($bg-grey, 20%);
+        text-align: center;
+    }
+}
+
+.subscribe__btn {
+    width: 100%;
+}

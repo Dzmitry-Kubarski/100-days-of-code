@@ -1,0 +1,46 @@
+.popular-post {
+    display: block;
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:hover {
+
+        .popular-post__title {
+            color: $goldColor;
+        }
+    }
+}
+
+.popular-post__inner {
+    display: flex;
+}
+
+.popular-post__img-inner {
+    width: 50%;
+    max-width: 115px;
+    max-height: 76px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.popular-post__content {
+    width: 50%;
+}
+
+.popular-post__date {
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.popular-post__title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 700;
+    color: $blackColor;
+    text-transform: uppercase;
+    transition: color .3s ease-in-out;
+}

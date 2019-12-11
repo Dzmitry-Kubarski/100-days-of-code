@@ -1,0 +1,25 @@
+.followInsta {
+    border: $border;
+    padding: 40px 30px 20px 30px;
+    margin-bottom: 30px;
+}
+
+.followInsta__title {
+    color: $goldColor;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.followInsta__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.followInsta__link {
+    margin-bottom: 20px;
+}
+
+.followInsta__img {
+}
