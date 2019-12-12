@@ -1,3 +1,13 @@
+.footer {
+    @media (max-width: 1176px) {
+        margin-top: 80px;
+    }
+
+    @media (max-width: 680px) {
+        margin-top: 20px;
+    }
+}
+
 .footer__content-inner {
     background-color: $bg-grey;
     padding: 50px 0;
@@ -7,6 +17,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 520px) {
+        flex-direction: column;
+    }
+}
+
+.footer__logo {
+
+    @media (max-width: 520px) {
+        margin-bottom: 15px;
+    }
+}
+
+.footer__signature-inner {
+
+    @media (max-width: 750px) {
+        display: none;
+    }
 }
 
 .footer__signature-text {

@@ -2,10 +2,21 @@
     display: flex;
 }
 
+.instagram__item {
+    @media (max-width: 520px) {
+
+        &:nth-child(1) {
+            display: none;
+        }
+
+        &:nth-child(2) {
+            display: none;
+        }
+    }
+}
+
 .instagram__link {
-    display: block;
-    width: 200px;
-    height: 200px;
+    display: block;    
     overflow: hidden;   
 }
 

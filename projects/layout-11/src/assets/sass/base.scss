@@ -58,10 +58,21 @@ button {
 
 // Centering container
 .wrapper {
-    @include wrapper();    
+    // @include wrapper();   
+    max-width: 1210px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px; 
+
+    @media (max-width: 1176px) {
+        max-width: 970px;
+        padding-left: 15px;
+        padding-right: 15px;      
+    }
 }
 
 .page {
+    position: relative;
     max-width: 1400px;
     margin: 0 auto;
 }

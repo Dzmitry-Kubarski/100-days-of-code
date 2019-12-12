@@ -15,8 +15,8 @@
         margin: 0 auto;
     }
 
-    @media (max-width: 640px) {
-        width: 95%;
+    @media (max-width: 750px) {
+        width: 100%;
     }
 }
 
@@ -119,19 +119,19 @@
         position: static;
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: 750px) {
         max-width: 100%;
+        width: 100%;
     }
 }
 
 .introSlider__img-inner {
     
     img {
-        display: block;        
+        display: block; 
+        
+        @media (max-width: 750px) {
+            width: 100%;
+        }
     }
 }
-
-// .inner {
-//     display: flex;
-//     justify-content: space-between;
-// }

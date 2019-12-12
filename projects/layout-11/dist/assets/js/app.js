@@ -3012,17 +3012,6 @@
 
 
 $(function () {
-
-    // $('#headerMenu').on('click', function () {
-    //     $('#menuList').slideToggle(300, function () {
-
-    //         if ($(this).css('display') === 'none') {
-    //             $(this).removeAttr('style');
-    //         }
-    //     });
-    // });
-
-
     // Scroll
     // ======
 
@@ -3059,7 +3048,7 @@ $(function () {
         // ----- responsive slider -----
         responsive: [
             {
-                breakpoint: 890,
+                breakpoint: 891,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
@@ -3071,7 +3060,7 @@ $(function () {
             },
 
             {
-                breakpoint: 640,
+                breakpoint: 751,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -3087,9 +3076,20 @@ $(function () {
     });
 
 
+    // Добавление нового поста
     $('#btnShow').click(function (event) {
         event.preventDefault();
         $('.articles__row').append('<article class="post"><div class="post__inner"><span class="post__subtitle">TRAVEL</span><span class="post__dash">/</span><span class="post__date">March 6, 2019</span><h2 class="post__title">Make Your Adventure Sound REALLY Epic</h2><div class="post__img-inner"><a class="post__img-link" href="#"><img src="assets/img/articles/img-2.jpg" alt=""></a></div><p class="post__text">Do you find yourself reading stories about adventures in outdoor magazines and websites and feeling down about what you did on your summer vacation?</p><button class="btn" type="submit">Read More</button></div> <!-- /post__inner --></article>');
+    });
+
+
+    // ----- Mobail menu button -----
+    $('.header__btnMobail').on('click', function () {
+        $('.mobailMenu').addClass('mobailMenu--open');
+    });
+
+    $('.mobailMenu__inner').on('click', function () {
+        $('.mobailMenu').removeClass('mobailMenu--open');
     });
 
 });
