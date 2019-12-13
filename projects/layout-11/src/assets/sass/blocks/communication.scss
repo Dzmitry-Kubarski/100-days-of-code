@@ -1,0 +1,108 @@
+.communication {
+    padding-bottom: 115px;
+}
+
+.communication__img-inner {
+    max-width: 1148px;
+    max-height: 526px;
+    overflow: hidden;
+    margin-bottom: 55px;
+}
+
+.communication__content {
+    text-align: center;
+}
+
+.communication__title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: .4px;
+    color: $blackColor;
+    margin-bottom: 30px;
+}
+
+.communication__text {
+    max-width: 756px;
+    font-size: 15px;
+    line-height: 25px;
+    color: #919191;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.communication__form {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.communication__input-inner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.communication__input {
+    width: 32%;
+    font-size: 14px;    
+    color: $blackColor;
+    border: none;
+    background-color: #f9f9f9;
+    line-height: 30px;
+    border: 1px solid lighten($blackColor-light, 50%); 
+    border-radius: 20px;
+    margin-bottom: 25px;
+    padding: 4px 0px 4px 17px;
+
+    &::placeholder {
+        font-family: 'Raleway', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: #adadad;
+        line-height: 30px;
+        letter-spacing: .4px;
+        text-transform: uppercase;
+    }
+
+    &:focus {
+        outline:none;
+        border-color:$goldColor;
+    }
+}
+
+.communication__textarea {
+    width: 100%;
+    min-height: 136px;
+    font-size: 14px;    
+    color: $blackColor;
+    border: none;
+    background-color: #f9f9f9;
+    line-height: 30px;
+    border: 1px solid lighten($blackColor-light, 50%); 
+    border-radius: 20px;
+    resize: none;
+    margin-bottom: 25px;
+    padding: 4px 0px 4px 17px;
+
+    &::placeholder {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        color: #adadad;
+        line-height: 30px;
+        letter-spacing: .4px;
+        text-transform: uppercase;
+    }
+
+    &:focus {
+        outline:none;
+        border-color:$goldColor;
+    }
+}
+
+.communication__btn {
+    padding: 5px 24px;
+}

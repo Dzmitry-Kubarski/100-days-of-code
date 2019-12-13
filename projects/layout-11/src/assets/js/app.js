@@ -82,4 +82,24 @@ $(function () {
         $('.mobailMenu').removeClass('mobailMenu--open');
     });
 
+
+    // Search
+    $('.header__search-inner .header__search').on('click', function () {
+
+        $('.searchModal').slideToggle();
+    });
+
+    // Search close on click "Esc"
+    $(document).keydown(function (eventObject) {
+        if (eventObject.which == 27) {
+            $('.searchModal').hide();
+        };
+    });
+
+
+    $('#searchModal__close').on('click', function () {
+        $('.searchModal').slideToggle();
+    });
+
+
 });

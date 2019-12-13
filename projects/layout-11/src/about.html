@@ -3,4 +3,44 @@ layout: default
 title: About
 ---
 
-<h1>Страница - О нас</h1>
+<section class="about" id="about">
+    <div class="wrapper">
+        <div class="about__inner">
+            <div class="about__left-box">
+                <div class="about__img-inner">
+                    <img src="assets/img/about/img-1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="about__right-box">
+                <div class="about__content">
+                    <h2 class="about__title">ABOUT ME</h2>
+                    <p class="about__text">
+                        Brownie bear claw caramels macaroon danish jelly-o. Marshmallow topping cotton candy danish
+                        pudding cake sweet cheesecake beans. Marshmallow dessert jujubes. Jelly beans gummies dragée
+                        cake brownie toffee candy. Lemon drops cake pastry cake muffin.
+                    </p>
+                    <h3 class="about__fact">
+                        Jelly ice cream pastry. Ice cream chocolate cake bonbon cookie claw. Fruitcake gingerbread candy
+                        soufflé.
+                    </h3>
+                    <p class="about__text">
+                        Marshmallow topping cotton candy danish pudding cake sweet beans cheesecake. Marshmallow dessert
+                        jujubes. Jelly beans gummies dragée cake brownie toffee candy. Lemon drops cake cake. Brownie
+                        caramels bear claw caramels macaroon danish jelly.
+                    </p>
+                </div>
+
+                <div class="contacts  about__contacts">
+                    {{> contacts }}
+                </div>
+            </div> <!-- about__right-box -->
+        </div> <!-- /about__inner -->
+    </div> <!-- /wrapper -->
+</section> <!-- /about -->
+
+
+{{> subscribeSection }}
+
+
+{{> latestPosts }}

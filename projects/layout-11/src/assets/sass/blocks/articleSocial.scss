@@ -1,0 +1,40 @@
+.articleSocial {
+    display: flex;
+    align-items: center;
+}
+
+.articleSocial__link {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;  
+    background-color: $goldColor; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    transition: background-color .2s ease-in;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &--fb {
+        background-color: #3b5998;
+    }
+
+    &--print {
+        background-color: #cc2127       
+    }
+
+    &--twit {
+        background-color: #55acee;       
+    }
+
+    &--google {
+        background-color: #dd4b39;       
+    }
+
+    &:hover {
+        background-color: $goldColor; 
+    }
+}
