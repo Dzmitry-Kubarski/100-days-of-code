@@ -43,6 +43,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media (max-width: 640px) {
+        flex-direction: column;
+    }
 }
 
 .communication__input {
@@ -70,6 +74,10 @@
     &:focus {
         outline:none;
         border-color:$goldColor;
+    }
+
+    @media (max-width: 640px) {
+        width: 100%;
     }
 }
 

@@ -1,6 +1,6 @@
 .articleAuthor {
     border: $border;
-    padding: 35px;
+    padding: 40px 35px;
     margin: 40px 0px;
 }
 
@@ -9,20 +9,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 750px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 .articleAuthor__img-inner {
     width: 19%;
     height: 100%;
-    max-width: 120px;
-    max-height: 120px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     overflow: hidden;
-    object-fit: cover;
     margin-right: 35px;
 
     img {
         width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    @media (max-width: 750px) {
+        margin-right: 0;
+        margin-bottom: 30px;
     }
 }
 
@@ -48,6 +61,10 @@
 
     .contacts__list {
         justify-content: flex-start;
+
+        @media (max-width: 750px) {
+            justify-content: center;
+        }
     }
 
     .contacts__item {
@@ -65,5 +82,10 @@
          width: 17px;
          height: 17px;
          fill: $blackColor;
-     }
+         transition: fill .2s ease-in;
+
+        &:hover {
+            fill: $goldColor;
+        }
+            }
 }

@@ -1,0 +1,19 @@
+.article-2__img {
+    margin: 35px 0px;
+}
+
+.article-2__tags-inner {
+
+    .articleTags {
+        margin-top: 0;
+    }
+}
+
+.article-2__content {
+
+    .sidebar {
+        @media (max-width: 520px) {
+            display: none;
+        }
+    }
+}

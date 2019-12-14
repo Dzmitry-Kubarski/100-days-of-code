@@ -1,0 +1,25 @@
+.article__start {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.article-3 {
+    padding-bottom: 120px;
+
+    .related-post__img-inner {
+        max-width: 297px;
+        max-height: 198px;
+
+        @media (max-width: 750px) {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}
+
+.article-3__inner {
+    max-width: 955px;
+    margin: 0 auto;
+
+    
+}

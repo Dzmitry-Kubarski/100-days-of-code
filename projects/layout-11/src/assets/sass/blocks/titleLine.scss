@@ -1,0 +1,21 @@
+.titleLine {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: $bg-grey;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.titleLine__title {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: .4px;
+    background-color: #fff;
+    text-transform: uppercase;
+    padding-right: 20px;
+}

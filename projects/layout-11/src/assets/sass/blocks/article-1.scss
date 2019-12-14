@@ -1,5 +1,14 @@
 .article-1 {
     width: 757px;
+    padding-bottom: 120px;
+
+    @media (max-width: 1176px) {
+        width: 100%;
+    }
+}
+
+.article-1__line {
+    margin-bottom: 60px;
 }
 
 .article-1__text {
@@ -58,14 +67,28 @@
     justify-content: space-between;
     align-items: center;
     margin: 25px 0px;
+
+    @media (max-width: 750px) {
+        flex-direction: column;
+    }
 }
 
 .article-1__row-img {
     width: 48%;
+
+    @media (max-width: 750px) {
+        
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 .article-1__row-text {
     width: 49%;
+
+    @media (max-width: 750px) {
+        width: 100%;
+    }
 }
 
 .article-1__fact {
