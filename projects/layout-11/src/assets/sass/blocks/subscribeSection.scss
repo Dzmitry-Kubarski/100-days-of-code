@@ -6,6 +6,10 @@
 
 .subscribeSection__content {
     text-align: center;
+
+    @media (max-width: 576px) {
+        padding: 0px 15px;
+    }
 }
 
 .subscribeSection__title {
@@ -47,9 +51,20 @@
         outline:none;
         border-color:$goldColor;
     }
+
+    @media (max-width: 576px) {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding: 9px;
+    }
 }
 
 .subscribeSection__btn {
     padding: 10px 22px;
     border-radius: 25px;
+
+    @media (max-width: 576px) {
+        width: 80%;
+    }
 }

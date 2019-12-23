@@ -1,0 +1,77 @@
+// .btnLang {
+//     border: none;
+//     background: transparent;
+//     cursor: pointer;
+//     color: $colorWhite;
+//     margin-right: 35px;    
+// }
+
+// .btnLang__option {
+
+//     color: $colorBlack;    
+// }
+
+// ================================
+
+.btnLang {
+	// margin: 0 auto;
+	position: relative;
+    width: 40px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: $colorWhite;
+    margin-right: 35px; 
+}
+
+.btnLang.is-active .btnLang__body {
+    display: block;
+}
+
+.btnLang__header {
+	cursor: pointer;
+	display: flex;
+}
+
+.btnLang__current {
+	// font-size: 18px;
+	// line-height: 24px;
+	padding: 8px;
+}
+
+.btnLang__icon {
+	align-items: center;
+	display: flex;
+	flex-shrink: 0;
+	justify-content: center;
+	height: 40px;
+	margin-left: auto;
+	text-align: center;
+	width: 5px;
+}
+
+.btnLang__body {
+	border: 1px solid $colorWhite;
+	// border-top: 0;
+	display: none;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 100%;
+}
+.btnLang__item {
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 8px;
+}
+
+.btnLang__item {
+    transition: background-color .1s ease-in ;
+
+    &:hover {
+        background-color: $colorGold;
+    }
+}
+     
+	 

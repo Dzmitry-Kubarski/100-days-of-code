@@ -1,31 +1,66 @@
 .about {
     padding: 100px 0px;
     border-top: $border;
+
+    @media (max-width: 1176px) {
+        padding-top: 60px;
+    }
+
+    @media (max-width: 720px) {
+        padding-top: 30px;
+    }
 }
 
 .about__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 1176px) {
+        flex-direction: column;
+    }
 }
 
 .about__left-box {
     width: 49%;
+
+    @media (max-width: 1176px) {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
 
 .about__img-inner {
     max-width: 560px;
     max-height: 412px;
     overflow: hidden;
+
+    @media (max-width: 1176px) {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    img {
+        @media (max-width: 1176px) {
+            width: 100%;
+        }
+    }
 }
 
 .about__right-box {
     width: 49%;
     padding: 0px 30px;
+
+    @media (max-width: 1176px) {
+        width: 100%;
+    }
+
+    @media (max-width: 720px) {
+        padding: 0;
+    }
 }
 
-.about__content {
-}
+
 
 .about__title {
     font-family: 'Raleway', sans-serif;

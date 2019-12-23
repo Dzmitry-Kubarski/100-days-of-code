@@ -1,0 +1,37 @@
+<header class="header" style="background-image: url(assets/img/header/img-2.jpg);">
+
+    <div class="header__top">
+
+        {{> btnMenu }}
+
+        <div class="header__logo-inner">
+            <a class="logo  header__logo" href="#">
+                <img src="assets/img/logo/logo.png" alt="Logo">
+            </a>
+        </div>
+
+
+        <div class="header__control">
+            {{> btnSearch }}
+
+            {{> btnLang }}
+
+            <button class="btn  header__control-btn" type="button">Book Now</button>
+        </div> <!-- /header__control -->
+    </div> <!-- /header__top -->
+
+
+    <div class="header__content">
+        <p class="header__subtitle">Welcome to Milenia Luxury Hotel</p>
+        <h1 class="header__title">A New Vision of Luxury</h1>
+        <button class="btn  header__btn" type="button">Discover More</button>
+    </div> <!-- /header__content -->
+
+
+    <div class="header__arrows  animated fadeInDown infinite slow">
+        <svg class="header__arrows-icon">
+            <use xlink:href=#header__arrows-icon></use>
+        </svg>
+    </div>
+
+</header>

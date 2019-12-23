@@ -1,0 +1,15 @@
+.btnControl {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    background-color: $colorGold;
+    cursor: pointer;
+    padding: 13.5px 15px;
+    z-index: 5;
+    transition: background-color .2s ease-in;
+
+    &:hover {
+        background-color: $colorGold-light;
+    }
+}

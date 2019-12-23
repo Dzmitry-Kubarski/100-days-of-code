@@ -1,0 +1,25 @@
+.btnMenu {
+    position: absolute;
+    left: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: $colorWhite;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btnMenu__icon {
+    width: 18px;
+    height: 15px;
+    fill: $colorWhite;
+    margin-right: 11px;
+}
+
+.btnMenu__icon--close {
+    width: 14px;
+    height: 13px;
+    stroke-width: 1;
+
+    display: none;
+}

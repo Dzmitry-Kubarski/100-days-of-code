@@ -1,0 +1,44 @@
+/* Fonts */
+@import "fonts";
+
+/* Variables */
+@import "vars";
+
+
+/* Grid smart-grid */
+// @import "smart-grid";
+
+
+/* Normalize */
+@import "../../../../../node_modules/normalize.css/normalize";
+
+/* Animate.css */
+@import "../../../../../node_modules/animate.css/animate";
+
+
+/* Default styles */
+@import "base";
+
+
+/* Blocks */
+@import "blocks/g-subtitle";
+@import "blocks/g-title";
+@import "blocks/g-link";
+@import "blocks/btnMenu";
+@import "blocks/btnSearch";
+@import "blocks/btnLang";
+@import "blocks/btnControl";
+@import "blocks/btn";
+@import "blocks/header";
+@import "blocks/booking";
+@import "blocks/welcome";
+@import "blocks/theHotel";
+
+
+
+
+
+
+/* Vendor libs */
+@import "vendor/slick";
+@import "vendor/datepicker";

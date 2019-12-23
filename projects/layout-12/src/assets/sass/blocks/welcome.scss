@@ -1,0 +1,103 @@
+.welcome {
+    background-color: $bg-gray;
+    padding-top: 105px;
+    padding-bottom: 130px;
+}
+
+.welcome__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.welcome__left-box {
+    width: 45%;
+}
+
+.welcome__subtitle {
+
+}
+
+.welcome__title {
+    margin-bottom: 45px;
+}
+
+.welcome__text {
+    font-size: 16px;
+    color: $colorBlack;
+    line-height: 26px;
+    margin-bottom: 45px;
+}
+
+.welcome__text--strong {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 30px;    
+}
+
+.welcome__signature {
+    font-family: $font-Satisfaction;
+    font-size: 30px;
+    color: $colorBlack
+}
+
+.welcome__author {
+    display: block;
+    padding-left: 30px;
+    font-size: 13px;    
+}
+
+.welcome__right-box{
+    width: 46%;
+}
+
+.welcome__img-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 621px;
+    max-height: 468px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 40px;
+        right: 40px;
+        border: 1px solid #dadada;
+        z-index: 1;
+    }
+}
+
+.welcome__img {
+    position: relative;
+    min-height: 468px;
+}
+
+.welcome__btn {
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
+    // display: inline-block;
+    // background-color: $colorGold;
+    // cursor: pointer;
+    // padding: 13.5px 15px;
+    // z-index: 5;
+    // transition: background-color .2s ease-in;
+
+    // &:hover {
+    //     background-color: $colorGold-light;
+    // }
+}
+
+.welcome__btn--video {
+    left: 54px;
+}
+
+.welcome__btn-icon {
+    width: 22px;
+    height: 22px;
+    fill: $colorWhite;
+}

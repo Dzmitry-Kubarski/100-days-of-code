@@ -1,0 +1,166 @@
+.booking {
+}
+
+.booking__form {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+}
+
+.booking__item-inner {
+    border-left: $border;
+    padding: 30px 55px 30px 60px;    
+
+    &:nth-child(3),
+    &:nth-child(4) {
+        padding: 30px 75px 30px 60px;
+    }    
+
+    &:last-of-type {
+        border-right: $border;
+    }
+}
+
+.booking__item {
+    position: relative;
+    // width: 320px;      
+}
+
+.booking__item-title {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.booking__info {
+    position: absolute;
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+.booking__input {
+    // position: relative;
+    display: inline-block;
+    width: 100%;
+    min-height: 60px;
+    border: none;
+    color: $colorBlack;
+    padding-right: 55px;
+
+    background-image: url(../img/down-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 185px center;
+    background-size: 20px;
+
+}
+
+.booking__input--adults,
+.booking__input--children {
+    max-width: 60px;
+}
+
+.booking__row {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking__date {
+    font-family: $font-OldStandard;
+    font-size: 60px;
+    margin-right: 15px;
+    color: $colorBlack;
+}
+
+.booking__month,
+.booking__year {
+    font-family: $font-PlayfairDisplay;
+    font-size: 16px;
+    color: $colorBlack;
+    line-height: 26px;
+    margin-bottom: 3px;
+}
+
+.booking__day {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+.booking__btn {
+    margin-left: auto;
+    padding: 17.5px 53px;
+}
+
+// --------------------------------
+
+.booking__quantity {
+    position: relative;
+    display: flex;
+    margin-left: -5px;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button  {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  input[type=number]  {
+    -moz-appearance: textfield;
+  }
+  
+  .booking__input--children {
+    font-family: "Old Standard TT";
+    font-size: 60px;    
+    display: flex;
+    padding: 0;
+    margin: 0;
+    color: $colorBlack;    
+  }  
+  
+  .quantity-nav {
+    position: absolute;
+    height: 42px;
+    right: -10px;
+    top: 10%;
+  }
+  
+  .quantity-button {
+    position: relative;
+    cursor: pointer;
+    width: 20px;
+    text-align: center;
+    color: #333;
+    font-size: 13px;
+    transform: translateX(-100%);    
+    user-select: none;
+
+    background-image: url(../img/down-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .quantity-button.quantity-up {
+    background-image: url(../img/up-arrow.svg);
+
+    position: absolute;
+    height: 50%;
+    top: 0;
+  }
+  
+  .quantity-button.quantity-down {
+    position: absolute;
+    bottom: -1px;
+    height: 50%;
+  }
+
+
+
+
+
+
