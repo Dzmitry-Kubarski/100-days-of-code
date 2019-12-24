@@ -4,9 +4,6 @@
     padding-bottom: 90px;
 }
 
-.theHotel__subtitle {
-}
-
 .theHotel__title {
     margin-bottom: 40px;
 }
@@ -40,7 +37,8 @@
     &::after {
         content: '';
         position: absolute;
-        width: 391px;
+        // width: 391px;
+        width: calc(100% - 40px);
         height: 100%;
         top: -40px;
         right: 40px;
@@ -83,12 +81,6 @@
     letter-spacing: 0.14px;
     color: $colorGrey;
     margin-bottom: 20px;
-}
-
-.theHotel__item-link {
-}
-
-.theHotel__btnControl {
 }
 
 .theHotel__btnControl--next {

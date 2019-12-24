@@ -1,0 +1,19 @@
+.social__list {
+    display: flex;
+    justify-content: center;
+}
+
+.social__item {
+    margin: 0px 15px;
+}
+
+.social__icon {
+    width: 23px;
+    height: 45px;
+    fill: $colorGold;
+    transition: fill .2s ease-in-out;
+
+    &:hover {
+        fill: $colorGrey
+    }
+}

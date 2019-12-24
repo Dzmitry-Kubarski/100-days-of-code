@@ -1,0 +1,31 @@
+.weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather__icon {
+    width: 50px;
+    height: 50px;
+    fill: $colorGold;
+    margin-right: 15px;
+}
+
+.weather__value {
+    font-family: $font-OldStandard;
+    font-size: 48px;
+    line-height: 20px;
+    color: $colorGold;
+}
+
+.weather__degree {
+    font-family: $font-OldStandard;
+    margin-bottom: auto;
+    font-size: 16px;
+    line-height: 26px;
+    color: $colorBlack;
+}
+
+.weather__celsius {
+    color: $colorGold;
+}

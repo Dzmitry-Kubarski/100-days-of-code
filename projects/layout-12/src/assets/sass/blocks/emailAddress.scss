@@ -1,0 +1,23 @@
+.emailAddress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emailAddress__input {
+    width: 100%;
+    max-width: 311px;
+    border: none;
+    border: $border;
+    background-color: $bg-gray;
+    padding: 13.5px 20px;
+}
+
+.emailAddress__btn {
+    position: static;
+    padding: 10px 15px;
+
+    &:hover {
+        background-color: $colorGrey
+    }
+}

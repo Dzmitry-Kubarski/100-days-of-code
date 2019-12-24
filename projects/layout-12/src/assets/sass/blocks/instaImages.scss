@@ -1,0 +1,16 @@
+.instaImages__list {
+    display: flex;
+    // flex-wrap: wrap;
+}
+
+.instaImages__item {
+    max-width: 320px;
+    max-height: 320px;
+}
+
+.instaImages__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

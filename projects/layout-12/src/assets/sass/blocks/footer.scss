@@ -1,0 +1,37 @@
+.footer {
+    background-color: $colorBlack;
+    padding: 80px 0px;
+}
+.container {
+}
+.footer__nav {
+    display: flex;
+    justify-content: center;
+}
+.footer__contacts {
+    width: 25%;
+}
+.footer__title {
+    font-family: $font-PlayfairDisplay;
+    font-size: 18px;
+    line-height: 65px;
+    letter-spacing: 0.45px;
+    color: $colorWhite;
+    text-transform: uppercase;
+}
+.footer__list {
+}
+.footer__item {
+   
+}
+.footer__item-link {
+}
+.footer__menu {
+    width: 25%;
+}
+.footer__toDo {
+    width: 25%;
+}
+.footer__rooms {
+    width: 25%;
+}

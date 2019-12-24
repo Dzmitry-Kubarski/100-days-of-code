@@ -15,3 +15,11 @@
     }
 }
 
+.btn--grey {
+    background-color: $colorGrey;
+
+    &:hover {
+        background-color: $colorGrey-light;
+    }
+}
+

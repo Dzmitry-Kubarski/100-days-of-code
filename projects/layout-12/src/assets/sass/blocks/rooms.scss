@@ -1,0 +1,159 @@
+.rooms {
+    text-align: center;
+    background-color: $bg-gray;
+    padding-top: 95px;
+    padding-bottom: 155px;
+}
+
+.rooms__title {
+    margin-bottom: 45px;
+}
+
+.rooms__filter {
+    margin-bottom: 80px;   
+}
+
+.rooms__filter-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rooms__filter-item {
+    margin: 0px 15px;
+}
+
+.rooms__filter-btn {
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.rooms__items {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: calc(100% - 80px);
+        height: calc(100% + 80px);
+        top: 50%;
+        transform: translate(50%, -50%);
+        right: 50%;        
+        border: 1px solid #dadada;
+        z-index: 0;        
+    }
+}
+
+.rooms__item {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.rooms__img-inner {
+    position: relative;
+    width: 61%;
+    max-height: 468px;
+    max-width: 775px;
+    overflow: hidden;
+}
+
+.rooms__img {
+    width: 100%;
+    height: 100%;
+}
+
+.rooms__btnControl {
+    left: 40px;
+}
+
+.rooms__btnControl--next {
+    left: 94px;
+}
+
+.rooms__item-content {
+    position: relative;
+    z-index: 50;
+    width: 45%;
+    background-color: $colorWhite;
+    text-align: left;
+    padding: 55px 105px 15px 50px;
+}
+
+.rooms__item-title {
+    font-family: $font-PlayfairDisplay;
+    font-size: 36px;
+    line-height: 39px;
+    letter-spacing: -1px;
+    color: $colorBlack;
+    margin-bottom: 15px;
+}
+
+.rooms__item-price {
+    line-height: 24px;
+    color: $colorBlack;
+    margin-bottom: 20px;
+}
+
+.rooms__item-sum {
+    font-family: $font-PlayfairDisplay;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    color: $colorGold;
+    padding: 0px 3px;
+}
+
+.rooms__item-text {
+    line-height: 24px;
+    letter-spacing: 0.14px;
+    color: $colorGrey;
+    margin-bottom: 35px;
+}
+
+.rooms__dots {
+    position: relative;
+    z-index: 50;
+}
+
+.rooms__dots-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rooms__dots-item {
+    display: flex;
+    align-items: center;
+    opacity: .5;
+    cursor: pointer;
+    margin-right: 50px;
+    transition: opacity .2s ease-in-out;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        opacity: 1; 
+    }
+}
+
+.rooms__dots-item--active {
+    opacity: 1;    
+}
+
+.rooms__dots-img {
+    margin-right: 19px;
+}
+
+.rooms__dots-title {
+    font-family: $font-PlayfairDisplay;
+    width: 100%;
+    max-width: 95px;
+    font-size: 16px;
+    font-weight: 700;
+    color: $colorBlack;
+    text-transform: uppercase;
+    text-align: left;
+}

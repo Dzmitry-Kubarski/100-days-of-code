@@ -1,0 +1,33 @@
+.information {
+    padding: 50px 0px;
+}
+
+.information__items {
+    display: flex;
+    text-align: center;
+}
+
+.information__item {
+    width: 33.33333%;
+    border-right: $border;
+
+    &:last-child {
+        border-right: none;
+    }
+}
+
+.information__item-title {
+    font-family: $font-PlayfairDisplay;
+    font-size: 24px;
+    line-height: 60px;
+    letter-spacing: -1px;
+    color: $colorBlack;
+}
+
+.information__item-subtitle {
+    display: block;
+    line-height: 24px;
+    letter-spacing: 0.14px;
+    color: $colorGrey;
+    margin-bottom: 30px;
+}
