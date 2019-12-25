@@ -46,6 +46,14 @@ a {
 button {
     border: none; 
     background: transparent;
+    cursor: pointer;
+}
+
+button,
+input {
+  padding: 0;
+  border: none;
+  outline: none; 
 }
 
 body {

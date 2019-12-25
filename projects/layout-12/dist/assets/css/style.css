@@ -4061,6 +4061,14 @@ a {
 button {
     border: none;
     background: transparent;
+    cursor: pointer;
+}
+
+button,
+input {
+    padding: 0;
+    border: none;
+    outline: none;
 }
 
 body {
@@ -5245,9 +5253,269 @@ input[type=number] {
     background-color: #858585;
 }
 
+.form__inner {
+    padding: 30px;
+    background-color: #fff;
+    position: relative;
+}
+
+.form__title {
+    font-family: "Playfair Display";
+    color: #1c1c1c;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.form {
+    width: 400px;
+    margin: auto;
+    max-width: 100%;
+}
+
+.form__bg {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border: solid;
+    border-image-slice: 85 50 50 50;
+    border-image-width: 85px 50px 50px 50px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: stretch stretch;
+    border-image-source: url(../img/form.png);
+    border-width: 85px 50px 50px 50px;
+    width: 1000px;
+    max-width: 100%;
+    margin: auto;
+    z-index: 2;
+    text-align: center;
+}
+
+.form__btn {
+    width: 100%;
+    background-color: #f9c530;
+    border-radius: 100px;
+    box-shadow: 0px 0px 35px 0px rgba(251, 197, 43, 0.55);
+    cursor: pointer;
+    -webkit-box-align: center;
+    align-items: center;
+    color: #2c1c2f;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 30px 0;
+}
+
+.form__input {
+    position: relative;
+    box-shadow: 0px 4px 20px -2px rgba(0, 0, 0, 0.1) inset;
+    color: #858585;
+    border: none;
+    border-radius: 100px;
+    font-size: 18px;
+    position: relative;
+    width: 100%;
+    padding: 30px 0;
+    padding-left: 70px;
+    margin-top: 20px;
+}
+
+.form__input-wrap {
+    position: relative;
+}
+
+.form__input-wrap:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 2px;
+    height: 25px;
+    background-color: #ddd;
+    top: 48px;
+    left: 57px;
+    z-index: 10;
+}
+
+.form__name-icon {
+    position: absolute;
+    left: 27px;
+    top: 50px;
+    z-index: 50;
+}
+
+.form__point {
+    position: relative;
+    display: inline-block;
+    font-family: "Playfair Display";
+    font-size: 14px;
+    color: #858585;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.form__point::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 19px;
+    height: 19px;
+    background-image: url("../img/circles.png");
+}
+
+.form__input--hidden {
+    display: none;
+}
+
+.popup__wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-transition: opacity .5s ease .1s;
+    transition: opacity .5s ease .1s;
+    opacity: 0;
+    display: none;
+}
+
+.popup__wrap.active {
+    opacity: 1;
+    display: -webkit-box;
+    display: flex;
+}
+
+.popup__close {
+    position: absolute;
+    top: -42px;
+    right: -75px;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    z-index: 111;
+    cursor: pointer;
+}
+
+.popup__close::before, .popup__close::after {
+    content: '';
+    display: block;
+    height: 52px;
+    width: 4px;
+    background-color: #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    border-radius: 4px;
+}
+
+.popup__close::after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 2px;
+    right: 36px;
+}
+
+.popup__close.active {
+    max-height: 100%;
+}
+
+.popup__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup {
+    position: relative;
+    max-width: 100%;
+    width: 600px;
+    display: none;
+}
+
+.popup.active {
+    display: block;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.video_mess {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 950px;
+    max-width: 100%;
+    min-height: 200px;
+    background-color: #000;
+    z-index: 501;
+    padding: 0px 15px;
+    text-align: center;
+    display: none;
+}
+
+.video_mess .clos {
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/clos.svg);
+    background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    top: -33px;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.video_mess .video-block {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+}
+
+.video_mess .video-block iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.fon_black {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 500;
+    top: 0px;
+    display: none;
+}
+
 .footer {
     background-color: #1c1c1c;
-    padding: 80px 0px;
+    padding-top: 80px;
 }
 
 .footer__nav {
@@ -5255,10 +5523,7 @@ input[type=number] {
     display: flex;
     -webkit-box-pack: center;
     justify-content: center;
-}
-
-.footer__contacts {
-    width: 25%;
+    margin-bottom: 80px;
 }
 
 .footer__title {
@@ -5270,16 +5535,55 @@ input[type=number] {
     text-transform: uppercase;
 }
 
-.footer__menu {
+.footer__contacts-text {
+    display: block;
+    line-height: 24px;
+    color: #858585;
+    margin-bottom: 12px;
+}
+
+.footer__contacts-text--email {
+    color: #c19b76;
+}
+
+.footer__contacts-title {
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer__contacts-link:hover {
+    text-decoration: underline;
+}
+
+.footer__item {
+    margin-bottom: 15px;
+}
+
+.footer__item-link {
+    text-transform: none;
+    font-weight: 400;
+}
+
+.footer__item-link::after {
+    bottom: 0;
+}
+
+.footer__column {
     width: 25%;
 }
 
-.footer__toDo {
-    width: 25%;
+.footer__line {
+    display: block;
+    border: none;
+    color: #b1b1b1;
+    background-color: #b1b1b1;
+    height: 1px;
+    opacity: .2;
 }
 
-.footer__rooms {
-    width: 25%;
+.footer__copy {
+    padding: 30px 0px;
+    text-align: center;
 }
 
 /* Vendor libs */

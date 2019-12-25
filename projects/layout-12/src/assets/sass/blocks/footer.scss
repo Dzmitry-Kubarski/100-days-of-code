@@ -1,16 +1,14 @@
 .footer {
     background-color: $colorBlack;
-    padding: 80px 0px;
+    padding-top: 80px;    
 }
-.container {
-}
+
 .footer__nav {
     display: flex;
     justify-content: center;
+    margin-bottom: 80px;
 }
-.footer__contacts {
-    width: 25%;
-}
+
 .footer__title {
     font-family: $font-PlayfairDisplay;
     font-size: 18px;
@@ -19,19 +17,58 @@
     color: $colorWhite;
     text-transform: uppercase;
 }
-.footer__list {
+
+.footer__contacts-text {
+    display: block;
+    line-height: 24px;
+    color: $colorGrey;
+    margin-bottom: 12px;    
 }
+
+.footer__contacts-text--email {
+    color: $colorGold;
+}
+
+.footer__contacts-title {
+    font-size: 14px;
+    color: $colorWhite;
+}
+
+.footer__contacts-link {
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .footer__item {
-   
+   margin-bottom: 15px;
 }
+
 .footer__item-link {
+    text-transform: none;
+    font-weight: 400;
+
+    &::after {
+        bottom: 0;
+    }
 }
-.footer__menu {
+
+.footer__column {
     width: 25%;
 }
-.footer__toDo {
-    width: 25%;
+
+.footer__line {
+    display: block;
+    border: none;
+    color: $colorGrey-light;
+    background-color: $colorGrey-light;
+    height: 1px;
+    opacity: .2;
 }
-.footer__rooms {
-    width: 25%;
+
+.footer__copy {
+    padding: 30px 0px;
+    text-align: center;
 }
+

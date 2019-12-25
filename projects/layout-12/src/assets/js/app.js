@@ -109,5 +109,41 @@ $(function () {
 
     });
 
+    // ==========
+    // Попап окна
+
+    $('[data-popup]').click(function () {
+        $('body').addClass('over-hide');
+        $('.popup__wrap').addClass('active');
+        $('.popup').removeClass('active');
+        $('.' + $(this).data('popup')).addClass('active');
+
+    });
+
+    $('.popupBtn, .popup__close, .popup__overlay').click(function () {
+        $('.popup__wrap').toggleClass('active');
+        $('.fixedHeader').toggleClass('active');
+        $('body').removeClass('over-hide');
+        // $('[data-wrap-form]').removeClass('hidden');
+        // $('[data-wrap-sent]').addClass('hidden');
+    });
+
+
+    // =====
+    // Video
+    $(".welcome__img-inner .welcome__btn--video").click(function () {
+        $('.video_mess .video-block').html('<iframe width="560" height="315" src="https://www.youtube.com/embed/K1jfd-QpK-c?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+        $('.video_mess').fadeIn(200);
+        $('.fon_black').fadeIn(200);
+    });
+
+    $(".fon_black, .video_mess .clos").click(function () {
+        $('.fon_black').fadeOut(100);
+        // $('.transfer').fadeOut(100);
+        // $('.new_koll').fadeOut(100);
+        $('.video_mess .video-block').html(" ");
+        $('.video_mess').fadeOut(200);
+    });
+
 });
 

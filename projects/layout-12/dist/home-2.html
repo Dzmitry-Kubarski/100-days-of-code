@@ -279,7 +279,7 @@
                         <div class="btnLang__item">RU</div>
                     </div>
                 </div>
-                <button class="btn  header__control-btn" type="button">Book Now</button>
+                <button class="btn  header__control-btn" type="button" data-popup="popup__bookNew">Book Now</button>
             </div> <!-- /header__control -->
         </div> <!-- /header__top -->
     
@@ -296,7 +296,6 @@
                 <use xlink:href=#header__arrows-icon></use>
             </svg>
         </div>
-    
     </header>
 
     
@@ -306,103 +305,119 @@
         <div class="container">
             <nav class="footer__nav">
     
-                <div class="footer__contacts">
+                <div class="footer__contacts  footer__column">
                     <span class="footer__title">Contact Us</span>
                     <ul class="footer__list">
-                        <li class="footer__item">
-                            <a class="footer__item-link" href="#">
-                                Address: 9863 - 9867 Mill Road, <br> Cambridge, MG09 99HT
+                        <li class="footer__address">
+                            <p class="footer__contacts-text" href="#">
+                                <span class="footer__contacts-title">Address:</span> 9863 - 9867 Mill Road, <br> Cambridge,
+                                MG09 99HT
+                            </p>
+                        </li>
+    
+                        <li class="footer__phone">
+                            <a class="footer__contacts-text  footer__contacts-link" href="tel:+18006036035">
+                                <span class="footer__contacts-title">Phone:</span> +1 800 603 6035
                             </a>
                         </li>
     
-                        <li class="footer__item">
-                            <a class="footer__item-link" href="#">
-                                Phone: +1 800 603 6035
+                        <li class="footer__fax">
+                            <a class="footer__contacts-text  footer__contacts-link" href="#">
+                                <span class="footer__contacts-title">Fax:</span> +1 800 889 9898
                             </a>
                         </li>
     
-                        <li class="footer__item">
-                            <a class="footer__item-link" href="#">
-                                Fax: +1 800 889 9898
-                            </a>
-                        </li>
-    
-                        <li class="footer__item">
-                            <a class="footer__item-link" href="#">
-                                Email: mail@companyname.com
+                        <li class="footer__email">
+                            <a class="footer__contacts-text  footer__contacts-text--email  footer__contacts-link"
+                                href="mailto:mail@companyname.com">
+                                <span class="footer__contacts-title">Email:</span> mail@companyname.com
                             </a>
                         </li>
                     </ul> <!-- /footer__list -->
                 </div> <!-- /footer__contacts -->
     
     
-                <div class="footer__menu">
+                <div class="footer__column">
                     <span class="footer__title">Main Menu</span>
                     <ul class="footer__list">
                         <li class="footer__item">
-                            <a class="footer__item-link" href="#">About</a>
+                            <a class="footer__item-link  g-link" href="#">About</a>
                         </li>
     
                         <li class="footer__item">
-                            <a class="footer__item-link" href="#">Special Offers</a>
+                            <a class="footer__item-link  g-link" href="#">Special Offers</a>
                         </li>
     
                         <li class="footer__item">
-                            <a class="footer__item-link" href="#">News</a>
+                            <a class="footer__item-link  g-link" href="#">News</a>
                         </li>
     
                         <li class="footer__item">
-                            <a class="footer__item-link" href="#">Contact Us</a>
+                            <a class="footer__item-link  g-link" href="#">Contact Us</a>
                         </li>
                     </ul> <!-- /footer__list -->
                 </div> <!-- /footer__menu -->
     
     
-                <div class="footer__toDo">
+                <div class="footer__column">
                     <span class="footer__title">Things to Do</span>
                     <ul class="footer__list">
                         <li class="footer__item">
-                            <a class="footer__item-link" href="#">Wellness & Spa</a>
+                            <a class="footer__item-link  g-link" href="#">Wellness & Spa</a>
                         </li>
     
                         <li class="footer__item">
-                            <a class="footer__item-link" href="#">Restaurants & Bars</a>
+                            <a class="footer__item-link  g-link" href="#">Restaurants & Bars</a>
                         </li>
     
                         <li class="footer__item">
-                            <a class="footer__item-link" href="#">Excursions</a>
+                            <a class="footer__item-link  g-link" href="#">Excursions</a>
                         </li>
     
                         <li class="footer__item">
-                            <a class="footer__item-link" href="#">Events</a>
+                            <a class="footer__item-link  g-link" href="#">Events</a>
                         </li>
                     </ul> <!-- /footer__list -->
                 </div> <!-- /footer__toDo -->
     
     
-                <div class="footer__rooms">
+                <div class="footer__column">
                     <span class="footer__title">Rooms & Suits</span>
                     <ul class="footer__list">
                         <li class="footer__item">
-                            <a class="footer__item-link" href="#">Classic</a>
+                            <a class="footer__item-link  g-link" href="#">Classic</a>
                         </li>
     
                         <li class="footer__item">
-                            <a class="footer__item-link" href="#">Superior</a>
+                            <a class="footer__item-link  g-link" href="#">Superior</a>
                         </li>
     
                         <li class="footer__item">
-                            <a class="footer__item-link" href="#">Deluxe</a>
+                            <a class="footer__item-link  g-link" href="#">Deluxe</a>
                         </li>
     
                         <li class="footer__item">
-                            <a class="footer__item-link" href="#">Master</a>
+                            <a class="footer__item-link  g-link" href="#">Master</a>
                         </li>
                     </ul> <!-- /footer__list -->
                 </div> <!-- /footer__toDo -->
-            </nav>
+            </nav> <!-- /footer__nav -->
+    
+    
+            <hr class="footer__line">
+    
+    
+            <p class="footer__copy">Copyright © 2018 Milenia Luxury Hotel. All Rights Reserved.</p>
+    
+    
         </div> <!-- /container -->
     </footer>
+    <div class="video_mess">
+        <div class="clos"></div>
+        <div class="video-block"></div>
+    </div>
+    
+    <div class="fon_black"></div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
