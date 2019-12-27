@@ -1,0 +1,53 @@
+.menu {
+	width: 600px;
+	max-width: 100%;
+	height: 100vh;
+	background-color: $colorGold;
+	color: $colorWhite;
+	position: fixed;
+	left: -100%;
+	top: 0px;
+    z-index: 501;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__close {
+    cursor: pointer;
+    margin-bottom: 80px;
+}
+
+.menu__close svg {
+    transition: fill .2s linear;
+    &:hover {
+        fill: $colorBlack;
+    }
+}
+
+.menu__item {
+    margin: 30px 0px;
+}
+
+.menu__link {
+    display: block;
+	font-family: $font-OpenSans;    
+    font-size: 16px;
+	color: #fff;    
+	text-transform: uppercase;
+    transition: color .2s linear;
+    
+    &:hover {
+        color: $colorBlack;
+    }
+}
+
+.js-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 500;
+    top: 0px;
+    display: none;
+}

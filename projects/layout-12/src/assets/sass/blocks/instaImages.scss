@@ -1,16 +1,40 @@
 .instaImages__list {
     display: flex;
     // flex-wrap: wrap;
+    justify-content: center;
+
+    @media (max-width: 778px) {
+        flex-wrap: wrap;
+    }
 }
 
 .instaImages__item {
+    
+    @media (max-width: 778px) {
+        width: 50%;
+    }
+
+    @media (max-width: 450px) {
+        width: 100%;
+    }
+}
+
+.instaImages__link {
+    width: 100%;
+    height: 100%;
     max-width: 320px;
     max-height: 320px;
+    display: block;
+    
+    @media (max-width: 778px) {
+        max-width: 100%;
+    }
 }
 
 .instaImages__img {
     display: block;
     width: 100%;
+    max-width: 100%;
     height: 100%;
     object-fit: cover;
 }

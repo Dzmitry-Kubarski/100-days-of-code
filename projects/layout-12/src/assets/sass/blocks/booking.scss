@@ -1,29 +1,65 @@
-.booking {
-}
-
 .booking__form {
     display: flex;
     align-items: center;
-    // justify-content: space-between;
+    
+    @media (max-width: 1397px) {
+      flex-wrap: wrap;
+      justify-content: center; 
+      // padding-bottom: 40px;  
+      padding-top: 40px;  
+    }
+    
 }
 
 .booking__item-inner {
     border-left: $border;
-    padding: 30px 55px 30px 60px;    
+    padding: 30px 55px 0px 60px; 
+    margin-bottom: 30px;   
 
     &:nth-child(3),
     &:nth-child(4) {
-        padding: 30px 75px 30px 60px;
+        padding: 30px 75px 0px 60px;
+
+        @media (max-width: 1397px) {
+          padding: 0px 30px ;
+        }
+
+        @media (max-width: 600px) {
+          width: 50%;
+        }
     }    
 
     &:last-of-type {
         border-right: $border;
+
+        @media (max-width: 1397px) {
+          border-right: none;          
+        }
+    }
+
+    &:first-child {
+
+      @media (max-width: 1397px) {
+        border-left: none;
+      }   
+      
+      @media (max-width: 600px) {
+        border-left: $border;
+        
+      }
+    }   
+    
+    @media (max-width: 1397px) {
+      padding: 0px 30px ;
+    }
+
+    @media (max-width: 600px) {
+      width: 100%;
     }
 }
 
 .booking__item {
-    position: relative;
-    // width: 320px;      
+    position: relative;    
 }
 
 .booking__item-title {
@@ -90,10 +126,18 @@
     text-transform: uppercase;
 }
 
-
 .booking__btn {
     margin-left: auto;
     padding: 17.5px 53px;
+    margin-bottom: 30px;
+
+    @media (max-width: 1397px) {
+      margin-left: 30px;            
+    }
+
+    @media (max-width: 600px) {
+      margin-left: 0;
+    }
 }
 
 // --------------------------------
@@ -115,7 +159,7 @@
   }
   
   .booking__input--children {
-    font-family: "Old Standard TT";
+    font-family: $font-OldStandard;
     font-size: 60px;    
     display: flex;
     padding: 0;

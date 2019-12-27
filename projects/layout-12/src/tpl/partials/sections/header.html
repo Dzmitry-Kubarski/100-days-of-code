@@ -1,6 +1,11 @@
 <header class="header" style="background-image: url(assets/img/header/img-2.jpg);">
 
+    {{> menu }}
+
+
     <div class="header__top">
+
+        {{> searchModal }}
 
         {{> btnMenu }}
 
@@ -8,7 +13,7 @@
             <a class="logo  header__logo" href="#">
                 <img src="assets/img/logo/logo.png" alt="Logo">
             </a>
-        </div>
+        </div> <!-- /header__logo-inner -->
 
 
         <div class="header__control">
@@ -18,13 +23,14 @@
 
             <button class="btn  header__control-btn" type="button" data-popup="popup__bookNew">Book Now</button>
         </div> <!-- /header__control -->
+
     </div> <!-- /header__top -->
 
 
     <div class="header__content">
         <p class="header__subtitle">Welcome to Milenia Luxury Hotel</p>
         <h1 class="header__title">A New Vision of Luxury</h1>
-        <button class="btn  header__btn" type="button">Discover More</button>
+        <a class="btn  header__btn" href="#theHotel">Discover More</a>
     </div> <!-- /header__content -->
 
 

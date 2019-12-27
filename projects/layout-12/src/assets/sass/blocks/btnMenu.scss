@@ -7,6 +7,11 @@
     color: $colorWhite;
     cursor: pointer;
     text-transform: uppercase;
+    z-index: 50;
+
+    @media (max-width: 887px) {
+       left: 15px;
+    }
 }
 
 .btnMenu__icon {
@@ -14,6 +19,11 @@
     height: 15px;
     fill: $colorWhite;
     margin-right: 11px;
+
+    @media (max-width: 435px) {
+        width: 44px;
+        height: 35px;
+     }
 }
 
 .btnMenu__icon--close {
@@ -22,4 +32,11 @@
     stroke-width: 1;
 
     display: none;
+}
+
+.btnMenu__title {
+
+    @media (max-width: 435px) {
+        display: none;
+     }
 }

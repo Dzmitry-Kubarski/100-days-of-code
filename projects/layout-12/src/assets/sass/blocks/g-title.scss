@@ -3,4 +3,15 @@
     font-size: 52px;
     line-height: 65px;
     color: $colorBlack;
+
+    @media (max-width: 578px) {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    @media (max-width: 378px) {
+        font-size: 35px;
+        line-height: 45px;
+        margin-top: 10px;
+    }
 }

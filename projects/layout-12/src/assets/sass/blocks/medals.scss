@@ -1,14 +1,10 @@
 .medals {
     padding: 78px 0px;
 }
-.container {
-}
+
 .medals__list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-.medals__item {
-}
-.medals__link {
+    justify-content: center;
+    flex-wrap: wrap;
 }

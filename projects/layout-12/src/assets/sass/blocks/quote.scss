@@ -3,6 +3,10 @@
     text-align: center;
     padding-top: 90px;
     padding-bottom: 100px;
+
+    @media (max-width: 520px) {
+        padding: 60px 0px;
+    }
 }
 
 .quote__stars {
@@ -23,6 +27,11 @@
     line-height: 52px;
     color: #eaeaea;
     margin: 0px auto 50px;
+
+    @media (max-width: 520px) {
+        font-size: 25px;
+        line-height: 41px;
+    }
 }
 
 .quote__author {

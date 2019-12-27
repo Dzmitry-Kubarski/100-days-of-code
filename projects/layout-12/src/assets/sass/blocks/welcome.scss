@@ -2,24 +2,37 @@
     background-color: $bg-gray;
     padding-top: 105px;
     padding-bottom: 130px;
+
+    @media (max-width: 578px) {
+        padding-bottom: 0;
+    }
 }
 
 .welcome__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 890px) {
+        flex-wrap: wrap;
+    }
 }
 
 .welcome__left-box {
     width: 45%;
-}
 
-.welcome__subtitle {
-
+    @media (max-width: 890px) {
+        width: 100%;
+        margin-bottom: 60px;
+    }
 }
 
 .welcome__title {
     margin-bottom: 45px;
+
+    @media (max-width: 578px) {
+        margin-bottom: 20px;
+    }
 }
 
 .welcome__text {
@@ -50,6 +63,10 @@
 
 .welcome__right-box{
     width: 46%;
+
+    @media (max-width: 890px) {
+        width: 100%;
+    }
 }
 
 .welcome__img-inner {
@@ -69,27 +86,22 @@
         border: 1px solid #dadada;
         z-index: 1;
     }
+
+    @media (max-width: 890px) {
+        max-width: 100%;
+    }
+
+    @media (max-width: 578px) {
+        &::after {
+            display: none;
+        }
+    }
 }
 
 .welcome__img {
     position: relative;
     min-height: 468px;
-}
-
-.welcome__btn {
-    // position: absolute;
-    // bottom: 0;
-    // left: 0;
-    // display: inline-block;
-    // background-color: $colorGold;
-    // cursor: pointer;
-    // padding: 13.5px 15px;
-    // z-index: 5;
-    // transition: background-color .2s ease-in;
-
-    // &:hover {
-    //     background-color: $colorGold-light;
-    // }
+    object-fit: cover;
 }
 
 .welcome__btn--video {

@@ -14,14 +14,21 @@
 // ================================
 
 .btnLang {
-	// margin: 0 auto;
 	position: relative;
     width: 40px;
     border: none;
     background: transparent;
     cursor: pointer;
     color: $colorWhite;
-    margin-right: 35px; 
+	margin-right: 35px; 
+	
+	&:focus {
+		outline-color: $colorWhite;
+	}
+
+	@media (max-width: 887px) {
+        margin-right: 0;
+    }
 }
 
 .btnLang.is-active .btnLang__body {
@@ -33,9 +40,7 @@
 	display: flex;
 }
 
-.btnLang__current {
-	// font-size: 18px;
-	// line-height: 24px;
+.btnLang__current {	
 	padding: 8px;
 }
 
@@ -51,8 +56,7 @@
 }
 
 .btnLang__body {
-	border: 1px solid $colorWhite;
-	// border-top: 0;
+	// border: 1px solid rgba($colorWhite, .3);
 	display: none;
 	left: 0;
 	position: absolute;

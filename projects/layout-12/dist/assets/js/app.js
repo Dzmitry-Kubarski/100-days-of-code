@@ -1,3 +1,5 @@
+// ---- Connection libs ----  
+
 /*
      _ _      _       _
  ___| (_) ___| | __  (_)___
@@ -5273,7 +5275,128 @@
 
 $(function () {
 
-    let select = function () {
+    // ---- Components ----  
+
+    // ---- off ----
+    // ----- SlickSlider -----
+    
+    // $('.js-introSlider__items').slick({
+        //     dots: true,
+        //     arrows: false,
+        //     slidesToShow: 1,
+        //     slidesToScroll: 1,
+        //     speed: 800,
+        //     // nextArrow: '<button class="slider-btn_next"><img src="assets/img/next.svg" alt="arrow"></button>',
+        //     // prevArrow: '<button class="slider-btn_prev"><img src="assets/img/prev.svg" alt="arrow"></button>',
+    
+        //     // ----- responsive slider -----
+        //     responsive: [
+        //         {
+        //             breakpoint: 891,
+        //             settings: {
+        //                 slidesToShow: 2,
+        //                 slidesToScroll: 1,
+        //                 prevArrow: false,
+        //                 nextArrow: false,
+        //                 dots: true,
+        //                 centerMode: false,
+        //             }
+        //         },
+    
+        //         {
+        //             breakpoint: 751,
+        //             settings: {
+        //                 slidesToShow: 1,
+        //                 slidesToScroll: 1,
+        //                 prevArrow: false,
+        //                 nextArrow: false,
+        //                 dots: true,
+        //                 centerMode: false,
+        //             }
+        //         },
+    
+        //     ]
+    
+        // });
+
+    // ---- on ----
+    // ----- Mobail menu button -----
+    
+    $(".btnMenu").click(function () {
+        $(".menu").animate({ left: "0px" }, 300);
+        $(".js-overlay").show();
+    });
+    
+    $('.menu__link').click(function () {
+    
+        let target = $(this).attr('href');
+        $('html, body').animate({ scrollTop: $(target).offset().top }, 1000);
+        return false;
+    });
+    
+    
+    $(".menu__close, .js-overlay, .menu__link").click(function () {
+        $(".menu").animate({ left: "-100%" }, 300);
+        $(".js-overlay").hide();
+    });
+    // ---- Popup ----
+    
+    $('[data-popup]').click(function () {
+        $('body').addClass('over-hide');
+        $('.popup__wrap').addClass('active');
+        $('.popup').removeClass('active');
+        $('.' + $(this).data('popup')).addClass('active');
+    
+    });
+    
+    $('.popupBtn, .popup__close, .popup__overlay').click(function () {
+        $('.popup__wrap').toggleClass('active');
+        $('.fixedHeader').toggleClass('active');
+        $('body').removeClass('over-hide');
+        // $('[data-wrap-form]').removeClass('hidden');
+        // $('[data-wrap-sent]').addClass('hidden');
+    });
+    // ---- BookingCheck ----
+    
+    // $('.booking__input').datepicker({ dateFormat: 'd MM, yyyy, DD' });
+    
+    
+    // Навигация для input
+    $('<div class="quantity-nav"><div class="quantity-button quantity-up"></div><div class="quantity-button quantity-down"></div></div>').insertAfter('.booking__quantity input');
+    $('.booking__quantity').each(function () {
+        var spinner = $(this),
+            input = spinner.find('input[type="number"]'),
+            btnUp = spinner.find('.quantity-up'),
+            btnDown = spinner.find('.quantity-down'),
+            min = input.attr('min'),
+            max = input.attr('max');
+    
+        btnUp.click(function () {
+            var oldValue = parseFloat(input.val());
+            if (oldValue >= max) {
+                var newVal = oldValue;
+            } else {
+                var newVal = oldValue + 1;
+            }
+            spinner.find("input").val(newVal);
+            spinner.find("input").trigger("change");
+        });
+    
+        btnDown.click(function () {
+            var oldValue = parseFloat(input.val());
+            if (oldValue <= min) {
+                var newVal = oldValue;
+            } else {
+                var newVal = oldValue - 1;
+            }
+            spinner.find("input").val(newVal);
+            spinner.find("input").trigger("change");
+        });
+    
+    });
+    // ---- theHotel-slider ----
+    
+    let selectLang = function () {
         let selectHeader = document.querySelectorAll('.btnLang__header');
         let selectItem = document.querySelectorAll('.btnLang__item');
     
@@ -5297,145 +5420,343 @@ $(function () {
             select.classList.remove('is-active');
         }
     };
-    select();
-
-
-    // $('.js-introSlider__items').slick({
-    //     dots: true,
-    //     arrows: false,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     speed: 800,
-    //     // nextArrow: '<button class="slider-btn_next"><img src="assets/img/next.svg" alt="arrow"></button>',
-    //     // prevArrow: '<button class="slider-btn_prev"><img src="assets/img/prev.svg" alt="arrow"></button>',
-
-    //     // ----- responsive slider -----
-    //     responsive: [
-    //         {
-    //             breakpoint: 891,
-    //             settings: {
-    //                 slidesToShow: 2,
-    //                 slidesToScroll: 1,
-    //                 prevArrow: false,
-    //                 nextArrow: false,
-    //                 dots: true,
-    //                 centerMode: false,
-    //             }
-    //         },
-
-    //         {
-    //             breakpoint: 751,
-    //             settings: {
-    //                 slidesToShow: 1,
-    //                 slidesToScroll: 1,
-    //                 prevArrow: false,
-    //                 nextArrow: false,
-    //                 dots: true,
-    //                 centerMode: false,
-    //             }
-    //         },
-
-    //     ]
-
-    // });
-
-
-    // // Добавление нового поста
-    // $('#btnShow').click(function (event) {
-    //     event.preventDefault();
-    //     $('.articles__row').append('<article class="post"><div class="post__inner"><span class="post__subtitle">TRAVEL</span><span class="post__dash">/</span><span class="post__date">March 6, 2019</span><h2 class="post__title">Make Your Adventure Sound REALLY Epic</h2><div class="post__img-inner"><a class="post__img-link" href="#"><img src="assets/img/articles/img-2.jpg" alt=""></a></div><p class="post__text">Do you find yourself reading stories about adventures in outdoor magazines and websites and feeling down about what you did on your summer vacation?</p><button class="btn" type="submit">Read More</button></div> <!-- /post__inner --></article>');
-    // });
-
-
-    // // ----- Mobail menu button -----
-    // $('.header__btnMobail').on('click', function () {
-    //     $('.mobailMenu').addClass('mobailMenu--open');
-    // });
-
-    // $('.mobailMenu__inner').on('click', function () {
-    //     $('.mobailMenu').removeClass('mobailMenu--open');
-    // });
-
-
-    // // Search
-    // $('.header__search-inner .header__search').on('click', function () {
-
-    //     $('.searchModal').slideToggle();
-    // });
-
-
-    $('.booking__input').datepicker({ dateFormat: 'd MM, yyyy, DD' });
-
-
-
-    // Навигация для input
-    $('<div class="quantity-nav"><div class="quantity-button quantity-up"></div><div class="quantity-button quantity-down"></div></div>').insertAfter('.booking__quantity input');
-    $('.booking__quantity').each(function () {
-        var spinner = $(this),
-            input = spinner.find('input[type="number"]'),
-            btnUp = spinner.find('.quantity-up'),
-            btnDown = spinner.find('.quantity-down'),
-            min = input.attr('min'),
-            max = input.attr('max');
-
-        btnUp.click(function () {
-            var oldValue = parseFloat(input.val());
-            if (oldValue >= max) {
-                var newVal = oldValue;
-            } else {
-                var newVal = oldValue + 1;
-            }
-            spinner.find("input").val(newVal);
-            spinner.find("input").trigger("change");
-        });
-
-        btnDown.click(function () {
-            var oldValue = parseFloat(input.val());
-            if (oldValue <= min) {
-                var newVal = oldValue;
-            } else {
-                var newVal = oldValue - 1;
-            }
-            spinner.find("input").val(newVal);
-            spinner.find("input").trigger("change");
-        });
-
-    });
-
-    // ==========
-    // Попап окна
-
-    $('[data-popup]').click(function () {
-        $('body').addClass('over-hide');
-        $('.popup__wrap').addClass('active');
-        $('.popup').removeClass('active');
-        $('.' + $(this).data('popup')).addClass('active');
-
-    });
-
-    $('.popupBtn, .popup__close, .popup__overlay').click(function () {
-        $('.popup__wrap').toggleClass('active');
-        $('.fixedHeader').toggleClass('active');
-        $('body').removeClass('over-hide');
-        // $('[data-wrap-form]').removeClass('hidden');
-        // $('[data-wrap-sent]').addClass('hidden');
-    });
-
-
-    // =====
-    // Video
+    selectLang();
+    
+    // ---- VideoPopup ----
     $(".welcome__img-inner .welcome__btn--video").click(function () {
-        $('.video_mess .video-block').html('<iframe width="560" height="315" src="https://www.youtube.com/embed/K1jfd-QpK-c?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
-        $('.video_mess').fadeIn(200);
-        $('.fon_black').fadeIn(200);
+        $('.video__wrap .video').html('<iframe width="560" height="315" src="https://www.youtube.com/embed/K1jfd-QpK-c?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+        $('.video__wrap').fadeIn(200);
+        $('.video__overlay').fadeIn(200);
+    });
+    
+    $(".video__overlay, .video__wrap .video__close").click(function () {
+        $('.video__overlay').fadeOut(100);
+        $('.video__wrap .video').html(" ");
+        $('.video__wrap').fadeOut(200);
+    });
+    // ---- theHotel-slider ----
+    
+    var btn_prev = document.querySelector('.gallery-popup__btnControl--prev');
+    var btn_next = document.querySelector('.gallery-popup__btnControl--next');
+    
+    var images = document.querySelectorAll('.gallery__img');
+    var i = 0;
+    
+    
+    btn_prev.onclick = function () {
+        images[i].className = '';
+        i = i - 1;
+    
+        if (i < 0) {
+            i = images.length - 1;
+        }
+    
+        images[i].className = 'showed';
+    }
+    
+    btn_next.onclick = function () {
+        images[i].className = '';
+        i = i + 1;
+    
+        if (i >= images.length) {
+            i = 0;
+        }
+    
+        images[i].className = 'showed';
+    }
+    
+    
+    $(".welcome__img-inner .welcome__btn--galleria").click(function () {
+    
+        $('.gallery-popup').fadeIn(200);
+        $('.video__overlay').fadeIn(200);
+    });
+    
+    $(".video__overlay, .gallery-popup .video__close").click(function () {
+        $('.video__overlay').fadeOut(100);
+    
+        $('.video__wrap .photos').html(" ");
+        $('.gallery-popup').fadeOut(200);
+    });
+    // ---- theHotel-slider ----
+    
+    var theHotel_prev = document.querySelector('.theHotel__btnControl--prev');
+    var theHotel_next = document.querySelector('.theHotel__btnControl--next');
+    
+    var theHotel_images = document.querySelectorAll('.wellness__img');
+    var i = 0;
+    
+    
+    theHotel_prev.onclick = function () {
+        theHotel_images[i].className = '';
+        i = i - 1;
+    
+        if (i < 0) {
+            i = theHotel_images.length - 1;
+        }
+    
+        theHotel_images[i].className = 'showed';
+    }
+    
+    theHotel_next.onclick = function () {
+        theHotel_images[i].className = '';
+        i = i + 1;
+    
+        if (i >= theHotel_images.length) {
+            i = 0;
+        }
+    
+        theHotel_images[i].className = 'showed';
+    }
+    
+    
+    // ------------Restaurants-----------------------------------
+    
+    var restaurants_prev = document.querySelector('.restaurants-prev');
+    var restaurants_next = document.querySelector('.restaurants-next');
+    
+    var restaurants_images = document.querySelectorAll('.theHotel__img-inner .restaurants__img');
+    var i = 0;
+    
+    
+    restaurants_prev.onclick = function () {
+        restaurants_images[i].className = '';
+        i = i - 1;
+    
+        if (i < 0) {
+            i = restaurants_images.length - 1;
+        }
+    
+        restaurants_images[i].className = 'showed';
+    }
+    
+    restaurants_next.onclick = function () {
+        restaurants_images[i].className = '';
+        i = i + 1;
+    
+        if (i >= restaurants_images.length) {
+            i = 0;
+        }
+    
+        restaurants_images[i].className = 'showed';
+    }
+    
+    // -------------Special------------------------------------
+    
+    
+    var special_prev = document.querySelector('.special-prev');
+    var special_next = document.querySelector('.special-next');
+    
+    var special_images = document.querySelectorAll('.theHotel__img-inner .special__img');
+    var i = 0;
+    
+    
+    special_prev.onclick = function () {
+        special_images[i].className = '';
+        i = i - 1;
+    
+        if (i < 0) {
+            i = special_images.length - 1;
+        }
+    
+        special_images[i].className = 'showed';
+    }
+    
+    special_next.onclick = function () {
+        special_images[i].className = '';
+        i = i + 1;
+    
+        if (i >= special_images.length) {
+            i = 0;
+        }
+    
+        special_images[i].className = 'showed';
+    }
+    // ---- theHotel-slider ----
+    
+    var rooms_prev = document.querySelector('.rooms__btnControl--prev');
+    var rooms_next = document.querySelector('.rooms__btnControl--next');
+    
+    var rooms_images = document.querySelectorAll('.rooms__img-inner .classic__img');
+    var i = 0;
+    
+    
+    rooms_prev.onclick = function () {
+        rooms_images[i].className = '';
+        i = i - 1;
+    
+        if (i < 0) {
+            i = rooms_images.length - 1;
+        }
+    
+        rooms_images[i].className = 'showed';
+    }
+    
+    rooms_next.onclick = function () {
+        rooms_images[i].className = '';
+        i = i + 1;
+    
+        if (i >= rooms_images.length) {
+            i = 0;
+        }
+    
+        rooms_images[i].className = 'showed';
+    }
+    
+    // -----------------------------------------
+    
+    
+    var superDouble__img_prev = document.querySelector('.superDouble-prev');
+    var superDouble__img_next = document.querySelector('.superDouble-next');
+    
+    var superDouble__img_images = document.querySelectorAll('.rooms__img-inner .superDouble__img');
+    var i = 0;
+    
+    
+    superDouble__img_prev.onclick = function () {
+        superDouble__img_images[i].className = '';
+        i = i - 1;
+    
+        if (i < 0) {
+            i = superDouble__img_images.length - 1;
+        }
+    
+        superDouble__img_images[i].className = 'showed';
+    }
+    
+    superDouble__img_next.onclick = function () {
+        superDouble__img_images[i].className = '';
+        i = i + 1;
+    
+        if (i >= superDouble__img_images.length) {
+            i = 0;
+        }
+    
+        superDouble__img_images[i].className = 'showed';
+    }
+    
+    // -----------------------------------------------------
+    
+    
+    var superBalcony_prev = document.querySelector('.superBalcony-prev');
+    var superBalcony_next = document.querySelector('.superBalcony-next');
+    
+    var superBalcony_images = document.querySelectorAll('.rooms__img-inner .superBalcony__img');
+    var i = 0;
+    
+    
+    superBalcony_prev.onclick = function () {
+        superBalcony_images[i].className = '';
+        i = i - 1;
+    
+        if (i < 0) {
+            i = superBalcony_images.length - 1;
+        }
+    
+        superBalcony_images[i].className = 'showed';
+    }
+    
+    superBalcony_next.onclick = function () {
+        superBalcony_images[i].className = '';
+        i = i + 1;
+    
+        if (i >= superBalcony_images.length) {
+            i = 0;
+        }
+    
+        superBalcony_images[i].className = 'showed';
+    }
+    
+    
+    // -----------------------------------------------------------
+    
+    var delux_prev = document.querySelector('.delux-prev');
+    var delux_next = document.querySelector('.delux-next');
+    
+    var delux_images = document.querySelectorAll('.rooms__img-inner .delux__img');
+    var i = 0;
+    
+    
+    delux_prev.onclick = function () {
+        delux_images[i].className = '';
+        i = i - 1;
+    
+        if (i < 0) {
+            i = delux_images.length - 1;
+        }
+    
+        delux_images[i].className = 'showed';
+    }
+    
+    delux_next.onclick = function () {
+        delux_images[i].className = '';
+        i = i + 1;
+    
+        if (i >= delux_images.length) {
+            i = 0;
+        }
+    
+        delux_images[i].className = 'showed';
+    }
+    
+    
+    // ---- Rooms tabs ----
+    
+    $('.rooms__dots-item').on('click', function (event) {
+        var id = $(this).attr('data-id');
+        $('.rooms__items').find('.rooms__item').removeClass('active-item').hide();
+        $('.rooms__dots').find('.rooms__dots-item').removeClass('active');
+        $(this).addClass('active');
+        $('#' + id).addClass('active-item').fadeIn();
+        return false;
+    });
+    
+    
+    // ---- Rooms filter ----
+    
+    $('.rooms__filter-btn').on('click', function (event) {
+        var id = $(this).attr('data-name');
+        var roomsItem = document.querySelectorAll('.rooms__dots-item');
+    
+    
+    
+        for (var i = 0; i < roomsItem.length; i++) {
+    
+            roomsItem[i].style.display = 'none';
+    
+            if ($(roomsItem[i]).hasClass(id)) {
+                roomsItem[i].style.display = 'flex';
+            }
+        }
+    });
+    // ---- Search ----
+    
+    $('.btnSearch').on('click', function () {
+    
+        $('.searchModal').slideToggle();
+        $('.search__overlay').fadeIn(200);
+    });
+    
+    $('.search__overlay, .searchModal__close').click(function () {
+        $('.search__overlay').fadeOut(100);
+        $('.searchModal').slideToggle();
+    });
+    
+    
+    // Search close on click "Esc"
+    $(document).keydown(function (eventObject) {
+        if (eventObject.which == 27) {
+            $('.searchModal').hide();
+        };
     });
 
-    $(".fon_black, .video_mess .clos").click(function () {
-        $('.fon_black').fadeOut(100);
-        // $('.transfer').fadeOut(100);
-        // $('.new_koll').fadeOut(100);
-        $('.video_mess .video-block').html(" ");
-        $('.video_mess').fadeOut(200);
+
+
+    $('.header__btn').click(function () {
+
+        let target = $(this).attr('href');
+        $('html, body').animate({ scrollTop: $(target).offset().top }, 1000);
+        return false;
     });
 
 });

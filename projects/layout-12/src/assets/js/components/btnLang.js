@@ -1,4 +1,6 @@
-let select = function () {
+// ---- theHotel-slider ----
+
+let selectLang = function () {
     let selectHeader = document.querySelectorAll('.btnLang__header');
     let selectItem = document.querySelectorAll('.btnLang__item');
 
@@ -22,4 +24,4 @@ let select = function () {
         select.classList.remove('is-active');
     }
 };
-select();
+selectLang();
