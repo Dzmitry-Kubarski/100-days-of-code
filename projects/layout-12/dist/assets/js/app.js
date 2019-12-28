@@ -5434,36 +5434,37 @@ $(function () {
         $('.video__wrap .video').html(" ");
         $('.video__wrap').fadeOut(200);
     });
-    // ---- theHotel-slider ----
+    // ---- galleryPopup ----
     
-    var btn_prev = document.querySelector('.gallery-popup__btnControl--prev');
-    var btn_next = document.querySelector('.gallery-popup__btnControl--next');
+    var galleryPopupPrev = document.querySelector('.gallery-popup__btnControl--prev');
+    var galleryPopupNext = document.querySelector('.gallery-popup__btnControl--next');
+    var galleryPopupImages = document.querySelectorAll('.gallery__img');
+    var galleryPopupCounter = 0;
     
-    var images = document.querySelectorAll('.gallery__img');
-    var i = 0;
-    
-    
-    btn_prev.onclick = function () {
-        images[i].className = '';
-        i = i - 1;
-    
-        if (i < 0) {
-            i = images.length - 1;
+    function galleryPopupSlider() {
+        for (var i = 0; i < galleryPopupImages.length; i++) {
+            galleryPopupImages[i].classList.remove('showed');
         }
-    
-        images[i].className = 'showed';
+        galleryPopupImages[galleryPopupCounter].classList.add('showed');
     }
     
-    btn_next.onclick = function () {
-        images[i].className = '';
-        i = i + 1;
-    
-        if (i >= images.length) {
-            i = 0;
+    galleryPopupPrev.onclick = function () {
+        if (galleryPopupCounter - 1 == -1) {
+            galleryPopupCounter = galleryPopupImages.length - 1;
+        } else {
+            galleryPopupCounter--;
         }
+        galleryPopupSlider();
+    };
     
-        images[i].className = 'showed';
-    }
+    galleryPopupNext.onclick = function () {
+        if (galleryPopupCounter + 1 == galleryPopupImages.length) {
+            galleryPopupCounter = 0;
+        } else {
+            galleryPopupCounter++;
+        }
+        galleryPopupSlider();
+    };
     
     
     $(".welcome__img-inner .welcome__btn--galleria").click(function () {
@@ -5579,168 +5580,142 @@ $(function () {
         }
         specialSlider();
     };
-    // ---- rooms-slider ----
+    // ---- Rooms-sliders ----
     
-    // ===========================================test===========
+    // ---------------- Classic ---------------------------
     
+    var classicPrev = document.querySelector('.classic-prev');
+    var classicNext = document.querySelector('.classic-next');
+    var classicImages = document.querySelectorAll('.classic__img');
+    var classicCounter = 0;
     
-    
-    // var classic_prev = document.querySelector('.classic-prev');
-    // var classic_next = document.querySelector('.classic-next');
-    
-    // var classic_images = document.querySelectorAll('.classic__img');
-    // var i = 0;
-    
-    
-    // classic_prev.onclick = function () {
-    //     classic_images[i].classList.toggle("showed");
-    //     i = i - 1;
-    
-    //     if (i < 0) {
-    //         i = classic_images.length - 1;
-    //     }
-    
-    //     classic_images[i].classList.toggle("showed");
-    // }
-    
-    // classic_next.onclick = function () {
-    //     classic_images[i].classList.toggle("showed");
-    //     i = i + 1;
-    
-    //     if (i >= classic_images.length) {
-    //         i = 0;
-    //     }
-    
-    //     classic_images[i].classList.toggle("showed");
-    // }
-    
-    
-    // ===========================================test=============
-    
-    var classic_prev = document.querySelector('.classic-prev');
-    var classic_next = document.querySelector('.classic-next');
-    
-    var classic_images = document.querySelectorAll('.classic__img');
-    var i = 0;
-    
-    
-    classic_prev.onclick = function () {
-        classic_images[i].classList.toggle("showed");
-        i = i - 1;
-    
-        if (i < 0) {
-            i = classic_images.length - 1;
+    function classicSlider() {
+        for (var i = 0; i < classicImages.length; i++) {
+            classicImages[i].classList.remove('showed');
         }
-    
-        classic_images[i].classList.toggle("showed");
+        classicImages[classicCounter].classList.add('showed');
     }
     
-    classic_next.onclick = function () {
-        classic_images[i].classList.toggle("showed");
-        i = i + 1;
-    
-        if (i >= classic_images.length) {
-            i = 0;
+    classicPrev.onclick = function () {
+        if (classicCounter - 1 == -1) {
+            classicCounter = classicImages.length - 1;
+        } else {
+            classicCounter--;
         }
+        classicSlider();
+    };
     
-        classic_images[i].classList.toggle("showed");
+    classicNext.onclick = function () {
+        if (classicCounter + 1 == classicImages.length) {
+            classicCounter = 0;
+        } else {
+            classicCounter++;
+        }
+        classicSlider();
+    };
+    
+    
+    
+    // ---------------- Superior Double -----------------------------------
+    
+    var superDoublePrev = document.querySelector('.superDouble-prev');
+    var superDoubleNext = document.querySelector('.superDouble-next');
+    var superDoubleImages = document.querySelectorAll('.superDouble__img');
+    var superDoubleCounter = 0;
+    
+    function superDoubleSlider() {
+        for (var i = 0; i < superDoubleImages.length; i++) {
+            superDoubleImages[i].classList.remove('showed');
+        }
+        superDoubleImages[superDoubleCounter].classList.add('showed');
     }
     
-    // -----------------------------------------
-    
-    
-    var superDouble__img_prev = document.querySelector('.superDouble-prev');
-    var superDouble__img_next = document.querySelector('.superDouble-next');
-    
-    var superDouble__img_images = document.querySelectorAll('.superDouble__img');
-    var i = 0;
-    
-    
-    superDouble__img_prev.onclick = function () {
-        superDouble__img_images[i].classList.toggle("showed");
-        i = i - 1;
-    
-        if (i < 0) {
-            i = superDouble__img_images.length - 1;
+    superDoublePrev.onclick = function () {
+        if (superDoubleCounter - 1 == -1) {
+            superDoubleCounter = superDoubleImages.length - 1;
+        } else {
+            superDoubleCounter--;
         }
+        superDoubleSlider();
+    };
     
-        superDouble__img_images[i].classList.toggle("showed");
+    superDoubleNext.onclick = function () {
+        if (superDoubleCounter + 1 == superDoubleImages.length) {
+            superDoubleCounter = 0;
+        } else {
+            superDoubleCounter++;
+        }
+        superDoubleSlider();
+    };
+    
+    
+    
+    // ---------------- SuperBalcony ------------------------------------
+    
+    var superBalconyPrev = document.querySelector('.superBalcony-prev');
+    var superBalconyNext = document.querySelector('.superBalcony-next');
+    var superBalconyImages = document.querySelectorAll('.superBalcony__img');
+    var superBalconyCounter = 0;
+    
+    function superBalconySlider() {
+        for (var i = 0; i < superBalconyImages.length; i++) {
+            superBalconyImages[i].classList.remove('showed');
+        }
+        superBalconyImages[superBalconyCounter].classList.add('showed');
     }
     
-    superDouble__img_next.onclick = function () {
-        superDouble__img_images[i].classList.toggle("showed");
-        i = i + 1;
-    
-        if (i >= superDouble__img_images.length) {
-            i = 0;
+    superBalconyPrev.onclick = function () {
+        if (superBalconyCounter - 1 == -1) {
+            superBalconyCounter = superBalconyImages.length - 1;
+        } else {
+            superBalconyCounter--;
         }
+        superBalconySlider();
+    };
     
-        superDouble__img_images[i].classList.toggle("showed");
+    superBalconyNext.onclick = function () {
+        if (superBalconyCounter + 1 == superBalconyImages.length) {
+            superBalconyCounter = 0;
+        } else {
+            superBalconyCounter++;
+        }
+        superBalconySlider();
+    };
+    
+    
+    
+    // --------------Delux--------------------------------------
+    
+    var deluxPrev = document.querySelector('.delux-prev');
+    var deluxNext = document.querySelector('.delux-next');
+    var deluxImages = document.querySelectorAll('.delux__img');
+    var deluxCounter = 0;
+    
+    function deluxSlider() {
+        for (var i = 0; i < deluxImages.length; i++) {
+            deluxImages[i].classList.remove('showed');
+        }
+        deluxImages[deluxCounter].classList.add('showed');
     }
     
-    // -----------------------------------------------------
-    
-    
-    var superBalcony_prev = document.querySelector('.superBalcony-prev');
-    var superBalcony_next = document.querySelector('.superBalcony-next');
-    
-    var superBalcony_images = document.querySelectorAll('.superBalcony__img');
-    var i = 0;
-    
-    
-    superBalcony_prev.onclick = function () {
-        superBalcony_images[i].classList.toggle("showed");
-        i = i - 1;
-    
-        if (i < 0) {
-            i = superBalcony_images.length - 1;
+    deluxPrev.onclick = function () {
+        if (deluxCounter - 1 == -1) {
+            deluxCounter = deluxImages.length - 1;
+        } else {
+            deluxCounter--;
         }
+        deluxSlider();
+    };
     
-        superBalcony_images[i].classList.toggle("showed");
-    }
-    
-    superBalcony_next.onclick = function () {
-        superBalcony_images[i].classList.toggle("showed");
-        i = i + 1;
-    
-        if (i >= superBalcony_images.length) {
-            i = 0;
+    deluxNext.onclick = function () {
+        if (deluxCounter + 1 == deluxImages.length) {
+            deluxCounter = 0;
+        } else {
+            deluxCounter++;
         }
+        deluxSlider();
+    };
     
-        superBalcony_images[i].classList.toggle("showed");
-    }
-    
-    
-    // -----------------------------------------------------------
-    
-    var delux_prev = document.querySelector('.delux-prev');
-    var delux_next = document.querySelector('.delux-next');
-    
-    var delux_images = document.querySelectorAll('.delux__img');
-    var i = 0;
-    
-    
-    delux_prev.onclick = function () {
-        delux_images[i].classList.toggle("showed");
-        i = i - 1;
-    
-        if (i < 0) {
-            i = delux_images.length - 1;
-        }
-    
-        delux_images[i].classList.toggle("showed");
-    }
-    
-    delux_next.onclick = function () {
-        delux_images[i].classList.toggle("showed");
-        i = i + 1;
-    
-        if (i >= delux_images.length) {
-            i = 0;
-        }
-    
-        delux_images[i].classList.toggle("showed");
-    }
     
     
     // ---- Rooms tabs ----

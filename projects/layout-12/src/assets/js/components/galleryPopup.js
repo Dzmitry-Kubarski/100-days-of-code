@@ -1,33 +1,34 @@
-// ---- theHotel-slider ----
+// ---- galleryPopup ----
 
-var btn_prev = document.querySelector('.gallery-popup__btnControl--prev');
-var btn_next = document.querySelector('.gallery-popup__btnControl--next');
+var galleryPopupPrev = document.querySelector('.gallery-popup__btnControl--prev');
+var galleryPopupNext = document.querySelector('.gallery-popup__btnControl--next');
+var galleryPopupImages = document.querySelectorAll('.gallery__img');
+var galleryPopupCounter = 0;
 
-var images = document.querySelectorAll('.gallery__img');
-var i = 0;
-
-
-btn_prev.onclick = function () {
-    images[i].className = '';
-    i = i - 1;
-
-    if (i < 0) {
-        i = images.length - 1;
+function galleryPopupSlider() {
+    for (var i = 0; i < galleryPopupImages.length; i++) {
+        galleryPopupImages[i].classList.remove('showed');
     }
-
-    images[i].className = 'showed';
+    galleryPopupImages[galleryPopupCounter].classList.add('showed');
 }
 
-btn_next.onclick = function () {
-    images[i].className = '';
-    i = i + 1;
-
-    if (i >= images.length) {
-        i = 0;
+galleryPopupPrev.onclick = function () {
+    if (galleryPopupCounter - 1 == -1) {
+        galleryPopupCounter = galleryPopupImages.length - 1;
+    } else {
+        galleryPopupCounter--;
     }
+    galleryPopupSlider();
+};
 
-    images[i].className = 'showed';
-}
+galleryPopupNext.onclick = function () {
+    if (galleryPopupCounter + 1 == galleryPopupImages.length) {
+        galleryPopupCounter = 0;
+    } else {
+        galleryPopupCounter++;
+    }
+    galleryPopupSlider();
+};
 
 
 $(".welcome__img-inner .welcome__btn--galleria").click(function () {
