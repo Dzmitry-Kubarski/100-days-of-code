@@ -1,95 +1,101 @@
-// ---- theHotel-slider ----
+// ---- theHotel-sliders ----
 
-var theHotel_prev = document.querySelector('.theHotel__btnControl--prev');
-var theHotel_next = document.querySelector('.theHotel__btnControl--next');
+// ------------Wellness-----------------------------------
 
-var theHotel_images = document.querySelectorAll('.wellness__img');
-var i = 0;
+var wellnessPrev = document.querySelector('.wellness-prev');
+var wellnessNext = document.querySelector('.wellness-next');
+var wellnessImages = document.querySelectorAll('.wellness__img');
+var wellnesCounter = 0;
 
-
-theHotel_prev.onclick = function () {
-    theHotel_images[i].className = '';
-    i = i - 1;
-
-    if (i < 0) {
-        i = theHotel_images.length - 1;
+function wellnessSlider() {
+    for (var i = 0; i < wellnessImages.length; i++) {
+        wellnessImages[i].classList.remove('showed');
     }
-
-    theHotel_images[i].className = 'showed';
+    wellnessImages[wellnesCounter].classList.add('showed');
 }
 
-theHotel_next.onclick = function () {
-    theHotel_images[i].className = '';
-    i = i + 1;
-
-    if (i >= theHotel_images.length) {
-        i = 0;
+wellnessPrev.onclick = function () {
+    if (wellnesCounter - 1 == -1) {
+        wellnesCounter = wellnessImages.length - 1;
+    } else {
+        wellnesCounter--;
     }
+    wellnessSlider();
+};
 
-    theHotel_images[i].className = 'showed';
-}
+wellnessNext.onclick = function () {
+    if (wellnesCounter + 1 == wellnessImages.length) {
+        wellnesCounter = 0;
+    } else {
+        wellnesCounter++;
+    }
+    wellnessSlider();
+};
 
 
 // ------------Restaurants-----------------------------------
 
-var restaurants_prev = document.querySelector('.restaurants-prev');
-var restaurants_next = document.querySelector('.restaurants-next');
+var restaurantsPrev = document.querySelector('.restaurants-prev');
+var restaurantsNext = document.querySelector('.restaurants-next');
+var restaurantsImages = document.querySelectorAll('.restaurants__img');
+var restaurantsCounter = 0;
 
-var restaurants_images = document.querySelectorAll('.theHotel__img-inner .restaurants__img');
-var i = 0;
-
-
-restaurants_prev.onclick = function () {
-    restaurants_images[i].className = '';
-    i = i - 1;
-
-    if (i < 0) {
-        i = restaurants_images.length - 1;
+function restaurantsSlider() {
+    for (var i = 0; i < restaurantsImages.length; i++) {
+        restaurantsImages[i].classList.remove('showed');
     }
 
-    restaurants_images[i].className = 'showed';
+    restaurantsImages[restaurantsCounter].classList.add('showed');
 }
 
-restaurants_next.onclick = function () {
-    restaurants_images[i].className = '';
-    i = i + 1;
-
-    if (i >= restaurants_images.length) {
-        i = 0;
+restaurantsPrev.onclick = function () {
+    if (restaurantsCounter - 1 == -1) {
+        restaurantsCounter = restaurantsImages.length - 1;
+    } else {
+        restaurantsCounter--;
     }
+    restaurantsSlider();
+};
 
-    restaurants_images[i].className = 'showed';
-}
+restaurantsNext.onclick = function () {
+    if (restaurantsCounter + 1 == restaurantsImages.length) {
+        restaurantsCounter = 0;
+    } else {
+        restaurantsCounter++;
+    }
+    restaurantsSlider();
+};
+
 
 // -------------Special------------------------------------
 
+var specialPrev = document.querySelector('.special-prev');
+var specialNext = document.querySelector('.special-next');
+var specialImages = document.querySelectorAll('.special__img');
+var specialCounter = 0;
 
-var special_prev = document.querySelector('.special-prev');
-var special_next = document.querySelector('.special-next');
-
-var special_images = document.querySelectorAll('.theHotel__img-inner .special__img');
-var i = 0;
-
-
-special_prev.onclick = function () {
-    special_images[i].className = '';
-    i = i - 1;
-
-    if (i < 0) {
-        i = special_images.length - 1;
+function specialSlider() {
+    for (var i = 0; i < specialImages.length; i++) {
+        specialImages[i].classList.remove('showed');
     }
 
-    special_images[i].className = 'showed';
+    specialImages[specialCounter].classList.add('showed');
 }
 
-special_next.onclick = function () {
-    special_images[i].className = '';
-    i = i + 1;
-
-    if (i >= special_images.length) {
-        i = 0;
+specialPrev.onclick = function () {
+    if (specialCounter - 1 == -1) {
+        specialCounter = specialImages.length - 1;
+    } else {
+        specialCounter--;
     }
+    specialSlider();
+};
 
-    special_images[i].className = 'showed';
-}
-
+specialNext.onclick = function () {
+    if (specialCounter + 1 == specialImages.length) {
+        specialCounter = 0;
+    } else {
+        specialCounter++;
+    }
+    specialSlider();
+};

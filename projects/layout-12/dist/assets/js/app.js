@@ -5478,129 +5478,172 @@ $(function () {
         $('.video__wrap .photos').html(" ");
         $('.gallery-popup').fadeOut(200);
     });
-    // ---- theHotel-slider ----
+    // ---- theHotel-sliders ----
     
-    var theHotel_prev = document.querySelector('.theHotel__btnControl--prev');
-    var theHotel_next = document.querySelector('.theHotel__btnControl--next');
+    // ------------Wellness-----------------------------------
     
-    var theHotel_images = document.querySelectorAll('.wellness__img');
-    var i = 0;
+    var wellnessPrev = document.querySelector('.wellness-prev');
+    var wellnessNext = document.querySelector('.wellness-next');
+    var wellnessImages = document.querySelectorAll('.wellness__img');
+    var wellnesCounter = 0;
     
-    
-    theHotel_prev.onclick = function () {
-        theHotel_images[i].className = '';
-        i = i - 1;
-    
-        if (i < 0) {
-            i = theHotel_images.length - 1;
+    function wellnessSlider() {
+        for (var i = 0; i < wellnessImages.length; i++) {
+            wellnessImages[i].classList.remove('showed');
         }
-    
-        theHotel_images[i].className = 'showed';
+        wellnessImages[wellnesCounter].classList.add('showed');
     }
     
-    theHotel_next.onclick = function () {
-        theHotel_images[i].className = '';
-        i = i + 1;
-    
-        if (i >= theHotel_images.length) {
-            i = 0;
+    wellnessPrev.onclick = function () {
+        if (wellnesCounter - 1 == -1) {
+            wellnesCounter = wellnessImages.length - 1;
+        } else {
+            wellnesCounter--;
         }
+        wellnessSlider();
+    };
     
-        theHotel_images[i].className = 'showed';
-    }
+    wellnessNext.onclick = function () {
+        if (wellnesCounter + 1 == wellnessImages.length) {
+            wellnesCounter = 0;
+        } else {
+            wellnesCounter++;
+        }
+        wellnessSlider();
+    };
     
     
     // ------------Restaurants-----------------------------------
     
-    var restaurants_prev = document.querySelector('.restaurants-prev');
-    var restaurants_next = document.querySelector('.restaurants-next');
+    var restaurantsPrev = document.querySelector('.restaurants-prev');
+    var restaurantsNext = document.querySelector('.restaurants-next');
+    var restaurantsImages = document.querySelectorAll('.restaurants__img');
+    var restaurantsCounter = 0;
     
-    var restaurants_images = document.querySelectorAll('.theHotel__img-inner .restaurants__img');
-    var i = 0;
-    
-    
-    restaurants_prev.onclick = function () {
-        restaurants_images[i].className = '';
-        i = i - 1;
-    
-        if (i < 0) {
-            i = restaurants_images.length - 1;
+    function restaurantsSlider() {
+        for (var i = 0; i < restaurantsImages.length; i++) {
+            restaurantsImages[i].classList.remove('showed');
         }
     
-        restaurants_images[i].className = 'showed';
+        restaurantsImages[restaurantsCounter].classList.add('showed');
     }
     
-    restaurants_next.onclick = function () {
-        restaurants_images[i].className = '';
-        i = i + 1;
-    
-        if (i >= restaurants_images.length) {
-            i = 0;
+    restaurantsPrev.onclick = function () {
+        if (restaurantsCounter - 1 == -1) {
+            restaurantsCounter = restaurantsImages.length - 1;
+        } else {
+            restaurantsCounter--;
         }
+        restaurantsSlider();
+    };
     
-        restaurants_images[i].className = 'showed';
-    }
+    restaurantsNext.onclick = function () {
+        if (restaurantsCounter + 1 == restaurantsImages.length) {
+            restaurantsCounter = 0;
+        } else {
+            restaurantsCounter++;
+        }
+        restaurantsSlider();
+    };
+    
     
     // -------------Special------------------------------------
     
+    var specialPrev = document.querySelector('.special-prev');
+    var specialNext = document.querySelector('.special-next');
+    var specialImages = document.querySelectorAll('.special__img');
+    var specialCounter = 0;
     
-    var special_prev = document.querySelector('.special-prev');
-    var special_next = document.querySelector('.special-next');
+    function specialSlider() {
+        for (var i = 0; i < specialImages.length; i++) {
+            specialImages[i].classList.remove('showed');
+        }
     
-    var special_images = document.querySelectorAll('.theHotel__img-inner .special__img');
+        specialImages[specialCounter].classList.add('showed');
+    }
+    
+    specialPrev.onclick = function () {
+        if (specialCounter - 1 == -1) {
+            specialCounter = specialImages.length - 1;
+        } else {
+            specialCounter--;
+        }
+        specialSlider();
+    };
+    
+    specialNext.onclick = function () {
+        if (specialCounter + 1 == specialImages.length) {
+            specialCounter = 0;
+        } else {
+            specialCounter++;
+        }
+        specialSlider();
+    };
+    // ---- rooms-slider ----
+    
+    // ===========================================test===========
+    
+    
+    
+    // var classic_prev = document.querySelector('.classic-prev');
+    // var classic_next = document.querySelector('.classic-next');
+    
+    // var classic_images = document.querySelectorAll('.classic__img');
+    // var i = 0;
+    
+    
+    // classic_prev.onclick = function () {
+    //     classic_images[i].classList.toggle("showed");
+    //     i = i - 1;
+    
+    //     if (i < 0) {
+    //         i = classic_images.length - 1;
+    //     }
+    
+    //     classic_images[i].classList.toggle("showed");
+    // }
+    
+    // classic_next.onclick = function () {
+    //     classic_images[i].classList.toggle("showed");
+    //     i = i + 1;
+    
+    //     if (i >= classic_images.length) {
+    //         i = 0;
+    //     }
+    
+    //     classic_images[i].classList.toggle("showed");
+    // }
+    
+    
+    // ===========================================test=============
+    
+    var classic_prev = document.querySelector('.classic-prev');
+    var classic_next = document.querySelector('.classic-next');
+    
+    var classic_images = document.querySelectorAll('.classic__img');
     var i = 0;
     
     
-    special_prev.onclick = function () {
-        special_images[i].className = '';
+    classic_prev.onclick = function () {
+        classic_images[i].classList.toggle("showed");
         i = i - 1;
     
         if (i < 0) {
-            i = special_images.length - 1;
+            i = classic_images.length - 1;
         }
     
-        special_images[i].className = 'showed';
+        classic_images[i].classList.toggle("showed");
     }
     
-    special_next.onclick = function () {
-        special_images[i].className = '';
+    classic_next.onclick = function () {
+        classic_images[i].classList.toggle("showed");
         i = i + 1;
     
-        if (i >= special_images.length) {
+        if (i >= classic_images.length) {
             i = 0;
         }
     
-        special_images[i].className = 'showed';
-    }
-    // ---- theHotel-slider ----
-    
-    var rooms_prev = document.querySelector('.rooms__btnControl--prev');
-    var rooms_next = document.querySelector('.rooms__btnControl--next');
-    
-    var rooms_images = document.querySelectorAll('.rooms__img-inner .classic__img');
-    var i = 0;
-    
-    
-    rooms_prev.onclick = function () {
-        rooms_images[i].className = '';
-        i = i - 1;
-    
-        if (i < 0) {
-            i = rooms_images.length - 1;
-        }
-    
-        rooms_images[i].className = 'showed';
-    }
-    
-    rooms_next.onclick = function () {
-        rooms_images[i].className = '';
-        i = i + 1;
-    
-        if (i >= rooms_images.length) {
-            i = 0;
-        }
-    
-        rooms_images[i].className = 'showed';
+        classic_images[i].classList.toggle("showed");
     }
     
     // -----------------------------------------
@@ -5609,30 +5652,30 @@ $(function () {
     var superDouble__img_prev = document.querySelector('.superDouble-prev');
     var superDouble__img_next = document.querySelector('.superDouble-next');
     
-    var superDouble__img_images = document.querySelectorAll('.rooms__img-inner .superDouble__img');
+    var superDouble__img_images = document.querySelectorAll('.superDouble__img');
     var i = 0;
     
     
     superDouble__img_prev.onclick = function () {
-        superDouble__img_images[i].className = '';
+        superDouble__img_images[i].classList.toggle("showed");
         i = i - 1;
     
         if (i < 0) {
             i = superDouble__img_images.length - 1;
         }
     
-        superDouble__img_images[i].className = 'showed';
+        superDouble__img_images[i].classList.toggle("showed");
     }
     
     superDouble__img_next.onclick = function () {
-        superDouble__img_images[i].className = '';
+        superDouble__img_images[i].classList.toggle("showed");
         i = i + 1;
     
         if (i >= superDouble__img_images.length) {
             i = 0;
         }
     
-        superDouble__img_images[i].className = 'showed';
+        superDouble__img_images[i].classList.toggle("showed");
     }
     
     // -----------------------------------------------------
@@ -5641,30 +5684,30 @@ $(function () {
     var superBalcony_prev = document.querySelector('.superBalcony-prev');
     var superBalcony_next = document.querySelector('.superBalcony-next');
     
-    var superBalcony_images = document.querySelectorAll('.rooms__img-inner .superBalcony__img');
+    var superBalcony_images = document.querySelectorAll('.superBalcony__img');
     var i = 0;
     
     
     superBalcony_prev.onclick = function () {
-        superBalcony_images[i].className = '';
+        superBalcony_images[i].classList.toggle("showed");
         i = i - 1;
     
         if (i < 0) {
             i = superBalcony_images.length - 1;
         }
     
-        superBalcony_images[i].className = 'showed';
+        superBalcony_images[i].classList.toggle("showed");
     }
     
     superBalcony_next.onclick = function () {
-        superBalcony_images[i].className = '';
+        superBalcony_images[i].classList.toggle("showed");
         i = i + 1;
     
         if (i >= superBalcony_images.length) {
             i = 0;
         }
     
-        superBalcony_images[i].className = 'showed';
+        superBalcony_images[i].classList.toggle("showed");
     }
     
     
@@ -5673,30 +5716,30 @@ $(function () {
     var delux_prev = document.querySelector('.delux-prev');
     var delux_next = document.querySelector('.delux-next');
     
-    var delux_images = document.querySelectorAll('.rooms__img-inner .delux__img');
+    var delux_images = document.querySelectorAll('.delux__img');
     var i = 0;
     
     
     delux_prev.onclick = function () {
-        delux_images[i].className = '';
+        delux_images[i].classList.toggle("showed");
         i = i - 1;
     
         if (i < 0) {
             i = delux_images.length - 1;
         }
     
-        delux_images[i].className = 'showed';
+        delux_images[i].classList.toggle("showed");
     }
     
     delux_next.onclick = function () {
-        delux_images[i].className = '';
+        delux_images[i].classList.toggle("showed");
         i = i + 1;
     
         if (i >= delux_images.length) {
             i = 0;
         }
     
-        delux_images[i].className = 'showed';
+        delux_images[i].classList.toggle("showed");
     }
     
     
@@ -5717,7 +5760,6 @@ $(function () {
     $('.rooms__filter-btn').on('click', function (event) {
         var id = $(this).attr('data-name');
         var roomsItem = document.querySelectorAll('.rooms__dots-item');
-    
     
     
         for (var i = 0; i < roomsItem.length; i++) {

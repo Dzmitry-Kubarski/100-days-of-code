@@ -289,7 +289,7 @@
                 <div class="searchModal__inner">
                     <input class="searchModal__input" type="search" placeholder="| Search....">
             
-                    <button class="searchModal__close" id="searchModal__close" type="button">
+                    <button class="searchModal__close" type="button">
                         <svg class="searchModal__icon">
                             <use xlink:href=#searchModal__icon></use>
                         </svg>
@@ -326,7 +326,7 @@
                 </select> /btnLang -->
                 
                 
-                <button class="btnLang" type="button">
+                <div class="btnLang">
                     <div class="btnLang__header">
                         <span class="btnLang__current">EN</span>
                     </div>
@@ -335,7 +335,7 @@
                         <div class="btnLang__item">EN</div>
                         <div class="btnLang__item">RU</div>
                     </div>
-                </button>
+                </div> <!-- /btnLang -->
                 <button class="btn  header__control-btn" type="button" data-popup="popup__bookNew">Book Now</button>
             </div> <!-- /header__control -->
     
@@ -456,14 +456,13 @@
                     <div class="welcome__img-inner">
                         <img class="welcome__img" src="assets/img/welcome/img-2.jpg" alt="">
     
-                        <button class="btnControl  welcome__btn welcome__btn--galleria" id="welcome__galleria-btn"
-                            type="button">
+                        <button class="btnControl  welcome__btn welcome__btn--galleria" type="button">
                             <svg class="welcome__btn-icon">
                                 <use xlink:href=#welcome__galleria-btn></use>
                             </svg>
                         </button>
     
-                        <button class="btnControl  welcome__btn welcome__btn--video" id="welcome__video-btn" type="button">
+                        <button class="btnControl  welcome__btn welcome__btn--video" type="button">
                             <svg class="welcome__btn-icon">
                                 <use xlink:href=#welcome__video-btn></use>
                             </svg>
@@ -493,13 +492,15 @@
                         <img class="wellness__img  theHotel__img" src="assets/img/theHotel/wellness/img-3.jpg" alt="">
                         <img class="wellness__img  theHotel__img" src="assets/img/theHotel/wellness/img-4.jpg" alt="">
     
-                        <button class="btnControl  theHotel__btnControl  theHotel__btnControl--prev" type="button">
+                        <button class="btnControl  theHotel__btnControl  theHotel__btnControl--prev  wellness-prev"
+                            type="button">
                             <svg class="welcome__btn-icon">
                                 <use xlink:href=#theHotel__btnControl--prev></use>
                             </svg>
                         </button>
     
-                        <button class="btnControl  theHotel__btnControl  theHotel__btnControl--next" type="button">
+                        <button class="btnControl  theHotel__btnControl  theHotel__btnControl--next  wellness-next"
+                            type="button">
                             <svg class="welcome__btn-icon">
                                 <use xlink:href=#theHotel__btnControl--next></use>
                             </svg>
@@ -524,7 +525,6 @@
                         <img class="restaurants__img  theHotel__img" src="assets/img/theHotel/restaurants/img-2.jpg" alt="">
                         <img class="restaurants__img  theHotel__img" src="assets/img/theHotel/restaurants/img-3.jpg" alt="">
                         <img class="restaurants__img  theHotel__img" src="assets/img/theHotel/restaurants/img-4.jpg" alt="">
-                        <img class="restaurants__img  theHotel__img" src="assets/img/theHotel/restaurants/img-5.jpg" alt="">
     
                         <button class="btnControl  theHotel__btnControl--prev  restaurants-prev" type="button">
                             <svg class="welcome__btn-icon">
@@ -687,13 +687,16 @@
                             <img class="classic__img  rooms__img  showed" src="assets/img/rooms/classic/img-1.jpg" alt="">
                             <img class="classic__img  rooms__img" src="assets/img/rooms/classic/img-2.jpg" alt="">
                             <img class="classic__img  rooms__img" src="assets/img/rooms/classic/img-3.jpg" alt="">
-                            <button class="btnControl  rooms__btnControl  rooms__btnControl--prev" type="button">
+    
+                            <button class="btnControl  rooms__btnControl  rooms__btnControl--prev  classic-prev"
+                                type="button">
                                 <svg class="welcome__btn-icon">
                                     <use xlink:href=#theHotel__btnControl--prev></use>
                                 </svg>
                             </button>
     
-                            <button class="btnControl  rooms__btnControl  rooms__btnControl--next" type="button">
+                            <button class="btnControl  rooms__btnControl  rooms__btnControl--next  classic-next"
+                                type="button">
                                 <svg class="welcome__btn-icon">
                                     <use xlink:href=#theHotel__btnControl--next></use>
                                 </svg>
@@ -874,6 +877,9 @@
     </section> <!-- /rooms -->
     <section class="quote">
         <div class="container">
+    
+            <h2 class="visually-hidden">Food - check. Accommodation - check.</h2>
+    
             <div class="quote__stars">
                 <svg class="quote__star-icon">
                     <use xlink:href=#quote_star></use>
@@ -980,6 +986,9 @@
     </section> <!-- /theNews -->
     <section class="medals">
         <div class="container">
+    
+            <h2 class="visually-hidden">Medals Milenia Luxury Hotel</h2>
+    
             <ul class="medals__list">
                 <li class="medals__item">
                     <a class="medals__link" href="#">
@@ -1021,6 +1030,9 @@
         </div> <!-- /container -->
     </section> <!-- /medals -->
     <section class="instaImages">
+    
+        <h2 class="visually-hidden">Let's be friends on instagram</h2>
+    
         <ul class="instaImages__list">
     
             <li class="instaImages__item">
@@ -1062,6 +1074,9 @@
     </section> <!-- /instaImages -->
     <section class="information">
         <div class="container">
+    
+            <h2 class="visually-hidden">Sign up for news and special offers</h2>
+    
             <div class="information__items">
     
                 <div class="information__item">
@@ -1174,7 +1189,7 @@
                     <span class="footer__title">Contact Us</span>
                     <ul class="footer__list">
                         <li class="footer__address">
-                            <p class="footer__contacts-text" href="#">
+                            <p class="footer__contacts-text">
                                 <span class="footer__contacts-title">Address:</span> 9863 - 9867 Mill Road, <br> Cambridge,
                                 MG09 99HT
                             </p>
@@ -1319,11 +1334,11 @@
     </div> <!-- /popup__wrap -->
     <div class="gallery-popup">
         <div class="photos">
-            <img class="gallery__img  showed" src="assets/img/gallery-popup/img-1.jpg">
-            <img class="gallery__img" src="assets/img/gallery-popup/img-2.jpg">
-            <img class="gallery__img" src="assets/img/gallery-popup/img-3.jpg">
-            <img class="gallery__img" src="assets/img/gallery-popup/img-4.jpg">
-            <img class="gallery__img" src="assets/img/gallery-popup/img-5.jpg">
+            <img class="gallery__img  showed" src="assets/img/gallery-popup/img-1.jpg" alt="">
+            <img class="gallery__img" src="assets/img/gallery-popup/img-2.jpg" alt="">
+            <img class="gallery__img" src="assets/img/gallery-popup/img-3.jpg" alt="">
+            <img class="gallery__img" src="assets/img/gallery-popup/img-4.jpg" alt="">
+            <img class="gallery__img" src="assets/img/gallery-popup/img-5.jpg" alt="">
     
             <div class="video__close"></div>
     

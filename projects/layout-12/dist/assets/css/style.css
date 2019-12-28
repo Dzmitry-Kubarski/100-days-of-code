@@ -4332,15 +4332,9 @@ body {
 .btnLang {
     position: relative;
     width: 40px;
-    border: none;
-    background: transparent;
     cursor: pointer;
     color: #fff;
     margin-right: 35px;
-}
-
-.btnLang:focus {
-    outline-color: #fff;
 }
 
 @media (max-width: 887px) {
@@ -4378,6 +4372,7 @@ body {
 }
 
 .btnLang__body {
+    border: 1px solid rgba(255, 255, 255, 0.3);
     display: none;
     left: 0;
     position: absolute;
