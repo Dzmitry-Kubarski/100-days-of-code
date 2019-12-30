@@ -1,0 +1,31 @@
+.g-btn {
+    display: inline-block;
+    font-family: $font-FuturaBTHeavy;
+    font-size: 18px;
+    line-height: 56px;
+    color: $colorWhite;
+    background-color: $colorBrown;    
+    padding: 2px 40px;
+    transition: background-color .2s linear;
+
+    &:hover {
+        background-color: lighten($colorBrown, 15%);
+    }
+}
+
+.g-btn--circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: $shadow;
+    margin: 0px 15px ;
+    transition: background-color .2s linear;
+
+    &:hover {
+        background-color: $colorBrown;
+
+        .about__btn-icon {
+            fill: $colorWhite;
+        }
+    }
+}

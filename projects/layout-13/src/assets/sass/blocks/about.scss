@@ -1,0 +1,101 @@
+.about {
+    margin-bottom: 150px;
+}
+
+.about__inner {
+    position: relative;
+    display: flex;
+}
+
+.about__left-box {
+    width: 45%;
+}
+
+.about__title {
+    margin-bottom: 55px;
+}
+
+.about__subtitle {
+    margin-bottom: 280px;
+}
+
+.about__text {
+    position: absolute;
+    z-index: 50;
+    left: 100px;
+    top: 210px;
+
+    display: block;
+    max-width: 570px;
+    font-size: 16px;
+    line-height: 28px;
+    color: $colorGrey;
+    background-color: $colorWhite;
+    padding: 28px 28px 48px 48px;
+    box-shadow: $shadow;
+    display: none;
+}
+
+.about__text.js-show {
+    display: block;
+}
+
+.about__control {
+    display: flex;
+    align-items: center;
+}
+
+.about__link {
+    margin-right: 70px;
+}
+
+.about__btn {
+}
+
+.about__btn-icon {
+    width: 22px;
+    height: 15px;
+    transition: fill .2s linear;
+}
+
+.about__right-box {
+    position: relative;
+    z-index: 1;
+    width: 55%;
+    padding-right: 40px;
+    padding-bottom: 40px;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 310px;
+        height: 310px;
+        background-image: url(../img/about/right-box-bg.png);
+        background-repeat: no-repeat;
+    }
+}
+
+.about__img-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 630px;
+    max-height: 552px;
+}
+
+.about__img {
+    min-height: 552px;
+    object-fit: cover;
+    border-radius: 60px 0 0 0;
+    display: none;
+}
+
+.about__img.js-show {
+    display: block;
+}
+
+
+  

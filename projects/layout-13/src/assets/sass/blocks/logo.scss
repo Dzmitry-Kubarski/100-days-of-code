@@ -1,0 +1,22 @@
+.logo__inner {
+    display: flex;
+    align-items: center;
+}
+
+.logo__icon {
+    width: 80px;
+    height: 70px;
+}
+
+.logo__title {
+    font-family: $font-Pacifico;
+    font-size: 36px;
+    line-height: 56px;
+    color: $colorWhite;
+    transition: color .2s linear;
+
+    &:hover {
+        color: $color-hover;
+    }
+
+}

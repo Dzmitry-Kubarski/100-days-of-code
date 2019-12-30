@@ -1,0 +1,32 @@
+
+.g-title {
+    display: inline-block;
+    position: relative;
+    font-family: $font-Pacifico;
+    font-size: 50px;
+    line-height: 56px;
+    color: $colorBrown;
+    margin-bottom: 30px;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 6px;
+        left: 0;
+        bottom: -30px;
+        background-image: url(../img/about/title-after.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}  
+
+.g-title--white {
+    color: $colorWhite;
+
+    &::after {
+        background-image: url(../img/about/title-after-white.svg);
+    }
+}

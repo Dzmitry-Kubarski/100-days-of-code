@@ -1,0 +1,19 @@
+
+.subscribe__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe__input {
+    display: inline-block;
+    font-family: "FuturaBT Heavy";
+    font-size: 18px;
+    line-height: 56px;
+    color: $colorBlack;
+    padding: 2px 40px;
+    margin-bottom: 30px;
+
+    &::placeholder {
+        color: $colorGrey;
+    }
+}

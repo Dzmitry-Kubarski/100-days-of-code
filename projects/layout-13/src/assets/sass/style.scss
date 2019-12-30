@@ -1,0 +1,47 @@
+/* Fonts */
+@import "fonts";
+
+/* Variables */
+@import "vars";
+
+
+/* Grid smart-grid */
+// @import "smart-grid";
+
+
+/* Normalize */
+@import "../../../../../node_modules/normalize.css/normalize";
+
+/* Animate.css */
+@import "../../../../../node_modules/animate.css/animate";
+
+
+/* Default styles */
+@import "base";
+
+
+/* Blocks */
+@import "blocks/g-title";
+@import "blocks/g-subtitle";
+@import "blocks/g-btn";
+@import "blocks/social";
+@import "blocks/subscribe";
+@import "blocks/logo";
+@import "blocks/header";
+@import "blocks/mainMenu";
+@import "blocks/intro";
+@import "blocks/about";
+@import "blocks/collection";
+@import "blocks/delivery";
+@import "blocks/todayMenu";
+@import "blocks/ourMasters";
+@import "blocks/instagram";
+@import "blocks/blog";
+@import "blocks/footer";
+
+
+
+
+
+/* Vendor libs */
+@import "vendor/slick";

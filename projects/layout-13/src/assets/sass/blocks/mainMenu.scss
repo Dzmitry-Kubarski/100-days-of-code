@@ -1,0 +1,19 @@
+.mainMenu__item {
+    margin: 0px 25px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.mainMenu__link {
+    font-family: $font-FuturaBQMedium;
+    font-size: 18px;
+    line-height: 56px;
+    color: $colorWhite;
+    transition: color .2s linear;
+
+    &:hover {
+        color: $color-hover;
+    }
+}

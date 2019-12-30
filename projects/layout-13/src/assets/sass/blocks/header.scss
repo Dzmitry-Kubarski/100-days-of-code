@@ -1,0 +1,15 @@
+.header {
+    background-color: $colorBrown;
+    padding: 15px 0px;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainMenu__list {
+    display: flex;
+    align-items: center;
+}

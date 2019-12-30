@@ -1,0 +1,155 @@
+.intro {
+    position: relative;     
+    padding-top: 140px;
+    margin-bottom: 130px;
+}
+
+.intro__img-bg {
+    position: absolute;   
+
+    &:nth-child(2) {
+        top: 60px;
+        left: 140px;
+    }
+
+    &:nth-child(3) { 
+        bottom: 25px;
+        left: 0px;  
+    }
+
+    &:nth-child(4) {
+        top: 80px;
+        right: 0px;            
+    }
+}
+
+.intro__sliders {
+    margin-bottom: 50px;
+}
+
+.intro__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.intro__slide.js-show {
+    display: flex;
+}
+
+.intro__left-box {
+    width: 50%;
+    text-align: center;
+    // padding-left: 100px;
+}
+
+.intro__img-inner {
+    position: relative;
+    z-index: 2;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 0;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 753px;
+        height: 133px;
+        background-image: url(../img/intro/coffee-bg.png);
+        background-repeat: no-repeat;
+    }
+}
+
+.intro__img {
+    position: relative;
+    z-index: 2;
+}
+
+.intro__slogan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro__slogan-text {
+    margin-right: 80px;
+}
+
+.intro__right-box {
+    width: 50%;
+    text-align: center;
+    z-index: 2;
+    // padding-right: 100px;
+}
+
+.intro__subtitle {
+    display: block;
+    font-family: $font-Poppins;
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 42px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: $colorBrown;
+    transform: scaleY(1.5);
+}
+
+.intro__subtitle--two {
+    letter-spacing: 11px;
+}
+
+.intro__title {
+    display: block;
+    font-family: $font-HoltwoodOneSC;
+    font-size: 98px;
+    // line-height: 38px;
+    color: $colorBrown;
+    letter-spacing: 17px;
+    text-transform: uppercase;
+    transform: scaleY(1.5);
+    margin: 50px 0px;
+}
+
+.intro__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro__slogan {
+    width: 50%;
+    text-align: center;
+}
+
+.intro__buttons {
+    width: 50%;
+    text-align: center;
+}
+
+.intro__btn {
+    margin: 0px 10px;
+
+    &:hover {
+        transform: scaleX(-1.1);
+    }
+
+    &:focus {
+        // outline-color: rgba($colorBrown, .08);     
+        outline: 0;    
+    }    
+}
+
+.intro__btn.js-active {
+    transform: scaleX(-1.1);
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+.todayMenu {
+    background-color: darken($colorBrown, 10%);
+    text-align: center;
+    padding: 140px 0px;
+}
+
+.todayMenu__title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.todayMenu__inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    color: $colorWhite;
+}
+
+.todayMenu__coffee {
+    width: 43%;
+}
+
+.todayMenu__subtitle {
+    margin-bottom: 40px;
+}
+
+.todayMenu__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -20px;
+        width: 100%;
+        height: 1px;
+        background-color: $colorWhite;
+    }
+}
+
+.todayMenu__chai {
+    width: 43%;
+}
+
+.todayMenu__icon-bg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 6px;
+    height: 373px;
+    transform: translate(-50%, -50%);
+}
+
+
+
