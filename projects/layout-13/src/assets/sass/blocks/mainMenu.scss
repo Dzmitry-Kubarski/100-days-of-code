@@ -4,6 +4,10 @@
     &:last-child {
         margin-right: 0;
     }
+
+    @media (max-width: 950px) {
+        margin: 0;
+    }
 }
 
 .mainMenu__link {
@@ -16,4 +20,38 @@
     &:hover {
         color: $color-hover;
     }
+}
+// ==================================
+.btnMenu {    
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: $colorWhite;
+    cursor: pointer;
+    text-transform: uppercase;
+    z-index: 101;   
+}
+
+.btnMenu__icon {
+    width: 45px;
+    height: 40px;
+    fill: $colorWhite;   
+}
+
+.btnMenu--open {
+    display: none;
+
+    @media (max-width: 950px) {
+        display: block;
+    }
+}
+
+.btnMenu--close {
+    display: none;
+}
+
+.btnMenu__icon--close {
+    width: 45px;
+    height: 32px;
+    stroke-width: 1;
 }

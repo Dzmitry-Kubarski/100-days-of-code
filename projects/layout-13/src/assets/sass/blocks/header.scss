@@ -11,5 +11,27 @@
 
 .mainMenu__list {
     display: flex;
-    align-items: center;
+    align-items: center;    
+
+    @media (max-width: 950px) {
+        position: absolute;
+        z-index: 101;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 100%;        
+        background-color: $colorBrown;
+        flex-direction: column;
+        justify-content: center;
+        display: none;        
+    }
+}
+
+.mainMenu__list.open {
+    display: flex;
+}
+
+.header__mainMenu {
+
+  
 }

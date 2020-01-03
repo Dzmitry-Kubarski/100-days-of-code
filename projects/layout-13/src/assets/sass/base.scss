@@ -77,6 +77,21 @@ body {
 }
 
 
+.container-big {
+    position: relative;
+    width: 100%;
+    max-width: 1660px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px; 
+
+    @media (max-width: 992px) {        
+        padding-left: 15px;
+        padding-right: 15px;      
+    }
+}
+
+
 
 // .page {
 //     position: relative;

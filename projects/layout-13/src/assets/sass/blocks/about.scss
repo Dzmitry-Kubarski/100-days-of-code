@@ -33,11 +33,14 @@
     background-color: $colorWhite;
     padding: 28px 28px 48px 48px;
     box-shadow: $shadow;
+    opacity: 0;
+    transition: opacity .3s linear;
     display: none;
 }
 
 .about__text.js-show {
     display: block;
+    opacity: 1;
 }
 
 .about__control {
@@ -47,9 +50,6 @@
 
 .about__link {
     margin-right: 70px;
-}
-
-.about__btn {
 }
 
 .about__btn-icon {
@@ -83,18 +83,24 @@
     width: 100%;
     height: 100%;
     max-width: 630px;
-    max-height: 552px;
+    height: 552px;
 }
 
 .about__img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+
     min-height: 552px;
     object-fit: cover;
     border-radius: 60px 0 0 0;
-    display: none;
+    opacity: 0;
+    transition: opacity 1s;
 }
 
 .about__img.js-show {
-    display: block;
+    opacity: 1;
 }
 
 

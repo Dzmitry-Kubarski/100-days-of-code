@@ -1382,9 +1382,37 @@
     			c-0.19-14.087-5.047-25.742-14.561-34.973C81.562,14.323,68.9,9.708,53.103,9.708z" />
             </g>
         </symbol>
+    
+        <symbol id="arrowUp-svg" viewBox="0 0 31.479 31.479">
+            <g>
+                <path d="M26.477,10.274c0.444,0.444,0.444,1.143,0,1.587c-0.429,0.429-1.143,0.429-1.571,0l-8.047-8.047
+                v26.555c0,0.619-0.492,1.111-1.111,1.111c-0.619,0-1.127-0.492-1.127-1.111V3.813l-8.031,8.047c-0.444,0.429-1.159,0.429-1.587,0
+                c-0.444-0.444-0.444-1.143,0-1.587l9.952-9.952c0.429-0.429,1.143-0.429,1.571,0L26.477,10.274z" />
+            </g>
+        </symbol>
+    
+        <symbol id="btnMenu__icon" viewBox="0 0 384.97 384.97">
+            <g>
+                <path d="M12.03,84.212h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03
+                C5.39,60.152,0,65.541,0,72.182C0,78.823,5.39,84.212,12.03,84.212z" />
+                <path d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03
+                S379.58,180.455,372.939,180.455z" />
+                <path d="M372.939,300.758H12.03c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h360.909
+                c6.641,0,12.03-5.39,12.03-12.03C384.97,306.147,379.58,300.758,372.939,300.758z" />
+            </g>
+        </symbol>
+    
+        <symbol id="btnMenu__icon--close" viewBox="0 0 47.971 47.971">
+            <g>
+                <path d="M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88
+    c-1.172-1.172-3.07-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l18.865,18.864L0.879,42.85c-1.172,1.171-1.172,3.071,0,4.242
+    C1.465,47.677,2.233,47.97,3,47.97s1.535-0.293,2.121-0.879l18.865-18.864L42.85,47.091c0.586,0.586,1.354,0.879,2.121,0.879
+    s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z" />
+            </g>
+        </symbol>
     </svg>
 
-    <header class="header" id="Home">
+    <header class="header" id="home">
         <div class="container">
     
             <div class="header__inner">
@@ -1402,30 +1430,41 @@
                 <nav class="mainMenu  header__mainMenu">
                     <ul class="mainMenu__list">
                         <li class="mainMenu__item">
-                            <a class="mainMenu__link" href="#Home">Home</a>
+                            <a class="mainMenu__link" href="#home">Home</a>
                         </li>
     
                         <li class="mainMenu__item">
-                            <a class="mainMenu__link" href="#About">About us</a>
+                            <a class="mainMenu__link" href="#about">About us</a>
                         </li>
     
                         <li class="mainMenu__item">
-                            <a class="mainMenu__link" href="#Products">Products</a>
+                            <a class="mainMenu__link" href="#products">Products</a>
                         </li>
     
                         <li class="mainMenu__item">
-                            <a class="mainMenu__link" href="#Blog">Blog</a>
+                            <a class="mainMenu__link" href="#blog">Blog</a>
                         </li>
     
                         <li class="mainMenu__item">
-                            <a class="mainMenu__link" href="#Gallery">Gallery</a>
+                            <a class="mainMenu__link" href="#gallery">Gallery</a>
                         </li>
     
                         <li class="mainMenu__item">
-                            <a class="mainMenu__link" href="#Contacts">Contacts</a>
+                            <a class="mainMenu__link" href="#contacts">Contacts</a>
                         </li>
                     </ul>
                 </nav> <!-- /mainMenu -->
+    
+                <button class="btnMenu  btnMenu--open" type="button">
+                    <svg class="btnMenu__icon">
+                        <use xlink:href="#btnMenu__icon"></use>
+                    </svg>
+                </button>
+                <button class="btnMenu  btnMenu--close" type="button">
+                    <svg class="btnMenu__icon  btnMenu__icon--close">
+                        <use xlink:href="#btnMenu__icon--close"></use>
+                    </svg>
+                </button>
             </div> <!-- /header__inner -->
     
         </div> <!-- container -->
@@ -1436,83 +1475,86 @@
     
         <h1 class="visually-hidden">Delicious coffee from "Coffee Zone"</h1>
     
+    
+    
         <img class="intro__img-bg" src="assets/img/intro/bg-absolute-1.png" alt="">
         <img class="intro__img-bg" src="assets/img/intro/bg-absolute-2.png" alt="">
         <img class="intro__img-bg" src="assets/img/intro/bg-absolute-3.png" alt="">
     
+        <div class="container-big">
+    
+            <div class="intro__sliders">
+    
+                <div class="intro__slide  js-show" id="1">
+                    <div class="intro__left-box">
+                        <div class="intro__img-inner">
+                            <img class="intro__img" src="assets/img/intro/images-1.png" alt="">
+                        </div>
+                    </div> <!-- /intro__left-box -->
     
     
-    
-        <div class="intro__sliders">
-    
-            <div class="intro__slide  js-show" id="1">
-                <div class="intro__left-box">
-                    <div class="intro__img-inner">
-                        <img class="intro__img" src="assets/img/intro/images-1.png" alt="">
-                    </div>
-                </div> <!-- /intro__left-box -->
+                    <div class="intro__right-box">
+                        <span class="intro__subtitle">Fresh and Tasty</span>
+                        <p class="intro__title">Coffee</p>
+                        <span class="intro__subtitle  intro__subtitle--two">in the morning</span>
+                    </div> <!-- /intro__right-box -->
+                </div> <!-- /intro__slide -->
     
     
-                <div class="intro__right-box">
-                    <span class="intro__subtitle">Fresh and Tasty</span>
-                    <p class="intro__title">Coffee</p>
-                    <span class="intro__subtitle  intro__subtitle--two">in the morning</span>
-                </div> <!-- /intro__right-box -->
-            </div> <!-- /intro__slide -->
+                <div class="intro__slide" id="2">
+                    <div class="intro__left-box">
+                        <div class="intro__img-inner">
+                            <img class="intro__img" src="assets/img/intro/images-2.png" alt="">
+                        </div>
+                    </div> <!-- /intro__left-box -->
     
     
-            <div class="intro__slide" id="2">
-                <div class="intro__left-box">
-                    <div class="intro__img-inner">
-                        <img class="intro__img" src="assets/img/intro/images-2.png" alt="">
-                    </div>
-                </div> <!-- /intro__left-box -->
+                    <div class="intro__right-box">
+                        <span class="intro__subtitle">Fresh and Tasty</span>
+                        <p class="intro__title">Coffee</p>
+                        <span class="intro__subtitle  intro__subtitle--two">in the lunch</span>
+                    </div> <!-- /intro__right-box -->
+                </div> <!-- /intro__slide -->
     
     
-                <div class="intro__right-box">
-                    <span class="intro__subtitle">Fresh and Tasty</span>
-                    <p class="intro__title">Coffee</p>
-                    <span class="intro__subtitle  intro__subtitle--two">in the lunch</span>
-                </div> <!-- /intro__right-box -->
-            </div> <!-- /intro__slide -->
+                <div class="intro__slide" id="3">
+                    <div class="intro__left-box">
+                        <div class="intro__img-inner">
+                            <img class="intro__img" src="assets/img/intro/images-3.png" alt="">
+                        </div>
+                    </div> <!-- /intro__left-box -->
     
     
-            <div class="intro__slide" id="3">
-                <div class="intro__left-box">
-                    <div class="intro__img-inner">
-                        <img class="intro__img" src="assets/img/intro/images-3.png" alt="">
-                    </div>
-                </div> <!-- /intro__left-box -->
+                    <div class="intro__right-box">
+                        <span class="intro__subtitle">Fresh and Tasty</span>
+                        <p class="intro__title">Coffee</p>
+                        <span class="intro__subtitle  intro__subtitle--two">in the evening</span>
+                    </div> <!-- /intro__right-box -->
+                </div> <!-- /intro__slide -->
+            </div> <!-- /intro__sliders -->
     
     
-                <div class="intro__right-box">
-                    <span class="intro__subtitle">Fresh and Tasty</span>
-                    <p class="intro__title">Coffee</p>
-                    <span class="intro__subtitle  intro__subtitle--two">in the evening</span>
-                </div> <!-- /intro__right-box -->
-            </div> <!-- /intro__slide -->
-        </div> <!-- /intro__sliders -->
+            <div class="intro__navigation">
+                <div class="intro__slogan">
+                    <img class="intro__slogan-text" src="assets/img/intro/bestcoffee.png" alt="">
+                    <img src="assets/img/intro/ложка.png" alt="">
+                </div>
     
+                <div class="intro__buttons">
+                    <button class="intro__btn  js-active" data-id="1">
+                        <img src="assets/img/intro/btn-1.png" alt="">
+                    </button>
     
-        <div class="intro__navigation">
-            <div class="intro__slogan">
-                <img class="intro__slogan-text" src="assets/img/intro/bestcoffee.png" alt="">
-                <img src="assets/img/intro/ложка.png" alt="">
-            </div>
+                    <button class="intro__btn" data-id="2">
+                        <img src="assets/img/intro/btn-2.png" alt="">
+                    </button>
     
-            <div class="intro__buttons">
-                <button class="intro__btn  js-active" data-id="1">
-                    <img src="assets/img/intro/btn-1.png" alt="">
-                </button>
+                    <button class="intro__btn" data-id="3">
+                        <img src="assets/img/intro/btn-3.png" alt="">
+                    </button>
+                </div>
+            </div> <!-- /intro__navigation -->
     
-                <button class="intro__btn" data-id="2">
-                    <img src="assets/img/intro/btn-2.png" alt="">
-                </button>
-    
-                <button class="intro__btn" data-id="3">
-                    <img src="assets/img/intro/btn-3.png" alt="">
-                </button>
-            </div>
         </div>
     </section> <!-- /intro -->
     <section class="about" id="about">
@@ -1530,19 +1572,21 @@
                         industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                         and scrambled it to make a type specimen book.
                     </p>
-                    <p class="about__text  img-2">2222222 Ipsum is simply dummy text of the printing and typesetting
-                        industry.
-                        Lorem
-                        Ipsum has been the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                        and scrambled it to make a type specimen book.
+                    <p class="about__text  img-2">2222222 At vero eos et accusamus et iusto odio dignissimos ducimus, quis
+                        nostrum exercitationem ullam
+                        corporis suscipit laboriosam, obcaecati cupiditate non provident, similique sunt in culpa, qui
+                        officia deserunt mollitia...
                     </p>
-                    <p class="about__text  img-3">3333333 Ipsum is simply dummy text of the printing and typesetting
-                        industry.
-                        Lorem
-                        Ipsum has been the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                        and scrambled it to make a type specimen book.
+                    <p class="about__text  img-3">3333333 Duis aute irure dolor in reprehenderit in voluptate, quia voluptas
+                        sit, aspernatur aut odit aut
+                        fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro
+                        quisquam est, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <p class="about__text  img-4">4444444 Et harum quidem rerum facilis est et expedita distinctio, qui in
+                        ea voluptate velit esse, quam
+                        nihil molestiae consequatur, vel illum, qui dolorem ipsum, quia dolor sit, amet, consectetur,
+                        adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam
+                        quaerat voluptatem.
                     </p>
     
                     <div class="about__control">
@@ -1565,9 +1609,10 @@
     
                 <div class="about__right-box">
                     <div class="about__img-inner">
-                        <img class="about__img  js-show" data-name="img-1" src="assets/img/about/img-4.jpg" alt="">
-                        <img class="about__img" data-name="img-2" src="assets/img/about/img-1.jpg" alt="">
-                        <img class="about__img" data-name="img-3" src="assets/img/about/img-2.jpg" alt="">
+                        <img class="about__img  js-show" data-name="img-1" src="assets/img/about/img-1.jpg" alt="">
+                        <img class="about__img" data-name="img-2" src="assets/img/about/img-2.jpg" alt="">
+                        <img class="about__img" data-name="img-3" src="assets/img/about/img-3.jpg" alt="">
+                        <img class="about__img" data-name="img-4" src="assets/img/about/img-4.jpg" alt="">
                     </div>
                 </div>
     
@@ -1575,7 +1620,7 @@
             </div> <!-- /about__inner -->
         </div> <!-- /container -->
     </section> <!-- /about -->
-    <section class="collection">
+    <section class="collection" id="products">
         <div class="container">
             <h2 class="g-title  collection__title">Coffee Collection</h2>
     
@@ -1583,9 +1628,14 @@
     
                 <div class="collection__item">
                     <img class="collection__item-img" src="assets/img/cofeCollection/img-4.jpg" alt="">
+                    <h4 class="g-title  collection__item-title">Inventore</h4>
+                    <p class="collection__item-text">
+                        Lorem Ipsum is simply dummy text of standard dummy the the text ever since the 1500s.
+                    </p>
                 </div>
     
                 <div class="collection__item">
+                    <img class="collection__item-img" src="assets/img/cofeCollection/img-3.jpg" alt="">
                     <h4 class="g-title  collection__item-title">Volestias</h4>
                     <p class="collection__item-text">
                         Lorem Ipsum is simply dummy text of standard dummy the the text ever since the 1500s.
@@ -1593,6 +1643,7 @@
                 </div>
     
                 <div class="collection__item">
+                    <img class="collection__item-img" src="assets/img/cofeCollection/img-2.jpg" alt="">
                     <h4 class="g-title  collection__item-title">Laudantium</h4>
                     <p class="collection__item-text">
                         Lorem Ipsum is simply dummy text of standard dummy the the text ever since the 1500s.
@@ -1600,6 +1651,7 @@
                 </div>
     
                 <div class="collection__item">
+                    <img class="collection__item-img" src="assets/img/cofeCollection/img-1.jpg" alt="">
                     <h4 class="g-title  collection__item-title">Inventore</h4>
                     <p class="collection__item-text">
                         Lorem Ipsum is simply dummy text of standard dummy the the text ever since the 1500s.
@@ -1733,7 +1785,10 @@
     
                 <div class="ourMasters__left-box">
                     <div class="ourMasters__img-inner">
-                        <img class="ourMasters__img" src="assets/img/ourMaster/img-1.jpg" alt="">
+                        <img class="ourMasters__img  js-show" data-name="img-1" src="assets/img/ourMaster/img-1.jpg" alt="">
+                        <img class="ourMasters__img" data-name="img-2" src="assets/img/ourMaster/img-2.jpg" alt="">
+                        <img class="ourMasters__img" data-name="img-3" src="assets/img/ourMaster/img-3.jpg" alt="">
+                        <img class="ourMasters__img" data-name="img-4" src="assets/img/ourMaster/img-4.jpg" alt="">
     
                         <button class="g-btn--circle  ourMasters__btn  ourMasters__btn--prev" type="button">
                             <svg class="about__btn-icon">
@@ -1749,7 +1804,7 @@
                     </div>
                 </div> <!-- /ourMasters__left-box -->
     
-                <div class="ourMasters__right-box">
+                <div class="ourMasters__right-box  js-show  img-1">
                     <h3 class="g-subtitle  ourMasters__subtitle">Mahadi Tahsan</h3>
                     <div class="ourMasters__stars">
                         <svg class="ourMasters__star">
@@ -1808,10 +1863,198 @@
                         </ul>
                     </div> <!-- /social  ourMasters__social -->
                 </div> <!-- /ourMasters__right-box -->
+    
+    
+                <div class="ourMasters__right-box  img-2">
+                    <h3 class="g-subtitle  ourMasters__subtitle">Ethan Woods</h3>
+                    <div class="ourMasters__stars">
+                        <svg class="ourMasters__star">
+                            <use xlink:href=#star-svg></use>
+                        </svg>
+                        <svg class="ourMasters__star">
+                            <use xlink:href=#star-svg></use>
+                        </svg>
+                        <svg class="ourMasters__star">
+                            <use xlink:href=#star-svg></use>
+                        </svg>
+                        <svg class="ourMasters__star">
+                            <use xlink:href=#star-svg></use>
+                        </svg>
+                        <svg class="ourMasters__star">
+                            <use xlink:href=#star-svg></use>
+                        </svg>
+                    </div>
+                    <p class="ourMasters__text">
+                        2222 Et harum quidem rerum facilis est et expedita distinctio, qui in ea voluptate velit esse, quam
+                        nihil molestiae consequatur, vel illum, qui dolorem ipsum, quia dolor sit, amet, consectetur,
+                        adipisci velit, sed quia non numquam eius modi tempora incidunt,
+    
+                        2222 Et harum quidem rerum facilis est et expedita distinctio, qui in ea voluptate velit esse, quam
+                        nihil molestiae consequatur, vel illum, qui dolorem ipsum, quia dolor sit, amet, consectetur,
+                        adipisci velit, sed quia non numquam eius modi tempora incidunt,
+                    </p>
+    
+                    <div class="social  ourMasters__social">
+                        <p class="g-subtitle  social__title">Follow Me :</p>
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a class="social__link" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href=#fb-svg></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href=#twit-svg></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href=#linkedin-svg></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href=#inst-svg></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> <!-- /social  ourMasters__social -->
+                </div> <!-- /ourMasters__right-box -->
+    
+    
+                <div class="ourMasters__right-box  img-3">
+                    <h3 class="g-subtitle  ourMasters__subtitle">Emily French</h3>
+                    <div class="ourMasters__stars">
+                        <svg class="ourMasters__star">
+                            <use xlink:href=#star-svg></use>
+                        </svg>
+                        <svg class="ourMasters__star">
+                            <use xlink:href=#star-svg></use>
+                        </svg>
+                        <svg class="ourMasters__star">
+                            <use xlink:href=#star-svg></use>
+                        </svg>
+                        <svg class="ourMasters__star">
+                            <use xlink:href=#star-svg></use>
+                        </svg>
+                        <svg class="ourMasters__star">
+                            <use xlink:href=#star-svg></use>
+                        </svg>
+                    </div>
+                    <p class="ourMasters__text">
+                        3333 Duis aute irure dolor in reprehenderit in voluptate, quia voluptas sit, aspernatur aut odit aut
+                        fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro
+                        quisquam est, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+    
+                    <div class="social  ourMasters__social">
+                        <p class="g-subtitle  social__title">Follow Me :</p>
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a class="social__link" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href=#fb-svg></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href=#twit-svg></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href=#linkedin-svg></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href=#inst-svg></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> <!-- /social  ourMasters__social -->
+                </div> <!-- /ourMasters__right-box -->
+    
+    
+                <div class="ourMasters__right-box  img-4">
+                    <h3 class="g-subtitle  ourMasters__subtitle">Michael Hunter</h3>
+                    <div class="ourMasters__stars">
+                        <svg class="ourMasters__star">
+                            <use xlink:href=#star-svg></use>
+                        </svg>
+                        <svg class="ourMasters__star">
+                            <use xlink:href=#star-svg></use>
+                        </svg>
+                        <svg class="ourMasters__star">
+                            <use xlink:href=#star-svg></use>
+                        </svg>
+                        <svg class="ourMasters__star">
+                            <use xlink:href=#star-svg></use>
+                        </svg>
+                        <svg class="ourMasters__star">
+                            <use xlink:href=#star-svg></use>
+                        </svg>
+                    </div>
+                    <p class="ourMasters__text">
+                        4444 At vero eos et accusamus et iusto odio dignissimos ducimus, quis nostrum exercitationem ullam
+                        corporis suscipit laboriosam, obcaecati cupiditate non provident, similique sunt in culpa, qui
+                        officia deserunt mollitia...
+                    </p>
+    
+                    <div class="social  ourMasters__social">
+                        <p class="g-subtitle  social__title">Follow Me :</p>
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a class="social__link" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href=#fb-svg></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href=#twit-svg></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href=#linkedin-svg></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href=#inst-svg></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> <!-- /social  ourMasters__social -->
+                </div> <!-- /ourMasters__right-box -->
+    
             </div> <!-- /ourMasters__inner -->
         </div> <!-- /container -->
     </section> <!-- /ourMasters -->
-    <section class="instagram">
+    <section class="instagram" id="gallery">
         <div class="container">
             <h2 class="g-title  instagram__title">Post From Instagram</h2>
     
@@ -1844,7 +2087,7 @@
             </div> <!-- /instagram__inner -->
         </div> <!-- /container -->
     </section> <!-- /instagram -->
-    <section class="blog">
+    <section class="blog" id="blog">
         <div class="container">
             <h2 class="g-title  blog__title">From Our Blog</h2>
     
@@ -1937,7 +2180,7 @@
         </div> <!-- /container -->
     </section> <!-- /blog -->
 
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="container">
     
             <div class="footer__items">
@@ -1996,7 +2239,7 @@
             <div class="footer__copy">
                 <p class="footer__copy-text">© 2019 Coffee Zone. All Rights Reserved.</p>
     
-                <div class="social  ourMasters__social">
+                <div class="social  footer__social">
                     <p class="g-subtitle  social__title">Follow Me :</p>
                     <ul class="social__list">
                         <li class="social__item">
@@ -2030,6 +2273,12 @@
                     </ul>
                 </div> <!-- /social  ourMasters__social -->
             </div> <!-- /footer__copy -->
+    
+            <a class="g-btn--circle  footer__scrolTop" href="#home">
+                <svg class="footer__scrolTop__icon">
+                    <use xlink:href="#arrowUp-svg"></use>
+                </svg>
+            </a>
     
         </div> <!-- /container -->
     </footer> <!-- /footer -->   

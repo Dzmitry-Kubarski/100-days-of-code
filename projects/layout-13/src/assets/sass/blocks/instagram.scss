@@ -19,6 +19,11 @@
     max-height: 270px;
     margin-left: 15px;
     margin-right: 15px;
+    transition: box-shadow .2s linear;
+
+    &:hover {
+        box-shadow: 0px 10px 20px 0px rgba(8,6,89,0.3);
+    }
 }
 
 .instagram__img {
