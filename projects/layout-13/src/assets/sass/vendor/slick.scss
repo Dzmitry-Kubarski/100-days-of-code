@@ -15,13 +15,14 @@
     -webkit-tap-highlight-color: transparent;
 }
 .slick-list {
+    // width: 100%;
+    // max-width: 1210px;
+
     position: relative;
     overflow: hidden;
     display: block;
     margin: 0 auto;
     padding: 0;
-
-    max-width: 1150px;
 
     &:focus {
         outline: none;
@@ -30,8 +31,9 @@
     &.dragging {
         cursor: pointer;
         cursor: hand;
-    }
+    }    
 }
+
 .slick-slider .slick-track,
 .slick-slider .slick-list {
     -webkit-transform: translate3d(0, 0, 0);
@@ -42,16 +44,14 @@
 }
 
 .slick-track {
-    // position: relative;
+    position: relative;
     left: 0;
     top: 0;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
-
-    // padding-top: 25px;
-    padding-bottom: 31px;
+    // width: 100%;
+    height: 270px;    
 
 
     &:before,
@@ -115,14 +115,11 @@
     text-align: center;
 
     position: absolute;
-    bottom: 0;  
-    left: 22%;
-    z-index: 2;
+    bottom: -40px;  
+    left: 50%;
+    transform: translateX(-50%);
 
-    @media (max-width: 890px) {
-        left: 50%;
-        transform: translateX(-50%);
-    }
+    z-index: 2;    
 }
 
 .slick-dots li {
@@ -133,7 +130,7 @@
 
     &.slick-active {
         button {
-            background-color: red;
+            background-color: $colorBrown;
         }
     }
 }
@@ -143,7 +140,7 @@
     height: 8px;
 
     border: none;
-    background-color: red;
+    background-color: $colorGrey;
     border-radius: 50%;
 
     font-size: 0;
@@ -156,3 +153,5 @@
         outline: 0;
     }
 }
+
+

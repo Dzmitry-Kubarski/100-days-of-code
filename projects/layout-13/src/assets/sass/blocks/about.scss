@@ -1,14 +1,24 @@
 .about {
-    margin-bottom: 150px;
+    margin-bottom: 200px;
 }
 
 .about__inner {
     position: relative;
     display: flex;
+
+    @media (max-width: 992px) {
+        flex-wrap: wrap;
+    }
 }
 
 .about__left-box {
     width: 45%;
+
+    @media (max-width: 992px) {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
 }
 
 .about__title {
@@ -17,6 +27,14 @@
 
 .about__subtitle {
     margin-bottom: 280px;
+
+    @media (max-width: 992px) {
+        margin-bottom: 40px;
+    }
+
+    @media (max-width: 376px) {
+        font-size: 25px;
+    }
 }
 
 .about__text {
@@ -26,6 +44,7 @@
     top: 210px;
 
     display: block;
+    width: 100%;
     max-width: 570px;
     font-size: 16px;
     line-height: 28px;
@@ -36,6 +55,15 @@
     opacity: 0;
     transition: opacity .3s linear;
     display: none;
+
+    @media (max-width: 992px) {        
+       left: 50%;
+       transform: translateX(-50%);
+    }
+
+    @media (max-width: 470px) {
+        padding: 15px;
+    }
 }
 
 .about__text.js-show {
@@ -46,10 +74,41 @@
 .about__control {
     display: flex;
     align-items: center;
+
+    @media (max-width: 992px) {
+        width: 100%;
+       justify-content: center;
+       position: absolute;
+       bottom: -95px;
+       left: 50%;
+       transform: translateX(-50%);
+       z-index: 501;
+    }
 }
 
 .about__link {
     margin-right: 70px;
+
+    @media (max-width: 470px) {
+        margin-right: 0;
+    }
+}
+
+.about__btn {
+
+    @media (max-width: 470px) {
+        position: absolute;
+        bottom: 95px;       
+        background-color: $colorWhite;
+    }
+}
+
+.about__btn--prev {
+    right: 50%;
+}
+
+.about__btn--next {
+    left: 50%;
 }
 
 .about__btn-icon {
@@ -75,6 +134,19 @@
         height: 310px;
         background-image: url(../img/about/right-box-bg.png);
         background-repeat: no-repeat;
+
+        @media (max-width: 758px) {
+            display: none;
+        }
+    }
+
+    @media (max-width: 992px) {
+        width: 100%;
+    }
+
+    @media (max-width: 758px) {
+        padding-right: 0;
+        padding-bottom: 0;
     }
 }
 
@@ -84,6 +156,14 @@
     height: 100%;
     max-width: 630px;
     height: 552px;
+
+    @media (max-width: 992px) {
+        max-width: 100%;
+    }
+
+    @media (max-width: 470px) {
+        height: 455px;
+    }
 }
 
 .about__img {
@@ -97,6 +177,10 @@
     border-radius: 60px 0 0 0;
     opacity: 0;
     transition: opacity 1s;
+
+    @media (max-width: 470px) {
+        min-height: 100%;
+    }
 }
 
 .about__img.js-show {

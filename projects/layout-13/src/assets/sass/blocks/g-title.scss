@@ -21,6 +21,10 @@
         background-position: center center;
         background-size: cover;
     }
+
+    @media (max-width: 376px) {
+        font-size: 45px;
+    }
 }  
 
 .g-title--white {

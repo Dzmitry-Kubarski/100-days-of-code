@@ -8,7 +8,6 @@ $(function () {
     // ---- Components ----  
 
     // ---- off ----
-    //= components/slickSlider.js
     //= components/popup.js
     //= components/videoPopup.js
 
@@ -19,6 +18,8 @@ $(function () {
     //= components/aboutSlider.js
     //= components/ourMasters.js
     //= components/mobailMenu.js
+    //= components/slickSlider.js
+
 
 
 
