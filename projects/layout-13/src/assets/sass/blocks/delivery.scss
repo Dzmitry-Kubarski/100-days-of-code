@@ -23,6 +23,10 @@
         width: 100%;
         margin-bottom: 40px;
     }
+
+    @media (max-width: 420px) {
+        text-align: center;
+    }
 }
 
 .delivery__title {
@@ -48,7 +52,13 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 65px;
+
+    @media (max-width: 420px) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
 }
+
 .delivery__item {
     position: relative;
     width: 33.333333%;
@@ -69,12 +79,13 @@
     }
 
     @media (max-width: 420px) {
-        width: 50%;
+        width: 35%;
+        padding-left: 0;
     }
 }
 
 .delivery__right-box {
-    // width: 50%;
+    // width: 50%;    
 }
 
 .delivery-map {

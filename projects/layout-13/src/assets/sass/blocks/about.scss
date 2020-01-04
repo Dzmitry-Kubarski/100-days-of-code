@@ -98,17 +98,25 @@
 
     @media (max-width: 470px) {
         position: absolute;
-        bottom: 95px;       
+        bottom: 235px;       
         background-color: $colorWhite;
     }
 }
 
 .about__btn--prev {
-    right: 50%;
+    left: 50%;
+
+    @media (max-width: 470px) {
+        left: -40px;
+    }
 }
 
 .about__btn--next {
-    left: 50%;
+    right: 50%;
+
+    @media (max-width: 470px) {
+        right: -40px;
+    }
 }
 
 .about__btn-icon {

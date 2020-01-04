@@ -20,11 +20,12 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
-    }
+    }    
 
-    @media (max-width: 376px) {
-        font-size: 45px;
-    }
+    @media (max-width: 420px) {
+        font-size: 40px;
+        line-height: 48px;
+    }    
 }  
 
 .g-title--white {

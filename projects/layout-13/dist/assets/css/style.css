@@ -4129,9 +4129,10 @@ body {
     background-size: cover;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 420px) {
     .g-title {
-        font-size: 45px;
+        font-size: 40px;
+        line-height: 48px;
     }
 }
 
@@ -4824,17 +4825,29 @@ body {
 @media (max-width: 470px) {
     .about__btn {
         position: absolute;
-        bottom: 95px;
+        bottom: 235px;
         background-color: #fff;
     }
 }
 
 .about__btn--prev {
-    right: 50%;
+    left: 50%;
+}
+
+@media (max-width: 470px) {
+    .about__btn--prev {
+        left: -40px;
+    }
 }
 
 .about__btn--next {
-    left: 50%;
+    right: 50%;
+}
+
+@media (max-width: 470px) {
+    .about__btn--next {
+        right: -40px;
+    }
 }
 
 .about__btn-icon {
@@ -5075,6 +5088,12 @@ body {
     }
 }
 
+@media (max-width: 420px) {
+    .delivery__left-box {
+        text-align: center;
+    }
+}
+
 .delivery__title {
     margin-bottom: 65px;
 }
@@ -5103,6 +5122,14 @@ body {
     margin-bottom: 65px;
 }
 
+@media (max-width: 420px) {
+    .delivery__list {
+        -webkit-box-pack: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+}
+
 .delivery__item {
     position: relative;
     width: 33.333333%;
@@ -5126,7 +5153,8 @@ body {
 
 @media (max-width: 420px) {
     .delivery__item {
-        width: 50%;
+        width: 35%;
+        padding-left: 0;
     }
 }
 
@@ -5296,6 +5324,12 @@ body {
     margin: 0 auto;
 }
 
+@media (max-width: 376px) {
+    .ourMasters__img-inner {
+        width: 100%;
+    }
+}
+
 .ourMasters__img {
     width: 100%;
     height: 100%;
@@ -5309,6 +5343,12 @@ body {
     opacity: 0;
     -webkit-transition: opacity .2s linear;
     transition: opacity .2s linear;
+}
+
+@media (max-width: 376px) {
+    .ourMasters__img {
+        max-width: 100%;
+    }
 }
 
 .ourMasters__img.js-show {
@@ -5335,7 +5375,7 @@ body {
 
 @media (max-width: 376px) {
     .ourMasters__btn--prev {
-        left: -30px;
+        left: -45px;
     }
 }
 
@@ -5351,7 +5391,7 @@ body {
 
 @media (max-width: 376px) {
     .ourMasters__btn--next {
-        right: -30px;
+        right: -45px;
     }
 }
 
@@ -5633,7 +5673,7 @@ body {
     padding-top: 95px;
 }
 
-@media (max-width: 470px) {
+@media (max-width: 576px) {
     .footer {
         padding-top: 25px;
     }
@@ -5675,7 +5715,7 @@ body {
 
 @media (max-width: 470px) {
     .footer__item {
-        width: 60%;
+        width: 100%;
     }
 }
 
@@ -5900,6 +5940,7 @@ body {
 }
 
 .slick-dots {
+    width: 100%;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -5913,13 +5954,17 @@ body {
 }
 
 .slick-dots li {
-    margin-right: .5rem;
+    margin-right: 25px;
     display: inline-block;
     vertical-align: middle;
 }
 
 .slick-dots li.slick-active button {
     background-color: #4f1f12;
+}
+
+.slick-dots li:last-child {
+    margin-right: 0;
 }
 
 .slick-dots button {

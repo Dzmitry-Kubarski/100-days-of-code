@@ -2,7 +2,7 @@
     background-color: $colorBlack;
     padding-top: 95px;
 
-    @media (max-width: 470px) {
+    @media (max-width: 576px) {
         padding-top: 25px; 
     }
 }
@@ -34,7 +34,7 @@
     }
 
     @media (max-width: 470px) {
-        width: 60%;  
+        width: 100%;  
     }
 }
 
