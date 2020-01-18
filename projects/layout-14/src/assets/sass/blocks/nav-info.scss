@@ -1,0 +1,17 @@
+.nav-info {
+    display: flex;
+    align-items: center;
+}
+
+.nav-info__item {
+    margin-right: 22px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.nav-info__icon {
+    width: 20px;
+    height: 22px;
+}

@@ -1,0 +1,95 @@
+<main class="main">
+
+    {{> userMenu }}
+
+    {{> breadcrumbs }}
+
+    <section class="products">
+
+        <div class="filters">
+            <div class="filters__title">Filters</div>
+
+            <div class="filters__inner">
+
+                {{> price-range }}
+
+                <hr class="filters__line">
+
+                {{> price-slider }}
+
+                <hr class="filters__line">
+
+                {{> category }}
+
+                <hr class="filters__line">
+
+                {{> brand }}
+
+                <hr class="filters__line">
+
+                {{> rating }}
+
+            </div> <!-- /filters__inner -->
+
+            <button class="filters__clear" type="button">CLEAR ALL FILTERS</button>
+
+        </div> <!-- /filters -->
+
+        {{> catalog }}
+
+    </section> <!-- /products -->
+
+    <div class="pageControl">
+        <div class="pageControl__inner">
+            <button class="pageControl__btn  pageControl__btn--prev">
+                <svg class="pageControl__btn-icon" width="8" height="14" viewBox="0 0 8 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 13L1 7L7 1" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <ul class="pageControl__list">
+                <li class="pageControl__item">
+                    <a href="#" class="pageControl__link">1</a>
+                </li>
+                <li class="pageControl__item">
+                    <a href="#" class="pageControl__link">2</a>
+                </li>
+                <li class="pageControl__item">
+                    <a href="#" class="pageControl__link">3</a>
+                </li>
+                <li class="pageControl__item">
+                    <a href="#" class="pageControl__link  active">4</a>
+                </li>
+                <li class="pageControl__item">
+                    <a href="#" class="pageControl__link">5</a>
+                </li>
+                <li class="pageControl__item">
+                    <a href="#" class="pageControl__link">6</a>
+                </li>
+                <li class="pageControl__item">
+                    <a href="#" class="pageControl__link">7</a>
+                </li>
+                <li class="pageControl__item">
+                    <a href="#" class="pageControl__link">8</a>
+                </li>
+                <li class="pageControl__item">
+                    <a href="#" class="pageControl__link">9</a>
+                </li>
+                <li class="pageControl__item">
+                    <a href="#" class="pageControl__link">10</a>
+                </li>
+            </ul>
+
+            <button class="pageControl__btn  pageControl__btn--next">
+                <svg class="pageControl__btn-icon" width="8" height="14" viewBox="0 0 8 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L7 7L1 13" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div> <!-- /pageControl__inner -->
+    </div> <!-- /pageControl -->
+
+</main> <!-- main -->

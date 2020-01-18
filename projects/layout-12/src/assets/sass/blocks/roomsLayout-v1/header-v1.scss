@@ -1,0 +1,43 @@
+.header-v1 {
+    position: relative;
+    background-color: $colorWhite;
+    padding-top: 15px;
+
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .header__logo-inner {
+        text-align-last: left;
+        width: auto;
+        padding-bottom: 30px;
+        margin-left: 35px;
+        margin-right: 80px;
+    }
+
+    // .btnSearch {
+    //     margin-right: 15px;
+    //     align-self: flex-end;
+    // }
+
+    .header__control-btn {
+        padding: 25px 15px;
+        min-width: 172px;
+    }
+
+    .btnSearch__icon {
+        fill: $colorBlack;
+    }
+
+    .btnLang {
+        color: $colorBlack;
+        padding-bottom: 26px;
+    }    
+}
+
+.header-v1__inner {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}

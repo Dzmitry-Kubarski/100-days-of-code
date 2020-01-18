@@ -1,0 +1,35 @@
+.price-range {
+    margin-bottom: 36px;
+}
+
+.price-range__title {   
+    margin-bottom: 20px;
+}
+
+.price-range__list {
+}
+
+.price-range__item {
+    
+}
+
+.price-range__checkbox {
+    position: relative;
+    color: $colorBlack;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    padding-left: 25px;
+}
+
+.price-range__icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: none;
+
+    &.checked {
+        fill: $colorPurple;
+    }
+}

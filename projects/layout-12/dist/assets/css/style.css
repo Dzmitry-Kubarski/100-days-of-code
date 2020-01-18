@@ -6431,6 +6431,101 @@ input[type=number] {
     line-height: 20px;
 }
 
+.header-v1 {
+    position: relative;
+    background-color: #fff;
+    padding-top: 15px;
+}
+
+.header-v1 .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.header-v1 .header__logo-inner {
+    -moz-text-align-last: left;
+    text-align-last: left;
+    width: auto;
+    padding-bottom: 30px;
+    margin-left: 35px;
+    margin-right: 80px;
+}
+
+.header-v1 .header__control-btn {
+    padding: 25px 15px;
+    min-width: 172px;
+}
+
+.header-v1 .btnSearch__icon {
+    fill: #1c1c1c;
+}
+
+.header-v1 .btnLang {
+    color: #1c1c1c;
+    padding-bottom: 26px;
+}
+
+.header-v1__inner {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: end;
+    align-items: flex-end;
+}
+
+.mainMenu {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.mainMenu__list {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.mainMenu__item {
+    margin-right: 35px;
+    padding-top: 30px;
+}
+
+.mainMenu__item:last-child {
+    margin-right: 0;
+}
+
+.mainMenu__link {
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 1.4px;
+    color: #1c1c1c;
+}
+
+.intro-v1 {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding-top: 55px;
+    padding-bottom: 45px;
+}
+
+.intro-v1__title {
+    margin-bottom: 25px;
+}
+
+.intro-v1__text {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.intro-v1__page {
+    color: #1c1c1c;
+}
+
 /* Vendor libs */
 /* Slider */
 .slick-slider {

@@ -5320,6 +5320,26 @@ $(function () {
         // });
 
     // ---- on ----
+    // ---- Search ----
+    
+    $('.btnSearch').on('click', function () {
+    
+        $('.searchModal').slideToggle();
+        $('.search__overlay').fadeIn(200);
+    });
+    
+    $('.search__overlay, .searchModal__close').click(function () {
+        $('.search__overlay').fadeOut(100);
+        $('.searchModal').slideToggle();
+    });
+    
+    
+    // Search close on click "Esc"
+    $(document).keydown(function (eventObject) {
+        if (eventObject.which == 27) {
+            $('.searchModal').hide();
+        };
+    });
     // ----- Mobail menu button -----
     
     $(".btnMenu").click(function () {
@@ -5329,7 +5349,7 @@ $(function () {
     
     $('.menu__link').click(function () {
     
-        let target = $(this).attr('href');
+        var target = $(this).attr('href');
         $('html, body').animate({ scrollTop: $(target).offset().top }, 1000);
         return false;
     });
@@ -5746,32 +5766,13 @@ $(function () {
             }
         }
     });
-    // ---- Search ----
-    
-    $('.btnSearch').on('click', function () {
-    
-        $('.searchModal').slideToggle();
-        $('.search__overlay').fadeIn(200);
-    });
-    
-    $('.search__overlay, .searchModal__close').click(function () {
-        $('.search__overlay').fadeOut(100);
-        $('.searchModal').slideToggle();
-    });
-    
-    
-    // Search close on click "Esc"
-    $(document).keydown(function (eventObject) {
-        if (eventObject.which == 27) {
-            $('.searchModal').hide();
-        };
-    });
+
 
 
 
     $('.header__btn').click(function () {
 
-        let target = $(this).attr('href');
+        var target = $(this).attr('href');
         $('html, body').animate({ scrollTop: $(target).offset().top }, 1000);
         return false;
     });

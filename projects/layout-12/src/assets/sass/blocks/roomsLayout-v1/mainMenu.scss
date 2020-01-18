@@ -1,0 +1,27 @@
+.mainMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.mainMenu__list {
+    display: flex;
+    align-items: center;
+}
+
+.mainMenu__item {
+    margin-right: 35px;
+    padding-top: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.mainMenu__link {
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 1.4px;
+    color: $colorBlack;
+}

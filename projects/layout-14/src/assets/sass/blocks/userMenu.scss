@@ -1,0 +1,33 @@
+.userMenu {
+    box-shadow: $shadow;
+    background-color: $colorWhite;
+    border-radius: $radius;
+    padding: 13px 20px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.userMenu__inner {
+    display: flex;
+    align-items: center;    
+}
+
+.userMenu__control {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 28px;
+}
+
+.userMenu__icon {
+    width: 20px;
+    height: 22px;
+}
+
+.userMenu__lang {
+    margin-right: 28px;
+}
+
+.userMenu__notify {
+    margin-right: 22px;
+}

@@ -12,6 +12,7 @@ $(function () {
     //= components/slickSlider.js
 
     // ---- on ----
+    //= components/btnSearch.js
     //= components/mobailMenu.js
     //= components/popup.js
     //= components/bookingCheck.js
@@ -20,13 +21,13 @@ $(function () {
     //= components/galleryPopup.js
     //= components/theHotel-slider.js
     //= components/rooms.js
-    //= components/btnSearch.js
+
 
 
 
     $('.header__btn').click(function () {
 
-        let target = $(this).attr('href');
+        var target = $(this).attr('href');
         $('html, body').animate({ scrollTop: $(target).offset().top }, 1000);
         return false;
     });

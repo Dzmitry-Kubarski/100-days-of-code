@@ -1,0 +1,42 @@
+.filters {
+    width: 100%;
+    max-width: 370px;
+}
+
+.filters__inner {
+    box-shadow: $shadow;
+    background-color: $colorWhite;
+    border-radius: $radius;
+    padding: 24px;
+    margin-bottom: 30px;
+}
+
+.filters__title {
+    font-size: 18px;
+    line-height: 40px;
+    margin-bottom: 22px;
+}
+
+.filters__line {
+    display: block;
+    border: none;
+    color: #b1b1b1;
+    background-color: #D6D6D6;
+    height: 1px;
+    margin-bottom: 30px;
+}
+
+.filters__clear {
+    width: 100%;
+    color: $colorWhite;
+    background-color: $colorPurple;
+    text-transform: uppercase;
+    border-radius: $radius_small;
+    box-shadow: $shadow;
+    padding: 17px;
+    transition: background-color .2s linear; 
+
+    &:hover {
+        background-color: lighten($colorPurple, 5%);
+    }
+}

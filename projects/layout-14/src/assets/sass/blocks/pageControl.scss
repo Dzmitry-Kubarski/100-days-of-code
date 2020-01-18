@@ -1,0 +1,64 @@
+.pageControl {
+    margin-bottom: 30px;
+}
+
+.pageControl__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageControl__btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $bg_grey;   
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .2s linear;
+
+    &:hover {
+        background-color: darken($bg_grey, 5%);
+    }
+}
+
+.pageControl__list {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: $bg_grey;
+    border-radius: 20px;
+    margin: 0px 17px;
+    padding: 0px 1px;
+}
+
+.pageControl__item {
+    margin-right: 18px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.pageControl__link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 4.4px;
+    color: #2C2C2C;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    transition: all .2s linear;
+
+    &:hover,
+    &.active {
+        background-color: $colorPurple;        
+        color: $colorWhite;
+    }
+}

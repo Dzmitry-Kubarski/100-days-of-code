@@ -1,0 +1,66 @@
+.settingsView {
+    display: flex;
+}
+
+.settingsView__list {
+    display: flex;
+}
+
+.settingsView__item {
+    margin-left: 13px;
+}
+
+.settingsView__link {
+    width: 40px;
+    height: 40px;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    background-color: $colorWhite;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  .settingsView__select-wrapper {
+      position: relative;      
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        background-image: url(../img/chevron-down.svg);  
+        background-repeat: no-repeat; 
+        background-position: center;
+
+        width: 12px;
+        height: 17px;
+        pointer-events: none;
+    }
+  }
+
+.settingsView__select {
+    min-height: 40px;
+    min-width: 135px;
+    position: relative;
+    border: none;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    background-color: $colorWhite;
+    cursor: pointer;
+    padding: 0 15px;   
+}
+
+.settingsView__value {
+    
+}

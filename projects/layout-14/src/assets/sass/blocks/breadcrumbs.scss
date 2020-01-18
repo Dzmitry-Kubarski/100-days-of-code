@@ -1,0 +1,80 @@
+.breadcrumbs {
+    margin-bottom: 25px;
+}
+
+.breadcrumbs__inner {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs__title {
+    position: relative;
+    font-size: 24px;
+    line-height: 29px;
+    padding-right: 16px;
+    margin-right: 16px;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 1px;
+        height: 32px;
+        top: 0;
+        right: 0;
+        background-color: #979797;
+    }
+}
+
+.breadcrumbs__list {
+    display: flex;
+}
+
+.breadcrumbs__item {
+    position: relative;
+    padding-right: 27px;
+    margin-right: 11px;
+
+    &:last-child {
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 12%;
+        // transform: translateY(-50%);
+        width: 13px;
+        height: 10px;
+        background-image: url(../img/chevrons-right.svg);
+    }
+
+    &:last-child {
+
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.breadcrumbs__link {
+    color: $colorPurple;    
+}
+
+.breadcrumbs__link.active {
+    color: $colorBlack;
+}
+
+.breadcrumbs__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $colorPurple;
+    margin-left: auto;
+}

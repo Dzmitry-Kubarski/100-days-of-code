@@ -1,0 +1,34 @@
+.search {
+    margin-bottom: 28px;
+}
+
+.products__search {
+}
+
+.search__input-inner {
+    position: relative;
+    width: 100%;
+}
+
+.search__input {
+    width: 100%;
+    border: none;
+    box-shadow: $shadow;
+    background-color: $colorWhite;
+    border-radius: $radius;
+    font-size: 22px;
+    line-height: 26px;
+    padding: 18px 30px;
+
+    &::placeholder {
+        color: #999999;
+        font-weight: 300;        
+    }
+}
+
+.search__search-btn {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}

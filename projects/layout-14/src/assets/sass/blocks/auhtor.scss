@@ -1,0 +1,25 @@
+.auhtor {
+    display: flex;
+    align-items: center;
+}
+
+.auhtor__name {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.auhtor__status {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 13px;
+    text-align: right;
+}
+
+.auhtor__img-inner {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: $shadow;
+    margin-left: 12px;
+}

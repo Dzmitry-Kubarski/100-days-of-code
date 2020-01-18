@@ -1,0 +1,24 @@
+.rating {
+}
+
+.rating__title {
+    margin-bottom: 22px;
+}
+
+.rating__list {
+}
+
+.rating__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    margin-bottom: 15px; 
+}
+
+.rating__up {
+    margin-left: 15px;
+}
+
+.orange {
+    stroke: $colorOrange;
+}
