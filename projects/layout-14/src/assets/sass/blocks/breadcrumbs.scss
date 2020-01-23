@@ -75,6 +75,19 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: $colorPurple;
+    background-color: $colorWhite;
+    box-shadow: $shadow;
     margin-left: auto;
+
+    svg path {
+        stroke: $colorBlack;
+    }
+
+    &.active {
+        background-color: $colorPurple;
+
+        svg path {
+            stroke: $colorWhite;
+        }
+    }
 }

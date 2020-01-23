@@ -1,0 +1,20 @@
+.popupBtn {   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #55a831;
+    border-radius: $radius;
+    padding: 12px 16px;
+}
+
+.popupBtn__img {
+    margin-right: 10px;
+}
+
+.popupBtn__text {
+    font-size: 14px;
+    font-weight: 700;
+    color: #55a831;
+    text-transform: uppercase;
+    text-align: left;
+}

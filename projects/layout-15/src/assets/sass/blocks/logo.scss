@@ -1,0 +1,14 @@
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__link {
+    margin-right: 25px;
+}
+
+.logo__text {
+    max-width: 229px;
+    font-size: 14px;
+    color: $blue_color;
+}

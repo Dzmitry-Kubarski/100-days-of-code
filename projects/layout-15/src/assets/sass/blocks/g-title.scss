@@ -1,0 +1,21 @@
+.g-title {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        transform: translateX(-50%);
+        width: 170px;
+        height: 2px;
+        background-image: url(../img/line.png);
+        background-repeat: no-repeat;
+    }
+}

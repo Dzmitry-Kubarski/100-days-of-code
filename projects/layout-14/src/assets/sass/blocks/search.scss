@@ -21,6 +21,7 @@
     padding: 18px 30px;
 
     &::placeholder {
+        font-family: $font_Montserrat, sans-serif;
         color: #999999;
         font-weight: 300;        
     }

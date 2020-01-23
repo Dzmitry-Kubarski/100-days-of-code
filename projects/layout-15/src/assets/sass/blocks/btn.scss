@@ -1,0 +1,19 @@
+.btn {
+    font-family: $font_OpenSans_Condensed;
+    color: #000000;
+    border-radius: $radius;
+    padding: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: $gradient_btn;
+    box-shadow: $shadow;
+    border: 1px solid rgb(255, 198, 0);
+    transition: box-shadow .2s linear;
+
+    &:hover {
+        box-shadow: none;
+    }
+}
+
+
+  

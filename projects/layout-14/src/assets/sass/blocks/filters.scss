@@ -1,7 +1,19 @@
 .filters {
     width: 100%;
     max-width: 370px;
+    flex-shrink: 0;
+    margin-right: 30px;
+
+    opacity: 0;
+    display: none;
+
+    &.active {
+        display: block;
+        opacity: 1;
+    }
 }
+
+
 
 .filters__inner {
     box-shadow: $shadow;

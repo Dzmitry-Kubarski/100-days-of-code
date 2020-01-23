@@ -57,4 +57,24 @@ $(function () {
         $(this).next('.sidebar__dropdown-list').toggleClass('open');
     });
 
+
+
+    $('.tabs a').click(function () {
+        $(this).parents('.products').find('.product__inner').addClass('hide');
+        $(this).parent().siblings().removeClass('active');
+        var id = $(this).attr('href');
+        $(id).removeClass('hide');
+        $(this).parent().addClass('active');
+        return false
+    });
+
+
+
+
+    $('.breadcrumbs__btn').click(function () {
+        $(this).toggleClass('active');
+        $('.filters').toggleClass('active');
+    });
+
+
 });

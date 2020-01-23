@@ -1,0 +1,49 @@
+.header {
+    background-color: $bg_white;
+    padding: 20px 0px;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    margin-right: 100px;
+}
+
+.header__popupBtn {
+    margin-right: 50px;
+}
+
+.header__time {
+    position: relative;
+    padding-left: 47px;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url(../img/clock.png);
+        background-repeat: no-repeat;
+    }
+}
+
+.header__time-text {
+    font-size: 14px;
+}
+
+.header__time-clock {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header__contacts {
+    text-align: right;
+    margin-left: auto;    
+}

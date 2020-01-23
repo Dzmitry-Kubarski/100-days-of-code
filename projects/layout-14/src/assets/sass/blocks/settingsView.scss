@@ -8,6 +8,16 @@
 
 .settingsView__item {
     margin-left: 13px;
+
+    &.active {
+        .settingsView__link {
+            background-color: $colorPurple;
+
+            svg path, svg rect {
+                stroke: $colorWhite;
+            }
+        }
+    }
 }
 
 .settingsView__link {

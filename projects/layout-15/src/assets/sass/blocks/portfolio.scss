@@ -1,0 +1,31 @@
+.portfolio {
+    padding: 80px 0px;
+}
+
+
+.portfolio__title {
+}
+
+.portfolio__images {
+}
+
+.portfolio__img-inner {
+    position: relative;
+    max-width: 270px;
+    max-height: 270px;;
+}
+
+.portfolio__img {
+    z-index: 1;
+}
+
+.portfolio__zoom {
+    position: absolute;
+    z-index: 99;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.portfolio__zoom-icon {
+}

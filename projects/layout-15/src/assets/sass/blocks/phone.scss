@@ -1,0 +1,20 @@
+.phone {
+    position: relative;
+    font-size: 23px;
+    font-weight: 700;
+    color: $black_color;
+    padding-left: 31px;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url(../img/phone.png);
+        background-repeat: no-repeat;
+    }
+}
