@@ -92,15 +92,16 @@
 .finish__item {
     display: flex;
     align-items: center;
+    display: none;
 
-    &.active {
-        display: none;
+    &.active-item {
+        display: flex;
     }
 }
 
 .finish__img {
     max-width: 300px;
-    max-height: 350px;
+    max-height: 445px;
     margin-right: 40px;
 
     &--external {
@@ -221,4 +222,54 @@
     display: block;
     font-size: 10px;
     line-height: 1;
+}
+
+.finish__img--remote {
+    min-height: 445px;
+    object-fit: cover;
+}
+
+.finish__item-title--remote {
+    margin-bottom: 35px;
+}
+
+.finish__remote-fact {
+    display: flex;
+    align-items: center;
+    margin: 25px 0px;
+
+    img {
+        margin-right: 25px;
+    }
+}
+
+.finish__item-title--roof {
+    margin-bottom: 30px;
+}
+
+.finish__img--roof {
+    min-height: 250px;
+    object-fit: cover;
+}
+
+.finish__roof-fact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    
+    img {
+        margin-right: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    span {
+        font-size: 12px;
+    }
+}
+
+.finish__materials-price--roof {
+    margin-bottom: 20px;
+    margin-top: 30px;
 }

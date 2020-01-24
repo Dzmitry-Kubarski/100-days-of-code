@@ -1,0 +1,47 @@
+.timer {
+    width: 260px;
+    background-color: white;
+    border: 1px solid #d1d1d1;
+    border-radius: $radius;
+    text-align: center;
+    padding: 20px;
+}
+
+.timer__title {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.timer__items {
+    display: flex;
+}
+
+.timer__item {
+    margin-right: 15px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.timer__item-value {   
+    font-size: 28px;
+    font-weight: 600;
+    font-family: $font_OpenSans_Condensed; 
+    color: white;
+    width: 40px;
+    height: 50px;
+    border-radius: $radius;
+    text-align: center;
+    line-height: 50px;
+    background-image: url(../img/discount/timer-bg.png);
+    margin-bottom: 10px;
+}
+
+.timer__item-name {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 27px;
+}

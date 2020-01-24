@@ -1,0 +1,40 @@
+.guarantee {
+    // background-color: $blue_color;
+    background-image: linear-gradient( 180deg, rgb(0,132,204) 0%, rgb(45,183,248) 100%);
+    padding-top: 80px;
+}  
+
+.guarantee__title {
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+
+    &:after {      
+        background-image: url(../img/line-white.png);       
+    }
+}
+
+.guarantee__items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.guarantee__item {
+    width: 33%;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.guarantee__item-img {
+    margin-bottom: 25px;
+}
+
+.guarantee__item-title {
+    max-width: 185px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin: 0 auto;
+}
