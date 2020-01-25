@@ -56,20 +56,22 @@ $(function () {
 
 
     // -------- Popup --------
-    $('[data-popup]').click(function () {
+    $('.callback, .popupBtn, .variants__item-btn').click(function () {
+        var id = $(this).attr('data-id');
         $('body').addClass('over-hide');
         $('.popup__wrap').addClass('active');
         $('.popup').removeClass('active');
-        $('.' + $(this).data('popup')).addClass('active');
+        // $('.' + $(this).data('popup')).addClass('active');
+        // $('.popup').data('popup').addClass('active');
+        $('#' + id).addClass('active');
+
 
     });
 
-    $('.popupBtn, .popup__close, .popup__overlay').click(function () {
+    $('.popup__close, .popup__overlay').click(function () {
         $('.popup__wrap').toggleClass('active');
-        $('.fixedHeader').toggleClass('active');
+        // $('.fixedHeader').toggleClass('active');
         $('body').removeClass('over-hide');
-        // $('[data-wrap-form]').removeClass('hidden');
-        // $('[data-wrap-sent]').addClass('hidden');
     });
 
 });

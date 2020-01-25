@@ -1,14 +1,24 @@
 .questions {
     background-color: $blue_color;
     text-align: center;
-    padding: 75px 0px;
+    padding: 75px 0px 55px 0px;
+
+    @media (max-width: 848px) {
+        padding: 40px 0px 55px 0px;      
+    }
 }
 
 .questions__text {
+    display: inline-block;
     font-size: 30px;
     line-height: 26px;
     color: white;
     margin-right: 30px;
+    margin-bottom: 20px;
+
+    @media (max-width: 460px) {
+        margin-right: 0;
+    }
 }
 
 .questions__link {
@@ -28,6 +38,10 @@
         background-color: white;
         bottom: -5px;
         transition: opacity .2s linear;
+
+        @media (max-width: 600px) {
+            display: none;
+        }
     }
 
     &:hover {
@@ -35,4 +49,10 @@
             opacity: 0;
         }
     }
+
+    @media (max-width: 600px) {
+        text-decoration: underline;
+        font-size: 25px;
+        line-height: 30px;
+    }   
 }

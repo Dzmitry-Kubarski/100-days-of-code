@@ -5,6 +5,10 @@
     border-radius: $radius;
     text-align: center;
     padding: 40px 50px;
+
+    @media (max-width: 420px) {
+        padding: 15px;
+    }
 }
 
 .intro__form {
@@ -24,7 +28,7 @@
 
 .form__input {
     width: 100%;
-    max-width: 270px;
+    // max-width: 270px;
     border: none;
     border: 1px solid #d1d1d1;
     border-radius: $radius;

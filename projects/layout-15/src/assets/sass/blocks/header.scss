@@ -6,14 +6,31 @@
 .header__inner {
     display: flex;
     align-items: center;
+
+    @media (max-width: 1220px) {
+        justify-content: space-between;
+    }
 }
 
 .header__logo {
     margin-right: 100px;
+
+    @media (max-width: 1220px) {
+        margin-right: 0;
+    }
+
+    @media (max-width: 674px) {
+        width: 20%;
+    }
 }
 
 .header__popupBtn {
     margin-right: 50px;
+
+    @media (max-width: 1220px) {
+        margin-right: 0;
+    }
+   
 }
 
 .header__time {
@@ -32,6 +49,10 @@
         background-image: url(../img/clock.png);
         background-repeat: no-repeat;
     }
+
+    @media (max-width: 674px) {
+        display: none;
+    }
 }
 
 .header__time-text {
@@ -45,5 +66,13 @@
 
 .header__contacts {
     text-align: right;
-    margin-left: auto;    
+    margin-left: auto; 
+    
+    @media (max-width: 1220px) {
+        margin-left: 0;
+    }
+
+    @media (max-width: 674px) {
+        display: none;
+    }
 }

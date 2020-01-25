@@ -18,4 +18,12 @@
         background-image: url(../img/line.png);
         background-repeat: no-repeat;
     }
+
+    @media (max-width: 640px) {
+        font-size: 26px;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 18px;
+    }
 }

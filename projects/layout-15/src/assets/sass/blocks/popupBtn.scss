@@ -5,6 +5,10 @@
     border: 2px solid #55a831;
     border-radius: $radius;
     padding: 12px 16px;
+
+    @media (max-width: 850px) {
+        display: none;
+    }
 }
 
 .popupBtn__img {

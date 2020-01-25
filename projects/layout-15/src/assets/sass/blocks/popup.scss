@@ -52,17 +52,7 @@
       transform: rotate(-45deg);
       top: 2px;
       right: 36px;    
-    }
-  
-    @media (max-width: 778px) {
-      top: 7px;
-      right: 7px;
-  
-      &::before,
-      &::after {
-        background-color: red;
-      }
-    }
+    }  
   }
     
   .popup__close.active {
@@ -81,14 +71,12 @@
   .popup {
     position: relative;
     max-width: 100%;
-    width: 600px;
+    // width: 600px;
     display: none;
+
+    &.active {
+      display: block;
+    }
   }
-  
-  .popup.active {
-    display: block;
-    overflow-y: scroll;
-    width: 100%
-  } 
 
   

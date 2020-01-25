@@ -5,10 +5,18 @@
 
 .logo__link {
     margin-right: 25px;
+
+    @media (max-width: 1220px) {
+        margin-right: 0;
+    }
 }
 
 .logo__text {
     max-width: 229px;
     font-size: 14px;
     color: $blue_color;
+
+    @media (max-width: 1220px) {
+        display: none;
+    }
 }
