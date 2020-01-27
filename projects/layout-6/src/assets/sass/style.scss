@@ -1,37 +1,11 @@
 @import "vars";
 
 
+/* Normalize */
+@import "../../../../../node_modules/normalize.css/normalize";
+
 /* Default styles */
-html {
-    font-size: 15px;
-}
-
-body {
-    margin: 0;
-
-    background-color: $gray;
-
-    font-family: 'Montserrat', sans-serif;
-    color: $black;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-*,
-*:after,
-*:before {
-    box-sizing: border-box;
-}
-
-
-/* Bootstrap */
-@import "../../../node_modules/bootstrap/scss/functions";
-@import "../../../node_modules/bootstrap/scss/variables";
-@import "../../../node_modules/bootstrap/scss/mixins";
-@import "../../../node_modules/bootstrap/scss/grid";
-@import "../../../node_modules/bootstrap/scss/transitions";
-@import "../../../node_modules/bootstrap/scss/modal";
-
+@import "base";
 
 
 /* Blocks */
@@ -44,10 +18,7 @@ body {
 @import "blocks/intro";
 @import "blocks/btn";
 @import "blocks/contacts";
-@import "blocks/author";
-@import "blocks/circle";
 @import "blocks/social";
-@import "blocks/modal";
 @import "blocks/form";
 @import "blocks/input";
 @import "blocks/services";

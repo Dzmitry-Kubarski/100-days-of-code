@@ -18,7 +18,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     
-    <title>Services</title></head>
+    <title>Portfolio</title></head>
 
 <body>
 
@@ -238,7 +238,7 @@
                             </li>
         
                             <li class="nav__item">
-                                <a href="about.html" class="nav__link">Обо мне</a>
+                                <a href="portfolio.html" class="nav__link">Обо мне</a>
                             </li>
         
                             <li class="nav__item">
@@ -246,7 +246,7 @@
                             </li>
         
                             <li class="nav__item">
-                                <a href="contacts.html" class="nav__link">Контакты</a>
+                                <a href="portfolio.html" class="nav__link">Контакты</a>
                             </li>
                         </ul>
                     </nav> <!-- /nav  header__nav -->
@@ -261,89 +261,92 @@
             
             <div class="container">
                 <h1 class="content__title">
-                    Услуги
+                    Мои работы
                 </h1>
             
-                <div class="services">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="services__item">
-                                <svg class="services__icon">
-                                    <use xlink:href=#layers></use>
-                                </svg>
-                                <div class="services__title">Веб-дизайн</div>
-                                <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque officia
-                                    quos consequuntur facere velit voluptatem labore unde eaque. Consequatur, modi pariatur mollitia
-                                    possimus nostrum illum praesentium velit laborum in perspiciatis.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="services__item">
-                                <svg class="services__icon">
-                                    <use xlink:href=#responsive></use>
-                                </svg>
-                                <div class="services__title">Front-end</div>
-                                <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque officia
-                                    quos consequuntur facere velit voluptatem labore unde eaque. Consequatur, modi pariatur mollitia
-                                    possimus nostrum illum praesentium velit laborum in perspiciatis.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="services__item">
-                                <svg class="services__icon">
-                                    <use xlink:href=#data></use>
-                                </svg>
-                                <div class="services__title">Back-end</div>
-                                <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque officia
-                                    quos consequuntur facere velit voluptatem labore unde eaque.
-                                </p>
-                            </div>
-                        </div>
-                    </div> <!-- /row -->
-                </div> <!-- /services -->
+                <div class="portfolio">
             
-                <a class="btn btn--pink" href="#" data-toggle="modal" data-target="#exampleModal">Оставить заявку</a>
-            </div>
+                    <button class="portfolio__arrow portfolio__arrow--prev" id="arrow-prev" type="button">
+                        <svg class="portfolio__arrow-icon">
+                            <use xlink:href=#prev></use>
+                        </svg>
+                    </button>
+            
+                    <button class="portfolio__arrow portfolio__arrow--next" id="arrow-next" type="button">
+                        <svg class="portfolio__arrow-icon">
+                            <use xlink:href=#next></use>
+                        </svg>
+                    </button>
+            
+                    <div class="portfolio__slider" id="portfolio">
+                        <div>
+                            <div class="portfolio__item">
+                                <a class="portfolio__link" href="#" target="_blank">
+                                    <img class="portfolio__img" src="assets/img/img-1.jpg" alt="">
+                                </a>
+                                <div class="portfolio__title">Сайт проекта CarTuning.pro</div>
+                            </div>
+                        </div>
+            
+                        <div>
+                            <div class="portfolio__item">
+                                <a class="portfolio__link" href="#" target="_blank">
+                                    <img class="portfolio__img" src="assets/img/img-2.jpg" alt="">
+                                </a>
+                                <div class="portfolio__title">Сайт проекта CarTuning.pro</div>
+                            </div>
+                        </div>
+            
+                        <div>
+                            <div class="portfolio__item">
+                                <a class="portfolio__link" href="#" target="_blank">
+                                    <img class="portfolio__img" src="assets/img/img-1.jpg" alt="">
+                                </a>
+                                <div class="portfolio__title">Сайт проекта CarTuning.pro</div>
+                            </div>
+                        </div>
+            
+                        <div>
+                            <div class="portfolio__item">
+                                <a class="portfolio__link" href="#" target="_blank">
+                                    <img class="portfolio__img" src="assets/img/img-2.jpg" alt="">
+                                </a>
+                                <div class="portfolio__title">Сайт проекта CarTuning.pro</div>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div> <!-- /portfolio -->
+            </div> <!-- /container -->
         </main>
 
 
         <footer class="footer">
             <div class="container">
-        
                 <div class="social">
-                    <div class="social__text">Мои соц.сети:</div>
+                    <div class="social__text">
+                        Мои соц.сети
+                    </div>
         
-                    <ul class="social__list">
-                        <li class="social__item">
-                            <a class="social__link" href="#" target="_blank">
-                                <svg class="social__icon">
-                                    <use xlink:href=#vk></use>
-                                </svg>
-                            </a>
-                        </li>
+                    <a class="social__link" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href=#vk></use>
+                        </svg>
+                    </a>
         
-                        <li class="social__item">
-                            <a class="social__link" href="#" target="_blank">
-                                <svg class="social__icon social__icon--fb">
-                                    <use xlink:href=#fb></use>
-                                </svg>
-                            </a>
-                        </li>
+                    <a class="social__link" href="#" target="_blank">
+                        <svg class="social__icon social__icon--fb">
+                            <use xlink:href=#fb></use>
+                        </svg>
+                    </a>
         
-                        <li class="social__item">
-                            <a class="social__link" href="#" target="_blank">
-                                <svg class="social__icon social__icon--fb">
-                                    <use xlink:href=#inst></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul> <!-- /social__list -->
-        
-        
-                </div> <!-- /social -->
-            </div> <!-- /container -->
+                    <a class="social__link" href="#" target="_blank">
+                        <svg class="social__icon social__icon--fb">
+                            <use xlink:href=#inst></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </footer>    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

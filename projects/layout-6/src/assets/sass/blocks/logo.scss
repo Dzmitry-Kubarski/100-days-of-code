@@ -1,8 +1,22 @@
 .logo {
-    color: $black;
-    font-size: 1.6rem;
-    font-weight: 700;
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo__icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    // fill: $black;
+    fill: #ff555d;
+}
+
+.logo__text {
+
+    span {
+        display: block;
+        font-size: 12px;
+    }
 }
 
 .logo__prefix {
