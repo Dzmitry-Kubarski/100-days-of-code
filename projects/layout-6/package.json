@@ -2,7 +2,7 @@
     "name": "frontend",
     "version": "1.0.0",
     "description": "website development",
-    "author": "Dzmitry kubarski",
+    "author": "Dzmitry Kubarski",
     "devDependencies": {
         "browser-sync": "^2.26.3",
         "del": "^4.1.0",
@@ -20,7 +20,6 @@
         "panini": "^1.6.3"
     },
     "dependencies": {
-        "bootstrap": "^4.3.1",
         "slick-carousel": "^1.8.1"
     }
 }

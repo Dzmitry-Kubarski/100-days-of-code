@@ -16,16 +16,16 @@
     line-height: 35px;
 }
 
-.intro__specialty-pink {
-    color: $pink;
-}
-
 .intro__content {
     width: 50%;
 }
 
-.intro__img-wrap {
+.intro__img-box {
     width: 40%;
+    flex-shrink: 0;
+}
+
+.intro__img-wrap {
     background: #F2F3F7;
     border: 0.5px solid rgba(255, 255, 255, 0.6);
     box-shadow: -7px -4px 10px #FFFFFF, 7px 4px 10px #DDE4EF, inset 0px 0px 20px rgba(221, 228, 239, 0.25);
@@ -34,7 +34,7 @@
 
 .intro__img {
     display: block;
-    max-height: 500px;
+    height: 100%;
     border-radius: 6px;
     object-fit: cover;
 }

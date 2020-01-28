@@ -1,7 +1,7 @@
 {
-    "name": "skeleton",
+    "name": "frontend",
     "version": "1.0.0",
-    "description": "project using gulp4",
+    "description": "website development",
     "author": "Dzmitry Kubarski",
     "devDependencies": {
         "animate.css": "^3.7.2",

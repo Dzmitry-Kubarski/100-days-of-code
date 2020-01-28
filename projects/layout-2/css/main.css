@@ -411,7 +411,7 @@ body {
 .comments__slider-btn:hover {
     background: #fff;
     box-shadow: 0 30px 35px rgba(31, 110, 227, 0.3); 
-    border: none;
+    border: transparent;
 }
 
 /* ---------------------------- */

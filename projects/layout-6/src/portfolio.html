@@ -4,61 +4,470 @@ title: Портфолио
 ---
 
 <div class="container">
-    <h1 class="content__title">
-        Мои работы
-    </h1>
+    <h1 class="content__title">Мои работы:</h1>
 
-    <div class="portfolio">
+    <div class="portfolio__dots">
+        <ul class="portfolio__dots-list">
+            <li class="portfolio__dots-item">
+                <a class="portfolio__dots-btn  active" href="#" data-id="website_1">
+                    <img class="portfolio__dots-img" src="assets/img/portfolio/img-1.jpg" alt="">
+                </a>
+            </li>
 
-        <button class="portfolio__arrow portfolio__arrow--prev" id="arrow-prev" type="button">
-            <svg class="portfolio__arrow-icon">
-                <use xlink:href=#prev></use>
-            </svg>
-        </button>
+            <li class="portfolio__dots-item">
+                <a class="portfolio__dots-btn" href="#" data-id="website_2">
+                    <img class="portfolio__dots-img" src="assets/img/portfolio/img-2.jpg" alt="">
+                </a>
+            </li>
 
-        <button class="portfolio__arrow portfolio__arrow--next" id="arrow-next" type="button">
-            <svg class="portfolio__arrow-icon">
-                <use xlink:href=#next></use>
-            </svg>
-        </button>
+            <li class="portfolio__dots-item">
+                <a class="portfolio__dots-btn" href="#" data-id="website_3">
+                    <img class="portfolio__dots-img" src="assets/img/portfolio/img-3.jpg" alt="">
+                </a>
+            </li>
 
-        <div class="portfolio__slider" id="portfolio">
-            <div>
-                <div class="portfolio__item">
-                    <a class="portfolio__link" href="#" target="_blank">
-                        <img class="portfolio__img" src="assets/img/img-1.jpg" alt="">
-                    </a>
-                    <div class="portfolio__title">Сайт проекта CarTuning.pro</div>
-                </div>
+            <li class="portfolio__dots-item">
+                <a class="portfolio__dots-btn" href="#" data-id="website_4">
+                    <img class="portfolio__dots-img" src="assets/img/portfolio/img-4.jpg" alt="">
+                </a>
+            </li>
+
+            <li class="portfolio__dots-item">
+                <a class="portfolio__dots-btn" href="#" data-id="website_5">
+                    <img class="portfolio__dots-img" src="assets/img/portfolio/img-5.jpg" alt="">
+                </a>
+            </li>
+
+            <li class="portfolio__dots-item">
+                <a class="portfolio__dots-btn" href="#" data-id="website_6">
+                    <img class="portfolio__dots-img" src="assets/img/portfolio/img-6.jpg" alt="">
+                </a>
+            </li>
+
+            <li class="portfolio__dots-item">
+                <a class="portfolio__dots-btn" href="#" data-id="website_7">
+                    <img class="portfolio__dots-img" src="assets/img/portfolio/img-7.jpg" alt="">
+                </a>
+            </li>
+
+            <li class="portfolio__dots-item">
+                <a class="portfolio__dots-btn" href="#" data-id="website_8">
+                    <img class="portfolio__dots-img" src="assets/img/portfolio/img-8.jpg" alt="">
+                </a>
+            </li>
+
+            <li class="portfolio__dots-item">
+                <a class="portfolio__dots-btn" href="#" data-id="website_9">
+                    <img class="portfolio__dots-img" src="assets/img/portfolio/img-9.jpg" alt="">
+                </a>
+            </li>
+
+            <li class="portfolio__dots-item">
+                <a class="portfolio__dots-btn" href="#" data-id="website_10">
+                    <img class="portfolio__dots-img" src="assets/img/portfolio/img-10.jpg" alt="">
+                </a>
+            </li>
+
+            <li class="portfolio__dots-item">
+                <a class="portfolio__dots-btn" href="#" data-id="website_11">
+                    <img class="portfolio__dots-img" src="assets/img/portfolio/img-11.jpg" alt="">
+                </a>
+            </li>
+
+            <li class="portfolio__dots-item">
+                <a class="portfolio__dots-btn" href="#" data-id="website_12">
+                    <img class="portfolio__dots-img" src="assets/img/portfolio/img-12.jpg" alt="">
+                </a>
+            </li>
+
+            <li class="portfolio__dots-item">
+                <a class="portfolio__dots-btn" href="#" data-id="website_13">
+                    <img class="portfolio__dots-img" src="assets/img/portfolio/img-13.jpg" alt="">
+                </a>
+            </li>
+
+            <li class="portfolio__dots-item">
+                <a class="portfolio__dots-btn" href="#" data-id="website_14">
+                    <img class="portfolio__dots-img" src="assets/img/portfolio/img-14.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="portfolio__slides">
+
+        <div class="portfolio__slide  active" id="website_1">
+            <div class="portfolio__slide-content">
+                <div class="portfolio__slide-title">Что было сделано:</div>
+
+                <p class="portfolio__slide-subtitle">Вёрстка (без посадки на CMS),</p>
+
+                <ul class="portfolio__slide-list">
+                    <li class="portfolio__slide-item">Страниц: <span>2</span> </li>
+                    <li class="portfolio__slide-item">Слайдеры: <span>1</span></li>
+                    <li class="portfolio__slide-item">Модальные окна: <span>1</span></li>
+                    <li class="portfolio__slide-item">Адаптив (хорошо смотрится на экранах любых размеров)</li>
+                    <li class="portfolio__slide-item">Плавный скролл до секций</li>
+                    <li class="portfolio__slide-item">Валидный код</li>
+                </ul>
+
+                <div class="portfolio__slide-date">Дата создания: <span>19 октября 2019г.</span> </div>
+
+                <a class="nav__link  portfolio__slide-link"
+                    href="https://dzmitry-kubarski.github.io/100-days-of-code/projects/layout-1/index.html"
+                    target="_blank">Перейти на сайт</a>
+            </div> <!-- /portfolio__slide-content -->
+
+            <div class="portfolio__img-box">
+                <img class="portfolio__img" src="assets/img/portfolio/img-1.jpg" alt="">
             </div>
+        </div> <!-- /portfolio__slide -->
 
-            <div>
-                <div class="portfolio__item">
-                    <a class="portfolio__link" href="#" target="_blank">
-                        <img class="portfolio__img" src="assets/img/img-2.jpg" alt="">
-                    </a>
-                    <div class="portfolio__title">Сайт проекта CarTuning.pro</div>
-                </div>
+
+        <div class="portfolio__slide" id="website_2">
+            <div class="portfolio__slide-content">
+                <div class="portfolio__slide-title">Что было сделано:</div>
+
+                <p class="portfolio__slide-subtitle">Вёрстка (без посадки на CMS),</p>
+
+                <ul class="portfolio__slide-list">
+                    <li class="portfolio__slide-item">Страниц: <span>1</span> </li>
+                    <li class="portfolio__slide-item">Слайдеры: <span>1</span></li>
+                    <li class="portfolio__slide-item">Адаптив (хорошо смотрится на экранах любых размеров)</li>
+                    <li class="portfolio__slide-item">Валидный код</li>
+                </ul>
+
+                <div class="portfolio__slide-date">Дата создания: <span>24 октября 2019г.</span> </div>
+
+                <a class="nav__link  portfolio__slide-link"
+                    href="https://dzmitry-kubarski.github.io/100-days-of-code/projects/layout-2/index.html"
+                    target="_blank">Перейти на сайт</a>
+            </div> <!-- /portfolio__slide-content -->
+
+            <div class="portfolio__img-box">
+                <img class="portfolio__img" src="assets/img/portfolio/img-2.jpg" alt="">
             </div>
+        </div> <!-- /portfolio__slide -->
 
-            <div>
-                <div class="portfolio__item">
-                    <a class="portfolio__link" href="#" target="_blank">
-                        <img class="portfolio__img" src="assets/img/img-1.jpg" alt="">
-                    </a>
-                    <div class="portfolio__title">Сайт проекта CarTuning.pro</div>
-                </div>
+
+        <div class="portfolio__slide" id="website_3">
+            <div class="portfolio__slide-content">
+                <div class="portfolio__slide-title">Что было сделано:</div>
+
+                <p class="portfolio__slide-subtitle">Вёрстка (без посадки на CMS),</p>
+
+                <ul class="portfolio__slide-list">
+                    <li class="portfolio__slide-item">Страниц: <span>3</span> </li>
+                    <li class="portfolio__slide-item">Адаптив (хорошо смотрится на экранах любых размеров)</li>
+                    <li class="portfolio__slide-item">Валидный код</li>
+                </ul>
+
+                <div class="portfolio__slide-date">Дата создания: <span>26 октября 2019г.</span> </div>
+
+                <a class="nav__link  portfolio__slide-link"
+                    href="https://dzmitry-kubarski.github.io/100-days-of-code/projects/layout-3/index.html"
+                    target="_blank">Перейти на сайт</a>
+            </div> <!-- /portfolio__slide-content -->
+
+            <div class="portfolio__img-box">
+                <img class="portfolio__img" src="assets/img/portfolio/img-3.jpg" alt="">
             </div>
+        </div> <!-- /portfolio__slide -->
 
-            <div>
-                <div class="portfolio__item">
-                    <a class="portfolio__link" href="#" target="_blank">
-                        <img class="portfolio__img" src="assets/img/img-2.jpg" alt="">
-                    </a>
-                    <div class="portfolio__title">Сайт проекта CarTuning.pro</div>
-                </div>
+
+        <div class="portfolio__slide" id="website_4">
+            <div class="portfolio__slide-content">
+                <div class="portfolio__slide-title">Что было сделано:</div>
+
+                <p class="portfolio__slide-subtitle">Вёрстка (без посадки на CMS),</p>
+
+                <ul class="portfolio__slide-list">
+                    <li class="portfolio__slide-item">Страниц: <span>1</span> </li>
+                    <li class="portfolio__slide-item">Слайдеры: <span>3</span></li>
+                    <li class="portfolio__slide-item">Адаптив (хорошо смотрится на экранах любых размеров)</li>
+                    <li class="portfolio__slide-item">Валидный код</li>
+                </ul>
+
+                <div class="portfolio__slide-date">Дата создания: <span>1 ноября 2019г.</span> </div>
+
+                <a class="nav__link  portfolio__slide-link"
+                    href="https://dzmitry-kubarski.github.io/100-days-of-code/projects/layout-4/index.html"
+                    target="_blank">Перейти на сайт</a>
+            </div> <!-- /portfolio__slide-content -->
+
+            <div class="portfolio__img-box">
+                <img class="portfolio__img" src="assets/img/portfolio/img-4.jpg" alt="">
             </div>
-        </div>
+        </div> <!-- /portfolio__slide -->
 
-    </div> <!-- /portfolio -->
+
+        <div class="portfolio__slide" id="website_5">
+            <div class="portfolio__slide-content">
+                <div class="portfolio__slide-title">Что было сделано:</div>
+
+                <p class="portfolio__slide-subtitle">Вёрстка (без посадки на CMS),</p>
+
+                <ul class="portfolio__slide-list">
+                    <li class="portfolio__slide-item">Страниц: <span>1</span> </li>
+                    <li class="portfolio__slide-item">Слайдеры: <span>2</span></li>
+                    <li class="portfolio__slide-item">Карта</li>
+                    <li class="portfolio__slide-item">Модальные окна: <span>1</span></li>
+                    <li class="portfolio__slide-item">Адаптив (хорошо смотрится на экранах любых размеров)</li>
+                    <li class="portfolio__slide-item">Плавный скролл до секций</li>
+                    <li class="portfolio__slide-item">Валидный код</li>
+                </ul>
+
+                <div class="portfolio__slide-date">Дата создания: <span>5 ноября 2019г.</span> </div>
+
+                <a class="nav__link  portfolio__slide-link"
+                    href="https://dzmitry-kubarski.github.io/100-days-of-code/projects/layout-5/index.html"
+                    target="_blank">Перейти на сайт</a>
+            </div> <!-- /portfolio__slide-content -->
+
+            <div class="portfolio__img-box">
+                <img class="portfolio__img" src="assets/img/portfolio/img-5.jpg" alt="">
+            </div>
+        </div> <!-- /portfolio__slide -->
+
+
+        <div class="portfolio__slide" id="website_6">
+            <div class="portfolio__slide-content">
+                <div class="portfolio__slide-title">Что было сделано:</div>
+
+                <p class="portfolio__slide-subtitle">Вёрстка (без посадки на CMS),</p>
+
+                <ul class="portfolio__slide-list">
+                    <li class="portfolio__slide-item">Страниц: <span>1</span> </li>
+                    <li class="portfolio__slide-item">Слайдеры: <span>1</span></li>
+                    <li class="portfolio__slide-item">Адаптив (хорошо смотрится на экранах любых размеров)</li>
+                    <li class="portfolio__slide-item">Плавный скролл до секций</li>
+                    <li class="portfolio__slide-item">Валидный код</li>
+                </ul>
+
+                <div class="portfolio__slide-date">Дата создания: <span>ноябрь 2019г.</span> </div>
+
+                <a class="nav__link  portfolio__slide-link"
+                    href="https://dzmitry-kubarski.github.io/100-days-of-code/projects/layout-7/dist/"
+                    target="_blank">Перейти на сайт</a>
+            </div> <!-- /portfolio__slide-content -->
+
+            <div class="portfolio__img-box">
+                <img class="portfolio__img" src="assets/img/portfolio/img-6.jpg" alt="">
+            </div>
+        </div> <!-- /portfolio__slide -->
+
+
+        <div class="portfolio__slide" id="website_7">
+            <div class="portfolio__slide-content">
+                <div class="portfolio__slide-title">Что было сделано:</div>
+
+                <p class="portfolio__slide-subtitle">Вёрстка (без посадки на CMS),</p>
+
+                <ul class="portfolio__slide-list">
+                    <li class="portfolio__slide-item">Страниц: <span>1</span> </li>
+                    <li class="portfolio__slide-item">Адаптив (хорошо смотрится на экранах любых размеров)</li>
+                    <li class="portfolio__slide-item">Валидный код</li>
+                </ul>
+
+                <div class="portfolio__slide-date">Дата создания: <span>ноябрь 2019г.</span> </div>
+
+                <a class="nav__link  portfolio__slide-link"
+                    href="https://dzmitry-kubarski.github.io/100-days-of-code/projects/layout-8/dist/"
+                    target="_blank">Перейти на сайт</a>
+            </div> <!-- /portfolio__slide-content -->
+
+            <div class="portfolio__img-box">
+                <img class="portfolio__img" src="assets/img/portfolio/img-7.jpg" alt="">
+            </div>
+        </div> <!-- /portfolio__slide -->
+
+
+        <div class="portfolio__slide" id="website_8">
+            <div class="portfolio__slide-content">
+                <div class="portfolio__slide-title">Что было сделано:</div>
+
+                <p class="portfolio__slide-subtitle">Вёрстка (без посадки на CMS),</p>
+
+                <ul class="portfolio__slide-list">
+                    <li class="portfolio__slide-item">Страниц: <span>1</span> </li>
+                    <li class="portfolio__slide-item">Слайдеры: <span>1</span></li>
+                    <li class="portfolio__slide-item">Адаптив (хорошо смотрится на экранах любых размеров)</li>
+                    <li class="portfolio__slide-item">Валидный код</li>
+                </ul>
+
+                <div class="portfolio__slide-date">Дата создания: <span>ноябрь 2019г.</span> </div>
+
+                <a class="nav__link  portfolio__slide-link"
+                    href="https://dzmitry-kubarski.github.io/100-days-of-code/projects/layout-9/dist/"
+                    target="_blank">Перейти на сайт</a>
+            </div> <!-- /portfolio__slide-content -->
+
+            <div class="portfolio__img-box">
+                <img class="portfolio__img" src="assets/img/portfolio/img-8.jpg" alt="">
+            </div>
+        </div> <!-- /portfolio__slide -->
+
+
+        <div class="portfolio__slide" id="website_9">
+            <div class="portfolio__slide-content">
+                <div class="portfolio__slide-title">Что было сделано:</div>
+
+                <p class="portfolio__slide-subtitle">Вёрстка (без посадки на CMS),</p>
+
+                <ul class="portfolio__slide-list">
+                    <li class="portfolio__slide-item">Страниц: <span>1</span> </li>
+                    <li class="portfolio__slide-item">Слайдеры: <span>1</span></li>
+                    <li class="portfolio__slide-item">Табы: <span>1</span></li>
+                    <li class="portfolio__slide-item">Адаптив (хорошо смотрится на экранах любых размеров)</li>
+                    <li class="portfolio__slide-item">Валидный код</li>
+                </ul>
+
+                <div class="portfolio__slide-date">Дата создания: <span>декабрь 2019г.</span> </div>
+
+                <a class="nav__link  portfolio__slide-link"
+                    href="https://dzmitry-kubarski.github.io/100-days-of-code/projects/layout-10/dist/"
+                    target="_blank">Перейти на сайт</a>
+            </div> <!-- /portfolio__slide-content -->
+
+            <div class="portfolio__img-box">
+                <img class="portfolio__img" src="assets/img/portfolio/img-9.jpg" alt="">
+            </div>
+        </div> <!-- /portfolio__slide -->
+
+
+        <div class="portfolio__slide" id="website_10">
+            <div class="portfolio__slide-content">
+                <div class="portfolio__slide-title">Что было сделано:</div>
+
+                <p class="portfolio__slide-subtitle">Вёрстка (без посадки на CMS),</p>
+
+                <ul class="portfolio__slide-list">
+                    <li class="portfolio__slide-item">Страниц: <span>7</span> </li>
+                    <li class="portfolio__slide-item">Слайдеры: <span>1</span></li>
+                    <li class="portfolio__slide-item">Адаптив (хорошо смотрится на экранах любых размеров)</li>
+                    <li class="portfolio__slide-item">Валидный код</li>
+                </ul>
+
+                <div class="portfolio__slide-date">Дата создания: <span>декабрь 2019г.</span> </div>
+
+                <a class="nav__link  portfolio__slide-link"
+                    href="https://dzmitry-kubarski.github.io/100-days-of-code/projects/layout-11/dist/"
+                    target="_blank">Перейти на сайт</a>
+            </div> <!-- /portfolio__slide-content -->
+
+            <div class="portfolio__img-box">
+                <img class="portfolio__img" src="assets/img/portfolio/img-10.jpg" alt="">
+            </div>
+        </div> <!-- /portfolio__slide -->
+
+
+        <div class="portfolio__slide" id="website_11">
+            <div class="portfolio__slide-content">
+                <div class="portfolio__slide-title">Что было сделано:</div>
+
+                <p class="portfolio__slide-subtitle">Вёрстка (без посадки на CMS),</p>
+
+                <ul class="portfolio__slide-list">
+                    <li class="portfolio__slide-item">Страниц: <span>1</span> </li>
+                    <li class="portfolio__slide-item">Слайдеры: <span>5</span></li>
+                    <li class="portfolio__slide-item">Табы: <span>2</span></li>
+                    <li class="portfolio__slide-item">Модальные окна: <span>3</span></li>
+                    <li class="portfolio__slide-item">Адаптив (хорошо смотрится на экранах любых размеров)</li>
+                    <li class="portfolio__slide-item">Плавный скролл до секций</li>
+                    <li class="portfolio__slide-item">Валидный код</li>
+                </ul>
+
+                <div class="portfolio__slide-date">Дата создания: <span>декабрь 2019г.</span> </div>
+
+                <a class="nav__link  portfolio__slide-link"
+                    href="https://dzmitry-kubarski.github.io/100-days-of-code/projects/layout-12/dist/"
+                    target="_blank">Перейти на сайт</a>
+            </div> <!-- /portfolio__slide-content -->
+
+            <div class="portfolio__img-box">
+                <img class="portfolio__img" src="assets/img/portfolio/img-11.jpg" alt="">
+            </div>
+        </div> <!-- /portfolio__slide -->
+
+
+        <div class="portfolio__slide" id="website_12">
+            <div class="portfolio__slide-content">
+                <div class="portfolio__slide-title">Что было сделано:</div>
+
+                <p class="portfolio__slide-subtitle">Вёрстка (без посадки на CMS),</p>
+
+                <ul class="portfolio__slide-list">
+                    <li class="portfolio__slide-item">Страниц: <span>1</span> </li>
+                    <li class="portfolio__slide-item">Слайдеры: <span>4</span></li>
+                    <li class="portfolio__slide-item">Адаптив (хорошо смотрится на экранах любых размеров)</li>
+                    <li class="portfolio__slide-item">Плавный скролл до секций</li>
+                    <li class="portfolio__slide-item">Валидный код</li>
+                </ul>
+
+                <div class="portfolio__slide-date">Дата создания: <span>декабрь 2019г.</span> </div>
+
+                <a class="nav__link  portfolio__slide-link"
+                    href="https://dzmitry-kubarski.github.io/100-days-of-code/projects/layout-13/dist/"
+                    target="_blank">Перейти на сайт</a>
+            </div> <!-- /portfolio__slide-content -->
+
+            <div class="portfolio__img-box">
+                <img class="portfolio__img" src="assets/img/portfolio/img-12.jpg" alt="">
+            </div>
+        </div> <!-- /portfolio__slide -->
+
+
+        <div class="portfolio__slide" id="website_13">
+            <div class="portfolio__slide-content">
+                <div class="portfolio__slide-title">Что было сделано:</div>
+
+                <p class="portfolio__slide-subtitle">Вёрстка (без посадки на CMS),</p>
+
+                <ul class="portfolio__slide-list">
+                    <li class="portfolio__slide-item">Страниц: <span>1</span> </li>
+                    <li class="portfolio__slide-item">Табы: <span>2</span></li>
+                    <li class="portfolio__slide-item">Модальные окна: <span>2</span></li>
+                    <li class="portfolio__slide-item">Адаптив (хорошо смотрится на экранах любых размеров)</li>
+                    <li class="portfolio__slide-item">Валидный код</li>
+                </ul>
+
+                <div class="portfolio__slide-date">Дата создания: <span>январь 2020г.</span> </div>
+
+                <a class="nav__link  portfolio__slide-link"
+                    href="https://dzmitry-kubarski.github.io/100-days-of-code/projects/layout-15/dist/"
+                    target="_blank">Перейти на сайт</a>
+            </div> <!-- /portfolio__slide-content -->
+
+            <div class="portfolio__img-box">
+                <img class="portfolio__img" src="assets/img/portfolio/img-13.jpg" alt="">
+            </div>
+        </div> <!-- /portfolio__slide -->
+
+
+        <div class="portfolio__slide" id="website_14">
+            <div class="portfolio__slide-content">
+                <div class="portfolio__slide-title">Что было сделано:</div>
+
+                <p class="portfolio__slide-subtitle">Вёрстка (без посадки на CMS),</p>
+
+                <ul class="portfolio__slide-list">
+                    <li class="portfolio__slide-item">Страниц: <span>1</span> </li>
+                    <li class="portfolio__slide-item">Адаптив (хорошо смотрится на экранах любых размеров)</li>
+                    <li class="portfolio__slide-item">Валидный код</li>
+                </ul>
+
+                <div class="portfolio__slide-date">Дата создания: <span>январь 2020г.</span> </div>
+
+                <a class="nav__link  portfolio__slide-link"
+                    href="https://dzmitry-kubarski.github.io/100-days-of-code/projects/layout-14/dist/"
+                    target="_blank">Перейти на сайт</a>
+            </div> <!-- /portfolio__slide-content -->
+
+            <div class="portfolio__img-box">
+                <img class="portfolio__img" src="assets/img/portfolio/img-14.jpg" alt="">
+            </div>
+        </div> <!-- /portfolio__slide -->
+
+    </div> <!-- /portfolio__slides -->
 </div> <!-- /container -->
