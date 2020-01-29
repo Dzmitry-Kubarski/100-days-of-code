@@ -80,7 +80,8 @@
 
     @media (max-width: 820px) {
         width: 100%;
-        margin-bottom: 50px;          
+        order: 2;
+        // margin-bottom: 50px;          
     }
 }
 
@@ -151,6 +152,7 @@
 
     @media (max-width: 820px) {
         width: 100%;
+        margin-bottom: 40px;
     }
 }
 

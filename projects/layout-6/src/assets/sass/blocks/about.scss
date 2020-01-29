@@ -36,6 +36,10 @@
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 20px;
+
+    @media (max-width: 375px) {
+        font-size: 21px;    
+    }
 }
 
 .about__text {
