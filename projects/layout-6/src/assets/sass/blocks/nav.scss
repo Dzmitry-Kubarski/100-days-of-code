@@ -1,3 +1,9 @@
+.nav {
+    @media (max-width: 820px) {
+        display: none;
+    }
+}
+
 .nav__list {
     display: flex;
 }
