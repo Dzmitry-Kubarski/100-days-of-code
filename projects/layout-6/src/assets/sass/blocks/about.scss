@@ -73,7 +73,13 @@
 }
 
 .about__img {
-    width: 100%;
+    // width: 100%;
+    height: 100%;
+
+    @media (max-width: 1180px) {
+        height: auto;
+        width: 100%;
+    }
 }
 
 

@@ -6,8 +6,8 @@
 .logo__link {
     margin-right: 15px;
 
-    @media (max-width: 375px) {
-        margin-right: 5px;
+    @media (max-width: 420px) {
+        display: none;
     }
 }
 

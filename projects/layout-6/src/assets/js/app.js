@@ -31,4 +31,10 @@ $(function () {
         return false;
     });
 
+
+    // Mobail menu
+    $('.m_button').on('click', function () {
+        $('.nav').toggleClass("active");
+    });
+
 });
