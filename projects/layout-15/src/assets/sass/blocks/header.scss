@@ -10,6 +10,10 @@
     @media (max-width: 1220px) {
         justify-content: space-between;
     }
+
+    @media (max-width: 420px) {
+        flex-direction: column;
+    }
 }
 
 .header__logo {
@@ -22,6 +26,10 @@
     @media (max-width: 674px) {
         width: 20%;
     }
+
+    @media (max-width: 420px) {
+        margin-bottom: 15px;
+    }
 }
 
 .header__popupBtn {
@@ -29,8 +37,7 @@
 
     @media (max-width: 1220px) {
         margin-right: 0;
-    }
-   
+    }   
 }
 
 .header__time {
@@ -70,9 +77,16 @@
     
     @media (max-width: 1220px) {
         margin-left: 0;
+    }  
+    
+    @media (max-width: 420px) {
+        text-align: center;        
     }
+}
 
-    @media (max-width: 674px) {
-        display: none;
+.header__phone {
+
+    @media (max-width: 420px) {
+        margin-bottom: 10px;       
     }
 }

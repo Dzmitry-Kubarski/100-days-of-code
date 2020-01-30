@@ -30,7 +30,11 @@
     text-align: right;
 
     .footer__phone {
-        font-size: 18px;
+        font-size: 22px;
+
+        @media (max-width: 375px) {
+            margin-bottom: 10px;
+         }
     }
 
     @media (max-width: 620px) {
@@ -43,7 +47,11 @@
     font-size: 14px;
     line-height: 26px;
     color: $blue_color;
-    text-decoration: underline;    
+    text-decoration: underline;  
+    
+    @media (max-width: 375px) {
+        font-size: 20px;
+     }
 }
 
 .footer__phone,

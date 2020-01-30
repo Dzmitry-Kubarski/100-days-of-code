@@ -58,6 +58,15 @@ button {
     padding: 0;
 }
 
+button, a {
+    
+    @media (max-width: 520px) {
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
 body {
     font-family: $font_OpenSans;
     font-weight: 400;

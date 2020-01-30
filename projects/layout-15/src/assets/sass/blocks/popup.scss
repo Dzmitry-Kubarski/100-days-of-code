@@ -46,13 +46,29 @@
       right: 0;        
       transform-origin: top left;
       border-radius: 4px;
+
+      @media (max-width: 550px) {
+        height: 40px;
+      }
     }
   
     &::after {        
       transform: rotate(-45deg);
       top: 2px;
-      right: 36px;    
+      right: 36px;   
+      
+      @media (max-width: 550px) {
+        right: 28px;     
+      }
     }  
+
+    @media (max-width: 550px) {
+      right: 50%;
+      transform: translateX(50%);
+      top: -45px;
+      height: 30px;
+      width: 30px;      
+    }
   }
     
   .popup__close.active {
