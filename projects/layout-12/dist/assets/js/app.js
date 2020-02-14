@@ -4793,10 +4793,10 @@
                 // console.log(month);
                 // console.log(year);
                 // console.log(date);
-                document.querySelector('.js-booking-year').innerHTML = year;
-                document.querySelector('.js-booking-month').innerHTML = month;
-                document.querySelector('.js-booking-date').innerHTML = date;
-                document.querySelector('.booking__input').value = "";
+                // document.querySelector('.js-booking-year').innerHTML = year;
+                // document.querySelector('.js-booking-month').innerHTML = month;
+                // document.querySelector('.js-booking-date').innerHTML = date;
+                // document.querySelector('.booking__input').value = "";
 
 
                 // Change view if min view does not reach yet
