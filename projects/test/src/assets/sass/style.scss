@@ -4,16 +4,8 @@
 /* Variables */
 @import "vars";
 
-
-/* Grid smart-grid */
-@import "smart-grid";
-
-
 /* Normalize */
 @import "../../../../../node_modules/normalize.css/normalize";
-
-/* Animate.css */
-@import "../../../../../node_modules/animate.css/animate";
 
 
 /* Default styles */
@@ -21,15 +13,13 @@
 
 
 /* Blocks */
-@import "blocks/login";
 @import "blocks/header";
-@import "blocks/main-menu";
-@import "blocks/search";
-
-
+@import "blocks/intro";
+@import "blocks/logo";
+@import "blocks/program";
+@import "blocks/variants";
 
 
 
 
 /* Vendor libs */
-@import "vendor/slick";

@@ -1,0 +1,106 @@
+.header {
+    
+}
+
+.header__top-bg {
+    background-color: $bg_gray;
+    padding: 15px 0px;
+}
+
+.header__top {    
+    @include row-flex();
+    justify-content: space-between;
+}
+
+.header__lang {
+    @include col();
+}
+
+.header__lang-btn {
+    font-size: 15px;
+    font-weight: 500;
+    color: $color_white-Gray;
+    text-transform: uppercase;
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &.active {
+        color: $color-black;
+        font-weight: 400;
+    }
+}
+
+.header__login {
+    @include col();
+}
+
+
+.header__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 0px;
+}
+
+.header__logo {
+    margin-right: 50px;
+}
+
+.header__search {
+    margin-right: 40px;
+}
+
+.header__telephone {
+}
+
+.header__bottom-bg {
+    background-color: #3D3D3D;
+    
+}
+
+
+
+.header__bottom {
+    
+}
+
+.header__categories {
+}
+
+.header__categories-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__categories-item {
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: -20px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 100%;
+        width: 1px;
+        background-color:$color-black
+    }
+
+    &:last-child {
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.header__categories-link {
+    display: block;
+    color: $color_white;
+    padding: 18px 0px;
+}
+

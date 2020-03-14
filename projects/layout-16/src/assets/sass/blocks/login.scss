@@ -1,0 +1,36 @@
+.login {
+    display: flex;
+    align-content: start;
+}
+
+.login__link {
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    color: $color_gray;
+    border-bottom: 1px dotted $color-black;
+    padding-bottom: 2px;
+    margin-right: 15px;
+    transition: color .2s linear;
+
+    &:last-child {
+        margin-right: 0;
+    }  
+    
+    &:hover {
+        color: $color_orange;
+    }
+}
+
+.login__enter {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.login__icon {
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+}

@@ -1,0 +1,31 @@
+.search {
+    position: relative;
+    width: 100%;
+    max-width: 505px;    
+}
+
+.search__input {
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: $radius;
+    padding: 15px 40px 15px 20px;
+
+}
+
+.search__btn {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.search__icon {
+    width: 14px;
+    height: 14px;
+}

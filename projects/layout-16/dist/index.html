@@ -5,20 +5,197 @@
 
     <meta charset="UTF-8">
     
-    <!-- Useful meta tags -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic-ext"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.min.css">
     
     <title>layout-16</title>
 </head>
 
+<svg style="display: none;">
+    <symbol id="user-svg" viewBox="0 0 17 17">
+        <g>
+            <path
+                d="M14.4152 10.6639C13.6199 9.85932 12.7251 9.25588 11.6316 8.85359C12.7251 7.94843 13.3216 6.43983 13.3216 5.03181C13.3216 2.21577 11.0351 0.00316134 8.35088 0.00316134C5.76608 -0.0974117 3.57895 2.21577 3.57895 4.93124C3.57895 6.33926 4.17544 7.84786 5.26901 8.75301C4.27485 9.15531 3.38012 9.75874 2.48538 10.5633C0.994152 12.1725 0 14.2845 0 16.5977V17H1.78947V16.6983C1.78947 12.9771 4.77193 9.95989 8.45029 9.95989C12.1287 9.95989 15.1111 12.9771 15.1111 16.6983V17H17V16.6983C16.9006 14.2845 16.0058 12.2731 14.4152 10.6639ZM8.54971 1.7129C10.2398 1.7129 11.731 3.12092 11.731 4.93124C11.731 6.74155 10.3392 8.14958 8.54971 8.14958C6.76023 8.14958 5.26901 6.74155 5.26901 4.93124C5.26901 3.12092 6.76023 1.7129 8.54971 1.7129Z"
+                fill="#767676" />
+        </g>
+    </symbol>
+
+    <symbol id="search-svg" viewBox="0 0 14 14" fill="none">
+        <g>
+            <path
+                d="M13.7805 12.74L10.3528 9.24C11.2622 8.19 11.7519 6.93 11.7519 5.6C11.6819 2.52 9.09371 0 5.87593 0C2.65816 0 0 2.52 0 5.67C0 8.82 2.65816 11.34 5.87593 11.34C7.06511 11.34 8.25429 10.99 9.23361 10.29L12.7312 13.79C12.8711 13.93 13.0809 14 13.2908 14C13.5007 14 13.7105 13.93 13.8504 13.79C14.0603 13.51 14.0603 13.02 13.7805 12.74ZM5.87593 1.47C8.25429 1.47 10.2129 3.36 10.2129 5.67C10.2129 7.98 8.25429 9.87 5.87593 9.87C3.49758 9.87 1.53893 7.98 1.53893 5.67C1.53893 3.36 3.49758 1.47 5.87593 1.47Z"
+                fill="#767676" />
+        </g>
+    </symbol>
+</svg>
 <body>
+
+    <div class="degubGrid">
+        <div>
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
 
 
     <header class="header">
-        <!-- <h1>header</h1> -->
+        <div class="header__top-bg">
+            <div class="container">
+                <div class="header__top">
+                    <nav class="main-menu">
+                        <ul class="main-menu__list">
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Главная</a>
+                            </li>
+    
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Доставка и оплата</a>
+                            </li>
+    
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Гарантия и возврат</a>
+                            </li>
+    
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Контакты</a>
+                            </li>
+    
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Акции</a>
+                            </li>
+    
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Новости</a>
+                            </li>
+    
+                            <li class="main-menu__item">
+                                <a class="main-menu__link" href="#">Блог</a>
+                            </li>
+                        </ul>
+                    </nav>
+    
+                    <div class="header__lang">
+                        <button class="header__lang-btn  active" type="button">RU</button>
+                        <button class="header__lang-btn" type="button">UA</button>
+                    </div>
+    
+                    <div class="login  header__login">
+                        <div class="login__enter">
+                            <svg class="login__icon">
+                                <use xlink:href=#user-svg></use>
+                            </svg>
+                            <a class="login__link" href="#">Вход</a>
+                        </div>
+    
+                        <a class="login__link" href="#">Регистрация</a>
+                    </div>
+    
+                </div> <!-- /header__top -->
+            </div> <!-- /container -->
+        </div> <!-- /header__top-bg -->
+    
+    
+        <div class="container">
+            <div class="header__body">
+                <div class="logo  header__logo">
+                    <img src="assets/img/logo.png" alt="Логотип компании">
+                </div>
+    
+                <div class="search  header__search">
+                    <input class="search__input" type="search" placeholder="Поиск по названию, коду, категории">
+                    <button class="search__btn" type="button">
+                        <svg class="search__icon">
+                            <use xlink:href=#search-svg></use>
+                        </svg>
+                    </button>
+                </div>
+    
+                <div class="header__telephone">
+                    <select name="" id="">
+                        <option value="">
+                            <a href="tel:0954017933">(095) 505-55-55</a>
+                        </option>
+                        <option value="">
+                            <a href="tel:0954017933">(095) 606-66-66</a>
+                        </option>
+                    </select>
+    
+                    <a href="#">Заказать звонок</a>
+                </div>
+    
+                <div class="userControl">
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <div>
+                        <img src="" alt="">
+                        <span>2</span>
+                    </div>
+                </div>
+            </div> <!-- /header__body -->
+        </div> <!-- /container -->
+    
+    
+        <div class="header__bottom-bg">
+            <div class="container">
+                <div class="header__bottom">
+    
+                    <nav class="header__categories">
+                        <ul class="header__categories-list">
+                            <li class="header__categories-item">
+                                <a class="header__categories-link" href="#">Автосигнализации</a>
+                            </li>
+    
+                            <li class="header__categories-item">
+                                <a class="header__categories-link" href="#">Автоэлектроника</a>
+                            </li>
+    
+                            <li class="header__categories-item">
+                                <a class="header__categories-link" href="#">Оборудование и инструмент</a>
+                            </li>
+    
+                            <li class="header__categories-item">
+                                <a class="header__categories-link" href="#">Автоэкстерьер и интерьер</a>
+                            </li>
+    
+                            <li class="header__categories-item">
+                                <a class="header__categories-link" href="#">Автохимия и косметика</a>
+                            </li>
+                        </ul>
+                    </nav>
+    
+                </div> <!-- /header__bottom -->
+            </div> <!-- /container -->
+        </div> <!-- /header__bottom-bg -->
+    
     </header>
 
     
