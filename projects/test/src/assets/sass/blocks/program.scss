@@ -5,6 +5,8 @@
 .program__inner {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
     margin-left: -15px;
     margin-right: -15px;
 }
@@ -21,6 +23,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 612px;
 
     width: calc(33.33333% - 30px);
     position: relative;
@@ -34,6 +37,10 @@
 
     &--w50 {
         width: calc(50% - 30px);
+    }
+
+    @media (max-width: 992px) {
+        width: 100%;
     }
 }
 
@@ -62,6 +69,22 @@
         color: #fff;
         margin-bottom: 30px;
     }  
+
+    &--new {
+        display: none;
+
+        p {
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &.active {
+            display: block;
+        }
+    }
 }
 
 .program__name {
@@ -119,6 +142,8 @@
         color: #fff;
         background-color: #069cfa;
     }
+
+    
 }
 
 .program__date {

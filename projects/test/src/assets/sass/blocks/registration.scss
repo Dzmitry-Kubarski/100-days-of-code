@@ -1,0 +1,125 @@
+.registration {
+    padding: 50px 0px;
+}
+
+.registration__inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.registration__title {
+    color: #fff;
+    line-height: 1;
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    span {
+        display: block;
+        color: yellow;
+    }
+}
+
+.registration__content {
+    width: 50%;
+    color: #fff;
+    border-right: 2px solid #656565;
+    padding: 20px 20px 50px 0;
+
+    @media (max-width: 992px) {
+        width: 100%;
+        border-right: none;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.registration__subtitle {
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 30px;
+
+    span {
+        display: block;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1;
+        text-transform: lowercase;
+        margin-top: 5px;
+    }
+}
+
+.registration__row {
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.registration__price {
+    font-size: 17px;
+    line-height: 1;    
+
+    strong {
+        font-size: 33px;
+        font-weight: 700;
+        color: #fff700;
+
+        i {
+            font-size: 21px;
+        }
+    }
+
+    &--freezing {
+        margin-top: 10px;
+    }
+}
+
+.registration__form-box {
+    width: 50%;
+    padding-left: 30px;
+
+    @media (max-width: 992px) {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+.registration__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;   
+}
+
+.registration__input-group {
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 0;
+        color: red;
+    }
+
+    label {
+        display: block;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 5px;
+
+    }
+
+    input {
+        width: 100%;  
+        color: #242424;
+        background: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 12px 10px;         
+    }
+}
+
+.registration__btn-wrap {
+    margin-top: 10px;
+}
