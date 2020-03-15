@@ -462,6 +462,37 @@ body {
     align-items: center;
 }
 
+@media (max-width: 992px) {
+    .header__inner {
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+    }
+}
+
+.header__menu-btn {
+    color: #fff;
+    display: none;
+}
+
+.header__menu-btn i {
+    font-size: 37px;
+    padding: 4px 6px;
+    cursor: pointer;
+    width: 41px;
+}
+
+@media (max-width: 992px) {
+    .header__menu-btn {
+        display: block;
+    }
+}
+
+@media (max-width: 992px) {
+    .header__menu {
+        display: none;
+    }
+}
+
 .header__menu-list {
     display: -webkit-box;
     display: flex;
@@ -508,6 +539,12 @@ body {
     padding: 10px;
     font-size: 21px;
     box-shadow: 0px 0px 60px -3px rgba(144, 138, 138, 0.82);
+}
+
+@media (max-width: 992px) {
+    .header__callback {
+        margin-left: 0;
+    }
 }
 
 @-webkit-keyframes glowing {
@@ -584,7 +621,7 @@ body {
         display: block;
         position: absolute;
         background-image: url(../img/header/users-2.png);
-        top: 40px;
+        top: 55px;
         left: auto;
         right: 5px;
         max-width: 207px;
@@ -621,6 +658,24 @@ body {
 @media (max-width: 992px) {
     .intro__content {
         width: 100%;
+        margin-top: 35px;
+    }
+}
+
+.intro__icon {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .intro__icon {
+        display: block;
+        width: 100%;
+        font-size: 50px;
+        position: relative;
+        color: #fff700;
+        text-align: center;
+        -webkit-animation: utp-dop 1.35s infinite cubic-bezier(0.66, 0, 0, 1);
+        animation: utp-dop 1.35s infinite cubic-bezier(0.66, 0, 0, 1);
     }
 }
 
@@ -698,7 +753,7 @@ body {
 @media (max-width: 992px) {
     .intro__form-box {
         width: 100%;
-        margin-top: 140px;
+        margin-top: 40px;
     }
 }
 
@@ -748,6 +803,11 @@ body {
 .intro__form input::placeholder {
     font-size: inherit;
     color: inherit;
+}
+
+.intro__form input:focus {
+    background-color: #fff;
+    color: #000000;
 }
 
 .intro__form-title {
@@ -1011,6 +1071,12 @@ body {
 
 .logo {
     margin-right: 20px;
+}
+
+@media (max-width: 992px) {
+    .logo a div {
+        font-size: 25px;
+    }
 }
 
 .logo__left {
@@ -1526,6 +1592,7 @@ body {
 .about__video iframe {
     width: 100%;
     min-height: 315px;
+    border: 0;
 }
 
 @media (max-width: 780px) {
@@ -2249,6 +2316,7 @@ body {
 }
 
 .popup__content {
+    background-color: #fff;
     padding: 20px 60px 60px;
     color: #242424;
 }

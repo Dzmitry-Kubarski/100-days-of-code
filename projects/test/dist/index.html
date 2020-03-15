@@ -4,11 +4,11 @@
 <head>
 
     <meta charset="UTF-8">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
-    
-    
+
+
     <!-- Useful meta tags -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +18,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    
+
     <title>layout-14</title>
 </head>
 
@@ -26,41 +26,45 @@
 
 
     <header class="header">
-    
+
         <div class="container">
             <div class="header__inner">
+                <div class="header__menu-btn">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+
                 <div class="logo  header__logo">
                     <a href="#">
                         <div class="logo__left">HI</div>
                         <div class="logo__right">OHI-S</div>
                     </a>
                 </div>
-    
+
                 <nav class="header__menu">
                     <ul class="header__menu-list">
                         <li class="header__menu-item">
                             <a class="header__menu-link" href="#">Лекторы и программа</a>
                         </li>
-    
+
                         <li class="header__menu-item">
                             <a class="header__menu-link" href="#">Регистрация</a>
                         </li>
                     </ul>
                 </nav>
-    
+
                 <button class="header__callback">
                     <i class="fa fa-phone" aria-hidden="true"></i>
                 </button>
             </div> <!-- /header__inner -->
         </div> <!-- /container -->
-    
+
     </header>
 
-    
+
     <section class="intro">
-    
+
         <div class="container">
-    
+
             <div class="intro__inner">
                 <div class="intro__content">
                     <div class="intro__label">
@@ -70,23 +74,29 @@
                         </div>
                         <div class="intro__label-right">8</div>
                     </div>
-    
+
                     <div class="intro__date">30-31 Марта, 2020</div>
-    
+
                     <h1 class="intro__title">ЭСТЕТИЧЕСКАЯ<br>СТОМАТОЛОГИЯ</h1>
                 </div>
-    
+
+
+                <div class="intro__icon">
+                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                </div>
+
+
                 <div class="intro__form-box">
                     <div class="intro__form-title">
                         <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
                         <p>Получите<br>программу онлайн цикла</p>
                     </div>
-    
+
                     <form class="intro__form" action="#">
                         <input type="text" placeholder="Фамилия Имя Отчество">
                         <input type="email" placeholder="Ваш основной E-mail">
                         <input type="tel" placeholder="+7 495 1234567">
-    
+
                         <button class="variants__card-btn  intro__form-btn" type="button">Получить программу</button>
                     </form>
                 </div>
@@ -94,24 +104,25 @@
         </div> <!-- /container -->
     </section> <!-- /intro -->
     <!-- section - program -->
-    
+
     <section class="program">
-    
+
         <div class="container">
             <h2 class="program__title">Программа онлайн цикла</h2>
-    
+
             <div class="program__inner">
-    
+
                 <div class="program__card">
                     <div>
                         <h3 class="program__name">Masahiro Kuwata</h3>
                         <div class="program__photo">
-                            <img src="https://ohi-s.com/wp-content/uploads/2019/09/Masahiro-KuwataM.png">
+                            <img src="https://ohi-s.com/wp-content/uploads/2019/09/Masahiro-KuwataM.png"
+                                alt="Фото лектора">
                         </div>
-    
+
                         <div class="program__box">
                             <span class="program__subtitle">— ДАТА И ВРЕМЯ</span>
-    
+
                             <div class="program__date">
                                 <p>30 марта 2020</p>
                                 <div>
@@ -124,7 +135,7 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="program__box">
                             <span class="program__subtitle">— ТЕМА</span>
                             <p class="program__text  program__text--theme">Функционально-разобщающаяся окклюзия
@@ -133,16 +144,17 @@
                             </p>
                         </div>
                     </div>
-    
+
                     <div>
                         <div class="program__box  program__box--lecturer">
                             <span class="program__subtitle">— О ЛЕКТОРЕ</span>
-    
+
                             <p class="program__text">Президент Колледжа стоматологических технологий (Токио)</p>
-                            <p class="program__text">Приглашенный профессор Бостонского Университета, Школы стоматологии им.
+                            <p class="program__text">Приглашенный профессор Бостонского Университета, Школы стоматологии
+                                им.
                                 Голдмана
                             </p>
-    
+
                             <div class="program__text--new" id="program-1">
                                 <p>Президент Колледжа стоматологических технологий (Токио)</p>
                                 <p>Приглашенный профессор Бостонского Университета, Школы стоматологии им. Голдмана</p>
@@ -155,25 +167,27 @@
                                 <p>Член Международного сообщества эстетической стоматологии</p>
                                 <p>Почетный член Европейской академии эстетической стоматологии</p>
                             </div>
-    
-                            <button class="program__show-text" type="button" data-id="program-1">показать больше...</button>
+
+                            <button class="program__show-text" type="button" data-id="program-1">показать
+                                больше...</button>
                         </div>
-    
+
                         <a class="program__card-btn" data-id="Masahiro-Kuwata">Программа</a>
                     </div>
                 </div> <!-- /program__card -->
-    
+
                 <div class="program__card">
                     <div>
                         <h3 class="program__name">Ronaldo Hirata</h3>
-    
+
                         <div class="program__photo">
-                            <img src="https://ohi-s.com/wp-content/uploads/2019/09/Master_ronaldoM.png">
+                            <img src="https://ohi-s.com/wp-content/uploads/2019/09/Master_ronaldoM.png"
+                                alt="Фото лектора">
                         </div>
-    
+
                         <div class="program__box">
                             <span class="program__subtitle">— ДАТА И ВРЕМЯ</span>
-    
+
                             <div class="program__date">
                                 <p>30 марта 2020</p>
                                 <div>
@@ -186,59 +200,66 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="program__box">
                             <span class="program__subtitle">— ТЕМА</span>
                             <p class="program__text  program__text--theme">Композит: концепции, техники и лайфхаки</p>
                         </div>
                     </div>
-    
+
                     <div>
                         <div class="program__box  program__box--lecturer">
                             <span class="program__subtitle">— О ЛЕКТОРЕ</span>
-    
+
                             <!-- <p class="program__text">Президент Колледжа стоматологических технологий (Токио)</p> -->
-                            <p class="program__text">Доцент кафедры биоматериалов и биомиметики в Нью-Йоркском университете
+                            <p class="program__text">Доцент кафедры биоматериалов и биомиметики в Нью-Йоркском
+                                университете
                                 (NYU), занимающейся
                                 исследованиями в области имплантологии и реставрационных биоматериалов.
                             </p>
-    
+
                             <div class="program__text--new" id="program-2">
                                 <p>Имеет частную практику в Куритибе, Бразилия, работает в области эстетической
                                     стоматологии.</p>
                                 <p>Является координатором нескольких программ последипломного образования в области
-                                    эстетической и реставрационной стоматологии в Бразилии, читает лекции по эстетической
+                                    эстетической и реставрационной стоматологии в Бразилии, читает лекции по
+                                    эстетической
                                     стоматологии во многих странах мира.
                                 </p>
                                 <p>В 1995 году он окончил стоматологический факультет в Федеральном университете штата
                                     Парана, Бразилия, в 2002 году получил степень магистра биоматериалов в Католическом
-                                    университете Риу-Гранди-ду-Сул / Бразилия, а в 2009 году - докторскую степень в области
+                                    университете Риу-Гранди-ду-Сул / Бразилия, а в 2009 году - докторскую степень в
+                                    области
                                     реставрационной стоматологии в государственном университете Рио-де-Жанейро.
                                 </p>
-                                <p>Написал две книги: ““TIPS in esthetic dentistry”, переведенную на три языка (2011 год),
-                                    “SHORTCUTS in Esthetic Dentistry” (издательство Квинтэссенция), также переведенную на
+                                <p>Написал две книги: ““TIPS in esthetic dentistry”, переведенную на три языка (2011
+                                    год),
+                                    “SHORTCUTS in Esthetic Dentistry” (издательство Квинтэссенция), также переведенную
+                                    на
                                     три языка.
                                 </p>
                             </div>
-    
-                            <button class="program__show-text" type="button" data-id="program-2">показать больше...</button>
+
+                            <button class="program__show-text" type="button" data-id="program-2">показать
+                                больше...</button>
                         </div>
-    
+
                         <a class="program__card-btn" data-id="Ronaldo-Hirata">Программа</a>
                     </div>
                 </div> <!-- /program__card -->
-    
+
                 <div class="program__card">
                     <div>
                         <h3 class="program__name">Massao Yamazaki</h3>
-    
+
                         <div class="program__photo">
-                            <img src="https://ohi-s.com/wp-content/uploads/2019/09/Masao_Yamazakim.png">
+                            <img src="https://ohi-s.com/wp-content/uploads/2019/09/Masao_Yamazakim.png"
+                                alt="Фото лектора">
                         </div>
-    
+
                         <div class="program__box">
                             <span class="program__subtitle">— ДАТА И ВРЕМЯ</span>
-    
+
                             <div class="program__date">
                                 <p>31 марта 2020</p>
                                 <div>
@@ -247,7 +268,7 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="program__box">
                             <span class="program__subtitle">— ТЕМА</span>
                             <p class="program__text  program__text--theme">Способы достижения долгосрочных результатов.
@@ -255,43 +276,47 @@
                                 реставраций в цифровой стоматологии</p>
                         </div>
                     </div>
-    
-    
+
+
                     <div>
                         <div class="program__box  program__box--lecturer">
                             <span class="program__subtitle">— О ЛЕКТОРЕ</span>
-    
-                            <p class="program__text">Мировой эксперт в вопросах комплексной ортопедической реабилитации и
+
+                            <p class="program__text">Мировой эксперт в вопросах комплексной ортопедической реабилитации
+                                и
                                 микроскопной ортопедии.</p>
                             <p class="program__text">Одним из первых в мире начал применять микроскоп в ортопедической
                                 практике.
                             </p>
-    
+
                             <div class="program__text--new" id="program-3">
                                 <p>Ведет частную практику в Токио, Япония. Является основателем и директором общества
                                     клинической стоматологии Японии.
                                 </p>
-                                <p>Автор книги «Эстетически-восстановительное лечение: управление комплексным протезом».</p>
+                                <p>Автор книги «Эстетически-восстановительное лечение: управление комплексным протезом».
+                                </p>
                             </div>
-    
-                            <button class="program__show-text" type="button" data-id="program-3">показать больше...</button>
+
+                            <button class="program__show-text" type="button" data-id="program-3">показать
+                                больше...</button>
                         </div>
-    
+
                         <a class="program__card-btn" data-id="Massao-Yamazaki">Программа</a>
                     </div>
                 </div> <!-- /program__card -->
-    
+
                 <div class="program__card  program__card--w50">
                     <div>
                         <h3 class="program__name">Nasser Shademan</h3>
-    
+
                         <div class="program__photo">
-                            <img src="https://ohi-s.com/wp-content/uploads/2019/09/Nasser_ShademanM.png">
+                            <img src="https://ohi-s.com/wp-content/uploads/2019/09/Nasser_ShademanM.png"
+                                alt="Фото лектора">
                         </div>
-    
+
                         <div class="program__box">
                             <span class="program__subtitle">— ДАТА И ВРЕМЯ</span>
-    
+
                             <div class="program__date">
                                 <p>31 марта 2020,</p>
                                 <div>
@@ -299,43 +324,51 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="program__box">
                             <span class="program__subtitle">— ТЕМА</span>
-                            <p class="program__text  program__text--theme">Ультраэстетическая стоматология, смена парадигм в
+                            <p class="program__text  program__text--theme">Ультраэстетическая стоматология, смена
+                                парадигм в
                                 дизайне, коммуникации и создание натуральной эстетики</p>
                         </div>
                     </div>
-    
-    
+
+
                     <div>
                         <div class="program__box  program__box--lecturer">
                             <span class="program__subtitle">— О ЛЕКТОРЕ</span>
-    
+
                             <p class="program__text">Приглашенный профессор Университета Гёте (Франкфурт).</p>
                             <p class="program__text">Основатель Микроэстетической стоматологии.</p>
-    
+
                             <div class="program__text--new" id="program-4">
                                 <p>Создатель “Дизайна улыбки за 20 минут”. Является всемирно известным
                                     стоматологом-технологом и профессиональным художником с выдающимися знаниями и
-                                    техническими навыками в области эстетической стоматологии и микродентальных технологий.
+                                    техническими навыками в области эстетической стоматологии и микродентальных
+                                    технологий.
                                 </p>
                                 <p>Концепция микроэстетики посвящена естественной эстетической стоматологии, в котором
                                     особое внимание уделяется микроскопически детализированной трехмерной эстетике в
-                                    гармонии с формами лица, цветом кожи, полом и индивидуальностью. Его технические знания
+                                    гармонии с формами лица, цветом кожи, полом и индивидуальностью. Его технические
+                                    знания
                                     в различных механизмах реставрации в сочетании с его навыками в искусстве, включая
-                                    скульптуру и живопись, позволяют ему визуализировать и проектировать лучшие реставрации,
+                                    скульптуру и живопись, позволяют ему визуализировать и проектировать лучшие
+                                    реставрации,
                                     которые очаровывают пациентов с высокими требованиями. Доктор понимает сложность
                                     создания улыбок для каждого пациента и в последние годы разработал революционную
                                     концепцию «20-минутного эстетического дизайна улыбки», которая считается эффективным
                                     средством коммуникации, особенно для высококлассной эстетической стоматологии по
-                                    индивидуальному заказу. Он регулярно сотрудничает со стоматологами-ортопедами в разных
+                                    индивидуальному заказу. Он регулярно сотрудничает со стоматологами-ортопедами в
+                                    разных
                                     частях мира, включая США, Германию, Швейцарию и Азию.
                                 </p>
                                 <p>Является международным спикером и педагогом, проводит практические курсы по различным
-                                    аспектам естественного эстетического и микроскопического стоматологического искусства
-                                    для стоматологов, а также стоматологов-технологов на международном уровне, в то время
-                                    как его статьи по эстетической стоматологии публикуются в стоматологических журналах по
+                                    аспектам естественного эстетического и микроскопического стоматологического
+                                    искусства
+                                    для стоматологов, а также стоматологов-технологов на международном уровне, в то
+                                    время
+                                    как его статьи по эстетической стоматологии публикуются в стоматологических журналах
+                                    по
                                     всей Азии, Австралии, Европе.
                                 </p>
                                 <p>Является управляющим директором компании ORAL MAX, которая считается одной из самых
@@ -343,25 +376,27 @@
                                     специализируется на эстетической реставрационной работе высочайшего качества.
                                 </p>
                             </div>
-    
-                            <button class="program__show-text" type="button" data-id="program-4">показать больше...</button>
+
+                            <button class="program__show-text" type="button" data-id="program-4">показать
+                                больше...</button>
                         </div>
-    
+
                         <a class="program__card-btn" data-id="Nasser-Shademan">Программа</a>
                     </div>
                 </div> <!-- /program__card--w50 -->
-    
+
                 <div class="program__card  program__card--w50">
                     <div>
                         <h3 class="program__name">Mitsuhiro Tsukiboshi</h3>
-    
+
                         <div class="program__photo">
-                            <img src="https://ohi-s.com/wp-content/uploads/2019/09/Mitsuhiro_TsukiboshiM.png">
+                            <img src="https://ohi-s.com/wp-content/uploads/2019/09/Mitsuhiro_TsukiboshiM.png"
+                                alt="Фото лектора">
                         </div>
-    
+
                         <div class="program__box">
                             <span class="program__subtitle">— ДАТА И ВРЕМЯ</span>
-    
+
                             <div class="program__date">
                                 <p>31 марта 2020</p>
                                 <div>
@@ -374,68 +409,76 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="program__box">
                             <span class="program__subtitle">— ТЕМА</span>
                             <p class="program__text  program__text--theme">Эстетика зубов после травмы или
                                 аутотрансплантации</p>
                         </div>
                     </div>
-    
-    
+
+
                     <div>
                         <div class="program__box  program__box--lecturer">
                             <span class="program__subtitle">— О ЛЕКТОРЕ</span>
-    
-                            <p class="program__text">Окончил стоматологический факультет Осакского Университета в 1976.</p>
+
+                            <p class="program__text">Окончил стоматологический факультет Осакского Университета в 1976.
+                            </p>
                             <p class="program__text">Получил докторскую степень в области стоматологического
                                 материаловедения в Киотском
                                 университете в 1980 году.
                             </p>
-    
+
                             <div class="program__text--new" id="program-5">
-                                <p>Занимается частной практикой с 1981 года. Область интересов доктора: аутотрансплантация,
+                                <p>Занимается частной практикой с 1981 года. Область интересов доктора:
+                                    аутотрансплантация,
                                     дентальная травматология.
                                 </p>
-                                <p>Читал многочисленные лекции по дентальной травме и аутотрансплантации, является автором
-                                    многих статей и двух учебников, один по травме зубов (1998) и один по аутотрансплантации
+                                <p>Читал многочисленные лекции по дентальной травме и аутотрансплантации, является
+                                    автором
+                                    многих статей и двух учебников, один по травме зубов (1998) и один по
+                                    аутотрансплантации
                                     в (2000). Книги были переведены на многие языки, в том числе английский.
                                 </p>
-                                <p>Является приглашенным лектором Осакского Университета и Университета Лома Линда с 1998
+                                <p>Является приглашенным лектором Осакского Университета и Университета Лома Линда с
+                                    1998
                                     года.
                                 </p>
-                                <p>Являлся Президентом Международной Ассоциации Дентальной Травматологии (2009 и 2010 гг.).
+                                <p>Являлся Президентом Международной Ассоциации Дентальной Травматологии (2009 и 2010
+                                    гг.).
                                 </p>
                                 <p>Сертифицированный адъюнкт-профессор Западного университета в США в 2012 году и
                                     клинический профессор стоматологической школы Университета Тохоку в 2015-2018 гг.
                                 </p>
                             </div>
-    
-                            <button class="program__show-text" type="button" data-id="program-5">показать больше...</button>
+
+                            <button class="program__show-text" type="button" data-id="program-5">показать
+                                больше...</button>
                         </div>
-    
+
                         <a class="program__card-btn" data-id="Mitsuhiro-Tsukiboshi">Программа</a>
                     </div>
                 </div> <!-- /program__card--w50 -->
-    
+
             </div> <!-- /program__inner -->
-    
+
             <div class="program__accept">
                 <a class="program__accept-btn" href="#registration">Принять участие</a>
             </div>
-    
-    
+
+
             <div class="popup__wrap">
                 <div class="popup__overlay"></div>
-    
+
                 <div class="popup" id="Masahiro-Kuwata">
-    
+
                     <div class="popup__container">
                         <div class="popup__lecturer">
                             <button class="popup__close">×</button>
-    
+
                             <div class="popup__lecturer-img">
-                                <img src="https://ohi-s.com/wp-content/uploads/2019/09/Masahiro-KuwataM.png">
+                                <img src="https://ohi-s.com/wp-content/uploads/2019/09/Masahiro-KuwataM.png"
+                                    alt="Фото лектора">
                             </div>
                             <div class="popup__lecturer-info">
                                 <h2 class="popup__lecturer-name">Masahiro <br> Kuwata</h2>
@@ -445,35 +488,37 @@
                                 <p class="popup__lecturer-descr">
                                     - Приглашенный профессор Бостонского Университета, Школы стоматологии им. Голдмана
                                 </p>
-    
+
                                 <button class="popup__lecturer-btn">Принять участие
                                     <i class="fa fa-hand-pointer-o ikon-phne-push" aria-hidden="true"></i>
                                 </button>
-    
+
                                 <div class="popup__form-box">
                                     <form class="popup__form" action="#">
                                         <input type="text" placeholder="Фамилия Имя Отчество">
                                         <input type="email" placeholder="Ваш основной E-mail">
-                                        <input type="tel" placeholder="+7 499 703 22 59"">
+                                        <input type="tel" placeholder="+7 499 703 22 59">
                                         <button class=" popup__form-btn" type="submit">Отправить</button>
                                     </form>
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="popup__content">
                             <div class="popup__content-title">
                                 Функционально-разобщающаяся окклюзия (FDO-concept) в эстетической реставрации
                             </div>
-    
+
                             <ul class="popup__content-list">
-                                <li> - Реставрация в соответствии с природой: форма зуба и зубного ряда в целом, конечный
+                                <li> - Реставрация в соответствии с природой: форма зуба и зубного ряда в целом,
+                                    конечный
                                     эстетический результат
                                 </li>
                                 <li> - Биологическая, функциональная и анатомическая оценка реставрации </li>
                                 <li> - CAD CAM - технологии </li>
                                 <li> - Дизайн будущей реставрации с использованием концепции 3-х плоскостей </li>
-                                <li> - Препарирование твердых тканей зуба в соответствии с концепцией 3-х плоскостей </li>
+                                <li> - Препарирование твердых тканей зуба в соответствии с концепцией 3-х плоскостей
+                                </li>
                                 <li> - Контур зуба </li>
                                 <li> - Десневой контур </li>
                                 <li> - Дизайн десневого контура при реставрации металлокерамическими и циркониевыми
@@ -482,27 +527,31 @@
                                 <li> - Керамическая реставрация/Десневой контур </li>
                                 <li> - Техника анатомического затенения для керамических коронок </li>
                             </ul>
-    
-    
+
+
                             <p>В ходе лекции будут разбираться следующие принципы окклюзии (FDO-concept):</p>
-    
+
                             <ul class="popup__content-list  popup__content-list--concept">
                                 <li>Функционально-разобщающаяся окклюзия </li>
                                 <li>Вершина бугра не должна отклоняться от линии и плоскости окклюзии.</li>
-                                <li>В центральном соотношении максимально возможное количество зубов контактируют так, что
+                                <li>В центральном соотношении максимально возможное количество зубов контактируют так,
+                                    что
                                     жевательная нагрузка может быть равномерно распределена на все вовлеченные зубы.
                                 </li>
                                 <li>Статическая координация в центральном соотношении</li>
                                 <li>Статическая координация в центральной окклюзии</li>
                                 <li>Контакт боковых зубов в ЦС - контакты ямок боковых зубов</li>
-                                <li>Как в покое, так и при функционировании, окклюзионная нагрузка должна быть направлена
-                                    вдоль длинных осей зубов настолько, насколько это возможно, чтобы избежать чрезмерных
+                                <li>Как в покое, так и при функционировании, окклюзионная нагрузка должна быть
+                                    направлена
+                                    вдоль длинных осей зубов настолько, насколько это возможно, чтобы избежать
+                                    чрезмерных
                                     боковых напряжений
                                 </li>
                                 <li>Во время протрузии, передние зубы контактируют, боковые - никогда не должны
                                     контактировать
                                 </li>
-                                <li>Во время протрузии режущий край резцов нижней челюсти должен равномерно контактировать с
+                                <li>Во время протрузии режущий край резцов нижней челюсти должен равномерно
+                                    контактировать с
                                     краевыми гребнями резцов верхней челюсти
                                 </li>
                                 <li>Во время боковых движений максимальное количество зубов должно обеспечивать
@@ -517,60 +566,71 @@
                                 </li>
                                 <li>2-й и 3-й моляр не контактируют во время процесса жевания</li>
                             </ul>
-    
+
                             <p>
                                 Достижение технического совершенства, которое удовлетворяет самые высокие эстетические
-                                требования, все же представляет собой проблему с точки зрения биосовместимости, если речь
-                                идет о работе с искусственными коронками и мостовидными протезами. Данная лекция предложит
+                                требования, все же представляет собой проблему с точки зрения биосовместимости, если
+                                речь
+                                идет о работе с искусственными коронками и мостовидными протезами. Данная лекция
+                                предложит
                                 новые концепции, воплощающие простые формулы, благодаря которым может быть достигнута
                                 идеальная коммуникация между стоматологом, зубным техником и пациентом.
                             </p>
-    
+
                             <p>
-                                Планирование проведения полной реабилитации полости рта взрослого пациента включает в себя
-                                ортодонтическое лечение, имплантацию, использование металлокерамических, цельнокерамических
+                                Планирование проведения полной реабилитации полости рта взрослого пациента включает в
+                                себя
+                                ортодонтическое лечение, имплантацию, использование металлокерамических,
+                                цельнокерамических
                                 коронок, а также коронок из диоксида циркония.
                             </p>
-    
+
                             <p>
                                 На сегодняшний день в реставрационной стоматологии существует множество возможностей для
                                 улучшения эстетики передних и боковых зубов.
                             </p>
-    
+
                             <p>
-                                В последние годы технологии реставрационной стоматологии значительно улучшились с появлением
-                                цельнокерамических коронок, протезирования на имплантах, технологии CAD CAM и других более
+                                В последние годы технологии реставрационной стоматологии значительно улучшились с
+                                появлением
+                                цельнокерамических коронок, протезирования на имплантах, технологии CAD CAM и других
+                                более
                                 сложных технологий, которые улучшили конечные результаты стоматологии.
                             </p>
-    
+
                             <p>
-                                В данной лекции как стоматологи, так и зубные техники, найдут информацию о многих аспектах
-                                реставрационной стоматологии, включая многочисленные фундаментальные методы восстановления
+                                В данной лекции как стоматологи, так и зубные техники, найдут информацию о многих
+                                аспектах
+                                реставрационной стоматологии, включая многочисленные фундаментальные методы
+                                восстановления
                                 зубов. Будут представлены диагностические рекомендации и клинические принципы, которым
                                 необходимо следовать в работе.
                             </p>
-    
+
                             <p>
                                 Металлокерамические конструкции:
                                 Спросите у Природы, что ей необходимо...
                             </p>
-    
+
                             <p>
                                 Успешное восстановление должно начинаться с точного видения формы зуба, которое должно
-                                совпадать с требованиями пациента. Таким образом, пациент, естественно, является центральным
+                                совпадать с требованиями пациента. Таким образом, пациент, естественно, является
+                                центральным
                                 звеном междисциплинарной группы, которая должна прийти к консенсусу относительно
                                 окончательного плана восстановления до начала лечения.
                             </p>
-    
-    
+
+
                             <div class="popup__content-subtitle">О лекторе</div>
-    
+
                             <ul class="popup__content-list  popup__content-list--progress">
                                 <li>Президент Зуботехнического колледжа Аиши (Токио, Япония). </li>
                                 <li>Президент колледжа Кувата (Токио).</li>
-                                <li>Приглашенный профессор Бостонского университета (Бостон, США); приглашенный профессор
+                                <li>Приглашенный профессор Бостонского университета (Бостон, США); приглашенный
+                                    профессор
                                     Тианджинского медицинского университета (Тианджин).</li>
-                                <li>Член Международного общества керамистов (с 1981 г.); действительный член Американской
+                                <li>Член Международного общества керамистов (с 1981 г.); действительный член
+                                    Американской
                                     академии эстетической стоматологии (с 1982 г.);</li>
                                 <li>Почетный член Международной коллегии стоматологов (с 1983 г.);</li>
                                 <li>Член Американского общества эстетической стоматологии (с 1985 г.);</li>
@@ -586,16 +646,17 @@
                         </div>
                     </div>
                 </div>
-    
-    
+
+
                 <div class="popup" id="Ronaldo-Hirata">
-    
+
                     <div class="popup__container">
                         <div class="popup__lecturer">
                             <button class="popup__close">×</button>
-    
+
                             <div class="popup__lecturer-img">
-                                <img src="https://ohi-s.com/wp-content/uploads/2019/09/Master_ronaldoM.png">
+                                <img src="https://ohi-s.com/wp-content/uploads/2019/09/Master_ronaldoM.png"
+                                    alt="Фото лектора">
                             </div>
                             <div class="popup__lecturer-info">
                                 <h2 class="popup__lecturer-name">Masahiro <br> Kuwata</h2>
@@ -605,35 +666,37 @@
                                 <p class="popup__lecturer-descr">
                                     - Приглашенный профессор Бостонского Университета, Школы стоматологии им. Голдмана
                                 </p>
-    
+
                                 <button class="popup__lecturer-btn">Принять участие
                                     <i class="fa fa-hand-pointer-o ikon-phne-push" aria-hidden="true"></i>
                                 </button>
-    
+
                                 <div class="popup__form-box">
                                     <form class="popup__form" action="#">
                                         <input type="text" placeholder="Фамилия Имя Отчество">
                                         <input type="email" placeholder="Ваш основной E-mail">
-                                        <input type="tel" placeholder="+7 499 703 22 59"">
+                                        <input type="tel" placeholder="+7 499 703 22 59">
                                         <button class=" popup__form-btn" type="submit">Отправить</button>
                                     </form>
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="popup__content">
                             <div class="popup__content-title">
                                 Функционально-разобщающаяся окклюзия (FDO-concept) в эстетической реставрации
                             </div>
-    
+
                             <ul class="popup__content-list">
-                                <li> - Реставрация в соответствии с природой: форма зуба и зубного ряда в целом, конечный
+                                <li> - Реставрация в соответствии с природой: форма зуба и зубного ряда в целом,
+                                    конечный
                                     эстетический результат
                                 </li>
                                 <li> - Биологическая, функциональная и анатомическая оценка реставрации </li>
                                 <li> - CAD CAM - технологии </li>
                                 <li> - Дизайн будущей реставрации с использованием концепции 3-х плоскостей </li>
-                                <li> - Препарирование твердых тканей зуба в соответствии с концепцией 3-х плоскостей </li>
+                                <li> - Препарирование твердых тканей зуба в соответствии с концепцией 3-х плоскостей
+                                </li>
                                 <li> - Контур зуба </li>
                                 <li> - Десневой контур </li>
                                 <li> - Дизайн десневого контура при реставрации металлокерамическими и циркониевыми
@@ -642,27 +705,31 @@
                                 <li> - Керамическая реставрация/Десневой контур </li>
                                 <li> - Техника анатомического затенения для керамических коронок </li>
                             </ul>
-    
-    
+
+
                             <p>В ходе лекции будут разбираться следующие принципы окклюзии (FDO-concept):</p>
-    
+
                             <ul class="popup__content-list  popup__content-list--concept">
                                 <li>Функционально-разобщающаяся окклюзия </li>
                                 <li>Вершина бугра не должна отклоняться от линии и плоскости окклюзии.</li>
-                                <li>В центральном соотношении максимально возможное количество зубов контактируют так, что
+                                <li>В центральном соотношении максимально возможное количество зубов контактируют так,
+                                    что
                                     жевательная нагрузка может быть равномерно распределена на все вовлеченные зубы.
                                 </li>
                                 <li>Статическая координация в центральном соотношении</li>
                                 <li>Статическая координация в центральной окклюзии</li>
                                 <li>Контакт боковых зубов в ЦС - контакты ямок боковых зубов</li>
-                                <li>Как в покое, так и при функционировании, окклюзионная нагрузка должна быть направлена
-                                    вдоль длинных осей зубов настолько, насколько это возможно, чтобы избежать чрезмерных
+                                <li>Как в покое, так и при функционировании, окклюзионная нагрузка должна быть
+                                    направлена
+                                    вдоль длинных осей зубов настолько, насколько это возможно, чтобы избежать
+                                    чрезмерных
                                     боковых напряжений
                                 </li>
                                 <li>Во время протрузии, передние зубы контактируют, боковые - никогда не должны
                                     контактировать
                                 </li>
-                                <li>Во время протрузии режущий край резцов нижней челюсти должен равномерно контактировать с
+                                <li>Во время протрузии режущий край резцов нижней челюсти должен равномерно
+                                    контактировать с
                                     краевыми гребнями резцов верхней челюсти
                                 </li>
                                 <li>Во время боковых движений максимальное количество зубов должно обеспечивать
@@ -677,60 +744,71 @@
                                 </li>
                                 <li>2-й и 3-й моляр не контактируют во время процесса жевания</li>
                             </ul>
-    
+
                             <p>
                                 Достижение технического совершенства, которое удовлетворяет самые высокие эстетические
-                                требования, все же представляет собой проблему с точки зрения биосовместимости, если речь
-                                идет о работе с искусственными коронками и мостовидными протезами. Данная лекция предложит
+                                требования, все же представляет собой проблему с точки зрения биосовместимости, если
+                                речь
+                                идет о работе с искусственными коронками и мостовидными протезами. Данная лекция
+                                предложит
                                 новые концепции, воплощающие простые формулы, благодаря которым может быть достигнута
                                 идеальная коммуникация между стоматологом, зубным техником и пациентом.
                             </p>
-    
+
                             <p>
-                                Планирование проведения полной реабилитации полости рта взрослого пациента включает в себя
-                                ортодонтическое лечение, имплантацию, использование металлокерамических, цельнокерамических
+                                Планирование проведения полной реабилитации полости рта взрослого пациента включает в
+                                себя
+                                ортодонтическое лечение, имплантацию, использование металлокерамических,
+                                цельнокерамических
                                 коронок, а также коронок из диоксида циркония.
                             </p>
-    
+
                             <p>
                                 На сегодняшний день в реставрационной стоматологии существует множество возможностей для
                                 улучшения эстетики передних и боковых зубов.
                             </p>
-    
+
                             <p>
-                                В последние годы технологии реставрационной стоматологии значительно улучшились с появлением
-                                цельнокерамических коронок, протезирования на имплантах, технологии CAD CAM и других более
+                                В последние годы технологии реставрационной стоматологии значительно улучшились с
+                                появлением
+                                цельнокерамических коронок, протезирования на имплантах, технологии CAD CAM и других
+                                более
                                 сложных технологий, которые улучшили конечные результаты стоматологии.
                             </p>
-    
+
                             <p>
-                                В данной лекции как стоматологи, так и зубные техники, найдут информацию о многих аспектах
-                                реставрационной стоматологии, включая многочисленные фундаментальные методы восстановления
+                                В данной лекции как стоматологи, так и зубные техники, найдут информацию о многих
+                                аспектах
+                                реставрационной стоматологии, включая многочисленные фундаментальные методы
+                                восстановления
                                 зубов. Будут представлены диагностические рекомендации и клинические принципы, которым
                                 необходимо следовать в работе.
                             </p>
-    
+
                             <p>
                                 Металлокерамические конструкции:
                                 Спросите у Природы, что ей необходимо...
                             </p>
-    
+
                             <p>
                                 Успешное восстановление должно начинаться с точного видения формы зуба, которое должно
-                                совпадать с требованиями пациента. Таким образом, пациент, естественно, является центральным
+                                совпадать с требованиями пациента. Таким образом, пациент, естественно, является
+                                центральным
                                 звеном междисциплинарной группы, которая должна прийти к консенсусу относительно
                                 окончательного плана восстановления до начала лечения.
                             </p>
-    
-    
+
+
                             <div class="popup__content-subtitle">О лекторе</div>
-    
+
                             <ul class="popup__content-list  popup__content-list--progress">
                                 <li>Президент Зуботехнического колледжа Аиши (Токио, Япония). </li>
                                 <li>Президент колледжа Кувата (Токио).</li>
-                                <li>Приглашенный профессор Бостонского университета (Бостон, США); приглашенный профессор
+                                <li>Приглашенный профессор Бостонского университета (Бостон, США); приглашенный
+                                    профессор
                                     Тианджинского медицинского университета (Тианджин).</li>
-                                <li>Член Международного общества керамистов (с 1981 г.); действительный член Американской
+                                <li>Член Международного общества керамистов (с 1981 г.); действительный член
+                                    Американской
                                     академии эстетической стоматологии (с 1982 г.);</li>
                                 <li>Почетный член Международной коллегии стоматологов (с 1983 г.);</li>
                                 <li>Член Американского общества эстетической стоматологии (с 1985 г.);</li>
@@ -746,16 +824,17 @@
                         </div>
                     </div>
                 </div>
-    
-    
+
+
                 <div class="popup" id="Massao-Yamazaki">
-    
+
                     <div class="popup__container">
                         <div class="popup__lecturer">
                             <button class="popup__close">×</button>
-    
+
                             <div class="popup__lecturer-img">
-                                <img src="https://ohi-s.com/wp-content/uploads/2019/09/Masao_Yamazakim.png">
+                                <img src="https://ohi-s.com/wp-content/uploads/2019/09/Masao_Yamazakim.png"
+                                    alt="Фото лектора">
                             </div>
                             <div class="popup__lecturer-info">
                                 <h2 class="popup__lecturer-name">Masahiro <br> Kuwata</h2>
@@ -765,35 +844,37 @@
                                 <p class="popup__lecturer-descr">
                                     - Приглашенный профессор Бостонского Университета, Школы стоматологии им. Голдмана
                                 </p>
-    
+
                                 <button class="popup__lecturer-btn">Принять участие
                                     <i class="fa fa-hand-pointer-o ikon-phne-push" aria-hidden="true"></i>
                                 </button>
-    
+
                                 <div class="popup__form-box">
                                     <form class="popup__form" action="#">
                                         <input type="text" placeholder="Фамилия Имя Отчество">
                                         <input type="email" placeholder="Ваш основной E-mail">
-                                        <input type="tel" placeholder="+7 499 703 22 59"">
+                                        <input type="tel" placeholder="+7 499 703 22 59">
                                         <button class=" popup__form-btn" type="submit">Отправить</button>
                                     </form>
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="popup__content">
                             <div class="popup__content-title">
                                 Функционально-разобщающаяся окклюзия (FDO-concept) в эстетической реставрации
                             </div>
-    
+
                             <ul class="popup__content-list">
-                                <li> - Реставрация в соответствии с природой: форма зуба и зубного ряда в целом, конечный
+                                <li> - Реставрация в соответствии с природой: форма зуба и зубного ряда в целом,
+                                    конечный
                                     эстетический результат
                                 </li>
                                 <li> - Биологическая, функциональная и анатомическая оценка реставрации </li>
                                 <li> - CAD CAM - технологии </li>
                                 <li> - Дизайн будущей реставрации с использованием концепции 3-х плоскостей </li>
-                                <li> - Препарирование твердых тканей зуба в соответствии с концепцией 3-х плоскостей </li>
+                                <li> - Препарирование твердых тканей зуба в соответствии с концепцией 3-х плоскостей
+                                </li>
                                 <li> - Контур зуба </li>
                                 <li> - Десневой контур </li>
                                 <li> - Дизайн десневого контура при реставрации металлокерамическими и циркониевыми
@@ -802,27 +883,31 @@
                                 <li> - Керамическая реставрация/Десневой контур </li>
                                 <li> - Техника анатомического затенения для керамических коронок </li>
                             </ul>
-    
-    
+
+
                             <p>В ходе лекции будут разбираться следующие принципы окклюзии (FDO-concept):</p>
-    
+
                             <ul class="popup__content-list  popup__content-list--concept">
                                 <li>Функционально-разобщающаяся окклюзия </li>
                                 <li>Вершина бугра не должна отклоняться от линии и плоскости окклюзии.</li>
-                                <li>В центральном соотношении максимально возможное количество зубов контактируют так, что
+                                <li>В центральном соотношении максимально возможное количество зубов контактируют так,
+                                    что
                                     жевательная нагрузка может быть равномерно распределена на все вовлеченные зубы.
                                 </li>
                                 <li>Статическая координация в центральном соотношении</li>
                                 <li>Статическая координация в центральной окклюзии</li>
                                 <li>Контакт боковых зубов в ЦС - контакты ямок боковых зубов</li>
-                                <li>Как в покое, так и при функционировании, окклюзионная нагрузка должна быть направлена
-                                    вдоль длинных осей зубов настолько, насколько это возможно, чтобы избежать чрезмерных
+                                <li>Как в покое, так и при функционировании, окклюзионная нагрузка должна быть
+                                    направлена
+                                    вдоль длинных осей зубов настолько, насколько это возможно, чтобы избежать
+                                    чрезмерных
                                     боковых напряжений
                                 </li>
                                 <li>Во время протрузии, передние зубы контактируют, боковые - никогда не должны
                                     контактировать
                                 </li>
-                                <li>Во время протрузии режущий край резцов нижней челюсти должен равномерно контактировать с
+                                <li>Во время протрузии режущий край резцов нижней челюсти должен равномерно
+                                    контактировать с
                                     краевыми гребнями резцов верхней челюсти
                                 </li>
                                 <li>Во время боковых движений максимальное количество зубов должно обеспечивать
@@ -837,60 +922,71 @@
                                 </li>
                                 <li>2-й и 3-й моляр не контактируют во время процесса жевания</li>
                             </ul>
-    
+
                             <p>
                                 Достижение технического совершенства, которое удовлетворяет самые высокие эстетические
-                                требования, все же представляет собой проблему с точки зрения биосовместимости, если речь
-                                идет о работе с искусственными коронками и мостовидными протезами. Данная лекция предложит
+                                требования, все же представляет собой проблему с точки зрения биосовместимости, если
+                                речь
+                                идет о работе с искусственными коронками и мостовидными протезами. Данная лекция
+                                предложит
                                 новые концепции, воплощающие простые формулы, благодаря которым может быть достигнута
                                 идеальная коммуникация между стоматологом, зубным техником и пациентом.
                             </p>
-    
+
                             <p>
-                                Планирование проведения полной реабилитации полости рта взрослого пациента включает в себя
-                                ортодонтическое лечение, имплантацию, использование металлокерамических, цельнокерамических
+                                Планирование проведения полной реабилитации полости рта взрослого пациента включает в
+                                себя
+                                ортодонтическое лечение, имплантацию, использование металлокерамических,
+                                цельнокерамических
                                 коронок, а также коронок из диоксида циркония.
                             </p>
-    
+
                             <p>
                                 На сегодняшний день в реставрационной стоматологии существует множество возможностей для
                                 улучшения эстетики передних и боковых зубов.
                             </p>
-    
+
                             <p>
-                                В последние годы технологии реставрационной стоматологии значительно улучшились с появлением
-                                цельнокерамических коронок, протезирования на имплантах, технологии CAD CAM и других более
+                                В последние годы технологии реставрационной стоматологии значительно улучшились с
+                                появлением
+                                цельнокерамических коронок, протезирования на имплантах, технологии CAD CAM и других
+                                более
                                 сложных технологий, которые улучшили конечные результаты стоматологии.
                             </p>
-    
+
                             <p>
-                                В данной лекции как стоматологи, так и зубные техники, найдут информацию о многих аспектах
-                                реставрационной стоматологии, включая многочисленные фундаментальные методы восстановления
+                                В данной лекции как стоматологи, так и зубные техники, найдут информацию о многих
+                                аспектах
+                                реставрационной стоматологии, включая многочисленные фундаментальные методы
+                                восстановления
                                 зубов. Будут представлены диагностические рекомендации и клинические принципы, которым
                                 необходимо следовать в работе.
                             </p>
-    
+
                             <p>
                                 Металлокерамические конструкции:
                                 Спросите у Природы, что ей необходимо...
                             </p>
-    
+
                             <p>
                                 Успешное восстановление должно начинаться с точного видения формы зуба, которое должно
-                                совпадать с требованиями пациента. Таким образом, пациент, естественно, является центральным
+                                совпадать с требованиями пациента. Таким образом, пациент, естественно, является
+                                центральным
                                 звеном междисциплинарной группы, которая должна прийти к консенсусу относительно
                                 окончательного плана восстановления до начала лечения.
                             </p>
-    
-    
+
+
                             <div class="popup__content-subtitle">О лекторе</div>
-    
+
                             <ul class="popup__content-list  popup__content-list--progress">
                                 <li>Президент Зуботехнического колледжа Аиши (Токио, Япония). </li>
                                 <li>Президент колледжа Кувата (Токио).</li>
-                                <li>Приглашенный профессор Бостонского университета (Бостон, США); приглашенный профессор
+                                <li>Приглашенный профессор Бостонского университета (Бостон, США); приглашенный
+                                    профессор
                                     Тианджинского медицинского университета (Тианджин).</li>
-                                <li>Член Международного общества керамистов (с 1981 г.); действительный член Американской
+                                <li>Член Международного общества керамистов (с 1981 г.); действительный член
+                                    Американской
                                     академии эстетической стоматологии (с 1982 г.);</li>
                                 <li>Почетный член Международной коллегии стоматологов (с 1983 г.);</li>
                                 <li>Член Американского общества эстетической стоматологии (с 1985 г.);</li>
@@ -906,16 +1002,17 @@
                         </div>
                     </div>
                 </div>
-    
-    
+
+
                 <div class="popup" id="Nasser-Shademan">
-    
+
                     <div class="popup__container">
                         <div class="popup__lecturer">
                             <button class="popup__close">×</button>
-    
+
                             <div class="popup__lecturer-img">
-                                <img src="https://ohi-s.com/wp-content/uploads/2019/09/Nasser_ShademanM.png">
+                                <img src="https://ohi-s.com/wp-content/uploads/2019/09/Nasser_ShademanM.png"
+                                    alt="Фото лектора">
                             </div>
                             <div class="popup__lecturer-info">
                                 <h2 class="popup__lecturer-name">Masahiro <br> Kuwata</h2>
@@ -925,35 +1022,37 @@
                                 <p class="popup__lecturer-descr">
                                     - Приглашенный профессор Бостонского Университета, Школы стоматологии им. Голдмана
                                 </p>
-    
+
                                 <button class="popup__lecturer-btn">Принять участие
                                     <i class="fa fa-hand-pointer-o ikon-phne-push" aria-hidden="true"></i>
                                 </button>
-    
+
                                 <div class="popup__form-box">
                                     <form class="popup__form" action="#">
                                         <input type="text" placeholder="Фамилия Имя Отчество">
                                         <input type="email" placeholder="Ваш основной E-mail">
-                                        <input type="tel" placeholder="+7 499 703 22 59"">
+                                        <input type="tel" placeholder="+7 499 703 22 59">
                                         <button class=" popup__form-btn" type="submit">Отправить</button>
                                     </form>
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="popup__content">
                             <div class="popup__content-title">
                                 Функционально-разобщающаяся окклюзия (FDO-concept) в эстетической реставрации
                             </div>
-    
+
                             <ul class="popup__content-list">
-                                <li> - Реставрация в соответствии с природой: форма зуба и зубного ряда в целом, конечный
+                                <li> - Реставрация в соответствии с природой: форма зуба и зубного ряда в целом,
+                                    конечный
                                     эстетический результат
                                 </li>
                                 <li> - Биологическая, функциональная и анатомическая оценка реставрации </li>
                                 <li> - CAD CAM - технологии </li>
                                 <li> - Дизайн будущей реставрации с использованием концепции 3-х плоскостей </li>
-                                <li> - Препарирование твердых тканей зуба в соответствии с концепцией 3-х плоскостей </li>
+                                <li> - Препарирование твердых тканей зуба в соответствии с концепцией 3-х плоскостей
+                                </li>
                                 <li> - Контур зуба </li>
                                 <li> - Десневой контур </li>
                                 <li> - Дизайн десневого контура при реставрации металлокерамическими и циркониевыми
@@ -962,27 +1061,31 @@
                                 <li> - Керамическая реставрация/Десневой контур </li>
                                 <li> - Техника анатомического затенения для керамических коронок </li>
                             </ul>
-    
-    
+
+
                             <p>В ходе лекции будут разбираться следующие принципы окклюзии (FDO-concept):</p>
-    
+
                             <ul class="popup__content-list  popup__content-list--concept">
                                 <li>Функционально-разобщающаяся окклюзия </li>
                                 <li>Вершина бугра не должна отклоняться от линии и плоскости окклюзии.</li>
-                                <li>В центральном соотношении максимально возможное количество зубов контактируют так, что
+                                <li>В центральном соотношении максимально возможное количество зубов контактируют так,
+                                    что
                                     жевательная нагрузка может быть равномерно распределена на все вовлеченные зубы.
                                 </li>
                                 <li>Статическая координация в центральном соотношении</li>
                                 <li>Статическая координация в центральной окклюзии</li>
                                 <li>Контакт боковых зубов в ЦС - контакты ямок боковых зубов</li>
-                                <li>Как в покое, так и при функционировании, окклюзионная нагрузка должна быть направлена
-                                    вдоль длинных осей зубов настолько, насколько это возможно, чтобы избежать чрезмерных
+                                <li>Как в покое, так и при функционировании, окклюзионная нагрузка должна быть
+                                    направлена
+                                    вдоль длинных осей зубов настолько, насколько это возможно, чтобы избежать
+                                    чрезмерных
                                     боковых напряжений
                                 </li>
                                 <li>Во время протрузии, передние зубы контактируют, боковые - никогда не должны
                                     контактировать
                                 </li>
-                                <li>Во время протрузии режущий край резцов нижней челюсти должен равномерно контактировать с
+                                <li>Во время протрузии режущий край резцов нижней челюсти должен равномерно
+                                    контактировать с
                                     краевыми гребнями резцов верхней челюсти
                                 </li>
                                 <li>Во время боковых движений максимальное количество зубов должно обеспечивать
@@ -997,60 +1100,71 @@
                                 </li>
                                 <li>2-й и 3-й моляр не контактируют во время процесса жевания</li>
                             </ul>
-    
+
                             <p>
                                 Достижение технического совершенства, которое удовлетворяет самые высокие эстетические
-                                требования, все же представляет собой проблему с точки зрения биосовместимости, если речь
-                                идет о работе с искусственными коронками и мостовидными протезами. Данная лекция предложит
+                                требования, все же представляет собой проблему с точки зрения биосовместимости, если
+                                речь
+                                идет о работе с искусственными коронками и мостовидными протезами. Данная лекция
+                                предложит
                                 новые концепции, воплощающие простые формулы, благодаря которым может быть достигнута
                                 идеальная коммуникация между стоматологом, зубным техником и пациентом.
                             </p>
-    
+
                             <p>
-                                Планирование проведения полной реабилитации полости рта взрослого пациента включает в себя
-                                ортодонтическое лечение, имплантацию, использование металлокерамических, цельнокерамических
+                                Планирование проведения полной реабилитации полости рта взрослого пациента включает в
+                                себя
+                                ортодонтическое лечение, имплантацию, использование металлокерамических,
+                                цельнокерамических
                                 коронок, а также коронок из диоксида циркония.
                             </p>
-    
+
                             <p>
                                 На сегодняшний день в реставрационной стоматологии существует множество возможностей для
                                 улучшения эстетики передних и боковых зубов.
                             </p>
-    
+
                             <p>
-                                В последние годы технологии реставрационной стоматологии значительно улучшились с появлением
-                                цельнокерамических коронок, протезирования на имплантах, технологии CAD CAM и других более
+                                В последние годы технологии реставрационной стоматологии значительно улучшились с
+                                появлением
+                                цельнокерамических коронок, протезирования на имплантах, технологии CAD CAM и других
+                                более
                                 сложных технологий, которые улучшили конечные результаты стоматологии.
                             </p>
-    
+
                             <p>
-                                В данной лекции как стоматологи, так и зубные техники, найдут информацию о многих аспектах
-                                реставрационной стоматологии, включая многочисленные фундаментальные методы восстановления
+                                В данной лекции как стоматологи, так и зубные техники, найдут информацию о многих
+                                аспектах
+                                реставрационной стоматологии, включая многочисленные фундаментальные методы
+                                восстановления
                                 зубов. Будут представлены диагностические рекомендации и клинические принципы, которым
                                 необходимо следовать в работе.
                             </p>
-    
+
                             <p>
                                 Металлокерамические конструкции:
                                 Спросите у Природы, что ей необходимо...
                             </p>
-    
+
                             <p>
                                 Успешное восстановление должно начинаться с точного видения формы зуба, которое должно
-                                совпадать с требованиями пациента. Таким образом, пациент, естественно, является центральным
+                                совпадать с требованиями пациента. Таким образом, пациент, естественно, является
+                                центральным
                                 звеном междисциплинарной группы, которая должна прийти к консенсусу относительно
                                 окончательного плана восстановления до начала лечения.
                             </p>
-    
-    
+
+
                             <div class="popup__content-subtitle">О лекторе</div>
-    
+
                             <ul class="popup__content-list  popup__content-list--progress">
                                 <li>Президент Зуботехнического колледжа Аиши (Токио, Япония). </li>
                                 <li>Президент колледжа Кувата (Токио).</li>
-                                <li>Приглашенный профессор Бостонского университета (Бостон, США); приглашенный профессор
+                                <li>Приглашенный профессор Бостонского университета (Бостон, США); приглашенный
+                                    профессор
                                     Тианджинского медицинского университета (Тианджин).</li>
-                                <li>Член Международного общества керамистов (с 1981 г.); действительный член Американской
+                                <li>Член Международного общества керамистов (с 1981 г.); действительный член
+                                    Американской
                                     академии эстетической стоматологии (с 1982 г.);</li>
                                 <li>Почетный член Международной коллегии стоматологов (с 1983 г.);</li>
                                 <li>Член Американского общества эстетической стоматологии (с 1985 г.);</li>
@@ -1066,16 +1180,17 @@
                         </div>
                     </div>
                 </div>
-    
-    
+
+
                 <div class="popup" id="Mitsuhiro-Tsukiboshi">
-    
+
                     <div class="popup__container">
                         <div class="popup__lecturer">
                             <button class="popup__close">×</button>
-    
+
                             <div class="popup__lecturer-img">
-                                <img src="https://ohi-s.com/wp-content/uploads/2019/09/Mitsuhiro_TsukiboshiM.png">
+                                <img src="https://ohi-s.com/wp-content/uploads/2019/09/Mitsuhiro_TsukiboshiM.png"
+                                    alt="Фото лектора">
                             </div>
                             <div class="popup__lecturer-info">
                                 <h2 class="popup__lecturer-name">Masahiro <br> Kuwata</h2>
@@ -1085,35 +1200,37 @@
                                 <p class="popup__lecturer-descr">
                                     - Приглашенный профессор Бостонского Университета, Школы стоматологии им. Голдмана
                                 </p>
-    
+
                                 <button class="popup__lecturer-btn">Принять участие
                                     <i class="fa fa-hand-pointer-o ikon-phne-push" aria-hidden="true"></i>
                                 </button>
-    
+
                                 <div class="popup__form-box">
                                     <form class="popup__form" action="#">
                                         <input type="text" placeholder="Фамилия Имя Отчество">
                                         <input type="email" placeholder="Ваш основной E-mail">
-                                        <input type="tel" placeholder="+7 499 703 22 59"">
+                                        <input type="tel" placeholder="+7 499 703 22 59">
                                         <button class=" popup__form-btn" type="submit">Отправить</button>
                                     </form>
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="popup__content">
                             <div class="popup__content-title">
                                 Функционально-разобщающаяся окклюзия (FDO-concept) в эстетической реставрации
                             </div>
-    
+
                             <ul class="popup__content-list">
-                                <li> - Реставрация в соответствии с природой: форма зуба и зубного ряда в целом, конечный
+                                <li> - Реставрация в соответствии с природой: форма зуба и зубного ряда в целом,
+                                    конечный
                                     эстетический результат
                                 </li>
                                 <li> - Биологическая, функциональная и анатомическая оценка реставрации </li>
                                 <li> - CAD CAM - технологии </li>
                                 <li> - Дизайн будущей реставрации с использованием концепции 3-х плоскостей </li>
-                                <li> - Препарирование твердых тканей зуба в соответствии с концепцией 3-х плоскостей </li>
+                                <li> - Препарирование твердых тканей зуба в соответствии с концепцией 3-х плоскостей
+                                </li>
                                 <li> - Контур зуба </li>
                                 <li> - Десневой контур </li>
                                 <li> - Дизайн десневого контура при реставрации металлокерамическими и циркониевыми
@@ -1122,27 +1239,31 @@
                                 <li> - Керамическая реставрация/Десневой контур </li>
                                 <li> - Техника анатомического затенения для керамических коронок </li>
                             </ul>
-    
-    
+
+
                             <p>В ходе лекции будут разбираться следующие принципы окклюзии (FDO-concept):</p>
-    
+
                             <ul class="popup__content-list  popup__content-list--concept">
                                 <li>Функционально-разобщающаяся окклюзия </li>
                                 <li>Вершина бугра не должна отклоняться от линии и плоскости окклюзии.</li>
-                                <li>В центральном соотношении максимально возможное количество зубов контактируют так, что
+                                <li>В центральном соотношении максимально возможное количество зубов контактируют так,
+                                    что
                                     жевательная нагрузка может быть равномерно распределена на все вовлеченные зубы.
                                 </li>
                                 <li>Статическая координация в центральном соотношении</li>
                                 <li>Статическая координация в центральной окклюзии</li>
                                 <li>Контакт боковых зубов в ЦС - контакты ямок боковых зубов</li>
-                                <li>Как в покое, так и при функционировании, окклюзионная нагрузка должна быть направлена
-                                    вдоль длинных осей зубов настолько, насколько это возможно, чтобы избежать чрезмерных
+                                <li>Как в покое, так и при функционировании, окклюзионная нагрузка должна быть
+                                    направлена
+                                    вдоль длинных осей зубов настолько, насколько это возможно, чтобы избежать
+                                    чрезмерных
                                     боковых напряжений
                                 </li>
                                 <li>Во время протрузии, передние зубы контактируют, боковые - никогда не должны
                                     контактировать
                                 </li>
-                                <li>Во время протрузии режущий край резцов нижней челюсти должен равномерно контактировать с
+                                <li>Во время протрузии режущий край резцов нижней челюсти должен равномерно
+                                    контактировать с
                                     краевыми гребнями резцов верхней челюсти
                                 </li>
                                 <li>Во время боковых движений максимальное количество зубов должно обеспечивать
@@ -1157,60 +1278,71 @@
                                 </li>
                                 <li>2-й и 3-й моляр не контактируют во время процесса жевания</li>
                             </ul>
-    
+
                             <p>
                                 Достижение технического совершенства, которое удовлетворяет самые высокие эстетические
-                                требования, все же представляет собой проблему с точки зрения биосовместимости, если речь
-                                идет о работе с искусственными коронками и мостовидными протезами. Данная лекция предложит
+                                требования, все же представляет собой проблему с точки зрения биосовместимости, если
+                                речь
+                                идет о работе с искусственными коронками и мостовидными протезами. Данная лекция
+                                предложит
                                 новые концепции, воплощающие простые формулы, благодаря которым может быть достигнута
                                 идеальная коммуникация между стоматологом, зубным техником и пациентом.
                             </p>
-    
+
                             <p>
-                                Планирование проведения полной реабилитации полости рта взрослого пациента включает в себя
-                                ортодонтическое лечение, имплантацию, использование металлокерамических, цельнокерамических
+                                Планирование проведения полной реабилитации полости рта взрослого пациента включает в
+                                себя
+                                ортодонтическое лечение, имплантацию, использование металлокерамических,
+                                цельнокерамических
                                 коронок, а также коронок из диоксида циркония.
                             </p>
-    
+
                             <p>
                                 На сегодняшний день в реставрационной стоматологии существует множество возможностей для
                                 улучшения эстетики передних и боковых зубов.
                             </p>
-    
+
                             <p>
-                                В последние годы технологии реставрационной стоматологии значительно улучшились с появлением
-                                цельнокерамических коронок, протезирования на имплантах, технологии CAD CAM и других более
+                                В последние годы технологии реставрационной стоматологии значительно улучшились с
+                                появлением
+                                цельнокерамических коронок, протезирования на имплантах, технологии CAD CAM и других
+                                более
                                 сложных технологий, которые улучшили конечные результаты стоматологии.
                             </p>
-    
+
                             <p>
-                                В данной лекции как стоматологи, так и зубные техники, найдут информацию о многих аспектах
-                                реставрационной стоматологии, включая многочисленные фундаментальные методы восстановления
+                                В данной лекции как стоматологи, так и зубные техники, найдут информацию о многих
+                                аспектах
+                                реставрационной стоматологии, включая многочисленные фундаментальные методы
+                                восстановления
                                 зубов. Будут представлены диагностические рекомендации и клинические принципы, которым
                                 необходимо следовать в работе.
                             </p>
-    
+
                             <p>
                                 Металлокерамические конструкции:
                                 Спросите у Природы, что ей необходимо...
                             </p>
-    
+
                             <p>
                                 Успешное восстановление должно начинаться с точного видения формы зуба, которое должно
-                                совпадать с требованиями пациента. Таким образом, пациент, естественно, является центральным
+                                совпадать с требованиями пациента. Таким образом, пациент, естественно, является
+                                центральным
                                 звеном междисциплинарной группы, которая должна прийти к консенсусу относительно
                                 окончательного плана восстановления до начала лечения.
                             </p>
-    
-    
+
+
                             <div class="popup__content-subtitle">О лекторе</div>
-    
+
                             <ul class="popup__content-list  popup__content-list--progress">
                                 <li>Президент Зуботехнического колледжа Аиши (Токио, Япония). </li>
                                 <li>Президент колледжа Кувата (Токио).</li>
-                                <li>Приглашенный профессор Бостонского университета (Бостон, США); приглашенный профессор
+                                <li>Приглашенный профессор Бостонского университета (Бостон, США); приглашенный
+                                    профессор
                                     Тианджинского медицинского университета (Тианджин).</li>
-                                <li>Член Международного общества керамистов (с 1981 г.); действительный член Американской
+                                <li>Член Международного общества керамистов (с 1981 г.); действительный член
+                                    Американской
                                     академии эстетической стоматологии (с 1982 г.);</li>
                                 <li>Почетный член Международной коллегии стоматологов (с 1983 г.);</li>
                                 <li>Член Американского общества эстетической стоматологии (с 1985 г.);</li>
@@ -1226,34 +1358,34 @@
                         </div>
                     </div>
                 </div>
-    
-    
+
+
                 <div class="popup  popup--callback" id="popup-callback">
-    
+
                     <div class="popup__container">
                         <div class="popup__lecturer">
                             <button class="popup__close">×</button>
-    
+
                             <div class="popup__lecturer-info">
                                 <div class="popup-callback__title">Сообщите, как мы можем с Вами связаться</div>
-    
+
                                 <div class="popup__form-box">
                                     <form class="popup__form" action="#">
                                         <div class="popup__form-input">
                                             <label>Ваше ФИО </label>
                                             <input type="text" placeholder="Фамилия Имя Отчество">
                                         </div>
-    
+
                                         <div class="popup__form-input">
                                             <label>Ваш E-mail</label>
                                             <input type="email" placeholder="Ваш основной E-mail">
                                         </div>
-    
+
                                         <div class="popup__form-input">
                                             <label>Ваш телефон</label>
-                                            <input type="tel" placeholder="+7 499 703 22 59"">
+                                            <input type="tel" placeholder="+7 499 703 22 59">
                                         </div>
-    
+
                                         <div class=" popup__btn-wrap">
                                             <button class=" popup__form-btn" type="submit">Отправить</button>
                                         </div>
@@ -1263,23 +1395,23 @@
                         </div>
                     </div>
                 </div>
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
             </div> <!-- /popup__wrap -->
         </div> <!-- /container -->
     </section> <!-- /program -->
     <section class="variants" style="   background: linear-gradient( rgba(0, 0, 0, 0.0),  rgba(0, 0, 0, 0.0) ), 
     url(https://ohi-s.com/wp-content/uploads/2020/03/tokiobek2.jpg) no-repeat scroll 0% 0% / cover; ">
-    
+
         <div class="container">
             <h2 class="variants__title">ВАРИАНТЫ<br>
                 <span>УЧАСТИЯ</span>
             </h2>
-    
+
             <div class="variants__inner">
                 <div class="variants__label">
                     <div class="variants__label-circle">
@@ -1289,44 +1421,44 @@
                         <p class="variants__label-text">вы можете приобрести полный курс по специальной цене</p>
                     </div>
                 </div>
-    
+
                 <div class="variants__card">
                     <div class="variants__card-title">участие в отдельных вебинарах</div>
-    
+
                     <div class="variants__card-row">
                         <span class="variants__card-name">стоимость 1 вебинара при покупке всего курса </span>
                         <span class="variants__card-price">2 113
                             <i class="fa fa-rub" aria-hidden="true"></i>
                         </span>
                     </div>
-    
+
                     <div class="variants__card-row">
                         <span class="variants__card-name">стоимость 1 вебинара при покупке отдельных вебинаров </span>
                         <span class="variants__card-price">2 500
                             <i class="fa fa-rub" aria-hidden="true"></i>
                         </span>
                     </div>
-    
+
                     <a class="variants__card-btn" data-id="popup-callback">Принять участие</a>
                 </div>
-    
+
                 <div class="variants__card">
                     <div class="variants__card-title">участие в полном курсе</div>
-    
+
                     <div class="variants__card-row">
                         <span class="variants__card-name">Стоимость всего курса </span>
                         <span class="variants__card-price">16 900
                             <i class="fa fa-rub" aria-hidden="true"></i>
                         </span>
                     </div>
-    
+
                     <a class="variants__card-btn" data-id="popup-callback">Принять участие</a>
                 </div>
             </div> <!-- /variants__inner -->
-    
-    
-    
-    
+
+
+
+
         </div> <!-- /container -->
     </section> <!-- /variants -->
     <section class="about">
@@ -1334,12 +1466,14 @@
             <h2 class="about__title">Почему
                 <span>СТОМАТОЛОГИ ВЫБИРАЮТ OHI-S</span>
             </h2>
-    
+
             <div class="about__inner">
                 <div class="about__content">
-                    <p class="about__text">OHI-S - это международная образовательная компания для стоматологов. С 2018 года
+                    <p class="about__text">OHI-S - это международная образовательная компания для стоматологов. С 2018
+                        года
                         мы провели и
-                        анонсировали более 30 конгрессов в красивейших городах мира (Канны, Монако, Рим, Амстердам, Милан,
+                        анонсировали более 30 конгрессов в красивейших городах мира (Канны, Монако, Рим, Амстердам,
+                        Милан,
                         Париж, Токио и другие). Мы объединяем все виды обучения, привлекаем лучших лекторов и предлагаем
                         мировому сообществу стоматологов обучение, независимое от производителей.
                     </p>
@@ -1347,30 +1481,30 @@
                         организация, которая неизменно получает высший балл от участников мероприятий.
                     </p>
                 </div>
-    
+
                 <div class="about__video">
                     <div class="about__video-wrap">
-                        <iframe src="https://www.youtube.com/embed/bpVUanZBBWE" frameborder="0"
+                        <iframe src="https://www.youtube.com/embed/bpVUanZBBWE"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen="">
                         </iframe>
                     </div>
                 </div>
-    
+
             </div> <!-- /about__inner -->
         </div> <!-- /container -->
     </section> <!-- /about -->
     <section class="discounts">
         <div class="container">
-    
+
             <div class="discounts__inner">
                 <h2 class="discounts__title">Цикл вебинаров
                     <span>эстетическая стоматология</span>
                 </h2>
-    
+
                 <div class="discounts__content">
                     <p class="discounts__subtitle">На все онлайн-курсы компании OHI-S действуют следующие скидки:</p>
-    
+
                     <ul class="discounts__list">
                         <li class="discounts__item">- для ранней оплаты</li>
                         <li class="discounts__item">- для участия в полном курсе</li>
@@ -1386,24 +1520,24 @@
                     </ul>
                 </div>
             </div> <!-- /discounts__inner -->
-    
+
         </div> <!-- /container -->
     </section> <!-- /discounts -->
     <section class="registration" id="registration"
         style="background:url(https://ohi-s.com/wp-content/uploads/2020/03/tokiobek2.jpg) no-repeat scroll 40% 0 / cover;">
-    
+
         <div class="container">
-    
+
             <h2 class="registration__title">РЕГИСТРАЦИЯ
                 <span>НА ОНЛАЙН ЦИКЛ</span>
             </h2>
-    
+
             <div class="registration__inner">
                 <div class="registration__content">
                     <p class="registration__subtitle">Стоимость участия:
                         <span>(оплата в EUR или по курсу в удобной для вас валюте)</span>
                     </p>
-    
+
                     <div class="registration__row">
                         <div class="registration__price">
                             <strong>
@@ -1412,11 +1546,11 @@
                             </strong>
                             <span>(~€ 243)</span>
                         </div>
-    
+
                         <p>при регистрации и оплате до 20 марта</p>
                         <p class="registration__price--freezing">Мы заморозили цену - успейте купить выгодно!</p>
                     </div>
-    
+
                     <div class="registration__row">
                         <div class="registration__price">
                             <strong>
@@ -1425,71 +1559,75 @@
                             </strong>
                             <span>(~€ 287)</span>
                         </div>
-    
+
                         <p>при регистрации и оплате c 21 марта</p>
                     </div>
                 </div>
-    
+
                 <div class="registration__form-box">
                     <form class="registration__form" action="#">
                         <div class="registration__input-group">
                             <label>Ваше ФИО</label>
                             <input type="text" placeholder="Фамилия Имя Отчество">
                         </div>
-    
+
                         <div class="registration__input-group">
                             <label>Ваш E-mail</label>
                             <input type="email" placeholder="Ваш основной E-mail">
                         </div>
-    
+
                         <div class="registration__input-group">
                             <label>Ваш телефон</label>
                             <input type="tel" placeholder="+7 495 1234567">
                         </div>
-    
+
                         <div class="program__accept  registration__btn-wrap">
                             <a class="program__accept-btn  registration__btn" href="#">Принять участие</a>
                         </div>
                     </form>
                 </div>
             </div>
-    
+
         </div> <!-- /container -->
     </section> <!-- /registration -->
     <section class="questions">
         <div class="container">
-    
+
             <h2 class="questions__title">Часто задаваемые
                 <span>вопросы:</span>
             </h2>
-    
+
             <div class="questions__inner">
                 <ul class="questions__list">
                     <li class="questions__item">
                         <div class="questions__subtitle">КТО ВЫ И ПОЧЕМУ Я ДОЛЖЕН ВАМ ДОВЕРЯТЬ?</div>
-    
+
                         <div class="questions__text-wrap">
-                            <p class="questions__text">Мы работаем 2,5 года, за это время нашими клиентами стали более 9000
+                            <p class="questions__text">Мы работаем 2,5 года, за это время нашими клиентами стали более
+                                9000
                                 стоматологов, и 45% из
                                 них вернулись к нам за новыми знаниями. Если цифрами вас не убедить - посмотрите
                                 <a href="https://web.facebook.com/ohisstom/videos/2414684821908125/"
                                     target="_blank">короткое
                                     видео</a>
-                                о том, как проходят наши мероприятия и что говорят о нас сами лекторы и стоматологи. А еще
+                                о том, как проходят наши мероприятия и что говорят о нас сами лекторы и стоматологи. А
+                                еще
                                 заходите на страницу
                                 <a href="https://ohi-s.com/about/" target="_blank">О нас</a>
                                 и познакомьтесь поближе с нашей историей и командой.
                             </p>
                         </div>
                     </li>
-    
+
                     <li class="questions__item">
-                        <div class="questions__subtitle">У МЕНЯ ЕСТЬ ОПЫТ ОБУЧЕНИЯ ОНЛАЙН, И МНЕ НЕ ПОНРАВИЛОСЬ. КАК Я МОГУ
+                        <div class="questions__subtitle">У МЕНЯ ЕСТЬ ОПЫТ ОБУЧЕНИЯ ОНЛАЙН, И МНЕ НЕ ПОНРАВИЛОСЬ. КАК Я
+                            МОГУ
                             БЫТЬ УВЕРЕН, ЧТО НА ЭТОТ РАЗ КАЧЕСТВО НЕ ПОДВЕДЕТ?</div>
-    
+
                         <div class="questions__text-wrap">
                             <p class="questions__text">
-                                Очень жаль, что онлайн-обучение оставило у вас не самые лучшие впечатления. Мы постараемся
+                                Очень жаль, что онлайн-обучение оставило у вас не самые лучшие впечатления. Мы
+                                постараемся
                                 исправить эту ситуацию, ведь формат вебинаров выбирают многие наши клиенты и они всегда
                                 довольны
                                 качеством звука и изображения. Если сомневаетесь, запросите у вашего менеджера пример
@@ -1497,57 +1635,63 @@
                             </p>
                         </div>
                     </li>
-    
+
                     <li class="questions__item">
                         <div class="questions__subtitle">
-                            КАК МНЕ ПОДКЛЮЧИТЬСЯ К ВЕБИНАРУ? ЧТО ДЕЛАТЬ, ЕСЛИ ВОЗНИКНУТ КАКИЕ-ЛИБО ТЕХНИЧЕСКИЕ ТРУДНОСТИ?
+                            КАК МНЕ ПОДКЛЮЧИТЬСЯ К ВЕБИНАРУ? ЧТО ДЕЛАТЬ, ЕСЛИ ВОЗНИКНУТ КАКИЕ-ЛИБО ТЕХНИЧЕСКИЕ
+                            ТРУДНОСТИ?
                         </div>
-    
+
                         <div class="questions__text-wrap">
                             <p class="questions__text">
                                 Вебинары транслируются на нашем сайте. После оплаты доступ к вебинару появится у вас во
                                 вкладке
-                                “Мои вебинары”. Для того, чтобы подключиться к трансляции, вам нужно будет просто зайти в
+                                “Мои вебинары”. Для того, чтобы подключиться к трансляции, вам нужно будет просто зайти
+                                в
                                 личный
                                 кабинет. Заблаговременно убедитесь, что качество работы динамиков/наушников и скорость
                                 интернета
-                                достаточны для просмотра видео в онлайн-режиме. Рекомендуем вам подключаться к вебинару за
-                                несколько минут до начала. Если возникнут какие-либо вопросы, вы всегда можете обратиться к
+                                достаточны для просмотра видео в онлайн-режиме. Рекомендуем вам подключаться к вебинару
+                                за
+                                несколько минут до начала. Если возникнут какие-либо вопросы, вы всегда можете
+                                обратиться к
                                 вашему менеджеру.
                             </p>
                         </div>
                     </li>
-    
+
                     <li class="questions__item">
                         <div class="questions__subtitle">
                             БУДЕТ ЛИ ДОСТУПНА ЗАПИСЬ ВЕБИНАРА, ЕСЛИ Я НЕ УСПЕЮ?
                         </div>
-    
+
                         <div class="questions__text-wrap">
                             <p class="questions__text">
-                                Конечно! Запись оплаченного вебинара будет доступна в вашем личном кабинете, и вы в любое
+                                Конечно! Запись оплаченного вебинара будет доступна в вашем личном кабинете, и вы в
+                                любое
                                 удобное вам время сможете ее пересмотреть.
                             </p>
                         </div>
                     </li>
-    
+
                     <li class="questions__item">
                         <div class="questions__subtitle">
                             Я ГОТОВ. КАК ЗАПИСАТЬСЯ?
                         </div>
-    
+
                         <div class="questions__text-wrap">
                             <p class="questions__text">
-                                Чтобы зарегистрироваться на мероприятие, вы можете заполнить любую форму на этой странице.
+                                Чтобы зарегистрироваться на мероприятие, вы можете заполнить любую форму на этой
+                                странице.
                             </p>
                         </div>
                     </li>
-    
+
                     <li class="questions__item">
                         <div class="questions__subtitle">
                             У МЕНЯ ЕСТЬ ВОПРОС, ОТВЕТА НА КОТОРЫЙ Я ЗДЕСЬ НЕ НАШЕЛ
                         </div>
-    
+
                         <div class="questions__text-wrap">
                             <p class="questions__text">
                                 Свяжитесь с нами любым удобным способом (контакты ниже) или непосредственно с вашим
@@ -1558,217 +1702,228 @@
                     </li>
                 </ul>
             </div>
-    
+
         </div> <!-- /container -->
     </section> <!-- /questions -->
 
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
-    
+
                 <div class="footer__contacts  footer-box">
                     <div class="footer__logo">
                         <span>OHI-S</span>
                         <p>информация независимая от производителей</p>
                     </div>
-    
+
                     <ul class="footer__communication">
                         <li>
                             <a href="mailto:info@ohi-s.com">info@ohi-s.com</a>
                         </li>
-    
+
                         <li>
                             <a href="tel:+74997032259">+7 499 703 22 59</a>
                         </li>
-    
+
                         <li>
                             <a href="tel:+380443921423">+380 44 392 14 23</a>
                         </li>
-    
+
                         <li>
                             <a href="tel:+375295948888">+375 29 594 88 88 (Viber, WhatsApp)</a>
                         </li>
-    
+
                         <li>
                             <a href="tel:+77273505002">+7 727 350 50 02 </a>
                         </li>
                     </ul>
-    
+
                     <ul class="footer__social">
                         <li>
                             <a href="https://www.facebook.com/OhisStom/" target="_blank">
                                 <i class="fa fa-facebook" aria-hidden="true"></i>
                             </a>
                         </li>
-    
+
                         <li>
                             <a href="https://vk.com/ohisstom" target="_blank">
                                 <i class="fa fa-vk" aria-hidden="true"></i>
                             </a>
                         </li>
-    
+
                         <li>
                             <a href="https://www.youtube.com/channel/UCee-e_2v1DxPCcU1jB3uZ7Q" target="_blank">
                                 <i class="fa fa-youtube" aria-hidden="true"></i>
                             </a>
                         </li>
-    
+
                         <li>
                             <a href="https://www.instagram.com/ohisstom/" target="blank">
                                 <i class="fa fa-instagram" aria-hidden="true"></i>
                             </a>
                         </li>
                     </ul>
-    
+
                     <div class="footer__address">
                         <p class="footer__address-title">ООО "ОХИС СИСТЕМС"</p>
                         <p class="footer__address-text">УНП 193319467 </p>
                         <p class="footer__address-text">РБ, г. Минск, ул.Зыбицкая, д.6, оф.52</p>
                     </div>
                 </div> <!-- /footer__contacts -->
-    
-    
+
+
                 <div class="footer__lecturers  footer-box">
                     <span class="footer__title">Наши лекторы</span>
-    
+
                     <ul class="footer__lecturers-list">
                         <li>
                             <img src="https://ohi-s.com//wp-content/uploads/2018/11/lektor_sayt_Fabi-min.png"
                                 alt="Фото лектора">
                         </li>
-    
+
                         <li>
                             <img src="https://ohi-s.com//wp-content/uploads/2018/11/Gurel-min.png" alt="Фото лектора">
                         </li>
-    
+
                         <li>
-                            <img src="https://ohi-s.com//wp-content/uploads/2018/12/malenkiy-kubi-1.jpg" alt="Фото лектора">
+                            <img src="https://ohi-s.com//wp-content/uploads/2018/12/malenkiy-kubi-1.jpg"
+                                alt="Фото лектора">
                         </li>
-    
+
                         <li>
-                            <img src="https://ohi-s.com//wp-content/uploads/2018/11/fut-belograd.jpg" alt="Фото лектора">
+                            <img src="https://ohi-s.com//wp-content/uploads/2018/11/fut-belograd.jpg"
+                                alt="Фото лектора">
                         </li>
-    
+
                         <li>
                             <img src="https://ohi-s.com//wp-content/uploads/2018/11/semenza.jpg" alt="Фото лектора">
                         </li>
-    
+
                         <li>
                             <img src="https://ohi-s.com//wp-content/uploads/2018/11/devoto1-3.jpg" alt="Фото лектора">
                         </li>
                     </ul>
                 </div>
-    
-    
+
+
                 <div class="footer__menu  footer-box">
                     <span class="footer__title">Разделы</span>
-    
+
                     <nav>
                         <ul class="footer__menu-list">
                             <li>
                                 <a href="/vebinary/">Вебинары</a>
                                 <i class="fa fa-angle-double-right" aria-hidden="true"></i>
                             </li>
-    
+
                             <li>
                                 <a href="/seminary/">Семинары</a>
                                 <i class="fa fa-angle-double-right" aria-hidden="true"></i>
                             </li>
-    
+
                             <li>
                                 <a href="/stati-po-stomatologii/">Статьи </a>
                                 <i class="fa fa-angle-double-right" aria-hidden="true"></i>
                             </li>
-    
+
                             <li>
                                 <a href="/uchebnik-stomatologa/">Учебник </a>
                                 <i class="fa fa-angle-double-right" aria-hidden="true"></i>
                             </li>
-    
+
                             <li>
                                 <a href="/dogovor-oferti/">Договор оферты </a>
                                 <i class="fa fa-angle-double-right" aria-hidden="true"></i>
                             </li>
-    
+
                             <li>
                                 <a href=" /konfidentsialnost/ ">Конфиденциальность </a>
                                 <i class="fa fa-angle-double-right" aria-hidden="true"></i>
                             </li>
-    
+
                             <li>
                                 <a href="/about/">О нас </a>
                                 <i class="fa fa-angle-double-right" aria-hidden="true"></i>
                             </li>
-    
+
                             <li>
                                 <a href="/cont/">Контакты </a>
                                 <i class="fa fa-angle-double-right" aria-hidden="true"></i>
                             </li>
-    
+
                             <li>
                                 <a href="/partnership/">Пратнерам </a>
                                 <i class="fa fa-angle-double-right" aria-hidden="true"></i>
                             </li>
                         </ul>
                     </nav>
-    
-    
+
+
                     <div class="footer__menu-account">
                         <a href="/panel/login.php">
                             <i class="fa fa-sign-in" aria-hidden="true"></i>Личный кабинет
                         </a>
                     </div>
-    
-    
+
+
                     <div class="footer__payment">
                         <div class="footer__payment-title">Международная система оплаты</div>
-    
+
                         <ul class="footer__payment-list">
                             <li>
-                                <img src="https://ohi-s.com/wp-content/uploads/2018/11/visa-footer.png ">
+                                <img src="https://ohi-s.com/wp-content/uploads/2018/11/visa-footer.png "
+                                    alt="Логотип спонсора">
                             </li>
-    
+
                             <li>
-                                <img src="https://ohi-s.com/wp-content/uploads/2018/11/master-footer.png">
+                                <img src="https://ohi-s.com/wp-content/uploads/2018/11/master-footer.png"
+                                    alt="Логотип спонсора">
                             </li>
-    
+
                             <li>
-                                <img src="https://ohi-s.com/wp-content/uploads/2018/11/maestro-footer.png">
+                                <img src="https://ohi-s.com/wp-content/uploads/2018/11/maestro-footer.png"
+                                    alt="Логотип спонсора">
                             </li>
-    
+
                             <li>
-                                <img src="https://ohi-s.com/wp-content/uploads/2018/11/yandex-footer.png">
+                                <img src="https://ohi-s.com/wp-content/uploads/2018/11/yandex-footer.png"
+                                    alt="Логотип спонсора">
                             </li>
-    
+
                             <li>
-                                <img src="https://ohi-s.com/wp-content/uploads/2018/11/qiwi-footer.png">
+                                <img src="https://ohi-s.com/wp-content/uploads/2018/11/qiwi-footer.png"
+                                    alt="Логотип спонсора">
                             </li>
-    
+
                             <li>
-                                <img src="https://ohi-s.com/wp-content/uploads/2018/11/lik-footer.png">
+                                <img src="https://ohi-s.com/wp-content/uploads/2018/11/lik-footer.png"
+                                    alt="Логотип спонсора">
                             </li>
-    
-    
+
+
                             <li>
-                                <img src="https://ohi-s.com/wp-content/uploads/2018/11/walet-footer.png">
+                                <img src="https://ohi-s.com/wp-content/uploads/2018/11/walet-footer.png"
+                                    alt="Логотип спонсора">
                             </li>
-    
+
                             <li>
-                                <img src="https://ohi-s.com/wp-content/uploads/2018/11/alfa-footer.png">
+                                <img src="https://ohi-s.com/wp-content/uploads/2018/11/alfa-footer.png"
+                                    alt="Логотип спонсора">
                             </li>
-    
+
                             <li>
-                                <img src="https://ohi-s.com/wp-content/uploads/2018/11/sber-footer.png">
+                                <img src="https://ohi-s.com/wp-content/uploads/2018/11/sber-footer.png"
+                                    alt="Логотип спонсора">
                             </li>
-    
+
                         </ul>
                     </div>
                 </div> <!-- /footer__menu -->
-    
+
             </div> <!-- /footer__inner -->
-    
+
             <div class="footer__copy">© 2019 OHI-S - Все права защищены </div>
-    
+
         </div> <!-- /container -->
     </footer> <!-- /footer -->
 

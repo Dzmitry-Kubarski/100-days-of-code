@@ -33,7 +33,7 @@
             display: block;
             position: absolute;
             background-image: url(../img/header/users-2.png);
-            top: 40px;
+            top: 55px;
             left: auto;
             right: 5px;
             max-width: 207px;
@@ -61,12 +61,27 @@
     }
 }
 
-.intro__content {
-    // width: 65%;
+.intro__content {    
 
     @media (max-width: 992px) {
         width: 100%;
+        margin-top: 35px;
     }
+}
+
+.intro__icon {
+    display: none;
+
+    @media (max-width: 600px) {
+        display: block;
+        width: 100%;
+        font-size: 50px;
+        position: relative;
+        color: #fff700;
+        text-align: center;
+        animation: utp-dop 1.35s infinite cubic-bezier(0.66, 0, 0, 1);
+    }
+
 }
 
 
@@ -137,7 +152,7 @@
 
     @media (max-width: 992px) {
         width: 100%;
-        margin-top: 140px;
+        margin-top: 40px;
     }
 
     
@@ -164,6 +179,11 @@
         &::placeholder {
             font-size: inherit;
             color: inherit;
+        }
+
+        &:focus {
+            background-color: #fff;
+            color: #000000;
         }
     }
 }

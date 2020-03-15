@@ -1,5 +1,11 @@
 .logo {
     margin-right: 20px;
+
+    a div {
+        @media (max-width: 992px) {
+            font-size: 25px;
+        }
+    }
 }
 
 .logo__left {
