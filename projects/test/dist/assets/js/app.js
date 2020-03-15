@@ -3022,7 +3022,7 @@ $(function () {
     });
 
 
-    $('.program__accept-btn').click(function () {
+    $('.program__accept-btn, .intro__icon').click(function () {
         var target = $(this).attr('href');
         $('html, body').animate({ scrollTop: $(target).offset().top }, 1000);
         return false;
@@ -3069,6 +3069,14 @@ $(function () {
     $('.popup__close, .popup__overlay').click(function () {
         $('.popup__wrap').toggleClass('active');
         $('body').removeClass('over-hide');
+    });
+
+
+    // Mobail menu
+    $('.header__menu-btn').click(function () {
+        $(this).toggleClass('open-menu');
+        $('.mobail-menu').toggleClass('active');
+        $('.header__inner').toggleClass('open-menu');
     });
 
 });

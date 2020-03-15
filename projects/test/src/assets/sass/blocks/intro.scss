@@ -140,8 +140,7 @@
     }
 }
 
-.header__form {
-    // width: 35%;
+.header__form {   
     max-width: 30%;
 }
 
@@ -153,9 +152,7 @@
     @media (max-width: 992px) {
         width: 100%;
         margin-top: 40px;
-    }
-
-    
+    }    
 }
 
 .intro__form {

@@ -24,7 +24,11 @@
 
 .header__inner {
     display: flex;
-    align-items: center;   
+    align-items: center; 
+    
+    &.open-menu {
+        border-bottom: 1px solid #383838;
+    }
     
     @media (max-width: 992px) {
         justify-content: space-between;
@@ -39,7 +43,16 @@
         font-size: 37px;
         padding: 4px 6px;
         cursor: pointer;
-        width: 41px;
+        width: 41px;        
+    }
+
+    &.open-menu {
+        i {
+            &::before {
+                content: "\f00d";
+            }
+        }
+        
     }
 
     @media (max-width: 992px) {
