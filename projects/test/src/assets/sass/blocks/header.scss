@@ -14,12 +14,19 @@
     }
 }
 
-.scrolled .header__menu-link{
+.scrolled .header__menu-link,
+.scrolled .logo__right,
+.scrolled .header__menu-btn {
     color:#333;
 }
-.scrolled .logo__right {
-    color:#333;
-}
+
+// .scrolled .logo__right {
+//     color:#333;
+// }
+
+// .scrolled .header__menu-btn {
+//     color:#333;
+// }
     
 
 .header__inner {
@@ -51,9 +58,10 @@
             &::before {
                 content: "\f00d";
             }
-        }
-        
+        }        
     }
+
+    
 
     @media (max-width: 992px) {
         display: block;

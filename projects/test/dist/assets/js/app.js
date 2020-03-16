@@ -3022,7 +3022,7 @@ $(function () {
     });
 
 
-    $('.program__accept-btn, .intro__icon').click(function () {
+    $('.program__accept-btn, .intro__icon, .header__menu-btn').click(function () {
         var target = $(this).attr('href');
         $('html, body').animate({ scrollTop: $(target).offset().top }, 1000);
         return false;
@@ -3077,6 +3077,8 @@ $(function () {
         $(this).toggleClass('open-menu');
         $('.mobail-menu').toggleClass('active');
         $('.header__inner').toggleClass('open-menu');
+
+        $('.header').removeClass('scrolled');
     });
 
 });

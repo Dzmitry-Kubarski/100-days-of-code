@@ -430,7 +430,7 @@ body {
 
 /* Blocks */
 .mobail-menu {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     background-color: #000;
@@ -445,6 +445,10 @@ body {
 
 .mobail-menu.active {
     display: block;
+}
+
+.mobail-menu.active .header {
+    background: red;
 }
 
 .mobail-menu__list {
@@ -482,11 +486,9 @@ body {
     transition: 0s;
 }
 
-.scrolled .header__menu-link {
-    color: #333;
-}
-
-.scrolled .logo__right {
+.scrolled .header__menu-link,
+.scrolled .logo__right,
+.scrolled .header__menu-btn {
     color: #333;
 }
 
