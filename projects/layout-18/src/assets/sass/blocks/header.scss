@@ -1,0 +1,61 @@
+.header {
+    position: relative;
+    min-height: 100vh;
+    background-image: url(../img/header/bg.png);
+}
+
+.container {
+}
+
+.header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px;
+    margin-bottom: 215px;
+}
+
+.header__menu-btn {    
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $colorBlack;
+    transition: color .2s linear;
+
+    &:hover {
+        color: #B88FC7;
+    }
+}
+
+.header__content {
+    text-align: center;
+    margin-left: 370px;
+}
+
+.header__title {
+    margin-bottom: 35px;
+}
+
+.header__subtitle {
+    max-width: 650px;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 50px;
+    color: $colorBlack;
+    margin: 0 auto;
+    margin-bottom: 55px;
+}
+
+
+.header__btn {
+}
+
+.header__roses {
+
+}
+
+.header__icon-rose {
+    position: absolute;
+}

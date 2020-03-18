@@ -1,0 +1,34 @@
+/* Fonts */
+@import "fonts";
+
+/* Variables */
+@import "vars";
+
+
+/* Grid smart-grid */
+// @import "smart-grid";
+
+
+/* Normalize */
+@import "../../../../../node_modules/normalize.css/normalize";
+
+/* Animate.css */
+@import "../../../../../node_modules/animate.css/animate";
+
+
+/* Default styles */
+@import "base";
+
+
+/* Blocks */
+@import "blocks/header";
+@import "blocks/menu";
+@import "blocks/btn";
+
+
+
+
+
+
+/* Vendor libs */
+@import "vendor/slick";

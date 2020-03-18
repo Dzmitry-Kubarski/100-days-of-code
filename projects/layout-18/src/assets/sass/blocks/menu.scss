@@ -1,0 +1,28 @@
+.menu {
+    display: none;
+}
+
+.header__menu {
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+}
+
+.menu__item {
+    margin: 0px 10px;
+}
+
+.menu__link {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: $colorBlack;
+    transition: color .2s linear;
+
+    &:hover {
+        color: #B88FC7;
+    }
+}
