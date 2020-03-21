@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="4" viewBox="0 0 22 4">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #cecaea;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="moree.svg" class="cls-1" d="M1519,135a2,2,0,1,1-2,2A2,2,0,0,1,1519,135Zm9,0a2,2,0,1,1-2,2A2,2,0,0,1,1528,135Zm9,0a2,2,0,1,1-2,2A2,2,0,0,1,1537,135Z" transform="translate(-1517 -135)"/>
+</svg>

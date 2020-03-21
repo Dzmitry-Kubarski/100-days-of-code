@@ -1,0 +1,38 @@
+.video-section {
+}
+
+
+
+.video-section__img {
+    position: relative;
+    text-align: center;
+
+    img {
+        border-radius: 35px;
+    }
+}
+
+.video-section__btn-wrap {
+    display: flex;
+    align-items: center;      
+}
+
+.video-section__btn {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+
+    position: absolute;
+    top: 320px;
+    right: 570px; 
+
+    display: flex;
+    align-items: center;
+}
+
+.video-section__icon {
+    width: 99px;
+    height: 99px;
+    margin-right: 30px;
+}

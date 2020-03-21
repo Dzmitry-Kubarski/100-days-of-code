@@ -1,0 +1,39 @@
+.call-phone {
+}
+
+.intro__call-phone {
+    display: flex;
+    align-items: center;
+}
+
+.call-phone__icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    border-radius: 50%;
+    background-color: #f7f7fb;
+    margin-right: 20px;
+
+    svg {
+        width: 20px;
+        height: 20px;
+        fill: red;
+    }
+}
+
+.call-phone__phones {
+    display: flex;
+    flex-direction: column;
+}
+
+.call-phone__title {
+}
+
+.call-phone__link {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: inherit;
+}

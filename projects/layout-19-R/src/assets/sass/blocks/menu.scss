@@ -1,0 +1,26 @@
+.menu {
+}
+.header__menu {
+}
+.menu__list {
+    display: flex;
+    align-items: center;
+}
+.menu__item {
+}
+.menu__link {
+    background: rgba(87, 139, 207, 0.02);
+    color: rgba(40, 45, 51, 0.73);
+    font-size: 15px;
+    line-height: 1.4;
+    border-radius: 250px;
+
+    padding: 15px 30px;
+    margin: 2px 5px;
+    transition: all .2s linear;
+
+    &:hover {
+        background: #e63a6b;
+        color: #fff;
+    }
+}

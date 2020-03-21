@@ -1,0 +1,11 @@
+
+@font-face {
+	font-family: 'Magnolia-Script';
+	src: url('../fonts/magnolia-script.eot'); /* IE 9 Compatibility Mode */
+    src: url('../fonts/magnolia-script.eot?#iefix') format('embedded-opentype'); /* IE < 9 */
+    src: local('Magnolia-Script'), local('MagnoliaScript'),
+		url('../fonts/magnolia-script.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/magnolia-script.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/magnolia-script.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/magnolia-script.svg#magnolia-script') format('svg'); /* Chrome < 4, Legacy iOS */
+}

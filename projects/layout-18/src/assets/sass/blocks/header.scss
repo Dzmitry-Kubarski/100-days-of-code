@@ -1,11 +1,13 @@
 .header {
     position: relative;
-    min-height: 100vh;
+    min-height: 1020px;
     background-image: url(../img/header/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
 }
 
-.container {
-}
+
 
 .header__top {
     display: flex;

@@ -1,0 +1,77 @@
+.advantages {
+    // min-height: 600px;
+    // background-image: url(../img/advantages/bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 90px;
+}
+
+// .advantages__title {   
+//     font-family: 'Magnolia-Script';
+//     font-weight: normal;
+//     font-size: 90px;      
+//     transform: rotate(-14.32deg);
+//     color: rgba(204, 170, 216, 0.4);  
+//     background: url(../img/advantages/bg-title.png);
+//     -webkit-background-clip: text;  
+    
+//     span {
+//         display: block;
+//         font-size: 60px;
+//         background: rgb(246,246,246);
+//         background: linear-gradient(45deg, rgba(246,246,246,1) 0%, rgba(215,215,215,1) 100%);
+//         -webkit-background-clip: text;  
+//         -webkit-text-fill-color: transparent; 
+//         padding-bottom: 20px;
+//         margin-left: 390px;
+//     }
+// }
+
+.advantages__img-box {
+    margin-top: -190px;
+}
+
+.advantages__items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -115px;
+}
+
+.advantages__item {
+    width: 100%;
+    max-width: 410px;
+    text-align: center;
+
+    &:nth-child(2) {
+        margin-top: 60px;
+    }
+}
+
+.advantages__item-icon {
+    width: 82px;
+    height: 83px;
+    margin-bottom: 30px;
+}
+
+.advantages__item-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: $colorBlack;
+    margin-bottom: 5px;
+}
+
+.advantages__item-text {    
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.advantages__btn-wrap {
+    text-align: center;
+    margin-top: 65px;
+}
+
+
+
+

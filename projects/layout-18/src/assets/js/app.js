@@ -6,6 +6,6 @@
 
 $(function () {
 
-
+    //= components/videoPopup.js
 
 });

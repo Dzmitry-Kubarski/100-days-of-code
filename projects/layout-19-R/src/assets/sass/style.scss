@@ -1,0 +1,39 @@
+/* Fonts */
+@import "fonts";
+
+/* Variables */
+@import "vars";
+
+
+/* Grid smart-grid */
+// @import "smart-grid";
+
+
+/* Normalize */
+@import "../../../../../node_modules/normalize.css/normalize";
+
+/* Animate.css */
+@import "../../../../../node_modules/animate.css/animate";
+
+
+/* Default styles */
+@import "base";
+
+
+/* Blocks */
+@import "blocks/title";
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/btn";
+@import "blocks/call-phone";
+@import "blocks/logo";
+@import "blocks/menu";
+@import "blocks/programs";
+
+
+
+
+
+
+/* Vendor libs */
+@import "vendor/slick";

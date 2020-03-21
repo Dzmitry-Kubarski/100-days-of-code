@@ -1,0 +1,31 @@
+.logo {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    
+   
+    img {
+        width: 80px;
+        height: 80px;
+        margin-right: 15px;
+    }
+}
+
+.header__logo {
+}
+
+.logo__content {
+}
+
+.logo__title {
+    display: block;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 3px;
+}
+
+.logo__subtitle {
+    font-size: 16px;
+    color: rgba(40, 45, 51, 0.7);
+}

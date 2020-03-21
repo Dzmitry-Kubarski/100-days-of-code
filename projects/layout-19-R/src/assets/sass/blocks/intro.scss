@@ -1,0 +1,85 @@
+.intro {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 52%;
+        background: url('../img/intro/bg-icons.png');
+        background-color: rgba(110, 102, 194, 1);
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        border-radius: 20px 20px 0px 0px;
+        background: url('../img/intro/noteboook.svg');
+        // background-color: #fff;
+        background-color: (rgba(0, 77, 255, 0.03));        
+    }
+}
+
+.intro__container {
+    display: flex;
+    align-items: center;
+    min-height: 715px;
+}
+
+.container-big{
+    position: relative;
+    z-index: 5;    
+    // min-height: 715px;
+    width: 100%;
+    max-width: 1660px;
+    border-radius: 20px;  
+    background-color: #fff; 
+    box-shadow: 0px 0px 0px 0px #f74d52, 0px 10px 12px 0px rgba(134, 134, 220, 0.06); 
+    background-image: url(../img/intro/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro__content {
+    width: 50%;
+}
+
+.intro__title {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: #585a62;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.intro__slogan {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.intro__text {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.62);
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.intro__btn {
+    margin-bottom: 50px;
+}
