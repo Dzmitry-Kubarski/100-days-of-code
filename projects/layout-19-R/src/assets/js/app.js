@@ -6,6 +6,10 @@
 
 $(function () {
 
-
+    // Аккордион
+    $('.questions__item-header').click(function () {
+        $(this).toggleClass('in').next().slideToggle();
+        $('.questions__item-header').not(this).removeClass('in').next().slideUp();
+    });
 
 });

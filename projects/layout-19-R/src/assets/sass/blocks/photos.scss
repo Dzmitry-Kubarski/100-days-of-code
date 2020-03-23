@@ -1,0 +1,35 @@
+.photos {
+    background: linear-gradient(rgba(0, 77, 255, 0.03), rgba(0, 77, 255, 0.03)), url('../img/intro/noteboook.svg') left 50% top 50% / auto auto repeat;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+
+.photos__title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.photos__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.photos__item {
+    max-width: 349px;
+    max-height: 220px;     
+    box-shadow: 0px 10px 12px 0px rgba(134, 134, 220, 0.07);
+    border-radius: 6px;   
+    overflow: hidden;
+    margin: 0px 10px;
+    margin-bottom: 20px;
+    
+
+    img {
+        display: block;        
+    }
+    
+}
