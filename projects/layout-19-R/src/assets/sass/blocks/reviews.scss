@@ -30,6 +30,10 @@
 }
 
 .reviews__slider-btn {
+    position: absolute;
+    top: 90px; 
+    // left: 50%;
+    // transform: translateX(-50%);
     width: 50px;
     height: 50px;
     background-color: #fff;
@@ -49,6 +53,14 @@
             fill: #fff;
         }
     }
+
+    &--prev {
+        left: -75px;
+    }
+
+    &--next {
+        right: -75px;
+    }
 }
 
 .reviews__sliders {
@@ -64,6 +76,7 @@
 }
 
 .reviews__slide {
+    position: relative;
     max-width: 630px;
     display: flex;
     flex-direction: column;
@@ -72,6 +85,22 @@
     padding: 30px;  
     margin-left: 15px;
     margin-right: 15px;
+
+    &::after {
+        // content: 'Skrin';
+        // display: block;
+        // position: absolute;
+        // top: 15px;
+        // right: 15px;
+        // width: 60px;
+        // height: 80px;
+        // background-color: #fff;
+        // color: $colorCherry;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // font-size: 14px;
+    }
 }
 
 .reviews__slide-header {

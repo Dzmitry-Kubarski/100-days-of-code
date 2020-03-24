@@ -1,0 +1,143 @@
+.form {
+    width: 100%;
+    padding: 25px 40px;
+    // text-align: center;
+}
+
+.form__title {
+    font-family: $font_Exo2;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.form__field {
+    margin-bottom: 15px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.form__input {
+    width: 100%;
+    height: 70px;
+    font-family: $font_Montserrat;
+    font-size: 16px;
+    line-height: 22px;
+    border-radius: 5px;
+    // background-color: #f8f8f8;
+
+    background-color: rgba(0,77,255,.03);
+    box-shadow: inset 3.536px 3.536px 8px 0px rgba(0, 0, 0, .05);    
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: .3s;
+    padding: 0 20px;
+}
+
+.form__btn {
+    width: 100%;
+}
+
+.btn {
+}
+
+
+.btn__blik {
+}
+
+.form__policy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.form__radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 7px;
+}
+
+.form__radio-label {
+}
+
+.form__policy-text {
+    font-size: 11px;
+    line-height: 19px;
+    color: #9f9f9f;
+}
+
+.form__radio + .form__radio-label {
+    position: relative;
+    padding: 0 0 0 30px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 11px;
+    line-height: 16px;
+
+    &::before {
+        content: '';
+        background-color: #f0f0f0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+        width: 19px;
+        height: 19px;
+        box-sizing: border-box;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 19px;
+        height: 19px;
+        background: url('../img/icon-checkbox.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 50%;
+        opacity: 0;
+        transition: .2s;
+    }
+}
+
+.form__radio:checked + .form__radio-label:after {
+    opacity: 1;
+}
+
+.form-inner__bottom {
+    border-top: 1px solid #d3e1f0;
+    padding: 15px 20px;
+}
+
+.form-contacts {
+    text-align: center;
+}
+
+.form-contacts__title {
+    font-size: 15px;
+    line-height: 21px;
+    color: $colorBlack-Text;
+}
+
+.form-contacts__phone {
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 800;
+    color: $colorBlack-Text;    
+}
+
+.form-contacts__time {
+    font-size: 12px;
+    margin-top: 5px;
+    color: $colorBlack-Title;
+}

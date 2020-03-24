@@ -1,0 +1,31 @@
+.programs-page {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 77, 255, 0.03), rgba(0, 77, 255, 0.03)), url('../img/intro/noteboook.svg') left 50% top 50% / auto auto repeat;
+    padding: 150px 0px;
+
+
+    .programs__items {
+        margin: 0 -15px 25px;
+    }
+
+    .programs__item {
+        max-width: calc(50% - 30px); 
+        text-align: left;
+        margin: 15px;
+    }
+
+    .programs__img-wrap {
+        max-width: 100%;
+        min-height: 310px;
+    }
+
+    .programs__btn-wrap {
+        justify-content: flex-start;
+    }
+
+    .programs__item-descr {
+        font-size: 16px;
+    }   
+
+}
+

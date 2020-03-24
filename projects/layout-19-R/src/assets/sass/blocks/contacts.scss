@@ -1,0 +1,85 @@
+.contacts {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 77, 255, 0.03), rgba(0, 77, 255, 0.03)), url('../img/intro/noteboook.svg') left 50% top 50% / auto auto repeat;
+    padding: 150px 0px;
+}
+
+
+.contacts__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.contacts__content {
+}
+
+.contacts__form-box {
+    
+}
+
+.contacts__map {
+    max-width: 100%;
+    max-height: 400px;
+
+    iframe {
+        border: none;
+        width: 100%;
+        min-height: 400px;
+    }
+}
+
+.contacts__content {
+    width: 50%;
+}
+
+.contacts__row {
+    margin-bottom: 30px;
+}
+
+.contacts__content-title {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;    
+}
+
+.contacts__phone {
+}
+
+.contacts__content-time {
+    position: relative;
+    margin-top: 15px;
+    padding-left: 25px;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 17px;
+        height: 17px;
+        background-image: url('../img/clock.png');
+        transform: translateY(-50%);
+    }
+}
+
+.contacts__label {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.contacts__form-box {
+    // width: 50%;
+    flex-basis: 470px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 29px 38px 0px rgba(26, 71, 118, .09);
+
+}
+
+.contacts__form {
+}
+

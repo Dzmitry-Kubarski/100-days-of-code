@@ -22,6 +22,9 @@
 
 /* Blocks */
 @import "blocks/title";
+@import "blocks/title-page";
+@import "blocks/breadCrumbs";
+@import "blocks/form";
 @import "blocks/progress";
 @import "blocks/social";
 @import "blocks/header";
@@ -36,6 +39,12 @@
 @import "blocks/reviews";
 @import "blocks/questions";
 @import "blocks/footer";
+
+@import "blocks/about-page";
+@import "blocks/line-bg";
+@import "blocks/programs-page";
+@import "blocks/price-list";
+@import "blocks/contacts";
 
 
 
