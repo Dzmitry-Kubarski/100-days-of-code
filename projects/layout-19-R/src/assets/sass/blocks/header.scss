@@ -9,11 +9,15 @@
 
     @media (max-width: 640px) {
         margin-top: 0;        
-    }
-    
+    }    
+}
+
+.header__container {
+    position: relative;
 }
 
 .header__inner {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,12 +27,17 @@
     padding: 30px;
     margin: 0 auto;
 
+    &.open-menu {
+        position: static;
+    }
+
     @media (max-width: 992px) {
         width: 85%;
     }
 
     @media (max-width: 960px) {
         justify-content: center;
+        border-radius: 0px 0px 15px 15px;
     }
 
     @media (max-width: 768px) {
@@ -53,11 +62,64 @@
         &.logo img {
             width: 50px;
             height: 50px;
+            margin-right: 0;
         }
 
         .logo__title {
             font-size: 22px;
         }
         
+    }
+}
+
+.header__menu-btn {
+    color: $colorBlack-Text;
+    display: flex;
+    align-items: center;
+    display: none;
+
+    span {
+        margin-right: 10px;
+        text-transform: uppercase;
+        font-weight: 800;
+
+        @media (max-width: 960px) {
+            display: none;   
+        }
+    }
+
+    button {
+        position: relative;
+        z-index: 99;
+        width: 40px;
+        height: 40px;
+        background-color: $colorCherry;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.active {
+            background-color: $bg_purple;
+        }
+
+        @media (max-width: 960px) {
+            position: absolute;
+            top: 0;
+            right: 0;  
+            border-radius: 0px 0px 0px 6px;
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    svg {
+        width: 22px;
+        height: 22px;
+        fill: #fff;
+    }
+
+    @media (max-width: 1060px) {
+        display: flex; 
     }
 }

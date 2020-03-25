@@ -7,7 +7,6 @@
     @media (max-width: 990px) {
         padding: 60px 0px; 
     }
-
 }
 
 
@@ -34,6 +33,10 @@
     @media (max-width: 645px) {
         text-align: center;
         width: 100%;   
+    }
+
+    @media (max-width: 480px) {
+        margin-bottom: 0;   
     }
 }
 
@@ -85,7 +88,7 @@
     @media (max-width: 645px) {
         // top: 50%;
         // transform: translateY(-50%);   
-        top: 0;
+        top: 50px;
     }
 }
 

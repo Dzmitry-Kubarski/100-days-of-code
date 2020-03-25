@@ -3049,4 +3049,12 @@ $(function () {
         ]
     });
 
+
+    // Mobail menu
+    $('.header__menuBtn').click(function () {
+        $(this).toggleClass('active');
+        $('.menu').toggleClass('active');
+        $('.header__inner').toggleClass('open-menu');
+    });
+
 });
