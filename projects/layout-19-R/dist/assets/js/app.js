@@ -3030,7 +3030,7 @@ $(function () {
         slidesToShow: 2,
         slidesToScroll: 2,
         speed: 800,
-        adaptiveHeight: true,
+        // adaptiveHeight: true,
         nextArrow: '<button class="reviews__slider-btn  reviews__slider-btn--prev"><svg><use xlink:href="#svg-prev"></use></svg></button>',
         prevArrow: '<button class="reviews__slider-btn  reviews__slider-btn--next"><svg><use xlink:href="#svg-next"></use></svg></button>',
 
@@ -3038,10 +3038,12 @@ $(function () {
         // ----- responsive slider -----
         responsive: [
             {
-                breakpoint: 960,
+                breakpoint: 646,
                 settings: {
-                    dots: true,
-                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    // dots: true,
+                    // arrows: false,
                 }
             },
         ]

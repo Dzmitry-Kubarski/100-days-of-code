@@ -1,4 +1,8 @@
 .menu {
+
+    @media (max-width: 1200px) {
+        display: none;   
+    }
 }
 
 .header__menu {
@@ -10,6 +14,12 @@
 }
 
 .menu__item {
+
+    // &:last-child {
+    //     .menu__link {
+    //         padding-right: 0;
+    //     }
+    // }
 }
 
 .menu__link {

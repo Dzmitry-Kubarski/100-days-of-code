@@ -2,27 +2,49 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     box-shadow: 0px 10px 12px 0px rgba(134, 134, 220, 0.07);
     background: #fff;
     border-radius: 10px;
     padding-left: 50px;
     padding-right: 50px;
-
     margin: 0 -10px;
+
+    @media (max-width: 620px) {
+        flex-wrap: wrap;
+        justify-content: center;   
+    }
 }
 
 .progress__item {
     width: 33.33%;
     display: flex;
     align-items: center;
-
     padding: 30px 35px;
     margin: 10px;
+
+    @media (max-width: 960px) {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 10px;
+        width: 100%;   
+    }
+
+    @media (max-width: 620px) {
+        width: 45%;   
+    }
+
+    @media (max-width: 480px) {
+        padding: 15px 10px;
+        width: 100%;   
+    }
 }
 
 .progress__text {
     margin-right: 20px;
+
+    @media (max-width: 960px) {
+        margin-right: 0;   
+    }
 }
 
 .progress__title {
@@ -39,6 +61,11 @@
 .progress__subtitle {
     font-size: 16px;
     font-weight: 500;
+
+    @media (max-width: 960px) {
+        font-size: 15px;
+        color: $colorBlack-Title;   
+    }
 }
 
 .progress__icon {
@@ -54,5 +81,10 @@
     svg {
         width: 40px;
         height: 40px;
+    }
+
+    @media (max-width: 960px) {
+        order: -1;
+        margin-bottom: 12px;   
     }
 }
