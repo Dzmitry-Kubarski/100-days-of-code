@@ -139,7 +139,7 @@
     outline: 0;
 
     &:focus {
-        box-shadow: 0 0 10px 5px rgba($bg_purple, .7);
+        // box-shadow: 0 0 10px 5px rgba($bg_purple, .7);
     }
 
     @media (max-width: 768px) {

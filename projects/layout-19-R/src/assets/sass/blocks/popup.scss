@@ -30,8 +30,8 @@
 
 .popup__close {
     position: absolute;
-    right: 20px;
-    top: 15px;
+    right: 10px;
+    top: 0px;
     color: $colorBlack-Text;
     font-size: 40px;
     z-index: 99;
@@ -47,8 +47,7 @@
 .popup {
     position: relative;
     max-width: 100%;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    padding: 50px 15px;
 
     display: none;
 
@@ -57,11 +56,7 @@
     }    
 
     .form {
-        background-color: #fff;
-
-        input {
-            // background-color: #fff;
-        }
+        background-color: #fff;        
     }
 }
 
@@ -73,6 +68,7 @@
 }
 
 .over-hide {
-    position: fixed;
+    // position: fixed;
+    position: absolute;
     width: 100%;
 }

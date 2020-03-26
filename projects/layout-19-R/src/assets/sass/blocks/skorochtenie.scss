@@ -1,13 +1,38 @@
 
 
-.skorochtenie {
-    // min-height: 100vh;
-    background: linear-gradient(rgba(0, 77, 255, 0.03), rgba(0, 77, 255, 0.03)), url('../img/intro/noteboook.svg') left 50% top 50% / auto auto repeat;
-    padding: 150px 0px;  
+.skorochtenie {    
+
+    .intro {
+        min-height: 100vh;
+        z-index: 0;
+    }
+
+    .container-big {
+        // background: url(../img/skorochtenie/bg.jpg);
+        // background-repeat: no-repeat;
+        // background-position: right center;
+        // background-size: cover;
+
+
+        background: url('../img/skorochtenie/bg.jpg') left 50% top 0/cover no-repeat;
+
+        @media (max-width: 768px) {
+            background: url('../img/skorochtenie/bg.jpg') right -29px top -52px/894px no-repeat #f6f6f9;   
+        }
+
+        @media (max-width: 480px) {
+            background: url('../img/skorochtenie/bg.jpg') right -54px top 0/625px no-repeat #f6f6f9;   
+        }
+    }
+
+    .intro__title {
+    }
+
+    .intro__text {
+    }
 }
 
-.skorochtenie {
-}
+
 
 
 .skorochtenie__inner {
@@ -44,4 +69,9 @@
     @media (max-width: 960px) {
         display: none;   
     }
+}
+
+.skorochtenie-main {
+    background: url('../img/intro/noteboook.svg') rgba(0,77,255,.03);
+    padding-bottom: 150px;
 }
