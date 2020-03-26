@@ -1,5 +1,5 @@
 .programs-page {
-    min-height: 100vh;
+    // min-height: 100vh;
     background: linear-gradient(rgba(0, 77, 255, 0.03), rgba(0, 77, 255, 0.03)), url('../img/intro/noteboook.svg') left 50% top 50% / auto auto repeat;
     padding: 150px 0px;
 
@@ -11,16 +11,41 @@
     .programs__item {
         max-width: calc(50% - 30px); 
         text-align: left;
-        margin: 15px;
+        margin: 15px;       
+
+        @media (max-width: 768px) {
+            max-width: 100%;   
+        }
+       
     }
 
     .programs__img-wrap {
         max-width: 100%;
-        min-height: 310px;
+        // min-height: 310px;
+        // max-height: 310px;
+        overflow: hidden;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+        }        
+
+        @media (max-width: 768px) {
+            max-height: 300px;   
+        }
+
+        @media (max-width: 480px) {
+            max-height: 230px;  
+        }
     }
 
     .programs__btn-wrap {
         justify-content: flex-start;
+        
+        @media (max-width: 1080px) {
+            padding-bottom: 20px;   
+        }
     }
 
     .programs__item-descr {

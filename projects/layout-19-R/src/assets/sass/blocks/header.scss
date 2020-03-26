@@ -76,7 +76,7 @@
     color: $colorBlack-Text;
     display: flex;
     align-items: center;
-    display: none;
+    display: none;   
 
     span {
         margin-right: 10px;
@@ -97,7 +97,7 @@
         border-radius: 4px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: center;       
 
         &.active {
             background-color: $bg_purple;
@@ -111,6 +111,13 @@
             width: 50px;
             height: 50px;
         }
+
+        @media (max-width: 480px) {
+            &.scrolled {
+                position: fixed;
+                background-color: $colorBlack-Text;
+            }   
+        }
     }
 
     svg {
@@ -123,3 +130,4 @@
         display: flex; 
     }
 }
+

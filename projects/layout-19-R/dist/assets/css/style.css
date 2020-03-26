@@ -4135,6 +4135,12 @@ body {
     padding: 25px 40px;
 }
 
+@media (max-width: 480px) {
+    .form {
+        padding: 15px;
+    }
+}
+
 .form__title {
     font-family: "Exo 2", sans-serif;
     font-size: 32px;
@@ -4142,6 +4148,13 @@ body {
     font-weight: 700;
     text-align: center;
     margin-bottom: 15px;
+}
+
+@media (max-width: 640px) {
+    .form__title {
+        font-size: 24px;
+        line-height: 30px;
+    }
 }
 
 .form__field {
@@ -4258,6 +4271,12 @@ body {
     line-height: 21px;
     font-weight: 800;
     color: rgba(69, 69, 69, 0.74);
+}
+
+@media (max-width: 640px) {
+    .form-contacts__phone {
+        display: block;
+    }
 }
 
 .form-contacts__time {
@@ -4564,6 +4583,13 @@ body {
         border-radius: 0px 0px 0px 6px;
         width: 50px;
         height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__menu-btn button.scrolled {
+        position: fixed;
+        background-color: rgba(69, 69, 69, 0.74);
     }
 }
 
@@ -5899,9 +5925,22 @@ body {
     align-items: center;
 }
 
+@media (max-width: 960px) {
+    .about-page__inner {
+        flex-wrap: wrap;
+    }
+}
+
 .about-page__content {
     width: 50%;
     margin-left: 40px;
+}
+
+@media (max-width: 960px) {
+    .about-page__content {
+        width: 100%;
+        margin-left: 0;
+    }
 }
 
 .about-page__content-text {
@@ -5927,7 +5966,6 @@ body {
 }
 
 .programs-page {
-    min-height: 100vh;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 77, 255, 0.03)), to(rgba(0, 77, 255, 0.03))), url("../img/intro/noteboook.svg") left 50% top 50%/auto auto repeat;
     background: linear-gradient(rgba(0, 77, 255, 0.03), rgba(0, 77, 255, 0.03)), url("../img/intro/noteboook.svg") left 50% top 50%/auto auto repeat;
     padding: 150px 0px;
@@ -5943,14 +5981,45 @@ body {
     margin: 15px;
 }
 
+@media (max-width: 768px) {
+    .programs-page .programs__item {
+        max-width: 100%;
+    }
+}
+
 .programs-page .programs__img-wrap {
     max-width: 100%;
-    min-height: 310px;
+    overflow: hidden;
+}
+
+.programs-page .programs__img-wrap img {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .programs-page .programs__img-wrap {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .programs-page .programs__img-wrap {
+        max-height: 230px;
+    }
 }
 
 .programs-page .programs__btn-wrap {
     -webkit-box-pack: start;
     justify-content: flex-start;
+}
+
+@media (max-width: 1080px) {
+    .programs-page .programs__btn-wrap {
+        padding-bottom: 20px;
+    }
 }
 
 .programs-page .programs__item-descr {
@@ -5973,10 +6042,38 @@ table td {
 }
 
 .contacts {
-    min-height: 100vh;
+    position: relative;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 77, 255, 0.03)), to(rgba(0, 77, 255, 0.03))), url("../img/intro/noteboook.svg") left 50% top 50%/auto auto repeat;
     background: linear-gradient(rgba(0, 77, 255, 0.03), rgba(0, 77, 255, 0.03)), url("../img/intro/noteboook.svg") left 50% top 50%/auto auto repeat;
     padding: 150px 0px;
+}
+
+.contacts .social__link {
+    background-color: #6e66c2;
+}
+
+.contacts .social__link:hover {
+    background-color: #e63a6b;
+}
+
+@media (max-width: 990px) {
+    .contacts::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 375px;
+        right: 20px;
+        width: 192px;
+        height: 224px;
+        background: url("../img/backpack.png");
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 990px) and (max-width: 640px) {
+    .contacts::after {
+        display: none;
+    }
 }
 
 .contacts__inner {
@@ -5987,6 +6084,58 @@ table td {
     -webkit-box-align: center;
     align-items: center;
     margin-bottom: 55px;
+}
+
+@media (max-width: 990px) {
+    .contacts__inner {
+        flex-wrap: wrap;
+    }
+}
+
+.contacts__content {
+    width: 50%;
+    margin-right: 30px;
+}
+
+@media (max-width: 990px) {
+    .contacts__content {
+        width: 100%;
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+}
+
+.contacts__content_title {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 990px) {
+    .contacts__content_title {
+        width: 70%;
+    }
+}
+
+@media (max-width: 640px) {
+    .contacts__content_title {
+        width: 100%;
+        font-size: 24px;
+    }
+}
+
+.contacts__form-box {
+    flex-basis: 470px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 29px 38px 0px rgba(26, 71, 118, 0.09);
+}
+
+@media (max-width: 990px) {
+    .contacts__form-box {
+        margin: 0 auto;
+    }
 }
 
 .contacts__map {
@@ -6000,12 +6149,12 @@ table td {
     min-height: 400px;
 }
 
-.contacts__content {
-    width: 50%;
-}
-
 .contacts__row {
     margin-bottom: 30px;
+}
+
+.contacts__row p {
+    line-height: 20px;
 }
 
 .contacts__content-title {
@@ -6034,16 +6183,21 @@ table td {
     transform: translateY(-50%);
 }
 
+@media (max-width: 376px) {
+    .contacts__content-time {
+        width: 70%;
+    }
+}
+
 .contacts__label {
     margin-top: 5px;
     font-size: 14px;
 }
 
-.contacts__form-box {
-    flex-basis: 470px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 29px 38px 0px rgba(26, 71, 118, 0.09);
+@media (max-width: 520px) {
+    .contacts__label {
+        margin-top: 15px;
+    }
 }
 
 /* Vendor libs */

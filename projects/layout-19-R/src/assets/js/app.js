@@ -41,10 +41,23 @@ $(function () {
 
 
     // Mobail menu
-    $('.header__menuBtn').click(function () {
+    $('.header__menuBtn, .header__menuBtn--fixed').click(function () {
         $(this).toggleClass('active');
         $('.menu').toggleClass('active');
         $('.header__inner').toggleClass('open-menu');
     });
+
+
+
+    // Fixed menu
+    // $(window).on("scroll", function () {
+    //     var scrolled = $(this).scrollTop();
+    //     if (scrolled > 116) {
+    //         $('.header__menuBtn--fixed').addClass('scrolled');
+    //     }
+    //     if (scrolled <= 116) {
+    //         $('.header__menuBtn--fixed').removeClass('scrolled');
+    //     }
+    // });
 
 });

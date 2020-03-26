@@ -1,17 +1,26 @@
 .about-page {
     min-height: 100vh;
     background: linear-gradient(rgba(0, 77, 255, 0.03), rgba(0, 77, 255, 0.03)), url('../img/intro/noteboook.svg') left 50% top 50% / auto auto repeat;
-    padding: 150px 0px;
+    padding: 150px 0px;   
 }
 
 .about-page__inner {
     display: flex;
     align-items: center;
+
+    @media (max-width: 960px) {
+        flex-wrap: wrap;   
+    }
 }
 
 .about-page__content {
     width: 50%;
     margin-left: 40px;
+
+    @media (max-width: 960px) {
+        width: 100%;   
+        margin-left: 0;
+    }
 }
 
 .about-page__content-text {
