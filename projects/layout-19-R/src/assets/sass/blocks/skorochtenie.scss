@@ -1,0 +1,47 @@
+
+
+.skorochtenie {
+    // min-height: 100vh;
+    background: linear-gradient(rgba(0, 77, 255, 0.03), rgba(0, 77, 255, 0.03)), url('../img/intro/noteboook.svg') left 50% top 50% / auto auto repeat;
+    padding: 150px 0px;  
+}
+
+.skorochtenie {
+}
+
+
+.skorochtenie__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skorochtenie__content {
+    width: 55%;
+
+    p {
+        margin: 10px 0px;
+    }
+
+    ul li {
+        list-style: disc;
+        margin-left: 30px;
+    }
+
+    @media (max-width: 960px) {
+        width: 100%;   
+    }
+}
+
+.skorochtenie__img-box {
+    width: 40%;
+    min-height: 490px;
+    min-width: 420px;
+    background: url(../img/questions/img-1.png) 0 0/cover no-repeat;
+    overflow: hidden;
+    box-shadow: inset 0 0 0 8px #fff, 0 10px 12px rgba(134,134,220,.07);
+    border-radius: 20px;
+
+    @media (max-width: 960px) {
+        display: none;   
+    }
+}

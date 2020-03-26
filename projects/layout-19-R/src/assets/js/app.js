@@ -48,6 +48,21 @@ $(function () {
     });
 
 
+    // -------- Popup --------
+    $('.intro__btn').click(function () {
+        var id = $(this).attr('data-id');
+        $('body').addClass('over-hide');
+        $('.popup__wrap').addClass('active');
+        $('.popup').removeClass('active');
+        $('#' + id).addClass('active');
+    });
+
+    $('.popup__close, .popup__overlay').click(function () {
+        $('.popup__wrap').toggleClass('active');
+        $('body').removeClass('over-hide');
+    });
+
+
 
     // Fixed menu
     // $(window).on("scroll", function () {

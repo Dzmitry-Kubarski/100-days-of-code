@@ -9,9 +9,14 @@
     border-radius: 250px;
     padding: 22px 40px;
     transition: background-color .2s linear;
+    outline: 0;
    
     &:hover {
         background-color: darken($colorCherry, 10%);
+    }
+
+    &:focus {
+        box-shadow: 0 0 10px 5px rgba($bg_purple, .7);
     }
 
     @media (max-width: 480px) {

@@ -53,6 +53,11 @@
     background-color: #fff;
     border-radius: 4px;
     transition: background-color .1s linear;
+    outline: 0;
+
+    &:focus {
+        box-shadow: 0 0 10px 5px rgba($colorCherry, .7);
+    }
 
     svg {
         width: 22px;

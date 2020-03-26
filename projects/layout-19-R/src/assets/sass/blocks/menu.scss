@@ -50,6 +50,11 @@
     padding: 15px 30px;
     margin: 2px 5px;
     transition: all .2s linear;
+    outline: 0;
+
+    &:focus {
+        box-shadow: 0 0 5px 3px rgba($bg_purple, .4);
+    }
 
     &:hover {
         background: $colorCherry;

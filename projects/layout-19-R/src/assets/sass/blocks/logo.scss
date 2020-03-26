@@ -2,6 +2,12 @@
     display: flex;
     align-items: center;
     color: inherit;
+    outline: 0;
+
+    &:focus {
+        box-shadow: 0 0 5px 3px rgba($bg_purple, .4);
+        border-radius: 6px;
+    }
     
    
     img {
