@@ -28,31 +28,34 @@
 @import "blocks/form";
 @import "blocks/progress";
 @import "blocks/social";
-@import "blocks/header";
-@import "blocks/intro";
 @import "blocks/call-phone";
 @import "blocks/logo";
 @import "blocks/menu";
+@import "blocks/line-bg";
+@import "blocks/popup";
+@import "blocks/page-info";
+
+
+
+/* Sections */
+@import "blocks/header";
+@import "blocks/intro";
 @import "blocks/programs";
 @import "blocks/about";
 @import "blocks/photos";
 @import "blocks/reviews";
 @import "blocks/questions";
 @import "blocks/footer";
+
+
+
+/* Pages */
 @import "blocks/about-page";
-@import "blocks/line-bg";
 @import "blocks/programs-page";
-@import "blocks/price-list";
 @import "blocks/contacts";
-@import "blocks/popup";
+@import "blocks/price-list";
 
 @import "blocks/skorochtenie";
-
-
-
-
-
-
 
 
 

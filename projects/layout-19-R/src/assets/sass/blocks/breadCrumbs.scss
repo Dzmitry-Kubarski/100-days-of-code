@@ -30,4 +30,8 @@
             color: lighten($colorCherry, 20%);
         }
     }
+
+    @media (max-width: 680px) {
+        display: none;   
+    }
 }
