@@ -917,6 +917,12 @@ body {
     }
 }
 
+.portfolio__dots-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
 .portfolio__dots-list {
     display: -webkit-box;
     display: flex;
