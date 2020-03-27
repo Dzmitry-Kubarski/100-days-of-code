@@ -4164,6 +4164,10 @@ body {
     background-color: #d21b4f;
 }
 
+.btn:focus {
+    box-shadow: 0 0 5px 3px rgba(110, 102, 194, 0.4);
+}
+
 @media (max-width: 480px) {
     .btn {
         padding: 22px;
@@ -4229,6 +4233,12 @@ body {
     -webkit-transition: .3s;
     transition: .3s;
     padding: 0 20px;
+}
+
+@media (max-width: 480px) {
+    .form__input {
+        height: 55px;
+    }
 }
 
 .form__btn {
@@ -4549,7 +4559,7 @@ body {
 }
 
 .call-phone__link:focus {
-    box-shadow: 0 0 5px 3px rgba(110, 102, 194, 0.4);
+    box-shadow: 0 0 0px 3px rgba(110, 102, 194, 0.2);
     border-radius: 6px;
 }
 
@@ -4563,7 +4573,7 @@ body {
 }
 
 .logo:focus {
-    box-shadow: 0 0 5px 3px rgba(110, 102, 194, 0.4);
+    box-shadow: 0 0 0px 3px rgba(110, 102, 194, 0.2);
     border-radius: 6px;
 }
 
@@ -4646,7 +4656,7 @@ body {
 }
 
 .menu__link:focus {
-    box-shadow: 0 0 5px 3px rgba(110, 102, 194, 0.4);
+    box-shadow: 0 0 0px 3px rgba(110, 102, 194, 0.2);
 }
 
 .menu__link:hover {
@@ -5072,7 +5082,6 @@ body {
 
 .intro__btn {
     margin-bottom: 50px;
-    outline: 0;
 }
 
 @media (max-width: 768px) {
@@ -5136,7 +5145,8 @@ body {
     background-color: #fff;
     border-radius: 6px;
     text-align: center;
-    padding: 35px 35px 45px;
+    padding: 15px;
+    padding-bottom: 30px;
     margin: 10px;
 }
 
@@ -5161,11 +5171,11 @@ body {
 
 .programs__img-wrap {
     position: relative;
-    max-width: 344px;
+    width: 100%;
     max-height: 230px;
     border-radius: 6px;
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .programs__img-wrap img {
@@ -5225,14 +5235,6 @@ body {
     }
 }
 
-.programs__item-btn {
-    outline: 0;
-}
-
-.programs__item-btn:focus {
-    box-shadow: 0 0 10px 5px rgba(110, 102, 194, 0.7);
-}
-
 .programs__all-link {
     display: -webkit-box;
     display: flex;
@@ -5250,7 +5252,7 @@ body {
 }
 
 .programs__all-link a:focus {
-    box-shadow: 0 0 5px 3px rgba(110, 102, 194, 0.4);
+    box-shadow: 0 0 0px 3px rgba(110, 102, 194, 0.2);
     border-radius: 6px;
 }
 
@@ -6078,7 +6080,8 @@ body {
     min-height: 100vh;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 77, 255, 0.03)), to(rgba(0, 77, 255, 0.03))), url("../img/intro/noteboook.svg") left 50% top 50%/auto auto repeat;
     background: linear-gradient(rgba(0, 77, 255, 0.03), rgba(0, 77, 255, 0.03)), url("../img/intro/noteboook.svg") left 50% top 50%/auto auto repeat;
-    padding: 150px 0px;
+    padding-bottom: 150px;
+    padding-top: 70px;
 }
 
 .about-page__inner {
@@ -6125,11 +6128,12 @@ body {
 .programs-page {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 77, 255, 0.03)), to(rgba(0, 77, 255, 0.03))), url("../img/intro/noteboook.svg") left 50% top 50%/auto auto repeat;
     background: linear-gradient(rgba(0, 77, 255, 0.03), rgba(0, 77, 255, 0.03)), url("../img/intro/noteboook.svg") left 50% top 50%/auto auto repeat;
-    padding: 150px 0px;
+    padding-bottom: 150px;
+    padding-top: 70px;
 }
 
 .programs-page .programs__items {
-    margin: 0 -15px 25px;
+    margin: 0 -15px 0px;
 }
 
 .programs-page .programs__item {
@@ -6187,7 +6191,8 @@ body {
     position: relative;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 77, 255, 0.03)), to(rgba(0, 77, 255, 0.03))), url("../img/intro/noteboook.svg") left 50% top 50%/auto auto repeat;
     background: linear-gradient(rgba(0, 77, 255, 0.03), rgba(0, 77, 255, 0.03)), url("../img/intro/noteboook.svg") left 50% top 50%/auto auto repeat;
-    padding: 150px 0px;
+    padding-bottom: 150px;
+    padding-top: 70px;
 }
 
 .contacts .social__link {
@@ -6343,10 +6348,10 @@ body {
 }
 
 .price-list {
-    min-height: 100vh;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 77, 255, 0.03)), to(rgba(0, 77, 255, 0.03))), url("../img/intro/noteboook.svg") left 50% top 50%/auto auto repeat;
     background: linear-gradient(rgba(0, 77, 255, 0.03), rgba(0, 77, 255, 0.03)), url("../img/intro/noteboook.svg") left 50% top 50%/auto auto repeat;
-    padding: 150px 0px;
+    padding-bottom: 150px;
+    padding-top: 70px;
 }
 
 table {
@@ -6666,6 +6671,34 @@ table td {
         padding-bottom: 10px;
         border-radius: 6px;
     }
+}
+
+.intelektuarium .intro {
+    z-index: 0;
+    padding: 25px 10px 30px;
+}
+
+.intelektuarium .container-big {
+    background: url("../img/bg.jpg") left 50% top 0/cover no-repeat;
+}
+
+.intelektuarium-main {
+    background: url("../img/intro/noteboook.svg") rgba(0, 77, 255, 0.03);
+    padding-bottom: 150px;
+}
+
+.mentalnaya-arifmetika .intro {
+    z-index: 0;
+    padding: 25px 10px 30px;
+}
+
+.mentalnaya-arifmetika .container-big {
+    background: url("../img/bg.jpg") left 50% top 0/cover no-repeat;
+}
+
+.mentalnaya-arifmetika-main {
+    background: url("../img/intro/noteboook.svg") rgba(0, 77, 255, 0.03);
+    padding-bottom: 150px;
 }
 
 /* Vendor libs */

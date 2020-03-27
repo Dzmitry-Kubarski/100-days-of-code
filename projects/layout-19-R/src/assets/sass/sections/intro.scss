@@ -134,12 +134,7 @@
 }
 
 .intro__btn {
-    margin-bottom: 50px;
-    outline: 0;
-
-    &:focus {
-        // box-shadow: 0 0 10px 5px rgba($bg_purple, .7);
-    }
+    margin-bottom: 50px;   
 
     @media (max-width: 768px) {
         margin: 0 auto;

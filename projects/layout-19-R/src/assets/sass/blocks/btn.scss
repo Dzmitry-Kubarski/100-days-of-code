@@ -16,7 +16,7 @@
     }
 
     &:focus {
-        // box-shadow: 0 0 10px 5px rgba($bg_purple, .7);
+        box-shadow: 0 0 5px 3px rgba($bg_purple, .4);        
     }
 
     @media (max-width: 480px) {

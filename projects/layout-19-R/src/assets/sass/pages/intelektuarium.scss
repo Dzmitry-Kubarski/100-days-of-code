@@ -1,0 +1,17 @@
+.intelektuarium {
+
+    .intro {
+        // min-height: 100vh;
+        z-index: 0;
+        padding: 25px 10px 30px;
+    }
+
+    .container-big {
+        background: url('../img/bg.jpg') left 50% top 0/cover no-repeat;      
+    }
+}
+
+.intelektuarium-main {
+    background: url('../img/intro/noteboook.svg') rgba(0,77,255,.03);
+    padding-bottom: 150px;    
+}

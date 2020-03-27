@@ -35,7 +35,9 @@
     background-color: #fff;
     border-radius: 6px;
     text-align: center;  
-    padding: 35px 35px 45px;
+    // padding: 35px 35px 45px;
+    padding: 15px;
+    padding-bottom: 30px;
     margin: 10px;
 
     @media (max-width: 1080px) {
@@ -56,11 +58,12 @@
 
 .programs__img-wrap {
     position: relative;
-    max-width: 344px;
+    // max-width: 344px;
+    width: 100%;
     max-height: 230px;
     border-radius: 6px;
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 
     img {
         display: block;
@@ -117,11 +120,7 @@
 
 
 .programs__item-btn {
-    outline: 0;
-
-    &:focus {
-        box-shadow: 0 0 10px 5px rgba($bg_purple, .7);
-    }
+    
 }
 
 .programs__all-link {
@@ -137,7 +136,7 @@
         outline: 0;
 
         &:focus {
-            box-shadow: 0 0 5px 3px rgba($bg_purple, .4);
+            box-shadow: 0 0 0px 3px rgba($bg_purple, .2);            
             border-radius: 6px;
         }
     }   

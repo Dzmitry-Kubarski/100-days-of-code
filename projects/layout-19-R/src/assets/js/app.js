@@ -49,7 +49,7 @@ $(function () {
 
 
     // -------- Popup --------
-    $('.intro__btn').click(function () {
+    $('.intro__btn, .questions__call-btn button').click(function () {
         var id = $(this).attr('data-id');
         $('body').addClass('over-hide');
         $('.popup__wrap').addClass('active');

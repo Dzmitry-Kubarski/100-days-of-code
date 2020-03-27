@@ -38,24 +38,26 @@
 
 
 /* Sections */
-@import "blocks/header";
-@import "blocks/intro";
-@import "blocks/programs";
-@import "blocks/about";
-@import "blocks/photos";
-@import "blocks/reviews";
-@import "blocks/questions";
-@import "blocks/footer";
+@import "sections/header";
+@import "sections/intro";
+@import "sections/programs";
+@import "sections/about";
+@import "sections/photos";
+@import "sections/reviews";
+@import "sections/questions";
+@import "sections/footer";
 
 
 
 /* Pages */
-@import "blocks/about-page";
-@import "blocks/programs-page";
-@import "blocks/contacts";
-@import "blocks/price-list";
+@import "pages/about-page";
+@import "pages/programs-page";
+@import "pages/contacts";
+@import "pages/price-list";
 
-@import "blocks/skorochtenie";
+@import "pages/skorochtenie";
+@import "pages/intelektuarium";
+@import "pages/mentalnaya-arifmetika";
 
 
 

@@ -1,11 +1,11 @@
 .programs-page {
     // min-height: 100vh;
     background: linear-gradient(rgba(0, 77, 255, 0.03), rgba(0, 77, 255, 0.03)), url('../img/intro/noteboook.svg') left 50% top 50% / auto auto repeat;
-    padding: 150px 0px;
-
+    padding-bottom: 150px; 
+    padding-top: 70px; 
 
     .programs__items {
-        margin: 0 -15px 25px;
+        margin: 0 -15px 0px;
     }
 
     .programs__item {

@@ -52,6 +52,10 @@
     border-radius: 5px;
     transition: .3s;
     padding: 0 20px;
+
+    @media (max-width: 480px) {
+        height: 55px;   
+    }
 }
 
 .form__btn {
