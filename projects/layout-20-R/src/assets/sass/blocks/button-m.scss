@@ -1,0 +1,32 @@
+.button-m {
+    position: relative;
+    z-index: 99;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    background: #ffd800;    
+    background: linear-gradient(to bottom, #ffd800 0%, #ffc000 100%);   
+    box-shadow: 0 3px 0 #d49f00;  
+    border-radius: 35px;  
+    transition: all 0.2s;   
+    margin: 0 auto;
+
+    // user-select: none;
+
+    &:hover {
+        background: linear-gradient(to bottom, #ffd800 0%, #fcce45 100%);
+    }
+  }
+  
+  .button-m:active {
+    top: -1px;
+  }

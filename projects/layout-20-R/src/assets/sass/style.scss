@@ -1,0 +1,51 @@
+/* Fonts */
+@import "fonts";
+
+/* Variables */
+@import "vars";
+
+
+/* Grid smart-grid */
+// @import "smart-grid";
+
+
+/* Normalize */
+@import "../../../../../node_modules/normalize.css/normalize";
+
+/* Animate.css */
+@import "../../../../../node_modules/animate.css/animate";
+
+
+/* Default styles */
+@import "base";
+
+
+/* Blocks */
+@import "blocks/button-m";
+
+
+
+/* Sections */
+@import "sections/header";
+@import "sections/gif-section";
+@import "sections/new-approach";
+@import "sections/gallery";
+@import "sections/advantages";
+@import "sections/how-works";
+@import "sections/order-steps";
+@import "sections/reviews";
+@import "sections/footer";
+
+
+
+/* Pages */
+// @import "pages/about-page";
+
+
+
+/* Vendor libs */
+// @import "vendor/slick";
+
+
+/* Media */
+// @import "media";

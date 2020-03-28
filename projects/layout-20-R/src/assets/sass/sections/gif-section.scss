@@ -1,0 +1,48 @@
+.gif-section {
+    background: #eef3fa;
+    padding: 40px 0 50px 0;
+  }
+  
+  .gif-section ul {
+    display: flex;
+    margin: 0 -10px;
+
+    @media (max-width: 720px) {
+      flex-wrap: wrap; 
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  
+  .gif-section li {
+    width: 33.33%;
+    padding: 0 10px;
+
+    @media (max-width: 720px) {
+      width: 50%; 
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: 530px) {
+      width: 80%; 
+    }
+  }
+  
+  .gif-section li .title {
+    width: 220px;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    background: #fff;   
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);    
+    border-radius: 10px 10px 0 0;
+
+    @media (max-width: 530px) {
+      // width: 100%; 
+    }
+  }
+  
+  .gif-section li .pic img {    
+    border-radius: 10px;
+  }

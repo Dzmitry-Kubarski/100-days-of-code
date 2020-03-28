@@ -1,0 +1,136 @@
+.how-works {
+    padding: 80px 0 70px 0;
+  }
+  
+  .how-works ul {
+    margin: 0 -10px;
+    padding-bottom: 65px;
+    display: flex;
+
+    @media (max-width: 960px) {
+      flex-wrap: wrap;
+      justify-content: center; 
+    }
+  }
+  
+  .how-works ul li {
+    display: block;
+    width: 33.33%;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 10px;
+    text-align: center;
+
+    @media (max-width: 960px) {
+      width: 50%;
+      margin-bottom: 40px;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @media (max-width: 640px) {
+      width: 100%; 
+    }
+  }
+  
+  .how-works ul li .title {
+    font-weight: 700;
+    padding: 5px 20px 5px 0;
+  }
+  
+  .how-works ul li .desc {
+    padding-right: 20px;
+  }
+  
+  .how-works ul li span {
+    display: block;
+  }
+  
+  .how-works ul li .pic img {
+    display: block;
+    margin: 0 auto;
+  }
+
+
+  .recommend {
+    display: flex;
+    position: relative;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);    
+    border-radius: 10px;
+
+    @media (max-width: 960px) {
+      flex-wrap: wrap; 
+    }
+  }
+  
+  .recommend:before,
+  .recommend:after {
+    position: absolute;
+    display: block;
+    width: 46px;
+    height: 40px;
+    background: url("../img/quote-icon.png") 0 0 no-repeat;
+    content: '';
+  }
+  
+  .recommend:before {
+    left: 60px;
+    top: -20px;
+  }
+  
+  .recommend:after {
+    right: 60px;
+    bottom: -20px;
+  }
+  
+  .recommend .pic {
+    width: 50%;
+    padding-right: 10px;
+
+    @media (max-width: 960px) {
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+  }
+  
+  .recommend .pic img {    
+    border-radius: 10px;
+  }
+  
+  .recommend .info {
+    width: 50%;
+    padding-left: 10px;
+
+    @media (max-width: 960px) {
+      width: 100%; 
+      text-align: center;
+    }
+  }
+  
+  .recommend h2.title {
+    text-align: left;
+
+    @media (max-width: 960px) {
+      text-align: center; 
+      margin-bottom: 40px;
+
+    }
+  }
+  
+  .recommend h2.title:after {
+    margin: 13px 0 22px 0;
+
+    @media (max-width: 960px) {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  
+  .recommend .info p {
+    line-height: 24px;
+  }

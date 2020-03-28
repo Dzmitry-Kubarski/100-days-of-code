@@ -1,0 +1,110 @@
+.order-steps {
+    padding: 40px 0 55px 0;   
+    background: linear-gradient(300deg, #4c4b87 0%, #342861 100%);
+  }
+  
+  .order-steps h2.title {
+    color: #fff;
+
+    span {
+      @media (max-width: 960px) {
+        display: block; 
+      }
+    }
+  }
+  
+  .order-steps ul {
+    margin: 0 -10px;
+    padding-top: 10px;
+    display: flex;
+
+    @media (max-width: 960px) {
+      flex-wrap: wrap; 
+      justify-content: center;
+    }
+  }
+  
+  .order-steps li {
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+
+    @media (max-width: 960px) {
+      width: 50%;
+      margin-bottom: 20px; 
+    }
+
+    @media (max-width: 570px) {
+      width: 320px;
+      margin: 0px auto 20px;
+    }
+  }
+  
+  .order-steps li:first-child .item:before {
+    display: none;
+  }
+
+  .order-steps li:nth-child(3) .item:before{
+    display: none;
+  }
+  
+  .order-steps li .item:before {
+    position: absolute;
+    left: -29px;
+    top: 50%;
+    margin-top: -15px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("../img/arrow-right.png") 50% 50% no-repeat #fff;
+    border: 4px solid #3c3871;    
+    border-radius: 50%;
+    content: '';
+    z-index: 2;
+
+    @media (max-width: 960px) {
+      width: 40px;
+      height: 40px; 
+    }
+
+    @media (max-width: 570px) {
+      display: none; 
+    }
+  }
+  
+  .order-steps li .item {
+    position: relative;
+    background: #fff;    
+    border-radius: 10px;
+  }
+  
+  .order-steps li .icon {
+    position: relative;
+    padding: 20px 0 10px 0;
+  }
+  
+  .order-steps li .icon img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .order-steps li .num_step {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: #999;
+    font-size: 14px;
+  }
+  
+  .order-steps li .text {
+    line-height: 24px;
+    text-align: center;
+    padding-bottom: 17px;
+  }
+  
+  .order-steps li .text span {
+    display: block;
+  }
+
+ 
