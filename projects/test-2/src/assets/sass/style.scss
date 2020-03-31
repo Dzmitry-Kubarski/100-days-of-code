@@ -1,0 +1,36 @@
+/* Fonts */
+@import "fonts";
+
+/* Variables */
+@import "vars";
+
+
+/* Normalize */
+@import "../../../../../node_modules/normalize.css/normalize";
+
+
+/* Default styles */
+@import "base";
+
+
+/* Blocks */
+@import "blocks/btn";
+@import "blocks/logo";
+@import "blocks/examples";
+
+
+
+/* Sections */
+@import "sections/header";
+@import "sections/intro";
+
+
+
+
+/* Pages */
+// @import "pages/about-page";
+
+
+
+/* Vendor libs */
+@import "vendor/slick";

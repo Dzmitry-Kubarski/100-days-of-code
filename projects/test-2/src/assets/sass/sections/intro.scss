@@ -1,0 +1,143 @@
+.intro {
+    padding-bottom: 3.2vw;
+}
+
+.intro__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro__content {
+    width: 50%;
+}
+
+.intro__free {
+    position: relative;
+    z-index: 99;
+    display: inline-block;
+    font-family: $font_BerlingskeSerif;
+    font-size: 1.15vw;
+    font-style: italic;  
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 0.05vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
+
+    background: url('../img/intro/free.png') no-repeat center;
+    background-size: 100% 100%;
+
+    padding: 1.3vw 1.5vw;
+    margin-bottom: 3.2vw;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        bottom: -5px;
+        transform: translateX(-50%);
+        width: 90%;
+        height: 5px;
+        border-radius: 40px;
+        background-color: #fff;
+    }
+}
+
+.intro__free-img {
+    position: absolute;
+    right: -6vw;
+    bottom: 1vw;    
+}
+
+.intro__title {
+    font-family: $font_GothamPro;
+    font-weight: 400;
+    font-size: 2.50vw;
+    letter-spacing: 0.02vw;
+    margin-bottom: 1.90vw;
+
+    strong {
+        font-family: $font_BerlingskeSerifTx;
+        font-style: italic;
+    }
+}
+
+.intro__subtitle {
+    position: relative;
+    font-family: $font_GothamPro;
+    font-weight: 400;
+    font-size: 1.50vw;
+    letter-spacing: 0.02vw;
+    padding-left: 4.5vw;
+    margin-bottom: 1.90vw;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;        
+        transform: translateY(-50%);
+        width: 3vw;
+        height: 2px;
+        background-color: #bec2c2;
+    }
+}
+
+.intro__subtitle--line {
+    position: relative;
+    z-index: 10;
+    font-family: $font_BerlingskeSerifTx;
+    font-style: italic;    
+
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        bottom: -0.1vw;
+        width: calc(100% + 12px);
+        height: 0.7vw;
+        background-color: #fbdcb0;
+    }
+}
+
+.intro__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5.75vw;
+}
+
+.intro__item {
+    width: 30%;
+}
+
+.intro__item-img {
+    margin-bottom: 0.3vw;
+}
+
+.intro__item-title {
+    font-family: $font_BerlingskeSerifTx;
+    font-style: italic;
+    font-size: 0.89vw;
+    margin-bottom: 0.90vw;
+}
+
+.intro__item-text {
+    font-size: 0.70vw;
+    letter-spacing: 0.01vw;
+}
+
+
+.intro__btn {
+}
+
+
+
+.intro__examples {
+    width: 47%;
+    text-align: center;
+}
+
+

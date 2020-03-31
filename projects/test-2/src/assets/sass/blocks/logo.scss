@@ -1,0 +1,44 @@
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo__img-wrap {
+    margin-right: 1.28vw;
+}
+
+.logo__text-wrap {
+}
+
+.logo__text {
+    font-size: 0.76vw;
+    font-weight: 300;
+    color: #585858;
+    margin-bottom: 0.32vw;
+}
+
+.logo__items {
+    display: flex;
+    align-items: center;
+}
+
+.logo__item {
+    display: flex;
+    align-items: center;
+    margin-right: 0.64vw;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    span {
+        color: #282828;
+        font-size: 0.76vw;
+        font-weight: 500;
+    }
+
+    img {
+        margin-right: 0.4vw
+    }
+}

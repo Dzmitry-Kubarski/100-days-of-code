@@ -1,0 +1,141 @@
+.examples {
+}
+
+.examples__title {
+    position: relative;
+    font-family: $font_GothamPro;
+    font-weight: 400;
+    font-size: 1.15vw;
+    margin-bottom: 2.8vw;
+
+    strong {
+        font-family: $font_BerlingskeSerifTx;
+        font-style: italic;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 3vw;
+        top: 2vw;
+        width: 1.2vw;
+        height: 3vw;          
+        
+        background: url('../img/intro/ctr1.png') no-repeat center;
+        background-size: 100% 100%;       
+    }
+}
+
+.examples__tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.9vw;
+}
+
+.examples__tab {
+    position: relative;
+    z-index: 2;
+    min-width: 11vw;
+
+    font-family: $font_BerlingskeSerifTx;
+    font-size: 1.15vw;
+    font-style: italic;
+    color: #747474;
+    letter-spacing: 0.05vw;
+
+    background: url('../img/intro/bg-tab.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;    
+    transition: all 0.4s; 
+    padding: 1.28vw;
+    margin-right: 0.95vw;
+    outline: 0;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+
+    &.active,
+    &:hover {
+        color: #282828;
+        background: url('../img/intro/bg-tab-active.png') no-repeat center;
+        background-size: 100% 100%;            
+    }   
+}
+
+.examples__sliders {
+}
+
+.examples__slider {
+    position: relative;
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+.examples__control {
+    position: absolute;
+    z-index: 105;
+    width: 7.5vw;
+    height: 7.5vw;  
+
+    left: 3vw;
+    bottom: -1.5vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: url('../img/intro/pl.png') no-repeat center;
+    background-size: 100% 100%;
+}
+
+.examples__btn {
+    display: block;
+    width: 0.76vw;
+    height: 0.76vw;
+    transition: opacity .2s linear;
+    outline: 0;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.examples__btn--prev {
+}
+
+.examples__number {
+    font-family: $font_BerlingskeSerifTx;
+    font-style: italic;
+    font-size: 1.28vw;
+    color: #fff;
+    margin: 0 0.44vw;
+}
+
+.examples__number-current {
+}
+
+.examples__number-text {
+}
+
+.examples__number-all {
+}
+
+.examples__btn--next {
+}
+
+.examples__slider-list {
+}
+
+.examples__slider-item {
+    // margin: 0 20px;
+    display: flex;
+    justify-content: center;
+}
