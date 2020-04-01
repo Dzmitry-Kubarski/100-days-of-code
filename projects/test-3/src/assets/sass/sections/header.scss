@@ -1,10 +1,22 @@
 .header__inner {
-    width: 600px;
-    height: 400px;
-    margin: 0 auto;
-    background-color: $color_blue;
+   
+    // background-color: $color_blue;    
+    // background-image: url('../img/bg-gradient.png');
+    // background-repeat: no-repeat;
+    // background-position: right center;
+}
+
+.header__top {
+    background-color: $color_black;
     
-    background-image: url('../img/bg-gradient.png');
-    background-repeat: no-repeat;
-    background-position: right center;
+}
+
+.header__body {
+    padding: 40px 0px;
+}
+
+.header__body-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

@@ -1,14 +1,28 @@
 .intro {
-    padding-bottom: 3.2vw;
+    padding-bottom: 6vw;
 }
 
 .intro__inner {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 900px) {
+        flex-wrap: wrap;   
+    }
 }
 
 .intro__content {
     width: 50%;
+
+    @media (max-width: 900px) {
+        width: 100%; 
+        text-align: center;
+        margin-bottom: 50px;  
+    }   
+
+    @media (max-width: 768px) {
+        text-align: left;   
+    }
 }
 
 .intro__free {
@@ -22,11 +36,9 @@
     color: #ffffff;
     letter-spacing: 0.05vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
-
-    background: url('../img/intro/free.png') no-repeat center;
+    background: url('../img/intro/free-bg.png') no-repeat center;
     background-size: 100% 100%;
-
-    padding: 1.3vw 1.5vw;
+    padding: 1.3vw 1.9vw;
     margin-bottom: 3.2vw;
 
     &::before {
@@ -42,12 +54,17 @@
         border-radius: 40px;
         background-color: #fff;
     }
+
+    @media (max-width: 768px) {
+        font-size: 1rem;          
+    }
 }
 
 .intro__free-img {
     position: absolute;
     right: -6vw;
-    bottom: 1vw;    
+    bottom: 1vw;  
+    width: 4.5vw;  
 }
 
 .intro__title {
@@ -60,10 +77,22 @@
     strong {
         font-family: $font_BerlingskeSerifTx;
         font-style: italic;
+        border-bottom: 1px dashed #d5132a;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2rem;   
+        width: 80%;        
+    }
+
+    @media (max-width: 590px) {
+        font-size: 1.5rem;
+        width: 85%;   
     }
 }
 
 .intro__subtitle {
+    display: inline-block;
     position: relative;
     font-family: $font_GothamPro;
     font-weight: 400;
@@ -82,6 +111,15 @@
         width: 3vw;
         height: 2px;
         background-color: #bec2c2;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 1.2rem;   
+        margin-bottom: 40px;
+    }
+
+    @media (max-width: 590px) {
+        font-size: 1rem;   
     }
 }
 
@@ -111,9 +149,14 @@
 
 .intro__item {
     width: 30%;
+
+    @media (max-width: 768px) {
+        width: 31%;  
+    }
 }
 
 .intro__item-img {
+    min-height: 4vw;
     margin-bottom: 0.3vw;
 }
 
@@ -122,22 +165,49 @@
     font-style: italic;
     font-size: 0.89vw;
     margin-bottom: 0.90vw;
+
+    @media (max-width: 960px) {
+        font-size: 1.4vw;
+    }  
+    
+    @media (max-width: 768px) {
+        font-size: 1rem;   
+    }
+
+    @media (max-width: 590px) {
+        font-size: 0.7rem;   
+    }
 }
 
 .intro__item-text {
     font-size: 0.70vw;
+    font-weight: 100;
     letter-spacing: 0.01vw;
+
+    @media (max-width: 900px) {
+        font-size: 1.2vw;   
+    }
+
+    @media (max-width: 768px) {
+        font-size: 0.8rem;   
+    }
+
+    @media (max-width: 590px) {
+        font-size: 0.7rem;   
+    }
 }
-
-
-.intro__btn {
-}
-
-
 
 .intro__examples {
     width: 47%;
     text-align: center;
+
+    @media (max-width: 900px) {
+        margin: 0 auto;   
+    }
+
+    @media (max-width: 768px) {
+        width: 18rem; 
+    }
 }
 
 

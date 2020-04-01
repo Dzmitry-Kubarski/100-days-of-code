@@ -61,6 +61,7 @@ body {
     font-family: $font_MuseoSansCyrl;
     font-weight: 300;
     font-size: 12px;
+    line-height: 1.2;
     color: #282828;
 
     background-image: url('../img/intro/main-bg.png');
@@ -71,8 +72,14 @@ body {
 
 .container {
     width: 100%;
-    max-width: 73vw;
+    max-width: 80vw;
     padding-left: 1vw;
     padding-right: 1vw;
-    margin: 0 auto;   
+    margin: 0 auto;  
+    
+    @media (max-width: 768px) {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;   
+    }
 }

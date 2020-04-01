@@ -1,0 +1,29 @@
+.search {
+    position: relative;
+    width: 100%;
+    max-width: 555px;
+}
+
+.search__input {
+    width: 100%;
+    border: none;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 4px;
+    padding: 15px;
+    padding-left: 20px;
+
+    &::placeholder {
+        font-family: inherit;
+        font-size: 14px;
+    }
+}
+
+.search__btn {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    height: 100%;
+    width: 50px;
+    transform: translateY(-50%);
+}
+

@@ -116,6 +116,18 @@
 
 
 //   Museo Sans Cyrl
+
+ @font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: url("../fonts/MuseoSansCyrl-100.eot");
+    src: url("../fonts/MuseoSansCyrl-100.eot?#iefix") format('embedded-opentype'),
+          url("../fonts/MuseoSansCyrl-100.woff2") format('woff2'),
+          url("../fonts/MuseoSansCyrl-100.woff") format('woff'),
+          url("../fonts/MuseoSansCyrl-100.ttf") format('truetype'),
+          url("../fonts/MuseoSansCyrl-100.svg#MuseoSansCyrl-100") format('svg');
+    font-weight: 100;
+    font-style: normal;
+  }
   
   @font-face {
     font-family: 'Museo Sans Cyrl';
