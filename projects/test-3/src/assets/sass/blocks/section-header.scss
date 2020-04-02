@@ -1,0 +1,48 @@
+.section-header {
+    display: flex;
+    align-items: flex-end;
+    border-top: 1px solid rgb(239, 239, 239);;
+    padding: 45px 0px;
+}
+
+.section-header__title {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+
+.section-header__link {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+    color: #009ee2;
+    border-bottom: 1px solid #009ee2;
+    transition: opacity .2s linear;
+
+    &:hover {
+        opacity: .5;
+    }
+}
+
+.section-header__buttons {
+    display: flex;
+    margin-left: auto;
+}
+
+.section-header__prev {
+    margin-right: 7px;
+
+    svg {
+        transform: rotate(180deg);
+    }
+}
+
+.section-header__next {
+}
+
+
+
+  

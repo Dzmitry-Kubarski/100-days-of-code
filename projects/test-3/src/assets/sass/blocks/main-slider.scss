@@ -1,0 +1,81 @@
+.main-slider {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    border-radius: 5px;
+    background-color: $color_blue;    
+    background-image: url('../img/bg-gradient.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-left: 40px;
+    padding-bottom: 80px;
+    padding-top: 65px;    
+    margin-bottom: 30px;
+}
+
+.main-slider__shadow {   
+    position: absolute;
+    z-index: -1;
+    display: block;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 30px;
+    width: 80%;
+
+    background-image: url('../img/intro/shadow.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    opacity: .6;
+}
+
+
+.main-slider__item {
+    display: flex;
+}
+
+.main-slider__item-content {
+    width: 50%;
+}
+
+
+.main-slider__item-title {
+    font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    margin-bottom: 25px;
+}
+
+.main-slider__item-name {
+    font-size: 22px;
+    font-weight: 600;
+    color: #4bd1fe;
+    letter-spacing: 0.9px;
+    margin-bottom: 10px;
+}
+
+.main-slider__item-price {
+    display: block;
+    font-size: 30px;
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.main-slider__item-btn {
+    display: block;
+}
+
+.main-slider__item-img {
+    position: absolute;
+    right: 105px;
+    bottom: 0;
+
+    img {
+        display: block;
+    }
+}

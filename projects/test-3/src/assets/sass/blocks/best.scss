@@ -1,0 +1,68 @@
+.best {
+    position: relative;    
+    width: 260px;
+    min-height: 449px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background-color: #0086c0;
+    background-image: url(../img/bg-gradient.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0px 18px 21px 0px rgba(235, 235, 235, 1);
+    margin-right: 30px;
+    transition: all .2s linear;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 130px;
+        left: 21px;
+        width: 230px;
+        height: 270px;
+        background-image: url('../img/hits/best.png');
+        background-repeat: no-repeat;
+        background-size: cover;   
+        pointer-events: none;    
+    }    
+
+    &:hover {
+        box-shadow: 0px 18px 21px 0px rgba(214, 214, 214, 1);
+    }
+}
+
+
+.best__wrap {
+    min-height: 449px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 30px;
+}
+
+.best__title {
+    font-size: 33px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 0.4px;
+    margin-bottom: 15px;
+}
+
+.best__name {
+    max-width: 100px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #4cd2fe;
+}
+
+.best__price {
+    font-size: 30px;
+    color: #fff;
+    margin-top: auto;
+}
+
+
+
+
+  

@@ -1,0 +1,66 @@
+.news {
+    position: relative;
+
+    .container {
+        position: relative;
+        z-index: 99;
+    }
+
+    .section-header__title {
+        margin-bottom: -7px;
+    }
+
+    .slides {
+        
+    }
+
+    .card {
+        width: calc(33.333% - 30px);
+        margin-right: 15px;
+        margin-left: 15px;
+        padding: 0;
+        background-color: #fff;
+        box-shadow: 0px 18px 21px 0px rgba(0, 0, 0, 0.09);
+
+        &:hover {
+            box-shadow: 0px 18px 21px 0px rgba(0, 0, 0, 0.009);
+        }
+    }
+
+    .card__img-wrap {
+        min-height: 210px;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .card__label-date {
+        background-image: none;
+        background-color: $color_black;
+    }
+
+    .card__info {
+        padding: 20px;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        min-height: 443px;
+        width: 100%;
+        background-color: $color_grey;
+    }
+}
+
+.news__inner {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 50px;
+}
+
+

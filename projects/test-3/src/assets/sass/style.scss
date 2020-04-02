@@ -24,12 +24,31 @@
 @import "blocks/menu-info";
 @import "blocks/search";
 @import "blocks/control";
-
+@import "blocks/menu";
+@import "blocks/btn";
+@import "blocks/sidebar";
+@import "blocks/main-slider";
+@import "blocks/section-header";
+@import "blocks/best";
+@import "blocks/label";
+@import "blocks/rating";
+@import "blocks/cards";
+@import "blocks/card";
+@import "blocks/slides";
+@import "blocks/subscribe";
+@import "blocks/social";
 
 
 
 /* Sections */
 @import "sections/header";
+@import "sections/intro";
+@import "sections/hits";
+@import "sections/newProducts";
+@import "sections/news";
+@import "sections/current-discounts";
+@import "sections/about";
+@import "sections/footer";
 
 
 
@@ -41,4 +60,4 @@
 
 
 /* Vendor libs */
-// @import "vendor/slick";
+@import "vendor/slick";

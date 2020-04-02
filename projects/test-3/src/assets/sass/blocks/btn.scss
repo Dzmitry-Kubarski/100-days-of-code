@@ -1,0 +1,48 @@
+.btn {    
+    border-radius: 3px;
+    background-image: linear-gradient( -90deg, rgb(1,135,193) 0%, rgb(58,192,239) 100%);
+    transition: all .3s linear;   
+
+    &:hover {
+        background-image: linear-gradient( #009ee2, #009ee2);
+    }
+}
+
+.btn--black {
+    background-image: none;
+    background-color: $color_black;
+    color: #fff;
+    border-radius: 3px;
+    padding: 15px 45px;  
+    transition: background-color .2s linear;
+    
+    &:hover {
+        background-color: lighten($color_black, 15%);
+    }
+}
+
+.btn-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: $color_black;
+    border-radius: 50%;
+    transition: background-color .2s linear;
+
+    svg {
+        width: 17px;
+        height: 17px;
+        fill: #fff;     
+    }
+
+    &:hover {
+        background-color: lighten($color_black, 15%);
+    }
+}
+
+
+
+  
+  

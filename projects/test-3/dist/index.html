@@ -25,11 +25,31 @@
 
 <body>
     <svg style="display: none;">
-    	<symbol id="svg-circle">
+    
+    	<symbol id="svg-arrow-right" viewBox="0 0 20 20">
     		<g>
-    			<path fill-rule="evenodd" stroke-width="2px" stroke="rgb(106, 106, 106)" fill-opacity="0"
-    				fill="rgb(0, 158, 226)"
-    				d="M7.250,4.500 C9.045,4.500 10.500,5.955 10.500,7.750 C10.500,9.545 9.045,10.999 7.250,10.999 C5.455,10.999 4.000,9.545 4.000,7.750 C4.000,5.955 5.455,4.500 7.250,4.500 Z" />
+    			<path
+    				d="M11.611,10.049l-4.76-4.873c-0.303-0.31-0.297-0.804,0.012-1.105c0.309-0.304,0.803-0.293,1.105,0.012l5.306,5.433c0.304,0.31,0.296,0.805-0.012,1.105L7.83,15.928c-0.152,0.148-0.35,0.223-0.547,0.223c-0.203,0-0.406-0.08-0.559-0.236c-0.303-0.309-0.295-0.803,0.012-1.104L11.611,10.049z">
+    			</path>
+    		</g>
+    	</symbol>
+    
+    	<symbol id="svg-heart" viewBox="0 0 20 20">
+    		<g>
+    			<path
+    				d="M13.22,2.984c-1.125,0-2.504,0.377-3.53,1.182C8.756,3.441,7.502,2.984,6.28,2.984c-2.6,0-4.714,2.116-4.714,4.716c0,0.32,0.032,0.644,0.098,0.96c0.799,4.202,6.781,7.792,7.46,8.188c0.193,0.111,0.41,0.168,0.627,0.168c0.187,0,0.376-0.041,0.55-0.127c0.011-0.006,1.349-0.689,2.91-1.865c0.021-0.016,0.043-0.031,0.061-0.043c0.021-0.016,0.045-0.033,0.064-0.053c3.012-2.309,4.6-4.805,4.6-7.229C17.935,5.1,15.819,2.984,13.22,2.984z M12.544,13.966c-0.004,0.004-0.018,0.014-0.021,0.018s-0.018,0.012-0.023,0.016c-1.423,1.076-2.674,1.734-2.749,1.771c0,0-6.146-3.576-6.866-7.363C2.837,8.178,2.811,7.942,2.811,7.7c0-1.917,1.554-3.47,3.469-3.47c1.302,0,2.836,0.736,3.431,1.794c0.577-1.121,2.161-1.794,3.509-1.794c1.914,0,3.469,1.553,3.469,3.47C16.688,10.249,14.474,12.495,12.544,13.966z">
+    			</path>
+    		</g>
+    	</symbol>
+    
+    
+    	<symbol id="svg-star" viewBox="0 0 16 16">
+    		<g stroke="none" stroke-width="1" fill-rule="evenodd">
+    			<g stroke="#FFB400">
+    				<path
+    					d="M14.4149055,6.50778699 L9.96650226,5.82963728 L9.85289956,5.58877268 L7.99978321,1.65939651 L6.0335367,5.82963134 L5.77022882,5.86977207 L1.5776195,6.50886977 L4.8072668,9.80248587 L4.76622274,10.0525759 L4.04940067,14.4189972 L7.99965123,12.2413268 L8.24102803,12.3743694 L11.949704,14.4188336 L11.1928076,9.80288899 L11.3696559,9.62203171 L14.4149055,6.50778699 Z M4.03255885,14.588468 C4.03252835,14.5884236 4.03249783,14.5883793 4.03246729,14.5883351 Z M3.88714866,14.5000131 C3.88667315,14.5000044 3.88620118,14.5 3.88573284,14.5 C3.88671005,14.5 3.88860849,14.4996521 3.89145519,14.4988551 Z">
+    				</path>
+    			</g>
     		</g>
     	</symbol>
     
@@ -69,6 +89,7 @@
         </div> <!-- /header__top -->
     
     
+    
         <div class="header__body">
             <div class="container">
     
@@ -87,17 +108,25 @@
     
     
                     <div class="control  header__control">
-                        <a class="control__link  control__account" href="#">
-                            <img src="assets/img/header/account.png" alt="">
-                        </a>
+                        <div class="control__item">
+                            <a class="control__link  control__account" href="#">
+                                <img src="assets/img/header/account.png" alt="">
+                            </a>
+                        </div>
     
-                        <a class="control__link  control__basket" href="#">
-                            <img src="assets/img/header/basket.png" alt="">
-                        </a>
+                        <div class="control__item">
+                            <a class="control__link  control__favourites" href="#">
+                                <img src="assets/img/header/favourites.png" alt="">
+                                <span class="control__counter  jsCounterFavourites">3</span>
+                            </a>
+                        </div>
     
-                        <a class="control__link  control__favourites" href="#">
-                            <img src="assets/img/header/favourites.png" alt="">
-                        </a>
+                        <div class="control__item">
+                            <a class="control__link  control__basket" href="#">
+                                <img src="assets/img/header/basket.png" alt="">
+                                <span class="control__counter  jsCounterBasket">2</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
     
@@ -105,16 +134,1046 @@
         </div> <!-- /header__body -->
     
     
+    
+        <div class="header__bottom">
+            <div class="container">
+    
+                <div class="header__bottom-inner">
+                    <button class="btn  header__catalog" type="button">Каталог товаров</button>
+    
+                    <nav class="menu  header__menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">О компании</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Акции</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Новости</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Блог</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Эксперты</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">контакты</a>
+                            </li>
+                        </ul>
+                    </nav> <!-- /menu  header__menu -->
+                </div>
+    
+            </div> <!-- /container -->
+        </div> <!-- /header__bottom -->
+    
     </header> <!-- /header -->
 
     
-
+    <section class="intro">
+        <div class="container">
+            <div class="intro__inner">
+    
+                <aside class="sidebar  intro__sidebar">
+                    <ul class="sidebar__list">
+                        <li class="sidebar__item">
+                            <a class="sidebar__item-link" href="#">Катушки</a>
+                            <button class="sidebar__item-btn" type="button"></button>
+                        </li>
+    
+                        <li class="sidebar__item">
+                            <a class="sidebar__item-link" href="#">Удилища</a>
+                            <button class="sidebar__item-btn" type="button"></button>
+                        </li>
+    
+                        <li class="sidebar__item">
+                            <a class="sidebar__item-link" href="#">Приманки</a>
+                            <button class="sidebar__item-btn" type="button"></button>
+                        </li>
+    
+                        <li class="sidebar__item">
+                            <a class="sidebar__item-link" href="#">Воблеры</a>
+                            <button class="sidebar__item-btn" type="button"></button>
+                        </li>
+    
+                        <li class="sidebar__item">
+                            <a class="sidebar__item-link" href="#">Лески и шнуры</a>
+                            <button class="sidebar__item-btn" type="button"></button>
+                        </li>
+    
+                        <li class="sidebar__item">
+                            <a class="sidebar__item-link" href="#">Поплавки</a>
+                            <button class="sidebar__item-btn" type="button"></button>
+                        </li>
+    
+                        <li class="sidebar__item">
+                            <a class="sidebar__item-link" href="#">Крючки</a>
+                            <button class="sidebar__item-btn" type="button"></button>
+                        </li>
+    
+                        <li class="sidebar__item">
+                            <a class="sidebar__item-link" href="#">Аксессуары</a>
+                            <button class="sidebar__item-btn" type="button"></button>
+                        </li>
+    
+                        <li class="sidebar__item">
+                            <a class="sidebar__item-link" href="#">Одежда</a>
+                            <button class="sidebar__item-btn" type="button"></button>
+                        </li>
+    
+                        <li class="sidebar__item">
+                            <a class="sidebar__item-link" href="#">Снаряжение</a>
+                            <button class="sidebar__item-btn" type="button"></button>
+                        </li>
+    
+                        <li class="sidebar__item">
+                            <a class="sidebar__item-link" href="#">Электроника</a>
+                            <button class="sidebar__item-btn" type="button"></button>
+                        </li>
+    
+                        <li class="sidebar__item">
+                            <a class="sidebar__item-link" href="#">Зимняя рыбалка</a>
+                            <button class="sidebar__item-btn" type="button"></button>
+                        </li>
+    
+                        <li class="sidebar__item">
+                            <a class="sidebar__item-link" href="#">Другое</a>
+                            <button class="sidebar__item-btn" type="button"></button>
+                        </li>
+                    </ul>
+    
+                    <div class="intro-info__shadow"></div>
+                </aside>
+    
+    
+    
+                <div class="intro__content">
+                    <div class="main-slider  intro__main-slider">
+                        <div>
+                            <div class="main-slider__item">
+                                <div class="main-slider__item-content">
+                                    <h2 class="main-slider__item-title">Специальные предложения</h2>
+                                    <h1 class="main-slider__item-name">катушка Adrenalin 7300 BC</h1>
+                                    <span class="main-slider__item-price">5 600p.</span>
+    
+                                    <button class="btn--black main-slider__item-btn" type="button">Купить</button>
+                                </div>
+    
+                                <div class="main-slider__item-img">
+                                    <img src="assets/img/intro/slides/img-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="main-slider__shadow"></div>
+                    </div>
+    
+    
+                    <div class="intro__info">
+                        <div class="intro__info-items">
+    
+                            <div class="intro__info-item">
+                                <div class="intro__info-content">
+                                    <div class="intro__info-title">Новые приманки</div>
+                                    <span class="intro__info-subtitle">для подледной ловли</span>
+                                    <a class="btn-circle  intro__info-btn" href="#">
+                                        <svg class="btn-circle__icon">
+                                            <use xlink:href="#svg-arrow-right"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+    
+                                <div class="intro__info-img">
+                                    <img src="assets/img/intro/info/img-1.png" alt="">
+                                </div>
+    
+                                <div class="intro-info__shadow"></div>
+                            </div>
+    
+                            <div class="intro__info-item">
+                                <div class="intro__info-content">
+                                    <div class="intro__info-title">Скачайте каталог</div>
+                                    <span class="intro__info-subtitle">для оптовиков</span>
+                                    <a class="btn-circle  intro__info-btn" href="#">
+                                        <svg class="btn-circle__icon">
+                                            <use xlink:href="#svg-arrow-right"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+    
+                                <div class="intro__info-img">
+                                    <img src="assets/img/intro/info/img-2.png" alt="">
+                                </div>
+    
+                                <div class="intro-info__shadow"></div>
+                            </div>
+    
+                            <div class="intro__info-item">
+                                <div class="intro__info-content">
+                                    <div class="intro__info-title">Эксперты отвечают</div>
+                                    <span class="intro__info-subtitle">на ваши вопросы</span>
+                                    <a class="btn-circle  intro__info-btn" href="#">
+                                        <svg class="btn-circle__icon">
+                                            <use xlink:href="#svg-arrow-right"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+    
+                                <div class="intro__info-img">
+                                    <img src="assets/img/intro/info/img-3.png" alt="">
+                                </div>
+    
+                                <div class="intro-info__shadow"></div>
+                            </div>
+                        </div>
+                    </div> <!-- /intro__info -->
+                </div> <!-- /intro__content -->
+    
+    
+    
+            </div> <!-- /intro__inner -->
+        </div> <!-- /container -->
+    </section> <!-- /intro -->
+    <section class="hits">
+        <div class="container">
+    
+            <div class="section-header">
+                <h2 class="section-header__title">Хиты продаж</h2>
+                <a class="section-header__link" href="#">весь каталог</a>
+                <div class="section-header__buttons">
+                    <button class="btn-circle  section-header__prev" type="button">
+                        <svg>
+                            <use xlink:href="#svg-arrow-right"></use>
+                        </svg>
+                    </button>
+    
+                    <button class="btn-circle  section-header__next" type="button">
+                        <svg>
+                            <use xlink:href="#svg-arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div> <!-- /section-header -->
+    
+    
+            <div class="cards  hits__cards">
+                <div class="best  hits__best">
+                    <a class="best__wrap" href="#">
+                        <div class="best__title">Бестселлер</div>
+                        <h3 class="best__name">удилище Adrenalin 7300 BC</h3>
+                        <span class="best__price">4 800 р.</span>
+                    </a>
+                </div>
+    
+    
+                <div class="slides  hits__slides">
+    
+                    <div>
+                        <a class="card  hits__card" href="#">
+                            <span class="label  card__label-hit">Хит</span>
+    
+                            <div class="card__img-wrap">
+                                <img src="assets/img/hits/slides/img-1.png" alt="">
+                            </div>
+    
+                            <div class="card__info">
+                                <div class="rating  card__rating">
+                                    <ul class="rating__list">
+                                        <li class="rating__item">
+                                            <svg class="rating__icon  isTrue">
+                                                <use xlink:href="#svg-star"></use>
+                                            </svg>
+                                        </li>
+    
+                                        <li class="rating__item">
+                                            <svg class="rating__icon  isTrue">
+                                                <use xlink:href="#svg-star"></use>
+                                            </svg>
+                                        </li>
+    
+                                        <li class="rating__item">
+                                            <svg class="rating__icon  isTrue">
+                                                <use xlink:href="#svg-star"></use>
+                                            </svg>
+                                        </li>
+    
+                                        <li class="rating__item">
+                                            <svg class="rating__icon  isTrue">
+                                                <use xlink:href="#svg-star"></use>
+                                            </svg>
+                                        </li>
+    
+                                        <li class="rating__item">
+                                            <svg class="rating__icon  isTrue">
+                                                <use xlink:href="#svg-star"></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+    
+                                    <svg class="card__favourites  isFavourites">
+                                        <use xlink:href="#svg-heart"></use>
+                                    </svg>
+                                </div>
+                                <h4 class="card__name">Удилище<br>Matze Koch Rollen</h4>
+                                <span class="card__price">13 490 р.</span>
+                            </div>
+    
+                            <button class="btn card__btn" type="button">В корзину</button>
+                        </a> <!-- /card -->
+                    </div>
+    
+    
+    
+                    <div>
+                        <a class="card  hits__card" href="#">
+                            <span class="label  card__label-hit">Хит</span>
+                            <span class="label   label--discount card__label">Скидка</span>
+    
+                            <div class="card__img-wrap">
+                                <img src="assets/img/hits/slides/img-2.jpg" alt="">
+                            </div>
+    
+                            <div class="card__info">
+                                <div class="rating  card__rating">
+                                    <ul class="rating__list">
+                                        <li class="rating__item">
+                                            <svg class="rating__icon  isTrue">
+                                                <use xlink:href="#svg-star"></use>
+                                            </svg>
+                                        </li>
+    
+                                        <li class="rating__item">
+                                            <svg class="rating__icon  isTrue">
+                                                <use xlink:href="#svg-star"></use>
+                                            </svg>
+                                        </li>
+    
+                                        <li class="rating__item">
+                                            <svg class="rating__icon  isTrue">
+                                                <use xlink:href="#svg-star"></use>
+                                            </svg>
+                                        </li>
+    
+                                        <li class="rating__item">
+                                            <svg class="rating__icon  isTrue">
+                                                <use xlink:href="#svg-star"></use>
+                                            </svg>
+                                        </li>
+    
+                                        <li class="rating__item">
+                                            <svg class="rating__icon">
+                                                <use xlink:href="#svg-star"></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+    
+                                    <svg class="card__favourites">
+                                        <use xlink:href="#svg-heart"></use>
+                                    </svg>
+                                </div>
+                                <h4 class="card__name">Приманка <br> Matze Koch Rollen</h4>
+                                <span class="card__price">3 240 р.</span>
+                                <strike class="card__old">6200 р.</strike>
+                                <div class="card__profit">Ваша выгода
+                                    <span>3 200 р.</span>
+                                </div>
+                            </div>
+    
+                            <button class="btn card__btn" type="button">В корзину</button>
+                        </a> <!-- /card -->
+                    </div>
+    
+    
+    
+                    <div>
+                        <a class="card  hits__card" href="#">
+                            <span class="label  card__label-hit">Хит</span>
+    
+                            <div class="card__img-wrap">
+                                <img src="assets/img/hits/slides/img-3.jpg" alt="">
+                            </div>
+    
+                            <div class="card__info">
+                                <div class="rating  card__rating">
+                                    <ul class="rating__list">
+                                        <li class="rating__item">
+                                            <svg class="rating__icon  isTrue">
+                                                <use xlink:href="#svg-star"></use>
+                                            </svg>
+                                        </li>
+    
+                                        <li class="rating__item">
+                                            <svg class="rating__icon  isTrue">
+                                                <use xlink:href="#svg-star"></use>
+                                            </svg>
+                                        </li>
+    
+                                        <li class="rating__item">
+                                            <svg class="rating__icon  isTrue">
+                                                <use xlink:href="#svg-star"></use>
+                                            </svg>
+                                        </li>
+    
+                                        <li class="rating__item">
+                                            <svg class="rating__icon  isTrue">
+                                                <use xlink:href="#svg-star"></use>
+                                            </svg>
+                                        </li>
+    
+                                        <li class="rating__item">
+                                            <svg class="rating__icon  isTrue">
+                                                <use xlink:href="#svg-star"></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+    
+                                    <svg class="card__favourites">
+                                        <use xlink:href="#svg-heart"></use>
+                                    </svg>
+                                </div>
+                                <h4 class="card__name">Катшука <br> Matze Koch Rollen</h4>
+                                <span class="card__price">5 600 р.</span>
+                            </div>
+    
+                            <button class="btn card__btn" type="button">В корзину</button>
+                        </a> <!-- /card -->
+                    </div>
+    
+    
+    
+                    <!-- =========================== -->
+    
+    
+                    <div>
+                        <a class="card  hits__card" href="#">
+                            <span class="label  card__label-hit">Хит</span>
+    
+                            <div class="card__img-wrap">
+                                <img src="assets/img/hits/slides/img-3.jpg" alt="">
+                            </div>
+    
+                            <div class="card__info">
+                                <div class="rating  card__rating">
+                                    <ul class="rating__list">
+                                        <li class="rating__item">
+                                            <svg class="rating__icon  isTrue">
+                                                <use xlink:href="#svg-star"></use>
+                                            </svg>
+                                        </li>
+    
+                                        <li class="rating__item">
+                                            <svg class="rating__icon  isTrue">
+                                                <use xlink:href="#svg-star"></use>
+                                            </svg>
+                                        </li>
+    
+                                        <li class="rating__item">
+                                            <svg class="rating__icon  isTrue">
+                                                <use xlink:href="#svg-star"></use>
+                                            </svg>
+                                        </li>
+    
+                                        <li class="rating__item">
+                                            <svg class="rating__icon  isTrue">
+                                                <use xlink:href="#svg-star"></use>
+                                            </svg>
+                                        </li>
+    
+                                        <li class="rating__item">
+                                            <svg class="rating__icon  isTrue">
+                                                <use xlink:href="#svg-star"></use>
+                                            </svg>
+                                        </li>
+                                    </ul>
+    
+                                    <svg class="card__favourites">
+                                        <use xlink:href="#svg-heart"></use>
+                                    </svg>
+                                </div>
+                                <h4 class="card__name">4444444 <br> Matze Koch Rollen</h4>
+                                <span class="card__price">99999 р.</span>
+                            </div>
+    
+                            <button class="btn card__btn" type="button">В корзину</button>
+                        </a> <!-- /card -->
+                    </div>
+    
+    
+    
+    
+                </div> <!-- /slides -->
+    
+            </div> <!-- /cards -->
+        </div> <!-- /container -->
+    </section> <!-- /hits -->
+    <section class="newProducts">
+        <div class="container">
+    
+            <div class="section-header">
+                <h2 class="section-header__title">Новинки</h2>
+                <a class="section-header__link" href="#">весь каталог</a>
+                <div class="section-header__buttons">
+                    <button class="btn-circle  section-header__prev" type="button">
+                        <svg>
+                            <use xlink:href="#svg-arrow-right"></use>
+                        </svg>
+                    </button>
+    
+                    <button class="btn-circle  section-header__next" type="button">
+                        <svg>
+                            <use xlink:href="#svg-arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div> <!-- /section-header -->
+    
+    
+            <div class="cards  newProducts__cards">
+                <div class="best  newProducts__best">
+                    <a class="best__wrap" href="#">
+                        <div class="best__title">Акция</div>
+                        <h3 class="best__name">удилище Adrenalin 7300 BC</h3>
+                        <span class="best__price">4 800 р.</span>
+                    </a>
+                </div>
+    
+    
+                <div class="slides  newProducts__slides">
+                    <a class="card  newProducts__card" href="#">
+    
+                        <div class="card__img-wrap">
+                            <img src="assets/img/newProducts/slides/img-1.png" alt="">
+                        </div>
+    
+                        <div class="card__info">
+                            <div class="rating  card__rating">
+                                <ul class="rating__list">
+                                    <li class="rating__item">
+                                        <svg class="rating__icon  isTrue">
+                                            <use xlink:href="#svg-star"></use>
+                                        </svg>
+                                    </li>
+    
+                                    <li class="rating__item">
+                                        <svg class="rating__icon  isTrue">
+                                            <use xlink:href="#svg-star"></use>
+                                        </svg>
+                                    </li>
+    
+                                    <li class="rating__item">
+                                        <svg class="rating__icon  isTrue">
+                                            <use xlink:href="#svg-star"></use>
+                                        </svg>
+                                    </li>
+    
+                                    <li class="rating__item">
+                                        <svg class="rating__icon  isTrue">
+                                            <use xlink:href="#svg-star"></use>
+                                        </svg>
+                                    </li>
+    
+                                    <li class="rating__item">
+                                        <svg class="rating__icon  isTrue">
+                                            <use xlink:href="#svg-star"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+    
+                                <svg class="card__favourites  isFavourites">
+                                    <use xlink:href="#svg-heart"></use>
+                                </svg>
+                            </div>
+                            <h4 class="card__name">Удилище<br>Matze Koch Rollen</h4>
+                            <span class="card__price">13 490 р.</span>
+                        </div>
+    
+                        <button class="btn card__btn" type="button">В корзину</button>
+                    </a> <!-- /card -->
+    
+    
+    
+                    <a class="card  newProducts__card" href="#">
+                        <span class="label   label--discount card__label">Скидка</span>
+    
+                        <div class="card__img-wrap">
+                            <img src="assets/img/newProducts/slides/img-2.jpg" alt="">
+                        </div>
+    
+                        <div class="card__info">
+                            <div class="rating  card__rating">
+                                <ul class="rating__list">
+                                    <li class="rating__item">
+                                        <svg class="rating__icon  isTrue">
+                                            <use xlink:href="#svg-star"></use>
+                                        </svg>
+                                    </li>
+    
+                                    <li class="rating__item">
+                                        <svg class="rating__icon  isTrue">
+                                            <use xlink:href="#svg-star"></use>
+                                        </svg>
+                                    </li>
+    
+                                    <li class="rating__item">
+                                        <svg class="rating__icon  isTrue">
+                                            <use xlink:href="#svg-star"></use>
+                                        </svg>
+                                    </li>
+    
+                                    <li class="rating__item">
+                                        <svg class="rating__icon  isTrue">
+                                            <use xlink:href="#svg-star"></use>
+                                        </svg>
+                                    </li>
+    
+                                    <li class="rating__item">
+                                        <svg class="rating__icon">
+                                            <use xlink:href="#svg-star"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+    
+                                <svg class="card__favourites">
+                                    <use xlink:href="#svg-heart"></use>
+                                </svg>
+                            </div>
+                            <h4 class="card__name">Приманка <br> Matze Koch Rollen</h4>
+                            <span class="card__price">3 240 р.</span>
+                            <strike class="card__old">6200 р.</strike>
+                            <div class="card__profit">Ваша выгода
+                                <span>3 200 р.</span>
+                            </div>
+                        </div>
+    
+                        <button class="btn card__btn" type="button">В корзину</button>
+                    </a> <!-- /card -->
+    
+    
+    
+                    <a class="card  newProducts__card" href="#">
+    
+                        <div class="card__img-wrap">
+                            <img src="assets/img/newProducts/slides/img-3.png" alt="">
+                        </div>
+    
+                        <div class="card__info">
+                            <div class="rating  card__rating">
+                                <ul class="rating__list">
+                                    <li class="rating__item">
+                                        <svg class="rating__icon  isTrue">
+                                            <use xlink:href="#svg-star"></use>
+                                        </svg>
+                                    </li>
+    
+                                    <li class="rating__item">
+                                        <svg class="rating__icon  isTrue">
+                                            <use xlink:href="#svg-star"></use>
+                                        </svg>
+                                    </li>
+    
+                                    <li class="rating__item">
+                                        <svg class="rating__icon  isTrue">
+                                            <use xlink:href="#svg-star"></use>
+                                        </svg>
+                                    </li>
+    
+                                    <li class="rating__item">
+                                        <svg class="rating__icon  isTrue">
+                                            <use xlink:href="#svg-star"></use>
+                                        </svg>
+                                    </li>
+    
+                                    <li class="rating__item">
+                                        <svg class="rating__icon  isTrue">
+                                            <use xlink:href="#svg-star"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+    
+                                <svg class="card__favourites">
+                                    <use xlink:href="#svg-heart"></use>
+                                </svg>
+                            </div>
+                            <h4 class="card__name">Катшука <br> Matze Koch Rollen</h4>
+                            <span class="card__price">5 600 р.</span>
+                        </div>
+    
+                        <button class="btn card__btn" type="button">В корзину</button>
+                    </a> <!-- /card -->
+    
+                </div> <!-- /slides -->
+            </div> <!-- /cards -->
+    
+    
+        </div> <!-- /container -->
+    </section> <!-- /newProducts -->
+    <section class="news">
+        <div class="container">
+    
+            <div class="section-header">
+                <h2 class="section-header__title">последние новости</h2>
+                <a class="section-header__link" href="#">все новости</a>
+                <div class="section-header__buttons">
+                    <button class="btn-circle  section-header__prev" type="button">
+                        <svg>
+                            <use xlink:href="#svg-arrow-right"></use>
+                        </svg>
+                    </button>
+    
+                    <button class="btn-circle  section-header__next" type="button">
+                        <svg>
+                            <use xlink:href="#svg-arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div> <!-- /section-header -->
+    
+    
+            <div class="news__inner">
+                <div class="slides  news__slides">
+    
+                    <div class="card  news__card" href="#">
+                        <span class="label  card__label-date">13.02.2019</span>
+    
+                        <div class="card__img-wrap">
+                            <img src="assets/img/news/img-1.jpg" alt="">
+                        </div>
+    
+                        <div class="card__info">
+                            <h2 class="card__title">Презентация нового продукта</h2>
+                            <p class="card__desc">
+                                Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев
+                                более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык
+                                публичных...
+                            </p>
+                            <a class="card__link" href="#">Подробнее</a>
+                        </div>
+                    </div> <!-- /card -->
+    
+    
+    
+                    <div class="card  news__card" href="#">
+                        <span class="label  card__label-date">13.02.2019</span>
+    
+                        <div class="card__img-wrap">
+                            <img src="assets/img/news/img-2.jpg" alt="">
+                        </div>
+    
+                        <div class="card__info">
+                            <h2 class="card__title">Презентация нового продукта</h2>
+                            <p class="card__desc">
+                                Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев
+                                более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык
+                                публичных...
+                            </p>
+                            <a class="card__link" href="#">Подробнее</a>
+                        </div>
+                    </div> <!-- /card -->
+    
+    
+    
+                    <div class="card  news__card" href="#">
+                        <span class="label  card__label-date">13.02.2019</span>
+    
+                        <div class="card__img-wrap">
+                            <img src="assets/img/news/img-3.jpg" alt="">
+                        </div>
+    
+                        <div class="card__info">
+                            <h2 class="card__title">Презентация нового продукта</h2>
+                            <p class="card__desc">
+                                Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев
+                                более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык
+                                публичных...
+                            </p>
+                            <a class="card__link" href="#">Подробнее</a>
+                        </div>
+                    </div> <!-- /card -->
+    
+                </div> <!-- /slides -->
+            </div> <!-- /news__inner -->
+    
+    
+            <div class="subscribe  news__subscribe">
+                <p class="subscribe__title">
+                    Подпишитесь на рассылку и будьте в курсе новостей, акций, новинок
+                </p>
+    
+                <form class="subscribe__form" action="#">
+                    <input class="subscribe__input" type="email" placeholder="Ваш email">
+                    <button class="btn  subscribe__btn" type="submit">Подписаться</button>
+                </form>
+    
+            </div> <!-- /subscribe -->
+    
+    
+        </div> <!-- /container -->
+    </section> <!-- /news -->
+    <section class="current-discounts">
+        <div class="container">
+            <div class="current-discounts__items">
+    
+    
+                <div class="intro__info-item">
+                    <div class="intro__info-content">
+                        <div class="intro__info-title">Скидка <br> на все лески</div>
+                        <span class="intro__info-subtitle">до 15 декабря</span>
+    
+                        <a class="btn-circle  intro__info-btn" href="#">
+                            <svg class="btn-circle__icon">
+                                <use xlink:href="#svg-arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+    
+                    <div class="intro__info-img">
+                        <img src="assets/img/current-discounts/img-1.png" alt="">
+                    </div>
+    
+                    <div class="intro-info__shadow"></div>
+                </div>
+    
+    
+                <div class="intro__info-item">
+                    <div class="intro__info-content">
+                        <div class="intro__info-title">Скидка <br> на катушки</div>
+                        <span class="intro__info-subtitle">до 31 января</span>
+                        <a class="btn-circle  intro__info-btn" href="#">
+                            <svg class="btn-circle__icon">
+                                <use xlink:href="#svg-arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+    
+                    <div class="intro__info-img">
+                        <img src="assets/img/current-discounts/img-2.png" alt="">
+                    </div>
+    
+                    <div class="intro-info__shadow"></div>
+                </div>
+    
+    
+            </div> <!-- /current-discounts__items -->
+        </div> <!-- /container -->
+    </section> <!-- /current-discounts -->
+    <section class="about">
+        <div class="container">
+    
+            <h2 class="about__title">О компании</h2>
+    
+            <div class="about__inner">
+                <div class="about__left-box">
+                    <p class="about__text">
+                        По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у
+                        некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на
+                        русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских
+                        времен.
+                    </p>
+    
+                    <p class="about__text">
+                        По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у
+                        некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на
+                        русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских
+                        времен.
+                    </p>
+    
+                    <p class="about__text">
+                        По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у
+                        некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на
+                        русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских
+                        времен.
+                    </p>
+                </div>
+    
+                <div class="about__right-box">
+                    <p class="about__text">
+                        По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у
+                        некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на
+                        русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских
+                        времен.
+                        По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у
+                        некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на
+                        русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских
+                        времен. По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у
+                        некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на
+                        русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских
+                        времен. По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у
+                        некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на
+                        русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских
+                        времен.
+                    </p>
+                </div>
+            </div> <!-- /about__inner -->
+        </div> <!-- /container -->
+    </section> <!-- /about -->
 
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
-                footer
+    
+                <div class="footer__col">
+                    <div class="footer__logo">
+                        <a class="footer__logo-link" href="#">
+                            <img src="assets/img/footer/logo.png" alt="">
+                        </a>
+                        <span class="footer__logo-slogan">официальный представитель <br> в России</span>
+                    </div>
+    
+                    <div class="footer__links">
+                        <div class="footer__download"">
+                            <a href=" #">Скачать каталог 2020</a>
+                        </div>
+    
+                        <div class="footer__communication">
+                            <a href="#">Связатья с нами</a>
+                        </div>
+                    </div>
+                </div> <!-- /footer__col -->
+    
+    
+                <div class="footer__col">
+                    <div class="footer__title">Компания</div>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">О компании</a>
+                        </li>
+    
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Акции</a>
+                        </li>
+    
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Новости</a>
+                        </li>
+    
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Блог</a>
+                        </li>
+    
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Эксперты</a>
+                        </li>
+    
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+    
+    
+                <div class="footer__col">
+                    <div class="footer__title">Покупателям</div>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Каталог</a>
+                        </li>
+    
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Оплата</a>
+                        </li>
+    
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Доставка</a>
+                        </li>
+    
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Возврат</a>
+                        </li>
+    
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Помощь</a>
+                        </li>
+                    </ul>
+                </div>
+    
+    
+                <div class="footer__col">
+                    <div class="footer__title">Оптовикам</div>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="tel:88000000000">8 (800) 000-00-00</a>
+                        </li>
+    
+                        <li class="footer__item">
+                            <a class="footer__link" href="tel:88000000000">8 (800) 000-00-00</a>
+                        </li>
+    
+                        <li class="footer__item">
+                            <a class="footer__link" href="tel:88000000000">8 (800) 000-00-00</a>
+                        </li>
+    
+                        <li class="footer__item">
+                            <a class="footer__link" href="tel:88000000000">8 (800) 000-00-00</a>
+                        </li>
+    
+                        <li class="footer__item">
+                            <a class="footer__link  footer__link--blue" href="mailto:info@mail.ru">info@mail.ru</a>
+                        </li>
+                    </ul>
+                </div>
+    
+    
+                <div class="footer__col">
+                    <div class="footer__title">Контакты</div>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <span>г. Москва, ул. Иванова</span>
+                        </li>
+    
+                        <li class="footer__item">
+                            <span>д. 5, пом. 8, оф. 11</span>
+                        </li>
+    
+                        <li class="footer__item">
+                            <a class="footer__link" href="tel:88000000000">8 (800) 000-00-00</a>
+                        </li>
+    
+                        <li class="footer__item">
+                            <a class="footer__link" href="tel:88000000000">8 (800) 000-00-00</a>
+                        </li>
+    
+                        <li class="footer__item">
+                            <a class="footer__link  footer__link--blue" href="mailto:info@yandex.ru">info@yandex.ru</a>
+                        </li>
+                    </ul>
+                </div>
+    
             </div> <!-- /footer__inner -->
+    
+    
+            <div class="footer__copy">
+                <p class="footer__copy-text">2010-2019 Ltd. Все права защищены. </p>
+    
+                <div class="social  footer__social">
+                    <ul class="social__list">
+    
+                        <li class="social__item">
+                            <a class="social__link" href="#" target="_blank">
+                                <img src="assets/img/footer/vk.png" alt="">
+                            </a>
+                        </li>
+    
+                        <li class="social__item">
+                            <a class="social__link" href="#" target="_blank">
+                                <img src="assets/img/footer/fb.png" alt="">
+                            </a>
+                        </li>
+    
+                        <li class="social__item">
+                            <a class="social__link" href="#" target="_blank">
+                                <img src="assets/img/footer/inst.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div> <!-- /social  -->
+            </div>
+    
         </div> <!-- /container -->
     </footer> <!-- /footer -->
 

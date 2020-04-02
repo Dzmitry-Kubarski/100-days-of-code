@@ -1,0 +1,31 @@
+.rating {
+}
+
+.card__rating {
+}
+
+.rating__list {
+    display: flex;
+    align-items: center;
+}
+.rating__item {
+}
+
+.rating__icon {
+    width: 16px;
+    height: 16px;
+    fill: none;   
+    
+    &.isTrue {
+        fill: #ffb400;
+    }
+}
+
+.card__favourites {
+}
+
+.isFavourites {
+}
+
+
+

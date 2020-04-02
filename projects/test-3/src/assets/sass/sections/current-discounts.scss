@@ -1,0 +1,61 @@
+.current-discounts {
+    padding-top: 55px;
+    padding-bottom: 90px;
+
+
+    .intro__info-item {
+        width: 50%;
+        min-height: 280px;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 40px;
+
+        &:nth-child(1) {
+            .intro__info-img {
+                right: 19px;
+                bottom: -13px;
+            }
+        }
+
+        &:nth-child(2) {
+            .intro__info-img {
+                bottom: -47px;
+                transform: none;
+                right: 25px;
+            }
+        }
+    }
+
+    .intro__info-content {
+        width: 80%;
+    }
+
+    .intro__info-title {
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 52px;
+        letter-spacing: .4px;
+        text-transform: none;
+    }
+
+    .intro__info-subtitle {
+        position: absolute;
+        left: 233px;
+        top: 52px;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: .4px;
+    }
+
+    .intro__info-btn {
+        // margin-top: 0;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.current-discounts__items {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+}

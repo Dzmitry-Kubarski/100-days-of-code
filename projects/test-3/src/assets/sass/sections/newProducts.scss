@@ -1,0 +1,30 @@
+.newProducts {
+    padding-bottom: 100px;
+
+    .section-header__title {
+        margin-bottom: -7px;
+    }
+
+    .best {
+        &::after {
+            background-image: url('../img/newProducts/best.png');
+            top: 0;
+            width: 86px;
+            height: 405px;
+            left: auto;
+            right: 30px;           
+        }
+
+        &::before {
+            content: '-30%';
+            display: block;
+            position: absolute;
+            bottom: 115px;
+            left: 50%;
+            font-size: 95px;
+            font-weight: 800;
+            color: rgba(#fff, .2);
+            transform: translateX(-50%);
+        }
+    }
+}
