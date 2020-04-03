@@ -10,14 +10,11 @@
         margin-bottom: -7px;
     }
 
-    .slides {
-        
+    .slick-list {
+        padding-bottom: 50px;
     }
 
-    .card {
-        width: calc(33.333% - 30px);
-        margin-right: 15px;
-        margin-left: 15px;
+    .card {       
         padding: 0;
         background-color: #fff;
         box-shadow: 0px 18px 21px 0px rgba(0, 0, 0, 0.09);
@@ -29,6 +26,7 @@
 
     .card__img-wrap {
         min-height: 210px;
+        max-height: 210px;
 
         img {
             height: 100%;
@@ -60,7 +58,4 @@
 .news__inner {
     margin-left: -15px;
     margin-right: -15px;
-    margin-bottom: 50px;
 }
-
-

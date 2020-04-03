@@ -30,6 +30,7 @@
     background-color: $color_black;
     border-radius: 50%;
     transition: background-color .2s linear;
+    outline: none;
 
     svg {
         width: 17px;
@@ -40,9 +41,9 @@
     &:hover {
         background-color: lighten($color_black, 15%);
     }
-}
 
-
-
-  
+    &:focus {
+        box-shadow: 0 0 5px 3px rgba($color_blue, .4);        
+    }
+} 
   

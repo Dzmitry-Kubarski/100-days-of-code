@@ -3016,29 +3016,25 @@
 
 $(function () {
 
-    $('.slides').slick({
-        dots: false,
-        arrows: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        speed: 800,
-        // adaptiveHeight: true,
-        // nextArrow: '<button class="reviews__slider-btn  reviews__slider-btn--prev"><svg><use xlink:href="#svg-prev"></use></svg></button>',
-        // prevArrow: '<button class="reviews__slider-btn  reviews__slider-btn--next"><svg><use xlink:href="#svg-next"></use></svg></button>',
 
+    // ------------ Slider Slick -------
+    $('.slides').each(function (index, el) {
+        $(this).slick({
+            //dots: true,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            speed: 600,
+            arrows: false
+        });
+        var _this = $(this);
 
-        // ----- responsive slider -----
-        responsive: [
-            {
-                breakpoint: 646,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    // dots: true,
-                    // arrows: false,
-                }
-            },
-        ]
+        $(this).parents('.hits, .newProducts, .news').find('.section-header__prev').on('click', function (event) {
+            _this.slick('slickPrev');
+        });
+        $(this).parents('.hits, .newProducts, .news').find('.section-header__next').on('click', function (event) {
+            _this.slick('slickNext');
+        });
     });
 
 });

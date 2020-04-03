@@ -16,13 +16,14 @@
 }
 .slick-list {
     width: 100%;
-    max-width: 850px;
+    max-width: 876px;
 
     position: relative;
     overflow: hidden;
     display: block;
-    margin: 0 auto;
+    // margin: 0 auto;
     padding: 0;
+    padding-bottom: 100px;
 
     &:focus {
         outline: none;
@@ -31,9 +32,14 @@
     &.dragging {
         cursor: pointer;
         cursor: hand;
-    }    
+    }     
+}
 
-    
+.news {
+    .slick-list {
+        max-width: 1230px;
+        margin: 0 auto;
+    }
 }
 
 .slick-slider .slick-track,
@@ -53,6 +59,7 @@
     margin-left: auto;
     margin-right: auto;
 
+   
     &:before,
     &:after {
         content: "";
@@ -68,6 +75,8 @@
     }
 }
 .slick-slide {
+    padding: 0px 15px;   
+
     float: left;
     height: 100%;
     min-height: 1px;

@@ -4343,6 +4343,7 @@ body {
     border-radius: 50%;
     -webkit-transition: background-color .2s linear;
     transition: background-color .2s linear;
+    outline: none;
 }
 
 .btn-circle svg {
@@ -4353,6 +4354,10 @@ body {
 
 .btn-circle:hover {
     background-color: #434545;
+}
+
+.btn-circle:focus {
+    box-shadow: 0 0 5px 3px rgba(0, 134, 192, 0.4);
 }
 
 .sidebar {
@@ -4553,7 +4558,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     box-shadow: 0px 18px 21px 0px #ebebeb;
-    margin-right: 30px;
+    margin-right: 15px;
     -webkit-transition: all .2s linear;
     transition: all .2s linear;
 }
@@ -4648,6 +4653,8 @@ body {
 .cards {
     display: -webkit-box;
     display: flex;
+    -webkit-box-align: start;
+    align-items: flex-start;
 }
 
 .card {
@@ -4681,6 +4688,7 @@ body {
     width: 100%;
     height: 100%;
     max-height: 225px;
+    min-height: 225px;
     overflow: hidden;
     text-align: center;
     margin-bottom: 10px;
@@ -4731,6 +4739,7 @@ body {
     font-weight: 600;
     letter-spacing: .5px;
     color: #1d1e1e;
+    text-decoration: line-through;
 }
 
 .card__profit {
@@ -5057,16 +5066,8 @@ body {
     bottom: 0;
 }
 
-.hits {
-    padding-bottom: 100px;
-}
-
 .hits .section-header__title {
     margin-bottom: -7px;
-}
-
-.newProducts {
-    padding-bottom: 100px;
 }
 
 .newProducts .section-header__title {
@@ -5108,10 +5109,11 @@ body {
     margin-bottom: -7px;
 }
 
+.news .slick-list {
+    padding-bottom: 50px;
+}
+
 .news .card {
-    width: calc(33.333% - 30px);
-    margin-right: 15px;
-    margin-left: 15px;
     padding: 0;
     background-color: #fff;
     box-shadow: 0px 18px 21px 0px rgba(0, 0, 0, 0.09);
@@ -5123,6 +5125,7 @@ body {
 
 .news .card__img-wrap {
     min-height: 210px;
+    max-height: 210px;
 }
 
 .news .card__img-wrap img {
@@ -5153,7 +5156,6 @@ body {
 .news__inner {
     margin-left: -15px;
     margin-right: -15px;
-    margin-bottom: 50px;
 }
 
 .current-discounts {
@@ -5388,12 +5390,12 @@ body {
 
 .slick-list {
     width: 100%;
-    max-width: 850px;
+    max-width: 876px;
     position: relative;
     overflow: hidden;
     display: block;
-    margin: 0 auto;
     padding: 0;
+    padding-bottom: 100px;
 }
 
 .slick-list:focus {
@@ -5403,6 +5405,11 @@ body {
 .slick-list.dragging {
     cursor: pointer;
     cursor: hand;
+}
+
+.news .slick-list {
+    max-width: 1230px;
+    margin: 0 auto;
 }
 
 .slick-slider .slick-track,
@@ -5434,6 +5441,7 @@ body {
 }
 
 .slick-slide {
+    padding: 0px 15px;
     float: left;
     height: 100%;
     min-height: 1px;
