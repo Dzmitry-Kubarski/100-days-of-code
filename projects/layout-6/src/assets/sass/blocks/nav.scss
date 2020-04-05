@@ -57,8 +57,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // color: rgba(66, 66, 66, 0.81);
-    color: #ff555d;;
+    color: rgba(66, 66, 66, 0.81);
+    // color: #ff555d;
     transition: color .2s linear;
     
     &.active {
@@ -67,8 +67,8 @@
     }
 
     &:hover {
-        // color: #ff555d; 
-        color: rgba(66, 66, 66, 0.81);
+        color: #ff555d; 
+        // color: rgba(66, 66, 66, 0.81);
     }
 
     @media (max-width: 820px) {

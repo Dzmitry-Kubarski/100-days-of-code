@@ -643,7 +643,7 @@ body {
     align-items: center;
     -webkit-box-pack: center;
     justify-content: center;
-    color: #ff555d;
+    color: rgba(66, 66, 66, 0.81);
     -webkit-transition: color .2s linear;
     transition: color .2s linear;
 }
@@ -654,7 +654,7 @@ body {
 }
 
 .nav__link:hover {
-    color: rgba(66, 66, 66, 0.81);
+    color: #ff555d;
 }
 
 @media (max-width: 820px) {
@@ -1102,6 +1102,11 @@ body {
 .portfolio__slide-link {
     max-width: 270px;
     margin: 0;
+    color: #ff555d;
+}
+
+.portfolio__slide-link:hover {
+    color: rgba(66, 66, 66, 0.81);
 }
 
 .portfolio__img-box {
