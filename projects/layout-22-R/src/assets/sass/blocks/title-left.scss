@@ -1,0 +1,24 @@
+.title-left {
+    position: absolute;
+    top: 50%;
+    left: 8vw;   
+    transform: translateY(-50%) rotate(-90deg);
+    color: #404a4d;
+    font-family: "Tahoma",sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    white-space: nowrap;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: -5rem;       
+        transform: translateY(-50%);
+        width: 4rem;
+        height: 2px;
+        background-color: #404a4d;
+    }
+}

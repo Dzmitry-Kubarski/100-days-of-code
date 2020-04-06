@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+    
+    
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <title>layout № 22-R</title>
+</head>
+
+<body>
+    <svg style="display: none;">
+    
+        <symbol id="svg-inst" viewBox="0 0 19 19">
+            <g transform="translate(-1171 -55)">
+                <path
+                    d="M1190 60.24v8.51c0 2.9-2.35 5.25-5.24 5.25h-8.52a5.25 5.25 0 0 1-5.24-5.25v-8.51c0-2.9 2.35-5.24 5.24-5.24h8.52c2.89 0 5.24 2.35 5.24 5.24zm-1.69 8.51v-8.51c0-1.96-1.6-3.56-3.55-3.56h-8.52a3.56 3.56 0 0 0-3.55 3.56v8.51c0 1.97 1.6 3.56 3.55 3.56h8.52c1.96 0 3.55-1.6 3.55-3.56zm-2.91-4.25a4.9 4.9 0 1 1-9.8-.01 4.9 4.9 0 0 1 9.8 0zm-1.69 0a3.21 3.21 0 1 0-6.43 0 3.21 3.21 0 0 0 6.43 0zm2.77-5.97a1.24 1.24 0 0 1 0 1.75 1.25 1.25 0 0 1-2.11-.87 1.24 1.24 0 0 1 1.23-1.24c.33 0 .65.13.88.36z" />
+            </g>
+        </symbol>
+    
+        <symbol id="svg-vk" viewBox="0 0 17 10">
+            <g transform="translate(-1226 -59)">
+                <path
+                    d="M1234.33 68.95h1.01s.3-.03.47-.2c.14-.16.14-.46.14-.46s-.02-1.4.6-1.61c.63-.2 1.43 1.35 2.28 1.95.64.46 1.13.36 1.13.36l2.27-.04s1.19-.07.62-1.03c-.04-.08-.32-.71-1.68-2.01-1.43-1.36-1.24-1.14.48-3.5 1.04-1.43 1.46-2.3 1.33-2.68-.13-.36-.98-.73-.98-.73h-2s-.66.46-.8.54c-.14.09-.22.28-.22.28s-.4 1.11-.95 2.06c-1.14 1.99-1.59 2.1-1.78 1.97-.43-.29-.32-1.16-.32-1.78 0-1.93.28-2.73-.55-2.94a4.21 4.21 0 0 0-1.2-.12 5.3 5.3 0 0 0-2.12.23c-.29.14-.51.47-.37.49.16.02.55.1.75.39.26.36.25 1.19.25 1.19s.15 2.27-.35 2.55c-.34.2-.82-.2-1.83-2-.52-.93-.91-1.95-.91-1.95s-.08-.2-.21-.3a2.36 2.36 0 0 1-.39-.61h-2s-.8.48-.93.64c-.12.15-.01.45-.01.45s1.9 4.58 4.05 6.89c1.98 2.11 4.22 1.97 4.22 1.97z" />
+            </g>
+        </symbol>
+    
+    </svg>
+
+    
+    <section class="intro">
+    
+        <div class="intro__slider">
+            <div class="intro__slider-item"
+                style="background: url('assets/img/intro/slides/img-1.jpg') no-repeat center; background-size: cover;">
+            </div>
+    
+            <div class="intro__slider-item"
+                style="background: url('assets/img/intro/slides/img-2.jpg') no-repeat center; background-size: cover;">
+            </div>
+    
+            <div class="intro__slider-item"
+                style="background: url('assets/img/intro/slides/img-3.jpg') no-repeat center; background-size: cover;">
+            </div>
+        </div> <!-- /intro__slider -->
+    
+    
+    
+        <div class="container">
+            <header class="header">
+                <a class="logo  header__logo" href="#">
+                    <img src="assets/img/logo.png" alt="Логотип">
+                </a>
+    
+                <nav class="menu  intro__menu">
+                    <ul class="menu__list">
+    
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Главная</a>
+                        </li>
+    
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Услуги</a>
+                        </li>
+    
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">О нас</a>
+                        </li>
+    
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Обучение</a>
+                        </li>
+    
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Информация</a>
+                        </li>
+    
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Контакты</a>
+                        </li>
+    
+                    </ul>
+                </nav> <!-- /menu  intro__menu -->
+    
+                <div class="social  header__social">
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#svg-inst"></use>
+                        </svg>
+                    </a>
+    
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#svg-vk"></use>
+                        </svg>
+                    </a>
+                </div>
+    
+                <div class="header__phone-wrap">
+                    <div class="header__phone">
+                        <div class="header__phone-time">
+                            <img src="assets/img/time.svg" alt="время"> Пн-Сб с 9:00 до 20:00
+                        </div>
+                        <a class="header__phone-link" href="tel:+375335555555">+375 33 555-55-55</a>
+                    </div>
+    
+                    <div class="header__phone-btn">
+                        <img src="assets/img/phone.svg"> заказать Звонок
+                    </div>
+                </div>
+    
+                <div class="burger-wrap">
+                    <div class="burger"></div>
+                </div>
+            </header>
+    
+    
+            <div class="intro__content">
+                <div class="intro__content-text intro-text-slider">
+                    <div class="intro__content-item">
+                        <h3 class="intro__subtitle"> Студия профессиональной депиляции в Бресте</h3>
+                        <h2 class="intro__title"> Сделаем Вашу кожу <span>идеально гладкой - </span> Шугаринг / Воск
+                        </h2>
+                        <ul class="intro__list">
+                            <li>Безопасно удалим волоски на любых зонах</li>
+                            <li>Гладкость до 30 дней</li>
+                            <li>Максимально безболезненно и комфортно для Вас</li>
+                        </ul>
+                    </div>
+    
+                    <div class="intro__content-item">
+                        <h3 class="intro__subtitle"> Убираем апельсиновую корку на Вашей коже</h3>
+                        <h2 class="intro__title"> РАЗГЛАДИМ ВАШ ЦЕЛЛЮЛИТ <span>ЗА 10 СЕАНСОВ</span> С УМЕНЬШЕНИЕМ
+                            ОБЪЕМОВ ДО 5 СМ</h2>
+                        <ul class="intro__list">
+                            <li>Используем современные методики в борьбе с целлюлитом</li>
+                            <li>
+                                Китайский массаж, баночный массаж, ударные техники, Гуаша, лимфодренажный массаж,
+                                обертывания
+                            </li>
+                            <li>Гарантируем результат, при соблюдении всех рекомендаций мастера</li>
+                        </ul>
+                    </div>
+    
+                    <div class="intro__content-item">
+                        <h3 class="intro__subtitle"> Чистка лица, пилинги, оформление БРОВЕЙ</h3>
+                        <h2 class="intro__title"> НАТУРАЛЬНО ОФОРМЛЯЕМ БРОВИ <span>ДЕЛАЕМ МЕХАНИЧЕСКУЮ ЧИСТКУ И </span>
+                            ХИМИЧЕСКИЕ ПИЛИНГИ
+                        </h2>
+                        <ul class="intro__list">
+                            <li>Коррекция, моделирование и покраска бровей</li>
+                            <li>Боремся с черными точками, проблемной кожей, пигментными пятнами, мелкими морщинами</li>
+                            <li>Консультация по лицу БЕСПЛАТНО!</li>
+                        </ul>
+                    </div>
+                </div>
+    
+    
+                <div class="form">
+                    <div class="form__header">
+                        <div class="form__title"> ЧЕРЕЗ САЙТ - ПРИ ЗАКАЗЕ ЛЮБОЙ УСЛУГИ В СТУДИИ,
+                            <span>ДЕПИЛЯЦИЯ ПОДМЫШЕК БЕСПЛАТНО</span>
+                        </div>
+                    </div>
+    
+                    <div class="form__body">
+                        <div class="form__text"> Введите Ваши контакты и забронирйте за
+                            <br> собой подарочную карту на ПОДМЫШКИ
+                        </div>
+                        <form>
+                            <input class="form__input" type="text" name="name" placeholder="Ваше имя" required>
+                            <input class="form__input" type="tel" name="phone" placeholder="Ваш телефон" required>
+                            <button class="btn  form__btn">ПОЛУЧИТЬ КАРТУ</button>
+                        </form>
+                    </div>
+                </div> <!-- /form -->
+    
+            </div> <!-- /intro__content -->
+        </div> <!-- /container -->
+    </section> <!-- /intro -->
+    <section class="method">
+    
+        <h4 class="title-left"> наш подход</h4>
+        <div class="container">
+    
+            <div class="method__inner">
+                <div class="method__img hide-mobile">
+                    <img src="assets/img/method/img-1.jpg" alt="">
+                </div>
+    
+                <div class="method__content">
+                    <div class="method__content-header">
+                        <div class="method__title"> Более >1000 БИКИНИ без боли и страданий</div>
+    
+                        <div class="method__subtitle">
+                            <img src="assets/img/logo-bg.png" alt="">
+    
+                            <h2 class="method__subtitle-text"> Студия Paradiz.by - это профессиональная студия
+                                шугаринга, депиляции воском, коррекции бровей, антицеллюлитного массажа и пилинга для
+                                лица.
+                            </h2>
+                        </div>
+                    </div>
+    
+                    <!-- <div class="method__img hide-desc">
+                        <img src="" alt="">
+                    </div> -->
+    
+                    <div class="method__content-body">
+                        <div class="method__advantages">
+                            <ul class="method__advantages-list">
+                                <li class="method__advantages-item">профессиональные и адекватные мастера</li>
+                                <li class="method__advantages-item">постоянно повышаем свою квалификацию</li>
+                                <li class="method__advantages-item">98% довольных клиентов</li>
+                                <li class="method__advantages-item">работаем очень качественно на лучших материалах</li>
+                                <li class="method__advantages-item">нам всегда можно открыто задавать любые вопросы</li>
+                                <li class="method__advantages-item">индивидуальный подход к каждому гостю студии</li>
+                            </ul>
+                            <a href="#" class="btn method__advantages-btn"> ПОДРОБНЕЕ О СТУДИИ </a>
+                        </div>
+    
+                        <ul class="method__stat">
+                            <li class="method__stat-item">
+                                <div class="method__stat-title">
+                                    <span class="method__stat-value">50</span>
+                                    <span class="method__stat-subtitle">+</span>
+                                </div>
+                                <div class="method__stat-text"> сторис-отзывов в нашем Instagram</div>
+                            </li>
+    
+                            <li class="method__stat-item">
+                                <div class="method__stat-title">
+                                    <span class="method__stat-value">89</span>
+                                    <span class="method__stat-subtitle">% клиентов</span>
+                                </div>
+                                <div class="method__stat-text"> приходят по рекомендации</div>
+                            </li>
+    
+                            <li class="method__stat-item">
+                                <div class="method__stat-title">
+                                    <span class="method__stat-value">6</span>
+                                    <span class="method__stat-subtitle">дней</span>
+                                </div>
+                                <div class="method__stat-text"> в неделю открыты двери нашей студии</div>
+                            </li>
+    
+                            <li class="method__stat-item">
+                                <div class="method__stat-title">
+                                    <span class="method__stat-value">3</span>
+                                    <span class="method__stat-subtitle">мастера</span>
+                                </div>
+                                <div class="method__stat-text"> профессионала</div>
+                            </li>
+                        </ul>
+                    </div>
+    
+                </div> <!-- /method__content -->
+            </div> <!-- /method__inner -->
+        </div> <!-- /container -->
+    </section> <!-- /method -->
+    <section class="advantages">
+        <h3 class="title-left"> преимущества</h3>
+    
+        <div class="container">
+    
+            <div class="title  advantages__title">
+                <h2 class="title__text">ПОЧЕМУ ВАМ ПОНРАВИТСЯ В НАШЕЙ СТУДИИ PARADIZ
+            </div>
+    
+    
+            <div class="advantages__inner">
+                <div class="advantages__items">
+    
+                    <div class="advantages__item">
+                        <div class="advantages__item-header">
+                            <div class="advantages__item-img">
+                                <img src="assets/img/advantages/item-1.svg" alt="">
+                            </div>
+                            <span class="advantages__item-title">Только профессиональные материалы</span>
+                        </div>
+    
+                        <div class="advantages__item-text"> Мы работаем на проверенных, натуральных и
+                            гипоаллергенных материалах, которые реально справляются со своими функциями и работают на
+                            результат</div>
+                    </div>
+    
+                    <div class="advantages__item">
+                        <div class="advantages__item-header">
+                            <div class="advantages__item-img">
+                                <img src="assets/img/advantages/item-2.svg" alt="">
+                            </div>
+                            <span class="advantages__item-title"> Доступная цена</span>
+                        </div>
+                        <div class="advantages__item-text"> Мы очень хотим, чтобы Вы к нам возвращались, поэтому
+                            тщательно следим за себестоимостью всех процедур и не завышаем цену</div>
+                    </div>
+    
+                    <div class="advantages__item">
+                        <div class="advantages__item-header">
+                            <div class="advantages__item-img">
+                                <img src="assets/img/advantages/item-3.svg" alt="">
+                            </div>
+                            <span class="advantages__item-title">Мастера с опытом от 2-х лет</span>
+                        </div>
+                        <div class="advantages__item-text"> Мы молодая команда, впитываем все новинки очень
+                            быстро, стараемся быть в тренде последних новшеств в индустрии красоты</div>
+                    </div>
+    
+                    <div class="advantages__item">
+                        <div class="advantages__item-header">
+                            <div class="advantages__item-img">
+                                <img src="assets/img/advantages/item-4.svg" alt="">
+                            </div>
+                            <span class="advantages__item-title">Гладкость до 4-х недель</span>
+                        </div>
+                        <div class="advantages__item-text"> Если вы все еще используете бритву, выкиньте ее, ведь
+                            с депиляцией можно добиться гладкости до 4-ех недель</div>
+                    </div>
+    
+                    <div class="advantages__item">
+                        <div class="advantages__item-header">
+                            <div class="advantages__item-img">
+                                <img src="assets/img/advantages/item-5.svg" alt="">
+                            </div>
+                            <span class="advantages__item-title">Стерильные инструменты </span>
+                        </div>
+                        <div class="advantages__item-text"> В работе используем практически все одноразовые
+                            расходные материалы, которые после каждого применения, выбрасываются</div>
+                    </div>
+    
+                    <div class="advantages__item">
+                        <div class="advantages__item-header">
+                            <div class="advantages__item-img">
+                                <img src="assets/img/advantages/item-6.svg" alt="">
+                            </div>
+                            <span class="advantages__item-title">Удобное месторасположение</span>
+                        </div>
+                        <div class="advantages__item-text"> У нас отдельный вход, мы находимся на 1-ом этаже
+                            жилого дома, всегда есть места для парковки, ходит много общественного транспорта</div>
+                    </div>
+    
+                    <div class="advantages__btn-wrap">
+                        <a class="btn advantages__btn" href="#">ПЕРЕЗВОНИТЕ МНЕ</a>
+                    </div>
+                </div> <!-- /advantages__items -->
+    
+    
+    
+                <div class="advantages__video">
+                    <div class="advantages__video-title"> Видеоприглашение</div>
+                    <div class="advantages__video-subtitle"> Основателя студии <br> Екатерины Дейнека
+                    </div>
+                    <div class="play advantages__play" id="QHOcx47X7rY3"></div>
+                </div>
+    
+            </div> <!-- /advantages__inner -->
+        </div> <!-- /container -->
+    </section> <!-- /advantages -->
+    <section class="services">
+        <div class="title-left"> Услуги и стоимость</div>
+    
+        <div class="container">
+    
+            <div class="title  services__title">
+                <h2 class="title__text"> Наши услуги</h2>
+            </div>
+    
+            <div class="services__inner">
+                <ul class="services__tabs">
+                    <li class="services__tab tab-active" data-tab="">
+                        <button class="services__tab-btn" type="button">
+                            <img src="assets/img/services/tab-1.svg" alt="">
+                            <span class="services__services__box__title"> Депиляция воском </span>
+                        </button>
+                    </li>
+    
+                    <li class="services__tab" data-tab="">
+                        <button class="services__tab-btn" type="button">
+                            <img src="assets/img/services/tab-1.svg" alt="">
+                            <span class="services__services__box__title"> Шугаринг </span>
+                        </button>
+                    </li>
+    
+                    <li class="services__tab" data-tab="">
+                        <button class="services__tab-btn" type="button">
+                            <img src="assets/img/services/tab-1.svg" alt="">
+                            <span class="services__services__box__title"> Коррекция бровей </span>
+                        </button>
+                    </li>
+    
+                    <li class="services__tab" data-tab="">
+                        <button class="services__tab-btn" type="button">
+                            <img src="assets/img/services/tab-1.svg" alt="">
+                            <span class="services__services__box__title"> Чистка лица </span>
+                        </button>
+                    </li>
+    
+                    <li class="services__tab" data-tab="">
+                        <button class="services__tab-btn" type="button">
+                            <img src="assets/img/services/tab-1.svg" alt="">
+                            <span class="services__services__box__title"> Пиллинги </span>
+                        </button>
+                    </li>
+    
+                    <li class="services__tab" data-tab="">
+                        <button class="services__tab-btn" type="button">
+                            <img src="assets/img/services/tab-1.svg" alt="">
+                            <span class="services__services__box__title"> Антицеллюлитная программа </span>
+                        </button>
+                    </li>
+                </ul>
+    
+    
+    
+                <div class="services__content">
+                    <div class="services__box" id="1">
+    
+                        <div class="features  services__features">
+                            <div class="services__box__title"> Особенности:</div>
+                            <ul class="features__items">
+                                <div class="features__item"> Бритва - для мужиков</div>
+                                <div class="features__item"> Волосы тоньше - растут дольше</div>
+                                <div class="features__item"> Пилинг и увлажнение</div>
+                            </ul>
+                        </div>
+    
+                        <div class="services__cards">
+                            <div class="services__box__title"> В комплексе выгоднее. Самые популярные комплексы:</div>
+                            <div class="services__cards-inner">
+    
+                                <div class="card  card--recommendation">
+                                    <div class="card__title"> Комплекс 1</div>
+                                    <div class="card__body">
+                                        <div class="card__content">
+                                            <div class="services__box__title">Что входит:</div>
+                                            <span>-Подмышки</span>
+                                            <span>-Глубокое бикини</span>
+                                        </div>
+    
+                                        <div class="card__price">
+                                            <div class="services__box__title">Стоимость:</div>
+                                            <span class="card__price-new">30,00 руб</span>
+                                            <span class="card__price-old">32,00 руб</span>
+                                        </div>
+                                        <a class="card__btn" href="#">Записаться </a>
+                                    </div>
+    
+                                    <a class="card__link" href="#">подробнее </a>
+                                </div> <!-- card -->
+    
+    
+                                <div class="card">
+                                    <div class="card__title"> Комплекс 2</div>
+                                    <div class="card__body">
+                                        <div class="card__content">
+                                            <div class="services__box__title">Что входит:</div>
+                                            <span>-Подмышки</span>
+                                            <span>-Глубокое бикини</span>
+                                        </div>
+    
+                                        <div class="card__price">
+                                            <div class="services__box__title">Стоимость:</div>
+                                            <span class="card__price-new">45,00 руб</span>
+                                            <span class="card__price-old">49,00 руб</span>
+                                        </div>
+                                        <a class="card__btn" href="#">Записаться </a>
+                                    </div>
+    
+                                    <a class="card__link" href="#">подробнее </a>
+                                </div> <!-- /card -->
+    
+    
+                                <div class="card">
+                                    <div class="card__title"> Комплекс 3</div>
+                                    <div class="card__body">
+                                        <div class="card__content">
+                                            <div class="services__box__title">Что входит:</div>
+                                            <span>-Подмышки</span>
+                                            <span>-Глубокое бикини</span>
+                                        </div>
+    
+                                        <div class="card__price">
+                                            <div class="services__box__title">Стоимость:</div>
+                                            <span class="card__price-new">46,00 руб</span>
+                                            <span class="card__price-old">49,00 руб</span>
+                                        </div>
+                                        <a class="card__btn" href="#">Записаться </a>
+                                    </div>
+    
+                                    <a class="card__link" href="#">подробнее </a>
+                                </div> <!-- /card -->
+    
+    
+                                <div class="card card--new">
+                                    <div class="card__title"> Комплекс 4</div>
+                                    <div class="card__body">
+                                        <div class="card__content">
+                                            <div class="services__box__title">Что входит:</div>
+                                            <span>-Подмышки</span>
+                                            <span>-Глубокое бикини</span>
+                                        </div>
+    
+                                        <div class="card__price">
+                                            <div class="services__box__title">Стоимость:</div>
+                                            <span class="card__price-new">54,00 руб</span>
+                                            <span class="card__price-old">58,00 руб</span>
+                                        </div>
+                                        <a class="card__btn" href="#">Записаться </a>
+                                    </div>
+    
+                                    <a class="card__link" href="#">подробнее </a>
+                                </div> <!-- /card -->
+                            </div> <!-- /services__cards-inner -->
+    
+                            <div class="services__btn-wrap">
+                                <a class="btn" href="#">Смотреть
+                                    стоимость депиляции воском на отдельные зоны
+                                </a>
+                            </div>
+    
+                        </div> <!-- /services__cards -->
+                    </div> <!-- /services__box -->
+    
+    
+    
+                    <div class="services__box" id="2">
+    
+                        <div class="features  services__features">
+                            <div class="services__box__title"> Особенности:</div>
+                            <ul class="features__items">
+                                <div class="features__item"> Бритва - для мужиков</div>
+                                <div class="features__item"> Волосы тоньше - растут дольше</div>
+                                <div class="features__item"> Пилинг и увлажнение</div>
+                            </ul>
+                        </div>
+    
+                        <div class="services__cards">
+                            <div class="services__box__title"> В комплексе выгоднее. Самые популярные комплексы:</div>
+                            <div class="services__cards-inner">
+    
+                                <div class="card">
+                                    <div class="card__title"> Комплекс 1</div>
+                                    <div class="card__body">
+                                        <div class="card__content">
+                                            <div class="services__box__title">Что входит:</div>
+                                            <span>-Подмышки</span>
+                                            <span>-Глубокое бикини</span>
+                                        </div>
+    
+                                        <div class="card__price">
+                                            <div class="services__box__title">Стоимость:</div>
+                                            <span class="card__price-new">30,00 руб</span>
+                                            <span class="card__price-old">32,00 руб</span>
+                                        </div>
+                                        <a class="card__btn" href="#">Записаться </a>
+                                    </div>
+    
+                                    <a class="card__link" href="#">подробнее </a>
+                                </div> <!-- card -->
+    
+    
+                                <div class="card  card--recommendation">
+                                    <div class="card__title"> Комплекс 2</div>
+                                    <div class="card__body">
+                                        <div class="card__content">
+                                            <div class="services__box__title">Что входит:</div>
+                                            <span>-Подмышки</span>
+                                            <span>-Глубокое бикини</span>
+                                        </div>
+    
+                                        <div class="card__price">
+                                            <div class="services__box__title">Стоимость:</div>
+                                            <span class="card__price-new">45,00 руб</span>
+                                            <span class="card__price-old">49,00 руб</span>
+                                        </div>
+                                        <a class="card__btn" href="#">Записаться </a>
+                                    </div>
+    
+                                    <a class="card__link" href="#">подробнее </a>
+                                </div> <!-- /card -->
+    
+    
+                                <div class="card  card--new">
+                                    <div class="card__title"> Комплекс 3</div>
+                                    <div class="card__body">
+                                        <div class="card__content">
+                                            <div class="services__box__title">Что входит:</div>
+                                            <span>-Подмышки</span>
+                                            <span>-Глубокое бикини</span>
+                                        </div>
+    
+                                        <div class="card__price">
+                                            <div class="services__box__title">Стоимость:</div>
+                                            <span class="card__price-new">46,00 руб</span>
+                                            <span class="card__price-old">49,00 руб</span>
+                                        </div>
+                                        <a class="card__btn" href="#">Записаться </a>
+                                    </div>
+    
+                                    <a class="card__link" href="#">подробнее </a>
+                                </div> <!-- /card -->
+    
+    
+                                <div class="card">
+                                    <div class="card__title"> Комплекс 4</div>
+                                    <div class="card__body">
+                                        <div class="card__content">
+                                            <div class="services__box__title">Что входит:</div>
+                                            <span>-Подмышки</span>
+                                            <span>-Глубокое бикини</span>
+                                        </div>
+    
+                                        <div class="card__price">
+                                            <div class="services__box__title">Стоимость:</div>
+                                            <span class="card__price-new">54,00 руб</span>
+                                            <span class="card__price-old">58,00 руб</span>
+                                        </div>
+                                        <a class="card__btn" href="#">Записаться </a>
+                                    </div>
+    
+                                    <a class="card__link" href="#">подробнее </a>
+                                </div> <!-- /card -->
+                            </div> <!-- /services__cards-inner -->
+    
+                            <div class="services__btn-wrap">
+                                <a class="btn" href="#">Смотреть
+                                    стоимость депиляции воском на отдельные зоны
+                                </a>
+                            </div>
+    
+                        </div> <!-- /services__cards -->
+                    </div> <!-- /services__box -->
+    
+    
+    
+                    <div class="services__box" id="3">
+                        <div class="services-tab__content-info">
+                            <div class="services-tab__content-title"> Брови - важнейшая составляющая Вашего образа! От их
+                                ухоженности, формы и цвета зависит восприятие лица в целом! ⭐Получите БЕСПЛАТНУЮ
+                                Консультацию по всем интересующим вопросам в области бровей!</div>
+                            <ul class="main__list main__list-sm">
+                                <li>Если Вы устали каждый день рисовать брови</li>
+                                <li>Если Вас не устраивает форма и цвет бровей</li>
+                                <li>Если однажды перещипав брови, они перестали расти</li>
+                                <li>Если не знаете, какое окрашивание выбрать: хну или краску</li>
+                                <li>Если Вы обращались к мастеру салона, а результат не понравился</li>
+                                <li></li>
+                            </ul>
+                            <div class="btn-wrap"> <a href="#" class="btn btm-op-mod">Получить консультацию</a></div>
+                        </div>
+    
+                        <div class="services-tab__content-img">
+                            <img src="" alt="">
+                        </div>
+                    </div> <!-- /services__box -->
+    
+    
+                    <div class="services__box" id="4">
+                        <div class="services-tab__content-info">
+                            <div class="services-tab__content-title"> Мы не вернём Вам молодость и красоту. После
+                                посещения нашей студии Ваши завистницы будут думать, где Вы так великолепно отдохнули,
+                                что Ваша молодость и красота вернулась к Вам сама</div>
+                            <ul class="main__list main__list-sm">
+                                <li>Атравматическая чистка</li>
+                                <li>Комбинированная чистка (ультразвуковая + мануальная)</li>
+                                <li>Ультразвуковая чистка лица</li>
+                                <li>Ультразвуковая чистка лица + маска</li>
+                                <li>Ручная чистка</li>
+                                <li></li>
+                            </ul>
+                            <div class="btn-wrap"> <a href="#" class="btn btm-op-mod">Получить консультацию</a></div>
+                        </div>
+                        <div class="services-tab__content-img car-active">
+                            <img src="" alt="">
+                        </div>
+                    </div> <!-- /services__box -->
+    
+    
+                    <div class="services__box" id="5">
+                        <div class="services-tab__content-info">
+                            <div class="services-tab__content-title"> Пилинг - процедура, отшелушивающая верхний роговой
+                                слой кожи. Такая процедура очень эффективна, но рекомендуется не всем в связи с
+                                достаточно длительным реабилитационным периодом. Суть метода заключается в том, что
+                                лазерный луч, воздействуя на кожу, удаляет омертвевшие клетки. Показания для проведения:
+                            </div>
+                            <ul class="main__list main__list-sm">
+                                <li>Сухая, жирная кожа</li>
+                                <li>Морщины</li>
+                                <li>Расширенные глубокие поры</li>
+                                <li>Угревая болезнь</li>
+                                <li>Постугревые рубцы</li>
+                                <li>Пигментация</li>
+                            </ul>
+                            <div class="btn-wrap"> <a href="#" class="btn btm-op-mod">Получить консультацию</a></div>
+                        </div>
+                        <div class="services-tab__content-img services-tab__content-img-sert" style="height: 87%;">
+                            <img src="" alt="">
+                        </div>
+                    </div> <!-- /services__box -->
+    
+    
+                    <div class="services__box" id="6">
+                        <div class="services-tab__content-info">
+                            <div class="services-tab__content-title"> Здоровые волосы, выразительные черты лица, нежная
+                                кожа – мечта каждой представительницы слабого пола. К вашим услугам:</div>
+                            <ul class="main__list main__list-sm">
+                                <li>Антицеллюлитная программа</li>
+                                <li>Обертивания</li>
+                                <li>Тейпирование</li>
+                                <li>Антицеллюлитная программа</li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <div class="btn-wrap"> <a href="#" class="btn btm-op-mod">Получить консультацию</a></div>
+                        </div>
+                        <div class="services-tab__content-img car-active">
+                            <img src="" alt="">
+                        </div>
+                    </div> <!-- /services__box -->
+                </div> <!-- /services__content -->
+    
+    
+                <div class="services__form-gift">
+                    <div class="form__title"> <span>ДЕПИЛЯЦИЯ ПОДМЫШЕК БЕСПЛАТНО!</span>
+                        <br>Оставьте заявку на любую услугу через сайт</div>
+                    <div class="form-gift__text"> Введите Ваши контакты и забронируйте за собой подарочную карту на
+                        ПОДМЫШКИ</div>
+                    <form action="#" class="form-row formSend">
+                        <input type="hidden" name="formname" value="send_cd">
+                        <input type="text" class="input" name="name" placeholder="Ваше имя" required>
+                        <input type="tel" class="input" name="phone" placeholder="Ваш телефон" required>
+                        <button class="btn">ПОЛУЧИТЬ ПОДАРОК</button>
+                    </form>
+                </div>
+            </div> <!-- /services__inner -->
+        </div> <!-- /container -->
+    </section> <!-- /services -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

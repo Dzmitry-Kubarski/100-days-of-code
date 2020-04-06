@@ -1,0 +1,143 @@
+.method {
+    position: relative;
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+    background: url('../img/method/bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #404a4d;
+}
+
+
+.method__inner {
+    display: flex;
+}
+
+.method__img {
+    width: 30%;
+    margin-right: 4%;
+}
+
+
+
+.method__content {
+    width: 66%;
+}
+
+.method__content-header {
+    padding-right: 0;
+    padding-bottom: 6rem;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 6rem;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 120%;
+        height: 120%;
+        left: -15%;
+        top: -20%;
+        border: 10px solid #ecd9b5;
+        z-index: -1;
+    }
+}
+
+.method__title {
+    font-family: "Tahoma",sans-serif;
+    font-size: 3.1rem;
+    font-weight: 700;
+    line-height: 1.34;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.method__subtitle {
+    display: flex;
+
+    img {
+        width: 7rem;
+        height: 8.5rem;
+        margin-right: 2rem;
+    }
+}
+
+.method__subtitle-text {
+    font-size: 2.3rem;
+}
+
+.method__content-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.method__advantages {
+    width: 47%;
+}
+
+.method__advantages-list {
+    padding-left: 2rem;
+    margin-bottom: 4rem;
+}
+
+.method__advantages-item {
+    position: relative;
+    font-family: "Tahoma",sans-serif;
+    font-size: 1.43rem;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 1.7rem;
+
+    &::before {
+        position: absolute;
+    content: "";
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: -2rem;
+    width: 1rem;
+    height: 1rem;
+    background: url('../img/method/type-list.svg') no-repeat center;
+    background-size: 100% 100%;
+    }
+}
+
+
+.method__advantages-btn {
+    display: inline-block;
+}
+
+.method__stat {
+    width: 47%;   
+    display: flex;   
+    flex-wrap: wrap;
+}
+
+.method__stat-item {
+    width: 49%;
+    margin: 1rem .5% 4rem;
+}
+
+.method__stat-title {
+    font-family: "Tahoma",sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;   
+    display: flex;   
+    align-items: center;
+}
+
+.method__stat-value {
+    display: inline-block;
+}
+
+.method__stat-subtitle {
+    font-size: 1.6rem;
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.method__stat-text {
+    font-size: 2.4rem;
+}

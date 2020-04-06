@@ -1,0 +1,135 @@
+.advantages {
+    position: relative;    
+    background: url('../img/advantages/bg.png') no-repeat center right;
+    color: #404a4d;
+    background-size: 25vw;
+    padding-top: 9rem;
+    padding-bottom: 12rem;
+}
+
+
+.advantages__title {
+    margin-bottom: 7rem;
+}
+
+
+.advantages__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages__items {
+    width: 75%;   
+    display: flex;   
+    flex-wrap: wrap;    
+    justify-content: space-between;
+}
+
+.advantages__item {
+    width: 30%;
+    margin-bottom: 5rem;
+
+    &:hover {
+        img {
+            animation: drblg 1s 2 linear
+        }
+    }
+}
+
+.advantages__item-header {   
+    display: flex;
+    font-size: 2.3rem;  
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.advantages__item-img {
+    width: 7rem;
+    height: 6rem;
+    margin-right: 2.5rem;
+    background: url('../img/advantages/item-bg.png') no-repeat center left;
+    background-size: auto 100%;
+    text-align: right;
+
+    img {
+        display: inline-block;
+        max-width: 80%;       
+        transition: all .4s;
+    }
+}
+
+.advantages__item-title {
+    flex: 1;
+}
+
+.advantages__item-text {
+    font-family: "Tahoma",sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.advantages__btn-wrap {
+    width: 100%;
+    text-align: center;
+}
+
+
+.advantages__btn {
+    display: inline-block;
+}
+
+
+
+.advantages__video {
+    width: 22%;
+
+}
+
+.advantages__video-title {
+    position: relative;
+    margin-bottom: 2rem;
+    margin-left: 4.3rem;
+    font-size: 3rem;
+    color: #404a4d;
+    line-height: 1;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 2.1rem;
+        left: -4rem;
+        width: 3.5rem;
+        height: 1px;
+        background-color: #404a4d;
+    }
+}
+
+.advantages__video-subtitle {
+    display: inline-block;
+    padding: .5rem 2rem;
+    font-size: 2rem;
+    background-color: #ecd9b5;
+}
+
+.advantages__play {
+    margin-top: 9rem;
+    margin-left: 1rem;
+}
+
+@keyframes drblg {
+    0% {
+        opacity: 1;
+        transform: translateX(0) rotate(0)
+    }
+
+    60% {
+        opacity: .8;
+        transform: translateX(-20%) rotate(-20deg)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0) rotate(0)
+    }
+}

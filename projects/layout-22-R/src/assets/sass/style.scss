@@ -1,0 +1,59 @@
+/* Fonts */
+@import "fonts";
+
+/* Variables */
+@import "vars";
+
+
+/* Grid smart-grid */
+// @import "smart-grid";
+
+
+/* Normalize */
+@import "../../../../../node_modules/normalize.css/normalize";
+
+/* Animate.css */
+// @import "../../../../../node_modules/animate.css/animate";
+
+
+/* Default styles */
+@import "base";
+
+
+
+/* Vendor libs */
+@import "vendor/slick";
+
+
+/* Blocks */
+@import "blocks/header";
+@import "blocks/title";
+@import "blocks/title-left";
+@import "blocks/logo";
+@import "blocks/btn";
+@import "blocks/form";
+@import "blocks/social";
+@import "blocks/menu";
+@import "blocks/play";
+@import "blocks/features";
+@import "blocks/card";
+
+
+
+
+/* Sections */
+@import "sections/intro";
+@import "sections/method";
+@import "sections/advantages";
+@import "sections/services";
+
+
+
+
+/* Pages */
+// @import "pages/about-page";
+
+
+
+
+

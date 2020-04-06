@@ -1,0 +1,26 @@
+.menu {
+}
+
+
+
+.menu__list {
+    display: flex;
+    align-items: center;
+}
+
+.menu__item {
+    margin: 0 1.2rem;
+    padding: 1rem 0;
+}
+
+.menu__link {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff;
+    white-space: nowrap;   
+    transition: all .4s;
+
+    &:hover {
+        color: #ecd9b5;
+    }
+}

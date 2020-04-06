@@ -1,0 +1,22 @@
+.play {
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    background: url('../img/advantages/play.png') no-repeat center;
+    background-size: 100% 100%;
+    cursor: pointer;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;      
+        transform: translate(-50%,-50%);
+        width: 170%;
+        height: 170%;
+        border-radius: 50px;
+        background: url('../img/advantages/play-circle.png') no-repeat center;
+        background-size: 100% 100%;
+        animation: rotateC 5s infinite linear;
+    }
+}
