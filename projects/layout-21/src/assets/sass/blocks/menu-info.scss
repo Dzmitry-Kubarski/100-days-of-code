@@ -1,0 +1,24 @@
+.menu-info {
+    display: flex;
+    align-items: center;
+
+}
+
+.menu-info__item {
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.menu-info__link {
+    font-size: 13px;
+    line-height: 15px;
+    color: $colorWhite;
+    transition: color .2s linear;
+
+    &:hover {
+        color: $colorGreen;
+    }
+}

@@ -1,0 +1,22 @@
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-right: 9px;
+    }
+}
+
+.logo__text {
+    font-family: $font_Roboto;
+    font-size: 18px;
+    font-weight: bold;
+    color: $colorWhite;
+
+    span {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 15px;
+    }
+}

@@ -1,0 +1,190 @@
+.card {
+    width: 24%;
+    text-align: center;
+    position: relative;
+    margin: 0 .5%;
+
+    &--recommendation {
+        &::before {
+            position: absolute;
+            content: "";
+            display: inline-block;
+            width: 8.7rem;
+            height: 12rem;
+            right: 0;
+            top: 0;
+            background: url('../img/services/recomend.png') no-repeat center right;
+            background-size: 100% 100%;           
+            transition: all .3s;
+            z-index: 22;
+        }
+    }
+
+    &--new {
+        &::before {
+            position: absolute;
+            content: "";
+            display: inline-block;
+            width: 8.1rem;
+            height: 11rem;
+            right: 0;
+            top: 0;
+            background: url('../img/services/new.png') no-repeat center right;
+            background-size: 100% 100%;           
+            transition: all .3s;
+            z-index: 33;
+        }
+    }
+   
+}
+
+.card--recommendation {
+}
+
+.card__title {
+    font-size: 2.6rem;
+    background-color: #f5dc8f94;
+    padding: 2rem;
+}
+
+.card__body {
+    padding-bottom: 4rem;
+    transform-style: preserve-3d;   
+    transform-origin: center center;
+    backface-visibility: hidden;   
+    transition: 1s;
+    transform: rotateY(0deg) translateZ(3rem);
+    position: relative;
+    background-color: transparent;
+    padding: 3rem;
+}
+
+.card__content {
+    margin-bottom: 3.4rem;
+
+    span {
+        display: block;
+        font-family: "Tahoma",sans-serif;
+        font-weight: 100;
+        font-size: 1.6rem;
+    }
+}
+
+.card__price {
+    font-family: "Tahoma",sans-serif;
+    font-weight: 100;
+    font-size: 1.6rem;
+    margin-bottom: 3.4rem;
+}
+
+.card__price-new {
+    color: #f44336a1;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.card__price-old {
+    display: block;
+    text-decoration: line-through;
+}
+
+.card__btn {
+    position: relative;
+    color: #ecd9b5;
+    font-family: "Tahoma",sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding-left: 2.5rem;    
+    transition: all .4s;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 1.6rem;
+        height: 1.7rem;
+        left: 0;
+        top: 50%;      
+        transform: translateY(-50%);
+        background: url('../img/services/pen.svg') no-repeat center center;
+        background-size: 100% 100%;       
+        transition: all .3s;
+    }
+
+    &:hover {
+        text-decoration: none;
+
+        &::before {
+            animation: pen 1.3s 1 linear
+        }
+    }
+}
+
+.card__link {
+    display: block;
+    background-color: #ecd9b5;
+    color: #404a4d;
+    font-family: "Tahoma",sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1.5rem;  
+    transition: all .5s;
+
+    &:hover {
+        background-color: #404a4d;
+        color: #fff
+    }
+}
+
+.card--new {
+}
+
+
+
+@keyframes pen {
+    0% {
+        transform: translateY(-50%) translateX(-1rem)
+    }
+
+    20% {
+        transform: translateY(-50%) translateX(-.9rem) rotate(-7deg)
+    }
+
+    30% {
+        transform: translateY(-50%) translateX(-.8rem) rotate(-1deg)
+    }
+
+    40% {
+        transform: translateY(-50%) translateX(-.7rem) rotate(-9deg)
+    }
+
+    50% {
+        transform: translateY(-50%) translateX(-.6rem) rotate(0deg)
+    }
+
+    60% {
+        transform: translateY(-50%) translateX(-.5rem) rotate(-11deg)
+    }
+
+    60% {
+        transform: translateY(-50%) translateX(-.4rem) rotate(-3deg)
+    }
+
+    70% {
+        transform: translateY(-50%) translateX(-.3rem) rotate(-9deg)
+    }
+
+    80% {
+        transform: translateY(-50%) translateX(-.2rem) rotate(-1deg)
+    }
+
+    90% {
+        transform: translateY(-50%) translateX(-.1rem) rotate(-7deg)
+    }
+
+    100% {
+        transform: translateY(-50%) translateX(0rem) rotate(0deg)
+    }
+}

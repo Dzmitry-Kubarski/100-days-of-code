@@ -20,4 +20,16 @@
     &:hover {
         box-shadow: 0 1rem 2rem rgba(148,120,21,.25), inset 0 4px 0 rgba(0,0,0,.1);
     }
+
+    &--icon {       
+        display: flex;       
+        align-items: center;     
+        justify-content: center;
+        max-width: 35rem;
+        margin: 0 auto;
+
+        img {
+            margin-right: 1rem;
+        }
+    }
 }

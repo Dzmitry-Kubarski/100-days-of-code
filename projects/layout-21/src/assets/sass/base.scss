@@ -59,14 +59,15 @@ button {
 }
 
 body {
+    font-family: $font_Roboto;
     font-weight: 400;
-    font-size: 16px;
-    color: #464852;
+    font-size: 12px;
+    color: $colorBlack;
 }
 
 .container {
     width: 100%;
-    max-width: 1340px;
+    max-width: 1230px;
     padding-left: 30px;
     padding-right: 30px;
     margin: 0 auto;

@@ -1,0 +1,114 @@
+.photos {
+    position: relative;
+    text-align: center;   
+    background: #f6f8f9;   
+    background: linear-gradient(to bottom,#f6f8f9 30%,rgba(255,255,255,.7) 70%);
+    padding-top: 9rem;
+    padding-bottom: 14rem;
+}
+
+.photos__title {
+    text-align: center;
+
+    .title__text {
+        display: inline-block;
+        margin-bottom: 7rem;
+    }
+}
+
+
+
+.photos__tabs {   
+    display: flex;   
+    justify-content: center;   
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.photos__tab {
+    display: inline-block;    
+    position: relative;
+    font-family: "Tahoma",sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;   
+    padding: 1rem 0;
+    margin: 0 1.7rem;
+    transition: all .4s;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #404a4d;       
+        transition: all .4s;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 2px;
+        background-color: #404a4d;       
+        transition: all .4s;
+    }
+
+    &:hover {
+        &::before,
+        &::after {
+            width: 30%;
+        }
+    }
+
+    &.active {
+        color: #ecd9b5;
+
+        &::before,
+        &::after {
+            width: 100%;
+            background-color: #ecd9b5;
+        }        
+    }
+}
+
+.photos__content {
+    margin-bottom: 4rem;
+}
+
+.photos__box {   
+    display: flex;
+    transform: rotateX(90deg) rotateY(90deg) scale(0);   
+    transition: all 1.2s;
+
+    &.active {
+        transform: rotateX(0) rotateY(0) scale(1);
+    }
+}
+
+.photos__item {
+    position: relative;
+    overflow: hidden;
+}
+
+.photos__item-big {
+    width: 23%;
+    height: 42rem;
+    margin-right: 2rem;
+}
+
+.photos__item-min {
+    height: 20rem;
+    margin-bottom: 2rem;
+}
+
+.photos__btn-wrap {
+}
+
+
+

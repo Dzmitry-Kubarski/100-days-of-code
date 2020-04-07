@@ -1,0 +1,17 @@
+.features {
+}
+
+.features__items {  
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.features__item {
+    font-family: "Tahoma",sans-serif;
+    font-size: 1.6rem;
+    border-radius: 50px;
+    background-color: rgba(0,0,0,.15);    
+    margin: 0 .5rem;
+    padding: 1rem 2rem;
+}
