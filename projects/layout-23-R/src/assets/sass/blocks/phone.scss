@@ -1,0 +1,36 @@
+.phone {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.phone__text {
+    position: relative;
+    display: inline-block;
+    color: #00af47;
+    letter-spacing: 0.68px;
+    font-weight: 500;
+    padding-left: 10px;
+    margin-bottom: 0.41vw;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 5px;
+        height: 5px;
+        background-color: #00af47;
+        border-radius: 100%;
+        margin-right: 0.4rem;
+    }
+}
+
+.phone__link {
+    font-family: "History Pro 02", sans-serif;
+    color: #fff;   
+    transition: all 0.4s;
+    font-size: 1.5vw;
+}

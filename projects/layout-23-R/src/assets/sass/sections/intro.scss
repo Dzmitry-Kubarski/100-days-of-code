@@ -1,0 +1,233 @@
+.intro {
+    position: relative;
+    z-index: 91;
+    color: #fff;
+}
+
+.intro__inner {     
+    display: flex;   
+    justify-content: space-between;
+    position: relative;    
+    align-items: center;
+    padding: 5vw 0;
+    padding-top: 3vw;  
+}
+
+.intro__content {
+    width: 54%;
+}
+
+.intro__subtitle {
+    margin-bottom: 0.7vw;
+    color: #858aa0;
+}
+
+.intro__title {
+    font-family: "History Pro 02", sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 2.4vw;
+
+    animation-delay: 0ms;
+    animation-duration: 1500ms;
+    animation-fill-mode: both;
+    animation-name: slide-up-in;
+}
+
+@keyframes slide-up-in {
+    0% {
+      transform: translate(0px, 100%) rotate(1deg);
+      opacity: 0;
+      transform-origin: 0 0;
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(0px, 0px) rotate(0deg);
+      transform-origin: 0 0;
+    }
+  }
+  
+
+.intro__text {
+    margin-bottom: 2.4vw;
+    font-weight: 300;
+}
+
+.intro__buttons {
+    width: 100%;   
+    display: flex;  
+    align-items: center;   
+    justify-content: space-between;
+}
+
+.intro__btn {
+    width: 21vw;
+}
+
+.intro__btn-text {
+    font-weight: 600;
+}
+
+.intro__messengers {
+    display: flex;
+}
+
+.intro__messengers-title {
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-right: 0.6vw;
+    }
+}
+
+.intro__select {
+    position: relative;
+    cursor: pointer;
+    padding-right: 1.3vw;
+    margin-left: 0.6vw;
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;      
+        transform: translateY(-50%);     
+        transition: all 0.4s;
+        width: 0.8vw;
+        height: 0.55vw;
+        background: url('../img/intro/arb.png') no-repeat center;
+        background-size: 100% 100%;
+    }
+
+    &:hover {
+        &::after {
+            transform: translateY(-50%) rotate(180deg);
+        }
+
+        .intro__select-list {
+            display: block;
+        }
+    }
+}
+
+.intro__select-item {
+    display: none;   
+    color: #55ccf2;
+    transition: all 0.4s;    
+
+    &.active {
+        display: block;
+        color: #958aca;
+        text-decoration: underline;       
+    }
+
+    &:hover {
+        opacity: 0.8;        
+    }
+}
+
+.intro__select-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 3;
+    display: none;
+
+    .intro__select-item {
+        padding: 0.33vw 0;
+        display: block;
+        white-space: nowrap;
+
+        &.noActive {
+            display: none;
+        }
+    }   
+}
+
+.intro__slider {
+    position: absolute;
+    right: -18vw;
+    top: 43%;
+    width: 46vw;
+
+    .slick-current.slick-active {
+        .intro__slider-item {
+            opacity: 1;
+        }
+    }
+}
+
+.intro__slider-items {
+    width: 100%;
+    margin-bottom: 1.5vw;
+}
+
+.intro__slider-item {
+    position: relative;
+    padding: 1vw 2.5vw;
+    opacity: 0.33;   
+    transition: all 0.4s;   
+
+    &::before {
+        content: '';
+        position: absolute;
+        right: 2px;
+        top: 50%;      
+        transform: translateY(-50%);
+        height: 80%;
+        width: 1px;
+        background-color: #858aa0;
+    }
+}
+
+
+.intro__slider-num { 
+    background-image: linear-gradient(to top, #dcbf8b 0%, #f8e4b8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro__slider-title {
+    margin-bottom: 0.7vw;
+    font-weight: 600;
+}
+
+.intro__slider-text {
+}
+
+.intro__slider-arrows {  
+    display: flex;   
+    align-items: center;
+}
+
+.intro__slider-arrow {
+    width: 1.2vw;   
+    cursor: pointer; 
+    display: flex;   
+    justify-content: center;  
+    align-items: center;  
+    transition: all 0.4s;
+    opacity: 0.6;
+    outline: 0;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    margin: 0 2.5vw;
+    margin-right: 1.7vw;
+
+    &:hover {
+        opacity: 1;
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+    }
+}
+
+
+.intro__advantages {
+}
+
+
+
+
+

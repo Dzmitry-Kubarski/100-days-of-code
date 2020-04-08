@@ -1,0 +1,53 @@
+/* Fonts */
+@import "fonts";
+
+/* Variables */
+@import "vars";
+
+
+/* Grid smart-grid */
+// @import "smart-grid";
+
+
+/* Normalize */
+@import "../../../../../node_modules/normalize.css/normalize";
+
+/* Animate.css */
+@import "../../../../../node_modules/animate.css/animate";
+
+
+/* Default styles */
+@import "base";
+
+
+/* Vendor libs */
+@import "vendor/slick";
+
+
+/* Blocks */
+@import "blocks/text";
+@import "blocks/btn";
+@import "blocks/title";
+@import "blocks/phone";
+@import "blocks/header";
+@import "blocks/social";
+@import "blocks/logo";
+@import "blocks/advantages";
+@import "blocks/quiz";
+@import "blocks/range";
+@import "blocks/range-slider";
+@import "blocks/loading";
+@import "blocks/tooltip";
+@import "blocks/form";
+@import "blocks/politics";
+@import "blocks/online";
+
+
+/* Sections */
+@import "sections/intro";
+@import "sections/test";
+
+
+
+/* Pages */
+// @import "pages/about-page";

@@ -1,0 +1,72 @@
+.header {
+    padding: 1vw 0;
+    padding-bottom: 0;
+    position: relative;
+    z-index: 4;
+}
+
+.header__container {   
+    display: flex;  
+    justify-content: space-between;   
+    align-items: center;
+}
+
+
+.header__item {  
+    width: 25%;  
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__burger-wrap {
+    display: flex;  
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;
+    flex-wrap: wrap;   
+    flex-direction: column;
+    font-family: "History Pro 02", sans-serif;
+    color: #f4f3ef;  
+    text-transform: uppercase;
+}
+
+.header__burger {
+    position: relative; 
+    width: 3.7rem;
+    height: 4rem;
+    display: flex;   
+    align-items: center;   
+    justify-content: flex-end;
+    cursor: pointer;
+
+    span {
+        display: block;
+        width: 60%;
+        height: 1px;
+        border-radius: 4px;
+        position: relative;
+        background-color: #f8e4b8;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 140%;
+            height: 1px;
+            right: 0;
+            background-color: #f8e4b8;
+            border-radius: 4px;
+        }
+
+        &::before {
+            top: -1rem;
+        }
+
+        &::after {
+            bottom: -1rem;
+        }
+         
+    }
+}
