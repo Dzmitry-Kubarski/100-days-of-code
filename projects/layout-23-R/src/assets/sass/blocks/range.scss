@@ -1,0 +1,31 @@
+.range {   
+    display: flex;   
+    align-items: center;
+}
+
+.range__title {
+    font-weight: 300;
+    margin-right: 0.5vw;
+}
+
+.range__input-wrap {  
+    display: flex;  
+    align-items: center;
+}
+
+.range__input {
+    position: relative;
+    font-size: 1.07vw;
+    font-weight: 400;
+    width: 5vw;
+    height: 2.7vw;   
+    border-radius: 5px;
+    box-shadow: inset 0 0 7px rgba(212, 209, 199, 0.2);
+    border: 1px solid #dbdad8;
+    background-color: #f4f3ef;    
+    align-self: center;   
+    margin: 0 0.6vw;
+    padding: 0.7vw;
+    padding-left: 1vw;
+}
+

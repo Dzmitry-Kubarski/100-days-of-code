@@ -1,0 +1,129 @@
+.test {
+    position: relative;
+    padding: 6vw 0;
+}
+
+.test__bg-absolute {
+    position: absolute;
+    left: 3vw;
+    top: 5vw;
+    width: 15vw;
+    z-index: 7;
+    animation: transform-shiver 4000ms linear 0ms infinite normal both;
+}
+
+@keyframes transform-shiver {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    25% {
+      transform: translate(-5px, 0px) rotate(0deg);
+    }
+  
+    75% {
+      transform: translate(5px, 0px) rotate(0deg);
+    }
+  
+    100% {
+      transform: translate(0px, 0px) rotate(0deg);
+    }
+  }
+
+.test__slogan {
+    text-align: center;
+    margin-bottom: 0.7vw;
+    font-weight: 300;
+}
+
+.test__title {
+    font-family: "History Pro 02", sans-serif;
+    font-size: 2.6vw;
+    font-weight: 300;
+    line-height: 1.1;
+    text-align: center;
+    margin-bottom: 1.5vw;
+    text-transform: uppercase;
+
+    opacity: 1;
+    animation-delay: 0ms;
+    animation-duration: 1500ms;
+    animation-fill-mode: both;
+    animation-name: slide-up-in;
+}
+
+.test__subtitle {
+    text-align: center;
+    margin-bottom: 1.5vw;
+}
+
+.test__note {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.4vw;
+
+    span {
+        position: relative;
+        text-align: center;
+        display: inline-block;
+        color: #747474;
+        letter-spacing: 0.6px;
+        padding-left: 40px;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background-image: url('../img/test/kl.png');
+            background-repeat: no-repeat;
+            width: 1.1vw;
+            height: 1.1vw;
+        }
+    }   
+}
+
+.test-scroll-js {
+}
+
+.test__inner {
+    position: relative;
+    z-index: 4;
+    background-color: #fff;
+    box-shadow: 0 0 40px rgba(133, 138, 160, 0.1);   
+    transform: skewY(-2deg);
+    padding: 3vw;
+
+    &::before {
+        position: absolute;
+        content: '';
+        left: 50%;
+        top: 50%;       
+        transform: translate(-50%, -50%);
+        border: 1px solid #d1d5e4;
+        width: calc(100% - 14px);
+        height: calc(100% - 14px);
+        z-index: 1;
+    }
+}
+
+.test__content {   
+    display: flex;  
+    justify-content: space-between;  
+    transform: skewY(2deg);
+    position: relative;
+    z-index: 5;
+}
+
+
+
+.input-hidden {
+    display: none;
+}
+
+
+

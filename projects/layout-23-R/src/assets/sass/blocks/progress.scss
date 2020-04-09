@@ -1,0 +1,72 @@
+.progress {    
+    display: flex;  
+    justify-content: space-between;
+    width: 100%;   
+    align-items: center;
+    
+}
+
+.progress__item {
+    position: relative;
+    border-radius: 8px;
+    background-color: #e8e8e8;
+    height: 0.7vw;
+    width: 13%;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 100%;
+        border-radius: 8px;
+        background-color: #dfc596;            
+        transition: all 0.4s;
+    }
+
+    &.active {
+        &::before {
+            width: 100%;
+        }
+
+        .noTrespassingAnimationG {
+            width: 120%;;
+        }
+    }
+}
+
+.noTrespassingAnimationG {
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    left: -10%;
+    top: 0;
+    animation-name: noTrespassingAnimationG;
+    animation-duration: 0.975s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;  
+    display: flex;    
+    justify-content: space-between;
+    width: 0;    
+    transition: all 0.4s;
+}
+
+.noTrespassingBarLineG {   
+    width: 6%;
+    height: 81px;
+    margin-top: -19px;   
+    background-image: linear-gradient(to top, #dcbf8b 0%, #f8e4b8 100%);
+    transform: rotate(45deg);
+}
+
+@keyframes noTrespassingAnimationG {
+    0% {
+      margin-left: 0px;
+    }
+  
+    100% {
+      margin-left: -39%;
+    }
+  }

@@ -5,7 +5,6 @@
 
     <meta charset="UTF-8">
     
-    
     <link rel="stylesheet" href="assets/css/style.min.css">
     
     <!-- Useful meta tags -->
@@ -256,8 +255,9 @@
             </div> <!-- /container -->
         </div> <!-- /advantages -->
     </section> <!-- /intro -->
-    <section class="test" id="test" style="background: url(img/test/bg.jpg) no-repeat center; background-size: cover;">
-        <img class="test-px" src="assets/img/test/px.png" alt="">
+    <section class="test" id="test"
+        style="background: url('assets/img/test/bg.jpg') no-repeat center; background-size: cover;">
+        <img class="test__bg-absolute" src="assets/img/test/px.png" alt="">
     
         <div class="container">
             <div class="test__slogan  text24"> Сэкономьте свое время </div>
@@ -267,7 +267,11 @@
                 <span class="tg">через 1 минуту</span>
             </div>
     
-            <div class="test__note  text"> Согласно вашей планировки "под ключ" с ремонтом </div>
+            <div class="test__note  text">
+                <span>
+                    Согласно вашей планировки "под ключ" с ремонтом
+                </span>
+            </div>
     
     
             <div class="test-scroll-js"></div>
@@ -417,7 +421,7 @@
                                         <span class="quiz__answer-before"></span>
                                     </span>
     
-                                    <span class="quiz__checkbox">
+                                    <div class="quiz__checkbox">
                                         <span class="quiz__checkbox-circle">
                                             <span class="quiz__checkbox-active">
                                                 <img src="assets/img/test/qqq.png" alt="">
@@ -427,7 +431,7 @@
                                         <span class="quiz__answer-title  small-text">
                                             Офис
                                         </span>
-                                    </span>
+                                    </div>
                                 </label> <!-- /quiz__answer -->
     
     
@@ -438,7 +442,7 @@
                                         <span class="quiz__answer-before"></span>
                                     </span>
     
-                                    <span class="quiz__checkbox">
+                                    <div class="quiz__checkbox">
                                         <span class="quiz__checkbox-circle">
                                             <span class="quiz__checkbox-active">
                                                 <img src="assets/img/test/qqq.png" alt="">
@@ -448,7 +452,7 @@
                                         <span class="quiz__answer-title  small-text">
                                             Магазин
                                         </span>
-                                    </span>
+                                    </div>
                                 </label> <!-- /quiz__answer -->
     
     
@@ -460,7 +464,7 @@
                                         <span class="quiz__answer-before"></span>
                                     </span>
     
-                                    <span class="quiz__checkbox">
+                                    <div class="quiz__checkbox">
                                         <span class="quiz__checkbox-circle">
                                             <span class="quiz__checkbox-active">
                                                 <img src="assets/img/test/qqq.png" alt="">
@@ -470,7 +474,7 @@
                                         <span class="quiz__answer-title  small-text ">
                                             Ресторан, бар, кафе
                                         </span>
-                                    </span>
+                                    </div>
                                 </label> <!-- /quiz__answer -->
     
     
@@ -481,7 +485,7 @@
                                         <span class="quiz__answer-before"></span>
                                     </span>
     
-                                    <span class="quiz__checkbox">
+                                    <div class="quiz__checkbox">
                                         <span class="quiz__checkbox-circle">
                                             <span class="quiz__checkbox-active">
                                                 <img src="assets/img/test/qqq.png" alt="">
@@ -491,34 +495,34 @@
                                         <span class="quiz__answer-title  small-text ">
                                             Другое
                                         </span>
-                                    </span>
+                                    </div>
                                 </label> <!-- /quiz__answer -->
                             </div> <!-- /quiz__question 1 -->
     
     
-                            <div class="quiz__question">
+                            <div class="quiz__question  quiz__question--q2">
                                 <h5 class="quiz__question-title  text24">
                                     2. Укажите общую площадь
                                 </h5>
     
-                                <div class="quiz__question-inner qw2w">
+                                <div class="quiz__question-inner  quiz__question-inner--2">
                                     <div class="quiz__question-info">
     
-                                        <div class="range">
+                                        <div class="range  quiz__question-range">
                                             <div class="range__title  text">
                                                 Площадь вашего помещения:
                                             </div>
     
                                             <div class="range__input-wrap">
-                                                <input class="range__input text-md t2" id="range__input" name="qw3"
-                                                    type="nuer" value="12" min="0">
+                                                <input class="range__input text-md t2" id="qw3inp" name="qw3" type="nuer"
+                                                    value="12" min="0">
     
                                                 <div class="text"> м<sup>2</sup> </div>
                                             </div>
                                         </div> <!-- /range -->
     
     
-                                        <div class="range-slider">
+                                        <div class="range-slider  quiz__question-range-slider">
                                             <div class="range-slider__header text12">
                                                 <b class="range-slider__start  text">1 м<sup>2</sup></b>
                                                 <b class="range-slider__finish  text"> 100 м<sup>2</sup></b>
@@ -536,19 +540,19 @@
                                             <div class="loading__inner  small-text">
                                                 <input class="loading__input input-hidden" type="file" id="loading-file"
                                                     name="userfile[]" accept="image/*">
-                                                <div class="loading__text "> Название файла.png </div>
+                                                <div class="loading__text"> Название файла.png </div>
                                                 <label class="loading__btn" for="loading-file">Выбрать...</label>
                                             </div>
                                         </div> <!-- /loading -->
     
     
-                                        <img src="assets/img/test/it-2.png" alt="" class="gw2-img">
+                                        <img class="quiz__question-bg" src="assets/img/test/it-2.png" alt="">
                                     </div> <!-- /quiz__question-info -->
                                 </div> <!-- /quiz__question-inner -->
                             </div> <!-- /quiz__question 2 -->
     
     
-                            <div class="quiz__question">
+                            <div class="quiz__question  quiz__question--q3">
                                 <h5 class="quiz__question-title">
                                     Выберите какие стили Вас интересуют
                                 </h5>
@@ -596,9 +600,10 @@
                                     </span>
     
                                     <div class="tooltip">
-                                        <img src="assets/img/spector/i.png" alt="">
+                                        <img class="tooltip__icon" src="assets/img/spector/i.png" alt="">
                                         <div class="tooltip__hover">
-                                            <div class="tsm13 "> Изящная мебель, лепнина на потолке, шикарные люстры и
+                                            <div class="tooltip__text  tsm13"> Изящная мебель, лепнина на потолке, шикарные
+                                                люстры и
                                                 подсвечники. И главное здесь - композиция вокруг центра.
                                             </div>
                                         </div>
@@ -626,9 +631,10 @@
                                     </span>
     
                                     <div class="tooltip">
-                                        <img src="assets/img/spector/i.png" alt="">
+                                        <img class="tooltip__icon" src="assets/img/spector/i.png" alt="">
                                         <div class="tooltip__hover">
-                                            <div class="tsm13 "> Много пространства, отсутствие перегородок, металлические
+                                            <div class="tooltip__text  tsm13"> Много пространства, отсутствие перегородок,
+                                                металлические
                                                 трубы, минимум мебели и оригинальные детали.
                                             </div>
                                         </div>
@@ -656,10 +662,10 @@
                                         <span class="quiz__answer-before"></span>
                                     </span>
     
-                                    <div class="tooltip ">
-                                        <img src="assets/img/spector/i.png" alt="">
+                                    <div class="tooltip">
+                                        <img class="tooltip__icon" src="assets/img/spector/i.png" alt="">
                                         <div class="tooltip__hover">
-                                            <div class="tsm13 ">
+                                            <div class="tooltip__text  tsm13">
                                                 Недорогие и практичные материалы,
                                                 четкие линии, нейтральная гамма цветов.
                                                 Этот стиль по душе перфекционистам.
@@ -690,9 +696,9 @@
                                     </span>
     
                                     <div class="tooltip">
-                                        <img src="assets/img/spector/i.png" alt="">
+                                        <img class="tooltip__icon" src="assets/img/spector/i.png" alt="">
                                         <div class="tooltip__hover">
-                                            <div class="tsm13">
+                                            <div class="tooltip__text  tsm13">
                                                 Ясность, простые геометрические формы, минимум деталей,
                                                 нейтральная гамма цветов.
                                             </div>
@@ -722,9 +728,9 @@
                                     </span>
     
                                     <div class="tooltip">
-                                        <img src="assets/img/spector/i.png" alt="">
+                                        <img class="tooltip__icon" src="assets/img/spector/i.png" alt="">
                                         <div class="tooltip__hover">
-                                            <div class="tsm13 ">
+                                            <div class="tooltip__text  tsm13">
                                                 Необычный дизайн, роскошь,
                                                 изобилие деталей и цветов.
                                                 Для тех, кто устал от
@@ -755,9 +761,9 @@
                                     </span>
     
                                     <div class="tooltip">
-                                        <img src="assets/img/spector/i.png" alt="">
+                                        <img class="tooltip__icon" src="assets/img/spector/i.png" alt="">
                                         <div class="tooltip__hover">
-                                            <div class="tsm13">
+                                            <div class="tooltip__text  tsm13">
                                                 Нежный и уютный стиль. Пастельные оттенки, натуральный камень и винтажная
                                                 мебель. Хотите Ваш личный уголок Франции?
                                             </div>
@@ -787,9 +793,9 @@
                                         <span class="quiz__answer-before"></span>
                                     </span>
                                     <div class="tooltip">
-                                        <img src="assets/img/spector/i.png" alt="">
+                                        <img class="tooltip__icon" src="assets/img/spector/i.png" alt="">
                                         <div class="tooltip__hover">
-                                            <div class="tsm13 ">
+                                            <div class="tooltip__text  tsm13">
                                                 Можете указать все ваши предпочтения и наш дизайнер подберет Вам стиль
                                                 индивидуально!
                                             </div>
@@ -811,7 +817,7 @@
                             </div> <!-- /quiz__question 3 -->
     
     
-                            <div class="quiz__question">
+                            <div class="quiz__question  quiz__question--q4">
                                 <h5 class="   quiz__question-title">
                                     4. Какие декоративные элементы в интерьере вам бы хотелось видеть?
                                 </h5>
@@ -993,7 +999,7 @@
                             </div> <!-- /quiz__question 4 -->
     
     
-                            <div class="quiz__question">
+                            <div class="quiz__question  quiz__question--q5">
                                 <h5 class="quiz__question-title">
                                     5. По мебели: диван за 20 000 рублей это дорого?
                                 </h5>
@@ -1098,7 +1104,7 @@
                             </div> <!-- /quiz__question 5-->
     
     
-                            <div class="quiz__question">
+                            <div class="quiz__question  quiz__question--q6">
                                 <h5 class="quiz__question-title">
                                     6. Необходим ли ремонт и расчет стоимости работ
                                 </h5>
@@ -1184,7 +1190,7 @@
                                         <input type="radio" class="quiz__answer-input" name='qw6' id='qw6-4'
                                             value="Ещё не определился">
     
-                                        <span class="quiz__answer-before-mod"></span>
+                                        <span class="quiz__answer-before"></span>
     
                                         <div class="quiz__checkbox t3">
                                             <span class="quiz__checkbox-circle">
@@ -1206,7 +1212,7 @@
                             <div class="quiz__question"></div>
     
     
-                            <div class="quiz__question  end">
+                            <div class="quiz__question  end  active">
                                 <div class="quiz__question-inner">
                                     <h5 class="quiz__question-title  text24 ">
                                         Куда вам удобнее получить результат и бонусы?
@@ -1220,7 +1226,7 @@
                                     <div class="quiz__question-list">
     
                                         <label for="qw8-1" class="quiz__answer t9">
-                                            <input type="radio" class="quiz__answer-input vit" name='qw8' id='qw8-1'
+                                            <input type="radio" class="quiz__answer-input" name='qw8' id='qw8-1'
                                                 value="Viber" checked>
     
                                             <span class="quiz__answer-before"></span>
@@ -1242,7 +1248,7 @@
     
     
                                         <label for="qw8-2" class="quiz__answer t9">
-                                            <input type="radio" class="quiz__answer-input teg" name='qw8' id='qw8-2'
+                                            <input type="radio" class="quiz__answer-input" name='qw8' id='qw8-2'
                                                 value="Telegram">
     
                                             <span class="quiz__answer-before-mod"></span>
@@ -1264,7 +1270,7 @@
     
     
                                         <label for="qw8-3" class="quiz__answer t9">
-                                            <input type="radio" class="quiz__answer-input wat" name='qw8' id='qw8-3'
+                                            <input type="radio" class="quiz__answer-input" name='qw8' id='qw8-3'
                                                 value="Whatsapp">
     
                                             <span class="quiz__answer-before"></span>
@@ -1309,7 +1315,7 @@
     
     
                                     <div class="form  quiz__form">
-                                        <form action="#">
+                                        <div class="form__wrap">
                                             <input class="form__input small-text t2" type="email" name="email"
                                                 placeholder="Ваша почта" style="display: none;">
     
@@ -1322,13 +1328,12 @@
                                                     <span>Получить результат</span>
                                                 </span>
                                             </button>
-                                        </form>
-    
+                                        </div>
     
                                         <div class="politics">
-                                            <label for="politics" class="check-box">
-                                                <input class="rhide" type="checkbox" name="" id="politics" required=""
-                                                    checked="">
+                                            <label for="politics" class="politics__check-box">
+                                                <input class="politics__input" type="checkbox" name="" id="politics"
+                                                    required="" checked="">
     
                                                 <div class="politics__row">
                                                     <div class="politics__check">
@@ -1352,15 +1357,14 @@
                             </div> <!-- /quiz__question -->
                         </div> <!-- /quiz__questions -->
     
-                        <!-- <div class="test__btns">
-                            <div class="quiz__next-wrap">
-                                <div class="btn-lbs"></div>
-                                <button class="btn quiz__next quiz__btn" disabled>
-                                    <span class="btn-blick"></span>
-                                    <span class="text  fw6">Далее</span>
-                                </button>
-                            </div>
-                        </div> -->
+                        <div class="quiz__btn-wrap  end">
+                            <div class="quiz__btn-error"></div>
+                            <button class="btn">
+                                <span class="btn-blick"></span>
+                                <span class="quiz__btn-text  text">Далее</span>
+                            </button>
+                        </div>
+    
                     </div> <!-- /quiz -->
     
     
@@ -1380,11 +1384,11 @@
                                     </p>
                                 </div>
     
-                                <div class="quiz__banner-img">
+                                <div class="quiz__banner-author">
                                     <img src="assets/img/test/mg.png" alt="">
                                 </div>
     
-                                <div class="online">
+                                <div class="online  quiz__banner-online">
                                     <span class="online__text">online</span>
                                 </div>
                             </div>
@@ -1397,36 +1401,36 @@
     
                                 <div class="quiz__banner-items">
                                     <div class="quiz__banner-item">
-                                        <div class="one__ads-img">
+                                        <div class="quiz__bannerItem-img">
                                             <img src="assets/img/test/rr1.png" alt="">
                                         </div>
     
-                                        <div class="small-text">
+                                        <div class="quiz__bannerItem-text small-text">
                                             Предложение по стоимости вашего проекта
                                         </div>
                                     </div>
     
                                     <div class="quiz__banner-item">
-                                        <div class="tsm12 s"> PDF-презентацию </div>
-                                        <div class="small-text">
+                                        <div class="quiz__banner-subtitle  tsm12"> PDF-презентацию </div>
+                                        <div class="quiz__bannerItem-text  small-text">
                                             Примеры дизайна интерьеров для домов и квартир под Минские планировки
                                             (для вдохновления)
-                                        </div>
     
-                                        <a href="#" class="tsm13">Получить сейчас </a>
+                                            <a href="#" class="quiz__banner-link  tsm13">Получить сейчас </a>
+                                        </div>
                                     </div>
     
                                     <div class="quiz__banner-item">
-                                        <div class="one__ads-img">
+                                        <div class="quiz__bannerItem-img">
                                             <img src="assets/img/test/rr2.png" alt="">
                                         </div>
-                                        <div class="small-text">
+                                        <div class="quiz__bannerItem-text  small-text">
                                             Сертификат на ужин <br>
                                             в ресторане на 110 руб.
                                         </div>
                                     </div>
     
-                                    <img src="assets/img/test/r11.png" alt="" class="one-img">
+                                    <img class="quiz__banner-bg" src="assets/img/test/r11.png" alt="">
                                 </div> <!-- /quiz__banner-items -->
                             </div> <!-- /quiz__banner-body -->
                         </div> <!-- /quiz__banner-inner -->
@@ -1439,7 +1443,7 @@
                             <div class="quiz__banner-items">
     
                                 <div class="quiz__banner-item">
-                                    <div class="one__ads-img">
+                                    <div class="">
                                         <img src="assets/img/test/r1.png" alt="">
                                     </div>
                                     <div class="small-text"> Предложение по стоимости вашего проекта </div>
@@ -1456,7 +1460,7 @@
                                 </div>
     
                                 <div class="quiz__banner-item">
-                                    <div class="one__ads-img">
+                                    <div class="">
                                         <img src="assets/img/test/r2.png" alt="">
                                     </div>
                                     <div class="small-text">
@@ -1470,17 +1474,18 @@
     
                         </div> <!-- /quiz__banner-inner  end -->
                     </div> <!-- /quiz__banner -->
-                </form>
+                </form> <!-- /test__content -->
     
-                <img src="assets/img/test/phend.png" alt="">
+                <img class="question__img-end" src="assets/img/test/phend.png" alt="">
             </div> <!-- /test__inner -->
     
     
-            <div class="test-load">
-                <div class="line-load ">
-                    <div class="line-load-it"></div>
+            <div class="data-loading">
+                <div class="data-loading__line">
+                    <div class="data-loading__bg"></div>
                 </div>
-                <div class="text24">
+    
+                <div class="data-loading__text  text24">
                     Получение данных
                 </div>
             </div>
