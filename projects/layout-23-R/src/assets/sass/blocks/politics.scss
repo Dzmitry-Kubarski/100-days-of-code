@@ -1,24 +1,50 @@
 .politics {
+    white-space: nowrap;
 }
 
 .politics__check-box {
+    cursor: pointer;
+    display: block;
 }
 
 .politics__input {
-    
+    display: none;
+
+    &:checked ~ div .politics__check-active {
+        transform: scale(1);
+    }
 }
 
-.politics__row {
+.politics__row {    
+    display: flex;  
+    align-items: center;
 }
 
 .politics__check {
+    position: relative;
+    width: 1.1vw;
+    height: 1.1vw;   
+    display: flex;   
+    align-items: center;   
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background-color: #f4f3ef;
+    padding: 0.2vw;
+    margin-right: .5vw;
 }
 
 .politics__check-active {
+    transition: all 0.4s;
+    transform: scale(0);
 }
 
 .politics__text {
+    color: #747474;
+    letter-spacing: 0.6px;
 }
 
 .politics__link {
+    color: #dcbf8b;
+    text-decoration: underline;
 }

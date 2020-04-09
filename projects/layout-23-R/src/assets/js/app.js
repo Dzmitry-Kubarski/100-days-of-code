@@ -5,6 +5,9 @@
 
 //= libs/rangeSlider/ion.rangeSlider.min.js
 
+//= components/quiz.js
+
+
 
 $(function () {
 

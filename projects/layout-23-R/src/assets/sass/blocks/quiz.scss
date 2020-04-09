@@ -10,6 +10,17 @@
     margin-bottom: 2.4vw;
 }
 
+.question__img-end {
+    position: absolute;
+    left: 0;
+    bottom: -0.5vw;
+    width: 25vw;
+    max-width: none;
+    max-height: none;
+
+    display: none;
+}
+
 .quiz__num-current {
 }
 
@@ -67,7 +78,8 @@
     }
 
     &--q5,
-    &--q6 {
+    &--q6,
+    &.end  {        
         .quiz__question-img {
             position: absolute;
             left: -3vw;
@@ -126,8 +138,35 @@
         .quiz__question-inner {
             width: 70%;
             margin-left: 30%;
-            display: block;
+            flex-direction: column;
         }
+
+        .quiz__question-title {
+            text-align: left;
+        }
+
+        .quiz__question-text {
+            margin-bottom: 2.4vw;
+        }
+
+        .quiz__question-list {
+            width: 61%;            
+            display: flex;           
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2.4vw;
+        }
+
+        .quiz__answer {
+            width: auto;
+            padding: 1vw;
+            padding-left: 0;
+            background-color: #fff;
+        }
+
+             
        
     }
 }
@@ -279,7 +318,6 @@
     z-index: 15;
     cursor: pointer;
 
-
     &::before {
         content: "Выберие вариант ответа";
         position: absolute;
@@ -291,6 +329,12 @@
         white-space: nowrap;       
         transition: all 0.4s;
         opacity: 0;
+    }
+
+    &.active {
+        &::before {
+            opacity: 1;
+        }
     }
 }
 
@@ -341,9 +385,17 @@
 }
 
 .quiz__answer-messenger {
+    width: 1vw;
+    height: 1vw;
+    margin-left: 0.4vw;       
+    display: flex;        
+    align-items: center;      
+    justify-content: center;
+    flex-shrink: 0;    
 }
 
 .quiz__form {
+    margin-left: 20%;
 }
 
 .quiz__banner {
@@ -477,6 +529,11 @@
     margin-top: 0.41vw;
 }
 
-.question__img-end {
-    display: none;
+
+
+.quiz__question-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
 }
