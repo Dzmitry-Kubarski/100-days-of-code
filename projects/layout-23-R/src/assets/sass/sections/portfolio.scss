@@ -1,0 +1,334 @@
+.portfolio {
+    position: relative;
+    padding: 4vw 0;
+}
+
+.portfolio__bg {
+    position: absolute;
+    right: -13vw;
+    width: 70vw;
+    top: -13vw;
+    max-width: none;
+    max-height: none;
+}
+
+.container {
+}
+
+.portfolio__slogan {
+    font-weight: 300;
+    margin-bottom: 0.7vw;
+}
+
+.portfolio__title {
+    font-family: "History Pro 02", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 0.7vw;
+
+    opacity: 1;
+    animation-delay: 0ms;
+    animation-duration: 1500ms;
+    animation-fill-mode: both;
+    animation-name: slide-up-in;
+}
+
+.portfolio__subtitle {
+    font-weight: 300;
+    margin-bottom: 2.4vw;
+}
+
+.portfolio__items {   
+    display: flex;   
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portfolio__item-block {
+    width: 49%;   
+    display: flex;   
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &--min {
+        width: 25%;
+        align-self: flex-start;
+
+        .portfolio__item {
+            width: 100%;
+        }
+    }
+}
+
+.portfolio__item {
+    position: relative; 
+    width: 49%;
+    display: flex;   
+    align-items: flex-end;
+    height: 17vw;
+    box-shadow: 0 10px 40px rgba(43, 43, 51, 0.2);
+    overflow: hidden;
+    margin-bottom: 0.7vw;
+    padding: 1vw;
+
+    &::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.8);      
+        transition: all 0.24s;
+        opacity: 0;      
+        transform: translate(70%, -70%);
+    }
+
+    &--big {
+        height: 35vw;
+    }
+
+    &.noHover {
+        flex-wrap: wrap;       
+        align-items: flex-start;
+        overflow: unset;
+
+        .portfolio__item-title {
+            font-family: 'Gilroy', sans-serif;
+            color: #f4f3ef;
+            text-transform: none;
+            margin-bottom: 0.41vw;
+        } 
+        
+        &::before {
+          display: none;
+        }
+    }
+
+    .intro__messengers-title {
+        font-size: 0.85vw;
+    }
+
+    .intro__select {
+        font-size: 0.75vw;
+    }
+
+    &:hover {
+        .portfolio__hover {
+            opacity: 1;           
+            transform: translateY(0);
+        }
+
+        &::before {
+            opacity: 1;           
+            transform: translate(0, 0);
+        }
+
+        .portfolio__item-content {
+            opacity: 0;           
+            transform: translateY(40%);
+        }
+    }
+}
+
+.portfolio__item-content {
+}
+
+.portfolio__item-title {
+    font-family: "History Pro 02", sans-serif;
+    text-transform: uppercase;  
+    margin-bottom: 0.41vw;
+}
+
+.portfolio__item-subtitle {
+    position: relative;
+    display: block;
+    font-size: 0.92vw;
+    padding-left: 20px;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 11px;
+            height: 11px;
+            transform: translateY(-50%);
+            background-image: url('../img/portfolio/cub.png');
+            background-repeat: no-repeat;
+        }
+}
+
+.portfolio__hover {
+    position: absolute;
+    z-index: 24;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;  
+    flex-wrap: wrap;   
+    flex-direction: column;  
+    align-items: center;   
+    justify-content: center;
+    text-align: center;
+    transition: all 0.4s;
+    opacity: 0; 
+    transform: translateY(10%);      
+    padding: 2vw;   
+
+    // display: none;
+}
+
+.portfolio__hover-slogan {
+    font-family: "History Pro 02", sans-serif;
+    color: #858aa0;
+    margin-bottom: 1.5vw;
+}
+
+.portfolio__hover-title {
+    margin-bottom: 1.5vw;
+}
+
+.portfolio__hover-btn {
+    width: 14vw;
+    margin-bottom: 1.5vw;
+    text-transform: uppercase;
+
+    b {
+        font-weight: 600;
+    }
+}
+
+.portfolio__hover-subtitle {
+    color: #858aa0;
+}
+
+.noHover {
+}
+
+.portfolio__list {
+    color: #858aa0;
+    display: block;
+}
+
+.portfolio__list-item {
+    position: relative;
+    margin-bottom: 0.41vw;
+    padding-left: 10px;   
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 4px;
+        height: 4px;
+        background-color: #e9b351;
+        border-radius: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.portfolio__item-text {
+    font-weight: 600;
+    color: #f4f3ef;
+    margin-bottom: 0.41vw;
+
+    span {
+        color: #dcbf8b;
+    }
+}
+
+
+.portfolio__item-min {
+}
+
+.portfolio__item--big {
+}
+
+.portfolio__item-block--min {
+}
+
+.portfolio__end {
+    width: 74%;
+    padding: 2.5vw;
+}
+
+
+.portfolio__end-slogan {
+    font-weight: 300;
+    margin-bottom: 0.7vw;
+}
+
+.portfolio__end-title {
+    font-family: "History Pro 02", sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 0.7vw;
+
+    opacity: 1;
+    animation-delay: 0ms;
+    animation-duration: 1500ms;
+    animation-fill-mode: both;
+    animation-name: slide-up-in;
+}
+
+.portfolio__end-subtitle {
+    font-weight: 300;
+    margin-bottom: 1.5vw;
+}
+
+.portfolio__form-box {
+    position: relative;
+}
+
+.portfolio__end-bg {
+    position: absolute;
+    width: 65vw;
+    right: -23vw;
+    bottom: -14vw;
+    max-width: none;
+    max-height: none;
+    animation: transform-shiver 4000ms linear 0ms infinite normal both;
+}
+
+.portfolio__form {
+    position: relative;
+    z-index: 4;
+    width: 33vw;
+    background-color: #fff;
+    box-shadow: 0 0 40px rgba(133, 138, 160, 0.1);
+    transform: skewY(-2deg);
+    padding: 2.6vw 2vw;
+
+    &::before {
+        position: absolute;
+        content: '';
+        left: 50%;
+        top: 50%;      
+        transform: translate(-50%, -50%);
+        border: 1px solid #d1d5e4;
+        width: calc(100% - 14px);
+        height: calc(100% - 14px);
+        z-index: 1;
+    }
+
+    .form__input {
+        margin-bottom: 0;
+        width: 48%;
+    }    
+}
+
+.portfolio__form-btn {
+    width: 48%;
+}
+
+.portfolio__form-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5vw;
+}

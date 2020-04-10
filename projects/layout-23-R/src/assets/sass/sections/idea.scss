@@ -1,0 +1,119 @@
+.idea {   
+    position: relative;
+    color: #fff;
+    padding-top: 8vw;
+    padding-bottom: 4vw;
+}
+
+.idea__subtitle {
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 1.5vw;
+}
+
+.idea__title {
+    font-family: "History Pro 02", sans-serif;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2.4vw;
+
+    opacity: 1;
+    animation-delay: 0ms;
+    animation-duration: 1500ms;
+    animation-fill-mode: both;
+    animation-name: slide-up-in;
+}
+
+.idea__inner {  
+    display: flex;  
+    justify-content: flex-end;
+}
+
+.idea__photo {
+    position: absolute;
+    left: 5vw;
+    bottom: 0;
+    width: 33vw;
+}
+
+.idea__photo-img {
+}
+
+.idea__play {
+    position: absolute;
+    right: 0;
+    bottom: 43%;
+    width: 8vw;
+    height: 8vw;
+    z-index: 6;
+}
+
+.idea__pulse {
+}
+
+.idea__play-link {
+}
+
+.idea__content {
+    position: relative;
+    z-index: 3;
+    padding: 2vw;
+    padding-top: 4.5vw;
+    width: 57%;
+    color: #2b2b33;    
+}
+
+.idea__content-title {
+    margin-bottom: 0.7vw;
+}
+
+
+
+.idea__content-subtitle {
+    margin-bottom: 2.4vw;
+}
+
+.idea__content-bg {
+    position: absolute;
+    z-index: -1;
+    left: -0.5vw;
+    top: 0;
+    max-width: none;
+    max-height: none;
+    width: 60vw;
+}
+
+.idea__list {
+}
+
+.idea__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5vw;
+}
+
+.idea__item-img {
+    width: 3.5vw;
+    height: 3.1vw;   
+    display: flex;   
+    align-items: center;  
+    justify-content: center;   
+    flex-shrink: 0;
+    margin-right: 0.7vw;
+}
+
+.idea__item-content {
+}
+
+.idea__item-title {
+    font-weight: bold;
+    margin-bottom: 0.41vw;
+}
+
+.idea__item-text {
+}
+
+.tsm12 {
+}
+

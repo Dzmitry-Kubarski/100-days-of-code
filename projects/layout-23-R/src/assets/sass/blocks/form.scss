@@ -24,3 +24,54 @@
     position: relative;
     margin-bottom: 1.5vw;
 }
+
+.form__content {
+    position: relative;
+    z-index: 5;
+    transform: skewY(2deg);
+}
+
+.form__title {
+    font-weight: 500;
+    margin-bottom: 0.7vw;
+}
+
+.form__item {   
+    display: flex;   
+    align-items: center;
+    margin-bottom: 2.4vw;
+}
+
+.form__item-icon {
+    width: 1.2vw;
+    margin-right: 0.5vw;
+}
+
+.form__item-desc {
+    color: #858aa0;
+
+    span {
+        display: block;
+    }
+}
+
+.form__label {
+    position: absolute;
+    width: 12vw;
+    height: 12vw;
+    right: -8vw;
+    top: -8vw;
+    text-align: center;
+    padding: 2.5vw;
+}
+
+.form__label-subtitle {
+    margin-bottom: 0.41vw;
+    font-size: 0.61vw;
+}
+
+.form__label-title {
+    font-family: "History Pro 02", sans-serif;
+    font-weight: 600;
+}
+

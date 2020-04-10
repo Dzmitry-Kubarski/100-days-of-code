@@ -1,0 +1,51 @@
+.example {
+    padding: 4vw 0;
+}
+
+
+
+.example__title {
+    text-align: center;
+    margin-bottom: 0.7vw;
+    font-family: "History Pro 02", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    opacity: 1;
+    animation-delay: 0ms;
+    animation-duration: 1500ms;
+    -webit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: slide-up-in;
+}
+
+
+
+.example__subtitle {
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 2.4vw;
+}
+
+
+
+.twentytwenty-container {
+    height: 36vw;
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 7px;
+    }
+}
+
+.twentytwenty-wrapper {
+    width: 100%;
+  }

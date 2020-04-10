@@ -23,6 +23,7 @@
 /* Vendor libs */
 @import "vendor/slick";
 @import "vendor/ion.rangeSlider.min";
+@import "../js/libs/twtw/twentytwenty";
 
 
 /* Blocks */
@@ -44,11 +45,19 @@
 @import "blocks/politics";
 @import "blocks/online";
 @import "blocks/data-loading";
+@import "blocks/pulse";
+@import "blocks/price-list";
+@import "blocks/social-links";
 
 
 /* Sections */
 @import "sections/intro";
 @import "sections/test";
+@import "sections/idea";
+@import "sections/services";
+@import "sections/example";
+@import "sections/portfolio";
+@import "sections/price";
 
 
 
