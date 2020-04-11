@@ -1,0 +1,211 @@
+.step {
+    position: relative;
+    // padding: 6vw 0;
+    padding-bottom: 2vw;
+    padding-top: 4vw;
+}
+
+.step__main-bg {
+    position: absolute;
+    top: 1.6vw;
+    right: 12vw;
+    width: 19vw;
+}
+
+.step__subtitle {
+    text-align: center;
+    font-weight: 300;
+    color: #c7cbdb;
+    margin-bottom: 1.5vw;
+}
+
+.step__title {
+    font-family: "History Pro 02", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 4.5vw;
+
+    opacity: 1;
+    animation-delay: 0ms;
+    animation-duration: 1500ms;
+    animation-fill-mode: both;
+    animation-name: slide-up-in;
+}
+
+.step__inner {   
+    display: flex;   
+    align-items: center;
+}
+
+.step__items {
+    width: 52%;
+    margin-right: 7%;  
+    display: flex;  
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.step__item {
+    position: relative;
+    z-index: 8;
+    width: 47%;   
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;   
+    flex-direction: column;   
+    align-items: flex-start;
+    background-color: #fff;
+    box-shadow: 0 10px 40px rgba(43, 43, 51, 0.2);
+    margin-bottom: 1.5vw;
+    padding: 1.5vw;
+    padding-top: 7vw;
+
+    &:nth-child(2) {
+        .step__item-img {
+            width: 12vw;
+            top: -1.5vw;
+            right: -1.5vw;
+        }
+    }
+
+    &:nth-child(3) {
+        .step__item-img {
+            top: -1vw;
+            right: -3vw;
+        }
+    }
+
+    &:nth-child(4) {
+        .step__item-img {
+            top: -2vw;
+        }
+    }
+
+    &:hover {
+        z-index: 11;
+    }
+}
+
+.step__item-img {
+    position: absolute;
+    width: 16vw;
+    right: 0;
+    top: 0;
+}
+
+.step__item-subtitle {
+    position: relative;
+    z-index: 4;
+    font-weight: 600;
+    color: #747474;
+    letter-spacing: 0.6px;
+    margin-bottom: 0.41vw;
+}
+
+
+.step__item-title {
+    position: relative;
+    z-index: 4;
+    font-family: "History Pro 02", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.7vw;
+}
+
+.step__tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 22;   
+
+    &:hover {
+        .step__tooltip-content {
+            transform: translateY(-50%) scale(1);
+            opacity: 1;
+        }
+    }
+}
+
+.step__tooltip-title {
+    color: #dcbf8b;
+    text-decoration: underline;
+    font-size: 0.97vw;
+}
+
+.step__tooltip-content {
+    position: absolute;
+    width: 18vw;
+    left: 110%;
+    top: 50%;   
+    transform: translateY(-50%) scale(0);
+    transition: all 0.3s;
+    box-shadow: 0 10px 40px rgba(43, 43, 51, 0.2);
+    background-color: #ffffff;
+    border-radius: 5px;
+    opacity: 0;  
+    padding: 1vw;    
+
+    p {
+        font-size: 0.75vw;
+        color: #636674;
+        margin-bottom: 0.41vw;
+    }
+}
+
+.step__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        bottom: -12vw;
+        right: -7vw;
+        width: 92vw;
+        max-width: none;
+        max-height: none;
+        animation: transform-shiver 4000ms linear 0ms infinite normal both;
+        }
+}
+
+.step-mock {
+}
+
+
+.step__form {
+    width: 22vw;
+    padding-left: 2.8vw;
+    padding-right: 2.8vw;
+
+    .portfolio__list {
+        color: #282828;
+        font-size: 0.85vw;
+        border-bottom: 1px solid #999ca9;
+        padding-bottom: 1.5vw;;
+        margin-bottom: 1.5vw;
+    }
+
+    .portfolio__form-block {
+        flex-direction: column;
+    }
+
+    .portfolio__form-btn {
+        padding: 1.7vw 1vw;
+        width: 100%;
+    }
+
+    .form__input {
+        width: 100%;
+        margin-bottom: 1.5vw;
+    }
+
+    .politics {
+        white-space: normal;
+    }   
+}
+
+

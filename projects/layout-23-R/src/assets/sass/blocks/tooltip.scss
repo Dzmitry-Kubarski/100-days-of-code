@@ -21,17 +21,15 @@
     }
 }
 
+.tooltip__title {
+  font-family: "History Pro 02", sans-serif;
+  text-align: center;
+  margin-bottom: 1.5vw;
+}
+
 .tooltip__icon {
     position: relative;
-    z-index: 999;
-    // position: absolute;
-    // right: 0.5vw;
-    // top: 0.5vw;
-    // width: 1.35vw;
-    // height: 1.35vw;    
-    // cursor: pointer;
-    // animation: pulse 1.6s infinite;
-    // border-radius: 100%;   
+    z-index: 999;     
     animation: pulse 1.6s infinite;
     border-radius: 100%; 
 }
@@ -52,8 +50,7 @@
 }
 
 .tooltip__text {
-    text-align: center;
-    // display: none;
+    text-align: center;    
 }
 
 

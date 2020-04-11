@@ -1,0 +1,154 @@
+.step-slider {
+    display: flex;
+    background-color: #19191d;  
+    background-image: linear-gradient(-150deg, rgba(43, 43, 51, 0.4) 0%, rgba(43, 43, 51, 0) 100%);  
+    padding-left: 8vw;
+}
+
+.step-slider__control {
+    position: relative;
+    z-index: 4;
+    min-height: 13vw;
+    width: 16%;
+    padding: 2vw;
+    padding-top: 3.5vw;
+
+    &::before {
+        content: '';
+        position: absolute;
+        right: 2px;
+        top: 50%;       
+        transform: translateY(-50%);
+        height: 7vw;
+        width: 1px;        
+        background-color: #858aa0;
+    }
+}
+
+.step-slider__control-title {
+    font-family: "History Pro 02", sans-serif;
+    color: #dcbf8b;
+    margin-bottom: 1.5vw;
+}
+
+.step-slider__arrows {
+    display: flex;   
+    align-items: center;
+}
+
+.step-slider__arrow {
+    width: 1.2vw;    
+    cursor: pointer;
+    display: flex;   
+    justify-content: center;    
+    align-items: center;  
+    transition: all 0.4s;
+    opacity: 0.6;
+    filter: grayscale(1);
+    margin: 0 2.5vw;
+    margin-right: 1.7vw;
+}
+
+.prev {
+    margin-left: 1.4vw;
+}
+
+.next {
+}
+
+.step-slider__items {
+    width: 80%;
+    color: #f4f3ef;       
+    
+}
+
+.step-slider__item {
+    position: relative;   
+    z-index: 4;  
+    display: flex;
+    align-items: flex-end;
+    min-height: 13vw;
+    flex-wrap: wrap;
+    padding: 2vw;
+    padding-top: 3.5vw;
+
+    &::before {
+        content: '';
+        position: absolute;
+        right: 2px;
+        top: 50%;       
+        transform: translateY(-50%);
+        height: 7vw;
+        width: 1px;
+        background-color: #858aa0;
+    }
+
+    &:hover {
+        .step-slider__item-hover {
+            opacity: 1;           
+            transform: scale(1);
+            width: 100%;
+            height: auto;
+        }
+
+        .step-slider__item-bg {
+            opacity: 0;
+        }
+
+        .step-slider__item-header {
+            flex-wrap: nowrap;
+        }
+
+        .step-slider__item-title {
+            width: auto;
+        }
+    }
+}
+
+.step-slider__item-bg {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;   
+    transition: all 0.3s;
+}
+
+.step-slider__item-header {
+    position: relative;    
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index: 4;    
+    transition: all 0.4s;
+}
+
+.step-slider__item-num {  
+    font-family: "History Pro 02", sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to top, #dcbf8b 0%, #f8e4b8 100%);   
+    margin-bottom: 0.41vw;
+
+    opacity: 1;
+    animation-delay: 0ms;
+    animation-duration: 1500ms;
+    animation-fill-mode: both;
+    animation-name: slide-up-in;
+}
+
+.step-slider__item-title {
+    margin: 0.5vw;
+    margin-right: 0;
+    width: 100%;
+}
+
+.step-slider__item-hover {
+    opacity: 0;   
+    transform: scale(0);
+    width: 0;
+    height: 0;
+    transition: opacity,transform 0.4s;
+}
+

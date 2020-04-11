@@ -1,5 +1,5 @@
 <section class="step" id="step">
-    <img class="step-four" src="assets/img/step/four.png" alt="">
+    <img class="step__main-bg" src="assets/img/step/four.png" alt="">
 
     <div class="container">
         <div class="step__subtitle  text24"> Независимо от пакета стоимости </div>
@@ -21,7 +21,8 @@
                         </li>
                     </ul>
 
-                    <div class="step__tooltip">Перед этим...
+                    <div class="step__tooltip">
+                        <div class="step__tooltip-title">Перед этим...</div>
                         <div class="step__tooltip-content">
                             <ul class="portfolio__list tsm12">
                                 <li class="portfolio__list-item">Знакомимся</li>
@@ -43,7 +44,8 @@
                         <li class="portfolio__list-item">Нет ограничений в правках - пока вам не понравится.</li>
                     </ul>
 
-                    <div class="step__tooltip">Перед этим...
+                    <div class="step__tooltip">
+                        <div class="step__tooltip-title">Перед этим...</div>
                         <div class="step__tooltip-content">
                             <ul class="portfolio__list tsm12">
                                 <li class="portfolio__list-item">Рисуем десятки вариантов планировок</li>
@@ -67,7 +69,8 @@
                         <li class="portfolio__list-item">План теплых полов;</li>
                     </ul>
 
-                    <div class="step__tooltip">Перед этим...
+                    <div class="step__tooltip">
+                        <div class="step__tooltip-title">Перед этим...</div>
                         <div class="step__tooltip-content">
                             <ul class="portfolio__list tsm12">
                                 <li class="portfolio__list-item">Карта потолков (с разрезами);</li>
@@ -104,7 +107,8 @@
                         <li class="portfolio__list-item">Выезд по подбору мебелии</li>
                     </ul>
 
-                    <div class="step__tooltip">Перед этим...
+                    <div class="step__tooltip">
+                        <div class="step__tooltip-title">Перед этим...</div>
                         <div class="step__tooltip-content">
                             <p>Составляем спецификацию материалов</p>
                             <p> Сводная ведомость использованных отделочных материалов, мебели, дверей, светильников с
@@ -117,23 +121,21 @@
 
 
             <div class="step__bg">
-                <img src="img/step/mock.png" alt="" class="step-mock">
+                <img src="assets/img/step/mock.png" alt="">
             </div>
 
-            <form class="form portfolio__form step__form">
-                <div class="form-wrap">
-                    <h2 class="text-md mbm fw5">
-                        Посмотрите пример готового
-                        проекта в котором:
+
+            <div class="form  portfolio__form  step__form">
+                <div class="form__content">
+                    <h2 class="form__title  text-md">
+                        Посмотрите пример готового проекта в котором:
                     </h2>
 
-                    <ul class="portfolio-list tsm13 mb blc">
-                        <li> Эскизная часть </li>
-                        <li> ЗD визуализация</li>
-                        <li> Рабочая часть проекта</li>
+                    <ul class="portfolio__list">
+                        <li class="portfolio__list-item">Эскизная часть</li>
+                        <li class="portfolio__list-item">ЗD визуализация</li>
+                        <li class="portfolio__list-item"> Рабочая часть проекта</li>
                     </ul>
-
-                    <div class="line-gr mb"></div>
 
                     <div class="form__item">
                         <img class="form__item-icon" src="assets/img/portfolio/pdf.png" alt="">
@@ -142,21 +144,6 @@
                         </div>
                     </div>
 
-
-                    <input type="hidden" name="formname" value="p2">
-                    <input type="hidden" name="title" value="Посмотрите пример готового проекта">
-
-                    <!-- <div class="mb">
-                        <input type="tel" class="input small-text t2 hp mb" name="phone" required=""
-                            placeholder="+375 (- -) - - -   - -   - -">
-                        <button class="btn btn-form big">
-                            <span class="btn-blick"></span>
-                            <span class="text">
-                                <b class="fw6">Загрузить сейчас</b>
-
-                            </span>
-                        </button>
-                    </div> -->
                     <form class="portfolio__form-block">
                         <input class="form__input small-text" type="tel" name="phone" required=""
                             placeholder="+375 (_ _) _ _ _ - _ _ - _ _">
@@ -168,10 +155,9 @@
                         </button>
                     </form>
 
-
                     <div class="politics">
-                        <label for="portfolio__politics" class="politics__check-box">
-                            <input class="politics__input" type="checkbox" name="" id="portfolio__politics" required=""
+                        <label for="step__politics" class="politics__check-box">
+                            <input class="politics__input" type="checkbox" name="" id="step__politics" required=""
                                 checked="">
 
                             <div class="politics__row">
@@ -189,10 +175,10 @@
                                 </div>
                             </div>
                         </label>
-                    </div>
+                    </div> <!-- /politics -->
+                </div> <!-- /form__content -->
+            </div> <!-- /form -->
 
-                </div>
-            </form>
         </div> <!-- /step__inner -->
     </div> <!-- /container -->
 </section> <!-- /step -->

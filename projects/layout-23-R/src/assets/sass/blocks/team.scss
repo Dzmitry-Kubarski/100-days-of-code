@@ -1,0 +1,60 @@
+.team {
+    position: relative;
+    color: #ffffff;
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+}
+
+
+.team__inner {   
+    display: flex;   
+    justify-content: flex-end;
+}
+
+.team__content {
+    width: 41%;
+}
+
+.team__slogan {
+    font-weight: 300;
+    margin-bottom: 0.7vw;
+}
+
+.team__title {
+    font-family: "History Pro 02", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 1.5vw;
+
+    opacity: 1;
+    animation-delay: 0ms;
+    animation-duration: 1500ms;
+    animation-fill-mode: both;
+    animation-name: slide-up-in;
+}
+
+.team__subtitle {
+    margin-bottom: 2.4vw;
+}
+
+.team__line {
+    width: 40%;
+    border-bottom: 1px solid #dcbf8b;
+    margin-bottom: 2.4vw;
+}
+
+.team__text {
+    font-weight: 300;
+    margin-bottom: 1.4vw;
+}
+
+
+
+.team__bg {
+    position: absolute;
+    bottom: 0;
+    left: 5vw;
+    width: 47vw;
+    max-width: none;
+    max-height: none;
+}

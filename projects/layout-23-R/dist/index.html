@@ -2453,7 +2453,7 @@
         </div> <!-- /container -->
     </section> <!-- /price -->
     <section class="step" id="step">
-        <img class="step-four" src="assets/img/step/four.png" alt="">
+        <img class="step__main-bg" src="assets/img/step/four.png" alt="">
     
         <div class="container">
             <div class="step__subtitle  text24"> Независимо от пакета стоимости </div>
@@ -2475,7 +2475,8 @@
                             </li>
                         </ul>
     
-                        <div class="step__tooltip">Перед этим...
+                        <div class="step__tooltip">
+                            <div class="step__tooltip-title">Перед этим...</div>
                             <div class="step__tooltip-content">
                                 <ul class="portfolio__list tsm12">
                                     <li class="portfolio__list-item">Знакомимся</li>
@@ -2497,7 +2498,8 @@
                             <li class="portfolio__list-item">Нет ограничений в правках - пока вам не понравится.</li>
                         </ul>
     
-                        <div class="step__tooltip">Перед этим...
+                        <div class="step__tooltip">
+                            <div class="step__tooltip-title">Перед этим...</div>
                             <div class="step__tooltip-content">
                                 <ul class="portfolio__list tsm12">
                                     <li class="portfolio__list-item">Рисуем десятки вариантов планировок</li>
@@ -2521,7 +2523,8 @@
                             <li class="portfolio__list-item">План теплых полов;</li>
                         </ul>
     
-                        <div class="step__tooltip">Перед этим...
+                        <div class="step__tooltip">
+                            <div class="step__tooltip-title">Перед этим...</div>
                             <div class="step__tooltip-content">
                                 <ul class="portfolio__list tsm12">
                                     <li class="portfolio__list-item">Карта потолков (с разрезами);</li>
@@ -2558,7 +2561,8 @@
                             <li class="portfolio__list-item">Выезд по подбору мебелии</li>
                         </ul>
     
-                        <div class="step__tooltip">Перед этим...
+                        <div class="step__tooltip">
+                            <div class="step__tooltip-title">Перед этим...</div>
                             <div class="step__tooltip-content">
                                 <p>Составляем спецификацию материалов</p>
                                 <p> Сводная ведомость использованных отделочных материалов, мебели, дверей, светильников с
@@ -2571,23 +2575,21 @@
     
     
                 <div class="step__bg">
-                    <img src="img/step/mock.png" alt="" class="step-mock">
+                    <img src="assets/img/step/mock.png" alt="">
                 </div>
     
-                <form class="form portfolio__form step__form">
-                    <div class="form-wrap">
-                        <h2 class="text-md mbm fw5">
-                            Посмотрите пример готового
-                            проекта в котором:
+    
+                <div class="form  portfolio__form  step__form">
+                    <div class="form__content">
+                        <h2 class="form__title  text-md">
+                            Посмотрите пример готового проекта в котором:
                         </h2>
     
-                        <ul class="portfolio-list tsm13 mb blc">
-                            <li> Эскизная часть </li>
-                            <li> ЗD визуализация</li>
-                            <li> Рабочая часть проекта</li>
+                        <ul class="portfolio__list">
+                            <li class="portfolio__list-item">Эскизная часть</li>
+                            <li class="portfolio__list-item">ЗD визуализация</li>
+                            <li class="portfolio__list-item"> Рабочая часть проекта</li>
                         </ul>
-    
-                        <div class="line-gr mb"></div>
     
                         <div class="form__item">
                             <img class="form__item-icon" src="assets/img/portfolio/pdf.png" alt="">
@@ -2596,21 +2598,6 @@
                             </div>
                         </div>
     
-    
-                        <input type="hidden" name="formname" value="p2">
-                        <input type="hidden" name="title" value="Посмотрите пример готового проекта">
-    
-                        <!-- <div class="mb">
-                            <input type="tel" class="input small-text t2 hp mb" name="phone" required=""
-                                placeholder="+375 (- -) - - -   - -   - -">
-                            <button class="btn btn-form big">
-                                <span class="btn-blick"></span>
-                                <span class="text">
-                                    <b class="fw6">Загрузить сейчас</b>
-    
-                                </span>
-                            </button>
-                        </div> -->
                         <form class="portfolio__form-block">
                             <input class="form__input small-text" type="tel" name="phone" required=""
                                 placeholder="+375 (_ _) _ _ _ - _ _ - _ _">
@@ -2622,10 +2609,9 @@
                             </button>
                         </form>
     
-    
                         <div class="politics">
-                            <label for="portfolio__politics" class="politics__check-box">
-                                <input class="politics__input" type="checkbox" name="" id="portfolio__politics" required=""
+                            <label for="step__politics" class="politics__check-box">
+                                <input class="politics__input" type="checkbox" name="" id="step__politics" required=""
                                     checked="">
     
                                 <div class="politics__row">
@@ -2643,13 +2629,658 @@
                                     </div>
                                 </div>
                             </label>
-                        </div>
+                        </div> <!-- /politics -->
+                    </div> <!-- /form__content -->
+                </div> <!-- /form -->
     
-                    </div>
-                </form>
             </div> <!-- /step__inner -->
         </div> <!-- /container -->
     </section> <!-- /step -->
+    <section class="guarantees" id="guarantees"
+        style="background: url('assets/img/guarantees/bg.jpg') no-repeat center; background-size: cover;">
+    
+        <div class="guarantees__content">
+            <div class="container">
+                <div class="guarantees__slogan  text24">
+                    Снимем с вас все хлопоты и избавим от стресса. <br> Вместе с дизайном интерьера
+                </div>
+                <h2 class="guarantees__title  title"> мы берем на себя весь спектр работ </h2>
+                <div class="guarantees__subtitle  text24"> по поиску, закупке материалов и
+                    <span> РЕМОНТУ ПОД КЛЮЧ </span>
+                </div>
+    
+                <div class="guarantees__inner">
+                    <div class="guarantees__advas">
+                        <h5 class="guarantees__advas-title  text24"> Работы, которые мы делаем по ремонту </h5>
+    
+                        <div class="guarantees__advas-wrap">
+                            <div class="guarantees__advas-scroll">
+                                <div class="guarantees__list">
+    
+                                    <div class="guarantees__item">
+                                        <div class="guarantees__item-top">
+                                            <div class="guarantees__item-img">
+                                                <img src="assets/img/guarantees/i1.png" alt="">
+                                            </div>
+                                            <div class="guarantees__item-title  text-md">
+                                                Самостоятельно закупаем <br> и доставляем материалы
+                                            </div>
+                                        </div>
+    
+                                        <div class="guarantees__item-text  small-text">
+                                            Имеем выгодные цены на материалы от крупных оптовых поставщиков. Мы поможем
+                                            Вам приобрести материалы по ценам ниже рыночных
+                                        </div>
+                                    </div> <!-- /guarantees__item -->
+    
+    
+                                    <div class="guarantees__item">
+                                        <div class="guarantees__item-top">
+                                            <div class="guarantees__item-img">
+                                                <img src="assets/img/guarantees/i1.png" alt="">
+                                            </div>
+                                            <div class="guarantees__item-title  text-md">
+                                                Выполним работы <br> любой сложности
+                                            </div>
+                                        </div>
+    
+                                        <div class="guarantees__item-text  small-text">
+                                            В штате собственный строителбные бригады, которые выполняют ремонт в комплексе -
+                                            от дизайн проекта до новоселья
+                                        </div>
+                                    </div> <!-- /guarantees__item -->
+    
+    
+                                    <div class="guarantees__item">
+                                        <div class="guarantees__item-top">
+                                            <div class="guarantees__item-img">
+                                                <img src="assets/img/guarantees/i1.png" alt="">
+                                            </div>
+                                            <div class="guarantees__item-title  text-md">
+                                                Фото-видео контроль <br> на всех этапах ремонта
+                                            </div>
+                                        </div>
+    
+                                        <div class="guarantees__item-text  small-text">
+                                            Будем высылать Вам на Viber фото и видео каждый день о ходе работ
+                                        </div>
+                                    </div> <!-- /guarantees__item -->
+    
+    
+                                    <div class="guarantees__item">
+                                        <div class="guarantees__item-top">
+                                            <div class="guarantees__item-img">
+                                                <img src="assets/img/guarantees/i1.png" alt="">
+                                            </div>
+                                            <div class="guarantees__item-title  text-md">
+                                                Работаем на профессиональном <br> оборудовании
+                                            </div>
+                                        </div>
+    
+                                        <div class="guarantees__item-text  small-text">
+                                            Работаем на профессиональном оборудовании.
+                                        </div>
+                                    </div> <!-- /guarantees__item -->
+    
+    
+                                    <div class="guarantees__item">
+                                        <div class="guarantees__item-top">
+                                            <div class="guarantees__item-img">
+                                                <img src="assets/img/guarantees/i1.png" alt="">
+                                            </div>
+                                            <div class="guarantees__item-title  text-md">
+                                                Убираем за собой и <br> вывозим мусор
+                                            </div>
+                                        </div>
+    
+                                        <div class="guarantees__item-text  small-text">
+                                            Убираем за собой и <br> вывозим мусор
+                                        </div>
+                                    </div> <!-- /guarantees__item -->
+    
+    
+                                    <div class="guarantees__item">
+                                        <div class="guarantees__item-top">
+                                            <div class="guarantees__item-img">
+                                                <img src="assets/img/guarantees/i1.png" alt="">
+                                            </div>
+                                            <div class="guarantees__item-title  text-md">
+                                                Поэтапная оплата <br> по приемке работ
+                                            </div>
+                                        </div>
+    
+                                        <div class="guarantees__item-text  small-text">
+                                            Убираем за собой и <br> вывозим мусор
+                                        </div>
+                                    </div> <!-- /guarantees__item -->
+    
+    
+                                    <div class="guarantees__item">
+                                        <div class="guarantees__item-top">
+                                            <div class="guarantees__item-img">
+                                                <img src="assets/img/guarantees/i1.png" alt="">
+                                            </div>
+                                            <div class="guarantees__item-title  text-md">
+                                                Расширенная гарантия <br> до 5 лет на работы
+                                            </div>
+                                        </div>
+    
+                                        <div class="guarantees__item-text  small-text">
+                                            Убираем за собой и <br> вывозим мусор
+                                        </div>
+                                    </div> <!-- /guarantees__item -->
+    
+                                </div> <!-- /guarantees__list -->
+                            </div> <!-- /guarantees__advas-scroll -->
+                        </div> <!-- /guarantees__advas-wrap -->
+                    </div> <!-- /guarantees__advas -->
+    
+                    <div class="guarantees__offer-box">
+                        <div class="guarantees__number">
+    
+                            <div class="tooltip">
+                                <img class="tooltip__icon" src="assets/img/guarantees/i.png" alt="">
+                                <div class="tooltip__hover">
+                                    <div class="tooltip__title  text-md">В среднем наши клиенты</div>
+                                    <div class="tooltip__text  small-text">
+                                        заказывая у нас и дизайн проект и ремонт под клчюч экономят до -30% бюджера
+                                        на строительных материалах и работе
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="assets/img/guarantees/30.png" alt="">
+                        </div>
+    
+    
+                        <div class="guarantees__offer">
+                            <div class="guarantees__offer-title  text-md">
+                                ПО ОКОНЧАНИЮ РАБОТ НЕ НУЖНО НИЧЕГО <br> ДЕЛАТЬ И РАЗБИРАТЬСЯ САМОСТОЯТЕЛЬНО
+                            </div>
+    
+                            <div class="guarantees__offer-text  small-text">
+                                Вы все работы доводим до конца и вывозим за собой мусор
+                            </div>
+                        </div>
+                    </div> <!-- /guarantees__inner -->
+                </div> <!-- /container -->
+            </div> <!-- /guarantees__content -->
+    
+    
+    
+            <div class="team" id="team">
+                <div class="container">
+                    <div class="team__inner">
+                        <div class="team__content">
+                            <div class="team__slogan  text24"> Вы можете быть спокойны </div>
+                            <h2 class="team__title  title"> Мы никуда <br> не пропадаем </h2>
+                            <div class="team__subtitle  text24 msm"> и вместе с вами создаем проект </div>
+    
+                            <div class="team__line"></div>
+    
+                            <p class="team__text  text">
+                                Мы создаем уникальные дизайн-проекты. Для создания
+                                каждого интерьера мы выбираем дизайнера, который
+                                имеет опыт в таком стиле и формате объекта.
+                            </p>
+    
+                            <p class="team__text  text">
+                                Наши интерьеры разрабатываются с учетом всех
+                                мировых трендов.
+                            </p>
+                        </div>
+    
+                        <img class="team__bg" src="assets/img/guarantees/team.png" alt="">
+                    </div>
+                </div> <!-- /container -->
+            </div> <!-- /team -->
+    </section> <!-- /guarantees -->
+    <section class="step-slider" id="step-slider">
+    
+        <div class="step-slider__control">
+            <h5 class="step-slider__control-title  text-md"> От знакомства <br> до ремонта </h5>
+    
+            <div class="step-slider__arrows">
+                <button class="step-slider__arrow prev" type="button">
+                    <img src="assets/img/intro/arrp.png" alt="">
+                </button>
+    
+                <button class="step-slider__arrow next" type="button">
+                    <img src="assets/img/intro/arrn.png" alt="">
+                </button>
+            </div>
+        </div>
+    
+    
+        <div class="step-slider__items">
+            <div>
+                <div class="step-slider__item">
+                    <div class="step-slider__item-bg"
+                        style="background: url(assets/img/spector/b2.png) no-repeat center; background-size: auto 100%;">
+                    </div>
+                    <div class="step-slider__item-header">
+                        <div class="step-slider__item-num title"> 01 </div>
+                        <div class="step-slider__item-title  text-md"> Знакомимся с вами </div>
+                    </div>
+    
+                    <div class="step-slider__item-hover tsm12">
+                        На встрече мы Вас сориентируем по бюджету
+                        всего интерьера, включая дизайн, отделочные
+                        работы, чистовые материалы и мебель.
+                    </div>
+                </div> <!-- /step-slider__item -->
+            </div>
+    
+    
+            <div>
+                <div class="step-slider__item">
+                    <div class="step-slider__item-bg"
+                        style="background: url(assets/img/spector/b2.png) no-repeat center; background-size: auto 100%;">
+                    </div>
+                    <div class="step-slider__item-header">
+                        <div class="step-slider__item-num title"> 02 </div>
+                        <div class="step-slider__item-title  text-md"> Выезжаем на обмер квартиры </div>
+                    </div>
+    
+                    <div class="step-slider__item-hover tsm12">
+                        На встрече мы Вас сориентируем по бюджету
+                        всего интерьера, включая дизайн, отделочные
+                        работы, чистовые материалы и мебель.
+                    </div>
+                </div> <!-- /step-slider__item -->
+            </div>
+    
+    
+            <div>
+                <div class="step-slider__item">
+                    <div class="step-slider__item-bg"
+                        style="background: url(assets/img/spector/b3.png) no-repeat center; background-size: auto 100%;">
+                    </div>
+                    <div class="step-slider__item-header">
+                        <div class="step-slider__item-num title"> 03 </div>
+                        <div class="step-slider__item-title  text-md"> Создаем планировочное решение </div>
+                    </div>
+    
+                    <div class="step-slider__item-hover tsm12">
+                        На встрече мы Вас сориентируем по бюджету
+                        всего интерьера, включая дизайн, отделочные
+                        работы, чистовые материалы и мебель.
+                    </div>
+                </div> <!-- /step-slider__item -->
+            </div>
+    
+    
+            <div>
+                <div class="step-slider__item">
+                    <div class="step-slider__item-bg"
+                        style="background: url(assets/img/spector/b4.png) no-repeat center; background-size: auto 100%;">
+                    </div>
+                    <div class="step-slider__item-header">
+                        <div class="step-slider__item-num title"> 04 </div>
+                        <div class="step-slider__item-title  text-md"> Создаем концепт интерьера </div>
+                    </div>
+    
+                    <div class="step-slider__item-hover tsm12">
+                        На встрече мы Вас сориентируем по бюджету
+                        всего интерьера, включая дизайн, отделочные
+                        работы, чистовые материалы и мебель.
+                    </div>
+                </div> <!-- /step-slider__item -->
+            </div>
+    
+    
+            <div>
+                <div class="step-slider__item">
+                    <div class="step-slider__item-bg"
+                        style="background: url(assets/img/spector/b5.png) no-repeat center; background-size: auto 100%;">
+                    </div>
+                    <div class="step-slider__item-header">
+                        <div class="step-slider__item-num title"> 05 </div>
+                        <div class="step-slider__item-title  text-md"> Подбор материалов </div>
+                    </div>
+    
+                    <div class="step-slider__item-hover tsm12">
+                        На встрече мы Вас сориентируем по бюджету
+                        всего интерьера, включая дизайн, отделочные
+                        работы, чистовые материалы и мебель.
+                    </div>
+                </div> <!-- /step-slider__item -->
+            </div>
+        </div> <!-- /step-slider__items -->
+    </section> <!-- /step-slider -->
+    
+    <div class="advantages">
+        <div class="container">
+    
+            <div class="advantages__items">
+                <div class="advantages__item">
+                    <div class="advantages__title  tsm13">
+                        Регулярно делимся <br>
+                        опытом на <br>
+                        телеканале ОНТ
+                    </div>
+    
+                    <img class="" src="assets/img/intro/oht.png" alt="">
+                </div>
+    
+                <div class="advantages__item">
+                    <div class="advantages__video"
+                        style="background: url(assets/img/intro/pbg.png) no-repeat center; background-size: cover;">
+                        <a class="advantages__video-play video" href="https://www.youtube.com/watch?v=ZVPxrOTTTOs">
+                            <img src="assets/img/intro/play.png" alt="">
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="advantages__item">
+                    <div class="advantages__title  tsm13">
+                        Смотрите обзор<br>
+                        нашей работы <br>
+                        на Онлайнер
+                        <a class="intro__select-item" href="https://realt.onliner.by/2020/02/10/mayak-minska-18"
+                            target="_blank">
+                        </a>
+                    </div>
+                    <a href="https://realt.onliner.by/2020/02/10/mayak-minska-18" target="_blank">
+                        <img class="" src="assets/img/onliner_logo.png" alt="">
+                    </a>
+                </div>
+    
+                <div class="advantages__item">
+                    <div class="advantages__title  tsm13">
+                        Сделали <br>
+                        визуализаций <br>
+                        на м<sup>2</sup>
+                    </div>
+    
+                    <div class="intro__slider-num title-lg"> 4000+ </div>
+                    <img class="" src="assets/img/intro/bgl3.png" alt="">
+                </div>
+    
+                <div class="advantages__item">
+                    <div class="advantages__title  tsm13">
+                        Рейтинг <br>
+                        по отзывам:
+                    </div>
+                    <img class="advantages__item-img--one" src="assets/img/intro/gg.png" alt="">
+                    <img class="advantages__item-img--two" src="assets/img/intro/phx.png" alt="">
+                </div>
+            </div> <!-- /advantages__items -->
+    
+        </div> <!-- /container -->
+    </div> <!-- /advantages -->
+    
+    
+    <section class="consultation" id="consultation"
+        style="background: url('assets/img/consultation/bg.png') no-repeat top -20vw right -8vw; background-size: 80% auto;">
+    
+        <div class="container">
+            <div class="consultation__title-box">
+                <h2 class="consultation__title  title"> Получите консультацию </h2>
+                <div class="consultation__subtitle  text24"> нашего дизайнера прямо сейчас - платить не нужно </div>
+            </div>
+    
+            <div class="consultation__inner">
+                <div class="consultation__form-box">
+                    <img class="consultation__form-bg" src="assets/img/consultation/man.png" alt="">
+    
+                    <div class="form  portfolio__form  consultation__form">
+                        <div class="form__content">
+                            <h2 class="form__title  text-md">
+                                Или просто введите ваш телефон - чтобы оставить заявку на косультацию
+                            </h2>
+    
+                            <form class="portfolio__form-block">
+                                <div class="consultation__select-wrap">
+                                    <div class="consultation__select-title  tsm12"> <i>Вам перезвонить:</i> </div>
+    
+                                    <label class="quiz__answer" for="consult-1">
+                                        <input class="quiz__answer-input" type="radio" name="qw1" id="consult-1"
+                                            value="Сейчас">
+    
+                                        <div class="quiz__checkbox">
+                                            <span class="quiz__checkbox-circle">
+                                                <span class="quiz__checkbox-active">
+                                                    <img src="assets/img/test/qqq.png" alt="">
+                                                </span>
+                                            </span>
+    
+                                            <span class="quiz__answer-title  small-text">
+                                                Сейчас
+                                            </span>
+                                        </div>
+                                    </label>
+    
+    
+                                    <label class="quiz__answer" for="consult-2">
+                                        <input class="quiz__answer-input" type="radio" name="qw1" id="consult-2"
+                                            value="Сейчас">
+    
+                                        <div class="quiz__checkbox">
+                                            <span class="quiz__checkbox-circle">
+                                                <span class="quiz__checkbox-active">
+                                                    <img src="assets/img/test/qqq.png" alt="">
+                                                </span>
+                                            </span>
+    
+                                            <span class="tsm13 time-select">
+                                                <select name="time" id="" class="fancyselect">
+                                                    <option value="9:00-10:00">9:00-10:00</option>
+                                                    <option value="10:00-11:00">10:00-11:00</option>
+                                                    <option value="11:00-12:00">11:00-12:00</option>
+                                                    <option value="12:00-13:00">12:00-13:00</option>
+                                                    <option value="13:00-14:00">13:00-14:00</option>
+                                                    <option value="14:00-15:00">14:00-15:00</option>
+                                                    <option value="15:00-16:00">15:00-16:00</option>
+                                                    <option value="16:00-17:00">16:00-17:00</option>
+                                                    <option value="17:00-18:00">17:00-18:00</option>
+                                                    <option value="18:00-19:00">18:00-19:00</option>
+                                                    <option value="19:00-20:00">19:00-20:00</option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                    </label>
+                                </div> <!-- /consultation__select-wrap -->
+    
+    
+                                <div class="foorm__group">
+                                    <input class="form__input small-text" type="tel" name="phone" required=""
+                                        placeholder="+375 (_ _) _ _ _ - _ _ - _ _">
+                                    <button class="btn  portfolio__form-btn  consultation__form-btn">
+                                        <span class="btn-blick"></span>
+                                        <span class="form__btn-text  small-text">Перезвонить вам
+                                            <span>и проконсультировать</span>
+                                        </span>
+                                    </button>
+    
+                                    <div class="politics">
+                                        <label for="consultation__politics" class="politics__check-box">
+                                            <input class="politics__input" type="checkbox" name=""
+                                                id="consultation__politics" required="" checked="">
+    
+                                            <div class="politics__row">
+                                                <div class="politics__check">
+                                                    <span class="politics__check-active">
+                                                        <img src="assets/img/portfolio/v.png" alt="">
+                                                    </span>
+                                                </div>
+    
+                                                <div class="politics__text  tsm12">
+                                                    Вы соглашаетесь c
+                                                    <a class="politics__link" href="#" target="_blank">
+                                                        Политикой конфиденциальности
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div> <!-- /politics -->
+                                </div>
+                            </form>
+                        </div> <!-- /form__content -->
+                    </div> <!-- /form -->
+                </div> <!-- /consultation__form-box -->
+    
+    
+                <div class="consultation__info-box">
+                    <div class="phone">
+                        <div class="phone__text"> Звоните, мы сейчас работаем </div>
+                        <a class="phone__link" href="tel:+375291936245"> <b>+375 29 193-62-45</b> </a>
+                    </div>
+    
+                    <div class="consultation__info-time">Работаем без выходных: 9:00-20:00 </div>
+    
+                    <div class="messengers">
+                        <div class="messengers__title  text-md"> Задайте любой вопрос напрямую в: </div>
+                        <div class="messengers__items">
+                            <a href="viber://chat?number=375291936245" target="_blank" class="messengers__item viber">
+                                <span class="tsm13"> Viber </span>
+                                <div class="messengers__item__img">
+                                    <img src="assets/img/consultation/vi.png" alt="">
+                                </div>
+                            </a>
+    
+                            <a href="https://wa.me/79119223241?text=Хотите получить предложения по дизайн-интерьеру вашей квартиры?"
+                                target="_blank" class="messengers__item whatsapp">
+                                <span class="tsm13"> Whatsapp </span>
+                                <div class="messengers__item__img">
+                                    <img src="assets/img/consultation/wa.png" alt="">
+                                </div>
+                            </a>
+    
+                            <a href="tg://resolve?domain=YauheniHuretski" target="_blank" class="messengers__item telegram">
+                                <span class="tsm13"> Telegram </span>
+                                <div class="messengers__item__img">
+                                    <img src="assets/img/consultation/tg.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="messengers__subtitle  small-text"> *среднее время ответа 40 секунд </div>
+                    </div>
+                </div> <!-- /consultation__info-box -->
+            </div> <!-- /consultation__inner -->
+    
+    
+            <div class="consultation__offer">
+                <div class="consultation__offer-content">
+                    <h2 class="consultation__offer-title  title">
+                        гарантированно <br>
+                        воплотим любую <br>
+                        вашу идею
+                    </h2>
+                    <div class="consultation__offer-subtitle  text24">
+                        снимем все стресы по закупке и ремонту <br>
+                        и сделаем это честно и на совесть, как для себя
+                    </div>
+                </div>
+    
+                <div class="consultation__favourites">
+                    <div class="consultation__favourites-slogan  text-md"> Не спешите уходить </div>
+    
+                    <div class="consultation__favourites-title">
+                        Чтобы не потерять наш сайт - <br> добавьте его в избранное
+                    </div>
+    
+                    <div class="consultation__favourites-ctrl">
+                        <div class="consultation__favourites-keys"> Ctrl + D </div>
+                        <a class="consultation__favourites-btn  text" href="#" rel="sidebar">
+                            Добавить сайт <br> в избранное
+                        </a>
+                    </div>
+                </div>
+            </div> <!-- /consultation__offer -->
+    
+    
+            <div class="consultation__advas">
+                <div class="consultation__advas-item">
+                    <div class="consultation__advas-icon">
+                        <img src="assets/img/consultation/i-1.png" alt="">
+                    </div>
+                    <div class="consultation__advas-text  tsm13">
+                        Опытная и крутая команда,
+                        которая реально поможет Вам
+                        сделать квартиру мечты
+                    </div>
+                </div>
+    
+                <div class="consultation__advas-item">
+                    <div class="consultation__advas-icon">
+                        <img src="assets/img/consultation/i-2.png" alt="">
+                    </div>
+                    <div class="consultation__advas-text  tsm13">
+                        Если нужно, мы будем рады выполнить
+                        проект в комплексе, взяв на себя
+                        все заботы по ремонту под ключ
+                    </div>
+                </div>
+    
+                <div class="consultation__advas-item">
+                    <div class="consultation__advas-icon">
+                        <img src="assets/img/consultation/i-3.png" alt="">
+                    </div>
+                    <div class="consultation__advas-text  tsm13">
+                        Знаем, где сэкономить ваши
+                        деньги. Ведь сами делали ремонт
+                        и знаем все подводные камни.
+                    </div>
+                </div>
+    
+                <div class="consultation__advas-item">
+                    <div class="consultation__advas-icon">
+                        <img src="assets/img/consultation/i-4.png" alt="">
+                    </div>
+                    <div class="consultation__advas-text  tsm13">
+                        Делаем проект до дех пор, пока не
+                        понравится и дадим любую гарантию
+                        по ремонту, зафиксировав ее в договоре
+                    </div>
+                </div>
+            </div> <!-- /consultation__advas -->
+    
+    
+    
+            <div class="consultation__seo">
+                <h2 class="consultation__seo-title  text24"> Студия дизайн интерьера в Минске </h2>
+    
+                <div class="consultation__seo-before  small-text">
+                    <div class="consultation__seo-content">
+                        <p class="consultation__seo-text">
+                            Сегодня существует масса вариантов стилей и направлений в дизайне интерьеров, при выборе стиля
+                            интерьера для своей будущей квартиры, вам стоит ориентироваться на уже выполненные дизайн
+                            проекты.
+                            Так дизайнер сможет быстрее понять, в каком направлении стоит работать. Профессиональные
+                            дизайнеры
+                            Приват-Дизайн, помогут Вам определить стиль дизайна, выполнят всю работу по подбору отделочных
+                            материалов и мебели.
+                        </p>
+    
+                        <p class="consultation__seo-text">
+                            Вам будут предложены решения, из которых необходимо будет только выбрать самые удачные на ваш
+                            взгляд
+                            варианты.
+                        </p>
+    
+                        <p class="consultation__seo-text">
+                            Заказать дизайн проект в современном стиле очень просто, на фото в нашей галереи работ
+                            выберите что вам нравиться и просто позвоните! Смотрите примеры дизайнерских решений для ваших
+                            Квартир!
+                        </p>
+    
+                        <p class="consultation__seo-text">
+                            Переходите к Портфолио. Мы предоставляем услуги по комплектации наших проектов мебелью.
+                            Качественная
+                            Европейская мебель украсит Ваше жилище, Итальянская мебель подчеркнет неповторимый стиль и вкус
+                            своих обладателей.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="consultation__seo-show">
+                    <button class="consultation__seo-btn">
+                        <img src="assets/img/consultation/ar.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div> <!-- /container -->
+    </section> <!-- /consultation -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/js/app.js"></script>

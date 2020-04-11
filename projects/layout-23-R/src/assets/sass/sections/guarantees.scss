@@ -1,0 +1,134 @@
+.guarantees {
+}
+
+.guarantees__content {
+    color: #ffffff;
+    padding-top: 3vw;
+}
+
+.guarantees__slogan {
+    text-align: center;
+    font-weight: 300;
+    color: #c7cbdb;
+    margin-bottom: 0.7vw;
+}
+
+.guarantees__title {
+    text-align: center;
+    font-family: "History Pro 02", sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 1.5vw;
+
+    opacity: 1;
+    animation-delay: 0ms;
+    animation-duration: 1500ms;
+    animation-fill-mode: both;
+    animation-name: slide-up-in;
+}
+
+.guarantees__subtitle {
+    text-align: center;
+    color: #c7cbdb;
+    margin-bottom: 4.5vw;
+}
+
+.guarantees__inner {   
+    display: flex;   
+    justify-content: space-between;
+}
+
+.guarantees__advas {
+    width: 43%;
+}
+
+.guarantees__advas-title {
+    text-align: center;
+    margin-bottom: 1.5vw;
+}
+
+.guarantees__advas-wrap {    
+    box-shadow: 0 10px 40px rgba(43, 43, 51, 0.2);
+    background-color: #ffffff;
+    padding: 0.9vw;
+    padding-right: 1.5vw;
+}
+
+.guarantees__advas-scroll {
+    height: 27vw;
+    padding: 1.8vw;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.guarantees__list {
+    color: #2b2b33;
+    width: 95%;
+}
+
+.guarantees__item {
+    margin-bottom: 1.5vw;
+}
+
+.guarantees__item-top {   
+    display: flex;   
+    align-items: center;
+    margin-bottom: 1.5vw;
+}
+
+
+.guarantees__item-img {
+    width: 3vw;
+    height: 3vw;   
+    flex-shrink: 0;
+    display: flex;   
+    justify-content: center;
+    margin-right: 1vw;   
+}
+
+.guarantees__item-title {
+    font-weight: 600;
+}
+
+.guarantees__item-text {
+    font-weight: 300;
+}
+
+.guarantees__offer-box {
+    width: 55%;
+}
+
+.guarantees__number {
+    position: relative;
+    margin-bottom: 2.4vw;
+
+    .tooltip {
+        right: 13vw;
+        top: 7vw;
+    }
+
+    .tooltip__hover {
+        width: 26vw;
+        padding: 1.9vw;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+.guarantees__offer {
+    width: 32vw;
+    box-shadow: 0 10px 40px rgba(43, 43, 51, 0.2);
+    background-color: #ffffff;
+    color: #2b2b33;
+    margin-left: 2vw;
+    padding: 2.4vw 1.9vw;
+}
+
+.guarantees__offer-title {
+    font-family: "History Pro 02", sans-serif;
+    text-align: center;
+    margin-bottom: 1.5vw;
+}
+
+.guarantees__offer-text {
+    text-align: center;
+}
