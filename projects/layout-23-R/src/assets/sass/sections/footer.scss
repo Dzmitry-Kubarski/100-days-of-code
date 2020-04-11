@@ -1,0 +1,23 @@
+.footer {
+    padding: 2vw 0;
+}
+
+.footer__inner {
+    display: flex;  
+    justify-content: space-between;   
+    align-items: center;
+}
+
+.footer__item {
+    color: #747474;
+    letter-spacing: 0.6px;
+}
+
+.footer__title {
+    font-family: "History Pro 02", sans-serif;
+}
+
+.footer__privacy {
+    color: #dcbf8b;
+    text-decoration: underline;
+}

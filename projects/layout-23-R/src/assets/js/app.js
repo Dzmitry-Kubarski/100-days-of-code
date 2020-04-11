@@ -139,11 +139,56 @@ $(function () {
 
 
 
-
     // show consultation seo text
 
     $('.consultation__seo-btn').on('click', function () {
         $('.consultation__seo-before').toggleClass('active');
+    });
+
+
+
+    // contacts-slider
+
+    $('.contacts__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        prevArrow: '<button class="contacts__slider-arrow  prev"><img src="assets/img/intro/arrp.png" alt=""></button>',
+        nextArrow: '<button class="contacts__slider-arrow  next"><img src="assets/img/intro/arrn.png" alt=""></button>',
+    });
+
+
+
+    // button to-top
+
+    var offsetTop = $(window).height() * 2;
+    $(window).scroll(function (event) {
+        if ($(document).scrollTop() > offsetTop) {
+            $('.to-top').addClass('active');
+        } else {
+            $('.to-top').removeClass('active');
+        }
+    });
+    $(".to-top").on("click", function (event) {
+        var top = 0;
+        $('body,html').animate({ scrollTop: top }, 1000);
+    });
+
+
+
+
+    // -------- Popup --------
+    $('.call').click(function () {
+        var id = $(this).attr('data-id');
+        $('body').addClass('over-hide');
+        $('.popup__wrap').addClass('active');
+        $('.popup').removeClass('active');
+        $('#' + id).addClass('active');
+    });
+
+    $('.popup__close, .popup__overlay').click(function () {
+        $('.popup__wrap').toggleClass('active');
+        $('body').removeClass('over-hide');
     });
 
 });

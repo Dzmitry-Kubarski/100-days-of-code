@@ -167,4 +167,9 @@
 }
 
 .price__item-label {
+    position: absolute;
+    right: -3vw;
+    top: -5vw;
+    width: 5.5vw;
+    z-index: 5;
 }

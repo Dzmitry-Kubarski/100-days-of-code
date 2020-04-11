@@ -47,11 +47,13 @@
     filter: grayscale(1);
     margin: 0 2.5vw;
     margin-right: 1.7vw;
+
+    &.prev {
+        margin-left: 1.4vw;
+    }
 }
 
-.prev {
-    margin-left: 1.4vw;
-}
+
 
 .next {
 }
@@ -101,6 +103,7 @@
 
         .step-slider__item-title {
             width: auto;
+            font-size: 0.8vw;
         }
     }
 }
