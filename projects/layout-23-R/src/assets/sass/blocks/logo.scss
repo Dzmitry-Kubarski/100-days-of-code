@@ -1,4 +1,8 @@
 .logo {
+
+    span {
+        display: block;
+    }
 }
 
 .logo__link {
@@ -8,4 +12,9 @@
 }
 
 .logo__img {
+}
+
+.logo__text {
+    color: #858aa0;
+    font-size: 0.85vw;
 }

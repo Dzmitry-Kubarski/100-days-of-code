@@ -1,95 +1,117 @@
 <div class="popup__wrap">
     <div class="popup__overlay"></div>
 
-    <div class="popup" id="id-test">
+    <div class="popup  popup-call" id="popup-call">
 
-        <div class="popup__container">
-            <button class="popup__close">×</button>
+        <div class="popup__inner">
+            <div class="popup__manager">
+                <div class="popup__manager-content">
+                    <img src="assets/img/modals/ww.png" alt="">
 
-            <div class="form  popup__form">
-                <p class="form__title">Для записи на пробный урок, введите пожалуйста ваше имя и номер телефона</p>
-
-                <form>
-                    <div class="form__field">
-                        <input class="form__input" type="text" placeholder="Как Вас зовут?">
+                    <div class="popup__manager-name">
+                        <div class="popup__manager-title  small-text"> Виктория Викторовна </div>
+                        <div class="popup__manager-subtitle  tsm12"> Старший менеджер </div>
                     </div>
 
-                    <div class="form__field">
-                        <input class="form__input type=" tel" placeholder="Введите контактный телефон">
+                    <div class="online  popup-call__online">
+                        <span class="online__text">online</span>
+                    </div>
+                </div>
+            </div> <!-- /popup__manager -->
+
+
+            <div class="form  portfolio__form">
+                <div class="form__content">
+                    <h2 class="form__title">
+                        ДАВАЙТЕ ОБСУДИМ
+                        <span>ДЕТАЛИ ВАШЕГО ПРОЕКТА</span>
+                    </h2>
+
+                    <div class="form__line"></div>
+
+                    <div class="messengers">
+                        <div class="messengers__title  text-md"> Можно сразу в удобном для Вас чате: </div>
+                        <div class="messengers__items">
+                            <a href="viber://chat?number=375291936245" target="_blank" class="messengers__item viber">
+                                <span class="tsm13"> Viber </span>
+                                <div class="messengers__item__img">
+                                    <img src="assets/img/consultation/vi.png" alt="">
+                                </div>
+                            </a>
+
+                            <a href="https://wa.me/79119223241?text=Хотите получить предложения по дизайн-интерьеру вашей квартиры?"
+                                target="_blank" class="messengers__item whatsapp">
+                                <span class="tsm13"> Whatsapp </span>
+                                <div class="messengers__item__img">
+                                    <img src="assets/img/consultation/wa.png" alt="">
+                                </div>
+                            </a>
+
+                            <a href="tg://resolve?domain=YauheniHuretski" target="_blank"
+                                class="messengers__item telegram">
+                                <span class="tsm13"> Telegram </span>
+                                <div class="messengers__item__img">
+                                    <img src="assets/img/consultation/tg.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="messengers__subtitle  small-text">
+                            Либо оставьте свой номер телефона <br> и я Вам перезвоню в течении 5 минут
+                        </div>
                     </div>
 
-                    <div class=" form__field">
-                        <button class="btn form__btn">
-                            <span class="btn__blik"></span>
-                            ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК
+                    <form class="portfolio__form-block">
+                        <input class="form__input small-text" type="tel" name="phone" required=""
+                            placeholder="+375 (_ _) _ _ _ - _ _ - _ _">
+                        <button class="btn  popup__btn">
+                            <span class="btn-blick"></span>
+                            Выбрать дату и время
                         </button>
-                        <div class="form__policy">
-                            <input id="radio-1" type="checkbox" class="form__radio" checked>
-                            <label for="radio-1" class="form__radio-label">
-                                <p class="form__policy-text">Я принимаю условия
-                                    <span>передачи информации</span>
-                                </p>
-                            </label>
-                        </div>
-                    </div>
+                    </form>
 
-                    <div class="form-inner__bottom">
-                        <div class="form-contacts">
-                            <p class="form-contacts__title">или позвоните нам:
-                                <a class="form-contacts__phone" href="tel:+375297766307">+375 (29) 776-63-07</a>
-                            </p>
-                            <p class="form-contacts__time">Работаем ежедневно с&nbsp;9.00 до&nbsp;20.00</p>
-                        </div>
-                    </div>
-                </form>
+                    <div class="politics">
+                        <label for="popup-call__politics" class="politics__check-box">
+                            <input class="politics__input" type="checkbox" name="" id="popup-call__politics" required=""
+                                checked="">
+
+                            <div class="politics__row">
+                                <div class="politics__check">
+                                    <span class="politics__check-active">
+                                        <img src="assets/img/portfolio/v.png" alt="">
+                                    </span>
+                                </div>
+
+                                <div class="politics__text  tsm12">
+                                    Вы соглашаетесь c
+                                    <a class="politics__link" href="#" target="_blank">
+                                        Политикой конфиденциальности
+                                    </a>
+                                </div>
+                            </div>
+                        </label>
+                    </div> <!-- /politics -->
+                </div> <!-- /form__content -->
             </div> <!-- /form -->
-        </div>
+
+        </div> <!-- /popup__inner -->
     </div> <!-- /popup -->
 
 
-    <div class="popup" id="questions">
+    <div class="popup" id="js_calculate">
+        <div class="form  popup__form">
+            <div class="popup__close"></div>
 
-        <div class="popup__container">
-            <button class="popup__close">×</button>
+            <p class="form__subtitle">Рассчитать стоимость</p>
+            <h3 class="form__title">СО СКИДКОЙ</h3>
 
-            <div class="form  popup__form">
-                <p class="form__title">Заполните форму, мы вам перезвоним и ответим на все вопросы</p>
-
-                <form>
-                    <div class="form__field">
-                        <input class="form__input" type="text" placeholder="Как Вас зовут?">
-                    </div>
-
-                    <div class="form__field">
-                        <input class="form__input type=" tel" placeholder="Введите контактный телефон">
-                    </div>
-
-                    <div class=" form__field">
-                        <button class="btn form__btn">
-                            <span class="btn__blik"></span>
-                            ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК
-                        </button>
-                        <div class="form__policy">
-                            <input id="radio-1" type="checkbox" class="form__radio" checked>
-                            <label for="radio-1" class="form__radio-label">
-                                <p class="form__policy-text">Я принимаю условия
-                                    <span>передачи информации</span>
-                                </p>
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="form-inner__bottom">
-                        <div class="form-contacts">
-                            <p class="form-contacts__title">или позвоните нам:
-                                <a class="form-contacts__phone" href="tel:+375297766307">+375 (29) 776-63-07</a>
-                            </p>
-                            <p class="form-contacts__time">Работаем ежедневно с&nbsp;9.00 до&nbsp;20.00</p>
-                        </div>
-                    </div>
-                </form>
-            </div> <!-- /form -->
+            <form action="#">
+                <input class="form__input" type="text" placeholder="Введите ваше имя">
+                <input class="form__input" type="tel" placeholder="+7 (___) ___-__-__">
+                <button class="btn  form__btn" type="submit">Вызвать замерщика!</button>
+                <p class="form__privacy">Ваши данные конфиденциальны</p>
+            </form>
         </div>
     </div> <!-- /popup -->
+
 
 </div> <!-- /popup__wrap -->
