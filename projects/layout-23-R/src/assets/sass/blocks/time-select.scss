@@ -1,0 +1,45 @@
+.time-select {
+
+    .fancy-select {
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .fancy-select .trigger {
+        padding: 0;
+        background-color: transparent;
+        padding-right: 2vw;
+        min-height: 1vw;
+    }
+
+    .fancy-select .trigger:after {
+        border: none;
+        width: 0.7vw;
+        height: 0.4vw;
+        background: url("../img/consultation/ar.png") no-repeat center;
+        background-size: 100% 100%;      
+        transform: rotate(0);
+        margin-top: -0.1vw;
+    }
+
+    .fancy-select .trigger.open:after {
+        transform: rotate(180deg);
+    }
+
+    .fancy-select ul.options {
+        margin-top: 0;
+    }
+
+    .fancy-select ul.options li {
+        padding: 0.7vw 0.5vw;
+    }
+
+    .fancy-select ul.options li.selected,
+    .fancy-select ul.options li.hover {
+        color: #ddc18d;
+    }
+
+    .fancy-select ul.options.open {
+        top: 90%;
+    }
+}

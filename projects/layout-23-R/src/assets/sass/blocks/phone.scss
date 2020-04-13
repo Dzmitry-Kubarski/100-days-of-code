@@ -2,6 +2,10 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    @media (max-width: 992px) {
+        align-items: flex-start;   
+    }
 }
 
 .phone__text {
@@ -25,6 +29,10 @@
         background-color: #00af47;
         border-radius: 100%;
         margin-right: 0.4rem;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 1vw;   
     }
 }
 

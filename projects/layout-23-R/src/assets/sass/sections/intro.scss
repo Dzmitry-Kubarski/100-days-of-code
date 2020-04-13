@@ -11,15 +11,29 @@
     align-items: center;
     padding: 5vw 0;
     padding-top: 3vw;  
+
+    @media (max-width: 992px) {
+        flex-wrap: wrap;   
+    }
 }
 
 .intro__content {
     width: 54%;
+
+    @media (max-width: 992px) {
+        width: 100%;
+        text-align: center;   
+        margin-bottom: 2.4vw;
+    }
 }
 
 .intro__subtitle {
     margin-bottom: 0.7vw;
     color: #858aa0;
+
+    @media (max-width: 992px) {
+        font-size: 16px;   
+    }
 }
 
 .intro__title {
@@ -52,6 +66,10 @@
 .intro__text {
     margin-bottom: 2.4vw;
     font-weight: 300;
+
+    @media (max-width: 992px) {
+        font-size: 18px;   
+    }
 }
 
 .intro__buttons {
@@ -59,18 +77,36 @@
     display: flex;  
     align-items: center;   
     justify-content: space-between;
+
+    @media (max-width: 992px) {
+        justify-content: center;   
+    }
 }
 
 .intro__btn {
     width: 21vw;
+
+    @media (max-width: 992px) {
+        width: auto;  
+        padding: 2.3vw 3vw; 
+
+        img {
+            margin-right: 1.5vw;
+        }
+    }
 }
 
 .intro__btn-text {
     font-weight: 600;
+
+    @media (max-width: 992px) {
+        font-size: 16px;   
+    }
 }
 
 .intro__messengers {
     display: flex;
+    display: none;
 }
 
 .intro__messengers-title {
@@ -157,6 +193,11 @@
             opacity: 1;
         }
     }
+
+    @media (max-width: 992px) {
+        width: 100%;
+        position: static;   
+    }
 }
 
 .intro__slider-items {
@@ -184,20 +225,35 @@
 
 
 .intro__slider-num { 
+    font-family: "History Pro 02", sans-serif;
     background-image: linear-gradient(to top, #dcbf8b 0%, #f8e4b8 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media (max-width: 992px) {
+        font-size: 32px;   
+    }
 }
 
 .intro__slider-title {
     margin-bottom: 0.7vw;
     font-weight: 600;
+
+    @media (max-width: 992px) {
+        font-size: 20px;
+    }   
 }
 
 .intro__slider-text {
+
+    @media (max-width: 992px) {
+        font-size: 18px; 
+    }
 }
 
 .intro__slider-arrows {  
+    position: relative;
+    z-index: 105;
     display: flex;   
     align-items: center;
 }

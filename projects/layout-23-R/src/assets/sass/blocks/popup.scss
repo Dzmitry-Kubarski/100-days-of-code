@@ -112,12 +112,68 @@
     &.active {
         display: block;
     }
+
+    .form__title {
+        font-size: 1.07vw;
+    }
 }
 
-.popup__inner {    
-    display: flex;   
-    align-items: center;    
-    justify-content: center;
+.popup__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popup-project {
+    .popup__inner {  
+        display: block;
+        width: 80vw;
+        padding: 3vw 5.5vw;
+        background-color: #fff;
+    }    
+
+    .consultation__form-box {
+        width: 64%;
+        padding-top: 0;
+    }
+
+    .consultation__inner {
+        margin-bottom: 0;
+    }
+
+    .consultation__info-box {
+        width: 31%;
+    }
+
+    .form__title {
+        margin-bottom: 2.4vw;
+    }
+
+    .consultation__info-box .phone__link {
+        font-size: 1.95vw;
+    }
+
+    .consultation__info-time {
+        font-size: 0.85vw;
+    }
+}
+
+.popup__title {
+    font-family: "History Pro 02", sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;    
+    margin-bottom: 1.5vw;
+
+    opacity: 1;
+    animation-delay: 0ms;
+    animation-duration: 1500ms;
+    animation-fill-mode: both;
+    animation-name: slide-up-in;
+}
+
+.popup__subtitle {
+    font-size: 1vw;
+    margin-bottom: 1.5vw;
 }
 
 .popup__manager {

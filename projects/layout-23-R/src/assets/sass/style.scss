@@ -20,10 +20,23 @@
 @import "base";
 
 
+/* mixin for error correction CSS fancybox */
+@function max($numbers...) {
+        @return m#{a}x(#{$numbers});
+    }
+
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+}
+
+
 /* Vendor libs */
 @import "vendor/slick";
 @import "vendor/ion.rangeSlider.min";
 @import "../js/libs/twtw/twentytwenty";
+@import "../js/libs/fancybox/jquery.fancybox";
+@import "../js/libs/fancySelect/fancySelect";
+
 
 
 /* Blocks */
@@ -48,6 +61,7 @@
 @import "blocks/pulse";
 @import "blocks/price-list";
 @import "blocks/social-links";
+@import "blocks/time-select";
 @import "blocks/team";
 @import "blocks/messengers";
 @import "blocks/to-top";
