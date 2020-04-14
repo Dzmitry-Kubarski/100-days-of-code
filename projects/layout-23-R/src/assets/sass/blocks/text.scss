@@ -5,40 +5,81 @@
 
 .text-md {
     font-size: 1.07vw;
+
+    @media (max-width: 900px) {
+        font-size: 1.4rem;  
+    }
   }
 
 .text {
     font-size: 0.97vw;
+
+    @media (max-width: 900px) {
+        font-size: 1.2rem;
+    }
 }
 
 .small-text {
     font-size: 0.92vw;
+
+    @media (max-width: 900px) {
+        font-size: 1.1rem;
+    }
 }
 
 .text24 {
     font-size: 1vw;
+
+    @media (max-width: 900px) {
+        font-size: 1.5rem;
+        
+    }
 }
 
 .text23 {
     font-size: 1.3vw;
+
+    @media (max-width: 900px) {
+         font-size: 1.3rem;
+    }
 }
 
 .text21 {
     font-size: 1.2vw;
+
+    @media (max-width: 900px) {
+        font-size: 1.2rem;   
+    }
 }
 
 .tsm8 {
     font-size: 0.55vw;
+
+    @media (max-width: 900px) {
+        font-size: 0.8rem;   
+    }
 }
 
 .tsm {
     font-size: 0.61vw;
+
+    @media (max-width: 900px) {
+        font-size: 0.9rem;   
+    }
 }
 
 .tsm12 {
     font-size: 0.75vw;
+
+    @media (max-width: 900px) {
+        font-size: 1rem;   
+    }
 }
 
 .tsm13 {
     font-size: 0.85vw;
+
+    @media (max-width: 900px) {
+        font-size: 1.1rem;
+    }
 }

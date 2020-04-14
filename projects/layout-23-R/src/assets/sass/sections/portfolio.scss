@@ -34,8 +34,10 @@
 }
 
 .portfolio__subtitle {
+    position: relative;
+    z-index: 999;
     font-weight: 300;
-    margin-bottom: 2.4vw;
+    margin-bottom: 2.4vw;    
 }
 
 .portfolio__items {   
@@ -50,6 +52,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
+    @media (max-width: 900px) {
+        width: 100%;   
+    }
+
     &--min {
         width: 25%;
         align-self: flex-start;
@@ -57,7 +63,16 @@
         .portfolio__item {
             width: 100%;
         }
+
+        @media (max-width: 900px) {
+            width: 49%;   
+        }
+
+        @media (max-width: 576px) {
+            width: 100%;   
+        }
     }
+    
 }
 
 .portfolio__item {
@@ -98,10 +113,33 @@
             color: #f4f3ef;
             text-transform: none;
             margin-bottom: 0.41vw;
+
+            @media (max-width: 576px) {
+                font-size: 3rem;   
+            }
         } 
+
+        .portfolio__list {
+            @media (max-width: 576px) {
+                font-size: 2rem;  
+                margin-bottom: 2rem;
+                margin-top: 2rem; 
+            }
+        }
+
+        .portfolio__item-text {
+            @media (max-width: 576px) {
+                font-size: 2rem;
+            }
+        }
         
         &::before {
           display: none;
+        }
+
+        @media (max-width: 900px) {
+            flex-direction: column;   
+            padding: 2rem;
         }
     }
 
@@ -129,9 +167,24 @@
             transform: translateY(40%);
         }
     }
+
+    @media (max-width: 900px) {
+        min-height: 35vw;   
+        margin-bottom: 1.5vw;
+    }
+
+    @media (max-width: 576px) {
+        width: 100%;
+        min-height: 64vw;   
+    }
 }
 
 .portfolio__item-content {
+
+    @media (max-width: 900px) {
+        background-color: #fff; 
+        padding: 1.5rem;  
+    }
 }
 
 .portfolio__item-title {
@@ -146,19 +199,26 @@
     font-size: 0.92vw;
     padding-left: 20px;
 
-        &::before {
-            content: '';
-            display: block;
-            position: absolute;
-            top: 50%;
-            left: 0;
-            width: 11px;
-            height: 11px;
-            transform: translateY(-50%);
-            background-image: url('../img/portfolio/cub.png');
-            background-repeat: no-repeat;
-        }
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 11px;
+        height: 11px;
+        transform: translateY(-50%);
+        background-image: url('../img/portfolio/cub.png');
+        background-repeat: no-repeat;
+    }
+
+    @media (max-width: 900px) {
+        font-size: 1.2rem;   
+    }
+        
 }
+
+
 
 .portfolio__hover {
     position: absolute;
@@ -255,6 +315,11 @@
 .portfolio__end {
     width: 74%;
     padding: 2.5vw;
+
+    @media (max-width: 900px) {
+        width: 100%;
+        padding: 2rem;   
+    }
 }
 
 
@@ -274,11 +339,23 @@
     animation-duration: 1500ms;
     animation-fill-mode: both;
     animation-name: slide-up-in;
+
+    @media (max-width: 576px) {
+        br {
+            display: none;
+        }   
+    }
 }
 
 .portfolio__end-subtitle {
     font-weight: 300;
     margin-bottom: 1.5vw;
+
+    @media (max-width: 576px) {
+        br {
+            display: none;
+        }   
+    }
 }
 
 .portfolio__form-box {
@@ -293,6 +370,15 @@
     max-width: none;
     max-height: none;
     animation: transform-shiver 4000ms linear 0ms infinite normal both;
+
+    @media (max-width: 576px) {        
+        position: relative;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        width: 28rem;   
+    }
 }
 
 .portfolio__form {
@@ -319,7 +405,36 @@
     .form__input {
         margin-bottom: 0;
         width: 48%;
-    }    
+
+        @media (max-width: 576px) {
+            width: 100%;   
+            margin-bottom: 0.7rem;
+        }
+    }   
+    
+    @media (max-width: 900px) {
+        width: 57%;   
+    }
+
+    @media (max-width: 768px) {
+        padding: 2.5rem 2rem;   
+    }
+
+    @media (max-width: 576px) {
+        width: 100%; 
+        margin-top: 2rem;  
+
+        .politics__link {
+            // display: inline-block;
+        }
+
+        .form__title {
+            margin-bottom: 0.7rem;
+            br {
+                display: none;
+            }
+        }
+    }
 }
 
 .portfolio__form-btn {
@@ -328,6 +443,10 @@
     b {
         font-weight: 600;
     }
+
+    @media (max-width: 576px) {
+        width: 100%;   
+    }
 }
 
 .portfolio__form-block {
@@ -335,4 +454,8 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1.5vw;
+
+    @media (max-width: 576px) {
+        flex-direction: column;   
+    }
 }

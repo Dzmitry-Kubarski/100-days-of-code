@@ -12,12 +12,14 @@
         .tooltip__hover {
             transform: translateX(-50%) scale(1);
             opacity: 1;
-        }
+        }       
+    }
 
-        .tooltip__icon {
-            
-        }
-        
+    @media (max-width: 900px) {
+      width: 1.5rem;
+      height: 1.5rem; 
+      right: 0.7rem;
+      top: 0.7rem;
     }
 }
 
@@ -47,6 +49,14 @@
     background-color: #fff;
     padding: 0.8vw;
     transition: all 0.4s;
+
+    @media (max-width: 900px) {
+      padding: 1rem;
+    }
+
+    @media (max-width: 576px) {
+      width: 12rem; 
+    };
 }
 
 .tooltip__text {

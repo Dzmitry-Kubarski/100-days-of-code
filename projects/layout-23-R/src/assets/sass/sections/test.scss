@@ -3,6 +3,12 @@
     padding: 6vw 0;
 }
 
+// .test__container {
+//     @media (max-width: 900px) {
+//         padding: 3rem;   
+//     }
+// }
+
 .test__bg-absolute {
     position: absolute;
     left: 3vw;
@@ -38,7 +44,7 @@
 
 .test__title {
     font-family: "History Pro 02", sans-serif;
-    font-size: 2.6vw;
+    // font-size: 2.6vw;
     font-weight: 300;
     line-height: 1.1;
     text-align: center;
@@ -50,6 +56,10 @@
     animation-duration: 1500ms;
     animation-fill-mode: both;
     animation-name: slide-up-in;
+
+    @media (max-width: 375px) {
+        margin-bottom: 1.5rem;   
+    }
 }
 
 .test__subtitle {
@@ -84,6 +94,15 @@
             width: 1.1vw;
             height: 1.1vw;
         }
+
+        @media (max-width: 900px) {
+            // padding-left: 20px;
+
+            &::before {
+                width: 21px;
+                height: 20px;
+            }
+        }
     }   
 }
 
@@ -108,6 +127,10 @@
         width: calc(100% - 14px);
         height: calc(100% - 14px);
         z-index: 1;
+    }
+
+    @media (max-width: 900px) {
+        padding: 3rem;   
     }
 }
 

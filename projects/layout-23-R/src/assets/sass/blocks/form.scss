@@ -1,6 +1,10 @@
 .form {
     position: relative;
     width: 55%;
+
+    .btn {
+        padding: 2rem 1rem;
+    }
 }
 
 .form__wrap {
@@ -23,6 +27,12 @@
     width: 100%;
     position: relative;
     margin-bottom: 1.5vw;
+
+    @media (max-width: 900px) {
+        height: 4.5rem;
+        padding: 0.3rem 1rem;   
+        margin-bottom: 1.5rem;
+    }    
 }
 
 .form__content {
@@ -67,11 +77,28 @@
     top: -8vw;
     text-align: center;
     padding: 2.5vw;
+
+    @media (max-width: 900px) {
+        width: 15rem;
+        height: 15rem;
+        right: -11rem;
+        top: -10rem;
+        padding: 2.5rem;
+        padding-top: 3.5rem;   
+    }
+
+    @media (max-width: 576px) {
+        display: none;   
+    }
 }
 
 .form__label-subtitle {
     margin-bottom: 0.41vw;
     font-size: 0.61vw;
+
+    @media (max-width: 900px) {
+        font-size: 0.9rem;   
+    }
 }
 
 .form__label-title {

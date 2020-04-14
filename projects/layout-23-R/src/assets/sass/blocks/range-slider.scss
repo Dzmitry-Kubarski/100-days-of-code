@@ -4,6 +4,14 @@
     justify-content: space-between;
     flex-direction: column;
     width: 67%;
+
+    @media (max-width: 900px) {
+      margin-bottom: 2.4rem; 
+    }
+
+    @media (max-width: 576px) {
+      width: 100%; 
+    }
 }
 
 .range-slider__header {   

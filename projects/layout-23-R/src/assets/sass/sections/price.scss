@@ -32,12 +32,20 @@
     margin-bottom: 2.4vw;
     font-weight: 300;
     color: #c7cbdb;
+
+    @media (max-width: 900px) {
+        margin-bottom: 4rem;   
+    }
 }
 
 .price__items {   
     display: flex;  
     justify-content: space-between;   
     align-items: flex-start;
+
+    @media (max-width: 900px) {
+        flex-wrap: wrap;   
+    }
 }
 
 .price__item {
@@ -54,6 +62,19 @@
             border-bottom: 1px solid #999ca9;
             padding-bottom: 1.5vw;
             margin-bottom: 1.5vw;
+
+            @media (max-width: 900px) {
+                display: inline-block;   
+            }
+        }
+
+        @media (max-width: 900px) {
+            width: 100%;
+            text-align: center;   
+        }
+
+        @media (max-width: 576px) {
+
         }
     }
 
@@ -75,17 +96,30 @@
             width: calc(100% - 14px);
             height: calc(100% - 14px);
         }
+
+        @media (max-width: 900px) {
+            width: 49%;   
+            margin-bottom: 3rem;
+        }
+
+        @media (max-width: 576px) {
+            width: 90%;   
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     .portfolio__list {
         color: #636674;
         margin-bottom: 2.4vw;
+    }    
+
+    @media (max-width: 900px) {
+        padding: 2.6rem 2rem;   
     }
 }
 
-.price__item--info {
-   
-}
+
 
 .price__item-title {
     font-family: "History Pro 02", sans-serif;
@@ -101,16 +135,40 @@
     span {
          text-transform: uppercase;
     }
+
+    @media (max-width: 576px) {
+        margin-bottom: 1.5rem;
+    }
 }
 
 
 .price__advantages {
+
+    @media (max-width: 900px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;   
+        margin-bottom: 2rem;
+    }
+
+    @media (max-width: 576px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .price__advantages-item {
     display: flex;
     align-items: center;
     margin-bottom: 1.5vw;
+
+    @media (max-width: 900px) {
+        width: 35%;   
+    }
+
+    @media (max-width: 576px) {
+        width: 300px;   
+    }
 }
 
 .price__advantages-icon {
@@ -156,6 +214,11 @@
     font-size: 0.92vw;
     display: inline-flex;
     width: 90%;
+
+    @media (max-width: 900px) {
+        padding: 1.8rem 1rem;
+        font-size: 1.5rem;   
+    }
 }
 
 .price__item-desc {
@@ -172,4 +235,8 @@
     top: -5vw;
     width: 5.5vw;
     z-index: 5;
+
+    @media (max-width: 576px) {
+        width: 7rem;   
+    }
 }

@@ -3,6 +3,10 @@
     background-color: rgba(38, 38, 44, 0.95);
     padding-top: 2vw;
     padding-bottom: 3vw;
+
+    @media (max-width: 375px) {
+        padding-top: 6vw;   
+    }
 }
 
 .advantages__items { 
@@ -35,10 +39,23 @@
             @media (max-width: 992px) {
                 margin: 0 auto;   
             }
+
+            @media (max-width: 375px) {
+                width: auto;  
+                order: -1;
+                margin-bottom: 15px;
+            }
         }
 
         @media (max-width: 992px) {
             width: 35%;   
+        }
+
+        @media (max-width: 375px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
         }
     }
 
@@ -50,6 +67,8 @@
         @media (max-width: 992px) {
             padding-left: 3vw;
             margin-left: 0vw;
+            flex-shrink: 0;
+            flex-basis: 250px;
         }   
     }
 
@@ -61,6 +80,10 @@
        @media (max-width: 992px) {
             img {
                 margin: 0 auto;
+
+                @media (max-width: 992px) {
+                    max-width: 180px;   
+                }
             }   
        }
     }
@@ -73,15 +96,19 @@
             transform: translate(0, -50%) scale(1.5);
             z-index: -1;
             opacity: 1;
+            max-width: 150px;
        }    
     }
 
     @media (max-width: 992px) {
         width: 35%;
         text-align: center;   
-        margin-bottom: 30px;
+        margin-bottom: 30px;        
+    }
 
-        
+    @media (max-width: 375px) {
+        width: 100%;
+
     }
 }
 
@@ -92,6 +119,11 @@
 
         @media (max-width: 992px) {
             margin: 0 auto;   
+        }
+
+        @media (max-width: 375px) {
+            height: 13vw;
+            margin-top: 10px;   
         }
     }
 
@@ -131,6 +163,10 @@
     justify-content: center;   
     align-items: center;
     margin-top: -1vw;
+
+    @media (max-width: 992px) {
+        min-height: 130px;   
+    }
 }
 
 .advantages__video-play {
@@ -139,6 +175,14 @@
 
     img {
         animation: pulseicon-a 4s infinite linear;
+    }
+
+    @media (max-width: 992px) {
+        width: 7vw;   
+    }
+
+    @media (max-width: 375px) {
+        width: 15vw;   
     }
 }
 

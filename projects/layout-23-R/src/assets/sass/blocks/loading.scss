@@ -18,6 +18,10 @@
     border: 1px solid #dbdad8;
     background-color: #f4f3ef;
     margin-bottom: 1.5vw;
+
+    @media (max-width: 576px) {
+        width: 100%;   
+    }
 }
 
 .loading__input {
@@ -38,6 +42,11 @@
     font-style: italic;
     padding: 1vw;
     padding-left: 1.6vw;
+
+    @media (max-width: 576px) {
+        padding: 1rem;
+        padding-left: 1.6rem;  
+    }
 }
 
 .loading__btn {
@@ -53,5 +62,9 @@
 
     &:hover {
         transform: scale(1.2);
+    }
+
+    @media (max-width: 900px) {
+        padding: 1rem 2rem;  
     }
 }

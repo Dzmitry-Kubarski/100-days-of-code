@@ -17,6 +17,10 @@
     display: flex;   
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 768px) {
+        width: auto;   
+    }
 }
 
 .header__burger-wrap {
@@ -30,6 +34,10 @@
     font-family: "History Pro 02", sans-serif;
     color: #f4f3ef;  
     text-transform: uppercase;
+
+    @media (max-width: 768px) {
+        font-size: 12px;   
+    }
 
 }
 
@@ -68,7 +76,11 @@
 
         &::after {
             bottom: -1rem;
-        }
-         
+        }         
+    }
+
+    @media (max-width: 768px) {
+        height: 3rem;   
+        margin-top: 5px;
     }
 }

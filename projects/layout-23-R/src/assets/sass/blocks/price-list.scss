@@ -4,6 +4,22 @@
     left: 8vw;  
     display: flex;  
     align-items: center;
+
+    @media (max-width: 900px) {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        margin-top: 3rem;  
+        width: 28rem;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    // @media (max-width: 576px) {
+    //     width: 28rem;
+    //     margin-left: auto;
+    //     margin-right: auto;   
+    // }
 }
 
 .price-list__inner {
@@ -34,6 +50,11 @@
         height: calc(100% - 14px);
         z-index: 1;
     }
+
+    @media (max-width: 576px) {
+        width: auto;   
+        margin-right: 0;
+    }
 }
 
 .price-list__bg {
@@ -43,6 +64,10 @@
     width: 18vw;
     max-height: none;
     max-width: none;
+
+    @media (max-width: 900px) {
+        display: none;   
+    }
 }
 
 .price-list__content {
@@ -50,6 +75,11 @@
     transform: skewY(2deg);
     position: relative;
     z-index: 5;
+
+    @media (max-width: 900px) {
+        width: 100%;
+        padding: 2.6rem 2rem;   
+    }
 }
 
 .price-list__title {

@@ -22,6 +22,12 @@
       flex-shrink: 0;
       width: 2.3vw;
       margin-right: 0.5vw;
+
+      @media (max-width: 992px) {
+        width: 30px; 
+      }
+
+      
     }
   }
   

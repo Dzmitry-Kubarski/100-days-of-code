@@ -32,6 +32,12 @@
     background-color: #f4f3ef;
     padding: 0.2vw;
     margin-right: .5vw;
+
+    @media (max-width: 900px) {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 1rem;   
+    }
 }
 
 .politics__check-active {
@@ -47,4 +53,8 @@
 .politics__link {
     color: #dcbf8b;
     text-decoration: underline;
+
+    @media (max-width: 576px) {
+        display: block;   
+    }
 }

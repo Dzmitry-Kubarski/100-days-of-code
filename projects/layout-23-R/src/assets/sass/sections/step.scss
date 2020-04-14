@@ -31,11 +31,19 @@
     animation-duration: 1500ms;
     animation-fill-mode: both;
     animation-name: slide-up-in;
+
+    @media (max-width: 900px) {
+        margin-bottom: 4.5rem;   
+    }
 }
 
 .step__inner {   
     display: flex;   
     align-items: center;
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;   
+    }
 }
 
 .step__items {
@@ -44,6 +52,16 @@
     display: flex;  
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @media (max-width: 900px) {
+        width: 90%;   
+        margin: 0 auto;
+    }
+
+    @media (max-width: 576px) {
+        width: 100%;
+        justify-content: center;   
+    }
 }
 
 .step__item {
@@ -66,13 +84,26 @@
             width: 12vw;
             top: -1.5vw;
             right: -1.5vw;
+
+            @media (max-width: 576px) {
+                width: 12rem;
+                top: -1.5rem;
+                right: -1.5rem;   
+            }
         }
+       
     }
 
     &:nth-child(3) {
         .step__item-img {
             top: -1vw;
             right: -3vw;
+
+            @media (max-width: 576px) {
+                top: -1rem;
+                right: -3rem;
+                width: 16rem; 
+            }
         }
     }
 
@@ -85,6 +116,16 @@
     &:hover {
         z-index: 11;
     }
+
+    @media (max-width: 767px) {
+        padding: 1.5rem;
+        padding-top: 7rem;   
+    }
+
+    @media (max-width: 576px) {
+        width: 28rem;
+        margin-bottom: 3rem;
+    }
 }
 
 .step__item-img {
@@ -92,6 +133,10 @@
     width: 16vw;
     right: 0;
     top: 0;
+
+    @media (max-width: 576px) {
+        width: 15rem;   
+    }
 }
 
 .step__item-subtitle {
@@ -131,6 +176,10 @@
     color: #dcbf8b;
     text-decoration: underline;
     font-size: 0.97vw;
+
+    @media (max-width: 900px) {
+        font-size: 1.2rem;
+    }
 }
 
 .step__tooltip-content {
@@ -168,8 +217,27 @@
         width: 92vw;
         max-width: none;
         max-height: none;
-        animation: transform-shiver 4000ms linear 0ms infinite normal both;
+        animation: transform-shiver 4000ms linear 0ms infinite normal both;     
+        
+        @media (max-width: 576px) {
+            position: relative;
+            left: auto;
+            right: auto;
+            bottom: auto;
+            top: auto;
+            width: 100%;
         }
+    }    
+    
+    
+    @media (max-width: 576px) {
+        position: relative;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        top: auto;
+        width: 100%;   
+    }
 }
 
 .step-mock {
@@ -187,6 +255,10 @@
         border-bottom: 1px solid #999ca9;
         padding-bottom: 1.5vw;;
         margin-bottom: 1.5vw;
+
+        @media (max-width: 900px) {
+            font-size: 1.1rem;   
+        }
     }
 
     .portfolio__form-block {
@@ -196,16 +268,38 @@
     .portfolio__form-btn {
         padding: 1.7vw 1vw;
         width: 100%;
+
+        @media (max-width: 576px) {
+            padding: 2rem 1rem;
+        }
     }
 
     .form__input {
         width: 100%;
         margin-bottom: 1.5vw;
+
+        @media (max-width: 900px) {
+            margin-bottom: 1.5rem;
+        }
     }
 
     .politics {
         white-space: normal;
     }   
+
+    @media (max-width: 900px) {
+        width: 57%;   
+    }
+
+    @media (max-width: 768px) {
+        width: 67%;
+        margin-top: 7rem;   
+    }
+
+    @media (max-width: 576px) {
+        width: 100%;
+        margin-top: 2rem;   
+    }
 }
 
 

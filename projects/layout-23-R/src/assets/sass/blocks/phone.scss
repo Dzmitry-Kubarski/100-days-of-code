@@ -6,6 +6,9 @@
     @media (max-width: 992px) {
         align-items: flex-start;   
     }
+    @media (max-width: 768px) {
+        margin-right: 20px;   
+    }
 }
 
 .phone__text {
@@ -34,6 +37,10 @@
     @media (max-width: 992px) {
         font-size: 1vw;   
     }
+
+    @media (max-width: 768px) {
+        font-size: 10px;   
+    }
 }
 
 .phone__link {
@@ -41,4 +48,8 @@
     color: #fff;   
     transition: all 0.4s;
     font-size: 1.5vw;
+
+    @media (max-width: 768px) {
+        font-size: 20px;   
+    }
 }
