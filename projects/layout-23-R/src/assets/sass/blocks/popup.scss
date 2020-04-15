@@ -27,8 +27,8 @@
     
 .popup__close {
     position: absolute;
-    top: 0;
-    right: -75px;
+    top: 1rem;
+    right: 1rem;
     z-index: 2;
     width: 40px;
     height: 40px;
@@ -64,12 +64,11 @@
         }
     }  
 
-    @media (max-width: 375px) {
-        right: -10px;
-        // transform: translateX(50%);
+    @media (max-width: 375px) {       
+        right: 5px;
         top: 125px;
         height: 30px;
-        width: 30px;      
+        width: 30px;
     }
 }
     
@@ -138,34 +137,72 @@
 .popup-project {
     .popup__inner {  
         display: block;
-        width: 80vw;
+        width: 90vw;
         padding: 3vw 5.5vw;
-        background-color: #fff;
+        background-color: #fff;        
     }    
 
     .consultation__form-box {
         width: 64%;
         padding-top: 0;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            margin-bottom: 3rem;   
+        }
     }
 
     .consultation__inner {
         margin-bottom: 0;
+
+        @media (max-width: 768px) {
+               flex-wrap: wrap;
+               justify-content: center;
+        }
     }
 
     .consultation__info-box {
         width: 31%;
+
+        @media (max-width: 768px) {
+            width: 100%;   
+        }
     }
 
     .form__title {
         margin-bottom: 2.4vw;
+
+        @media (max-width: 900px) {
+            font-size: 1.1rem;   
+        }
     }
 
     .consultation__info-box .phone__link {
         font-size: 1.95vw;
+
+        @media (max-width: 900px) {
+            font-size: 1.4rem;   
+        }
     }
 
     .consultation__info-time {
         font-size: 0.85vw;
+
+        @media (max-width: 900px) {
+            font-size: 1rem;   
+        }
+    }
+
+    .phone__text {
+        @media (max-width: 900px) {
+            font-size: 1rem;
+            width: 100%;   
+            margin-bottom: 0.7rem;
+        }
+    }
+
+    .phone {
+        margin-left: 0;
     }
 }
 
@@ -185,6 +222,10 @@
 .popup__subtitle {
     font-size: 1vw;
     margin-bottom: 1.5vw;
+
+    @media (max-width: 900px) {
+        font-size: 1.1rem;   
+    }
 }
 
 .popup__manager {

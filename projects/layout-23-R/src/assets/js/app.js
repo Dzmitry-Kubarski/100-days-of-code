@@ -81,4 +81,47 @@ $(function () {
     /* fancy-select */
     $('.fancyselect').fancySelect();
 
+
+
+    // portfolio scroll
+
+    $('.services__menu-link').on('click', function (event) {
+        event.preventDefault();
+        var id2 = $('#portfolio').offset().top;
+        $('body,html').animate({ scrollTop: id2 }, 500);
+    });
+
+
+
+    // price scroll
+
+    $('.services__menu-link').on('click', function (event) {
+        event.preventDefault();
+        var id2 = $('#price').offset().top;
+        $('body,html').animate({ scrollTop: id2 }, 500);
+    });
+
+
+
+    // more guarantees 
+
+    $('.js-more').on('click', function (event) {
+        event.preventDefault();
+        var id2 = $('#guarantees').offset().top;
+        $('body,html').animate({ scrollTop: id2 }, 500);
+    });
+
+
+
+
+
+    // menu scroll
+
+    $('.menu a').click(function () {
+
+        var target = $(this).attr('href');
+        $('html, body').animate({ scrollTop: $(target).offset().top }, 1000);
+        return false;
+    });
+
 });

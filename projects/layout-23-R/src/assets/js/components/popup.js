@@ -1,4 +1,4 @@
-$('.call, .price__item-btn, .portfolio__hover-btn').click(function () {
+$('.call, .price__item-btn, .portfolio__hover-btn, .js-details').click(function () {
     var id = $(this).attr('data-id');
     $('html').addClass('over-hide');
     $('.popup__wrap').addClass('active');

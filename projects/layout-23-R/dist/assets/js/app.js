@@ -4121,10 +4121,9 @@ $(function () {
     
             if (number === maxNumber - 2) {
                 $(".quiz__btn-wrap").hide();
-                $(".quiz__banner-inner, .quiz__banner").hide();
                 $(".quiz__question, .test__inner").hide();
                 $(".quiz").hide();
-                $(".data-loading").fadeIn(600);
+                $(".data-loading").addClass('active');
                 $('.data-loading__bg').animate({
                     'width': "100%",
                 },
@@ -4139,7 +4138,6 @@ $(function () {
                     $(".test__inner").show().addClass('end');
                     $(".quiz__question").eq(number + 1).fadeIn(600);
                     $(".quiz__banner-inner .end, .quiz__banner").fadeIn(600);
-                    // $('.hand-end').fadeIn();
                 }, 4000);
             } else {
                 $(".quiz__question").hide();
@@ -4149,15 +4147,11 @@ $(function () {
             if (number === maxNumber - 1) {
                 $(".quiz__banner-inner").hide();
                 $(".quiz__banner-inner .end").fadeIn(500);
-                // btnNext.hide();
-    
             }
-    
     
             progress(number);
     
             animateTop();
-            // $('.test-left-img').attr({'src': 'assets/img/test/a-'+ (number + 1) +'.png'});
             $(".quiz__num-current").text(number + 1);
         });
     
@@ -4195,7 +4189,6 @@ $(function () {
             });
     
     
-    
             formThis.find('input[name="qw3"]').each(function (index, el) {
                 if ($(this).prop('checked')) {
                     dopT3 += $(this).val() + ', ';
@@ -4222,7 +4215,7 @@ $(function () {
                     simulate(link, "click");
                 }
     
-                $('html').addClass('stop');
+                $('html').addClass('over-hide');
                 $(".overlay").fadeOut();
                 $("#modal-thank").fadeIn();
                 formThis.find('.btn').removeAttr('disabled');
@@ -4239,7 +4232,7 @@ $(function () {
                     simulate(link, "click");
                 }
     
-                $('html').addClass('stop');
+                $('html').addClass('over-hide');
                 $(".overlay").fadeOut();
                 $("#modal-thank").fadeIn();
                 formThis.find('.btn').removeAttr('disabled');
@@ -4255,14 +4248,14 @@ $(function () {
                 });
     
                 $(".overlay").fadeOut();
-                $('html').addClass('stop');
+                $('html').addClass('over-hide');
                 $("#modal-thank").fadeIn();
             } else if (formThis.find('input[name="formname"]').val() === "proj") {
     
     
             } else {
                 $(".overlay").fadeOut();
-                $('html').addClass('stop');
+                $('html').addClass('over-hide');
                 $("#modal-thank").fadeIn();
                 formThis.find('.btn').removeAttr('disabled');
     
@@ -4271,19 +4264,17 @@ $(function () {
             // formThis.find('.btn').removeAttr('disabled');
             $('form').trigger('reset');
     
-            $.ajax({
-                url: action,
-                type: 'POST',
-                contentType: false,
-                processData: false,
-                data: fd,
-                success: function (msg) {
+            // $.ajax({
+            //     url: action,
+            //     type: 'POST',
+            //     contentType: false,
+            //     processData: false,
+            //     data: fd,
+            //     success: function (msg) {
     
+            //     },
     
-    
-                },
-    
-            });
+            // });
         });
     });
 
@@ -4433,7 +4424,7 @@ $(function () {
 
 
     /* Popup */
-    $('.call, .price__item-btn, .portfolio__hover-btn').click(function () {
+    $('.call, .price__item-btn, .portfolio__hover-btn, .js-details').click(function () {
         var id = $(this).attr('data-id');
         $('html').addClass('over-hide');
         $('.popup__wrap').addClass('active');
@@ -4487,5 +4478,48 @@ $(function () {
 
     /* fancy-select */
     $('.fancyselect').fancySelect();
+
+
+
+    // portfolio scroll
+
+    $('.services__menu-link').on('click', function (event) {
+        event.preventDefault();
+        var id2 = $('#portfolio').offset().top;
+        $('body,html').animate({ scrollTop: id2 }, 500);
+    });
+
+
+
+    // price scroll
+
+    $('.services__menu-link').on('click', function (event) {
+        event.preventDefault();
+        var id2 = $('#price').offset().top;
+        $('body,html').animate({ scrollTop: id2 }, 500);
+    });
+
+
+
+    // more guarantees 
+
+    $('.js-more').on('click', function (event) {
+        event.preventDefault();
+        var id2 = $('#guarantees').offset().top;
+        $('body,html').animate({ scrollTop: id2 }, 500);
+    });
+
+
+
+
+
+    // menu scroll
+
+    $('.menu a').click(function () {
+
+        var target = $(this).attr('href');
+        $('html, body').animate({ scrollTop: $(target).offset().top }, 1000);
+        return false;
+    });
 
 });

@@ -98,10 +98,9 @@ function btnClick() {
 
         if (number === maxNumber - 2) {
             $(".quiz__btn-wrap").hide();
-            $(".quiz__banner-inner, .quiz__banner").hide();
             $(".quiz__question, .test__inner").hide();
             $(".quiz").hide();
-            $(".data-loading").fadeIn(600);
+            $(".data-loading").addClass('active');
             $('.data-loading__bg').animate({
                 'width': "100%",
             },
@@ -116,7 +115,6 @@ function btnClick() {
                 $(".test__inner").show().addClass('end');
                 $(".quiz__question").eq(number + 1).fadeIn(600);
                 $(".quiz__banner-inner .end, .quiz__banner").fadeIn(600);
-                // $('.hand-end').fadeIn();
             }, 4000);
         } else {
             $(".quiz__question").hide();
@@ -126,15 +124,11 @@ function btnClick() {
         if (number === maxNumber - 1) {
             $(".quiz__banner-inner").hide();
             $(".quiz__banner-inner .end").fadeIn(500);
-            // btnNext.hide();
-
         }
-
 
         progress(number);
 
         animateTop();
-        // $('.test-left-img').attr({'src': 'assets/img/test/a-'+ (number + 1) +'.png'});
         $(".quiz__num-current").text(number + 1);
     });
 
@@ -172,7 +166,6 @@ $(function () {
         });
 
 
-
         formThis.find('input[name="qw3"]').each(function (index, el) {
             if ($(this).prop('checked')) {
                 dopT3 += $(this).val() + ', ';
@@ -199,7 +192,7 @@ $(function () {
                 simulate(link, "click");
             }
 
-            $('html').addClass('stop');
+            $('html').addClass('over-hide');
             $(".overlay").fadeOut();
             $("#modal-thank").fadeIn();
             formThis.find('.btn').removeAttr('disabled');
@@ -216,7 +209,7 @@ $(function () {
                 simulate(link, "click");
             }
 
-            $('html').addClass('stop');
+            $('html').addClass('over-hide');
             $(".overlay").fadeOut();
             $("#modal-thank").fadeIn();
             formThis.find('.btn').removeAttr('disabled');
@@ -232,14 +225,14 @@ $(function () {
             });
 
             $(".overlay").fadeOut();
-            $('html').addClass('stop');
+            $('html').addClass('over-hide');
             $("#modal-thank").fadeIn();
         } else if (formThis.find('input[name="formname"]').val() === "proj") {
 
 
         } else {
             $(".overlay").fadeOut();
-            $('html').addClass('stop');
+            $('html').addClass('over-hide');
             $("#modal-thank").fadeIn();
             formThis.find('.btn').removeAttr('disabled');
 
@@ -248,19 +241,17 @@ $(function () {
         // formThis.find('.btn').removeAttr('disabled');
         $('form').trigger('reset');
 
-        $.ajax({
-            url: action,
-            type: 'POST',
-            contentType: false,
-            processData: false,
-            data: fd,
-            success: function (msg) {
+        // $.ajax({
+        //     url: action,
+        //     type: 'POST',
+        //     contentType: false,
+        //     processData: false,
+        //     data: fd,
+        //     success: function (msg) {
 
+        //     },
 
-
-            },
-
-        });
+        // });
     });
 });
 

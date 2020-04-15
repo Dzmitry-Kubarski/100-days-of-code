@@ -231,6 +231,14 @@
     &:last-child {
         margin-bottom: 0;
     }
+
+    @media (max-width: 900px) {
+        margin-bottom: 1rem;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .services__menu-icon {
