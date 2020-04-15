@@ -6,11 +6,21 @@
     display: flex;  
     justify-content: space-between;   
     align-items: center;
+
+    @media (max-width: 576px) {
+        flex-direction: column;   
+        justify-content: center;
+    }
 }
 
 .footer__item {
     color: #747474;
     letter-spacing: 0.6px;
+
+    @media (max-width: 576px) {
+        text-align: center;
+        margin: 0.5rem;   
+    }
 }
 
 .footer__title {

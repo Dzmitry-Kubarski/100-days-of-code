@@ -25,9 +25,11 @@
 
       @media (max-width: 992px) {
         width: 30px; 
-      }
+      }     
+    }
 
-      
+    @media (max-width: 900px) {
+      padding: 1.8rem 1rem; 
     }
   }
   
@@ -109,6 +111,10 @@
   
   .btn.big {
     padding: 1.7vw 1vw;
+
+    @media (max-width: 900px) {
+      padding: 2rem 1rem;
+    }
   }
   
   .btn.min {

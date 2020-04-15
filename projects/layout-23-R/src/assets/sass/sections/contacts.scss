@@ -12,6 +12,10 @@
         font-size: 0.75vw;
         color: #747474;
         letter-spacing: 0.6px;
+
+        @media (max-width: 900px) {
+            font-size: 1rem;   
+        }
     }
 
     .messengers {
@@ -20,6 +24,10 @@
 
     .messengers__items {
         margin-bottom: 0.7vw;
+
+        @media (max-width: 768px) {
+            justify-content: flex-start;   
+        }
     }
 
     .messengers__item {
@@ -27,6 +35,10 @@
 
         span {
             font-size: 0.61vw;
+
+            @media (max-width: 900px) {
+                font-size: 0.9rem;   
+            }
         }
     }
 
@@ -53,20 +65,58 @@
 .contacts__inner {
     display: flex;  
     justify-content: space-between;
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: center;   
+    }
 }
 
 .contacts__item {
 
     &:nth-child(1) {
         width: 23%;
+
+        @media (max-width: 768px) {
+            width: 47%;
+            margin: 1rem 1.5%;   
+        }
+
+        @media (max-width: 576px) {
+            width: 28rem;   
+        }
     }
 
     &:nth-child(2) {
         width: 34%;
+
+        @media (max-width: 768px) {
+            order: 3;
+            width: 47%;
+            margin-top: 3rem;  
+        }
+
+        @media (max-width: 576px) {
+            width: 28rem;   
+        }
     }
 
     &:nth-child(3) {
         width: 20%;
+
+        @media (max-width: 768px) {
+            width: 47%;
+            margin: 1rem 1.5%;   
+        }
+
+        @media (max-width: 576px) {
+            width: 28rem;
+            margin-top: 3rem;   
+        }
+
+        @media (max-width: 375px) {
+            width: 25rem;   
+        }
     }
 }
 
@@ -83,6 +133,11 @@
     border-bottom: 1px solid #999ca9;
     margin-bottom: 1.5vw;
     margin-right: auto;
+
+    @media (max-width: 900px) {
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;   
+    }
 }
 
 .contacts__phone {
@@ -117,6 +172,11 @@
     &:hover {
         color: #dcbf8b;
     }
+
+    @media (max-width: 900px) {
+        font-size: 1.7rem;  
+        margin-bottom: 1.5rem; 
+    }
 }
 
 .contacts__time {
@@ -143,6 +203,11 @@
 
     &:hover {
         color: #dcbf8b;
+    }
+
+    @media (max-width: 900px) {
+        font-size: 1.2rem;  
+        margin-bottom: 1.5rem; 
     }
 }
 
@@ -178,6 +243,14 @@
         &:hover {
             color: #dcbf8b;
         }
+
+        @media (max-width: 900px) {
+            font-size: 1.4rem;   
+        }
+    }
+
+    @media (max-width: 900px) {
+        font-size: 1.2rem;
     }
 }
 
@@ -187,7 +260,7 @@
 .contacts__address-item {
     position: relative;
     margin-bottom: 1.5vw;
-    padding-left: 30px;
+    padding-left: 22px;
 
     &::before {
         content: '';
@@ -221,6 +294,10 @@
     font-size: 0.92vw;
     color: #747474;
     letter-spacing: 0.6px;
+
+    @media (max-width: 900px) {
+        font-size: 1.2rem;   
+    }
 }
 
 .contacts__address-name {
@@ -229,6 +306,10 @@
     color: #fff;
     line-height: 1;  
     transition: all 0.4s;
+
+    @media (max-width: 900px) {
+        font-size: 1.4rem;
+    }
 }
 
 .contacts__social {
@@ -237,11 +318,21 @@
 .contacts__social-title {
     font-weight: bold;
     margin-bottom: 1.5vw;
+
+    @media (max-width: 900px) {
+        margin-bottom: 1.5rem;   
+    }
 }
 
 .contacts__item-text {
     font-weight: 300;
     margin-bottom: 1.5vw;
+
+    @media (max-width: 576px) {
+        br {
+            display: none;
+        }   
+    }
 }
 
 .contacts__video {
@@ -250,6 +341,20 @@
     bottom: auto;
     top: auto;
     width: 25vw;
+
+    @media (max-width: 900px) {
+        width: 34vw;   
+    }
+
+    @media (max-width: 768px) {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        top: auto;
+        width: 27rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .contacts__video-bg {
@@ -262,6 +367,11 @@
     width: 8vw;
     height: 8vw;
     z-index: 6;
+
+    @media (max-width: 576px) {
+        width: 7rem;
+        height: 7rem;   
+    }
 }
 
 .contacts__item-link {
@@ -271,6 +381,11 @@
 
 .contacts__slider {
     padding: 0.55vw 1vw;
+
+    @media (max-width: 768px) {
+        width: 24rem;
+        padding: 1rem 1.4rem;   
+    }
 }
 
 .contacts__slider-item {
@@ -280,6 +395,17 @@
     justify-content: center;
     padding: 1.1vw;
     padding-bottom: 7vw;
+
+    @media (max-width: 900px) {
+        height: 35vw;
+        padding: 1rem;
+        padding-bottom: 6rem;   
+    }
+
+    @media (max-width: 768px) {
+        height: 47rem;
+        border-radius: 2rem;   
+    }
 }
 
 .contacts__slider-arrow {
@@ -303,4 +429,10 @@
     font-size: 0.97vw;
     font-weight: 600; 
     padding: 1.7vw 1vw;
+
+    @media (max-width: 900px) {
+        padding: 2rem 1rem;
+        font-size: 1.2rem;
+        text-align: center;   
+    }
 }

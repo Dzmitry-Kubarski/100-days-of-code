@@ -9,6 +9,10 @@
     max-width: 12vw;
     margin-right: 1vw;
     display: inline-block;
+
+    @media (max-width: 576px) {
+        max-width: 10rem;
+    }
 }
 
 .logo__img {
@@ -17,4 +21,8 @@
 .logo__text {
     color: #858aa0;
     font-size: 0.85vw;
+
+    @media (max-width: 900px) {
+        font-size: 1.1rem;   
+    }
 }

@@ -3,16 +3,29 @@
     color: #ffffff;
     padding-top: 6vw;
     padding-bottom: 6vw;
+
+    @media (max-width: 576px) {
+        padding-bottom: 0;   
+    }
 }
 
 
 .team__inner {   
     display: flex;   
     justify-content: flex-end;
+
+    @media (max-width: 576px) {
+        flex-wrap: wrap;    
+        justify-content: center;   
+    }
 }
 
 .team__content {
     width: 41%;
+
+    @media (max-width: 576px) {
+        width: 100%;   
+    }
 }
 
 .team__slogan {
@@ -57,4 +70,16 @@
     width: 47vw;
     max-width: none;
     max-height: none;
+
+    @media (max-width: 576px) {
+        position: relative;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 2rem;   
+    }
 }

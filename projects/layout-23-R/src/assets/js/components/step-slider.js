@@ -15,7 +15,7 @@ $('.step-slider__items').slick({
         },
 
         {
-            breakpoint: 567,
+            breakpoint: 577,
             settings: {
                 slidesToShow: 1,
             }

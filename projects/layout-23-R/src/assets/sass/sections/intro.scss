@@ -29,6 +29,11 @@
         text-align: center;   
         margin-bottom: 2.4vw;
     }
+
+    @media (max-width: 375px) {
+        padding-top: 3rem;
+        padding-bottom: 3rem;   
+    }
 }
 
 .intro__subtitle {
@@ -108,7 +113,7 @@
     }
 
     @media (max-width: 768px) {
-        padding: 25px 25px;   
+        padding: 1.8rem 1rem;  
     }
 }
 
@@ -214,6 +219,10 @@
         width: 100%;
         position: static;   
     }
+
+    @media (max-width: 375px) {
+        // padding-top: 6rem;   
+    }
 }
 
 .intro__slider-items {
@@ -256,8 +265,8 @@
     font-weight: 600;
 
     @media (max-width: 992px) {
-        font-size: 16px;
-        margin-bottom: 1vw;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
     }  
     
     @media (max-width: 360px) {
@@ -268,8 +277,8 @@
 .intro__slider-text {
 
     @media (max-width: 992px) {
-        font-size: 16px; 
-        font-weight: 30;
+        font-size: 1.1rem; 
+        font-weight: 300;
     }
 
     @media (max-width: 360px) {

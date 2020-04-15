@@ -4382,7 +4382,7 @@ $(function () {
             },
     
             {
-                breakpoint: 567,
+                breakpoint: 577,
                 settings: {
                     slidesToShow: 1,
                 }

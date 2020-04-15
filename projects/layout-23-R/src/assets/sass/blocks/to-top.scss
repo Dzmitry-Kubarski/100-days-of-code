@@ -25,11 +25,23 @@
         border-bottom: 1vw solid #fff;       
         transform: translateY(-25%);       
         transition: all 0.4s;
+
+        @media (max-width: 576px) {
+            border: 0.8rem solid transparent;
+            border-bottom: 1rem solid #fff;   
+        }
     }
 
 
     &.active {
         opacity: 1;       
         transform: scale(1);
+    }
+
+    @media (max-width: 576px) {
+        width: 3.5rem;
+        height: 3.5rem;
+        padding: 0.5rem;
+        right: 0.8rem;   
     }
 }

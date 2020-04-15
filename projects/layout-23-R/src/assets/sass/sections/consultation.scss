@@ -1,6 +1,6 @@
 .consultation {
     position: relative;
-    padding-top: 4vw;
+    padding-top: 4vw;    
 }
 
 .consultation__title-box {
@@ -29,12 +29,22 @@
     display: flex;   
     justify-content: space-between;
     margin-bottom: 4.5vw;
+
+    @media (max-width: 768px) {
+        justify-content: center;
+        flex-wrap: wrap;   
+    }
 }
 
 .consultation__form-box {
     position: relative;
     width: 53%;
     padding-top: 6vw;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
 }
 
 .consultation__form-bg {
@@ -54,15 +64,34 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @media (max-width: 576px) {
+            width: 100%;   
+        }
     }
 
     .politics {
         margin-top: 0.7vw;
+
+        @media (max-width: 900px) {
+            margin-top: 1rem;   
+        }
+    }
+
+    .politics__link {
+        @media (max-width: 900px) {
+            display: block;   
+        }
     }
 
     .quiz__answer {   
         display: block;     
         margin-bottom: 0.7vw;
+
+        @media (max-width: 576px) {
+            display: inline-block;
+            width: 45%;   
+        }
     }
 
     .quiz__checkbox {
@@ -82,6 +111,10 @@
             display: block;
             font-size: 0.75vw;
             font-weight: 300;
+
+            @media (max-width: 900px) {
+                font-size: 1.1rem;   
+            }
         }
     }
 
@@ -89,12 +122,21 @@
 
 .consultation__select-wrap {
     width: 23%;
+
+    @media (max-width: 576px) {
+        width: 100%;  
+        margin-bottom: 2rem; 
+    }
 }
 
 .consultation__select-title {
     color: #747474;
     letter-spacing: 0.6px;
     margin-bottom: 0.7vw;
+
+    @media (max-width: 900px) {
+        margin-bottom: 1rem;   
+    }
 }
 
 
@@ -122,6 +164,27 @@
         color: #2b2b33;
         font-size: 2.6vw;
         line-height: 1.1;
+
+        @media (max-width: 900px) {
+            font-size: 2.6rem;   
+        }
+    }
+
+    .phone__text {
+        @media (max-width: 900px) {
+            font-size: 1.2rem;   
+        }
+    }
+
+    .phone {
+        @media (max-width: 900px) {
+            margin-right: 0; 
+            align-items: center;
+        }
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;   
     }
 }
 
@@ -139,12 +202,21 @@
         position: absolute;
         top: 50%;
         left: 0;
-        width: 1.3vw;
-        height: 1.3vw;
+        width: 1.4rem;
+        height: 1.4rem;
         background-image: url('../img/consultation/time.png');
         background-repeat: no-repeat;
         background-position: left center;
         transform: translateY(-50%);
+
+        @media (max-width: 900px) {            
+            margin-right: 0.5rem;   
+        }
+    }
+
+    @media (max-width: 900px) {
+        font-size: 1.4rem; 
+        margin-bottom: 2.4rem;  
     }
 }
 
@@ -156,6 +228,11 @@
 
 .consultation__offer-content {
     width: 41%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        text-align: center;   
+    }
 }
 
 .consultation__offer-title {
@@ -169,6 +246,10 @@
     animation-duration: 1500ms;
     animation-fill-mode: both;
     animation-name: slide-up-in;
+
+    @media (max-width: 768px) {
+           
+    }
 }
 
 .consultation__offer-subtitle {
@@ -181,6 +262,10 @@
     flex-wrap: wrap;  
     align-items: center;  
     flex-direction: column;
+
+    @media (max-width: 900px) {
+        display: none;   
+    }
 }
 
 .consultation__favourites-slogan {
@@ -200,7 +285,7 @@
     font-size: 1.5vw;
     font-weight: 300;
     margin-bottom: 1.5vw;
-    padding-left: 3vw;;
+    padding-left: 5rem;
 
     opacity: 1;
     animation-delay: 0ms;
@@ -214,11 +299,12 @@
         position: absolute;
         top: 50%;
         left: 0;
-        width: 3vw;
-        height: 2vw;
+        width: 3.9rem;
+        height: 3.9rem;
+        margin-right: 0.7rem;
         background-image: url('../img/consultation/like.png');
         background-repeat: no-repeat;
-        transform: translateY(-50%);
+        transform: translateY(-50%);        
     }
 }
 
@@ -253,11 +339,24 @@
     display: flex;   
     justify-content: space-between;
     margin-bottom: 2.4vw;
+
+    @media (max-width: 576px) {
+        flex-wrap: wrap;   
+    }
 }
 
 .consultation__advas-item {
     width: 23%;   
     display: flex;
+
+    @media (max-width: 576px) {
+        width: 47%;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;       
+        align-items: center;       
+        flex-direction: column;
+        text-align: center; 
+    }
 }
 
 .consultation__advas-icon {
@@ -268,6 +367,16 @@
     display: flex;   
     align-items: center;   
     justify-content: center;
+
+    @media (max-width: 900px) {
+        width: 3rem;
+        height: 3rem;   
+    }
+
+    @media (max-width: 576px) {
+        margin-right: 0;
+        margin-bottom: 1rem;   
+    }
 }
 
 .consultation__advas-text {
@@ -302,6 +411,10 @@
 
     &.active {
         height: auto;
+    }
+
+    @media (max-width: 900px) {
+        height: 4rem;
     }
 }
 

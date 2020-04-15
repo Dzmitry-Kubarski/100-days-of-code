@@ -27,7 +27,7 @@
     display: flex;  
     align-items: center;
     font-weight: 600;
-    font-size: 1vw;
+    // font-size: 1vw;
     cursor: pointer;
     flex-wrap: wrap;   
     flex-direction: column;
@@ -35,8 +35,12 @@
     color: #f4f3ef;  
     text-transform: uppercase;
 
+    @media (max-width: 900px) {
+        font-size: 1rem;   
+    }
+
     @media (max-width: 768px) {
-        font-size: 12px;   
+        // font-size: 12px;   
     }
 
 }
