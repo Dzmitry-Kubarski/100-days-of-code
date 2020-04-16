@@ -5,6 +5,11 @@
 
 .consultation__title-box {
     padding-left: 40%;
+
+    @media (max-width: 576px) {
+        text-align: center;   
+        padding-left: 0;
+    }
 }
 
 .consultation__title {
@@ -41,9 +46,19 @@
     width: 53%;
     padding-top: 6vw;
 
+    .portfolio__form {
+        @media (max-width: 576px) {
+            margin-top: 0;   
+        }
+    }
+
     @media (max-width: 768px) {
         width: 100%;
         margin-bottom: 3rem;
+    }
+
+    @media (max-width: 576px) {
+        margin-top: 15rem;   
     }
 }
 
@@ -54,6 +69,18 @@
     top: -12vw;
     max-width: none;
     max-height: none;
+
+    @media (max-width: 768px) {
+        width: 34vw;
+        // top: -17vw;   
+    }
+
+    @media (max-width: 576px) {
+        width: 29rem;
+        top: -17rem;
+        left: 50%;      
+        transform: translateX(-57%);   
+    }
 }
 
 .consultation__form {

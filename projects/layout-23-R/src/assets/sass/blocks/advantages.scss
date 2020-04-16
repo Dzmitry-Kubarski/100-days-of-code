@@ -121,6 +121,10 @@
             margin: 0 auto;   
         }
 
+        @media (max-width: 768px) {
+            height: 3.7rem;   
+        }
+
         @media (max-width: 375px) {
             height: 13vw;
             margin-top: 10px;   

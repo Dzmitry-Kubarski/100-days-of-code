@@ -7182,6 +7182,12 @@ box-shadow: 0 0 0 20px rgba(243, 174, 25, 0);
     }
 }
 
+@media (max-width: 768px) {
+    .advantages__item-img--one {
+        height: 3.7rem;
+    }
+}
+
 @media (max-width: 375px) {
     .advantages__item-img--one {
         height: 13vw;
@@ -12837,6 +12843,13 @@ box-shadow: 0 0 0 20px rgba(243, 174, 25, 0);
     padding-left: 40%;
 }
 
+@media (max-width: 576px) {
+    .consultation__title-box {
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
 .consultation__title {
     font-family: "History Pro 02", sans-serif;
     font-weight: 300;
@@ -12879,10 +12892,22 @@ box-shadow: 0 0 0 20px rgba(243, 174, 25, 0);
     padding-top: 6vw;
 }
 
+@media (max-width: 576px) {
+    .consultation__form-box .portfolio__form {
+        margin-top: 0;
+    }
+}
+
 @media (max-width: 768px) {
     .consultation__form-box {
         width: 100%;
         margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .consultation__form-box {
+        margin-top: 15rem;
     }
 }
 
@@ -12893,6 +12918,22 @@ box-shadow: 0 0 0 20px rgba(243, 174, 25, 0);
     top: -12vw;
     max-width: none;
     max-height: none;
+}
+
+@media (max-width: 768px) {
+    .consultation__form-bg {
+        width: 34vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .consultation__form-bg {
+        width: 29rem;
+        top: -17rem;
+        left: 50%;
+        -webkit-transform: translateX(-57%);
+        transform: translateX(-57%);
+    }
 }
 
 .consultation__form {
