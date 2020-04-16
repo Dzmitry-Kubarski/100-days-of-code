@@ -82,4 +82,8 @@
         display: block;
         margin-top: 2rem;   
     }
+
+    @media (max-width: 576px) {
+        align-self: flex-end;   
+    }
 }

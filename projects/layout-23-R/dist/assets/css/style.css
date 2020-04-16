@@ -6790,7 +6790,7 @@ box-shadow: 0 0 0 20px rgba(243, 174, 25, 0);
 
 @media (max-width: 576px) {
     .phone__text {
-        width: 70%;
+        width: 100%;
     }
 }
 
@@ -9085,6 +9085,12 @@ box-shadow: 0 0 0 20px rgba(243, 174, 25, 0);
     }
 }
 
+@media (max-width: 576px) {
+    .team__bg {
+        align-self: flex-end;
+    }
+}
+
 .messengers__title {
     text-align: center;
     font-family: 300px;
@@ -9338,7 +9344,7 @@ box-shadow: 0 0 0 20px rgba(243, 174, 25, 0);
 
 @media (max-width: 375px) {
     .popup__close {
-        right: 5px;
+        right: -1rem;
         top: 125px;
         height: 30px;
         width: 30px;
@@ -9511,6 +9517,13 @@ box-shadow: 0 0 0 20px rgba(243, 174, 25, 0);
 
 .popup-project .phone {
     margin-left: 0;
+}
+
+@media (max-width: 375px) {
+    .popup-project .popup__close {
+        right: 1rem;
+        top: 13rem;
+    }
 }
 
 .popup__title {
@@ -10391,6 +10404,12 @@ box-shadow: 0 0 0 20px rgba(243, 174, 25, 0);
 @media (max-width: 992px) {
     .intro__slider-arrow {
         width: 4vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .intro__slider-arrow.next {
+        margin-left: 3rem;
     }
 }
 
@@ -12157,6 +12176,20 @@ box-shadow: 0 0 0 20px rgba(243, 174, 25, 0);
     margin-bottom: 0.41vw;
 }
 
+@media (max-width: 900px) {
+    .step__tooltip-content p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .step__tooltip-content {
+        width: 30rem;
+        left: 0;
+        padding: 1rem;
+    }
+}
+
 .step__bg {
     position: absolute;
     left: 0;
@@ -12507,10 +12540,24 @@ box-shadow: 0 0 0 20px rgba(243, 174, 25, 0);
     top: 7vw;
 }
 
+@media (max-width: 900px) {
+    .guarantees__number .tooltip {
+        right: 20vw;
+        top: 12vw;
+    }
+}
+
 .guarantees__number .tooltip__hover {
     width: 26vw;
     padding: 1.9vw;
     background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 900px) {
+    .guarantees__number .tooltip__hover {
+        width: 15rem;
+        padding: 1rem;
+    }
 }
 
 .guarantees__offer {

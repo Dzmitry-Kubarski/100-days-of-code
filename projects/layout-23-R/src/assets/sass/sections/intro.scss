@@ -316,6 +316,12 @@
     @media (max-width: 992px) {
         width: 4vw;   
     }
+
+    &.next {
+        @media (max-width: 576px) {
+            margin-left: 3rem;   
+        }
+    }
 }
 
 

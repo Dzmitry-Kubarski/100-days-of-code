@@ -198,12 +198,22 @@
     .tooltip {
         right: 13vw;
         top: 7vw;
+
+        @media (max-width: 900px) {
+            right: 20vw;
+            top: 12vw;
+        }
     }
 
     .tooltip__hover {
         width: 26vw;
         padding: 1.9vw;
         background-color: rgba(255, 255, 255, 0.8);
+
+        @media (max-width: 900px) {
+            width: 15rem; 
+            padding: 1rem;  
+        }
     }
 }
 

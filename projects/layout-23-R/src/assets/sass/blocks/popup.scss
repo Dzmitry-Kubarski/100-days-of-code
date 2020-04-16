@@ -65,7 +65,7 @@
     }  
 
     @media (max-width: 375px) {       
-        right: 5px;
+        right: -1rem;
         top: 125px;
         height: 30px;
         width: 30px;
@@ -203,6 +203,13 @@
 
     .phone {
         margin-left: 0;
+    }
+
+    .popup__close {
+        @media (max-width: 375px) {
+            right: 1rem;
+            top: 13rem;   
+        }
     }
 }
 
