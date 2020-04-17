@@ -15,3 +15,15 @@
 
 .header__logo {
 }
+
+.header__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0px;
+}
+
+
+.header__bottom-wrap {
+    border-top: 1px solid #E7E7E7;;
+}

@@ -1,0 +1,32 @@
+.search {
+    position: relative;
+    width: 100%;
+    max-width: 310px;
+}
+
+.search__input {
+    width: 100%;
+    border: 1px solid #D9D9D9;
+    border-radius: 23px;
+    background-color: #FCFCFC;
+    padding: 11px 10px 11px 45px;
+
+    &::placeholder {
+        font-family: inherit;
+        font-size: 15px;
+        color: #B3B3B3;
+    }
+}
+
+.search__btn {
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    svg {
+        width: 23px;
+        height: 23px;
+    }
+}
+

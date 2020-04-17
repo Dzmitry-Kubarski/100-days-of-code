@@ -32,22 +32,29 @@
     </div> <!-- /header__top-wrap -->
 
 
-    <div class="header__body">
-        <div class="container">
+    <div class="container">
+        <div class="header__body">
+
             <div class="phone  header__phone">
-                <div class="phone__img">
-                    <img src="assets/img/phone.svg" alt="">
+                <div class="phone__icon">
+                    <svg>
+                        <use xlink:href="#svg-phone"></use>
+                    </svg>
                 </div>
 
-                <span class="phone__title">Бесплатный звонок по РФ</span>
-                <a class="phone__number" href="tel:+88005519202">8 800 551-92-02</a>
+                <div class="phone__content">
+                    <span class="phone__title">Бесплатный звонок по РФ</span>
+                    <a class="phone__number" href="tel:+88005519202">8 800 551-92-02</a>
+                </div>
             </div>
 
 
             <div class="search  header__search">
-                <input type="search__input" placeholder="Поиск товара">
+                <input class="search__input" type="search" placeholder="Поиск товара">
                 <button class="search__btn" type="button">
-                    <img src="assets/img/search.svg" alt="search icon">
+                    <svg>
+                        <use xlink:href="#svg-search"></use>
+                    </svg>
                 </button>
             </div>
 
@@ -55,28 +62,89 @@
             <div class="control-products  header__control-products">
                 <div class="control-products__item">
                     <a class="control-products__link  control-products__comparison" href="#">
-                        <img src="assets/img/header/comparison.png" alt="">
+                        <svg>
+                            <use xlink:href="#svg-comparison"></use>
+                        </svg>
+                        <span class="control-products__counter  jsCounterComparison">1</span>
                     </a>
                 </div>
 
                 <div class="control-products__item">
                     <a class="control-products__link  control-products__favourites" href="#">
-                        <img src="assets/img/header/favourites.png" alt="">
+                        <svg>
+                            <use xlink:href="#svg-heart"></use>
+                        </svg>
                         <span class="control-products__counter  jsCounterFavourites">3</span>
                     </a>
                 </div>
 
                 <div class="control-products__item">
                     <a class="control-products__link  control-products__basket" href="#">
-                        <img src="assets/img/header/basket.png" alt="">
+                        <svg>
+                            <use xlink:href="#svg-basket"></use>
+                        </svg>
                         <span class="control-products__counter  jsCounterBasket">2</span>
                     </a>
                 </div>
             </div>
 
-        </div> <!-- /container -->
-    </div> <!-- /header__body -->
+        </div> <!-- /header__body -->
+    </div> <!-- /container -->
 
 
+    <div class="header__bottom-wrap">
+        <div class="container">
+            <div class="headder__bottom-inner">
+
+                <div class="header__btnCatalog-wrap">
+                    <button class="header__btnCatalog" type="button">
+                        <svg>
+                            <use xlink:href="#svg-menu"></use>
+                        </svg>
+                        <span>Каталог товаров</span>
+                    </button>
+                </div>
+
+
+                <nav class="menu  header__menu">
+                    <ul class="menu__list">
+
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Главная</a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Скидки</a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Новинки</a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Бренды</a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Блог</a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Акции</a>
+                        </li>
+                    </ul>
+                </nav> <!-- /menu  header__menu -->
+
+
+                <a class="header__login" href="#">
+                    <svg>
+                        <use xlink:href="#svg-login"></use>
+                    </svg>
+                    <span>Вход/Регистрация</span>
+                </a>
+                
+            </div>
+        </div>
+    </div>
 
 </header> <!-- /header -->

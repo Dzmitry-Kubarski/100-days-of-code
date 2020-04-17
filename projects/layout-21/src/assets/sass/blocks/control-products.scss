@@ -1,0 +1,56 @@
+.control-products {
+    display: flex;
+    align-items: center;
+}
+
+.control-products__item {
+    position: relative;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: 0px 5.81081px 15.1081px rgba(140, 121, 199, 0.3);
+    border-radius: 50%;
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 5px;
+    }
+}
+
+.control-products__link {
+
+    svg {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.control-products__comparison {
+}
+
+
+
+.control-products__favourites {
+}
+
+.control-products__counter {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    width: 16px;
+    height: 16px;
+    background-color: #34C900;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 50%;
+    color: $colorWhite;
+}
+
+
+
+.control-products__basket {
+}
+
