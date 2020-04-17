@@ -315,13 +315,13 @@
     opacity: 1;
 }
 
-.quiz__answer-input:checked ~ div .quiz__checkbox-active {
+.quiz__answer-input:checked ~ span .quiz__checkbox-active {
     box-shadow: 0 0 40px rgba(220, 191, 139, 0.1);
     border: 1px solid #e0c592;
     opacity: 1;
 }
 
-.quiz__answer-input:checked ~ div .quiz__checkbox-active img {
+.quiz__answer-input:checked ~ span .quiz__checkbox-active img {
     transform: scale(1);
 }
 

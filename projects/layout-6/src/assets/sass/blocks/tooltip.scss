@@ -1,0 +1,24 @@
+.tooltip {
+    position: relative;
+    display: inline-block;
+    background: #f2f3f7;
+    border: 6px solid #f0c419;
+    box-shadow: -5px -2px 12px #fff, 5px 2px 12px #d5deeb, inset 2px 2px 6px rgba(221,228,239,.4);
+    border-radius: 12px;
+    padding: 20px 25px 20px 60px;
+    margin-bottom: 50px;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 10px;
+        width: 40px;
+        height: 40px;
+        background-image: url('../img/good.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+}
