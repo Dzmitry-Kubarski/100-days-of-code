@@ -40,13 +40,6 @@
     }  
 
     &.good {
-        // .portfolio__dots-btn {
-        //     border-color: #f0c419;
-
-        //     &:hover {
-        //         border-color: rgba(#ff555d, 0.35);        
-        //     }
-        // }
 
         &::before {
             content: '';
@@ -58,7 +51,13 @@
             height: 55px;
             background-image: url('../img/good.svg');
             background-size: cover;
-            background-repeat: no-repeat;            
+            background-repeat: no-repeat;  
+            pointer-events: none;
+            
+            @media (max-width: 576px) {
+                width: 30px;
+                height: 30px;   
+            }
         }
     }
     

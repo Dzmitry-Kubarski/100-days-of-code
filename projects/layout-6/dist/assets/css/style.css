@@ -987,6 +987,14 @@ body {
     background-image: url("../img/good.svg");
     background-size: cover;
     background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+@media (max-width: 576px) {
+    .portfolio__dots-item.good::before {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 .portfolio__dots-item.new::after {
