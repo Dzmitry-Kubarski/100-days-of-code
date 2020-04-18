@@ -1,4 +1,6 @@
 .header {
+    position: relative;
+    z-index: 10;
 }
 
 .header__top-wrap {
@@ -12,7 +14,6 @@
     padding: 5px 0px;
 }
 
-
 .header__logo {
 }
 
@@ -23,7 +24,97 @@
     padding: 25px 0px;
 }
 
-
 .header__bottom-wrap {
-    border-top: 1px solid #E7E7E7;;
+    border: 1px solid #E7E7E7;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.headder__bottom-inner {    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__btnCatalog-wrap {
+    width: 100%;
+    max-width: 270px;
+    flex-shrink: 0;
+    border-left: 1px solid #E7E7E7;
+    border-right: 1px solid #E7E7E7;
+
+}
+
+.header__btnCatalog {
+    width: 100%;
+    text-align: left;
+    padding: 12px 0px;
+    padding-left: 15px;
+    transition: all .2s linear;
+
+    svg {
+        width: 19px;
+        height: 17px;
+        margin-right: 30px;
+        transition: all .2s linear;
+    }
+
+    span {
+        font-weight: 500;
+        font-size: 18px;
+        color: $colorBlack;
+        transition: color .2s linear;
+    }
+
+    &:hover {
+        span {
+            color: $colorGreen
+        }
+
+        svg {
+            fill: $colorGreen        
+        }
+    }
+}
+
+.header__menu {
+}
+
+.header__login-wrap {
+    width: 100%;
+    max-width: 270px;
+    flex-shrink: 0;
+    border-left: 1px solid #E7E7E7;
+    border-right: 1px solid #E7E7E7;
+}
+
+.header__login {    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0px;
+
+    svg {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+        transition: all .2s linear;
+    }
+
+    span {
+        font-weight: normal;
+        font-size: 14px;
+        color: $colorBlack;
+        transition: all .2s linear;
+    }
+
+    &:hover {
+        span {
+            color: $colorGreen;
+        }
+
+        svg {
+            fill: $colorGreen;            
+        }
+    }
 }

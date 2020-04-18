@@ -1,0 +1,14 @@
+.title {
+    font-weight: 300;
+    font-size: 44px;
+    color: $colorBlack;
+    text-align: center;
+
+
+    span {
+        display: block;
+        font-weight: bold;
+        font-size: 44px;
+        color: $colorPurple;
+    }
+}

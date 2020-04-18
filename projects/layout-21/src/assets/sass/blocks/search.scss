@@ -20,9 +20,15 @@
 
 .search__btn {
     position: absolute;
-    left: 7px;
+    width: 40px;
+    height: 100%;
+    left: 0px;
     top: 50%;
     transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     svg {
         width: 23px;
