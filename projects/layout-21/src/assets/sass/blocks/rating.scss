@@ -1,0 +1,15 @@
+.rating {
+}
+
+.rating__item {
+}
+
+.rating__icon {
+    width: 13px;
+    height: 13px;
+    fill: #D4D4D4;
+
+    &.true {
+        fill: $colorOrange;
+    }
+}
