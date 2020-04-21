@@ -8,40 +8,126 @@
 
 .models__inner {
     display: flex;
-    justify-content: space-between;
-   
+    // justify-content: space-between;   
 }
 
 .models__sidebar {
     width: 100%;
     max-width: 270px;
     flex-shrink: 0;
-
+    margin-right: 30px;
 }
 
 .models__sidebar-list {
 }
 
-.models__sidebar-item {
-    
+.models__sidebar-item {  
+    position: relative;  
     background-color: #fff;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 9.5px;
+    border-radius: 9px;
     margin-bottom: 15px;
+    transition: box-shadow .2s linear;   
 
-    &:last-child {
-        margin-bottom: 0;
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0px;
+        height: 100%;
+        width: 5px;
+        background-color: #DFDFDF;
+        border-radius: 0px 8px 8px 0px;
+        transition: background-color .2s linear;
     }
+
+    &:hover {
+        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.07);
+
+        &::after {
+           background-color: #816BC2;
+        }
+
+        svg {
+            fill: #8D77C8;
+        }
+    }   
 }
 
 .models__sidebar-btn {
     width: 100%;
     min-height: 55px;
+    font-weight: 500;
+    font-size: 14px;
+    color: $colorBlack;
     text-align: left;
     padding-left: 75px;
+
+    svg {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        fill: #C4C4C4;
+        transition: fill .2s linear;
+    } 
+
+    &--apple {
+        svg {
+            width: 18px;
+            height: 22px;
+            left: 22px; 
+        }            
+    }
+
+    &--samsung {
+        svg {
+            left: 13px; 
+            width: 39px;
+            height: 42px; 
+        }                
+    }
+
+    &--xiaomi {
+        svg {
+            left: 15px; 
+            width: 35px;
+            height: 35px;
+        }                
+    }
+
+    &--huawei {
+        svg {
+            left: 18px; 
+            width: 28px;
+            height: 28px;
+        }                
+    }
+
+    &--sale {
+        svg {
+            left: 18px; 
+            width: 27px;
+            height: 28px;
+        }                
+    }
 }
 
 .models__sidebar-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 9px;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.1);
+    background-image: url('../img/models/more.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background: linear-gradient(180deg, rgba(117,213,0, 1) 0%, rgba(115, 207, 2, 1) 100%);
 }
 
 .models__cards {

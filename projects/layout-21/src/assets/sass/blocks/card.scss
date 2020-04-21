@@ -1,28 +1,133 @@
 .card {
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    max-width: calc(33.33333% - 30px);
+    // border-radius: 9px;
+    background: #FFFFFF;
+    // box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.1);
+
+    margin-left: 15px;
+    margin-right: 15px;   
+}
+
+.card__inner {
+    height: 100%;
+    box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.1);
+    border-radius: 9px;
+    padding: 12px 12px 25px;
+}
+
+.card__shadow {   
+    position: relative;
+    z-index: -1; 
+    // width: 260px;
+    width: 96%;
+    height: 8px;
+    border-radius: 0px 0px 9px 9px;
+    box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    // background-color: red;
+    background-color: #fff;
+    margin-bottom: -8px;
 }
 
 .card__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
 .card__label {
+    position: relative;
+    font-size: 12px;
+    color: $colorBlack;
+    text-align: center;
+    border: 1px solid #DCDCDC;
+    border-radius: 14px;
+    padding: 5px 12px 5px 25px;   
+    margin-right: auto;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        width: 14px;
+        height: 14px;
+        background-image: url('../img/icons/checked.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 
 .card__info-btn {
+    width: 33px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EEEEEE;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+    transition: background-color .3s;
+
+    svg {
+        width: 22px;
+        height: 19px;
+        line-height: 33px;  
+        transition: fill .3s;      
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        background-color: $colorPurple;
+        
+        svg {
+            fill: $colorWhite;
+        }
+    }
 }
 
 .card__img {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
 
 .card__content {
 }
 
 .card__title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
 }
 
 .card__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .card__price {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.card__btns {
+    margin-top: 30px;
 }
 
 .card__btn-buy {

@@ -388,7 +388,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 img {
-    display: block;
     max-width: 100%;
     height: auto;
 }
@@ -471,6 +470,48 @@ body {
     font-weight: bold;
     font-size: 44px;
     color: #8B75C8;
+}
+
+.btn {
+    font-size: 14px;
+    color: #535353;
+    border: 1px solid #A9A9A9;
+    border-radius: 220px;
+    padding: 12px 17px;
+}
+
+.btn--purple {
+    position: relative;
+    color: #fff;
+    border: none;
+    box-shadow: 0px 2px 0px rgba(139, 117, 200, 0.9);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(98.96%, rgba(0, 0, 0, 0.13))), #8B75C8;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.13) 98.96%), #8B75C8;
+    -webkit-transition: box-shadow .2s linear;
+    transition: box-shadow .2s linear;
+}
+
+.btn--purple::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 220px;
+    box-shadow: 0px 8px 30px rgba(139, 117, 200, 0.5);
+    opacity: 1;
+    -webkit-transition: opacity .2s linear;
+    transition: opacity .2s linear;
+}
+
+.btn--purple:hover {
+    box-shadow: 0px 0px 0px rgba(139, 117, 200, 0.9);
+}
+
+.btn--purple:hover::after {
+    opacity: .5;
 }
 
 .menu-info {
@@ -711,6 +752,141 @@ body {
     font-weight: bold;
 }
 
+.card {
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    max-width: calc(33.33333% - 30px);
+    background: #FFFFFF;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.card__inner {
+    height: 100%;
+    box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.1);
+    border-radius: 9px;
+    padding: 12px 12px 25px;
+}
+
+.card__shadow {
+    position: relative;
+    z-index: -1;
+    width: 96%;
+    height: 8px;
+    border-radius: 0px 0px 9px 9px;
+    box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    background-color: #fff;
+    margin-bottom: -8px;
+}
+
+.card__info {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card__label {
+    position: relative;
+    font-size: 12px;
+    color: #535353;
+    text-align: center;
+    border: 1px solid #DCDCDC;
+    border-radius: 14px;
+    padding: 5px 12px 5px 25px;
+    margin-right: auto;
+}
+
+.card__label::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/icons/checked.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card__info-btn {
+    width: 33px;
+    height: 33px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: #EEEEEE;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+}
+
+.card__info-btn svg {
+    width: 22px;
+    height: 19px;
+    line-height: 33px;
+    -webkit-transition: fill .3s;
+    transition: fill .3s;
+}
+
+.card__info-btn:last-child {
+    margin-right: 0;
+}
+
+.card__info-btn:hover {
+    background-color: #8B75C8;
+}
+
+.card__info-btn:hover svg {
+    fill: #fff;
+}
+
+.card__img {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.card__title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.card__row {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.card__price {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.card__btns {
+    margin-top: 30px;
+}
+
 /* Sections */
 .header {
     position: relative;
@@ -935,32 +1111,118 @@ body {
 .models__inner {
     display: -webkit-box;
     display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
 }
 
 .models__sidebar {
     width: 100%;
     max-width: 270px;
     flex-shrink: 0;
+    margin-right: 30px;
 }
 
 .models__sidebar-item {
+    position: relative;
     background-color: #fff;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 9.5px;
+    border-radius: 9px;
     margin-bottom: 15px;
+    -webkit-transition: box-shadow .2s linear;
+    transition: box-shadow .2s linear;
 }
 
-.models__sidebar-item:last-child {
-    margin-bottom: 0;
+.models__sidebar-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    height: 100%;
+    width: 5px;
+    background-color: #DFDFDF;
+    border-radius: 0px 8px 8px 0px;
+    -webkit-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+}
+
+.models__sidebar-item:hover {
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.07);
+}
+
+.models__sidebar-item:hover::after {
+    background-color: #816BC2;
+}
+
+.models__sidebar-item:hover svg {
+    fill: #8D77C8;
 }
 
 .models__sidebar-btn {
     width: 100%;
     min-height: 55px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #535353;
     text-align: left;
     padding-left: 75px;
+}
+
+.models__sidebar-btn svg {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    fill: #C4C4C4;
+    -webkit-transition: fill .2s linear;
+    transition: fill .2s linear;
+}
+
+.models__sidebar-btn--apple svg {
+    width: 18px;
+    height: 22px;
+    left: 22px;
+}
+
+.models__sidebar-btn--samsung svg {
+    left: 13px;
+    width: 39px;
+    height: 42px;
+}
+
+.models__sidebar-btn--xiaomi svg {
+    left: 15px;
+    width: 35px;
+    height: 35px;
+}
+
+.models__sidebar-btn--huawei svg {
+    left: 18px;
+    width: 28px;
+    height: 28px;
+}
+
+.models__sidebar-btn--sale svg {
+    left: 18px;
+    width: 27px;
+    height: 28px;
+}
+
+.models__sidebar-more {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-height: 100px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 9px;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.1);
+    background-image: url("../img/models/more.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .models__cards {
