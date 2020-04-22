@@ -5,15 +5,14 @@
 @import "vars";
 
 
-/* Grid smart-grid */
-// @import "smart-grid";
-
-
 /* Normalize */
 @import "../../../../../node_modules/normalize.css/normalize";
 
-/* Animate.css */
+
+/* libs */
 // @import "../../../../../node_modules/animate.css/animate";
+@import "../../../../../node_modules/swiper/css/swiper.min";
+// @import "vendor/slick";
 
 
 /* Default styles */
@@ -34,11 +33,13 @@
 
 
 
-
 /* Sections */
 @import "sections/header";
 @import "sections/intro";
 @import "sections/models";
+@import "sections/variants";
+@import "sections/discount";
+@import "sections/test";
 
 
 
@@ -46,8 +47,3 @@
 /* Pages */
 // @import "pages/about-page";
 
-
-
-
-/* Vendor libs */
-// @import "vendor/slick";
