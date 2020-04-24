@@ -1,0 +1,112 @@
+.questions {
+    padding: 100px 0px;
+    background: #F8F5FE;
+}
+
+.questions__title {
+    margin-bottom: 35px;
+}
+
+.questions__inner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.questions__tabs {
+    width: 100%;
+    max-width: 495px;
+    background: #fefdff;
+    border-radius: 9px 0 0 9px;
+    overflow-x: hidden;
+}
+
+.questions__tab {    
+    position: relative;
+    border-radius: 9px;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 90%;
+        height: 1px;
+        background: #E8E8E8;
+        transform: translateX(-50%);
+    }
+
+    &:last-child {
+        &::after {
+            display: none;
+        }
+    }
+
+    &.active {
+        
+        background: #fff;
+        border-radius: 0 0 0 9px;
+        box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.05);
+
+        &::after {
+            display: none;
+        }
+
+        .questions__btn {
+            font-weight: bold;
+            font-size: 20px;
+            color: #4E4E4E;
+        }
+    }
+}
+
+.questions__btn {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 19px;
+    color: #8A8A8A;
+    text-align: left;
+    padding: 41px 0px;
+    padding-left: 45px;
+}
+
+.questions__content {
+    background: #fff;
+    border-radius: 0 9px 9px 9px;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.05);
+    padding: 40px 30px 57px 85px;    
+}
+
+.questions__content-inner {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+.questions__content-title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+.questions__content-text {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 40px;
+
+    &:last-child {
+        margin-bottom: 50px;
+    }
+}
+
+.questions__content-link {
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: underline;
+    color: $colorPurple;
+}

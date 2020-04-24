@@ -1,9 +1,6 @@
 // ---- Connection libs ----
 // =========================
 
-/* Slick slider */
-//= ../../../../../node_modules/slick-carousel/slick/slick.js
-
 /* Slider Swiper */
 //= ../../../../../node_modules/swiper/js/swiper.min.js
 
@@ -35,5 +32,17 @@ $(function () {
     });
 
 
+
+
+    // ------------ Tabs questions -------
+    $('.questions__btn').on('click', function (event) {
+        var id = $(this).attr('data-id');
+        $('.questions__content-inner').removeClass('active').hide();
+        $('.questions__btn').parents().removeClass('active');
+
+        $(this).parents().addClass('active');
+        $('#' + id).addClass('active').fadeIn();
+        return false;
+    });
 
 });

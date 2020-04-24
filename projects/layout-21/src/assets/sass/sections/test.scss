@@ -1,6 +1,6 @@
 .test {
     background: url(../img/intro/bg.png) $colorPurple;
-    padding-top: 55px;
+    padding-top: 20px;
 }
 
 .test__inner {
@@ -12,6 +12,8 @@
 }
 
 .test__content {
+    position: relative;
+    z-index: -1;
 
     .btn-color--green {
         padding: 25px 30px;
@@ -20,7 +22,7 @@
 }
 
 .test__title {
-    max-width: 620px;
+    max-width: 610px;
     font-weight: bold;
     font-size: 40px;
     line-height: 48px;
@@ -53,6 +55,7 @@
     display: flex;
     align-items: center;
     justify-content: center;   
+    padding-left: 20px;
 }
 
 .test__img-inner {

@@ -1,0 +1,55 @@
+.more-discount {
+    padding: 100px 0px;
+}
+
+.more-discount__title {
+    margin-bottom: 50px;
+}
+
+.more-discount__cards {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;  
+    margin-bottom: 75px;  
+
+    .card {
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 80px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #EBEBEB;
+        }
+    }
+
+    .card__inner {
+        padding: 12px;
+    }
+
+    .card__info {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    .card__img {
+        margin-bottom: 0;
+    }
+
+    .card__row {
+        justify-content: flex-start;
+    }
+}
+
+.more-discount__btn-wrap {
+    text-align: center;
+}
+
+.more-discount__btn {
+    padding: 25px 54px;
+    font-weight: bold;
+    font-size: 18px;
+}
