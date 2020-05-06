@@ -1,0 +1,35 @@
+.social {
+    padding-left: 55px;
+}
+
+.footer__social {
+}
+
+.social__list {
+    display: flex;
+    align-items: center;
+}
+
+.social__item {
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.social__link {
+   
+    svg {
+        width: 26px;
+        height: 26px;
+        fill: #fff;
+        transition: fill .2s linear;
+    }
+
+    &:hover {
+        svg {
+            fill: $colorGreen
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.callback {
+}
+
+.callback__title {
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+.callback__form {
+    position: relative;
+    min-width: 210px;
+}
+
+.callback__input {
+   
+    background: transparent;
+    border: none;
+    color: #fff;
+    border: 1px solid #C4C4C4;
+    border-radius: 9px;
+    padding: 15px;
+    padding-right: 50px;
+
+    &::placeholder {
+        font-size: 11px;
+        color: #9B9B9B;
+    }
+}
+
+.callback__btn {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 40px;
+    border-radius: 0 9px 9px 0;
+    background-color: $colorGreen;
+    transition: background-color .2s linear;
+
+    svg {
+        width: 10px;
+        height: 10px;
+    }
+
+    &:hover {
+        background-color: #fff;
+    }
+}

@@ -11,8 +11,12 @@
 }
 
 .consultant__img-box {
+    position: relative;
+    z-index: 1;
 
     img {
+        position: relative;
+        z-index: 10;
         display: block;
     }
 }
@@ -78,4 +82,11 @@
     font-weight: bold;
     font-size: 18px;
     padding: 27px 64px;
+}
+
+.consultant__pulse {
+    .pulse__item {
+        animation: none;
+        opacity: 1;
+    }
 }

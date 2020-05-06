@@ -1,0 +1,47 @@
+.footer {
+    background: #251C41;
+    padding-top: 70px;
+}
+
+.footer__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+.footer__col {
+}
+
+.footer__title {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.footer__list {
+}
+
+.footer__item {
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.footer__link {
+    font-size: 14px;
+    transition: color .2s linear;
+
+    &:hover {
+        color: #97d413;
+    }
+}
+
+.footer__callback {
+    margin-top: 50px;
+}
+
+

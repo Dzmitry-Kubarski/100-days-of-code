@@ -10,7 +10,6 @@ $(function () {
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 6,
         spaceBetween: 30,
-        // grabCursor: true,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -44,5 +43,32 @@ $(function () {
         $('#' + id).addClass('active').fadeIn();
         return false;
     });
+
+
+
+
+
+    var width = screen.width;
+
+
+    var slider = document.querySelector('.models__inner .swiper-container');
+
+    var mySwiper = new Swiper(slider, {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        loop: true,
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+    })
+
+
 
 });

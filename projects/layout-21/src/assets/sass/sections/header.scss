@@ -12,9 +12,27 @@
     align-items: center;
     justify-content: space-between;
     padding: 5px 0px;
+
+    @media (max-width: 768px) {
+        display: none;   
+    }
 }
 
 .header__logo {
+}
+
+.header__burger-menu {   
+    display: none;
+
+    svg {
+        width: 19px;
+        height: 17px;
+    }
+
+    @media (max-width: 1120px) {
+        display: block;
+        margin-right: 10px;
+    }
 }
 
 .header__body {
@@ -22,6 +40,34 @@
     align-items: center;
     justify-content: space-between;
     padding: 25px 0px;
+
+    .header__logo {
+        display: none;
+
+        @media (max-width: 768px) {
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            
+            .logo__text {
+                color: $colorDarkBlue;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        position: relative;   
+        justify-content: flex-start;
+        padding: 15px 0px;
+    }
+}
+
+.header__phone {
+    @media (max-width: 1120px) {
+        display: none;   
+    }
 }
 
 .header__bottom-wrap {
@@ -33,6 +79,42 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 1120px) {
+        display: none;   
+    }
+}
+
+.header__control-products {
+    @media (max-width: 768px) {
+        margin-left: auto;   
+    }
+
+    .header__phone {
+        display: none;
+
+        @media (max-width: 768px) {
+            display: flex;
+            margin-right: 20px;
+
+            .phone__icon {
+                margin-right: 0;                
+            }
+        }   
+        
+        @media (max-width: 490px) {
+            margin-right: 10px;
+
+            .phone__icon {
+                background: none;
+                box-shadow: none;
+            }
+        }
+
+        @media (max-width: 375px) {
+            margin-right: 0;   
+        }
+    }
 }
 
 .header__btnCatalog-wrap {
@@ -82,7 +164,7 @@
 .header__login-wrap {
     width: 100%;
     max-width: 270px;
-    flex-shrink: 0;
+    // flex-shrink: 0;
     border-left: 1px solid #E7E7E7;
     border-right: 1px solid #E7E7E7;
 }
@@ -114,7 +196,9 @@
         }
 
         svg {
-            fill: $colorGreen;            
+            fill: $colorGreen;       
+                
         }
     }
 }
+
