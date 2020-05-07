@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Normalize */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -391,6 +392,7 @@ img {
 a {
     text-decoration: none;
     display: block;
+    outline: 0;
 }
 
 button {
@@ -398,6 +400,7 @@ button {
     background: transparent;
     cursor: pointer;
     padding: 0;
+    outline: 0;
 }
 
 body {
@@ -1194,6 +1197,7 @@ body {
     align-items: center;
     -webkit-box-pack: justify;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 @media (max-width: 1180px) {
@@ -1289,6 +1293,117 @@ body {
         height: auto;
         width: 100%;
     }
+}
+
+.about__result {
+    position: relative;
+    max-width: 630px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    padding: 10px;
+}
+
+.about__result::after {
+    content: "";
+    position: absolute;
+    width: 96%;
+    height: 30px;
+    background-color: #fff;
+    left: 2%;
+    bottom: -7px;
+    -webkit-transform: translateZ(-1px);
+    transform: translateZ(-1px);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+}
+
+.about__result div {
+    border: 1px solid #ededed;
+    border-radius: 15px;
+    height: 100%;
+    padding: 25px 15px;
+}
+
+.education .about__box {
+    max-width: 700px;
+}
+
+.education .about__box p {
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: -7px -4px 10px #fff, 7px 4px 10px #dde4ef, inset 0 0 20px rgba(221, 228, 239, 0.25);
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.education .about__list {
+    margin-bottom: 50px;
+}
+
+.certificates {
+    margin-bottom: 30px;
+}
+
+.certificates__list {
+    display: -webkit-box;
+    display: flex;
+}
+
+.certificates__item {
+    position: relative;
+    margin-right: 30px;
+}
+
+.certificates__item:last-child {
+    margin-right: 0;
+}
+
+.certificates__item.close::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/close.svg");
+}
+
+.certificates__item.close::before {
+    content: 'В процессе';
+    width: 140px;
+    height: 60px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: #EEB868;
+    font-size: 1rem;
+    border-radius: .25em;
+    bottom: 90px;
+    left: calc(50% - 70px);
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+    visibility: hidden;
+}
+
+.certificates__item.close:hover::before {
+    visibility: visible;
+    opacity: 1;
+}
+
+.certificates__img {
+    max-height: 300px;
 }
 
 .footer {

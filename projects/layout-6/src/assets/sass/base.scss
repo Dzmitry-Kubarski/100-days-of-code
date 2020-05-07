@@ -49,6 +49,7 @@ img {
 a {
     text-decoration: none;
     display: block;
+    outline: 0;
 }
 
 button {
@@ -56,6 +57,7 @@ button {
     background: transparent;
     cursor: pointer;
     padding: 0;
+    outline: 0;
 }
 
 body {

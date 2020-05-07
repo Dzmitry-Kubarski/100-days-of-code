@@ -1,0 +1,20 @@
+.education {
+
+
+    .about__box {
+        max-width: 700px;
+
+        p {
+            font-size: 16px;
+            background-color: #fff;
+            box-shadow: -7px -4px 10px #fff, 7px 4px 10px #dde4ef, inset 0 0 20px rgba(221,228,239,.25);
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+    }
+
+    .about__list {
+        margin-bottom: 50px;
+    }
+}
