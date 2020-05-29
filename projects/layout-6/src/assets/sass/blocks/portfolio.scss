@@ -107,19 +107,13 @@
     border-radius: 6px; 
 }
 
-// .portfolio__dots-rating {
-//     position: absolute;
-//     left: 15px;
-//     top: 15px;
-//     background-color: #ff555d;
-//     padding: 7px 15px;
-//     border-radius: 6px;
+.portfolio__slides {
+    margin-bottom: 200px;
 
-//     img {
-//         max-width: 20px;
-//         margin: 0 3px;
-//     }
-// }
+    @media (max-width: 920px) {
+        margin-bottom: 120px;   
+    }
+}
 
 .portfolio__slide {
     display: flex;
@@ -179,7 +173,6 @@
         display: block;
         height: 5px;
         width: 5px;
-        // background-color: #ff555d;
         background-color: #33ca08;
     }
 
@@ -218,11 +211,16 @@
 
 .portfolio__slide-link {
     max-width: 270px;
-    margin: 0;
     color:  #ff555d;
+    margin: 0;
+    margin-bottom: 30px;
 
     &:hover {
         color: rgba(66, 66, 66, 0.81);
+    }
+
+    &:last-child {
+        margin-bottom: 0;
     }
 }
 

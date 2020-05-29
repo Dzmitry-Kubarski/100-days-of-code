@@ -1047,6 +1047,16 @@ body {
     border-radius: 6px;
 }
 
+.portfolio__slides {
+    margin-bottom: 200px;
+}
+
+@media (max-width: 920px) {
+    .portfolio__slides {
+        margin-bottom: 120px;
+    }
+}
+
 .portfolio__slide {
     display: -webkit-box;
     display: flex;
@@ -1153,12 +1163,17 @@ body {
 
 .portfolio__slide-link {
     max-width: 270px;
-    margin: 0;
     color: #ff555d;
+    margin: 0;
+    margin-bottom: 30px;
 }
 
 .portfolio__slide-link:hover {
     color: rgba(66, 66, 66, 0.81);
+}
+
+.portfolio__slide-link:last-child {
+    margin-bottom: 0;
 }
 
 .portfolio__img-box {
@@ -1237,7 +1252,7 @@ body {
 .about__subtitle {
     font-size: 22px;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 @media (max-width: 375px) {
@@ -1363,6 +1378,59 @@ body {
 
 .certificates__img {
     max-height: 300px;
+}
+
+.react .portfolio__slide-item {
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.react .content__title {
+    margin-bottom: 60px;
+}
+
+.react .portfolio__slide-list {
+    margin-bottom: 60px;
+}
+
+@media (max-width: 970px) {
+    .react .portfolio__img-box {
+        width: 100%;
+        max-width: 700px;
+        margin-bottom: 50px;
+        -webkit-box-ordinal-group: 0;
+        order: -1;
+    }
+}
+
+.react .portfolio__img {
+    -o-object-fit: fill;
+    object-fit: fill;
+}
+
+.react__inner {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+@media (max-width: 970px) {
+    .react__inner {
+        flex-wrap: wrap;
+    }
+}
+
+.react__content {
+    width: 45%;
+}
+
+@media (max-width: 970px) {
+    .react__content {
+        width: 100%;
+    }
 }
 
 .footer {

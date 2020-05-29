@@ -1,0 +1,46 @@
+.react {
+
+    .portfolio__slide-item {
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+
+    .content__title {
+        margin-bottom: 60px;
+    }   
+    
+    .portfolio__slide-list {
+        margin-bottom: 60px;
+    }
+
+    .portfolio__img-box {
+        @media (max-width: 970px) {
+            width: 100%;
+            max-width: 700px;
+            margin-bottom: 50px;
+            order: -1;   
+        }
+    }
+
+    .portfolio__img {
+        object-fit: fill;
+    }
+}
+
+.react__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media (max-width: 970px) {
+        flex-wrap: wrap;
+    }
+}
+
+.react__content {
+    width: 45%;
+
+    @media (max-width: 970px) {
+        width: 100%;   
+    }
+}

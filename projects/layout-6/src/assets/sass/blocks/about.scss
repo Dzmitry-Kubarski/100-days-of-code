@@ -36,7 +36,7 @@
 .about__subtitle {
     font-size: 22px;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
     @media (max-width: 375px) {
         font-size: 21px;    
@@ -78,7 +78,6 @@
 }
 
 .about__img {
-    // width: 100%;
     height: 100%;
 
     @media (max-width: 1180px) {
