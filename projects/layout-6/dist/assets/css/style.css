@@ -1406,6 +1406,13 @@ body {
 .react .portfolio__img {
     -o-object-fit: fill;
     object-fit: fill;
+    min-height: auto;
+}
+
+@media (max-width: 375px) {
+    .react .portfolio__slide-title {
+        font-size: 20px;
+    }
 }
 
 .react__inner {

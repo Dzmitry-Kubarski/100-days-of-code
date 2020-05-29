@@ -24,6 +24,13 @@
 
     .portfolio__img {
         object-fit: fill;
+        min-height: auto;
+    }
+
+    .portfolio__slide-title {
+        @media (max-width: 375px) {
+            font-size: 20px;
+        }
     }
 }
 
