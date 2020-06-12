@@ -23,19 +23,12 @@
 
 .calculator-item__img {
     position: relative;
-    margin-bottom: 40px;
-    // max-height: 165px;
-    // text-align: center;
+    margin-bottom: 40px;   
     min-width: 202px;
     min-height: 170px;
-
     display: flex;
     align-items: center;
-    justify-content: center;
-
-    img {
-        // display: inline-block;
-    }
+    justify-content: center;   
 }
 
 .calculator-item__tag {
@@ -53,16 +46,10 @@
     }
 
     &.height {
-        // left: -110px;
         left: -65px;
         top: 50%;
-        transform: rotate(-90deg) translateY(-50%);
-        // transform: translateY(-50%);       
-       
+        transform: rotate(-90deg) translateY(-50%);       
     }
-}
-
-.calculator-item__sizes {
 }
 
 .calculator-item__info {
@@ -97,5 +84,3 @@
         font-size: 18px;
     }
 }
-
-
