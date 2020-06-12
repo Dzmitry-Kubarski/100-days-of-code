@@ -1,0 +1,50 @@
+/* Fonts */
+@import "fonts";
+
+
+/* Variables */
+@import "vars";
+
+
+/* Normalize */
+@import "../../../../../node_modules/normalize.css/normalize";
+
+
+/* Vendor libs */
+
+/* Default styles */
+@import "base";
+
+
+/* Blocks */
+@import "blocks/logo";
+@import "blocks/title";
+@import "blocks/phone";
+@import "blocks/form";
+@import "blocks/dots";
+@import "blocks/block";
+@import "blocks/calculator-item";
+@import "blocks/calc-form";
+@import "blocks/sizes";
+@import "blocks/selects";
+@import "blocks/popup";
+
+
+
+/* Sections */
+@import "sections/header";
+@import "sections/offer";
+@import "sections/slider";
+@import "sections/calculator";
+@import "sections/footer";
+
+
+
+
+/* Pages */
+// @import "pages/about-page";
+
+
+
+
+

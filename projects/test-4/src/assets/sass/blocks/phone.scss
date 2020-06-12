@@ -1,0 +1,14 @@
+.phone {
+}
+
+.phone__link {
+    display: block;
+    font-size: 40px;
+    color: #767676;
+    letter-spacing: 0.6px;
+    transition: color .2s linear;    
+
+   &:hover {
+        color: #9da3d7;
+   }
+}

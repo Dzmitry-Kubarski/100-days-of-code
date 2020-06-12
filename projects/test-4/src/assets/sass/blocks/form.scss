@@ -1,0 +1,51 @@
+.form {
+    width: 100%;
+    max-width: 360px;
+}
+
+.form__title {
+    
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.form__inner {
+    background-color: #9da3d7;
+    text-align: center;
+    padding: 30px 22px;
+}
+
+
+.form__text {
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.form__input {
+    width: 100%;
+    min-height: 49px;    
+    border: none;
+    padding: 19px 16px 14px;
+    margin-bottom: 20px;    
+
+    &::placeholder {
+        font-size: 24px;
+        color: #767676;
+    }
+}
+
+.form__btn {
+    width: 100%;
+    min-height: 49px; 
+    background-color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    transition: background-color .2s linear;
+    padding: 14px 16px 8px 16px;
+
+    &:hover {
+        background-color: #ffc087;
+    }
+}

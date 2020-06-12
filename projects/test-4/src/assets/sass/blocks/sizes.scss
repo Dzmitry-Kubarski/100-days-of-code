@@ -1,0 +1,43 @@
+.sizes {
+    display: flex;
+    align-items: flex-end;
+
+    span {
+        font-size: 45px;
+        font-weight: bold;
+        color: #0099de;
+        margin: 0 25px;
+    }
+}
+
+.sizes__field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sizes__label {   
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.sizes__input {
+    font-size: 35px;
+    max-height: 45px;
+    max-width: 90px;
+    border-radius: 7px;
+    border: none;
+    border: 2px solid rgb(162, 162, 162);
+    color: #5d5d5d;
+    text-align: center;
+    padding: 10px 0;
+
+
+    &::placeholder {
+    }
+}
+
+
+  
+
