@@ -7,18 +7,37 @@
 }
 
 .models__inner {
+    width: 100%;
     display: flex;
+    align-items: center;
     // justify-content: space-between;   
+
+    @media (max-width: 1280px) {
+        flex-wrap: wrap;   
+    }
 }
 
 .models__sidebar {
     width: 100%;
     max-width: 270px;
     flex-shrink: 0;
-    margin-right: 30px;
+    margin-right: 15px;
+
+    @media (max-width: 1280px) {
+        max-width: 100%;   
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
 }
 
 .models__sidebar-list {
+
+    @media (max-width: 1280px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;   
+    }
 }
 
 .models__sidebar-item {  
@@ -53,16 +72,31 @@
             fill: #8D77C8;
         }
     }   
+
+    &:last-child {
+        &::after {
+           display: none;
+        }
+    }
+
+    @media (max-width: 1280px) {
+        width: calc(33.33333% - 30px);
+        margin-left: 15px;
+        margin-right: 15px;   
+    }
 }
 
 .models__sidebar-btn {
+    display: flex;
+    align-items: center;
+    height: 100%;
     width: 100%;
     min-height: 55px;
     font-weight: 500;
     font-size: 14px;
     color: $colorBlack;
     text-align: left;
-    padding-left: 75px;
+    padding-left: 75px;    
 
     svg {
         position: absolute;
@@ -112,6 +146,10 @@
             height: 28px;
         }                
     }
+
+    @media (max-width: 1280px) {
+        min-height: 100px;   
+    }
 }
 
 .models__sidebar-more {
@@ -131,40 +169,22 @@
 }
 
 .models__cards {
+    width: 100%;
     display: flex;
-    // justify-content: space-between;
+    justify-content: space-between;
     // margin-left: -15px;
     // margin-right: -15px;
 
-    // .btn--purple {
-    //     max-width: 130px;
-    // }
-
-
-
-
-
-    overflow: hidden;
-    position: relative;
-    max-width: 1000px;
-    // max-height: 600px;
-
-   
+    .btn--purple {
+        max-width: 130px;
+    }    
 }
 
 .models__slides {
+    width: 100%;
     display: flex;
-    // justify-content: space-between;
-    margin-left: -15px;
-    margin-right: -15px;
-
-    max-width: 1000px;
-
-    .slider-container {
-        max-width: 1200px;
-        padding: 0 15px;
-        position: relative;
-        margin: 0 auto;
-    }
+    justify-content: space-between;
+    // margin-left: -15px;
+    // margin-right: -15px;
 }
 

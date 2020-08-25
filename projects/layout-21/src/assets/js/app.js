@@ -4,6 +4,9 @@
 /* Slider Swiper */
 //= ../../../../../node_modules/swiper/js/swiper.min.js
 
+/* Slick slider */
+//= ../../../../../node_modules/slick-carousel/slick/slick.js
+
 
 $(function () {
 
@@ -48,27 +51,39 @@ $(function () {
 
 
 
-    var width = screen.width;
+    // ------------ Slider Slick -------
+    $('.models__slides').each(function (index, el) {
+        $(this).slick({
+            dots: false,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            speed: 600,
+            arrows: false
+        });
+        var _this = $(this);
+
+        // $(this).parents('.hits, .newProducts, .news').find('.section-header__prev').on('click', function (event) {
+        //     _this.slick('slickPrev');
+        // });
+        // $(this).parents('.hits, .newProducts, .news').find('.section-header__next').on('click', function (event) {
+        //     _this.slick('slickNext');
+        // });
+
+        responsive: [
+
+            {
+                breakpoint: 1281,
+                settings: {
+                    prevArrow: false,
+                    nextArrow: false,
+                    slidesToShow: 3,
+                }
+            },
 
 
-    var slider = document.querySelector('.models__inner .swiper-container');
-
-    var mySwiper = new Swiper(slider, {
-        slidesPerView: 3,
-        spaceBetween: 10,
-        loop: true,
-
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-    })
 
 
-
+        ]
+    });
 });
